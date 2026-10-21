@@ -4,12 +4,12 @@
   "lists": "css",
   "title": "Edgerunners 작업 내역",
   "cover": "cover",
-  "order": ["cover", "timeline", "numbers", "format", "v1", "trap", "shape", "cyberware", "bossplan", "coverai", "tutorial", "verify", "caught", "lesson", "review", "open"],
+  "order": ["cover", "timeline", "numbers", "format", "v1", "trap", "shape", "cyberware", "bossplan", "coverai", "tutorial", "playtest", "review", "open"],
   "sections": {
     "s1": {"description": "개발 기간의 흐름과 주요 수치 변화", "start": "cover"},
     "s2": {"description": "결정 기록과 되돌린 결정", "start": "format"},
-    "s3": {"description": "검증 방법과 검증으로 찾은 문제", "start": "verify"},
-    "s4": {"description": "중간 평가와 아직 측정하지 않은 것", "start": "review"}
+    "s3": {"description": "직접 플레이하며 바꾼 것", "start": "playtest"},
+    "s4": {"description": "중간 평가와 남은 과제", "start": "review"}
   },
   "faces": {
     "paperlogy": {"family": "Paperlogy", "src": "/_blob/f44383a7663f011787583151db955921"},

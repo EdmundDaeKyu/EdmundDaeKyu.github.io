@@ -23,7 +23,7 @@ my @DECKS = (
   ['system',   'plan', '시스템 기획서', '시스템', '무기, 사이버웨어 8부위와 레벨, 프로토타입, 해킹, 성장과 경제.', 'portfolio_netrunner'],
   ['level',    'plan', '레벨 기획서', '레벨', '맵 제작 과정, 맵 목록, 첫 판의 등장 순서, 보스.', 'combat_pinwheel_top'],
   ['tutorial', 'plan', '튜토리얼 기획서', '튜토리얼', '첫 판에만 진행하는 숲속 맵 세 개와, 시간을 멈추고 가르치는 코칭 컷.', 'trail_overview_1'],
-  ['process',  'log',  '작업 내역', '작업 내역', '두 달 동안의 개발 과정, 되돌린 결정, 검증 방법.', 'portfolio_boss'],
+  ['process',  'log',  '작업 내역', '작업 내역', '두 달 동안의 개발 과정과 되돌린 결정, 플레이하며 바꾼 것.', 'portfolio_boss'],
 );
 
 my $root = $0; $root =~ s{[\\/]tools[\\/][^\\/]+$}{}; $root = '.' if $root eq $0;
@@ -182,13 +182,13 @@ $a{head}</head>
 <body>
 <div class="scroll-root">
 <header class="site-head"><div class="wrap">
-<a class="brand" href="../../">[이름]</a>
+<a class="brand" href="../../">장대규</a>
 <nav><a href="../../">홈</a><a class="on" href="../">Edgerunners</a></nav>
 </div></header>
 <main class="wrap">
 $a{tabs}
 $a{body}</main>
-<footer class="foot"><div class="wrap">© [이름] · 글꼴: 페이퍼로지(Paperlogy, SIL OFL 1.1)</div></footer>
+<footer class="foot"><div class="wrap">© 장대규 · 글꼴: 페이퍼로지(Paperlogy, SIL OFL 1.1)</div></footer>
 </div>
 $a{tail}</body>
 </html>
