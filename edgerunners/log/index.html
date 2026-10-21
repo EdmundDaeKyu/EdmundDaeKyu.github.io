@@ -406,11 +406,11 @@
 </div>
 <div style="display:flex;flex-direction:column;gap:24px;width:720px">
 <img src="../../assets/img/map_combat_shockring_top.webp" alt="쇼크링 전투방을 위에서 본 모습. 외벽을 따라 주황색 전기 함정이 놓여 있고, 가운데에 낮은 엄폐물이 I자로 놓여 있다" style="width:720px;height:405px;object-fit:cover;border-radius:12px">
-<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#5B606B">지금 대시(3.5m)로 띠를 건널 때 받는 피해</p>
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#5B606B">지금 대시(3.5m)로 전기 함정을 건널 때 받는 피해</p>
 <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px">
-<div style="display:flex;flex-direction:column;gap:6px;background:#FFFFFF;padding:18px 24px;border-radius:12px;border:1px solid #D9D7CF"><p style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:48px;line-height:1.1;color:#0077A3">0</p><p style="font-size:24px;color:#3E434D">띠 폭 4m</p></div>
-<div style="display:flex;flex-direction:column;gap:6px;background:#FFFFFF;padding:18px 24px;border-radius:12px;border:1px solid #D9D7CF"><p style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:48px;line-height:1.1;color:#17181C">11.6</p><p style="font-size:24px;color:#3E434D">띠 폭 6m</p></div>
-<div style="display:flex;flex-direction:column;gap:6px;background:#FFFFFF;padding:18px 24px;border-radius:12px;border:1px solid #D9D7CF"><p style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:48px;line-height:1.1;color:#C2185B">23.2</p><p style="font-size:24px;color:#3E434D">띠 폭 8m</p></div>
+<div style="display:flex;flex-direction:column;gap:6px;background:#FFFFFF;padding:18px 24px;border-radius:12px;border:1px solid #D9D7CF"><p style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:48px;line-height:1.1;color:#0077A3">0</p><p style="font-size:24px;color:#3E434D">두 칸(4m)</p></div>
+<div style="display:flex;flex-direction:column;gap:6px;background:#FFFFFF;padding:18px 24px;border-radius:12px;border:1px solid #D9D7CF"><p style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:48px;line-height:1.1;color:#17181C">11.6</p><p style="font-size:24px;color:#3E434D">세 칸(6m)</p></div>
+<div style="display:flex;flex-direction:column;gap:6px;background:#FFFFFF;padding:18px 24px;border-radius:12px;border:1px solid #D9D7CF"><p style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:48px;line-height:1.1;color:#C2185B">23.2</p><p style="font-size:24px;color:#3E434D">네 칸(8m)</p></div>
 </div>
 </div>
 </div>
@@ -435,10 +435,10 @@
 </div>
 <div class="n-box"><h3>대시로 건널 때 받는 피해</h3>
 <div class="n-table"><table>
-<tr><th>띠 폭</th><th>10-07 측정</th><th>10-21 측정</th></tr>
-<tr><td>4m</td><td>0</td><td>0</td></tr>
-<tr><td>6m</td><td>5.3</td><td>11.6</td></tr>
-<tr><td>8m</td><td>16</td><td>23.2</td></tr>
+<tr><th>일렬로 이은 칸</th><th>10-07 측정</th><th>10-21 측정</th></tr>
+<tr><td>두 칸 (4m)</td><td>0</td><td>0</td></tr>
+<tr><td>세 칸 (6m)</td><td>5.3</td><td>11.6</td></tr>
+<tr><td>네 칸 (8m)</td><td>16</td><td>23.2</td></tr>
 </table></div>
 <p>10-20에 밟는 순간 첫 틱이 들어가게 바꾸면서 값이 늘었다.</p>
 </div>
@@ -446,7 +446,7 @@
 <ul>
 <li>위에 서 있으면 0.3초마다 7.8의 피해를 받는다.</li>
 <li>전기 누적이 45를 넘으면 오작동에 걸려 2.5초 동안 대시를 쓸 수 없다.</li>
-<li>띠 폭은 4m를 넘으면 대시로 건너도 피해를 받으므로 레벨 디자인의 조절 요소가 된다.</li>
+<li>함정은 늘 한 칸(2m) 타일이고, 일렬로 세 칸 이상 붙은 곳은 대시로 건너도 피해를 받는다.</li>
 </ul>
 </div>
 </div>
@@ -941,7 +941,7 @@
 <div style="display:flex;flex-direction:column;gap:14px;background:#FFFFFF;padding:36px 40px;border-radius:12px;border:1px solid #D9D7CF">
 <div style="display:flex;flex-direction:row"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#F6F5F1;background:#17181C;padding:6px 18px;border-radius:20px">측정</p></div>
 <p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:27px;line-height:1.4;color:#17181C">“전기 함정 한 줄이면 길이 막힌다”</p>
-<p style="font-size:25px;line-height:1.5;color:#3E434D">띠 폭별로 대시로 건너 보니 6m까지 잃는 체력이 0이었다.<br>그래서 띠 폭을 레벨 디자인의 조절 요소로 삼았다.</p>
+<p style="font-size:25px;line-height:1.5;color:#3E434D">함정 칸을 일렬로 이어 깔고 대시로 건너 보니 세 칸(6m)까지 잃는 체력이 0이었다.<br>그래서 맵에 지나갈 틈을 따로 남기지 않았다.</p>
 </div>
 <div style="display:flex;flex-direction:column;gap:14px;background:#FFFFFF;padding:36px 40px;border-radius:12px;border:1px solid #D9D7CF">
 <div style="display:flex;flex-direction:row"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#F6F5F1;background:#17181C;padding:6px 18px;border-radius:20px">렌더</p></div>
@@ -971,7 +971,7 @@
 <div class="n-box wide"><h3>사례별 확인 방법과 결과</h3>
 <div class="n-table"><table>
 <tr><th>방법</th><th>확인 방법</th><th>결과</th></tr>
-<tr><td>측정</td><td>띠 폭별로 대시해서 잃는 체력을 표로 정리했다</td><td>당시 대시 4.76m로 6m까지 피해가 0이었다. 띠 폭을 레벨 디자인의 조절 요소로 삼았다</td></tr>
+<tr><td>측정</td><td>함정 칸을 일렬로 이어 깔고 대시로 건너며 잃는 체력을 표로 정리했다</td><td>당시 대시 4.76m로 세 칸(6m)까지 피해가 0이었다. 맵에 지나갈 틈을 따로 남기지 않았다</td></tr>
 <tr><td>렌더</td><td>코칭 컷을 한 장씩 찍었다</td><td>적이 스폰한 프레임에서 멈춰 T포즈로 굳은 채 설명되고 있었다</td></tr>
 <tr><td>자동 검사</td><td>모의 처리 대신 실제로 저장하고 불러왔다</td><td>옛 호환 코드가 1500코인어치 영구 해금을 무료로 주고 있었다. 저장 데이터에 표식을 넣어 막았다</td></tr>
 <tr><td>재현 검사</td><td>고치기 전에 옛 코드에서 실패하는 검사부터 만들었다</td><td>다른 3D 월드의 캐릭터까지 같은 그룹으로 묶어 센 탓에, 설명 창 속 요원이 감전되고 있었다</td></tr>
