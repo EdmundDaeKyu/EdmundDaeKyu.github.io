@@ -22,7 +22,7 @@ my @DECKS = (
   ['combat',   'plan', '전투 규칙 기획서', '전투 규칙', '기본 능력치, 공격 예고 규칙, 피해 기준, 대시로 피할 수 없는 위협.', 'portfolio_crowd'],
   ['system',   'plan', '시스템 기획서', '시스템', '무기, 사이버웨어 8부위와 레벨, 프로토타입, 해킹, 성장과 경제.', 'portfolio_netrunner'],
   ['level',    'plan', '레벨 기획서', '레벨', '맵 제작 과정, 맵 목록, 첫 판의 등장 순서, 보스.', 'combat_pinwheel_top'],
-  ['tutorial', 'plan', '튜토리얼 기획서', '튜토리얼', '숲길 세 구간에서 조작을 하나씩 익히는 구성.', 'trail_overview_1'],
+  ['tutorial', 'plan', '튜토리얼 기획서', '튜토리얼', '첫 판에만 진행하는 숲속 맵 세 개와, 시간을 멈추고 가르치는 코칭 컷.', 'trail_overview_1'],
   ['process',  'log',  '작업 내역', '작업 내역', '두 달 동안의 개발 과정, 되돌린 결정, 검증 방법.', 'portfolio_boss'],
 );
 

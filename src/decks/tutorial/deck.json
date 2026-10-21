@@ -6,7 +6,7 @@
   "cover": "cover",
   "order": ["cover", "principle", "stages", "stage1", "stage2a", "stage2b", "stage3", "terrain", "summary"],
   "sections": {
-    "s1": {"description": "튜토리얼의 교습 방식과 세 단계 구성", "start": "cover"},
+    "s1": {"description": "튜토리얼의 교습 방식과 맵 세 개의 구성", "start": "cover"},
     "s2": {"description": "단계별로 가르치는 것", "start": "stage1"},
     "s3": {"description": "지형 안내와 단계별 정리", "start": "terrain"}
   },
