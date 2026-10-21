@@ -8,7 +8,7 @@
 |---|---|
 | `index.html` | 홈 — 소개, 프로젝트 목록 |
 | `edgerunners/index.html` | Edgerunners 게임 — 소개, 플레이 링크, 장면, 한 판의 흐름, 조작 |
-| `edgerunners/plan/index.html` | Edgerunners 기획서 목록 — 개요 하나와 세부 기획서 넷. `tools/build_decks.pl`이 만든다 |
+| `edgerunners/plan/index.html` | Edgerunners 기획서 목록 — 개요 하나와 세부 기획서 다섯. `tools/build_decks.pl`이 만든다 |
 | `edgerunners/plan/<덱>.html` | 기획서 한 벌. `tools/build_decks.pl`이 만든다(손으로 고치지 않는다) |
 | `edgerunners/log/index.html` | Edgerunners 작업 내역 — 개발 과정 덱. 역시 `tools/build_decks.pl`이 만든다 |
 | `assets/` | 글꼴(페이퍼로지), 스타일, 슬라이드 보기 스크립트, 그림(WebP) |

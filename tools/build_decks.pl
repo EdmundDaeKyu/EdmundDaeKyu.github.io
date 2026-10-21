@@ -23,6 +23,7 @@ my @DECKS = (
   ['system',   'plan', '시스템 기획서', '시스템', '무기, 사이버웨어 8부위와 레벨, 프로토타입, 해킹, 성장과 경제.', 'portfolio_netrunner'],
   ['level',    'plan', '레벨 기획서', '레벨', '맵 제작 과정, 맵 목록, 첫 판의 등장 순서, 보스.', 'combat_pinwheel_top'],
   ['tutorial', 'plan', '튜토리얼 기획서', '튜토리얼', '첫 판에만 진행하는 숲속 맵 세 개와, 시간을 멈추고 가르치는 코칭 컷.', 'trail_overview_1'],
+  ['growth',   'plan', '성장 기획서', '성장', '경험치, 명상, 숙련도, 코인, 회차와, 죽었을 때 남는 것.', 'growth_meditation'],
   ['process',  'log',  '작업 내역', '작업 내역', '두 달 동안의 개발 과정과 되돌린 결정, 플레이하며 바꾼 것.', 'portfolio_boss'],
 );
 
@@ -288,7 +289,7 @@ for my $d (@rest) {
 my $n_detail = scalar @rest;
 spit("$root/edgerunners/plan/index.html", shell(
   title => 'Edgerunners · 기획서',
-  desc => 'Edgerunners 기획서. 개요 기획서와 전투 규칙, 시스템, 레벨, 튜토리얼 세부 기획서.',
+  desc => 'Edgerunners 기획서. 개요 기획서와 전투 규칙, 시스템, 레벨, 튜토리얼, 성장 세부 기획서.',
   head => <<'HTML',
 <style>
   .plan-head { padding: 40px 0 8px; }

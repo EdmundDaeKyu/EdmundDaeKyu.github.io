@@ -1,0 +1,20 @@
+{
+  "v": 4,
+  "createdOnFiles": {"v": 1, "at": "2026-10-21T15:30:00Z"},
+  "lists": "css",
+  "title": "Edgerunners 성장 기획서",
+  "cover": "cover",
+  "order": ["cover", "keep", "xp", "meditation", "proficiency", "levels", "proto", "economy", "cycle", "loop"],
+  "sections": {
+    "s1": {"description": "죽거나 보스를 처치했을 때 남는 것", "start": "cover"},
+    "s2": {"description": "경험치와 레벨, 명상, 숙련도", "start": "xp"},
+    "s3": {"description": "사이버웨어 레벨과 프로토타입 대가", "start": "levels"},
+    "s4": {"description": "코인과 작업대, 회차, 성장 정리", "start": "economy"}
+  },
+  "faces": {
+    "paperlogy": {"family": "Paperlogy", "src": "/_blob/1a5344526b3f0afe5d0933d4b488abff"},
+    "paperlogy-semibold": {"family": "Paperlogy SemiBold", "src": "/_blob/031b915e3f8ba8c372ee52c6eced7695"},
+    "paperlogy-extrabold": {"family": "Paperlogy ExtraBold", "src": "/_blob/e016d45ea733089d17be7f1e0e4c18cf"}
+  },
+  "designSystems": []
+}
