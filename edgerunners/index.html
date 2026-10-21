@@ -13,7 +13,12 @@
   .play-box { display: flex; flex-wrap: wrap; align-items: center; gap: 20px 32px; padding: 28px 32px; background: var(--dark); color: #E6E8EC; border-radius: var(--radius); }
   .play-box h2 { font-size: 26px; color: #FFFFFF; margin-bottom: 4px; }
   .play-box p { color: #AEB3BC; font-size: 15px; }
-  .play-box .btn { background: #5CC8F0; border-color: #5CC8F0; color: #0D0E11; margin-left: auto; font-size: 17px; padding: 15px 30px; }
+  .play-box .play-text { flex: 1 1 420px; display: flex; flex-direction: column; gap: 6px; }
+  .play-box .note { color: #8E95A1; font-size: 14px; line-height: 1.6; }
+  .play-box .play-buttons { display: flex; flex-wrap: wrap; gap: 10px; margin-left: auto; }
+  .play-box .btn { background: #5CC8F0; border-color: #5CC8F0; color: #0D0E11; font-size: 17px; padding: 15px 30px; }
+  .play-box .btn.dl { background: transparent; border-color: #5CC8F0; color: #5CC8F0; }
+  .play-box .btn.dl:hover { background: rgba(92, 200, 240, 0.12); }
   .play-box .btn:hover { background: #8AD8F5; }
   .fun .card img { aspect-ratio: 16 / 10; object-fit: cover; width: 100%; }
   .fun .card .body p { color: var(--ink-2); }
@@ -60,11 +65,15 @@
 <div><dt>한 판</dt><dd>방 12개를 지나 보스까지</dd></div>
 </dl>
 <div class="play-box">
-<div>
-<h2>브라우저에서 바로 해 보기</h2>
-<p>PC의 크롬이나 엣지에서 키보드와 마우스로 플레이한다.<br>처음 열 때는 다운로드와 로딩에 30초쯤 걸린다.</p>
+<div class="play-text">
+<h2>플레이하기</h2>
+<p>PC에서 키보드와 마우스로 플레이한다. 웹 판은 크롬이나 엣지에서 바로 열린다.</p>
+<p class="note">웹 판은 브라우저의 구동 한계로 처음 열 때 로딩이 1분 넘게 걸린다(다시 열면 15초 안팎).<br>기다리지 않고 해 보려면 Windows 판을 내려받아 압축을 풀고 Edgerunners.exe를 실행한다.</p>
 </div>
-<a class="btn" href="/edgerunners-play/" target="_blank" rel="noopener">플레이하기</a>
+<div class="play-buttons">
+<a class="btn" href="/edgerunners-play/" target="_blank" rel="noopener">웹에서 플레이</a>
+<a class="btn dl" href="https://github.com/EdmundDaeKyu/edgerunners-play/releases/download/windows-20261022/Edgerunners-windows.zip">Windows 판 내려받기 · 116MB</a>
+</div>
 </div>
 </section>
 
