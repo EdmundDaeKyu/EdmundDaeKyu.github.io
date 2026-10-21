@@ -1,19 +1,19 @@
 <section id="timing" data-transition="fade" style="background:#ECEBE6;color:#17181C;font-family:'Paperlogy', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:44px">
 <div style="display:flex;flex-direction:column;gap:10px">
-<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;letter-spacing:2px;color:#0077A3">02  대시 칸</p>
-<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">대시 한 칸이 차는 시간은 적의 예고보다 길다</h2>
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;letter-spacing:2px;color:#0077A3">02  대시 횟수</p>
+<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">대시 1회 충전 시간은 적의 공격 예고보다 길다</h2>
 </div>
 <div style="position:relative;width:1664px;height:400px;background:#FFFFFF;border-radius:12px;border:1px solid #D9D7CF">
-<p style="position:absolute;left:40px;top:44px;width:260px;font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#17181C">대시 한 칸 충전</p>
+<p style="position:absolute;left:40px;top:44px;width:260px;font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#17181C">대시 1회 충전</p>
 <div style="position:absolute;left:320px;top:40px;width:1020px;height:44px;background:#0077A3;border-radius:4px"></div>
 <p style="position:absolute;left:1356px;top:44px;width:140px;font-size:26px;color:#0077A3">0.85초</p>
-<p style="position:absolute;left:40px;top:116px;width:260px;font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#17181C">근접 예고</p>
+<p style="position:absolute;left:40px;top:116px;width:260px;font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#17181C">근접 공격 예고</p>
 <div style="position:absolute;left:320px;top:112px;width:900px;height:44px;background:#E07020;border-radius:4px"></div>
 <p style="position:absolute;left:1236px;top:116px;width:100px;font-size:26px;color:#17181C">0.75초</p>
-<p style="position:absolute;left:40px;top:188px;width:260px;font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#17181C">원거리 예고</p>
+<p style="position:absolute;left:40px;top:188px;width:260px;font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#17181C">원거리 공격 예고</p>
 <div style="position:absolute;left:320px;top:184px;width:660px;height:44px;background:#E07020;border-radius:4px"></div>
 <p style="position:absolute;left:996px;top:188px;width:140px;font-size:26px;color:#17181C">0.55초</p>
-<p style="position:absolute;left:40px;top:260px;width:260px;font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#17181C">대시 무적</p>
+<p style="position:absolute;left:40px;top:260px;width:260px;font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#17181C">대시 무적 시간</p>
 <div style="position:absolute;left:320px;top:256px;width:384px;height:44px;background:#0077A3;opacity:0.4;border-radius:4px"></div>
 <p style="position:absolute;left:720px;top:260px;width:140px;font-size:26px;color:#17181C">0.32초</p>
 <x-connector x1="320" y1="324" x2="1520" y2="324" head="none" style="color:#8A8F99;border-width:2px"></x-connector>
@@ -25,10 +25,10 @@
 <p style="position:absolute;left:1470px;top:334px;width:100px;text-align:center;font-size:24px;color:#5B606B">1.0초</p>
 </div>
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px">
-<p style="font-size:26px;line-height:1.55;color:#3E434D">대시를 쓴 순간 다른 적이 예고를 시작하면, 그 공격이 떨어질 때까지 다음 칸이 차지 않는다.<br>대시를 언제 쓸지 고르게 하려고 잡은 값이다.</p>
-<p style="font-size:24px;line-height:1.6;color:#5B606B">기본은 한 칸이다.<br>칸은 다리와 신경계 사이버웨어, 이동 스킬로 늘린다.<br>누른 대시는 0.25초 동안 기억해 둔다.</p>
+<p style="font-size:26px;line-height:1.55;color:#3E434D">대시를 쓴 직후 다른 적이 공격 예고를 시작하면, 그 공격이 들어올 때까지 대시가 다시 충전되지 않는다.<br>대시를 언제 쓸지 고민하게 하려는 수치다.</p>
+<p style="font-size:24px;line-height:1.6;color:#5B606B">기본 횟수는 1회다.<br>횟수는 다리와 신경계 사이버웨어, 이동 스킬로 늘린다.<br>대시 입력은 0.25초 동안 선입력으로 저장한다.</p>
 </div>
 <p style="position:absolute;left:128px;bottom:64px;width:800px;font-size:24px;color:#8A8F99">EDGERUNNERS 전투 규칙 기획서</p>
 <p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#8A8F99">03</p>
-<aside>대시 칸은 기본 한 칸이고 한 칸이 0.85초에 찹니다. 적의 예고는 근접 0.75초, 원거리 0.55초라서 칸이 차는 시간이 둘 다보다 깁니다. 예고 하나를 대시로 넘긴 직후 다른 적의 공격이 시작되면 다음 칸이 차기 전에 그 공격이 떨어집니다. 연달아 오는 공격을 대시 하나로 다 받을 수는 없으니, 어느 공격에 대시를 쓰고 어느 공격은 걸어서 피할지를 고르게 하려는 의도입니다. 대시 무적은 기본 몸에서 0.32초이고, 대시 지속 시간과 같습니다.</aside>
+<aside>대시는 기본 1회이고 1회 충전에 0.85초가 걸립니다. 적의 공격 예고는 근접 0.75초, 원거리 0.55초라서 충전 시간이 둘 다보다 깁니다. 공격 하나를 대시로 피한 직후 다른 적의 공격이 시작되면, 다시 충전되기 전에 그 공격이 들어옵니다. 연달아 오는 공격을 대시 한 번으로 모두 피할 수는 없으므로, 어느 공격을 대시로 피하고 어느 공격을 걸어서 피할지 고민하게 하려는 의도입니다. 대시 무적 시간은 기본 0.32초로 대시 지속 시간과 같습니다.</aside>
 </section>

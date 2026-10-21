@@ -4,11 +4,11 @@
   "lists": "css",
   "title": "Edgerunners 튜토리얼 기획서",
   "cover": "cover",
-  "order": ["cover", "principle", "stages", "stage1", "stage2a", "stage2b", "stage3", "summary", "making", "history"],
+  "order": ["cover", "principle", "stages", "stage1", "stage2a", "stage2b", "stage3", "terrain", "summary"],
   "sections": {
-    "s1": {"description": "튜토리얼의 원칙과 세 단계의 뼈대", "start": "cover"},
-    "s2": {"description": "단계마다 무엇을 어떻게 가르치나", "start": "stage1"},
-    "s3": {"description": "단계별 정리, 만든 방법, 달라진 점", "start": "summary"}
+    "s1": {"description": "튜토리얼의 교습 방식과 세 단계 구성", "start": "cover"},
+    "s2": {"description": "단계별로 가르치는 것", "start": "stage1"},
+    "s3": {"description": "지형 안내와 단계별 정리", "start": "terrain"}
   },
   "faces": {
     "paperlogy": {"family": "Paperlogy", "src": "/_blob/786c9cdec14268c0b7e90a609356c7c2"},

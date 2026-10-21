@@ -4,12 +4,12 @@
   "lists": "css",
   "title": "Edgerunners 개요 기획서",
   "cover": "cover",
-  "order": ["cover", "overview", "fun", "loop", "build", "examples", "rooms", "growth", "combat", "levels", "dev", "docs"],
+  "order": ["cover", "overview", "fun", "loop", "build", "examples", "rooms", "growth", "combat", "levels", "docs"],
   "sections": {
     "s1": {"description": "무슨 게임이고 무엇이 재미인가", "start": "cover"},
     "s2": {"description": "빌드를 만들고 시험하는 구조", "start": "loop"},
     "s3": {"description": "전투 규칙과 레벨 제작", "start": "combat"},
-    "s4": {"description": "개발 과정과 세부 기획서", "start": "dev"}
+    "s4": {"description": "세부 기획서", "start": "docs"}
   },
   "faces": {
     "paperlogy": {"family": "Paperlogy", "src": "/_blob/b549b03ddf0cdd20ac3f5ef682e5b062"},

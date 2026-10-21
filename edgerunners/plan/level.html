@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>레벨 기획서 · Edgerunners</title>
-<meta name="description" content="Edgerunners 레벨 기획서 — 손그림에서 플레이까지, 맵 카탈로그, 첫 판 커리큘럼, 보스">
+<meta name="description" content="Edgerunners 레벨 기획서. 맵 제작 과정, 맵 목록, 첫 판의 등장 순서, 보스.">
 <link rel="stylesheet" href="../../assets/css/site.css">
 <link rel="stylesheet" href="../../assets/css/deck.css">
 <script src="../../assets/js/deck.js" defer></script>
@@ -16,24 +16,24 @@
 <nav><a href="../../">홈</a><a class="on" href="../">Edgerunners</a></nav>
 </div></header>
 <main class="wrap">
-<nav class="tabs"><a href="../">게임</a><a class="on" href="./">기획</a></nav>
+<nav class="tabs"><a href="../">게임</a><a class="on" href="../plan/">기획서</a><a href="../log/">작업 내역</a></nav>
 <div class="deck-head">
 <p class="eyebrow">Edgerunners 기획서</p>
 <h1>레벨 기획서</h1>
-<p class="lead">손그림에서 플레이까지, 맵 카탈로그, 첫 판 커리큘럼, 보스</p>
+<p class="lead">맵 제작 과정, 맵 목록, 첫 판의 등장 순서, 보스.</p>
 <div class="deck-tools">
 <button class="btn" type="button" data-present="0">슬라이드로 넘겨 보기</button>
-<span class="small">12장 · 장을 누르면 크게 보고, 화살표 키로 넘긴다</span>
+<span class="small">10장 · 슬라이드를 누르면 크게 보고, 화살표 키로 넘긴다</span>
 </div>
 </div>
 <div class="slides">
 <div class="slide-item" id="s1">
 <div class="slide-frame">
 <section id="cover" data-transition="fade" style="background:#F6F5F1;color:#17181C;font-family:'Paperlogy', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:center;gap:28px">
-<img src="../../assets/img/combat_shockring_top.webp" alt="고리 전투방을 위에서 본 모습. 가운데 노란 I자 낮은 엄폐물과 그 둘레의 파란 높은 엄폐물이 보인다" style="position:absolute;left:880px;top:0;width:1040px;height:1080px;object-fit:cover">
+<img src="../../assets/img/map_combat_shockring_top.webp" alt="고리 전투방을 위에서 본 모습. 가운데에 노란 I자 낮은 엄폐물이 있고, 외벽을 따라 전기 함정이 놓여 있다" style="position:absolute;left:960px;top:0;width:960px;height:1080px;object-fit:cover">
 <p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;letter-spacing:3px;color:#0077A3;width:680px">레벨 기획서</p>
 <h1 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:112px;font-weight:400;line-height:1;color:#17181C;width:700px">EDGE<br>RUNNERS</h1>
-<p style="font-size:34px;line-height:1.45;color:#17181C;width:660px">사이버펑크 2077을 탑다운 로그라이트로 재구성한 게임.<br>빌드를 시험하는 방을 어떻게 그리고 배치했는지 다룬다.</p>
+<p style="font-size:34px;line-height:1.45;color:#17181C;width:810px">사이버펑크 2077을 탑다운 로그라이트로 재구성한 게임.<br>이 문서는 맵 구조, 방 종류, 등장 순서, 보스를 다룬다.</p>
 <div style="display:flex;flex-direction:column;gap:6px;width:660px">
 <p style="font-size:26px;color:#5B606B">[지원자 이름]</p>
 <p style="font-size:26px;color:#5B606B">1인 개발, Godot 4.7.2, 2026.08.21 – 10.21</p>
@@ -41,32 +41,46 @@
 
 </section>
 </div>
-<p class="slide-note"><span class="num">1</span>개요 기획서에서 갈라져 나온 레벨 세부 기획서입니다. 방을 그리는 격자 도면과 맵 편집기, 맵 카탈로그, 첫 판의 학습 순서와 웨이브, 방 종류, 보스를 다룹니다. 숲길 튜토리얼은 따로 정리합니다. 오른쪽 그림은 손그림에서 옮긴 고리 전투방을 위에서 찍은 렌더입니다.</p>
+<div class="slide-note"><div class="n-head"><span class="num">01</span><div class="n-lead">
+<p class="n-key">레벨 기획서는 방을 만드는 도구와 규칙, 방 종류별 도면, 첫 런의 등장 순서, 방 종류와 보스를 다룹니다.</p>
+</div></div>
+<div class="n-grid c1">
+<div class="n-box wide"><h3>다루는 내용</h3>
+<div class="n-cards"><div><b>도면과 편집기</b><span>손그림에서 격자 도면, 실제 플레이까지</span></div><div><b>맵 목록</b><span>전투방 3개, 엘리트방 2개, ??? 방 2개, 보스방 1개</span></div><div><b>등장 순서와 웨이브</b><span>방 번호에 따라 나오는 장치, 웨이브 구성</span></div><div><b>방 종류와 보스</b><span>방별 보상과 비용, 체간과 2페이즈</span></div></div>
+</div>
+<div class="n-box"><h3>함께 보는 문서</h3>
+<ul>
+<li>공격 예고 규칙과 전투 수치는 <a href="combat.html">전투 규칙</a>에 있다.</li>
+<li>숲길 세 단계는 <a href="tutorial.html">튜토리얼</a>에서 다룬다.</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="slide-item" id="s2">
 <div class="slide-frame">
 <section id="flow" data-transition="fade" style="background:#F6F5F1;color:#17181C;font-family:'Paperlogy', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:44px">
 <div style="display:flex;flex-direction:column;gap:10px">
 <p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;letter-spacing:2px;color:#0077A3">01  레벨 제작 과정</p>
-<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">손그림에서 격자 도면을 거쳐 실제 플레이까지</h2>
+<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">레벨은 손그림, 격자 도면, 실제 플레이 순서로 만든다</h2>
 </div>
 <div style="display:flex;flex-direction:row;gap:16px;align-items:start">
 <div style="display:flex;flex-direction:column;gap:16px;width:500px">
-<img src="../../assets/img/combat_1.webp" alt="전투방 두 개의 손그림. 높은 엄폐는 하늘색, 낮은 엄폐는 노랑, 전기 발판은 보라, 보상 위치는 초록으로 칠했다" style="width:500px;height:370px;object-fit:contain;background:#FFFFFF;border-radius:12px;border:1px solid #D9D7CF">
+<img src="../../assets/img/combat_1.webp" alt="전투방 두 개의 손그림. 높은 엄폐는 하늘색, 낮은 엄폐는 노랑, 전기 함정은 보라, 보상 위치는 초록으로 칠했다" style="width:500px;height:370px;object-fit:contain;background:#FFFFFF;border-radius:12px;border:1px solid #D9D7CF">
 <p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:28px;color:#17181C">손그림</p>
-<p style="font-size:25px;line-height:1.55;color:#3E434D">엄폐물과 전기 발판, 보상 위치를 색으로 칠했다.<br>그림 아래에 노리는 플레이를 적었다.</p>
+<p style="font-size:25px;line-height:1.55;color:#3E434D">엄폐물과 전기 함정, 보상 위치를 색으로 칠한다.<br>그림 아래에 의도한 플레이를 적는다.</p>
 </div>
 <div style="display:flex;flex-direction:column;justify-content:center;height:370px"><x-shape kind="arrow-right" style="width:48px;height:28px;background:#9AA0AA"></x-shape></div>
 <div style="display:flex;flex-direction:column;gap:16px;width:500px">
-<img src="../../assets/img/combat_pinwheel_top.webp" alt="격자 도면으로 지은 바람개비 전투방을 위에서 본 렌더. 가운데 교차점에서 파란 엄폐물 네 팔이 돌아가며 붙어 있다" style="width:500px;height:370px;object-fit:contain;background:#17181C;border-radius:12px">
+<img src="../../assets/img/map_combat_pinwheel_top.webp" alt="격자 도면으로 만든 바람개비 전투방을 위에서 본 모습. 가운데 전기 함정을 중심으로 높은 엄폐물 네 개가 엇갈려 놓여 있다" style="width:500px;height:370px;object-fit:contain;background:#0E0E14;border-radius:12px">
 <p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:28px;color:#17181C">격자 도면</p>
-<p style="font-size:25px;line-height:1.55;color:#3E434D">맵 편집기에서 한 칸 2m 격자로 옮겼다.<br>20×15칸이 그대로 40×30m 방이 된다.</p>
+<p style="font-size:25px;line-height:1.55;color:#3E434D">맵 편집기에서 한 칸 2m 격자로 옮긴다.<br>20×15칸이 그대로 40×30m 방이 된다.</p>
 </div>
 <div style="display:flex;flex-direction:column;justify-content:center;height:370px"><x-shape kind="arrow-right" style="width:48px;height:28px;background:#9AA0AA"></x-shape></div>
 <div style="display:flex;flex-direction:column;gap:16px;width:500px">
-<img src="../../assets/img/combat_pinwheel_play.webp" alt="같은 바람개비 방을 실제 플레이 시점으로 본 모습" style="width:500px;height:370px;object-fit:cover;border-radius:12px">
+<img src="../../assets/img/map_combat_pinwheel_play.webp" alt="같은 바람개비 방의 게임 화면. 플레이어가 가운데 전기 함정 옆에 서 있고 주변에 적과 드론이 있다" style="width:500px;height:370px;object-fit:cover;border-radius:12px">
 <p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:28px;color:#17181C">실제 플레이</p>
-<p style="font-size:25px;line-height:1.55;color:#3E434D">편집기에서 Enter를 누르면 그 자리에서 방을 다시 지어 바로 싸워 본다.</p>
+<p style="font-size:25px;line-height:1.55;color:#3E434D">편집기에서 Enter를 누르면 그 자리에서 방을 다시 생성해 바로 전투를 시험한다.</p>
 </div>
 </div>
 <p style="position:absolute;left:128px;bottom:64px;width:800px;font-size:24px;color:#8A8F99">EDGERUNNERS 레벨 기획서</p>
@@ -74,18 +88,42 @@
 
 </section>
 </div>
-<p class="slide-note"><span class="num">2</span>손그림의 첫 번째 방은 바람개비, 두 번째 방은 고리 전투방이 됐습니다. 그림 아래에는 “플레이어가 지속적으로 빙글빙글 돌며 적을 처치하도록 설계”, “바깥으로 붙어서 도는 플레이는 방지하기 위함”처럼 노린 플레이를 적어 두었습니다. 좌표를 코드에 적어 두면 고칠 때마다 빌드를 다시 돌려야 하고 배치를 눈으로 볼 수 없어서, 방은 격자 도면으로 그리게 했습니다. 도면으로 그리면 방 전체가 한 화면에 들어옵니다. 도면은 텍스트나 이미지 파일로도 쓸 수 있고, 게임 안 맵 편집기로도 찍습니다.</p>
+<div class="slide-note"><div class="n-head"><span class="num">02</span><div class="n-lead">
+<p class="n-key">방은 손그림으로 의도를 먼저 정하고, 격자 도면으로 옮긴 뒤 게임 안에서 바로 시험하며 다듬습니다.</p>
+</div></div>
+<div class="n-grid c2">
+<div class="n-box wide"><h3>제작 순서</h3>
+<ol class="n-flow"><li><b>손그림</b><span>엄폐물, 전기 함정, 보상 위치를 색으로 구분하고 의도를 적는다</span></li><li><b>격자 도면</b><span>텍스트, 이미지, 맵 편집기 중 하나로 옮긴다</span></li><li><b>시험</b><span>Enter로 방을 다시 생성해 바로 전투해 본다</span></li><li><b>수정</b><span>저장할 때마다 수정 이력이 함께 기록된다</span></li></ol>
+</div>
+<div class="n-box"><h3>손그림에 적은 의도</h3>
+<div class="n-table"><table>
+<tr><th>방</th><th>손그림 메모</th></tr>
+<tr><td>바람개비</td><td>“엄폐물과 함정의 밸런스”</td></tr>
+<tr><td>바람개비</td><td>“플레이어가 지속적으로 빙글빙글 돌며 적을 처치하도록 설계”</td></tr>
+<tr><td>고리</td><td>“바깥으로 붙어서 도는 플레이는 방지하기 위함”</td></tr>
+<tr><td>고리</td><td>“가운데 I자 엄폐물은 적절히 활용하여 적을 따돌리는 것을 유도”</td></tr>
+</table></div>
+</div>
+<div class="n-box"><h3>도면으로 그리는 이유</h3>
+<ul>
+<li>좌표를 코드에 직접 적으면 수정할 때마다 다시 빌드해야 한다.</li>
+<li>코드 좌표로는 배치를 눈으로 확인할 수 없다.</li>
+<li>도면은 방 전체가 한 화면에 들어온다.</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="slide-item" id="s3">
 <div class="slide-frame">
 <section id="grid" data-transition="fade" style="background:#F6F5F1;color:#17181C;font-family:'Paperlogy', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:44px">
 <div style="display:flex;flex-direction:column;gap:10px">
 <p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;letter-spacing:2px;color:#0077A3">02  격자 규칙</p>
-<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">도면만 보고도 대시로 넘을 곳을 셀 수 있다</h2>
+<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">도면만 보고도 대시로 넘을 수 있는 곳을 알 수 있다</h2>
 </div>
 <div style="display:flex;flex-direction:row;gap:64px;align-items:start">
 <div style="display:flex;flex-direction:column;gap:18px;width:600px">
-<svg aria-label="바람개비 전투방의 격자 도면. 가운데 전기 함정 두 칸을 중심으로 높은 엄폐물 네 팔이 90도씩 돌아가며 붙고, 네 귀퉁이에 높은 엄폐물과 낮은 엄폐물이 대각으로 엇갈려 있다. 보상 자리 두 칸은 가운데 아래에 있다" width="600" height="450" viewBox="0 0 600 450"><rect x="0" y="0" width="600" height="450" fill="#FFFFFF"/><path d="M30 0V450M60 0V450M90 0V450M120 0V450M150 0V450M180 0V450M210 0V450M240 0V450M270 0V450M300 0V450M330 0V450M360 0V450M390 0V450M420 0V450M450 0V450M480 0V450M510 0V450M540 0V450M570 0V450M0 30H600M0 60H600M0 90H600M0 120H600M0 150H600M0 180H600M0 210H600M0 240H600M0 270H600M0 300H600M0 330H600M0 360H600M0 390H600M0 420H600" stroke="#E4E2DA" stroke-width="1"/><rect x="60" y="60" width="90" height="30" fill="#3D9BE9"/><rect x="60" y="90" width="30" height="30" fill="#3D9BE9"/><rect x="300" y="90" width="30" height="90" fill="#3D9BE9"/><rect x="150" y="180" width="120" height="30" fill="#3D9BE9"/><rect x="330" y="210" width="120" height="30" fill="#3D9BE9"/><rect x="270" y="240" width="30" height="60" fill="#3D9BE9"/><rect x="420" y="360" width="90" height="30" fill="#3D9BE9"/><rect x="420" y="60" width="90" height="30" fill="#F2C230"/><rect x="480" y="90" width="30" height="30" fill="#F2C230"/><rect x="60" y="330" width="30" height="30" fill="#F2C230"/><rect x="60" y="360" width="90" height="30" fill="#F2C230"/><rect x="270" y="210" width="60" height="30" fill="#B44FE8"/><rect x="270" y="330" width="60" height="30" fill="#2E9E52"/><rect x="0.5" y="0.5" width="599" height="449" fill="none" stroke="#9AA0AA" stroke-width="1"/></svg>
+<svg aria-label="바람개비 전투방의 격자 도면. 가운데 전기 함정 두 칸을 중심으로 높은 엄폐물 네 개가 바람개비처럼 엇갈려 놓여 있고, 네 귀퉁이에 높은 엄폐물과 낮은 엄폐물이 대각선으로 엇갈려 있다. 보상 자리 두 칸은 가운데 아래에 있다" width="600" height="450" viewBox="0 0 600 450"><rect x="0" y="0" width="600" height="450" fill="#FFFFFF"/><path d="M30 0V450M60 0V450M90 0V450M120 0V450M150 0V450M180 0V450M210 0V450M240 0V450M270 0V450M300 0V450M330 0V450M360 0V450M390 0V450M420 0V450M450 0V450M480 0V450M510 0V450M540 0V450M570 0V450M0 30H600M0 60H600M0 90H600M0 120H600M0 150H600M0 180H600M0 210H600M0 240H600M0 270H600M0 300H600M0 330H600M0 360H600M0 390H600M0 420H600" stroke="#E4E2DA" stroke-width="1"/><rect x="60" y="60" width="90" height="30" fill="#3D9BE9"/><rect x="60" y="90" width="30" height="30" fill="#3D9BE9"/><rect x="300" y="90" width="30" height="90" fill="#3D9BE9"/><rect x="150" y="180" width="120" height="30" fill="#3D9BE9"/><rect x="330" y="210" width="120" height="30" fill="#3D9BE9"/><rect x="270" y="240" width="30" height="60" fill="#3D9BE9"/><rect x="420" y="360" width="90" height="30" fill="#3D9BE9"/><rect x="420" y="60" width="90" height="30" fill="#F2C230"/><rect x="480" y="90" width="30" height="30" fill="#F2C230"/><rect x="60" y="330" width="30" height="30" fill="#F2C230"/><rect x="60" y="360" width="90" height="30" fill="#F2C230"/><rect x="270" y="210" width="60" height="30" fill="#B44FE8"/><rect x="270" y="330" width="60" height="30" fill="#2E9E52"/><rect x="0.5" y="0.5" width="599" height="449" fill="none" stroke="#9AA0AA" stroke-width="1"/></svg>
 <div style="display:flex;flex-direction:row;flex-wrap:wrap;gap:20px;align-items:center">
 <div style="display:flex;flex-direction:row;gap:10px;align-items:center"><div style="width:24px;height:24px;background:#3D9BE9;border-radius:4px"></div><p style="font-size:24px;color:#3E434D">높은 엄폐</p></div>
 <div style="display:flex;flex-direction:row;gap:10px;align-items:center"><div style="width:24px;height:24px;background:#F2C230;border-radius:4px"></div><p style="font-size:24px;color:#3E434D">낮은 엄폐</p></div>
@@ -95,10 +133,10 @@
 <p style="font-size:24px;color:#5B606B">바람개비 전투방의 격자 도면 (20×15칸)</p>
 </div>
 <div style="display:flex;flex-direction:column;width:1000px">
-<div style="display:flex;flex-direction:row;gap:24px;padding:20px 0;border-bottom:1px solid #D9D7CF"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;line-height:1.4;width:250px;color:#0077A3">한 칸 2m<br>대시 3.5m</p><p style="font-size:25px;line-height:1.5;width:726px;color:#3E434D">혼자 선 엄폐물 한 칸은 대시로 넘고, 붙은 두 칸에서는 막힌다.<br>대시 거리는 이동속도와 상관없이 3.5m로 고정했다.</p></div>
-<div style="display:flex;flex-direction:row;gap:24px;padding:20px 0;border-bottom:1px solid #D9D7CF"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;line-height:1.4;width:250px;color:#0077A3">문 통로</p><p style="font-size:25px;line-height:1.5;width:726px;color:#3E434D">문 앞 차선에 놓은 엄폐물은 아무 표시 없이 빠진다.<br>통로는 최소 두 칸(4m)으로 낸다.</p></div>
-<div style="display:flex;flex-direction:row;gap:24px;padding:20px 0;border-bottom:1px solid #D9D7CF"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;line-height:1.4;width:250px;color:#0077A3">보상 자리 칸</p><p style="font-size:25px;line-height:1.5;width:726px;color:#3E434D">전투가 끝나면 좌대가 설 칸을 도면에 직접 찍는다.<br>안 찍으면 방 한가운데에 선다.</p></div>
-<div style="display:flex;flex-direction:row;gap:24px;padding:20px 0;border-bottom:1px solid #D9D7CF"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;line-height:1.4;width:250px;color:#0077A3">방 크기</p><p style="font-size:25px;line-height:1.5;width:726px;color:#3E434D">격자 크기가 그대로 방 크기가 된다.<br>바람개비와 고리는 손그림 비율 4:3에 맞춰 40×30m로 그렸다.</p></div>
+<div style="display:flex;flex-direction:row;gap:24px;padding:20px 0;border-bottom:1px solid #D9D7CF"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;line-height:1.4;width:250px;color:#0077A3">한 칸 2m<br>대시 3.5m</p><p style="font-size:25px;line-height:1.5;width:726px;color:#3E434D">낮은 엄폐물 한 칸은 대시로 넘을 수 있고, 두 칸은 넘을 수 없다.<br>대시 거리는 이동 속도와 상관없이 3.5m로 고정이다.</p></div>
+<div style="display:flex;flex-direction:row;gap:24px;padding:20px 0;border-bottom:1px solid #D9D7CF"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;line-height:1.4;width:250px;color:#0077A3">문 통로</p><p style="font-size:25px;line-height:1.5;width:726px;color:#3E434D">문 앞 통로에 놓은 엄폐물은 별도 표시 없이 제거된다.<br>통로는 최소 두 칸(4m)으로 낸다.</p></div>
+<div style="display:flex;flex-direction:row;gap:24px;padding:20px 0;border-bottom:1px solid #D9D7CF"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;line-height:1.4;width:250px;color:#0077A3">보상 자리</p><p style="font-size:25px;line-height:1.5;width:726px;color:#3E434D">보상 좌대 위치는 F 칸으로 정한다.<br>지정하지 않으면 좌대가 방 한가운데에 놓인다.</p></div>
+<div style="display:flex;flex-direction:row;gap:24px;padding:20px 0;border-bottom:1px solid #D9D7CF"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;line-height:1.4;width:250px;color:#0077A3">방 크기</p><p style="font-size:25px;line-height:1.5;width:726px;color:#3E434D">격자 크기대로 방 크기가 정해진다.<br>바람개비와 고리는 40×30m로 넉넉하게 만든다.</p></div>
 </div>
 </div>
 <p style="position:absolute;left:128px;bottom:64px;width:800px;font-size:24px;color:#8A8F99">EDGERUNNERS 레벨 기획서</p>
@@ -106,38 +144,91 @@
 
 </section>
 </div>
-<p class="slide-note"><span class="num">3</span>대시 3.5m는 엄폐물 한 칸(0.8 + 2 + 0.5 = 3.3m)을 넘는 거리를 기준으로 정했습니다. 거리가 이동속도를 따라 늘면 사이버웨어 하나 때문에 도면이 맞지 않게 되므로, 속도만 이동속도 × 2.1로 둡니다. 통로를 두 칸으로 내는 이유는 내비게이션 반지름이 0.75m라서 2m 한 칸 통로가 실제로는 0.5m가 되기 때문입니다. 문 앞 엄폐물이 빠지는 것은 통로가 막히면 방을 나갈 수 없어서입니다. 벽은 높은 엄폐물과 같은 층이라 대시로 넘을 수 있지만 높이가 4m라 시야와 총알을 끊습니다. 그래서 벽은 길을 막기보다 보이지 않는 구간을 만드는 데 씁니다. 전기 함정은 늘 켜져 있고, 대시로는 두 칸까지 피해 없이 넘지만 걸어서 밟으면 0.3초마다 7.8씩 들어옵니다. 폭발물은 방마다 3개이고, 찍지 않으면 동선을 막지 않는 자리에 무작위로 놓습니다. 방 크기는 도면마다 다르고, 코드 기본방은 32×26m, 엘리트 손맵은 60×30m와 38×38m입니다.</p>
+<div class="slide-note"><div class="n-head"><span class="num">03</span><div class="n-lead">
+<p class="n-key">격자 한 칸과 대시 거리를 맞춰 두어서, 도면의 칸 수만으로 이동과 회피를 계산할 수 있습니다.</p>
+</div></div>
+<div class="n-grid c3">
+<div class="n-box wide"><h3>대시 거리의 기준</h3>
+<div class="n-svg"><svg viewBox="0 0 600 190" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="14">
+<line x1="20" y1="140" x2="390" y2="140" stroke="#D9D7CF" stroke-width="2"/>
+<rect x="100" y="100" width="200" height="40" fill="#F2C230" fill-opacity="0.55" stroke="#5B606B" stroke-width="1.5"/>
+<text x="200" y="125" fill="#17181C" text-anchor="middle">낮은 엄폐물 1칸 (2m)</text>
+<circle cx="20" cy="130" r="9" fill="#0077A3"/>
+<path d="M20,95 Q195,20 370,95" fill="none" stroke="#0077A3" stroke-width="3"/>
+<path d="M370,95 L356,84 L360,99 Z" fill="#0077A3"/>
+<text x="195" y="40" fill="#0077A3" text-anchor="middle" font-size="16">대시 3.5m</text>
+<line x1="350" y1="132" x2="350" y2="148" stroke="#C2185B" stroke-width="2"/>
+<line x1="20" y1="162" x2="100" y2="162" stroke="#5B606B"/>
+<line x1="100" y1="162" x2="300" y2="162" stroke="#5B606B"/>
+<line x1="300" y1="162" x2="350" y2="162" stroke="#5B606B"/>
+<text x="60" y="182" fill="#5B606B" text-anchor="middle">0.8m</text>
+<text x="200" y="182" fill="#5B606B" text-anchor="middle">2m</text>
+<text x="325" y="182" fill="#5B606B" text-anchor="middle">0.5m</text>
+<text x="495" y="118" fill="#17181C" text-anchor="middle">넘는 데 필요한 거리 3.3m</text>
+<text x="495" y="142" fill="#5B606B" text-anchor="middle">대시 3.5m 안에 들어간다</text>
+</svg>
+</div>
+<ul>
+<li>엄폐물 앞 0.8m, 칸 2m, 착지 0.5m를 더하면 3.3m다.</li>
+<li>두 칸이 붙어 있으면 대시로 넘을 수 없다.</li>
+<li>더 멀리 가려면 다리 사이버웨어가 필요하다.</li>
+</ul>
+</div>
+<div class="n-box"><h3>통로와 문</h3>
+<ul>
+<li>내비게이션 반지름이 0.75m라서, 한 칸(2m) 통로는 실제로 0.5m가 된다.</li>
+<li>그래서 통로는 최소 두 칸(4m)으로 낸다.</li>
+<li>문 앞 통로가 막히면 방을 나갈 수 없어서, 그 자리의 엄폐물은 제거된다.</li>
+</ul>
+</div>
+<div class="n-box"><h3>그 밖의 칸</h3>
+<div class="n-table"><table>
+<tr><th>칸</th><th>규칙</th></tr>
+<tr><td>벽 (<code>X</code>)</td><td>대시로 넘을 수 있다. 높이 4m라 시야와 총알을 막는다</td></tr>
+<tr><td>전기 함정 (<code>z</code>)</td><td>항상 켜져 있다. 대시로 2칸까지 피해 없이 넘고, 걸으면 0.3초마다 7.8 피해</td></tr>
+<tr><td>폭발물</td><td>방마다 3개. 배치하지 않으면 동선을 막지 않는 곳에 무작위로 놓는다</td></tr>
+<tr><td>보상 자리 (<code>F</code>)</td><td>가운데를 채우는 배치에서는 꼭 지정한다</td></tr>
+</table></div>
+</div>
+<div class="n-box"><h3>벽의 용도</h3>
+<ul>
+<li>벽 뒤의 적은 플레이어를 보지도 쏘지도 못한다.</li>
+<li>그래서 벽은 길을 막기보다 시야가 가려지는 구간을 만드는 데 쓴다.</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="slide-item" id="s4">
 <div class="slide-frame">
 <section id="editor" data-transition="fade" style="background:#ECEBE6;color:#17181C;font-family:'Paperlogy', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:40px">
 <div style="display:flex;flex-direction:column;gap:10px">
 <p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;letter-spacing:2px;color:#0077A3">03  맵 편집기</p>
-<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">도면을 그린 자리에서 바로 방을 지어 싸워 본다</h2>
+<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">맵 편집기에서 그린 방을 바로 플레이해 볼 수 있다</h2>
 </div>
 <div style="display:flex;flex-direction:row;gap:16px;align-items:stretch">
 <div style="display:flex;flex-direction:column;gap:10px;width:356px;background:#FFFFFF;padding:28px;border-radius:12px;border:1px solid #D9D7CF">
 <p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#0077A3">1</p>
 <h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;color:#17181C">그린다</h3>
-<p style="font-size:24px;line-height:1.5;color:#5B606B">붓 14개로 칸을 칠한다.<br>격자는 12×10칸에서 30×22칸까지다.</p>
+<p style="font-size:24px;line-height:1.5;color:#5B606B">붓 14개로 칸을 칠한다.<br>격자는 12×10칸에서 30×22칸까지 쓸 수 있다.</p>
 </div>
 <div style="display:flex;flex-direction:column;justify-content:center"><x-shape kind="arrow-right" style="width:48px;height:28px;background:#9AA0AA"></x-shape></div>
 <div style="display:flex;flex-direction:column;gap:10px;width:356px;background:#FFFFFF;padding:28px;border-radius:12px;border:1px solid #D9D7CF">
 <p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#0077A3">2</p>
 <h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;color:#17181C">태그를 켠다</h3>
-<p style="font-size:24px;line-height:1.5;color:#5B606B">전투, 엘리트, ???, 훈련장, 보스 중에서 1~5 키로 켠다.<br>태그로 어느 방에 뽑힐지가 정해진다.</p>
+<p style="font-size:24px;line-height:1.5;color:#5B606B">전투, 엘리트, ???, 훈련장, 보스 태그를 1~5 키로 켠다.<br>태그에 따라 어느 방 종류의 후보가 될지 정해진다.</p>
 </div>
 <div style="display:flex;flex-direction:column;justify-content:center"><x-shape kind="arrow-right" style="width:48px;height:28px;background:#9AA0AA"></x-shape></div>
 <div style="display:flex;flex-direction:column;gap:10px;width:356px;background:#FFFFFF;padding:28px;border-radius:12px;border:1px solid #D9D7CF">
 <p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#0077A3">3</p>
-<h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;color:#17181C">싸워 본다</h3>
-<p style="font-size:24px;line-height:1.5;color:#5B606B">Enter를 누르면 그 자리에서 방을 다시 지어 바로 싸운다.</p>
+<h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;color:#17181C">시험한다</h3>
+<p style="font-size:24px;line-height:1.5;color:#5B606B">Enter를 누르면 그 자리에서 방을 다시 생성해 바로 전투를 시험한다.</p>
 </div>
 <div style="display:flex;flex-direction:column;justify-content:center"><x-shape kind="arrow-right" style="width:48px;height:28px;background:#9AA0AA"></x-shape></div>
 <div style="display:flex;flex-direction:column;gap:10px;width:356px;background:#FFFFFF;padding:28px;border-radius:12px;border:1px solid #D9D7CF">
 <p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#0077A3">4</p>
 <h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;color:#17181C">저장한다</h3>
-<p style="font-size:24px;line-height:1.5;color:#5B606B">저장할 때마다 고친 내용이 맵별 이력 파일에 쌓인다.</p>
+<p style="font-size:24px;line-height:1.5;color:#5B606B">저장할 때마다 수정 이력이 맵별로 함께 기록된다.</p>
 </div>
 </div>
 <div style="display:flex;flex-direction:row;gap:32px;align-items:stretch">
@@ -157,15 +248,8 @@
 </div>
 </div>
 <div style="display:flex;flex-direction:column;gap:14px;width:992px;background:#FFFFFF;padding:28px;border-radius:12px;border:1px solid #D9D7CF">
-<h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;color:#17181C">이력 파일 (바람개비)</h3>
-<div style="display:flex;flex-direction:column;gap:4px">
-<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#0077A3">v3  09-09 22:45  방을 키웠다</p>
-<p style="font-size:24px;line-height:1.5;color:#3E434D">높은엄폐 +5 (15→20) · 낮은엄폐 +2 (6→8) · 크기 32x26→40x30</p>
-</div>
-<div style="display:flex;flex-direction:column;gap:4px">
-<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#0077A3">v2  09-09 20:30  손그림대로 다시 그렸다</p>
-<p style="font-size:24px;line-height:1.5;color:#3E434D">높은엄폐 -8 (23→15) · 낮은엄폐 0 (6→6) · 보상자리 +2 (0→2)</p>
-</div>
+<h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;color:#17181C">도면에는 구조만 그린다</h3>
+<p style="font-size:24px;line-height:1.6;color:#3E434D">편집기에서는 엄폐물, 벽, 전기 함정, 보상 자리만 그린다.<br>조명, 소품, 외벽은 그 방 종류의 씬이 입힌다.<br>전기 함정은 배치해도 첫 런에서는 8구역 전까지 나오지 않는다.</p>
 </div>
 </div>
 <p style="position:absolute;left:128px;bottom:64px;width:800px;font-size:24px;color:#8A8F99">EDGERUNNERS 레벨 기획서</p>
@@ -173,75 +257,143 @@
 
 </section>
 </div>
-<p class="slide-note"><span class="num">4</span>편집기는 게임 안에서 M이나 F2로 엽니다. 도면은 텍스트나 이미지 파일로도 쓸 수 있습니다. 직접 그린 방을 받는 규칙은 10-07에 정하고 10-16에 다듬었습니다. 편집기에서는 엄폐물, 벽, 전기, 보상 자리 같은 구조만 그리고 방 종류 태그를 켭니다. 조명, 소품, 외벽 같은 분위기는 그 방의 씬이 입히므로 도면에 그릴 필요가 없습니다. 전기 발판은 찍어 두어도 첫 판 8구역 전에는 빠지고, 보스를 한 번 깨면 1방부터 나옵니다. 저장한 슬롯 파일은 커밋합니다. 오른쪽 두 줄은 바람개비 방의 실제 이력 파일에서 옮겼습니다. 저장할 때마다 엄폐물과 보상 자리가 몇 개에서 몇 개로 바뀌었는지가 남습니다.</p>
+<div class="slide-note"><div class="n-head"><span class="num">04</span><div class="n-lead">
+<p class="n-key">맵 편집기는 게임 안에서 열리고, 그린 방을 그 자리에서 다시 생성해 바로 시험할 수 있습니다.</p>
+</div></div>
+<div class="n-grid c2">
+<div class="n-box"><h3>조작</h3>
+<div class="n-table"><table>
+<tr><th>키</th><th>기능</th></tr>
+<tr><td>M, F2</td><td>편집기 열기</td></tr>
+<tr><td>1~5</td><td>방 종류 태그 (전투, 엘리트, ???, 훈련장, 보스)</td></tr>
+<tr><td>Enter</td><td>그 자리에서 방을 다시 생성</td></tr>
+</table></div>
+</div>
+<div class="n-box"><h3>붓 14개</h3>
+<div class="n-cards"><div><b>바닥</b><span>빈 바닥</span></div><div><b>엄폐물</b><span>높은 엄폐물, 낮은 엄폐물, 벽</span></div><div><b>유닛</b><span>적 5종, 시작 위치, 보스</span></div><div><b>장치</b><span>폭발물, 전기 함정, 보상 자리</span></div></div>
+</div>
+<div class="n-box"><h3>텍스트 도면 기호</h3>
+<div class="n-table"><table>
+<tr><th>기호</th><th>뜻</th></tr>
+<tr><td><code>#</code></td><td>높은 엄폐물</td></tr>
+<tr><td><code>o</code></td><td>낮은 엄폐물</td></tr>
+<tr><td><code>X</code></td><td>벽</td></tr>
+<tr><td><code>z</code></td><td>전기 함정</td></tr>
+<tr><td><code>F</code></td><td>보상 자리</td></tr>
+</table></div>
+<ul>
+<li>도면은 텍스트(.txt)나 이미지(.png) 파일로도 만들 수 있다.</li>
+</ul>
+</div>
+<div class="n-box"><h3>첫 런의 전기 함정</h3>
+<ul>
+<li>도면에 배치한 전기 함정은 첫 런 8구역 전까지 나오지 않는다.</li>
+<li>보스를 한 번 처치한 뒤에는 첫 방부터 나온다.</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="slide-item" id="s5">
 <div class="slide-frame">
 <section id="catalog" data-transition="fade" style="background:#F6F5F1;color:#17181C;font-family:'Paperlogy', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:44px">
 <div style="display:flex;flex-direction:column;gap:10px">
-<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;letter-spacing:2px;color:#0077A3">04  맵 카탈로그</p>
-<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">손으로 그린 맵 8개가 방 종류별 후보로 들어간다</h2>
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;letter-spacing:2px;color:#0077A3">04  맵 목록 · 전투방</p>
+<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">전투방은 도면 후보 중 하나를 뽑아 만든다</h2>
 </div>
-<div style="display:flex;flex-direction:row;gap:48px;align-items:start">
-<div style="display:flex;flex-direction:column;gap:28px;width:1000px">
-<div style="display:flex;flex-direction:row;gap:28px;align-items:start">
-<img src="../../assets/img/combat_pinwheel_top.webp" alt="바람개비 전투방을 위에서 본 렌더. 엄폐물 네 팔이 가운데 교차점을 중심으로 돌아가며 붙어 있다" style="width:460px;height:259px;object-fit:contain;background:#17181C;border-radius:12px">
-<div style="display:flex;flex-direction:column;gap:10px;width:512px">
-<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#0077A3">전투방</p>
-<h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;color:#17181C">바람개비</h3>
-<p style="font-size:25px;line-height:1.5;color:#3E434D">네 팔이 교차점을 중심으로 90도씩 돈다.<br>어느 문으로 들어와도 팔 하나가 시야를 끊어서, 돌면서 싸울지를 판단하게 된다.</p>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px">
+<div style="display:flex;flex-direction:column;gap:14px">
+<img src="../../assets/img/map_combat_pinwheel_top.webp" alt="바람개비 전투방을 위에서 본 모습. 가운데 전기 함정을 중심으로 높은 엄폐물 네 개가 바람개비처럼 엇갈려 있다" style="width:528px;height:297px;object-fit:cover;border-radius:12px">
+<h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;color:#17181C">바람개비 · 40×30m</h3>
+<p style="font-size:25px;line-height:1.5;color:#3E434D">높은 엄폐물 네 개를 가운데 기준으로 바람개비처럼 엇갈리게 놓았다.<br>방을 돌면서 싸울지, 가운데 전기 함정을 지나 질러갈지 고민하게 만든다.</p>
 </div>
+<div style="display:flex;flex-direction:column;gap:14px">
+<img src="../../assets/img/map_combat_shockring_top.webp" alt="고리 전투방을 위에서 본 모습. 가운데에 노란 I자 낮은 엄폐물이 있고, 외벽을 따라 전기 함정이 놓여 있다" style="width:528px;height:297px;object-fit:cover;border-radius:12px">
+<h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;color:#17181C">고리 · 40×30m</h3>
+<p style="font-size:25px;line-height:1.5;color:#3E434D">가운데에 낮은 엄폐물을 I자로 놓고, 외벽을 따라 전기 함정을 둘렀다.<br>I자를 끼고 돌며 적을 따돌릴 수 있다.</p>
 </div>
-<div style="display:flex;flex-direction:row;gap:28px;align-items:start">
-<img src="../../assets/img/combat_shockring_top.webp" alt="고리 전투방을 위에서 본 렌더. 가운데에 노란 I자 낮은 엄폐물이 서 있다" style="width:460px;height:259px;object-fit:contain;background:#17181C;border-radius:12px">
-<div style="display:flex;flex-direction:column;gap:10px;width:512px">
-<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#0077A3">전투방</p>
-<h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;color:#17181C">고리</h3>
-<p style="font-size:25px;line-height:1.5;color:#3E434D">가운데 낮은 I자는 총알은 넘어오지만 걸어서는 못 넘는다.<br>벽을 따라 두른 전기가 바깥으로 도는 길을 막아서, 가운데를 끼고 돌며 적을 따돌릴지 고르게 된다.</p>
-</div>
+<div style="display:flex;flex-direction:column;gap:14px">
+<img src="../../assets/img/map_combat_slot03_top.webp" alt="가로로 긴 전투방을 위에서 본 모습. 벽 기둥이 두 줄로 서 있고 사이사이에 전기 함정이 흩어져 있다" style="width:528px;height:297px;object-fit:cover;border-radius:12px">
+<h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;color:#17181C">가로형 · 54×22m</h3>
+<p style="font-size:25px;line-height:1.5;color:#3E434D">가로로 긴 방이다.<br>[기획 의도 한 줄]</p>
 </div>
 </div>
-<div style="display:flex;flex-direction:column;width:616px">
-<div style="display:flex;flex-direction:column;gap:6px;padding:14px 0;border-bottom:1px solid #D9D7CF"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#17181C">전투방 1개 더</p><p style="font-size:24px;line-height:1.5;color:#5B606B">54×22m, 가로로 긴 방.<br>[이 방에서 판단할 것 한 줄]</p></div>
-<div style="display:flex;flex-direction:column;gap:6px;padding:14px 0;border-bottom:1px solid #D9D7CF"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#17181C">엘리트방 2개</p><p style="font-size:24px;line-height:1.5;color:#5B606B">60×30m, 네 귀퉁이를 벽으로 감싼 전기 포켓.<br>38×38m, 테두리 전체에 두른 전기 띠.</p></div>
-<div style="display:flex;flex-direction:column;gap:6px;padding:14px 0;border-bottom:1px solid #D9D7CF"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#17181C">??? 방 2개</p><p style="font-size:24px;line-height:1.5;color:#5B606B">어두운 방이라 작업등과 전기 발판 불빛에 기대 싸운다.</p></div>
-<div style="display:flex;flex-direction:column;gap:6px;padding:14px 0;border-bottom:1px solid #D9D7CF"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#17181C">보스방 1개</p><p style="font-size:24px;line-height:1.5;color:#5B606B">엄폐 칸 12개.<br>두 중심선은 등장 연출 때문에 비운다.</p></div>
-<div style="display:flex;flex-direction:column;gap:6px;padding:14px 0"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#0077A3">코드 기본방 2개</p><p style="font-size:24px;line-height:1.5;color:#5B606B">고정 엄폐물 7개를 둔 기준 방.<br>전투방과 엘리트방 후보로 남겼다.</p></div>
-</div>
+<div style="display:flex;flex-direction:row;gap:16px;align-items:center;padding:20px 28px;background:#ECEBE6;border-radius:12px">
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:25px;width:180px;color:#0077A3">기본 방</p>
+<p style="font-size:25px;line-height:1.5;color:#3E434D">고정 엄폐물 7개를 둔 기준 방도 전투방과 엘리트방 후보에 함께 들어간다.</p>
 </div>
 <p style="position:absolute;left:128px;bottom:64px;width:800px;font-size:24px;color:#8A8F99">EDGERUNNERS 레벨 기획서</p>
 <p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#8A8F99">05</p>
 
 </section>
 </div>
-<p class="slide-note"><span class="num">5</span>손으로 그린 맵은 전투 3, 엘리트 2, ??? 2, 보스 1로 모두 8개입니다. 방에 들어갈 때 그 방 종류의 후보 중 하나를 뽑는데, 태그로 고르고 태그가 없으면 이름 앞머리로 고릅니다. 바람개비 교차점의 전기 함정 두 칸은 질러가려면 치러야 하는 값입니다. 고리는 둘레의 전기가 벽에 붙어 도는 길을 막아서 가운데만 몸을 가릴 곳으로 남습니다. 전투방과 엘리트방은 코드 기본방도 후보로 남겼습니다. 도면을 넣으면서 기존 방을 지우면 후보 수가 늘지 않기 때문입니다. ??? 방은 기본방을 쓰지 않습니다. 가로로 긴 전투방과 엘리트방 두 개는 직접 설계한 방입니다.</p>
+<div class="slide-note"><div class="n-head"><span class="num">05</span><div class="n-lead">
+<p class="n-key">전투방은 도면 세 개와 기본 방 중 하나로 만들고, 도면마다 의도한 동선이 다릅니다.</p>
+</div></div>
+<div class="n-grid c3">
+<div class="n-box wide"><h3>도면별 의도</h3>
+<div class="n-table"><table>
+<tr><th>도면</th><th>크기</th><th>기본 동선</th><th>고민할 요소</th></tr>
+<tr><td>바람개비</td><td>40×30m</td><td>엄폐물이 시야를 가려서 방을 한 바퀴 돈다</td><td>가운데 전기 함정 두 칸으로 질러갈지</td></tr>
+<tr><td>고리</td><td>40×30m</td><td>가운데 I자 엄폐물을 끼고 돈다</td><td>엄폐물을 사이에 두고 적을 따돌릴지</td></tr>
+<tr><td>가로형</td><td>54×22m</td><td>[기획 의도 한 줄]</td><td>[기획 의도 한 줄]</td></tr>
+<tr><td>기본 방</td><td>32×26m</td><td>고정 엄폐물 7개</td><td>특별한 장치 없이 기본기로 싸운다</td></tr>
+</table></div>
+</div>
+<div class="n-box"><h3>바람개비의 지름길</h3>
+<ul>
+<li>가운데 전기 함정 두 칸은 지름길이다.</li>
+<li>지나가려면 대시를 쓰거나 피해를 감수해야 한다.</li>
+<li>걸어서 지나가면 0.3초마다 7.8 피해를 받는다.</li>
+</ul>
+</div>
+<div class="n-box"><h3>고리의 I자 엄폐물</h3>
+<ul>
+<li>낮은 엄폐물이라 총알은 넘어오지만 걸어서는 넘을 수 없다.</li>
+<li>외벽을 따라 도는 길은 전기 함정이 막고 있다.</li>
+<li>그래서 엄폐할 곳으로는 가운데만 남는다.</li>
+</ul>
+</div>
+<div class="n-box"><h3>후보 구성</h3>
+<ul>
+<li>바람개비와 고리는 문 앞 통로 네 개와 보상 좌대를 두고도 엄폐물을 길게 놓을 공간이 필요해서 40×30m로 만든다.</li>
+<li>도면을 추가하면서 기존 방을 빼면 후보 수가 늘지 않아서, 기본 방도 후보에 넣는다.</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="slide-item" id="s6">
 <div class="slide-frame">
-<section id="v1" data-transition="fade" style="background:#ECEBE6;color:#17181C;font-family:'Paperlogy', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:44px">
+<section id="catalog2" data-transition="fade" style="background:#ECEBE6;color:#17181C;font-family:'Paperlogy', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:40px">
 <div style="display:flex;flex-direction:column;gap:10px">
-<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;letter-spacing:2px;color:#0077A3">05  v1의 실패</p>
-<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">보상 좌대 자리가 도면의 중심을 지우고 있었다</h2>
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;letter-spacing:2px;color:#0077A3">05  맵 목록 · 엘리트, ???, 보스</p>
+<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">엘리트방, ??? 방, 보스방은 도면을 따로 둔다</h2>
 </div>
-<div style="display:flex;flex-direction:row;gap:48px;align-items:start">
-<div style="display:flex;flex-direction:column;gap:16px;width:720px">
-<img src="../../assets/img/combat_1.webp" alt="전투방 두 개의 손그림. 왼쪽은 가운데 십자, 오른쪽은 가운데 I자가 중심이고, 초록 보상 위치는 둘 다 그 아래에 있다" style="width:720px;height:540px;object-fit:contain;background:#FFFFFF;border-radius:12px;border:1px solid #D9D7CF">
-<p style="font-size:24px;line-height:1.5;color:#5B606B">손그림에서는 두 방 모두 가운데 구조물이 중심이고, 보상 위치(초록)는 그 아래에 있다.</p>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:32px">
+<div style="display:flex;flex-direction:column;gap:8px">
+<img src="../../assets/img/map_combat_slot01_top.webp" alt="엘리트방 1을 위에서 본 모습. 가로로 긴 방의 네 귀퉁이에 벽으로 둘러싼 전기 함정 구역이 있다" style="width:528px;height:260px;object-fit:contain;background:#0E0E14;border-radius:12px">
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#17181C">엘리트방 1 · 60×30m</p>
 </div>
-<div style="display:flex;flex-direction:column;gap:16px;width:896px">
-<div style="display:flex;flex-direction:row;gap:24px;align-items:start;background:#FFFFFF;padding:28px;border-radius:12px;border-left:8px solid #C2185B">
-<p style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:36px;line-height:1.1;width:70px;color:#C2185B">v1</p>
-<p style="font-size:25px;line-height:1.5;width:738px;color:#3E434D">좌대가 늘 방 한가운데 서서, 그 자리를 비우느라 도면의 중심(바람개비 십자, I자)을 들어냈다.</p>
+<div style="display:flex;flex-direction:column;gap:8px">
+<img src="../../assets/img/map_combat_slot02_top.webp" alt="엘리트방 2를 위에서 본 모습. 정사각형 방의 테두리 전체에 전기 함정 띠가 둘러져 있다" style="width:528px;height:260px;object-fit:contain;background:#0E0E14;border-radius:12px">
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#17181C">엘리트방 2 · 38×38m</p>
 </div>
-<div style="display:flex;flex-direction:row;gap:24px;align-items:start;background:#FFFFFF;padding:28px;border-radius:12px;border-left:8px solid #0077A3">
-<p style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:36px;line-height:1.1;width:70px;color:#0077A3">v2</p>
-<p style="font-size:25px;line-height:1.5;width:738px;color:#3E434D">보상 자리 칸(F)을 만들어 좌대를 아래로 내리고, 가운데를 그림대로 채웠다.</p>
+<div style="display:flex;flex-direction:column;gap:12px;background:#FFFFFF;padding:24px 28px;border-radius:12px;border:1px solid #D9D7CF">
+<h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:30px;font-weight:400;color:#17181C">엘리트방</h3>
+<p style="font-size:24px;line-height:1.5;color:#3E434D">1번은 네 귀퉁이에 벽으로 둘러싼 전기 함정 구역이 있다.<br>2번은 테두리 전체에 전기 함정 띠를 둘렀다.<br>기본 방도 후보에 들어간다.</p>
 </div>
-<div style="display:flex;flex-direction:row;gap:24px;align-items:start;background:#FFFFFF;padding:28px;border-radius:12px;border-left:8px solid #0077A3">
-<p style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:36px;line-height:1.1;width:70px;color:#0077A3">v3</p>
-<p style="font-size:25px;line-height:1.5;width:738px;color:#3E434D">32×26m에서는 문 앞 통로 넷과 좌대가 방의 절반을 차지해 팔이 뭉툭했다.<br>40×30m로 키우고, 늘어난 자리는 팔 길이와 뒤로 도는 길에 썼다.</p>
+<div style="display:flex;flex-direction:column;gap:8px">
+<img src="../../assets/img/map_combat_slot04_top.webp" alt="??? 방 1을 위에서 본 모습. 어두운 방에 작업등 불빛이 군데군데 비치고 전기 함정이 흩어져 있다" style="width:528px;height:260px;object-fit:contain;background:#0E0E14;border-radius:12px">
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#17181C">??? 방 1 · 어두운 방</p>
 </div>
-<p style="font-size:26px;line-height:1.55;color:#17181C">도면을 렌더로 찍어 손그림 옆에 놓고 나서야 알았다.<br>설계는 그대로 두고 도구 쪽을 고쳤다.</p>
+<div style="display:flex;flex-direction:column;gap:8px">
+<img src="../../assets/img/map_combat_slot05_top.webp" alt="??? 방 2를 위에서 본 모습. 어두운 방에 전기 함정이 길게 이어져 있고 작업등이 바닥 일부만 비춘다" style="width:528px;height:260px;object-fit:contain;background:#0E0E14;border-radius:12px">
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#17181C">??? 방 2 · 어두운 방</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px">
+<img src="../../assets/img/map_combat_slot20_top.webp" alt="보스방을 위에서 본 모습. 엄폐물이 네 귀퉁이 쪽에 대칭으로 놓이고 가운데 십자 방향은 비어 있다" style="width:528px;height:260px;object-fit:contain;background:#0E0E14;border-radius:12px">
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#17181C">보스방 · 엄폐물 12칸</p>
 </div>
 </div>
 <p style="position:absolute;left:128px;bottom:64px;width:800px;font-size:24px;color:#8A8F99">EDGERUNNERS 레벨 기획서</p>
@@ -249,14 +401,41 @@
 
 </section>
 </div>
-<p class="slide-note"><span class="num">6</span>바람개비 v1의 이력에는 “방 한가운데(가로 3줄)는 비웠다. 전투가 끝나면 보상 좌대가 서는 자리다.”라고 적혀 있습니다. 고리 v1도 같은 이유로 가운데 I자를 위아래로 쪼개 놓았습니다. 좌대 자리라는 도구의 제약 때문에 도면의 중심이 빠졌고, 도면 렌더를 손그림과 나란히 놓고 비교하고 나서야 그림과 방이 다르다는 것을 알았습니다. 그래서 격자에 보상 자리 칸을 넣었습니다. 이 결정으로 좌대는 늘 가운데라는 단순함을 버렸고, 이제 방마다 좌대 자리를 찍어야 합니다(안 찍으면 여전히 가운데에 섭니다). v3에서 늘어난 자리는 바람개비의 팔 길이(위 세 칸, 좌우 네 칸, 아래 두 칸)와, 귀퉁이 조각을 벽에서 두 칸 떼어 낸 뒤로 도는 길에 썼습니다. 지금은 통로 폭과 문 차선을 검사가 봅니다.</p>
+<div class="slide-note"><div class="n-head"><span class="num">06</span><div class="n-lead">
+<p class="n-key">엘리트방, ??? 방, 보스방은 각각 전용 도면을 두고, ??? 방은 기본 방을 후보에서 뺍니다.</p>
+</div></div>
+<div class="n-grid c2">
+<div class="n-box wide"><h3>방 종류별 후보</h3>
+<div class="n-table"><table>
+<tr><th>방</th><th>후보</th><th>웨이브</th><th>특징</th></tr>
+<tr><td>엘리트방</td><td>도면 2개 + 기본 방</td><td>3</td><td>적이 전원 엘리트</td></tr>
+<tr><td>??? 방</td><td>프로토타입 1, 2</td><td>3</td><td>작업등과 전기 함정 불빛에 의지해 싸운다</td></tr>
+<tr><td>보스방</td><td>보스 도면 1개</td><td>—</td><td>등장 연출을 위해 가로, 세로 중심선을 비운다</td></tr>
+</table></div>
+</div>
+<div class="n-box"><h3>등장 조건</h3>
+<ul>
+<li>엘리트방 문은 첫 런 5번 방부터 나온다.</li>
+<li>??? 방 문은 6구역부터 45% 확률로 나타나서, 만나지 못하는 런도 있다.</li>
+<li>보스방은 휴식방 다음에 오는 런의 마지막 방이다.</li>
+</ul>
+</div>
+<div class="n-box"><h3>보상</h3>
+<ul>
+<li>엘리트방은 좌대 3칸 중 2개를 가져가는 양의 보상이다.</li>
+<li>??? 방은 프로토타입 사이버웨어 3칸 중 1개를 고르는 종류의 보상이다.</li>
+<li>프로토타입에는 부작용이 붙는다.</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="slide-item" id="s7">
 <div class="slide-frame">
 <section id="curriculum" data-transition="fade" style="background:#F6F5F1;color:#17181C;font-family:'Paperlogy', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:32px">
 <div style="display:flex;flex-direction:column;gap:10px">
-<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;letter-spacing:2px;color:#0077A3">06  첫 판의 학습 순서</p>
-<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">방 번호를 따라 새 장치가 하나씩 나온다</h2>
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;letter-spacing:2px;color:#0077A3">06  첫 런의 등장 순서</p>
+<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">새 장치는 방 번호에 따라 하나씩 등장한다</h2>
 </div>
 <div style="display:flex;flex-direction:row;gap:16px;align-items:start">
 <div style="display:flex;flex-direction:column;gap:10px;align-items:center;width:124px"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:28px;width:64px;height:64px;line-height:64px;text-align:center;background:#17181C;color:#FFFFFF;border-radius:32px">1</p><p style="font-size:24px;text-align:center;width:124px;color:#3E434D">엄폐물<br>벽</p></div>
@@ -276,54 +455,81 @@
 <div style="display:flex;flex-direction:column;gap:12px">
 <img src="../../assets/img/hazard_cover.webp" alt="엄폐물 설명창. 노란 낮은 엄폐물과 파란 높은 엄폐물을 3D로 띄워 보여 준다" style="width:398px;height:224px;object-fit:cover;border-radius:12px">
 <p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#17181C"><span style="color:#0077A3">1</span>  엄폐물</p>
-<p style="font-size:24px;line-height:1.5;color:#3E434D">총알을 막는 자리와 시야가 끊기는 자리가 있다.</p>
+<p style="font-size:24px;line-height:1.5;color:#3E434D">총알을 막아 주는 곳과 시야가 가려지는 곳이 있다.</p>
 </div>
 <div style="display:flex;flex-direction:column;gap:12px">
 <img src="../../assets/img/hazard_bomb.webp" alt="폭발물 설명창. 붉은 폭발물 통을 3D로 띄워 보여 준다" style="width:398px;height:224px;object-fit:cover;border-radius:12px">
 <p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#17181C"><span style="color:#0077A3">2</span>  폭발물</p>
-<p style="font-size:24px;line-height:1.5;color:#3E434D">지형을 무기로 쓴다.</p>
+<p style="font-size:24px;line-height:1.5;color:#3E434D">지형지물을 무기로 쓴다.</p>
 </div>
 <div style="display:flex;flex-direction:column;gap:12px">
 <img src="../../assets/img/hazard_elite.webp" alt="엘리트 설명창. 돌진형과 저격형 기업 요원을 3D로 띄워 보여 준다" style="width:398px;height:224px;object-fit:cover;border-radius:12px">
 <p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#17181C"><span style="color:#0077A3">5</span>  엘리트</p>
-<p style="font-size:24px;line-height:1.5;color:#3E434D">예고를 보고 피한다.</p>
+<p style="font-size:24px;line-height:1.5;color:#3E434D">공격 예고를 보고 피한다.</p>
 </div>
 <div style="display:flex;flex-direction:column;gap:12px">
-<img src="../../assets/img/hazard_shock.webp" alt="전기 함정 설명창. 붉은 전기 발판을 3D로 띄워 보여 준다" style="width:398px;height:224px;object-fit:cover;border-radius:12px">
+<img src="../../assets/img/hazard_shock.webp" alt="전기 함정 설명창. 붉은 전기 함정 모델을 3D로 띄워 보여 준다" style="width:398px;height:224px;object-fit:cover;border-radius:12px">
 <p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#17181C"><span style="color:#0077A3">8</span>  전기 함정</p>
-<p style="font-size:24px;line-height:1.5;color:#3E434D">머무를 수 없는 칸이 지형을 가른다.</p>
+<p style="font-size:24px;line-height:1.5;color:#3E434D">전기 함정 위에는 오래 머무를 수 없다.</p>
 </div>
 </div>
-<p style="font-size:25px;line-height:1.55;color:#3E434D">처음 만나는 장치는 실물을 3D로 띄운 설명창이 한 번 뜬다.<br>이 순서는 첫 판에만 지키고, 보스를 한 번 깨면 처음부터 다 나온다.</p>
+<p style="font-size:25px;line-height:1.55;color:#3E434D">장치를 처음 만나면 실제 모델을 3D로 띄운 설명창이 한 번 뜬다.<br>이 순서는 첫 런에만 적용하고, 보스를 한 번 처치하면 처음부터 모든 장치가 나온다.</p>
 <p style="position:absolute;left:128px;bottom:64px;width:800px;font-size:24px;color:#8A8F99">EDGERUNNERS 레벨 기획서</p>
 <p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#8A8F99">07</p>
 
 </section>
 </div>
-<p class="slide-note"><span class="num">7</span>3번 방부터 잡졸의 30%가 무기에 빛이 도는 속성 적으로 나오고, 방의 40%에는 메딕이 섭니다. 상태 이상을 거는 적과 고치는 적을 먼저 끊는 법을 여기서 배웁니다. 4번 방부터는 드론 방이 50%로 나오는데, 엄폐물 위로 나는 적이라 엄폐물이 통하지 않습니다. 6번 방부터 ??? 방 문이 45% 확률로 뜨고, 어둡고 어려운 대신 프로토타입을 줍니다. 설명창은 글만으로는 화면의 어느 덩어리가 그 장치인지 알기 어려워서 실제 물건을 3D로 띄워 보여 줍니다. 엄폐물, 벽, 폭발물, 엘리트, 전기 함정, 메딕, 드론, 속성, 상태 이상, 레벨, 명상에 창이 있습니다. 엄폐물 창은 10-20부터 엄폐물이 실제로 선 방에서만 뜹니다. 설정값 대신 방에 놓인 실물을 세어서 정합니다.</p>
+<div class="slide-note"><div class="n-head"><span class="num">07</span><div class="n-lead">
+<p class="n-key">첫 런에서는 새 장치를 방 번호에 맞춰 하나씩 보여 주고, 처음 만날 때 설명창으로 알려 줍니다.</p>
+</div></div>
+<div class="n-grid c2">
+<div class="n-box wide"><h3>방 번호별로 배우는 것</h3>
+<div class="n-table"><table>
+<tr><th>방</th><th>처음 나오는 것</th><th>배우는 것</th></tr>
+<tr><td>1</td><td>엄폐물, 벽</td><td>총알을 막아 주는 곳과 시야가 가려지는 곳이 있다</td></tr>
+<tr><td>2</td><td>폭발물</td><td>지형지물을 무기로 쓴다</td></tr>
+<tr><td>3</td><td>속성 적, 메딕</td><td>무기가 빛나는 적은 상태 이상을 건다. 아군을 회복시키는 메딕부터 처치한다</td></tr>
+<tr><td>4</td><td>드론 방</td><td>엄폐물 위로 날아다니는 적에게는 엄폐물이 소용없다</td></tr>
+<tr><td>5</td><td>엘리트방 문</td><td>공격 예고를 보고 피한다</td></tr>
+<tr><td>6</td><td>??? 방 문</td><td>어둡고 어려운 대신 프로토타입을 준다</td></tr>
+<tr><td>8</td><td>전기 함정</td><td>전기 함정이 지형을 나누고, 그 위에는 오래 머무를 수 없다</td></tr>
+</table></div>
+</div>
+<div class="n-box"><h3>등장 확률</h3>
+<div class="n-stats"><div><b>30%</b><span>속성 적 비율 (일반 적 중)</span></div><div><b>40%</b><span>메딕이 나오는 방</span></div><div><b>50%</b><span>드론 방</span></div><div><b>45%</b><span>??? 방 문</span></div></div>
+</div>
+<div class="n-box"><h3>설명창</h3>
+<ul>
+<li>글만으로는 화면의 어떤 물체가 그 장치인지 알기 어려워서 실제 모델을 띄운다.</li>
+<li>엄폐물, 벽, 폭발물, 엘리트, 전기 함정, 메딕, 드론, 속성, 상태 이상, 레벨, 명상에 설명창이 있다.</li>
+<li>엄폐물 설명창은 엄폐물이 실제로 놓인 방에서만 뜬다.</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="slide-item" id="s8">
 <div class="slide-frame">
 <section id="waves" data-transition="fade" style="background:#ECEBE6;color:#17181C;font-family:'Paperlogy', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:44px">
 <div style="display:flex;flex-direction:column;gap:10px">
 <p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;letter-spacing:2px;color:#0077A3">07  웨이브</p>
-<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">모든 방을 최소 두 웨이브로 늘렸다</h2>
+<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">모든 방은 최소 두 웨이브로 진행된다</h2>
 </div>
 <div style="display:flex;flex-direction:row;gap:48px;align-items:start">
 <div style="display:flex;flex-direction:column;gap:14px;width:800px">
-<img src="../../assets/img/portfolio_crowd.webp" alt="한 웨이브의 적들이 플레이어를 사방에서 둘러싸고, 적마다 주황 예고 범위와 빨간 타이밍이 플레이어 쪽으로 뻗어 있다" style="width:800px;height:520px;object-fit:cover;border-radius:12px">
-<p style="font-size:24px;line-height:1.5;color:#5B606B">한 웨이브가 사방에서 조여 온다.<br>적마다 예고가 따로 차오른다.</p>
+<img src="../../assets/img/portfolio_crowd.webp" alt="한 웨이브의 적들이 플레이어를 사방에서 둘러싸고, 적마다 주황 공격 범위와 빨간 판정 시점 표시가 플레이어 쪽으로 뻗어 있다" style="width:800px;height:520px;object-fit:cover;border-radius:12px">
+<p style="font-size:24px;line-height:1.5;color:#5B606B">한 웨이브의 적이 사방에서 다가온다.<br>적마다 공격 예고가 따로 표시된다.</p>
 </div>
 <div style="display:flex;flex-direction:column;gap:28px;width:816px">
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px">
 <div style="display:flex;flex-direction:column;gap:8px"><p style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:96px;line-height:1;color:#0077A3">2</p><p style="font-size:26px;line-height:1.45;color:#3E434D">모든 방의 최소 웨이브</p></div>
-<div style="display:flex;flex-direction:column;gap:8px"><p style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:96px;line-height:1;color:#17181C">3</p><p style="font-size:26px;line-height:1.45;color:#3E434D">엘리트방과 ??? 방</p></div>
+<div style="display:flex;flex-direction:column;gap:8px"><p style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:96px;line-height:1;color:#17181C">3</p><p style="font-size:26px;line-height:1.45;color:#3E434D">엘리트방과 ??? 방의 웨이브</p></div>
 <div style="display:flex;flex-direction:column;gap:8px"><p style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:96px;line-height:1;color:#17181C">7~9</p><p style="font-size:26px;line-height:1.45;color:#3E434D">웨이브당 적 수</p></div>
 <div style="display:flex;flex-direction:column;gap:8px"><p style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:96px;line-height:1;color:#17181C">×1.8</p><p style="font-size:26px;line-height:1.45;color:#3E434D">넓은 방의 최대 배율</p></div>
 </div>
-<div style="display:flex;flex-direction:column;gap:12px;padding:36px;background:#FFFFFF;border-radius:12px;border-left:8px solid #C2185B">
-<h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:34px;font-weight:400;color:#17181C">예전</h3>
-<p style="font-size:26px;line-height:1.55;color:#3E434D">3방 아래는 한 웨이브라서, 처음 두 방은 “들어가서 몇 대 치면 끝”이었다.<br>자리를 다시 잡을 일이 없으니 엄폐물도 대시도 배울 기회가 없었다.</p>
+<div style="display:flex;flex-direction:column;gap:12px;padding:36px;background:#FFFFFF;border-radius:12px;border-left:8px solid #0077A3">
+<h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:34px;font-weight:400;color:#17181C">웨이브를 나눈 이유</h3>
+<p style="font-size:26px;line-height:1.55;color:#3E434D">웨이브가 바뀔 때마다 위치를 다시 잡아야 한다.<br>그래서 첫 방부터 엄폐물과 대시를 쓸 일이 생긴다.</p>
 </div>
 </div>
 </div>
@@ -332,36 +538,57 @@
 
 </section>
 </div>
-<p class="slide-note"><span class="num">8</span>웨이브당 적은 7, 8, 9명입니다. 방이 넓으면 최대 1.8배까지 늘고, 메딕이 서면 2명이 더 나옵니다. 엘리트방과 ??? 방은 세 웨이브입니다. 예전에는 3번째 방 아래가 한 웨이브라서 처음 두 방이 들어가서 몇 대 치면 끝났고, 자리를 다시 잡을 일이 없으니 엄폐물도 대시도 배울 기회가 없었습니다. 그래서 1번 방부터 최소 두 웨이브로 늘렸고, 다음 웨이브가 들어오면 자리를 다시 잡게 됩니다. 웨이브당 적 수는 10-07에 4~8명이었고, 10-09에 14~18마리까지 늘렸다가 “너무 많다, 절반”이라는 판단으로 10-10에 7~9마리로 줄였습니다.</p>
+<div class="slide-note"><div class="n-head"><span class="num">08</span><div class="n-lead">
+<p class="n-key">모든 방을 두 웨이브 이상으로 나눠서, 전투 중에 위치를 다시 잡는 상황을 만듭니다.</p>
+</div></div>
+<div class="n-grid c2">
+<div class="n-box"><h3>웨이브 수</h3>
+<div class="n-table"><table>
+<tr><th>방</th><th>웨이브</th></tr>
+<tr><td>전투가 있는 방</td><td>최소 2</td></tr>
+<tr><td>엘리트방, ??? 방</td><td>3</td></tr>
+</table></div>
+</div>
+<div class="n-box"><h3>첫 방부터 두 웨이브인 이유</h3>
+<ul>
+<li>웨이브가 한 번뿐이면 처음 자리에서 전투가 끝나 엄폐물과 대시를 쓸 일이 없다.</li>
+<li>두 번째 웨이브에서 위치를 다시 잡으면서 1번 방의 엄폐물과 대시를 바로 쓰게 된다.</li>
+</ul>
+</div>
+<div class="n-box wide"><h3>적 수 계산</h3>
+<ol class="n-flow"><li><b>기본</b><span>웨이브당 7, 8, 9명</span></li><li><b>방 넓이</b><span>넓은 방은 최대 ×1.8</span></li><li><b>메딕</b><span>메딕이 나오면 +2</span></li></ol>
+</div>
+</div>
+</div>
 </div>
 <div class="slide-item" id="s9">
 <div class="slide-frame">
 <section id="rooms" data-transition="fade" style="background:#F6F5F1;color:#17181C;font-family:'Paperlogy', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:40px">
 <div style="display:flex;flex-direction:column;gap:10px">
 <p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;letter-spacing:2px;color:#0077A3">08  방 종류</p>
-<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">방마다 주는 것과 받는 값을 다르게 나눴다</h2>
+<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">방 종류는 보상과 비용으로 구분한다</h2>
 </div>
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px">
 <div style="display:flex;flex-direction:column;gap:12px;background:#FFFFFF;padding:28px 32px;border-radius:12px;border:1px solid #D9D7CF">
-<h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;color:#17181C">싸우는 방</h3>
+<h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;color:#17181C">전투가 있는 방</h3>
 <div style="display:flex;flex-direction:column">
-<div style="display:flex;flex-direction:row;gap:20px;padding:10px 0;border-top:1px solid #E4E2DA"><div style="display:flex;flex-direction:column;gap:6px;align-items:start;width:150px"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#17181C">전투방</p><p style="font-size:24px;padding:0 10px;background:#ECEBE6;border-radius:6px;color:#5B606B">무료</p></div><p style="font-size:24px;line-height:1.5;width:582px;color:#3E434D">보상 좌대 2칸 중 하나를 고른다.<br>사이버웨어나 레벨업이 대부분이다.</p></div>
-<div style="display:flex;flex-direction:row;gap:20px;padding:10px 0;border-top:1px solid #E4E2DA"><div style="display:flex;flex-direction:column;gap:6px;align-items:start;width:150px"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#17181C">엘리트방</p><p style="font-size:24px;padding:0 10px;background:#ECEBE6;border-radius:6px;color:#5B606B">무료</p></div><p style="font-size:24px;line-height:1.5;width:582px;color:#3E434D">적이 전원 정예라 어렵다.<br>좌대 3칸 중 2개를 가져간다.</p></div>
-<div style="display:flex;flex-direction:row;gap:20px;padding:10px 0;border-top:1px solid #E4E2DA"><div style="display:flex;flex-direction:column;gap:6px;align-items:start;width:150px"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#17181C">??? 방</p><p style="font-size:24px;padding:0 10px;background:#ECEBE6;border-radius:6px;color:#5B606B">무료</p></div><p style="font-size:24px;line-height:1.5;width:582px;color:#3E434D">아주 어렵고 어둡다.<br>프로토타입 3칸 중 1개를 주고, 부작용이 붙는다.</p></div>
+<div style="display:flex;flex-direction:row;gap:20px;padding:10px 0;border-top:1px solid #E4E2DA"><div style="display:flex;flex-direction:column;gap:6px;align-items:start;width:150px"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#17181C">전투방</p><p style="font-size:24px;padding:0 10px;background:#ECEBE6;border-radius:6px;color:#5B606B">무료</p></div><p style="font-size:24px;line-height:1.5;width:582px;color:#3E434D">보상 좌대 2칸 중 1개를 고른다.<br>대부분 사이버웨어나 레벨업이다.</p></div>
+<div style="display:flex;flex-direction:row;gap:20px;padding:10px 0;border-top:1px solid #E4E2DA"><div style="display:flex;flex-direction:column;gap:6px;align-items:start;width:150px"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#17181C">엘리트방</p><p style="font-size:24px;padding:0 10px;background:#ECEBE6;border-radius:6px;color:#5B606B">무료</p></div><p style="font-size:24px;line-height:1.5;width:582px;color:#3E434D">적이 전원 엘리트라 어렵다.<br>좌대 3칸 중 2개를 가져간다.</p></div>
+<div style="display:flex;flex-direction:row;gap:20px;padding:10px 0;border-top:1px solid #E4E2DA"><div style="display:flex;flex-direction:column;gap:6px;align-items:start;width:150px"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#17181C">??? 방</p><p style="font-size:24px;padding:0 10px;background:#ECEBE6;border-radius:6px;color:#5B606B">무료</p></div><p style="font-size:24px;line-height:1.5;width:582px;color:#3E434D">매우 어렵고 어둡다.<br>프로토타입 3칸 중 1개를 얻고, 부작용이 붙는다.</p></div>
 <div style="display:flex;flex-direction:row;gap:20px;padding:10px 0;border-top:1px solid #E4E2DA"><div style="display:flex;flex-direction:column;gap:6px;align-items:start;width:150px"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#17181C">훈련장</p><p style="font-size:24px;padding:0 10px;background:#ECEBE6;border-radius:6px;color:#5B606B">무료</p></div><p style="font-size:24px;line-height:1.5;width:582px;color:#3E434D">문에 적힌 무기로 고정해 싸운다.<br>그 무기의 카드 둘과 속성 변환 중 1개를 고른다.</p></div>
-<div style="display:flex;flex-direction:row;gap:20px;padding:10px 0;border-top:1px solid #E4E2DA"><div style="display:flex;flex-direction:column;gap:6px;align-items:start;width:150px"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#17181C">보스방</p></div><p style="font-size:24px;line-height:1.5;width:582px;color:#3E434D">판의 끝이다.</p></div>
+<div style="display:flex;flex-direction:row;gap:20px;padding:10px 0;border-top:1px solid #E4E2DA"><div style="display:flex;flex-direction:column;gap:6px;align-items:start;width:150px"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#17181C">보스방</p></div><p style="font-size:24px;line-height:1.5;width:582px;color:#3E434D">런의 마지막 방이다.</p></div>
 </div>
 </div>
 <div style="display:flex;flex-direction:column;gap:12px;background:#FFFFFF;padding:28px 32px;border-radius:12px;border:1px solid #D9D7CF">
-<h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;color:#17181C">싸우지 않는 방</h3>
+<h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;color:#17181C">전투가 없는 방</h3>
 <div style="display:flex;flex-direction:column">
 <div style="display:flex;flex-direction:row;gap:20px;padding:10px 0;border-top:1px solid #E4E2DA"><div style="display:flex;flex-direction:column;gap:6px;align-items:start;width:150px"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#17181C">연구실</p><p style="font-size:24px;padding:0 10px;background:#ECEBE6;border-radius:6px;color:#5B606B">무료</p></div><p style="font-size:24px;line-height:1.5;width:582px;color:#3E434D">문에 적힌 부위의 사이버웨어를 준다.</p></div>
 <div style="display:flex;flex-direction:row;gap:20px;padding:10px 0;border-top:1px solid #E4E2DA"><div style="display:flex;flex-direction:column;gap:6px;align-items:start;width:150px"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#17181C">상점</p><p style="font-size:24px;padding:0 10px;background:#FBE3EC;border-radius:6px;color:#A3154C">코인</p></div><p style="font-size:24px;line-height:1.5;width:582px;color:#3E434D">수치(스탯)와 카드를 판다.</p></div>
-<div style="display:flex;flex-direction:row;gap:20px;padding:10px 0;border-top:1px solid #E4E2DA"><div style="display:flex;flex-direction:column;gap:6px;align-items:start;width:150px"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#17181C">리퍼닥</p><p style="font-size:24px;padding:0 10px;background:#FBE3EC;border-radius:6px;color:#A3154C">코인</p></div><p style="font-size:24px;line-height:1.5;width:582px;color:#3E434D">몸을 고친다.<br>치료, 레벨업, 부작용 제거, 새 사이버웨어.</p></div>
-<div style="display:flex;flex-direction:row;gap:20px;padding:10px 0;border-top:1px solid #E4E2DA"><div style="display:flex;flex-direction:column;gap:6px;align-items:start;width:150px"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#17181C">휴식방</p><p style="font-size:24px;padding:0 10px;background:#ECEBE6;border-radius:6px;color:#5B606B">무료</p></div><p style="font-size:24px;line-height:1.5;width:582px;color:#3E434D">보스 바로 앞에 있다.<br>체력을 60% 회복하고, 노점 1칸이 선다.</p></div>
+<div style="display:flex;flex-direction:row;gap:20px;padding:10px 0;border-top:1px solid #E4E2DA"><div style="display:flex;flex-direction:column;gap:6px;align-items:start;width:150px"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#17181C">리퍼닥</p><p style="font-size:24px;padding:0 10px;background:#FBE3EC;border-radius:6px;color:#A3154C">코인</p></div><p style="font-size:24px;line-height:1.5;width:582px;color:#3E434D">치료와 사이버웨어 정비를 맡는다.<br>치료, 레벨업, 부작용 제거, 새 사이버웨어.</p></div>
+<div style="display:flex;flex-direction:row;gap:20px;padding:10px 0;border-top:1px solid #E4E2DA"><div style="display:flex;flex-direction:column;gap:6px;align-items:start;width:150px"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#17181C">휴식방</p><p style="font-size:24px;padding:0 10px;background:#ECEBE6;border-radius:6px;color:#5B606B">무료</p></div><p style="font-size:24px;line-height:1.5;width:582px;color:#3E434D">보스 직전에 있다.<br>체력을 60% 회복하고, 노점 1칸이 있다.</p></div>
 </div>
 <div style="display:flex;flex-direction:column;gap:8px;background:#F6F5F1;padding:20px 24px;border-radius:8px">
-<p style="font-size:24px;line-height:1.5;color:#17181C">문에 방 종류와 부위가 적혀 있어서, 빈 부위를 채울 문을 골라 길을 정한다.</p>
+<p style="font-size:24px;line-height:1.5;color:#17181C">문에 방 종류와 보상 부위가 표시된다.<br>비어 있는 슬롯에 맞춰 경로를 고를 수 있다.</p>
 </div>
 </div>
 </div>
@@ -370,19 +597,60 @@
 
 </section>
 </div>
-<p class="slide-note"><span class="num">9</span>방을 나눈 기준은 무엇을 주고 그 대가로 무엇을 받는가입니다. 두 방이 같은 것을 같은 값에 준다면 둘 중 하나는 있을 이유가 없다고 봤습니다. 전투방 좌대는 사이버웨어와 레벨업이 대부분이고, 스탯 30%와 구급상자 12%로 한 칸이 바뀝니다. 리퍼닥 가격은 레벨업 Lv2 300, Lv3 500, 부작용 제거 600, 새 사이버웨어 350입니다. 상점과 리퍼닥은 둘 다 코인을 쓰지만 상점은 수치를 팔고 리퍼닥은 몸을 고칩니다. 칸은 둘 다 팔지 않고 시설 작업대의 영구 강화로만 엽니다. 갈림길에는 문이 2~3개 있고, 그중 한 칸이 특수방이 될 확률은 78%입니다. 상점은 3, 6, 9방 중 한 번, 연구실은 60%로 나옵니다. ??? 방은 6구역부터 45% 확률로 뜹니다. 못 만나는 판도 있어야 만났을 때 기억에 남기 때문입니다. 리퍼닥은 등장만 보장해서, 문에 한 번도 안 떴으면 12구역에서 한 칸을 리퍼닥에 내줍니다. 문이 화면 밖에 있어도 가장자리 화살표가 방향과 보상을 알려 줍니다.</p>
+<div class="slide-note"><div class="n-head"><span class="num">09</span><div class="n-lead">
+<p class="n-key">방 종류는 주는 보상과 그 비용으로 구분해서, 같은 보상을 같은 비용에 주는 방이 둘 생기지 않게 했습니다.</p>
+</div></div>
+<div class="n-grid c3">
+<div class="n-box wide"><h3>보상 방식 비교</h3>
+<div class="n-table"><table>
+<tr><th>방</th><th>보상 방식</th><th>세부</th></tr>
+<tr><td>전투방</td><td>기본</td><td>좌대 2칸 중 1개. 한 칸이 30% 확률로 스탯, 12% 확률로 구급상자</td></tr>
+<tr><td>엘리트방</td><td>양</td><td>좌대 3칸 중 2개</td></tr>
+<tr><td>??? 방</td><td>종류</td><td>프로토타입 3칸 중 1개, 부작용이 붙는다</td></tr>
+<tr><td>훈련장</td><td>무기</td><td>그 무기의 카드 둘 + 속성 변환, 3칸 중 1개</td></tr>
+</table></div>
+</div>
+<div class="n-box"><h3>코인을 쓰는 방</h3>
+<div class="n-table"><table>
+<tr><th>리퍼닥</th><th>비용</th></tr>
+<tr><td>레벨업 Lv2</td><td>300</td></tr>
+<tr><td>레벨업 Lv3</td><td>500</td></tr>
+<tr><td>부작용 제거</td><td>600</td></tr>
+<tr><td>새 사이버웨어</td><td>350</td></tr>
+</table></div>
+<ul>
+<li>상점은 수치를 팔고, 리퍼닥은 치료와 사이버웨어 정비를 맡는다.</li>
+<li>슬롯은 둘 다 팔지 않고, 시설 작업대의 영구 강화로만 연다.</li>
+</ul>
+</div>
+<div class="n-box"><h3>갈림길 확률</h3>
+<div class="n-stats"><div><b>2~3</b><span>갈림길의 문 수</span></div><div><b>78%</b><span>그중 하나가 특수방일 확률</span></div><div><b>60%</b><span>연구실이 나올 확률</span></div></div>
+<ul>
+<li>상점은 3, 6, 9구역 중 한 번 나온다.</li>
+<li>리퍼닥이 그때까지 나오지 않았으면 12구역 갈림길에서 문 하나가 리퍼닥으로 바뀐다.</li>
+</ul>
+</div>
+<div class="n-box"><h3>문과 좌대 표시</h3>
+<ul>
+<li><code>연구실 · 팔</code>, <code>훈련장 · 카타나</code>처럼 방과 보상을 함께 표시한다.</li>
+<li>문이 화면 밖에 있으면 화면 가장자리 화살표가 방향과 보상을 알려 준다.</li>
+<li>좌대가 화면 밖에 있으면 금색 화살표로 알려 준다.</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="slide-item" id="s10">
 <div class="slide-frame">
 <section id="boss" data-transition="fade" style="background:#ECEBE6;color:#17181C;font-family:'Paperlogy', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:44px">
 <div style="display:flex;flex-direction:column;gap:10px">
 <p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;letter-spacing:2px;color:#0077A3">09  보스</p>
-<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">체간을 무너뜨려야 크게 들어가는 기업 히트맨</h2>
+<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">보스는 체간을 무너뜨려야 큰 피해를 줄 수 있다</h2>
 </div>
 <div style="display:flex;flex-direction:row;gap:48px;align-items:start">
 <div style="display:flex;flex-direction:column;gap:14px;width:960px">
-<img src="../../assets/img/portfolio_boss.webp" alt="보스 2페이즈. 붉은 잔상을 끌며 파고든 히트맨이 칼을 들었고, 플레이어 앞 주황 부채꼴 예고 안에 빨간 타이밍이 차오르고 있다" style="width:960px;height:540px;object-fit:cover;border-radius:12px">
-<p style="font-size:24px;line-height:1.5;color:#5B606B">2페이즈의 보스가 붉은 잔상을 끌며 파고들어 칼을 들었다.<br>주황은 맞는 범위, 빨강은 맞는 순간이다.</p>
+<img src="../../assets/img/portfolio_boss.webp" alt="보스 2페이즈. 붉은 잔상을 남기며 다가온 기업 히트맨이 칼을 들었고, 플레이어 앞 주황 부채꼴 예고 안에 빨간 판정 시점 표시가 차오르고 있다" style="width:960px;height:540px;object-fit:cover;border-radius:12px">
+<p style="font-size:24px;line-height:1.5;color:#5B606B">2페이즈의 보스가 붉은 잔상을 남기며 다가와 칼을 들었다.<br>주황은 공격 범위, 빨강은 판정 시점이다.</p>
 </div>
 <div style="display:flex;flex-direction:column;gap:24px;width:656px">
 <div style="display:flex;flex-direction:column;gap:10px">
@@ -401,11 +669,11 @@
 <x-shape kind="arrow-right" style="width:40px;height:22px;background:#9AA0AA"></x-shape>
 <p style="font-size:24px;padding:8px 18px;background:#0077A3;border-radius:8px;color:#FFFFFF">F로 처형</p>
 </div>
-<p style="font-size:24px;line-height:1.5;color:#5B606B">처형 피해는 최대 체력의 5.5% × 내 피해 배율이다.</p>
+<p style="font-size:24px;line-height:1.5;color:#5B606B">처형 피해는 최대 체력의 5.5% × 플레이어의 피해 배율이다.</p>
 </div>
 <div style="display:flex;flex-direction:column">
-<div style="display:flex;flex-direction:column;gap:6px;padding:12px 0;border-top:1px solid #D9D7CF"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#0077A3">2페이즈</p><p style="font-size:24px;line-height:1.5;color:#3E434D">이동은 1.12배, 피해는 1.3배로 늘고 예고는 0.7배로 짧아진다.<br>산데비스탄 돌진, 어둠 기습, 전기 장판이 더해진다.</p></div>
-<div style="display:flex;flex-direction:column;gap:6px;padding:12px 0;border-top:1px solid #D9D7CF"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#0077A3">잡기</p><p style="font-size:24px;line-height:1.5;color:#3E434D">1페이즈는 리볼버 3발과 돌려차기, 2페이즈는 8연타와 공중 발차기로 이어진다.</p></div>
+<div style="display:flex;flex-direction:column;gap:6px;padding:12px 0;border-top:1px solid #D9D7CF"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#0077A3">2페이즈</p><p style="font-size:24px;line-height:1.5;color:#3E434D">이동 속도 ×1.12, 피해 ×1.3, 공격 예고 시간 ×0.7이 적용된다.<br>산데비스탄 돌진, 어둠 기습, 전기 장판 같은 패턴이 추가된다.</p></div>
+<div style="display:flex;flex-direction:column;gap:6px;padding:12px 0;border-top:1px solid #D9D7CF"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#0077A3">잡기</p><p style="font-size:24px;line-height:1.5;color:#3E434D">1페이즈는 리볼버 3발과 돌려차기로, 2페이즈는 8연타와 공중 발차기로 이어진다.</p></div>
 </div>
 </div>
 </div>
@@ -414,76 +682,43 @@
 
 </section>
 </div>
-<p class="slide-note"><span class="num">10</span>보스는 판의 끝에 서는 하나뿐인 적입니다. 공격 예고는 일반 적과 같은 방식으로 읽힙니다. 받는 피해가 평소 70% 줄어서, 체간을 무너뜨려야 크게 들어갑니다. 패턴은 거리표(4.5m, 11m)를 바탕으로 고르고, 붙어 있으면 밀쳐 쏘기, 3m 안이면 돌아 베기, 9m 밖이면 굴러 들기로 플레이어를 읽습니다. 잡기는 대기시간 11초의 특수기이고, 칼과 리볼버, 수류탄을 섞는 연계가 22%로 끼어듭니다. 2페이즈 전환은 2.2초 무적 연출로, 무릎을 꿇었다가 산데비스탄을 켜고 일어선 뒤 암전과 몸 발광이 이어집니다. 산데비스탄 돌진은 6m 밖에서 나오고, 어둠 기습에는 미끼 분신 둘이 따라옵니다. 체력은 1200에서 3000을 거쳐 2000으로 정했습니다.</p>
+<div class="slide-note"><div class="n-head"><span class="num">10</span><div class="n-lead">
+<p class="n-key">보스는 평소 받는 피해를 크게 줄이고, 체간을 무너뜨린 뒤 처형으로 큰 피해를 주도록 설계했습니다.</p>
+</div></div>
+<div class="n-grid c3">
+<div class="n-box wide"><h3>전투 흐름</h3>
+<ol class="n-flow"><li><b>체간 쌓기</b><span>공격해서 체간을 채운다 (최대 900)</span></li><li><b>무너짐</b><span>체간이 차면 5초 동안 무릎을 꿇는다</span></li><li><b>처형</b><span>F로 최대 체력의 5.5% × 플레이어의 피해 배율</span></li><li><b>2페이즈</b><span>체력 50%에서 2.2초 무적 전환 뒤 강화된다</span></li></ol>
 </div>
-<div class="slide-item" id="s11">
-<div class="slide-frame">
-<section id="bossplan" data-transition="fade" style="background:#F6F5F1;color:#17181C;font-family:'Paperlogy', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:44px">
-<div style="display:flex;flex-direction:column;gap:10px">
-<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;letter-spacing:2px;color:#0077A3">10  보스 개선안</p>
-<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">10-14 개선안에서 넣은 것과 덜어 낸 것</h2>
+<div class="n-box"><h3>패턴 선택</h3>
+<div class="n-table"><table>
+<tr><th>조건</th><th>패턴</th></tr>
+<tr><td>붙어 있음</td><td>밀쳐 쏘기</td></tr>
+<tr><td>3m 안</td><td>돌아 베기</td></tr>
+<tr><td>9m 밖</td><td>굴러 들기</td></tr>
+<tr><td>쿨타임 11초</td><td>잡기</td></tr>
+<tr><td>22% 확률</td><td>혼합 연계</td></tr>
+</table></div>
+<ul>
+<li>거리 구간 4.5m, 11m를 기준으로 기본 패턴을 고른다.</li>
+<li>공격 예고는 일반 적과 같은 규칙을 따른다.</li>
+</ul>
 </div>
-<div style="display:flex;flex-direction:row;gap:48px;align-items:start">
-<div style="display:flex;flex-direction:column;gap:14px;width:800px">
-<img src="../../assets/img/portfolio_boss_alt.webp" alt="2페이즈로 넘어가는 순간. 녹색 충격파 고리 안에서 보스의 몸이 빛나고 있다" style="width:800px;height:500px;object-fit:cover;border-radius:12px">
-<p style="font-size:24px;line-height:1.5;color:#5B606B">체력 50%에서 2페이즈로 넘어가는 순간이다.<br>2.2초 무적 전환 연출 뒤 방이 어두워지고 몸이 빛난다.</p>
+<div class="n-box"><h3>2페이즈에 추가되는 패턴</h3>
+<div class="n-cards"><div><b>산데비스탄 돌진</b><span>6m 밖에서 쓴다</span></div><div><b>어둠 기습</b><span>미끼 분신 둘이 함께 나온다</span></div><div><b>기 터뜨리기</b></div><div><b>전기 장판</b></div><div><b>난동</b></div></div>
 </div>
-<div style="display:flex;flex-direction:column;gap:20px;width:816px;background:#FFFFFF;padding:32px 36px;border-radius:12px;border:1px solid #D9D7CF">
-<div style="display:flex;flex-direction:column;gap:8px">
-<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#0077A3">들어간 것</p>
-<p style="font-size:24px;line-height:1.5;color:#3E434D">든 채 멈추는 예고, 패턴마다 다른 몸짓<br>무릎 꿇는 붕괴, 50% 전환 연출<br>플레이어 읽기, 산데비스탄 거리 11m → 6m<br>체간 상시 감소, 1초 피해 상한, 전기 장판</p>
-</div>
-<div style="display:flex;flex-direction:column;gap:8px">
-<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#17181C">모양을 바꾼 것</p>
-<p style="font-size:24px;line-height:1.5;color:#3E434D">분신 협공은 맴돌다 멈추지 않는 돌진(어둠 기습)으로<br>총 반동, 저격총, 움찔, 옆걸음은 피격 그림 갈래로</p>
-</div>
-<div style="display:flex;flex-direction:column;gap:8px">
-<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#5B606B">안 한 것</p>
-<p style="font-size:24px;line-height:1.5;color:#3E434D">등장과 죽음 연출, 깨지는 엄폐물</p>
-</div>
-<div style="display:flex;flex-direction:column;gap:8px">
-<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#C2185B">제안에 없던 것</p>
-<p style="font-size:24px;line-height:1.5;color:#3E434D">보스 잡기, 96발 난사, 2페이즈 발차기<br>체간이 무너지면 F로 처형, 쓰러진 보스 무적</p>
-</div>
+<div class="n-box"><h3>2페이즈 전환</h3>
+<ul>
+<li>전환 연출 2.2초 동안은 무적이다.</li>
+<li>전환 뒤에는 방이 어두워지고 보스가 빛난다.</li>
+</ul>
 </div>
 </div>
-<p style="position:absolute;left:128px;bottom:64px;width:800px;font-size:24px;color:#8A8F99">EDGERUNNERS 레벨 기획서</p>
-<p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#8A8F99">11</p>
-
-</section>
 </div>
-<p class="slide-note"><span class="num">11</span>10-14에 “보스전이 모션도 그렇고 패턴도 너무 허접해... 개선안이 필요해”라는 판단에서 출발해, 코드를 고치기 전에 원인부터 제안서로 적었습니다. 예고가 끝나기 전에 휘두르기가 끝나 버렸고, 산데비스탄 패턴은 실측 0%였고, 체간이 빠지지 않았습니다. 그래서 칼을 든 채 멈추는 것이 예고이고 휘두르고 거두는 동안이 판정이라는 몸짓 규칙을 잡졸과 같게 맞췄습니다. 산데비스탄은 11m 넘게 떨어진 때가 사실상 없어서 6m로 당겼습니다. 분신 협공 안은 2페이즈의 어둠 기습이 됐고, 다섯 번 고친 끝에 맴돌다 멈추지 않고 돌진하는 패턴이 됐습니다. 총 반동, 저격총, 움찔, 옆걸음은 넣지 않고, 대신 피격 그림을 베기, 돌격, 발차기 갈래별로 나눴습니다(10-17). 체간이 무너진 보스를 F로 처형하는 것은 제안에 없던 것으로 10-17에 넣었습니다.</p>
-</div>
-<div class="slide-item" id="s12">
-<div class="slide-frame">
-<section id="coverai" data-transition="fade" style="background:#17181C;color:#F6F5F1;font-family:'Paperlogy', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:64px">
-<div style="display:flex;flex-direction:column;gap:10px">
-<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;letter-spacing:2px;color:#5CC8F0">11  되돌린 결정</p>
-<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#F6F5F1">적이 엄폐물에 숨는 AI는 세 번 고친 뒤 지웠다</h2>
-</div>
-<div style="display:flex;flex-direction:row;gap:96px;align-items:start">
-<div style="display:flex;flex-direction:column;gap:20px;width:560px">
-<p style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:140px;line-height:1;color:#F6F5F1"><span style="color:#5CC8F0">4</span> / 14</p>
-<p style="font-size:26px;line-height:1.55;color:#AEB3BC">실제 맵 일곱 방에서 원거리병 14명 가운데 숨을 자리를 찾은 수.</p>
-</div>
-<div style="display:flex;flex-direction:column;width:1008px">
-<div style="display:flex;flex-direction:row;gap:24px;padding:22px 0;border-top:1px solid #3A3D45"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;width:160px;color:#5CC8F0">왜</p><p style="font-size:26px;line-height:1.55;width:824px;color:#F6F5F1">나머지는 벽 앞에서 버벅댔다.<br>반쯤만 도는 기능이라면 빼는 편이 낫다고 봤다.</p></div>
-<div style="display:flex;flex-direction:row;gap:24px;padding:22px 0;border-top:1px solid #3A3D45"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;width:160px;color:#5CC8F0">버린 것</p><p style="font-size:26px;line-height:1.55;width:824px;color:#F6F5F1">적이 엄폐물을 쓰는 전투.</p></div>
-<div style="display:flex;flex-direction:row;gap:24px;padding:22px 0;border-top:1px solid #3A3D45"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;width:160px;color:#5CC8F0">남은 것</p><p style="font-size:26px;line-height:1.55;width:824px;color:#F6F5F1">엄폐물은 플레이어가 어디에 설지 판단하는 장치로만 남는다.</p></div>
-<div style="display:flex;flex-direction:row;gap:24px;padding:22px 0;border-top:1px solid #3A3D45;border-bottom:1px solid #3A3D45"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;width:160px;color:#5CC8F0">확인</p><p style="font-size:26px;line-height:1.55;width:824px;color:#F6F5F1">실제 게임의 방을 돌려서 잰 숫자다.</p></div>
-</div>
-</div>
-<p style="position:absolute;left:128px;bottom:64px;width:800px;font-size:24px;color:#6F737C">EDGERUNNERS 레벨 기획서</p>
-<p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#6F737C">12</p>
-
-</section>
-</div>
-<p class="slide-note"><span class="num">12</span>원거리병이 엄폐물 뒤에 숨는 AI를 세 번 고쳤지만, 실제 맵 일곱 방에서 재 보니 14명 중 4명만 숨을 자리를 찾았습니다. 그때 “엄폐 메커니즘 너무 구현이 어렵다. 그냥 삭제해”라고 정리하고 10-16에 통째로 롤백했습니다. 숫자는 개발용 측정 모드(--dev-probe)로 실제 게임의 방을 돌려 잰 값입니다. 이 결정으로 적이 엄폐물을 쓰는 전투는 버렸고, 엄폐물은 플레이어가 판단할 거리로만 남았습니다. 같은 기준으로 바닥 함정도 전기 함정과 판단이 겹쳐서 게임에서 뺐습니다.</p>
 </div>
 </div>
 <nav class="deck-nav"><a href="system.html">← 시스템 기획서</a> <a href="tutorial.html">튜토리얼 기획서 →</a></nav>
 </main>
-<footer class="foot"><div class="wrap">글꼴: 페이퍼로지(Paperlogy, SIL OFL 1.1)</div></footer>
+<footer class="foot"><div class="wrap">© [이름] · 글꼴: 페이퍼로지(Paperlogy, SIL OFL 1.1)</div></footer>
 </div>
 <div class="present" aria-modal="true" role="dialog">
 <div class="stage"></div>

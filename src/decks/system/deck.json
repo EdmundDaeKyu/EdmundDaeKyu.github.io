@@ -4,11 +4,11 @@
   "lists": "css",
   "title": "Edgerunners 시스템 기획서",
   "cover": "cover",
-  "order": ["cover", "weapons", "parts", "levels", "proto", "hack", "reversal", "growth", "economy", "cards", "cycle"],
+  "order": ["cover", "weapons", "parts", "levels", "proto", "hack", "growth", "economy", "cards", "cycle"],
   "sections": {
-    "s1": {"description": "빌드의 재료인 무기와 사이버웨어 8부위", "start": "cover"},
-    "s2": {"description": "부품이 자라는 방식과 그 구조를 정한 과정", "start": "levels"},
-    "s3": {"description": "판 사이에 남는 성장과 코인, 카드, 회차", "start": "growth"}
+    "s1": {"description": "무기와 사이버웨어 8부위", "start": "cover"},
+    "s2": {"description": "사이버웨어 레벨, 숙련도, 프로토타입, 해킹 모드", "start": "levels"},
+    "s3": {"description": "죽어도 유지되는 성장과 코인, 카드, 회차", "start": "growth"}
   },
   "faces": {
     "paperlogy": {"family": "Paperlogy", "src": "/_blob/97330d7987c4e064d3bdd6ea1753abb7"},

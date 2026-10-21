@@ -26,7 +26,7 @@
 
 /* 스크롤은 body가 아니라 .scroll-root가 맡는다(저장소 규칙: 휠 스크롤이 body에 안 걸리는 환경이 있다) */
 html, body { height: 100%; margin: 0; overflow: hidden; }
-body { background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 17px; line-height: 1.6; }
+body { background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 17px; line-height: 1.6; word-break: keep-all; overflow-wrap: break-word; }
 .scroll-root {
   height: 100%;
   overflow-y: auto;

@@ -7,8 +7,61 @@
 .slides { display: flex; flex-direction: column; gap: 40px; padding: 32px 0 72px; }
 .slide-item { display: flex; flex-direction: column; gap: 14px; scroll-margin-top: 84px; }
 .slide-frame { position: relative; width: 100%; aspect-ratio: 16 / 9; overflow: hidden; border-radius: 10px; border: 1px solid var(--line); background: #FFFFFF; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04); }
-.slide-note { font-size: 15px; line-height: 1.75; color: var(--ink-3); max-width: 920px; }
-.slide-note .num { font-family: var(--semi); color: var(--ink-4); margin-right: 8px; }
+
+/* ── 장 아래 설명: 핵심 문장 + 칸(n-box) 격자 ── */
+.slide-note { display: flex; flex-direction: column; gap: 14px; word-break: keep-all; overflow-wrap: break-word; }
+.n-head { display: flex; gap: 14px; align-items: flex-start; }
+.n-head .num { flex: none; font-family: var(--semi); font-size: 13px; color: #FFFFFF; background: var(--dark); border-radius: 999px; padding: 3px 10px; margin-top: 3px; }
+.n-lead { display: flex; flex-direction: column; gap: 6px; font-size: 16px; line-height: 1.7; color: var(--ink-2); max-width: 980px; }
+.n-lead .n-key, .n-box .n-key { font-family: var(--semi); font-size: 18px; color: var(--ink); line-height: 1.55; }
+.n-grid { display: grid; gap: 14px; }
+.n-grid.c1 { grid-template-columns: minmax(0, 1fr); }
+.n-grid.c2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.n-grid.c3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.n-box { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px 20px 20px; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.n-box.wide { grid-column: 1 / -1; }
+.n-box h3 { font-family: var(--semi); font-size: 17px; color: var(--ink); padding-bottom: 8px; border-bottom: 1px solid var(--line); margin-bottom: 2px; }
+.n-box h4 { font-family: var(--semi); font-size: 14px; color: var(--accent); margin: 6px 0 0; }
+.n-box p, .n-box li { font-size: 15px; line-height: 1.7; color: var(--ink-2); }
+.n-box ul, .n-box ol:not(.n-flow) { margin: 0; padding-left: 1.2em; display: flex; flex-direction: column; gap: 3px; }
+.n-box li::marker { color: var(--ink-4); }
+.n-box code, .n-lead code { font-family: Consolas, "D2Coding", monospace; font-size: 0.9em; background: var(--bg-alt); border-radius: 4px; padding: 1px 5px; }
+.n-box strong, .n-lead strong { font-family: var(--semi); font-weight: 400; color: var(--ink); }
+.n-table { overflow-x: auto; }
+.n-table table { width: 100%; border-collapse: collapse; font-size: 14.5px; }
+.n-table th, .n-table td { text-align: left; padding: 7px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.n-table th:first-child, .n-table td:first-child { white-space: nowrap; }
+.n-table th { font-family: var(--semi); font-weight: 400; color: var(--ink-3); background: var(--bg-alt); }
+.n-table tr:last-child td { border-bottom: none; }
+
+/* 도식: 흐름(화살표로 이은 단계) · 카드 · 큰 숫자 · SVG */
+.n-flow { list-style: none; margin: 4px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px 30px; counter-reset: step; }
+.n-flow li { position: relative; flex: 1 1 140px; min-width: 0; background: var(--bg); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; display: flex; flex-direction: column; gap: 4px; counter-increment: step; }
+.n-flow li::before { content: counter(step); font-family: var(--semi); font-size: 12px; color: var(--accent); }
+.n-flow li + li::after { content: ""; position: absolute; left: -24px; top: 50%; width: 18px; height: 2px; background: var(--ink-4); }
+.n-flow li + li > b::before { content: ""; position: absolute; left: -10px; top: calc(50% - 4px); border: 5px solid transparent; border-left: 6px solid var(--ink-4); border-right: none; }
+.n-flow b, .n-cards b { font-family: var(--semi); font-weight: 400; font-size: 15px; color: var(--ink); }
+.n-flow span, .n-cards span { font-size: 14px; line-height: 1.6; color: var(--ink-3); }
+.n-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 10px; margin-top: 4px; }
+.n-cards > div { background: var(--bg); border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: 8px; padding: 11px 14px; display: flex; flex-direction: column; gap: 3px; }
+.n-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; margin-top: 4px; }
+.n-stats > div { display: flex; flex-direction: column; gap: 2px; padding: 10px 2px; border-top: 2px solid var(--dark); }
+.n-stats b { font-family: var(--bold); font-weight: 400; font-size: 26px; color: var(--ink); line-height: 1.2; }
+.n-stats span { font-size: 13.5px; line-height: 1.5; color: var(--ink-3); }
+.n-svg { margin-top: 4px; color: var(--ink); }
+.n-svg svg { display: block; width: 100%; max-width: 860px; height: auto; max-height: 420px; margin: 0 auto; }
+.n-svg svg text { font-family: var(--body); }
+
+@media (max-width: 900px) {
+  .n-grid.c3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 640px) {
+  .n-grid.c2, .n-grid.c3 { grid-template-columns: minmax(0, 1fr); }
+  .n-flow { flex-direction: column; gap: 22px; }
+  .n-flow li { flex: none; }
+  .n-flow li + li::after { left: 50%; top: -18px; width: 2px; height: 14px; }
+  .n-flow li + li > b::before { left: calc(50% - 4px); top: -8px; border: 5px solid transparent; border-top: 6px solid var(--ink-4); border-bottom: none; }
+}
 
 /* ── 슬라이드 안쪽: Slides 형식의 기본값 ── */
 .slide-frame > section {
@@ -19,6 +72,8 @@
   display: flex; flex-direction: column;
 }
 .slide-frame section, .slide-frame section * { box-sizing: border-box; }
+/* 한글은 어절 단위로 줄을 바꾼다(기본값은 글자 단위라 "찌/른다"처럼 끊긴다) */
+.slide-frame section { word-break: keep-all; overflow-wrap: break-word; }
 .slide-frame section div { display: flex; flex-direction: column; } /* 형식: display가 없는 div는 세로 flex */
 .slide-frame section h1, .slide-frame section h2, .slide-frame section h3,
 .slide-frame section p, .slide-frame section ul, .slide-frame section ol { margin: 0; }

@@ -1,0 +1,47 @@
+<section id="shape" data-transition="fade" style="background:#ECEBE6;color:#17181C;font-family:'Paperlogy', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:44px">
+<div style="display:flex;flex-direction:column;gap:10px">
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;letter-spacing:2px;color:#0077A3">06  공격 예고 표시 수정</p>
+<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">공격 예고 범위를 실제 판정에 맞췄다</h2>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:40px">
+<div style="display:flex;flex-direction:column;gap:20px;background:#FFFFFF;padding:36px;border-radius:12px;border:1px solid #D9D7CF">
+<h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;color:#17181C">범위: 둘레 링에서 전방 부채꼴로</h3>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:40px">
+<div style="display:flex;flex-direction:column;gap:10px">
+<div style="display:flex;flex-direction:column;justify-content:center;align-items:center;height:280px;background:#F6F5F1;border-radius:8px">
+<svg aria-label="적 둘레를 감싼 주황 링. 실제 판정은 그 안의 전방 부채꼴뿐이라 점선으로 표시했다" width="300" height="230" viewBox="0 0 300 230"><circle cx="150" cy="115" r="92" fill="#E07020" fill-opacity="0.22" stroke="#E07020" stroke-width="3"/><path d="M150,115 L225.4,62.2 A92,92 0 0,1 225.4,167.8 Z" fill="none" stroke="#17181C" stroke-width="2.5" stroke-dasharray="7 6"/><line x1="150" y1="115" x2="174" y2="115" stroke="#17181C" stroke-width="6" stroke-linecap="round"/><circle cx="150" cy="115" r="11" fill="#17181C"/></svg>
+</div>
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#5B606B">이전: 둘레 링, 점선이 실제 판정</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:10px">
+<div style="display:flex;flex-direction:column;justify-content:center;align-items:center;height:280px;background:#F6F5F1;border-radius:8px">
+<svg aria-label="적 앞쪽으로만 펼친 주황 부채꼴" width="300" height="230" viewBox="0 0 300 230"><path d="M60,115 L199.3,17.5 A170,170 0 0,1 199.3,212.5 Z" fill="#E07020" fill-opacity="0.22" stroke="#E07020" stroke-width="3"/><line x1="60" y1="115" x2="84" y2="115" stroke="#17181C" stroke-width="6" stroke-linecap="round"/><circle cx="60" cy="115" r="11" fill="#17181C"/></svg>
+</div>
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#5B606B">지금: 전방 2.3m, 70°</p>
+</div>
+</div>
+<p style="font-size:25px;line-height:1.55;color:#3E434D">근접병의 실제 판정은 전방뿐인데, 둘레에 링을 표시해서 등 뒤도 맞을 것처럼 보였다.<br>지금은 실제로 닿는 거리만큼 전방 부채꼴을 표시한다.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px;background:#FFFFFF;padding:36px;border-radius:12px;border:1px solid #D9D7CF">
+<h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;color:#17181C">알파: 0.34에서 0.16으로</h3>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:40px">
+<div style="display:flex;flex-direction:column;gap:10px">
+<div style="display:flex;flex-direction:column;justify-content:center;align-items:center;height:280px;background:#F6F5F1;border-radius:8px">
+<svg aria-label="플레이어를 둘러싼 적 다섯의 부채꼴을 알파 0.34로 겹친 도해. 가운데가 거의 불투명한 주황이 된다" width="260" height="260" viewBox="0 0 260 260"><path d="M130.0,34.0 L197.7,130.7 A118,118 0 0,1 62.3,130.7 Z" fill="#E07020" fill-opacity="0.34"/><path d="M221.3,100.3 L150.3,194.6 A118,118 0 0,1 108.5,65.8 Z" fill="#E07020" fill-opacity="0.34"/><path d="M186.4,207.7 L74.9,169.2 A118,118 0 0,1 184.4,89.7 Z" fill="#E07020" fill-opacity="0.34"/><path d="M73.6,207.7 L75.6,89.7 A118,118 0 0,1 185.1,169.2 Z" fill="#E07020" fill-opacity="0.34"/><path d="M38.7,100.3 L151.5,65.8 A118,118 0 0,1 109.7,194.6 Z" fill="#E07020" fill-opacity="0.34"/><circle cx="130.0" cy="34.0" r="9" fill="#5B606B"/><circle cx="221.3" cy="100.3" r="9" fill="#5B606B"/><circle cx="186.4" cy="207.7" r="9" fill="#5B606B"/><circle cx="73.6" cy="207.7" r="9" fill="#5B606B"/><circle cx="38.7" cy="100.3" r="9" fill="#5B606B"/><circle cx="130" cy="130" r="10" fill="#17181C"/></svg>
+</div>
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#5B606B">0.34, 처음 값</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:10px">
+<div style="display:flex;flex-direction:column;justify-content:center;align-items:center;height:280px;background:#F6F5F1;border-radius:8px">
+<svg aria-label="같은 다섯 부채꼴을 알파 0.16으로 겹친 도해. 겹친 곳에서도 바닥과 플레이어가 보인다" width="260" height="260" viewBox="0 0 260 260"><path d="M130.0,34.0 L197.7,130.7 A118,118 0 0,1 62.3,130.7 Z" fill="#E07020" fill-opacity="0.16"/><path d="M221.3,100.3 L150.3,194.6 A118,118 0 0,1 108.5,65.8 Z" fill="#E07020" fill-opacity="0.16"/><path d="M186.4,207.7 L74.9,169.2 A118,118 0 0,1 184.4,89.7 Z" fill="#E07020" fill-opacity="0.16"/><path d="M73.6,207.7 L75.6,89.7 A118,118 0 0,1 185.1,169.2 Z" fill="#E07020" fill-opacity="0.16"/><path d="M38.7,100.3 L151.5,65.8 A118,118 0 0,1 109.7,194.6 Z" fill="#E07020" fill-opacity="0.16"/><circle cx="130.0" cy="34.0" r="9" fill="#5B606B"/><circle cx="221.3" cy="100.3" r="9" fill="#5B606B"/><circle cx="186.4" cy="207.7" r="9" fill="#5B606B"/><circle cx="73.6" cy="207.7" r="9" fill="#5B606B"/><circle cx="38.7" cy="100.3" r="9" fill="#5B606B"/><circle cx="130" cy="130" r="10" fill="#17181C"/></svg>
+</div>
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#5B606B">0.16, 지금 값</p>
+</div>
+</div>
+<p style="font-size:25px;line-height:1.55;color:#3E434D">부채꼴 하나만 볼 때 보기 좋은 0.34로 정했더니, 적 다섯 명에게 둘러싸이면 화면 전체가 주황색으로 덮였다.<br>렌더로 확인하고 0.16으로 낮췄다.</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:800px;font-size:24px;color:#8A8F99">EDGERUNNERS 작업 내역</p>
+<p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#8A8F99">07</p>
+<aside>09-20에 공격 예고 규칙 2차안을 만들면서 바꾼 내용입니다. 표시가 실제 판정보다 넓으면 플레이어가 잘못 배웁니다. 근접병은 원래 자기 둘레에 링을 표시했는데 실제 판정은 전방뿐이라서, 등 뒤는 맞지 않는데도 맞을 것처럼 보였습니다. 근접 예고 거리는 4.8m에서 2.3m로 줄였고, 지금은 내딛기 1.2m와 칼 반경 1.1m를 더한 거리만큼 전방 70도 부채꼴을 표시합니다. 처음 만든 부채꼴은 다섯 개가 겹치자 화면 전체가 주황색으로 덮여서, 렌더로 확인한 뒤 알파를 0.34에서 0.16으로, 발광 배율을 1.0에서 0.22로, 각도를 90도에서 70도로 낮췄습니다. 알파 값은 여러 개가 겹치는 경우를 기준으로 정했습니다. 오른쪽 두 이미지는 같은 부채꼴 다섯 개를 두 알파로 겹친 도해이고 게임 화면은 아닙니다.</aside>
+</section>

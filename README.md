@@ -8,10 +8,12 @@
 |---|---|
 | `index.html` | 홈 — 소개, 프로젝트 목록 |
 | `edgerunners/index.html` | Edgerunners 게임 — 소개, 플레이 링크, 장면, 한 판의 흐름, 조작 |
-| `edgerunners/plan/index.html` | Edgerunners 기획 — 기획서 여섯 |
+| `edgerunners/plan/index.html` | Edgerunners 기획서 목록 — 개요 하나와 세부 기획서 넷. `tools/build_decks.pl`이 만든다 |
 | `edgerunners/plan/<덱>.html` | 기획서 한 벌. `tools/build_decks.pl`이 만든다(손으로 고치지 않는다) |
+| `edgerunners/log/index.html` | Edgerunners 작업 내역 — 개발 과정 덱. 역시 `tools/build_decks.pl`이 만든다 |
 | `assets/` | 글꼴(페이퍼로지), 스타일, 슬라이드 보기 스크립트, 그림(WebP) |
-| `src/decks/<덱>/` | 기획서 원본 — claude.ai Slides 덱의 `deck.json`과 `slides/*.html` |
+| `src/decks/<덱>/` | 덱 원본. claude.ai Slides 덱의 `deck.json`과 `slides/*.html`, 장마다 붙는 설명 `notes/<장 id>.md` |
+| `tools/NOTES_FORMAT.md` | 장별 설명을 쓰는 형식(칸 · 소제목 · 도식) |
 
 게임 웹 빌드는 이 저장소에 넣지 않는다.
 따로 `edgerunners-play` 저장소에 올려 `https://edmunddaekyu.github.io/edgerunners-play/`에서 돌린다.
@@ -27,7 +29,9 @@
    "$G" --headless --script tools/to_webp.gd -- <원본 폴더> assets/img 1920 <그림 이름> …
    ```
 
-3. 페이지를 다시 만든다.
+3. 장마다 설명을 `src/decks/<덱>/notes/<장 id>.md`에 쓴다. 형식은 `tools/NOTES_FORMAT.md`에 있다.
+   설명 파일이 없는 장은 슬라이드의 발표자 노트를 한 문단으로 보여 준다.
+4. 페이지를 다시 만든다.
 
    ```bash
    perl tools/build_decks.pl
@@ -41,6 +45,7 @@
 ## 채울 칸
 
 `[이름]`, `[한 줄 소개]`, `[연락처]`는 직접 채운다(모든 페이지의 머리와 바닥).
+덱 페이지와 기획서 목록의 머리 · 바닥은 `tools/build_decks.pl` 안에 있으니 거기서 고친다.
 
 ## 글꼴
 

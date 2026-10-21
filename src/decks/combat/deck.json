@@ -4,13 +4,12 @@
   "lists": "css",
   "title": "Edgerunners 전투 규칙 기획서",
   "cover": "cover",
-  "order": ["cover", "body", "timing", "telegraph", "shape", "scale", "floor", "shock", "status", "lesson"],
+  "order": ["cover", "body", "timing", "telegraph", "display", "scale", "floor", "shock", "status"],
   "sections": {
-    "s1": {"description": "몸의 수치와 대시", "start": "cover"},
-    "s2": {"description": "모든 위협을 읽히게 하는 예고 문법", "start": "telegraph"},
-    "s3": {"description": "피해 눈금과 받는 피해의 바닥", "start": "scale"},
-    "s4": {"description": "대시로 넘길 수 없는 두 가지", "start": "shock"},
-    "s5": {"description": "검사가 놓친 것", "start": "lesson"}
+    "s1": {"description": "기본 능력치와 대시", "start": "cover"},
+    "s2": {"description": "공격 예고 규칙", "start": "telegraph"},
+    "s3": {"description": "피해 기준표와 받는 피해", "start": "scale"},
+    "s4": {"description": "대시로 피할 수 없는 위협", "start": "shock"}
   },
   "faces": {
     "paperlogy": {"family": "Paperlogy", "src": "/_blob/a99a2b0082d7ed99775ba4b718c28059"},

@@ -2,14 +2,14 @@
   "v": 4,
   "createdOnFiles": {"v": 1, "at": "2026-10-21T06:09:13Z"},
   "lists": "css",
-  "title": "Edgerunners 개발 과정",
+  "title": "Edgerunners 작업 내역",
   "cover": "cover",
-  "order": ["cover", "timeline", "numbers", "trap", "cyberware", "coverai", "format", "verify", "caught", "review", "open"],
+  "order": ["cover", "timeline", "numbers", "format", "v1", "trap", "shape", "cyberware", "bossplan", "coverai", "tutorial", "verify", "caught", "lesson", "review", "open"],
   "sections": {
-    "s1": {"description": "두 달의 흐름과 수치 변화", "start": "cover"},
-    "s2": {"description": "되돌린 결정과 그것을 남기는 형식", "start": "trap"},
-    "s3": {"description": "재서 확인하는 방법과 그것이 잡은 것", "start": "verify"},
-    "s4": {"description": "중간 평가와 아직 확인 안 한 것", "start": "review"}
+    "s1": {"description": "개발 기간의 흐름과 주요 수치 변화", "start": "cover"},
+    "s2": {"description": "결정 기록과 되돌린 결정", "start": "format"},
+    "s3": {"description": "검증 방법과 검증으로 찾은 문제", "start": "verify"},
+    "s4": {"description": "중간 평가와 아직 측정하지 않은 것", "start": "review"}
   },
   "faces": {
     "paperlogy": {"family": "Paperlogy", "src": "/_blob/f44383a7663f011787583151db955921"},
