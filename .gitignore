@@ -1,0 +1,4 @@
+# 로컬 미리보기 찌꺼기
+*.tmp
+.DS_Store
+Thumbs.db

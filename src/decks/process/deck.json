@@ -1,0 +1,20 @@
+{
+  "v": 4,
+  "createdOnFiles": {"v": 1, "at": "2026-10-21T06:09:13Z"},
+  "lists": "css",
+  "title": "Edgerunners 개발 과정",
+  "cover": "cover",
+  "order": ["cover", "timeline", "numbers", "trap", "cyberware", "coverai", "format", "verify", "caught", "review", "open"],
+  "sections": {
+    "s1": {"description": "두 달의 흐름과 수치 변화", "start": "cover"},
+    "s2": {"description": "되돌린 결정과 그것을 남기는 형식", "start": "trap"},
+    "s3": {"description": "재서 확인하는 방법과 그것이 잡은 것", "start": "verify"},
+    "s4": {"description": "중간 평가와 아직 확인 안 한 것", "start": "review"}
+  },
+  "faces": {
+    "paperlogy": {"family": "Paperlogy", "src": "/_blob/f44383a7663f011787583151db955921"},
+    "paperlogy-semibold": {"family": "Paperlogy SemiBold", "src": "/_blob/6b819e885d38823813e55c17b4ec141e"},
+    "paperlogy-extrabold": {"family": "Paperlogy ExtraBold", "src": "/_blob/bc401269bfbdffd48c7f1f466050bcb0"}
+  },
+  "designSystems": []
+}

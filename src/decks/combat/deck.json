@@ -1,0 +1,21 @@
+{
+  "v": 4,
+  "createdOnFiles": {"v": 1, "at": "2026-10-21T16:00:00Z"},
+  "lists": "css",
+  "title": "Edgerunners 전투 규칙 기획서",
+  "cover": "cover",
+  "order": ["cover", "body", "timing", "telegraph", "shape", "scale", "floor", "shock", "status", "lesson"],
+  "sections": {
+    "s1": {"description": "몸의 수치와 대시", "start": "cover"},
+    "s2": {"description": "모든 위협을 읽히게 하는 예고 문법", "start": "telegraph"},
+    "s3": {"description": "피해 눈금과 받는 피해의 바닥", "start": "scale"},
+    "s4": {"description": "대시로 넘길 수 없는 두 가지", "start": "shock"},
+    "s5": {"description": "검사가 놓친 것", "start": "lesson"}
+  },
+  "faces": {
+    "paperlogy": {"family": "Paperlogy", "src": "/_blob/a99a2b0082d7ed99775ba4b718c28059"},
+    "paperlogy-semibold": {"family": "Paperlogy SemiBold", "src": "/_blob/1f4cb0051766c9124df3ee9327902a25"},
+    "paperlogy-extrabold": {"family": "Paperlogy ExtraBold", "src": "/_blob/b5978fa0d26c8af89a2c5a910e988451"}
+  },
+  "designSystems": []
+}

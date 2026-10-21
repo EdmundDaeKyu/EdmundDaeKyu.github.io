@@ -1,0 +1,20 @@
+{
+  "v": 4,
+  "createdOnFiles": {"v": 1, "at": "2026-10-21T16:00:00Z"},
+  "lists": "css",
+  "title": "Edgerunners 레벨 기획서",
+  "cover": "cover",
+  "order": ["cover", "flow", "grid", "editor", "catalog", "v1", "curriculum", "waves", "rooms", "boss", "bossplan", "coverai"],
+  "sections": {
+    "s1": {"description": "방을 그리는 도구와 규칙", "start": "cover"},
+    "s2": {"description": "맵 카탈로그와 처음 실패한 판", "start": "catalog"},
+    "s3": {"description": "첫 판의 학습 순서와 웨이브", "start": "curriculum"},
+    "s4": {"description": "방 종류, 보스, 되돌린 결정", "start": "rooms"}
+  },
+  "faces": {
+    "paperlogy": {"family": "Paperlogy", "src": "/_blob/9bb5fe9a4a25d6e83a6969a64fa00b46"},
+    "paperlogy-semibold": {"family": "Paperlogy SemiBold", "src": "/_blob/027788808811c9a38605c4bc65068fee"},
+    "paperlogy-extrabold": {"family": "Paperlogy ExtraBold", "src": "/_blob/1a49d067ee3dec43c8ddc6b888fee082"}
+  },
+  "designSystems": []
+}

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>[이름] · 게임 기획 포트폴리오</title>
+<meta name="description" content="게임 기획 포트폴리오. Edgerunners — 사이버펑크 2077을 탑다운 로그라이트로 재구성한 게임.">
+<link rel="stylesheet" href="assets/css/site.css">
+<style>
+  .hero { padding: 88px 0 72px; }
+  .hero h1 { font-size: 64px; line-height: 1.1; margin: 14px 0 18px; }
+  .hero .lead { max-width: 720px; }
+  .hero .contact { margin-top: 26px; display: flex; flex-wrap: wrap; gap: 18px; color: var(--ink-3); font-size: 16px; }
+  .project { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); }
+  .project .shot { border-radius: 0; }
+  .project .shot img { height: 100%; aspect-ratio: auto; min-height: 360px; }
+  .project .body { padding: 40px; display: flex; flex-direction: column; gap: 16px; justify-content: center; }
+  .project h3 { font-size: 34px; margin: 0; }
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; }
+  .tags span { font-family: var(--semi); font-size: 13px; color: var(--ink-3); background: var(--bg); border: 1px solid var(--line); border-radius: 999px; padding: 4px 12px; }
+  @media (max-width: 900px) {
+    .project { grid-template-columns: minmax(0, 1fr); }
+    .project .shot img { min-height: 0; aspect-ratio: 16 / 9; }
+    .project .body { padding: 26px; }
+  }
+  @media (max-width: 640px) { .hero { padding: 56px 0 44px; } .hero h1 { font-size: 42px; } }
+</style>
+</head>
+<body>
+<div class="scroll-root">
+<header class="site-head"><div class="wrap">
+<a class="brand" href="./">[이름]</a>
+<nav><a class="on" href="./">홈</a><a href="edgerunners/">Edgerunners</a></nav>
+</div></header>
+
+<main class="wrap">
+<section class="hero">
+<p class="eyebrow">게임 기획 포트폴리오</p>
+<h1>[이름]</h1>
+<p class="lead">[한 줄 소개]</p>
+<div class="contact"><span>[연락처]</span></div>
+</section>
+
+<section class="block" id="projects">
+<h2>프로젝트</h2>
+<p class="sub">게임마다 직접 해 볼 수 있는 빌드와 기획서를 함께 둔다.</p>
+<article class="card project">
+<a class="shot" href="edgerunners/"><img src="assets/img/portfolio_hero.webp" alt="산데비스탄을 켠 플레이어가 금빛 잔상을 끌며 적 무리 사이를 지나가는 장면"></a>
+<div class="body">
+<p class="eyebrow">2026.08 – 10 · 1인 개발</p>
+<h3>Edgerunners</h3>
+<p class="muted">사이버펑크 2077을 탑다운 로그라이트로 재구성한 게임.<br>다양한 빌드를 만들고 시험하며 적을 쓸어 나간다.</p>
+<div class="tags"><span>탑다운 액션 로그라이트</span><span>Godot 4.7.2</span><span>PC · 웹</span><span>기획 · 레벨 · 수치 · 검증</span></div>
+<div class="btn-row"><a class="btn" href="edgerunners/">게임 보기</a><a class="btn ghost" href="edgerunners/plan/">기획서 보기</a></div>
+</div>
+</article>
+</section>
+</main>
+
+<footer class="foot"><div class="wrap">© [이름] · 글꼴: 페이퍼로지(Paperlogy, SIL OFL 1.1)</div></footer>
+</div>
+</body>
+</html>

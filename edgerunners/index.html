@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Edgerunners · 게임</title>
+<meta name="description" content="Edgerunners — 사이버펑크 2077을 탑다운 로그라이트로 재구성한 게임. 브라우저에서 바로 해 볼 수 있다.">
+<link rel="stylesheet" href="../assets/css/site.css">
+<style>
+  .game-hero { padding: 36px 0 8px; display: flex; flex-direction: column; gap: 26px; }
+  .game-hero h1 { font-size: 56px; line-height: 1.05; margin: 10px 0 14px; }
+  .game-hero .shot img { aspect-ratio: 21 / 9; }
+  .play-box { display: flex; flex-wrap: wrap; align-items: center; gap: 20px 32px; padding: 28px 32px; background: var(--dark); color: #E6E8EC; border-radius: var(--radius); }
+  .play-box h2 { font-size: 26px; color: #FFFFFF; margin-bottom: 4px; }
+  .play-box p { color: #AEB3BC; font-size: 15px; }
+  .play-box .btn { background: #5CC8F0; border-color: #5CC8F0; color: #0D0E11; margin-left: auto; font-size: 17px; padding: 15px 30px; }
+  .play-box .btn:hover { background: #8AD8F5; }
+  .fun .card img { aspect-ratio: 16 / 10; object-fit: cover; width: 100%; }
+  .fun .card .body p { color: var(--ink-2); }
+  .gallery button { padding: 0; border: none; background: none; cursor: zoom-in; text-align: left; }
+  .gallery figure { margin: 0; }
+  .gallery figcaption { font-size: 14px; color: var(--ink-3); margin-top: 8px; line-height: 1.5; }
+  .flow { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 10px; }
+  .flow div { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px; }
+  .flow div.key { background: var(--dark); border-color: var(--dark); color: #FFFFFF; }
+  .flow b { font-family: var(--semi); font-weight: 400; display: block; margin-bottom: 4px; }
+  .flow span { font-size: 14px; color: var(--ink-3); }
+  .flow div.key span { color: #C9CDD4; }
+  .ends { margin-top: 14px; }
+  .ends .card { padding: 22px 24px; border-left-width: 6px; }
+  .ends .win { border-left-color: var(--accent); }
+  .ends .lose { border-left-color: var(--pink); }
+  .ends b { font-family: var(--semi); font-weight: 400; display: block; margin-bottom: 4px; }
+  .to-plan { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 18px; }
+  @media (max-width: 900px) { .flow { grid-template-columns: repeat(2, minmax(0, 1fr)); } .game-hero h1 { font-size: 42px; } .game-hero .shot img { aspect-ratio: 16 / 9; } }
+  @media (max-width: 640px) { .play-box .btn { margin-left: 0; } .flow { grid-template-columns: minmax(0, 1fr); } }
+</style>
+</head>
+<body>
+<div class="scroll-root">
+<header class="site-head"><div class="wrap">
+<a class="brand" href="../">[이름]</a>
+<nav><a href="../">홈</a><a class="on" href="./">Edgerunners</a></nav>
+</div></header>
+
+<main class="wrap">
+<nav class="tabs"><a class="on" href="./">게임</a><a href="plan/">기획</a></nav>
+
+<section class="game-hero">
+<div>
+<p class="eyebrow">2026.08.21 – 10.21 · 1인 개발</p>
+<h1>Edgerunners</h1>
+<p class="lead">사이버펑크 2077을 탑다운 로그라이트로 재구성한 게임.<br>다양한 빌드를 만들고 시험하며 적을 쓸어 나간다.</p>
+</div>
+<div class="shot"><img src="../assets/img/portfolio_hero.webp" alt="산데비스탄을 켠 플레이어가 금빛 잔상을 끌며 칼잡이 무리 사이를 휘감아 지나가는 장면"></div>
+<dl class="facts">
+<div><dt>장르</dt><dd>탑다운 액션 로그라이트</dd></div>
+<div><dt>플랫폼</dt><dd>PC, 웹 브라우저</dd></div>
+<div><dt>엔진</dt><dd>Godot 4.7.2</dd></div>
+<div><dt>한 판</dt><dd>방 12개를 지나 보스까지</dd></div>
+</dl>
+<div class="play-box">
+<div>
+<h2>브라우저에서 바로 해 보기</h2>
+<p>PC의 크롬이나 엣지에서 키보드와 마우스로 한다.<br>처음 열 때는 내려받기와 준비에 30초쯤 걸린다.</p>
+</div>
+<a class="btn" href="/edgerunners-play/" target="_blank" rel="noopener">플레이하기</a>
+</div>
+</section>
+
+<section class="block fun">
+<h2>핵심 재미</h2>
+<p class="sub">빌드를 만들고, 시험하고, 쓸어 나간다.</p>
+<div class="grid three">
+<article class="card"><img src="../assets/img/portfolio_sande.webp" alt="산데비스탄을 켜고 허공에 느리게 걸린 총알 사이를 잔상을 끌며 지나가는 장면"><div class="body"><h3>만든다</h3><p>사이버웨어 8부위 32종과 프로토타입 9종, 무기 8자루.<br>같은 부품을 다시 얻으면 Lv3까지 오르고, 레벨마다 새 기능이 붙는다.</p></div></article>
+<article class="card"><img src="../assets/img/portfolio_elements.webp" alt="불, 전기, 독 드론과 속성 적, 전기 발판이 있는 방에서 싸우는 장면"><div class="body"><h3>시험한다</h3><p>문에 적힌 보상을 보고 다음 방을 고른다.<br>방마다 적 조합과 장치가 달라서 같은 빌드도 매번 다르게 시험받는다.</p></div></article>
+<article class="card"><img src="../assets/img/portfolio_explosion.webp" alt="로켓이 드럼통 사이 무리에 떨어져 연쇄 폭발하는 장면"><div class="body"><h3>쓸어 나간다</h3><p>웨이브마다 7~9명이 몰려온다.<br>모든 공격에 예고가 있어 읽으면 피할 수 있고, 빌드가 맞으면 한꺼번에 쓰러뜨린다.</p></div></article>
+</div>
+</section>
+
+<section class="block">
+<h2>장면</h2>
+<p class="sub">게임 안에서 찍은 장면이다. 누르면 크게 볼 수 있다.</p>
+<div class="grid four gallery">
+<button type="button" data-full="../assets/img/portfolio_hero.webp"><figure class="shot"><img src="../assets/img/portfolio_hero.webp" alt="산데비스탄 질주" loading="lazy"></figure><figcaption>산데비스탄으로 무리를 휘감아 베기</figcaption></button>
+<button type="button" data-full="../assets/img/portfolio_sande.webp"><figure class="shot"><img src="../assets/img/portfolio_sande.webp" alt="느려진 총알 사이" loading="lazy"></figure><figcaption>느려진 총알 사이를 지나가기</figcaption></button>
+<button type="button" data-full="../assets/img/portfolio_netrunner.webp"><figure class="shot"><img src="../assets/img/portfolio_netrunner.webp" alt="해킹 모드" loading="lazy"></figure><figcaption>해킹 모드에서 적, 드럼통, 전기 발판 해킹</figcaption></button>
+<button type="button" data-full="../assets/img/portfolio_gorilla.webp"><figure class="shot"><img src="../assets/img/portfolio_gorilla.webp" alt="킹콩 암즈 내려찍기" loading="lazy"></figure><figcaption>킹콩 암즈로 내려찍어 바닥 가르기</figcaption></button>
+<button type="button" data-full="../assets/img/portfolio_explosion.webp"><figure class="shot"><img src="../assets/img/portfolio_explosion.webp" alt="연쇄 폭발" loading="lazy"></figure><figcaption>로켓과 드럼통의 연쇄 폭발</figcaption></button>
+<button type="button" data-full="../assets/img/portfolio_boss.webp"><figure class="shot"><img src="../assets/img/portfolio_boss.webp" alt="보스 2페이즈" loading="lazy"></figure><figcaption>보스 2페이즈, 어둠 속 강습과 예고</figcaption></button>
+<button type="button" data-full="../assets/img/portfolio_elements.webp"><figure class="shot"><img src="../assets/img/portfolio_elements.webp" alt="속성 드론" loading="lazy"></figure><figcaption>불, 전기, 독 속성 드론과 전기 발판</figcaption></button>
+<button type="button" data-full="../assets/img/portfolio_crowd.webp"><figure class="shot"><img src="../assets/img/portfolio_crowd.webp" alt="포위" loading="lazy"></figure><figcaption>사방에서 조여 오는 한 웨이브와 공격 예고</figcaption></button>
+</div>
+</section>
+
+<section class="block">
+<h2>한 판의 흐름</h2>
+<p class="sub">시설에서 출격해 방 12개를 지나 보스까지 간다.</p>
+<div class="flow">
+<div><b>숲길 튜토리얼</b><span>첫 판만. 세 단계로 기본기를 배운다</span></div>
+<div><b>시설 입장방</b><span>무기 해금, 작업대 강화, 명상</span></div>
+<div class="key"><b>갈림길의 방 × 12</b><span>문마다 방 종류와 보상이 적혀 있다</span></div>
+<div><b>휴식방</b><span>보스 앞에서 회복과 정비</span></div>
+<div><b>보스</b><span>기업 히트맨, 2페이즈</span></div>
+</div>
+<div class="grid two ends">
+<div class="card win"><b>이기면 2회차</b><span class="muted">몸과 카드, 코인을 들고 다시 들어간다. 적은 회차마다 체력 +50%, 피해 +30%.</span></div>
+<div class="card lose"><b>죽으면 시설로</b><span class="muted">사이버웨어는 잃고 코인, 레벨, 명상 스킬, 작업대 강화, 무기 해금은 남는다.</span></div>
+</div>
+</section>
+
+<section class="block">
+<h2>조작</h2>
+<p class="sub">키보드와 마우스.</p>
+<table class="plain">
+<tr><th>키</th><th>동작</th></tr>
+<tr><td>WASD · 마우스</td><td>이동 · 조준</td></tr>
+<tr><td>좌클릭 · 우클릭</td><td>공격 · 무기 고유 능력(카타나 발도, 피스톨 수류탄 …)</td></tr>
+<tr><td>Space</td><td>대시(무적, 낮은 엄폐물을 넘는다)</td></tr>
+<tr><td>1 / 2</td><td>근접 · 원거리 무기 바꾸기</td></tr>
+<tr><td>3 · 4</td><td>팔 사이버웨어</td></tr>
+<tr><td>E · Q</td><td>OS 능력(산데비스탄, 버서크, 해킹 …)</td></tr>
+<tr><td>F</td><td>상호작용 · 쓰러진 보스 처형</td></tr>
+<tr><td>R</td><td>재장전 · 쓰러졌을 때 부활</td></tr>
+<tr><td>I · O</td><td>인벤토리 · 명상 보기</td></tr>
+<tr><td>Esc</td><td>일시정지</td></tr>
+</table>
+</section>
+
+<section class="block to-plan">
+<div>
+<h2>기획서</h2>
+<p class="muted">개요 기획서와 세부 기획서 다섯(전투 규칙, 시스템, 레벨, 튜토리얼, 개발 과정)이 있다.</p>
+</div>
+<a class="btn" href="plan/">기획서 보기</a>
+</section>
+</main>
+
+<footer class="foot"><div class="wrap">© [이름] · 글꼴: 페이퍼로지(Paperlogy, SIL OFL 1.1)</div></footer>
+</div>
+
+<dialog class="lightbox" id="lightbox"><img alt=""><p></p></dialog>
+<script>
+  (function () {
+    const box = document.getElementById("lightbox");
+    document.querySelectorAll(".gallery [data-full]").forEach(function (b) {
+      b.addEventListener("click", function () {
+        box.querySelector("img").src = b.getAttribute("data-full");
+        box.querySelector("img").alt = b.querySelector("img").alt;
+        box.querySelector("p").textContent = b.querySelector("figcaption").textContent;
+        box.showModal();
+      });
+    });
+    box.addEventListener("click", function () { box.close(); });
+  })();
+</script>
+</body>
+</html>

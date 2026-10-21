@@ -1,0 +1,19 @@
+{
+  "v": 4,
+  "createdOnFiles": {"v": 1, "at": "2026-10-21T16:00:00Z"},
+  "lists": "css",
+  "title": "Edgerunners 튜토리얼 기획서",
+  "cover": "cover",
+  "order": ["cover", "principle", "stages", "stage1", "stage2a", "stage2b", "stage3", "summary", "making", "history"],
+  "sections": {
+    "s1": {"description": "튜토리얼의 원칙과 세 단계의 뼈대", "start": "cover"},
+    "s2": {"description": "단계마다 무엇을 어떻게 가르치나", "start": "stage1"},
+    "s3": {"description": "단계별 정리, 만든 방법, 달라진 점", "start": "summary"}
+  },
+  "faces": {
+    "paperlogy": {"family": "Paperlogy", "src": "/_blob/786c9cdec14268c0b7e90a609356c7c2"},
+    "paperlogy-semibold": {"family": "Paperlogy SemiBold", "src": "/_blob/8bb6a80076bd233bf32ce57031765ae5"},
+    "paperlogy-extrabold": {"family": "Paperlogy ExtraBold", "src": "/_blob/93ce5ccbee0e9566ab56f329732e618f"}
+  },
+  "designSystems": []
+}

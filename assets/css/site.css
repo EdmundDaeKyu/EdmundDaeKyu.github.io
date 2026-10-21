@@ -1,0 +1,121 @@
+/* 포트폴리오 사이트 공통 스타일 — 밝은 문서형, 페이퍼로지 (기획서 슬라이드와 같은 색 · 글꼴) */
+
+@font-face { font-family: "Paperlogy"; src: url("../fonts/Paperlogy-4Regular.ttf") format("truetype"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Paperlogy SemiBold"; src: url("../fonts/Paperlogy-6SemiBold.ttf") format("truetype"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Paperlogy ExtraBold"; src: url("../fonts/Paperlogy-8ExtraBold.ttf") format("truetype"); font-weight: 400; font-display: swap; }
+
+:root {
+  --bg: #F6F5F1;
+  --bg-alt: #ECEBE6;
+  --card: #FFFFFF;
+  --line: #D9D7CF;
+  --ink: #17181C;
+  --ink-2: #3E434D;
+  --ink-3: #5B606B;
+  --ink-4: #8A8F99;
+  --accent: #0077A3;
+  --pink: #C2185B;
+  --dark: #17181C;
+  --radius: 12px;
+  --body: "Paperlogy", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  --semi: "Paperlogy SemiBold", "Paperlogy", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  --bold: "Paperlogy ExtraBold", "Paperlogy", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+/* 스크롤은 body가 아니라 .scroll-root가 맡는다(저장소 규칙: 휠 스크롤이 body에 안 걸리는 환경이 있다) */
+html, body { height: 100%; margin: 0; overflow: hidden; }
+body { background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 17px; line-height: 1.6; }
+.scroll-root {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-y: contain;
+  background: var(--bg);
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+img { max-width: 100%; display: block; }
+h1, h2, h3 { font-family: var(--bold); font-weight: 400; margin: 0; line-height: 1.2; }
+p { margin: 0; }
+
+.wrap { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+/* 머리 */
+.site-head { position: sticky; top: 0; z-index: 10; background: rgba(246, 245, 241, 0.94); border-bottom: 1px solid var(--line); backdrop-filter: blur(6px); }
+.site-head .wrap { display: flex; align-items: center; gap: 28px; height: 64px; }
+.site-head .brand { font-family: var(--bold); font-size: 20px; color: var(--ink); }
+.site-head nav { display: flex; gap: 22px; margin-left: auto; }
+.site-head nav a { font-family: var(--semi); color: var(--ink-3); font-size: 16px; }
+.site-head nav a.on, .site-head nav a:hover { color: var(--ink); text-decoration: none; }
+
+/* 프로젝트 안 탭 (게임 | 기획) */
+.tabs { display: flex; gap: 8px; margin: 28px 0 0; }
+.tabs a { font-family: var(--semi); padding: 10px 22px; border-radius: 999px; border: 1px solid var(--line); background: var(--card); color: var(--ink-2); font-size: 16px; }
+.tabs a.on { background: var(--dark); border-color: var(--dark); color: #FFFFFF; }
+.tabs a:hover { text-decoration: none; border-color: var(--ink-3); }
+
+.eyebrow { font-family: var(--semi); font-size: 14px; letter-spacing: 0.12em; color: var(--accent); text-transform: uppercase; }
+.lead { font-size: 20px; color: var(--ink-2); line-height: 1.65; }
+.muted { color: var(--ink-3); }
+.small { font-size: 14px; color: var(--ink-4); }
+
+section.block { padding: 64px 0; }
+section.block + section.block { border-top: 1px solid var(--line); }
+section.block h2 { font-size: 34px; margin-bottom: 10px; }
+section.block .sub { color: var(--ink-3); margin-bottom: 32px; }
+
+.btn { display: inline-flex; align-items: center; gap: 8px; font-family: var(--semi); font-size: 16px; padding: 13px 24px; border-radius: 999px; border: 1px solid var(--dark); background: var(--dark); color: #FFFFFF; cursor: pointer; }
+.btn:hover { text-decoration: none; background: #2A2C33; }
+.btn.ghost { background: transparent; color: var(--ink); border-color: var(--line); }
+.btn.ghost:hover { border-color: var(--ink-3); background: var(--card); }
+.btn-row { display: flex; flex-wrap: wrap; gap: 12px; }
+
+.card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+.card .body { padding: 24px; }
+.card h3 { font-size: 24px; margin-bottom: 6px; }
+
+.grid { display: grid; gap: 24px; }
+.grid.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.grid.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.grid.four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+.shot { border-radius: var(--radius); overflow: hidden; background: var(--dark); }
+.shot img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+
+.facts { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; border: 1px solid var(--line); border-radius: var(--radius); background: var(--card); }
+.facts div { padding: 18px 22px; border-left: 1px solid var(--line); }
+.facts div:first-child { border-left: none; }
+.facts dt { font-family: var(--semi); font-size: 13px; color: var(--ink-4); margin-bottom: 4px; }
+.facts dd { margin: 0; font-size: 17px; }
+
+table.plain { width: 100%; border-collapse: collapse; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+table.plain th, table.plain td { text-align: left; padding: 12px 18px; border-bottom: 1px solid var(--line); font-size: 16px; }
+table.plain th { font-family: var(--semi); font-weight: 400; color: var(--ink-3); background: var(--bg-alt); }
+table.plain tr:last-child td { border-bottom: none; }
+table.plain td:first-child { font-family: var(--semi); white-space: nowrap; }
+
+.foot { border-top: 1px solid var(--line); padding: 36px 0 56px; color: var(--ink-4); font-size: 14px; }
+
+/* 그림 크게 보기 */
+dialog.lightbox { border: none; padding: 0; background: transparent; max-width: 96vw; max-height: 94vh; }
+dialog.lightbox::backdrop { background: rgba(10, 11, 14, 0.86); }
+dialog.lightbox img { max-width: 96vw; max-height: 86vh; border-radius: 8px; }
+dialog.lightbox p { color: #E6E8EC; text-align: center; margin-top: 12px; font-size: 15px; }
+
+@media (max-width: 900px) {
+  .grid.three, .grid.four { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .facts div:nth-child(3) { border-left: none; }
+  .facts div:nth-child(n+3) { border-top: 1px solid var(--line); }
+}
+@media (max-width: 640px) {
+  .wrap { padding: 0 16px; }
+  .grid.two, .grid.three, .grid.four { grid-template-columns: minmax(0, 1fr); }
+  .site-head nav { gap: 14px; }
+  section.block { padding: 44px 0; }
+  section.block h2 { font-size: 27px; }
+}
