@@ -1,0 +1,71 @@
+{
+  "v": 4,
+  "createdOnFiles": {
+    "v": 1,
+    "at": "2026-09-21T07:38:30Z"
+  },
+  "title": "클래시로얄 레벨디자인 역기획",
+  "cover": "p01-cover",
+  "order": [
+    "p01-cover",
+    "p02-index",
+    "x-part1",
+    "z04-game",
+    "z05-hud",
+    "p03-arena",
+    "z07-metrics",
+    "x-part2",
+    "y06-symmetry",
+    "y07-bridges",
+    "y08-river",
+    "y09-cost",
+    "y10-time",
+    "y11-attack",
+    "y12-defense",
+    "y13-breach",
+    "y14-proposal",
+    "y15-shift",
+    "y16-conclusion"
+  ],
+  "sections": {
+    "s1": {
+      "description": "주제 선언과 목차",
+      "start": "p01-cover"
+    },
+    "s2": {
+      "description": "1부 개요 — 고정된 전장의 구조",
+      "start": "x-part1"
+    },
+    "s3": {
+      "description": "A 전장은 선택을 만든다",
+      "start": "x-part2"
+    },
+    "s4": {
+      "description": "B 선택에는 비용이 따른다",
+      "start": "y09-cost"
+    },
+    "s5": {
+      "description": "C 그래서 공격과 방어가 갈린다",
+      "start": "y11-attack"
+    },
+    "s6": {
+      "description": "D 그래서 무엇을 바꿀 수 있는가",
+      "start": "y14-proposal"
+    }
+  },
+  "faces": {
+    "paperlogy": {
+      "family": "Paperlogy",
+      "src": "/_blob/4e58234ddc1bc9756ac7e7c48d30d4f2"
+    },
+    "paperlogy-bold": {
+      "family": "Paperlogy Bold",
+      "src": "/_blob/6bd5679ee03ba01e68ed5592f241fb58"
+    },
+    "paperlogy-black": {
+      "family": "Paperlogy Black",
+      "src": "/_blob/ca2651d989f58f91ad7b781a00a1de44"
+    }
+  },
+  "designSystems": []
+}

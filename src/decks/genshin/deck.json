@@ -1,0 +1,77 @@
+{
+  "v": 4,
+  "createdOnFiles": {
+    "v": 1,
+    "at": "2026-09-25T10:00:00Z"
+  },
+  "title": "원신 몬드 레벨디자인 역기획",
+  "cover": "g01-cover",
+  "order": [
+    "g01-cover",
+    "g02-index",
+    "g03-part1",
+    "g04-game",
+    "g05-hud",
+    "g05b-shot",
+    "g06-map",
+    "g07-metrics",
+    "g08-part2",
+    "g09-firstsight",
+    "g10-statues",
+    "g11-center",
+    "g12-lair",
+    "g13-bosses",
+    "g13b-rewards",
+    "g14-loop",
+    "g14b-warps",
+    "g15-rings",
+    "g16-proposal",
+    "g17-experiment",
+    "g18-conclusion"
+  ],
+  "sections": {
+    "s1": {
+      "description": "표지와 목차",
+      "start": "g01-cover"
+    },
+    "s2": {
+      "description": "1부 개요 — 게임·지역·스태미나",
+      "start": "g03-part1"
+    },
+    "s3": {
+      "description": "A 기준점 — 몬드성·신상 배치",
+      "start": "g08-part2"
+    },
+    "s4": {
+      "description": "B 외곽 배치 — 폐허·보스·보상",
+      "start": "g12-lair"
+    },
+    "s5": {
+      "description": "C 정비·탐험 순환 — 성·신상·워프",
+      "start": "g14-loop"
+    },
+    "s6": {
+      "description": "D 종합 — 탐험 범위 확장",
+      "start": "g15-rings"
+    },
+    "s7": {
+      "description": "E 개선 제안·검증",
+      "start": "g16-proposal"
+    }
+  },
+  "faces": {
+    "paperlogy": {
+      "family": "Paperlogy",
+      "src": "/_blob/34130f23bfe1da720d09da16c231e8d3"
+    },
+    "paperlogy-bold": {
+      "family": "Paperlogy Bold",
+      "src": "/_blob/5f6a3f9f114526303d78261fbe0f48d5"
+    },
+    "paperlogy-black": {
+      "family": "Paperlogy Black",
+      "src": "/_blob/bd829e0518fef53a29b54f40153953d6"
+    }
+  },
+  "designSystems": []
+}

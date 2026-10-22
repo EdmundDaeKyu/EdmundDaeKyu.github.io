@@ -74,7 +74,9 @@
 .slide-frame section, .slide-frame section * { box-sizing: border-box; }
 /* 한글은 어절 단위로 줄을 바꾼다(기본값은 글자 단위라 "찌/른다"처럼 끊긴다) */
 .slide-frame section { word-break: keep-all; overflow-wrap: break-word; }
-.slide-frame section div { display: flex; flex-direction: column; } /* 형식: display가 없는 div는 세로 flex */
+/* 형식: display가 없는 div는 세로 flex. display:flex를 직접 적은 div는 브라우저 기본값(가로)을 따른다 */
+.slide-frame section div { display: flex; }
+.slide-frame section div:not([style*="display"]) { flex-direction: column; }
 .slide-frame section h1, .slide-frame section h2, .slide-frame section h3,
 .slide-frame section p, .slide-frame section ul, .slide-frame section ol { margin: 0; }
 .slide-frame section h1 { font-size: 96px; font-weight: 600; line-height: 1.1; }

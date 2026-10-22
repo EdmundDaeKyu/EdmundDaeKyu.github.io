@@ -1,0 +1,92 @@
+{
+  "v": 4,
+  "createdOnFiles": {
+    "v": 1,
+    "at": "2026-10-12T12:00:00Z"
+  },
+  "lists": "css",
+  "title": "소환사의 협곡 레벨디자인 역기획 (1편)",
+  "cover": "l01-cover",
+  "order": [
+    "l01-cover",
+    "l02-index",
+    "l03-part1",
+    "l04-game",
+    "l05-map",
+    "l06-lanes",
+    "l06b-minions",
+    "l06c-waves",
+    "l07-jungle",
+    "l08-terms",
+    "l10-part2",
+    "p00-problem",
+    "pA-problem",
+    "l11-intent",
+    "l13-objectives",
+    "pA-structure",
+    "pB-problem",
+    "l14-path",
+    "l15-flow",
+    "l16-variable",
+    "l17-phases",
+    "l18-fog",
+    "l19-wards",
+    "l20-brush",
+    "l21-minimap",
+    "l22-faelight",
+    "l23-conclusion"
+  ],
+  "sections": {
+    "s1": {
+      "description": "표지와 목차",
+      "start": "l01-cover"
+    },
+    "s2": {
+      "description": "1부 개요 — 게임과 맵의 기본 구조",
+      "start": "l03-part1"
+    },
+    "s3": {
+      "description": "2부 문제 정의",
+      "start": "l10-part2"
+    },
+    "s4": {
+      "description": "2부 A — 공정성과 역할 분담",
+      "start": "pA-problem"
+    },
+    "s5": {
+      "description": "2부 B — 정글",
+      "start": "pB-problem"
+    },
+    "s6": {
+      "description": "2부 C — 가변 요소",
+      "start": "l16-variable"
+    },
+    "s7": {
+      "description": "2부 D — 국면 전환",
+      "start": "l17-phases"
+    },
+    "s8": {
+      "description": "2부 E — 시야",
+      "start": "l18-fog"
+    },
+    "s9": {
+      "description": "결론",
+      "start": "l23-conclusion"
+    }
+  },
+  "faces": {
+    "paperlogy": {
+      "family": "Paperlogy",
+      "src": "/_blob/63be4650f8bf3835db3f6d673ff2cae5"
+    },
+    "paperlogy-bold": {
+      "family": "Paperlogy Bold",
+      "src": "/_blob/bdbffe7021fb46cc1a78f3e3f0cba488"
+    },
+    "paperlogy-black": {
+      "family": "Paperlogy Black",
+      "src": "/_blob/bc4519184c9d87a46688631ff82cb3b7"
+    }
+  },
+  "designSystems": []
+}

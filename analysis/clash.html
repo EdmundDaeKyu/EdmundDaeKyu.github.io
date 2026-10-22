@@ -1,0 +1,871 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>클래시로얄 레벨디자인 역기획 · 장대규 역기획서</title>
+<meta name="description" content="장대규 역기획서 클래시로얄 레벨디자인 역기획. 고정된 전장의 대칭과 다리 · 강이 만드는 선택, 엘릭서 비용, 공격과 방어의 분화를 정리하고 전장 변경안을 제안했다.">
+<link rel="stylesheet" href="../assets/css/site.css">
+<link rel="stylesheet" href="../assets/css/deck.css">
+<script src="../assets/js/deck.js" defer></script>
+</head>
+<body>
+<div class="scroll-root">
+<header class="site-head"><div class="wrap">
+<a class="brand" href="../">장대규</a>
+<nav><a href="../">홈</a><a href="../edgerunners/">Edgerunners</a><a class="on" href="../analysis/">역기획서</a></nav>
+</div></header>
+<main class="wrap">
+
+<div class="deck-head">
+<p class="eyebrow">역기획서 · 클래시 로얄</p>
+<h1>클래시로얄 레벨디자인 역기획</h1>
+<p class="lead">고정된 전장의 대칭과 다리 · 강이 만드는 선택, 엘릭서 비용, 공격과 방어의 분화를 정리하고 전장 변경안을 제안했다.</p>
+<div class="deck-tools">
+<button class="btn" type="button" data-present="0">슬라이드로 넘겨 보기</button>
+<span class="small">19장 · 슬라이드를 누르면 크게 보고, 화살표 키로 넘긴다</span>
+</div>
+</div>
+<div class="slides">
+<div class="slide-item" id="s1">
+<div class="slide-frame">
+<section id="p01-cover" data-transition="fade" style="display:flex; flex-direction:column; gap:16px; padding:64px 112px 130px; background:#1e2430">
+  <img src="../assets/img/clash_01.webp" alt="" style="position:absolute; top:0; left:0; width:1920px; height:1080px; opacity:0.62">
+  <div style="position:absolute; top:0; left:0; width:1920px; height:1080px; display:flex; flex-direction:column; background:linear-gradient(90deg, #10141cf7 0%, #10141ce0 44%, #10141c73 100%)">
+  </div>
+  <div style="position:relative; height:886px; display:flex; flex-direction:column; justify-content:space-between">
+    <div style="display:flex; flex-direction:column; gap:26px">
+      <p style="font-family:Paperlogy, Arial, sans-serif; font-size:27px; letter-spacing:5px; color:#a9b1bd">레벨디자인 역기획 · 포트폴리오</p>
+      <h1 style="font-family:'Paperlogy Black', Arial, sans-serif; font-size:84px; font-weight:700; line-height:1.18; color:#f2f1ec">클래시로얄<br>레벨디자인 역기획서</h1>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:12px">
+      <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:38px; font-weight:700; line-height:1.3; color:#f2f1ec">장대규</p>
+      <p style="font-family:Paperlogy, Arial, sans-serif; font-size:27px; line-height:1.5; color:#a9b1bd">jdk47888@naver.com &nbsp;&nbsp;·&nbsp;&nbsp; 010-8854-7342</p>
+    </div>
+  </div>
+  <p style="position:absolute; bottom:52px; left:112px; width:1300px; font-family:Paperlogy, Arial, sans-serif; font-size:25px; color:#8a94a4">공방의 순환과 효율적인 자원 활용을 유도하는 클래시로얄 맵의 특징</p>
+  <p style="position:absolute; right:112px; bottom:52px; width:220px; font-family:Paperlogy, Arial, sans-serif; font-size:25px; text-align:right; font-variant-numeric:tabular-nums; color:#8a94a4">01 / 19</p>
+  
+</section>
+</div>
+<div class="slide-note"><div class="n-head"><span class="num">01</span><div class="n-lead"><p>표지. 배경은 실제 전투 화면의 강·다리 구간이다.</p></div></div></div>
+</div>
+<div class="slide-item" id="s2">
+<div class="slide-frame">
+<section id="p02-index" data-transition="fade" style="display:flex; flex-direction:column; gap:16px; padding:64px 112px 130px; background:#f6f5f1">
+  <h2 style="padding:8px 0 0; font-family:'Paperlogy Bold', Arial, sans-serif; font-size:64px; font-weight:700; line-height:1.18; color:#1b1f26">목차</h2>
+  <p style="padding:0 0 0 26px; font-family:Paperlogy, Arial, sans-serif; font-size:40px; font-weight:500; line-height:1.45; color:#1b1f26; border-left:8px solid #1b1f26">전장이 선택을 만들고, 선택은 비용을 수반하며, 비용을 최소화하는 공격과 방어 전략이 탄생한다.</p>
+  <div style="height:712px; display:flex; flex-direction:column; gap:26px">
+    <div style="height:302px; display:flex; flex-direction:column; gap:22px; justify-content:center; padding:28px 34px; background:#eaf1fa; border:3px solid #b6c9e2; border-radius:14px">
+      <div style="display:flex; flex-direction:row; gap:34px; align-items:center">
+        <p style="padding:10px 24px; font-family:'Paperlogy Black', Arial, sans-serif; font-size:30px; font-weight:700; white-space:nowrap; color:#ffffff; background:#1b3f6e; border-radius:10px">1부</p>
+        <h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:56px; font-weight:700; line-height:1.1; color:#1b3f6e">개요</h3>
+        <div style="flex:1"></div>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:32px; font-weight:700; font-variant-numeric:tabular-nums; color:#5e6570">04 — 07</p>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:14px">
+        <div style="display:flex; flex-direction:row; gap:22px; align-items:baseline">
+          <p style="width:40px; font-family:'Paperlogy Bold', Arial, sans-serif; font-size:34px; font-weight:700; color:#1b3f6e"></p>
+          <p style="font-family:Paperlogy, Arial, sans-serif; font-size:34px; line-height:1.3; color:#1b1f26">클래시로얄은 어떤 게임인가</p>
+          <div style="flex:1"></div>
+          <p style="font-family:Paperlogy, Arial, sans-serif; font-size:30px; font-variant-numeric:tabular-nums; color:#5e6570">04</p>
+        </div>
+        <div style="display:flex; flex-direction:row; gap:22px; align-items:baseline">
+          <p style="width:40px; font-family:'Paperlogy Bold', Arial, sans-serif; font-size:34px; font-weight:700; color:#1b3f6e"></p>
+          <p style="font-family:Paperlogy, Arial, sans-serif; font-size:34px; line-height:1.3; color:#1b1f26">한 판에서 다루는 것들</p>
+          <div style="flex:1"></div>
+          <p style="font-family:Paperlogy, Arial, sans-serif; font-size:30px; font-variant-numeric:tabular-nums; color:#5e6570">05</p>
+        </div>
+        <div style="display:flex; flex-direction:row; gap:22px; align-items:baseline">
+          <p style="width:40px; font-family:'Paperlogy Bold', Arial, sans-serif; font-size:34px; font-weight:700; color:#1b3f6e"></p>
+          <p style="font-family:Paperlogy, Arial, sans-serif; font-size:34px; line-height:1.3; color:#1b1f26">기본 전장의 구조</p>
+          <div style="flex:1"></div>
+          <p style="font-family:Paperlogy, Arial, sans-serif; font-size:30px; font-variant-numeric:tabular-nums; color:#5e6570">06</p>
+        </div>
+        <div style="display:flex; flex-direction:row; gap:22px; align-items:baseline">
+          <p style="width:40px; font-family:'Paperlogy Bold', Arial, sans-serif; font-size:34px; font-weight:700; color:#1b3f6e"></p>
+          <p style="font-family:Paperlogy, Arial, sans-serif; font-size:34px; line-height:1.3; color:#1b1f26">숫자로 보는 전장</p>
+          <div style="flex:1"></div>
+          <p style="font-family:Paperlogy, Arial, sans-serif; font-size:30px; font-variant-numeric:tabular-nums; color:#5e6570">07</p>
+        </div>
+      </div>
+    </div>
+    <div style="height:384px; display:flex; flex-direction:column; gap:22px; justify-content:center; padding:28px 34px; background:#fbf6ec; border:3px solid #e2cfa6; border-radius:14px">
+      <div style="display:flex; flex-direction:row; gap:34px; align-items:center">
+        <p style="padding:10px 24px; font-family:'Paperlogy Black', Arial, sans-serif; font-size:30px; font-weight:700; white-space:nowrap; color:#ffffff; background:#a96a12; border-radius:10px">2부</p>
+        <h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:56px; font-weight:700; line-height:1.1; color:#a96a12">레벨디자인</h3>
+        <div style="flex:1"></div>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:32px; font-weight:700; font-variant-numeric:tabular-nums; color:#5e6570">09 — 19</p>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:14px">
+        <div style="display:flex; flex-direction:row; gap:22px; align-items:baseline">
+          <p style="width:40px; font-family:'Paperlogy Bold', Arial, sans-serif; font-size:34px; font-weight:700; color:#a96a12">A</p>
+          <p style="font-family:Paperlogy, Arial, sans-serif; font-size:34px; line-height:1.3; color:#1b1f26">전장은 선택을 만든다</p>
+          <p style="font-family:Paperlogy, Arial, sans-serif; font-size:27px; line-height:1.3; color:#5e6570">대칭 · 다리 · 예외</p>
+          <div style="flex:1"></div>
+          <p style="font-family:Paperlogy, Arial, sans-serif; font-size:30px; font-variant-numeric:tabular-nums; color:#5e6570">09 — 11</p>
+        </div>
+        <div style="display:flex; flex-direction:row; gap:22px; align-items:baseline">
+          <p style="width:40px; font-family:'Paperlogy Bold', Arial, sans-serif; font-size:34px; font-weight:700; color:#a96a12">B</p>
+          <p style="font-family:Paperlogy, Arial, sans-serif; font-size:34px; line-height:1.3; color:#1b1f26">선택에는 비용이 따른다</p>
+          <p style="font-family:Paperlogy, Arial, sans-serif; font-size:27px; line-height:1.3; color:#5e6570">엘릭서 · 시간</p>
+          <div style="flex:1"></div>
+          <p style="font-family:Paperlogy, Arial, sans-serif; font-size:30px; font-variant-numeric:tabular-nums; color:#5e6570">12 — 13</p>
+        </div>
+        <div style="display:flex; flex-direction:row; gap:22px; align-items:baseline">
+          <p style="width:40px; font-family:'Paperlogy Bold', Arial, sans-serif; font-size:34px; font-weight:700; color:#a96a12">C</p>
+          <p style="font-family:Paperlogy, Arial, sans-serif; font-size:34px; line-height:1.3; color:#1b1f26">그래서 공격과 방어가 갈린다</p>
+          <p style="font-family:Paperlogy, Arial, sans-serif; font-size:27px; line-height:1.3; color:#5e6570">빌드업 · 유인 · 전진</p>
+          <div style="flex:1"></div>
+          <p style="font-family:Paperlogy, Arial, sans-serif; font-size:30px; font-variant-numeric:tabular-nums; color:#5e6570">14 — 16</p>
+        </div>
+        <div style="display:flex; flex-direction:row; gap:22px; align-items:baseline">
+          <p style="width:40px; font-family:'Paperlogy Bold', Arial, sans-serif; font-size:34px; font-weight:700; color:#a96a12">D</p>
+          <p style="font-family:Paperlogy, Arial, sans-serif; font-size:34px; line-height:1.3; color:#1b1f26">그래서 무엇을 바꿀 수 있을까?</p>
+          <p style="font-family:Paperlogy, Arial, sans-serif; font-size:27px; line-height:1.3; color:#5e6570">개방 · 총력전 · 정리</p>
+          <div style="flex:1"></div>
+          <p style="font-family:Paperlogy, Arial, sans-serif; font-size:30px; font-variant-numeric:tabular-nums; color:#5e6570">17 — 19</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p style="position:absolute; bottom:52px; left:112px; width:1300px; font-family:Paperlogy, Arial, sans-serif; font-size:25px; color:#5e6570">목차</p>
+  <p style="position:absolute; right:112px; bottom:52px; width:220px; font-family:Paperlogy, Arial, sans-serif; font-size:25px; text-align:right; font-variant-numeric:tabular-nums; color:#5e6570">02 / 19</p>
+  
+</section>
+</div>
+<div class="slide-note"><div class="n-head"><span class="num">02</span><div class="n-lead"><p>개요와 레벨디자인 두 부분으로 나눈다. 레벨디자인은 A~D 네 묶음으로 이어진다.</p></div></div></div>
+</div>
+<div class="slide-item" id="s3">
+<div class="slide-frame">
+<section id="x-part1" data-section="1부 개요" data-transition="fade" style="background:#1E2430; color:#F2F1EC; font-family:'Paperlogy', Arial, sans-serif; padding:64px 112px 130px; display:flex; flex-direction:column; gap:16px"><div style="position:relative; height:886px; display:flex; flex-direction:column; justify-content:center; gap:40px"><p style="font-family:'Paperlogy Black', Arial, sans-serif; font-size:32px; font-weight:700; color:#FFFFFF; background:#2F5C94; border-radius:12px; padding:12px 32px; align-self:start">1부</p><h1 style="font-family:'Paperlogy Black', Arial, sans-serif; font-size:150px; font-weight:700; line-height:1.05; color:#F2F1EC">개요</h1><div style="height:4px; width:280px; background:#2F5C94"></div><p style="font-size:46px; line-height:1.5; color:#BFCEE2">게임과 전장의 기본 규칙<br>— 무엇이 미리 정해져 있는가</p></div><p style="position:absolute; left:112px; bottom:52px; width:1300px; font-size:25px; color:#8A94A4">1부 · 개요</p><p style="position:absolute; right:112px; bottom:52px; width:220px; font-size:25px; color:#8A94A4; text-align:right; font-variant-numeric:tabular-nums">03 / 19</p></section>
+</div>
+<div class="slide-note"><div class="n-head"><span class="num">03</span><div class="n-lead"><p>1부 간지. 다음 장에서 전장의 구성 요소를 정리한다.</p></div></div></div>
+</div>
+<div class="slide-item" id="s4">
+<div class="slide-frame">
+<section id="z04-game" data-section="1부 개요" data-transition="fade" style="background:#F6F5F1; color:#1B1F26; font-family:'Paperlogy', Arial, sans-serif; padding:64px 112px 130px; display:flex; flex-direction:column; gap:16px"><h2 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:64px; font-weight:700; line-height:1.18; color:#1B1F26; padding:8px 0 0">클래시로얄은 어떤 게임인가</h2><p style="font-size:40px; line-height:1.45; color:#1B1F26; font-weight:500; border-left:8px solid #1B1F26; padding:0 0 0 26px">카드로 유닛을 배치해, 제한 시간 안에 상대의 타워를 더 많이 무너뜨리는 실시간 대전 게임이다.</p><div style="height:712px; display:flex; flex-direction:row; gap:42px; align-items:start"><div style="width:1050px"><table style="width:1046px; font-family:'Paperlogy', Arial, sans-serif; font-size:32px; color:#1B1F26; border:2px solid #D8D5CC; border-radius:12px"><tr style="background:#EAF1FA"><th style="width:26%; padding:13px 26px; font-family:'Paperlogy Bold', Arial, sans-serif; color:#1B3F6E; text-align:left">항목</th><th style="width:74%; padding:13px 26px; font-family:'Paperlogy Bold', Arial, sans-serif; color:#1B3F6E; text-align:left">내용</th></tr><tr style="background:#FFFFFF"><td style="padding:13px 26px; font-family:'Paperlogy Bold', Arial, sans-serif; color:#1B1F26">장르</td><td style="padding:13px 26px; color:#3C434E">실시간 전략 · 타워 디펜스 · 카드 배틀</td></tr><tr style="background:#F7F5F0"><td style="padding:13px 26px; font-family:'Paperlogy Bold', Arial, sans-serif; color:#1B1F26">개발 · 출시</td><td style="padding:13px 26px; color:#3C434E">Supercell · 2016년</td></tr><tr style="background:#FFFFFF"><td style="padding:13px 26px; font-family:'Paperlogy Bold', Arial, sans-serif; color:#1B1F26">플랫폼</td><td style="padding:13px 26px; color:#3C434E">모바일 (iOS · Android)</td></tr><tr style="background:#F7F5F0"><td style="padding:13px 26px; font-family:'Paperlogy Bold', Arial, sans-serif; color:#1B1F26">핵심 모드</td><td style="padding:13px 26px; color:#3C434E">1대1 실시간 대전</td></tr><tr style="background:#FFFFFF"><td style="padding:13px 26px; font-family:'Paperlogy Bold', Arial, sans-serif; color:#1B1F26">경기 시간</td><td style="padding:13px 26px; color:#3C434E">정규 3분 + 연장 2분</td></tr><tr style="background:#F7F5F0"><td style="padding:13px 26px; font-family:'Paperlogy Bold', Arial, sans-serif; color:#1B1F26">덱 구성</td><td style="padding:13px 26px; color:#3C434E">카드 8장 — 한 번에 4장씩 순환</td></tr><tr style="background:#FFFFFF"><td style="padding:13px 26px; font-family:'Paperlogy Bold', Arial, sans-serif; color:#1B1F26">자원</td><td style="padding:13px 26px; color:#3C434E">엘릭서 — 최대 10, 2.8초에 1씩 자동 회복</td></tr><tr style="background:#F7F5F0"><td style="padding:13px 26px; font-family:'Paperlogy Bold', Arial, sans-serif; color:#1B1F26">승리 조건</td><td style="padding:13px 26px; color:#3C434E">타워를 더 많이 파괴 · 킹 타워 파괴 시 즉시 승리</td></tr><tr style="background:#FFFFFF"><td style="padding:13px 26px; font-family:'Paperlogy Bold', Arial, sans-serif; color:#1B1F26">전장</td><td style="padding:13px 26px; color:#3C434E">18 × 32 타일 — 모든 1대1이 같은 전장을 공유</td></tr></table></div><div style="width:604px; height:640px; display:flex; flex-direction:column; gap:28px; padding:34px 38px; background:#FBF6EC; border:2px solid #E2CFA6; border-radius:12px; justify-content:center"><h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:34px; font-weight:700; line-height:1.25; color:#A96A12">왜 이 전장을 분석했는가</h3><ul style="padding:0 0 0 30px; display:flex; flex-direction:column; gap:22px"><li style="font-size:28px; line-height:1.55; color:#5E6570">맵이 하나뿐이라 지형 변수가 고정되어 있다.</li><li style="font-size:28px; line-height:1.55; color:#5E6570">카드와 덱은 바뀌어도 전장은 그대로다.</li><li style="font-size:28px; line-height:1.55; color:#5E6570">바꿀 수 있는 것이 적을수록, 하나를 바꿨을 때의 영향이 선명하게 드러난다.</li></ul></div></div><p style="position:absolute; left:112px; bottom:52px; width:1300px; font-size:25px; color:#5E6570">1부 · 개요</p><p style="position:absolute; right:112px; bottom:52px; width:220px; font-size:25px; color:#5E6570; text-align:right; font-variant-numeric:tabular-nums">04 / 19</p></section>
+</div>
+<div class="slide-note"><div class="n-head"><span class="num">04</span><div class="n-lead"><p>분석에 앞서 게임의 기본 규칙을 정리한다. 이 문서가 다루는 대상은 카드 밸런스가 아니라, 모든 경기가 공유하는 단 하나의 전장이다.</p></div></div></div>
+</div>
+<div class="slide-item" id="s5">
+<div class="slide-frame">
+<section id="z05-hud" data-section="1부 개요" data-transition="fade" style="background:#F6F5F1; color:#1B1F26; font-family:'Paperlogy', Arial, sans-serif; padding:64px 112px 130px; display:flex; flex-direction:column; gap:16px"><h2 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:64px; font-weight:700; line-height:1.18; color:#1B1F26; padding:8px 0 0">한 판에서 다루는 것들</h2><p style="font-size:40px; line-height:1.45; color:#1B1F26; font-weight:500; border-left:8px solid #1B1F26; padding:0 0 0 26px">왼쪽이 실제 전투 화면 전체다 — 오른쪽 열 가지를 모두 여기서 잘라냈다.</p><div style="height:712px; display:flex; flex-direction:row; gap:40px; align-items:center"><img src="../assets/img/clash_02.webp" alt="클래시로얄 1대1 전투 화면 전체" style="width:327px; height:708px; border:2px solid #D8D5CC; border-radius:10px; object-fit:contain; background:#EFEDE6"><div style="width:1329px; display:flex; flex-direction:column; gap:26px; justify-content:center"><div style="display:flex; flex-direction:row; gap:14px"><div style="width:254px; display:flex; flex-direction:column; gap:8px"><img src="../assets/img/clash_03.webp" alt="킹 타워" style="width:254px; height:214px; border:2px solid #D8D5CC; border-radius:9px; object-fit:cover"><div style="height:70px; display:flex; flex-direction:column; gap:2px"><h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:29px; font-weight:700; line-height:1.15; color:#1B1F26">킹 타워</h3><p style="font-size:25px; line-height:1.25; color:#5E6570">파괴 시 즉시 패배</p></div></div><div style="width:254px; display:flex; flex-direction:column; gap:8px"><img src="../assets/img/clash_04.webp" alt="외곽 타워" style="width:254px; height:214px; border:2px solid #D8D5CC; border-radius:9px; object-fit:cover"><div style="height:70px; display:flex; flex-direction:column; gap:2px"><h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:29px; font-weight:700; line-height:1.15; color:#1B1F26">외곽 타워</h3><p style="font-size:25px; line-height:1.25; color:#5E6570">공격로마다 하나</p></div></div><div style="width:254px; display:flex; flex-direction:column; gap:8px"><img src="../assets/img/clash_05.webp" alt="강과 다리" style="width:254px; height:214px; border:2px solid #D8D5CC; border-radius:9px; object-fit:cover"><div style="height:70px; display:flex; flex-direction:column; gap:2px"><h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:29px; font-weight:700; line-height:1.15; color:#1B1F26">강과 다리</h3><p style="font-size:25px; line-height:1.25; color:#5E6570">지상의 유일한 통로</p></div></div><div style="width:254px; display:flex; flex-direction:column; gap:8px"><img src="../assets/img/clash_06.webp" alt="지상 유닛" style="width:254px; height:214px; border:2px solid #D8D5CC; border-radius:9px; object-fit:cover"><div style="height:70px; display:flex; flex-direction:column; gap:2px"><h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:29px; font-weight:700; line-height:1.15; color:#1B1F26">지상 유닛</h3><p style="font-size:25px; line-height:1.25; color:#5E6570">다리로 돌아간다</p></div></div><div style="width:254px; display:flex; flex-direction:column; gap:8px"><img src="../assets/img/clash_07.webp" alt="공중 유닛" style="width:254px; height:214px; border:2px solid #D8D5CC; border-radius:9px; object-fit:cover"><div style="height:70px; display:flex; flex-direction:column; gap:2px"><h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:29px; font-weight:700; line-height:1.15; color:#1B1F26">공중 유닛</h3><p style="font-size:25px; line-height:1.25; color:#5E6570">강을 그대로 넘는다</p></div></div></div><div style="display:flex; flex-direction:row; gap:14px"><div style="width:254px; display:flex; flex-direction:column; gap:8px"><img src="../assets/img/clash_08.webp" alt="주문" style="width:254px; height:214px; border:2px solid #D8D5CC; border-radius:9px; object-fit:cover"><div style="height:70px; display:flex; flex-direction:column; gap:2px"><h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:29px; font-weight:700; line-height:1.15; color:#1B1F26">주문</h3><p style="font-size:25px; line-height:1.25; color:#5E6570">지정 지점에 즉시 작용</p></div></div><div style="width:254px; display:flex; flex-direction:column; gap:8px"><img src="../assets/img/clash_09.webp" alt="방어 건물" style="width:254px; height:214px; border:2px solid #D8D5CC; border-radius:9px; object-fit:cover"><div style="height:70px; display:flex; flex-direction:column; gap:2px"><h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:29px; font-weight:700; line-height:1.15; color:#1B1F26">방어 건물</h3><p style="font-size:25px; line-height:1.25; color:#5E6570">적을 끌어당긴다</p></div></div><div style="width:254px; display:flex; flex-direction:column; gap:8px"><img src="../assets/img/clash_10.webp" alt="덱 카드" style="width:254px; height:214px; border:2px solid #D8D5CC; border-radius:9px; object-fit:cover"><div style="height:70px; display:flex; flex-direction:column; gap:2px"><h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:29px; font-weight:700; line-height:1.15; color:#1B1F26">덱 카드</h3><p style="font-size:25px; line-height:1.25; color:#5E6570">손에 4장씩 순환</p></div></div><div style="width:254px; display:flex; flex-direction:column; gap:8px"><img src="../assets/img/clash_11.webp" alt="엘릭서" style="width:254px; height:214px; border:2px solid #D8D5CC; border-radius:9px; object-fit:cover"><div style="height:70px; display:flex; flex-direction:column; gap:2px"><h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:29px; font-weight:700; line-height:1.15; color:#1B1F26">엘릭서</h3><p style="font-size:25px; line-height:1.25; color:#5E6570">최대 10 · 2.8초에 1</p></div></div><div style="width:254px; display:flex; flex-direction:column; gap:8px"><img src="../assets/img/clash_12.webp" alt="남은 시간" style="width:254px; height:214px; border:2px solid #D8D5CC; border-radius:9px; object-fit:cover"><div style="height:70px; display:flex; flex-direction:column; gap:2px"><h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:29px; font-weight:700; line-height:1.15; color:#1B1F26">남은 시간</h3><p style="font-size:25px; line-height:1.25; color:#5E6570">정규 3분 · 연장 2분</p></div></div></div></div></div><p style="position:absolute; left:112px; bottom:52px; width:1300px; font-size:25px; color:#5E6570">1부 · 개요</p><p style="position:absolute; right:112px; bottom:52px; width:220px; font-size:25px; color:#5E6570; text-align:right; font-variant-numeric:tabular-nums">05 / 19</p></section>
+</div>
+<div class="slide-note"><div class="n-head"><span class="num">05</span><div class="n-lead"><p>왼쪽이 실제 전투 화면, 오른쪽은 그 화면에서 잘라낸 열 가지 구성 요소다. 엘릭서 칸이 1이라 비용 3·7 카드는 회색으로 잠겨 있다.</p></div></div></div>
+</div>
+<div class="slide-item" id="s6">
+<div class="slide-frame">
+<section id="p03-arena" data-transition="fade" style="background:#f6f5f1">
+  <p id="e1-6szo8o" style="position:absolute; bottom:52px; left:112px; width:1300px; font-family:Paperlogy, Arial, sans-serif; font-size:25px; color:#5e6570">1부 · 개요</p>
+  <p id="e2-6szo8o" style="position:absolute; right:112px; bottom:52px; width:220px; font-family:Paperlogy, Arial, sans-serif; font-size:25px; text-align:right; font-variant-numeric:tabular-nums; color:#5e6570">06 / 19</p>
+  <h2 id="b074eb51" style="position:absolute; top:64px; left:112px; width:1696px; padding:8px 0 0; font-family:'Paperlogy Bold', Arial, sans-serif; font-size:64px; font-weight:700; line-height:1.18; color:#1b1f26">기본 전장의 구조</h2>
+  <p id="757245ae" style="position:absolute; top:164px; left:112px; width:1696px; padding:0 0 0 26px; font-family:Paperlogy, Arial, sans-serif; font-size:40px; font-weight:500; line-height:1.45; color:#1b1f26; border-left:8px solid #1b1f26">두 진영, 두 교차 지점, 각 진영의 세 타워가 이동과 배치의 조건을 만든다.</p>
+  <p id="2fcc4342" style="position:absolute; top:595.37px; left:940.75px; width:44px; font-family:Paperlogy, Arial, sans-serif; font-size:26px; font-weight:700; line-height:1.46; text-align:center; color:#1b1f26; background:#ffffff; border:3px solid #1b1f26; border-radius:256px">①</p>
+  <div id="a5e242fe" style="position:absolute; top:243.67px; left:154.24px; width:483px; height:698px; display:flex; flex-direction:column; gap:14px">
+    <h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:30px; font-weight:700; line-height:1.25; color:#1b1f26">실제 화면</h3>
+    <img src="../assets/img/clash_13.webp" alt="클래시로얄 일반 1대1 전투 시작 직후의 전장" style="width:483px; height:646px; background:#efede6; border:2px solid #d8d5cc; border-radius:10px; object-fit:contain">
+  </div>
+  <div id="22270cc4" style="position:absolute; top:243.67px; left:677.24px; width:360px; height:698px; display:flex; flex-direction:column; gap:14px">
+    <h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:30px; font-weight:700; line-height:1.25; color:#1b1f26">재구성 도식</h3>
+    <div style="position:relative; width:360px; height:646px; display:flex; flex-direction:column; align-self:stretch">
+      <svg xmlns="http://www.w3.org/2000/svg" aria-label="클래시로얄 일반 1대1 전장 개념도(축척 아님)" viewBox="0 0 360 640" style="position:absolute; top:0; left:0; width:360px; height:640px"><g transform="scale(1.0)"><rect x="1" y="1" width="358" height="638" rx="10" fill="#E4ECF7" stroke="#98A0AB" stroke-width="2"/><path d="M1 11 A10 10 0 0 1 11 1 H349 A10 10 0 0 1 359 11 V300 H1 Z" fill="#F7E6E3"/><rect x="1" y="300" width="358" height="40" fill="#A9C4D9"/><rect x="44" y="294" width="60" height="52" rx="4" fill="#EDE7D9" stroke="#B5AB94" stroke-width="2"/><rect x="256" y="294" width="60" height="52" rx="4" fill="#EDE7D9" stroke="#B5AB94" stroke-width="2"/><rect x="1" y="1" width="358" height="638" rx="10" fill="none" stroke="#98A0AB" stroke-width="2"/><rect x="114" y="346" width="132" height="104" rx="6" fill="#7D8CA0" fill-opacity="0.16" stroke="#7D8CA0" stroke-width="2.5" stroke-dasharray="9 7"/><rect x="8" y="520" width="344" height="114" rx="6" fill="#7D8CA0" fill-opacity="0.16" stroke="#7D8CA0" stroke-width="2.5" stroke-dasharray="9 7"/><rect x="140" y="32" width="80" height="80" rx="6" fill="#DB9C95" stroke="#AC443D" stroke-width="2.5"/><rect x="44" y="124" width="60" height="60" rx="6" fill="#E7B2AC" stroke="#AC443D" stroke-width="2.5"/><rect x="256" y="124" width="60" height="60" rx="6" fill="#E7B2AC" stroke="#AC443D" stroke-width="2.5"/><rect x="140" y="528" width="80" height="80" rx="6" fill="#96AEDA" stroke="#2E5FA3" stroke-width="2.5"/><rect x="44" y="456" width="60" height="60" rx="6" fill="#B4C7E6" stroke="#2E5FA3" stroke-width="2.5"/><rect x="256" y="456" width="60" height="60" rx="6" fill="#B4C7E6" stroke="#2E5FA3" stroke-width="2.5"/></g></svg>
+      <p style="position:absolute; top:298px; left:52px; width:44px; height:44px; font-family:Paperlogy, Arial, sans-serif; font-size:26px; font-weight:700; line-height:1.46; text-align:center; color:#1b1f26; background:#ffffff; border:3px solid #1b1f26; border-radius:256px">②</p>
+      <p style="position:absolute; top:132px; left:264px; width:44px; height:44px; font-family:Paperlogy, Arial, sans-serif; font-size:26px; font-weight:700; line-height:1.46; text-align:center; color:#1b1f26; background:#ffffff; border:3px solid #1b1f26; border-radius:256px">③</p>
+      <p style="position:absolute; top:50px; left:158px; width:44px; height:44px; font-family:Paperlogy, Arial, sans-serif; font-size:26px; font-weight:700; line-height:1.46; text-align:center; color:#1b1f26; background:#ffffff; border:3px solid #1b1f26; border-radius:256px">④</p>
+      <p style="position:absolute; top:376px; left:158px; width:44px; height:44px; font-family:Paperlogy, Arial, sans-serif; font-size:26px; font-weight:700; line-height:1.46; text-align:center; color:#1b1f26; background:#ffffff; border:3px solid #1b1f26; border-radius:256px">⑤</p>
+      <p style="position:absolute; top:554px; left:34px; width:44px; height:44px; font-family:Paperlogy, Arial, sans-serif; font-size:26px; font-weight:700; line-height:1.46; text-align:center; color:#1b1f26; background:#ffffff; border:3px solid #1b1f26; border-radius:256px">⑥</p>
+    </div>
+  </div>
+  <div id="80f5b03b" style="position:absolute; top:349.66px; left:1097.78px; width:662px; height:532.68px; display:flex; flex-direction:column; gap:14px; padding:24px 30px; background:#ffffff; border:2px solid #d8d5cc; border-radius:12px">
+    <div style="display:flex; flex-direction:column; gap:20px">
+      <div style="display:flex; flex-direction:row; gap:16px; align-items:baseline">
+        <p style="width:38px; font-family:Paperlogy, Arial, sans-serif; font-size:30px; font-weight:700; color:#2e5fa3">①</p>
+        <p style="flex:1; font-family:Paperlogy, Arial, sans-serif; font-size:30px; line-height:1.35; color:#1b1f26"><b>강</b> &nbsp;·&nbsp; <span style="color:#5e6570">두 진영을 나누는 경계</span></p>
+      </div>
+      <div style="display:flex; flex-direction:row; gap:16px; align-items:baseline">
+        <p style="width:38px; font-family:Paperlogy, Arial, sans-serif; font-size:30px; font-weight:700; color:#2e5fa3">②</p>
+        <p style="flex:1; font-family:Paperlogy, Arial, sans-serif; font-size:30px; line-height:1.35; color:#1b1f26"><b>좌우 두 다리</b> &nbsp;·&nbsp; <span style="color:#5e6570">지상 유닛의 교차 지점</span></p>
+      </div>
+      <div style="display:flex; flex-direction:row; gap:16px; align-items:baseline">
+        <p style="width:38px; font-family:Paperlogy, Arial, sans-serif; font-size:30px; font-weight:700; color:#2e5fa3">③</p>
+        <p style="flex:1; font-family:Paperlogy, Arial, sans-serif; font-size:30px; line-height:1.35; color:#1b1f26"><b>외곽 타워</b> &nbsp;·&nbsp; <span style="color:#5e6570">공격로마다 하나씩</span></p>
+      </div>
+      <div style="display:flex; flex-direction:row; gap:16px; align-items:baseline">
+        <p style="width:38px; font-family:Paperlogy, Arial, sans-serif; font-size:30px; font-weight:700; color:#2e5fa3">④</p>
+        <p style="flex:1; font-family:Paperlogy, Arial, sans-serif; font-size:30px; line-height:1.35; color:#1b1f26"><b>킹 타워</b> &nbsp;·&nbsp; <span style="color:#5e6570">각 진영 후방에 하나</span></p>
+      </div>
+      <div style="display:flex; flex-direction:row; gap:16px; align-items:baseline">
+        <p style="width:38px; font-family:Paperlogy, Arial, sans-serif; font-size:30px; font-weight:700; color:#2e5fa3">⑤</p>
+        <p style="flex:1; font-family:Paperlogy, Arial, sans-serif; font-size:30px; line-height:1.35; color:#1b1f26"><b>중앙 공간</b> &nbsp;·&nbsp; <span style="color:#5e6570">두 공격로가 함께 쓰는 방어 구역</span></p>
+      </div>
+      <div style="display:flex; flex-direction:row; gap:16px; align-items:baseline">
+        <p style="width:38px; font-family:Paperlogy, Arial, sans-serif; font-size:30px; font-weight:700; color:#2e5fa3">⑥</p>
+        <p style="flex:1; font-family:Paperlogy, Arial, sans-serif; font-size:30px; line-height:1.35; color:#1b1f26"><b>후방 배치 영역</b> &nbsp;·&nbsp; <span style="color:#5e6570">거리를 시간으로 바꾸는 자리</span></p>
+      </div>
+    </div>
+  </div>
+  <p id="43100e5a" style="position:absolute; top:593.75px; left:846.09px; width:44px; font-family:Paperlogy, Arial, sans-serif; font-size:26px; font-weight:700; line-height:1.46; text-align:center; color:#1b1f26; background:#ffffff; border:3px solid #1b1f26; border-radius:256px">①</p>
+  <p id="edc0b2ac" style="position:absolute; top:798.22px; left:1131.13px; width:598px; font-family:Paperlogy, Arial, sans-serif; font-size:30px; line-height:1.35; text-align:center; color:#1b1f26"><b>승리조건: 상대방의 타워를 3분 내로 부수는 것!</b></p>
+  
+</section>
+</div>
+<div class="slide-note"><div class="n-head"><span class="num">06</span><div class="n-lead"><p>왼쪽은 실제 전투 화면, 오른쪽은 같은 구조를 다시 그린 도식이다. 이 도식의 타워 위치와 강·다리 비율은 이후 모든 페이지에서 그대로 반복한다.</p></div></div></div>
+</div>
+<div class="slide-item" id="s7">
+<div class="slide-frame">
+<section id="z07-metrics" data-transition="fade" style="display:flex; flex-direction:column; gap:16px; padding:64px 112px 130px; background:#f6f5f1">
+  <h2 style="padding:8px 0 0; font-family:'Paperlogy Bold', Arial, sans-serif; font-size:64px; font-weight:700; line-height:1.18; color:#1b1f26">숫자로 보는 전장</h2>
+  <p style="padding:0 0 0 26px; font-family:Paperlogy, Arial, sans-serif; font-size:40px; font-weight:500; line-height:1.45; color:#1b1f26; border-left:8px solid #1b1f26">거리는 타일로, 자원은 엘릭서로, 회복은 초로 고정되어 있다.</p>
+  <div style="height:712px; display:flex; flex-direction:row; gap:40px; align-items:start">
+    <div style="width:520px; display:flex; flex-direction:column; gap:10px">
+      <div style="position:relative; width:494px; height:637px; display:flex; flex-direction:column; align-self:stretch">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="클래시로얄 일반 1대1 전장 개념도(축척 아님)" viewBox="0 0 335 595" style="position:absolute; top:34px; left:128px; width:335px; height:595px"><g transform="scale(0.93)"><rect x="1" y="1" width="358" height="638" rx="10" fill="#E4ECF7" stroke="#98A0AB" stroke-width="2"/><path d="M1 11 A10 10 0 0 1 11 1 H349 A10 10 0 0 1 359 11 V300 H1 Z" fill="#F7E6E3"/><rect x="1" y="300" width="358" height="40" fill="#A9C4D9"/><rect x="44" y="294" width="60" height="52" rx="4" fill="#EDE7D9" stroke="#B5AB94" stroke-width="2"/><rect x="256" y="294" width="60" height="52" rx="4" fill="#EDE7D9" stroke="#B5AB94" stroke-width="2"/><rect x="1" y="1" width="358" height="638" rx="10" fill="none" stroke="#98A0AB" stroke-width="2"/><path d="M20 2 V638" stroke="#8A93A0" stroke-width="0.8" stroke-opacity="0.35" fill="none"/><path d="M40 2 V638" stroke="#8A93A0" stroke-width="0.8" stroke-opacity="0.35" fill="none"/><path d="M60 2 V638" stroke="#8A93A0" stroke-width="0.8" stroke-opacity="0.35" fill="none"/><path d="M80 2 V638" stroke="#8A93A0" stroke-width="0.8" stroke-opacity="0.35" fill="none"/><path d="M100 2 V638" stroke="#8A93A0" stroke-width="0.8" stroke-opacity="0.35" fill="none"/><path d="M120 2 V638" stroke="#8A93A0" stroke-width="0.8" stroke-opacity="0.35" fill="none"/><path d="M140 2 V638" stroke="#8A93A0" stroke-width="0.8" stroke-opacity="0.35" fill="none"/><path d="M160 2 V638" stroke="#8A93A0" stroke-width="0.8" stroke-opacity="0.35" fill="none"/><path d="M180 2 V638" stroke="#8A93A0" stroke-width="0.8" stroke-opacity="0.35" fill="none"/><path d="M200 2 V638" stroke="#8A93A0" stroke-width="0.8" stroke-opacity="0.35" fill="none"/><path d="M220 2 V638" stroke="#8A93A0" stroke-width="0.8" stroke-opacity="0.35" fill="none"/><path d="M240 2 V638" stroke="#8A93A0" stroke-width="0.8" stroke-opacity="0.35" fill="none"/><path d="M260 2 V638" stroke="#8A93A0" stroke-width="0.8" stroke-opacity="0.35" fill="none"/><path d="M280 2 V638" stroke="#8A93A0" stroke-width="0.8" stroke-opacity="0.35" fill="none"/><path d="M300 2 V638" stroke="#8A93A0" stroke-width="0.8" stroke-opacity="0.35" fill="none"/><path d="M320 2 V638" stroke="#8A93A0" stroke-width="0.8" stroke-opacity="0.35" fill="none"/><path d="M340 2 V638" stroke="#8A93A0" stroke-width="0.8" stroke-opacity="0.35" fill="none"/><path d="M2 20 H358" stroke="#8A93A0" stroke-width="0.8" stroke-opacity="0.35" fill="none"/><path d="M2 40 H358" stroke="#8A93A0" stroke-width="0.8" stroke-opacity="0.35" fill="none"/><path d="M2 60 H358" stroke="#8A93A0" stroke-width="0.8" stroke-opacity="0.35" fill="none"/><path d="M2 80 H358" stroke="#8A93A0" stroke-width="0.8" stroke-opacity="0.35" fill="none"/><path d="M2 100 H358" stroke="#8A93A0" stroke-width="0.8" stroke-opacity="0.35" fill="none"/><path d="M2 120 H358" stroke="#8A93A0" stroke-width="0.8" stroke-opacity="0.35" fill="none"/><path d="M2 140 H358" stroke="#8A93A0" stroke-width="0.8" stroke-opacity="0.35" fill="none"/><path d="M2 160 H358" stroke="#8A93A0" stroke-width="0.8" stroke-opacity="0.35" fill="none"/><path d="M2 180 H358" stroke="#8A93A0" stroke-width="0.8" stroke-opacity="0.35" fill="none"/><path d="M2 200 H358" stroke="#8A93A0" stroke-width="0.8" stroke-opacity="0.35" fill="none"/><path d="M2 220 H358" stroke="#8A93A0" stroke-width="0.8" stroke-opacity="0.35" fill="none"/><path d="M2 240 H358" stroke="#8A93A0" stroke-width="0.8" stroke-opacity="0.35" fill="none"/><path d="M2 260 H358" stroke="#8A93A0" stroke-width="0.8" stroke-opacity="0.35" fill="none"/><path d="M2 280 H358" stroke="#8A93A0" stroke-width="0.8" stroke-opacity="0.35" fill="none"/><path d="M2 300 H358" stroke="#8A93A0" stroke-width="0.8" stroke-opacity="0.35" fill="none"/><path d="M2 320 H358" stroke="#8A93A0" stroke-width="0.8" stroke-opacity="0.35" fill="none"/><path d="M2 340 H358" stroke="#8A93A0" stroke-width="0.8" stroke-opacity="0.35" fill="none"/><path d="M2 360 H358" stroke="#8A93A0" stroke-width="0.8" stroke-opacity="0.35" fill="none"/><path d="M2 380 H358" stroke="#8A93A0" stroke-width="0.8" stroke-opacity="0.35" fill="none"/><path d="M2 400 H358" stroke="#8A93A0" stroke-width="0.8" stroke-opacity="0.35" fill="none"/><path d="M2 420 H358" stroke="#8A93A0" stroke-width="0.8" stroke-opacity="0.35" fill="none"/><path d="M2 440 H358" stroke="#8A93A0" stroke-width="0.8" stroke-opacity="0.35" fill="none"/><path d="M2 460 H358" stroke="#8A93A0" stroke-width="0.8" stroke-opacity="0.35" fill="none"/><path d="M2 480 H358" stroke="#8A93A0" stroke-width="0.8" stroke-opacity="0.35" fill="none"/><path d="M2 500 H358" stroke="#8A93A0" stroke-width="0.8" stroke-opacity="0.35" fill="none"/><path d="M2 520 H358" stroke="#8A93A0" stroke-width="0.8" stroke-opacity="0.35" fill="none"/><path d="M2 540 H358" stroke="#8A93A0" stroke-width="0.8" stroke-opacity="0.35" fill="none"/><path d="M2 560 H358" stroke="#8A93A0" stroke-width="0.8" stroke-opacity="0.35" fill="none"/><path d="M2 580 H358" stroke="#8A93A0" stroke-width="0.8" stroke-opacity="0.35" fill="none"/><path d="M2 600 H358" stroke="#8A93A0" stroke-width="0.8" stroke-opacity="0.35" fill="none"/><path d="M2 620 H358" stroke="#8A93A0" stroke-width="0.8" stroke-opacity="0.35" fill="none"/><rect x="140" y="32" width="80" height="80" rx="6" fill="#DB9C95" stroke="#AC443D" stroke-width="2.5"/><rect x="44" y="124" width="60" height="60" rx="6" fill="#E7B2AC" stroke="#AC443D" stroke-width="2.5"/><rect x="256" y="124" width="60" height="60" rx="6" fill="#E7B2AC" stroke="#AC443D" stroke-width="2.5"/><rect x="140" y="528" width="80" height="80" rx="6" fill="#96AEDA" stroke="#2E5FA3" stroke-width="2.5"/><rect x="44" y="456" width="60" height="60" rx="6" fill="#B4C7E6" stroke="#2E5FA3" stroke-width="2.5"/><rect x="256" y="456" width="60" height="60" rx="6" fill="#B4C7E6" stroke="#2E5FA3" stroke-width="2.5"/><defs><marker id="m7" orient="auto" markerWidth="5" markerHeight="5" refX="1.2" refY="2" overflow="visible"><path d="M-3 -1.8 L1 0 L-3 1.8" transform="translate(0 2)" fill="none" stroke="#2E5FA3" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></marker></defs><path d="M286 356 V196" fill="none" stroke="#2E5FA3" stroke-width="6" stroke-linecap="round" marker-end="url(#m7)"/><circle cx="286" cy="356" r="9" fill="#2E5FA3" stroke="#FFFFFF" stroke-width="2.5"/><path d="M286 628 V376" fill="none" stroke="#2E5FA3" stroke-width="6" stroke-linecap="round" stroke-dasharray="11 8"/><circle cx="286" cy="628" r="9" fill="#2E5FA3" stroke="#FFFFFF" stroke-width="2.5"/></g></svg>
+        <p style="position:absolute; top:0; left:128px; width:335px; font-family:Paperlogy, Arial, sans-serif; font-size:26px; font-weight:700; line-height:1.3; text-align:center; color:#1b1f26">18타일</p>
+        <p style="position:absolute; top:315px; left:0; width:112px; font-family:Paperlogy, Arial, sans-serif; font-size:26px; font-weight:700; line-height:1.3; text-align:right; color:#1b1f26">32타일</p>
+        <p style="position:absolute; top:274px; left:258px; width:96px; font-family:Paperlogy, Arial, sans-serif; font-size:26px; font-weight:700; line-height:1.3; color:#2e5fa3">8타일</p>
+        <p style="position:absolute; top:486px; left:258px; width:96px; font-family:Paperlogy, Arial, sans-serif; font-size:26px; font-weight:700; line-height:1.3; color:#2e5fa3">21타일</p>
+      </div>
+      <p style="width:494px; font-family:Paperlogy, Arial, sans-serif; font-size:25px; line-height:1.3; text-align:center; color:#5e6570">격자 한 칸이 1타일이다.</p>
+    </div>
+    <div style="width:1136px; display:flex; flex-direction:column; gap:20px">
+      <div style="height:340px; display:flex; flex-direction:row; gap:24px">
+        <div style="display:flex; flex-direction:column; gap:14px; flex:1; padding:24px 28px; background:#eef3fa; border:2px solid #c7d6e8; border-radius:12px">
+          <h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:29px; font-weight:700; color:#2e5fa3">전장</h3>
+          <div style="display:flex; flex-direction:column; gap:10px">
+            <div style="display:flex; flex-direction:column; gap:2px">
+              <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; line-height:1.3; color:#5e6570">전체 크기</p>
+              <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:31px; font-weight:700; line-height:1.3; color:#1b1f26">18 × 32 타일</p>
+            </div>
+            <div style="display:flex; flex-direction:column; gap:2px">
+              <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; line-height:1.3; color:#5e6570">강 폭</p>
+              <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:31px; font-weight:700; line-height:1.3; color:#1b1f26">2타일</p>
+            </div>
+            <div style="display:flex; flex-direction:column; gap:2px">
+              <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; line-height:1.3; color:#5e6570">다리</p>
+              <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:31px; font-weight:700; line-height:1.3; color:#1b1f26">3타일 × 2개</p>
+            </div>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:14px; flex:1; padding:24px 28px; background:#fbf6ec; border:2px solid #e2cfa6; border-radius:12px">
+          <h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:29px; font-weight:700; color:#a96a12">엘릭서</h3>
+          <div style="display:flex; flex-direction:column; gap:10px">
+            <div style="display:flex; flex-direction:column; gap:2px">
+              <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; line-height:1.3; color:#5e6570">최대 보유량</p>
+              <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:31px; font-weight:700; line-height:1.3; color:#1b1f26">10</p>
+            </div>
+            <div style="display:flex; flex-direction:column; gap:2px">
+              <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; line-height:1.3; color:#5e6570">회복 속도</p>
+              <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:31px; font-weight:700; line-height:1.3; color:#1b1f26">2.8초에 1</p>
+            </div>
+            <div style="display:flex; flex-direction:column; gap:2px">
+              <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; line-height:1.3; color:#5e6570">2분 경과 후</p>
+              <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:31px; font-weight:700; line-height:1.3; color:#1b1f26">1.4초에 1</p>
+            </div>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:14px; flex:1; padding:24px 28px; background:#f7eae8; border:2px solid #e3c4bf; border-radius:12px">
+          <h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:29px; font-weight:700; color:#ac443d">시간</h3>
+          <div style="display:flex; flex-direction:column; gap:10px">
+            <div style="display:flex; flex-direction:column; gap:2px">
+              <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; line-height:1.3; color:#5e6570">정규 시간</p>
+              <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:31px; font-weight:700; line-height:1.3; color:#1b1f26">3분</p>
+            </div>
+            <div style="display:flex; flex-direction:column; gap:2px">
+              <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; line-height:1.3; color:#5e6570">연장 시간</p>
+              <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:31px; font-weight:700; line-height:1.3; color:#1b1f26">2분</p>
+            </div>
+            <div style="display:flex; flex-direction:column; gap:2px">
+              <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; line-height:1.3; color:#5e6570">0 → 10 충전</p>
+              <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:31px; font-weight:700; line-height:1.3; color:#1b1f26">28초</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="height:240px; display:flex; flex-direction:column; gap:16px; justify-content:center; padding:20px 28px; background:#ffffff; border:2px solid #d8d5cc; border-radius:12px">
+        <h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:28px; font-weight:700; color:#1b1f26">외곽 타워까지 남은 거리</h3>
+        <div style="display:flex; flex-direction:column; gap:8px">
+          <div style="display:flex; flex-direction:row; gap:16px; align-items:baseline">
+            <p style="width:290px; font-family:'Paperlogy Bold', Arial, sans-serif; font-size:27px; font-weight:700; color:#1b1f26">다리 앞에 두면</p>
+            <p style="font-family:Paperlogy, Arial, sans-serif; font-size:27px; font-weight:700; color:#2e5fa3">8타일</p>
+          </div>
+          <div style="width:260px; height:22px; display:flex; flex-direction:column; background:#dde6f4; border:2px solid #2e5fa3; border-radius:6px">
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:8px">
+          <div style="display:flex; flex-direction:row; gap:16px; align-items:baseline">
+            <p style="width:290px; font-family:'Paperlogy Bold', Arial, sans-serif; font-size:27px; font-weight:700; color:#1b1f26">진영 뒤에 두면</p>
+            <p style="font-family:Paperlogy, Arial, sans-serif; font-size:27px; font-weight:700; color:#2e5fa3">21타일</p>
+          </div>
+          <div style="width:690px; height:22px; display:flex; flex-direction:column; background:#dde6f4; border:2px solid #2e5fa3; border-radius:6px">
+          </div>
+        </div>
+      </div>
+      <div style="height:92px; display:flex; flex-direction:column; justify-content:center; padding:16px 30px; background:#fbf6ec; border-left:12px solid #a96a12; border-radius:12px">
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:29px; line-height:1.35; color:#1b1f26">같은 카드라도 <b>어디에 두느냐에 따라 이동 거리가 2배 이상</b> 벌어진다.&nbsp;<br>그 차이만큼 엘릭서가 회복되고, 상대는 대응할 시간을 얻는다. 자세한 내용은 후술하겠다.</p>
+      </div>
+    </div>
+  </div>
+  <p style="position:absolute; bottom:52px; left:112px; width:1300px; font-family:Paperlogy, Arial, sans-serif; font-size:25px; color:#5e6570">1부 · 개요</p>
+  <p style="position:absolute; right:112px; bottom:52px; width:220px; font-family:Paperlogy, Arial, sans-serif; font-size:25px; text-align:right; font-variant-numeric:tabular-nums; color:#5e6570">07 / 19</p>
+  
+</section>
+</div>
+<div class="slide-note"><div class="n-head"><span class="num">07</span><div class="n-lead"><p>전장은 18 × 32 타일이며 강이 2타일, 다리가 각 3타일이다. 배치 위치가 바꾸는 것은 이동 거리이고, 이동 거리는 곧 상대가 얻는 대응 시간이다.</p></div></div></div>
+</div>
+<div class="slide-item" id="s8">
+<div class="slide-frame">
+<section id="x-part2" data-transition="fade" style="display:flex; flex-direction:column; gap:16px; padding:64px 112px 130px; background:#1e2430">
+  <div style="height:886px; display:flex; flex-direction:column; gap:36px; justify-content:center">
+    <div style="display:flex; flex-direction:row; gap:36px; align-items:center">
+      <p style="padding:12px 32px; font-family:'Paperlogy Black', Arial, sans-serif; font-size:32px; font-weight:700; color:#2a2113; background:#e7b45c; border-radius:12px">2부</p>
+      <h1 style="font-family:'Paperlogy Black', Arial, sans-serif; font-size:110px; font-weight:700; line-height:1.05; color:#f2f1ec">레벨디자인</h1>
+      <div style="flex:1"></div>
+      <p style="font-family:Paperlogy, Arial, sans-serif; font-size:36px; font-weight:700; font-variant-numeric:tabular-nums; color:#9aa4b2">09 — 19</p>
+    </div>
+    <div style="height:4px; display:flex; flex-direction:column; background:#e7b45c">
+    </div>
+    <div style="display:flex; flex-direction:column; gap:26px">
+      <div style="display:flex; flex-direction:row; gap:26px; align-items:baseline">
+        <p style="width:52px; font-family:'Paperlogy Bold', Arial, sans-serif; font-size:40px; font-weight:700; color:#e7b45c">A</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:38px; line-height:1.3; color:#f2f1ec">전장은 선택을 만든다</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:29px; line-height:1.3; color:#9aa4b2">대칭 · 다리 · 예외</p>
+        <div style="flex:1"></div>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:32px; font-variant-numeric:tabular-nums; color:#9aa4b2">09 — 11</p>
+      </div>
+      <div style="display:flex; flex-direction:row; gap:26px; align-items:baseline">
+        <p style="width:52px; font-family:'Paperlogy Bold', Arial, sans-serif; font-size:40px; font-weight:700; color:#e7b45c">B</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:38px; line-height:1.3; color:#f2f1ec">선택에는 비용이 따른다</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:29px; line-height:1.3; color:#9aa4b2">엘릭서 · 시간</p>
+        <div style="flex:1"></div>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:32px; font-variant-numeric:tabular-nums; color:#9aa4b2">12 — 13</p>
+      </div>
+      <div style="display:flex; flex-direction:row; gap:26px; align-items:baseline">
+        <p style="width:52px; font-family:'Paperlogy Bold', Arial, sans-serif; font-size:40px; font-weight:700; color:#e7b45c">C</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:38px; line-height:1.3; color:#f2f1ec">그래서 공격과 방어가 갈린다</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:29px; line-height:1.3; color:#9aa4b2">빌드업 · 유인 · 전진</p>
+        <div style="flex:1"></div>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:32px; font-variant-numeric:tabular-nums; color:#9aa4b2">14 — 16</p>
+      </div>
+      <div style="display:flex; flex-direction:row; gap:26px; align-items:baseline">
+        <p style="width:52px; font-family:'Paperlogy Bold', Arial, sans-serif; font-size:40px; font-weight:700; color:#e7b45c">D</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:38px; line-height:1.3; color:#f2f1ec">그래서 무엇을 바꿀 수 있을까?</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:29px; line-height:1.3; color:#9aa4b2">개방 · 총력전 · 정리</p>
+        <div style="flex:1"></div>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:32px; font-variant-numeric:tabular-nums; color:#9aa4b2">17 — 19</p>
+      </div>
+    </div>
+  </div>
+  <p style="position:absolute; bottom:52px; left:112px; width:1300px; font-family:Paperlogy, Arial, sans-serif; font-size:25px; color:#8a94a4">2부 · 레벨디자인</p>
+  <p style="position:absolute; right:112px; bottom:52px; width:220px; font-family:Paperlogy, Arial, sans-serif; font-size:25px; text-align:right; font-variant-numeric:tabular-nums; color:#8a94a4">08 / 19</p>
+  
+</section>
+</div>
+<div class="slide-note"><div class="n-head"><span class="num">08</span><div class="n-lead"><p>2부 간지. 네 묶음으로 나눠 구조를 레벨디자인으로 읽는다.</p></div></div></div>
+</div>
+<div class="slide-item" id="s9">
+<div class="slide-frame">
+<section id="y06-symmetry" data-section="A 전장은 선택을 만든다" data-transition="fade" style="background:#F6F5F1; color:#1B1F26; font-family:'Paperlogy', Arial, sans-serif; padding:64px 112px 130px; display:flex; flex-direction:column; gap:16px"><h2 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:64px; font-weight:700; line-height:1.18; color:#1B1F26; padding:8px 0 0">대칭이 만드는 두 가지</h2><p style="font-size:40px; line-height:1.45; color:#1B1F26; font-weight:500; border-left:8px solid #1B1F26; padding:0 0 0 26px">상하 대칭은 플레이어 사이의 공정성을, 좌우 대칭은 조건이 같은 선택지 두 개를 만든다.</p><div style="height:604px; display:flex; gap:34px; align-items:start"><div style="width:420px; display:flex; flex-direction:column; gap:14px"><h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:30px; font-weight:700; color:#1B1F26; text-align:center">상하 대칭</h3><div style="position:relative; width:420px; height:492px;"><svg aria-label="클래시로얄 일반 1대1 전장 개념도(축척 아님)" width="274" height="486" viewBox="0 0 274 486" style="position:absolute; left:73px; top:0px; width:274px; height:486px;"><g transform="scale(0.76)"><defs><marker id="s6b" orient="auto" markerWidth="5" markerHeight="5" refX="1.2" refY="2" overflow="visible"><path d="M-3 -1.8 L1 0 L-3 1.8" transform="translate(0 2)" fill="none" stroke="#2E5FA3" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></marker><marker id="s6r" orient="auto" markerWidth="5" markerHeight="5" refX="1.2" refY="2" overflow="visible"><path d="M-3 -1.8 L1 0 L-3 1.8" transform="translate(0 2)" fill="none" stroke="#AC443D" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></marker></defs><rect x="1" y="1" width="358" height="638" rx="10" fill="#E4ECF7" stroke="#98A0AB" stroke-width="2"/><path d="M1 11 A10 10 0 0 1 11 1 H349 A10 10 0 0 1 359 11 V300 H1 Z" fill="#F7E6E3"/><rect x="1" y="300" width="358" height="40" fill="#A9C4D9"/><rect x="44" y="294" width="60" height="52" rx="4" fill="#EDE7D9" stroke="#B5AB94" stroke-width="2"/><rect x="256" y="294" width="60" height="52" rx="4" fill="#EDE7D9" stroke="#B5AB94" stroke-width="2"/><rect x="1" y="1" width="358" height="638" rx="10" fill="none" stroke="#98A0AB" stroke-width="2"/><path d="M6 320 H354" stroke="#5C6472" stroke-width="4" stroke-dasharray="12 9" fill="none"/><rect x="140" y="32" width="80" height="80" rx="6" fill="#DB9C95" stroke="#AC443D" stroke-width="2.5"/><rect x="44" y="124" width="60" height="60" rx="6" fill="#E7B2AC" stroke="#AC443D" stroke-width="2.5"/><rect x="256" y="124" width="60" height="60" rx="6" fill="#E7B2AC" stroke="#AC443D" stroke-width="2.5"/><rect x="140" y="528" width="80" height="80" rx="6" fill="#96AEDA" stroke="#2E5FA3" stroke-width="2.5"/><rect x="44" y="456" width="60" height="60" rx="6" fill="#B4C7E6" stroke="#2E5FA3" stroke-width="2.5"/><rect x="256" y="456" width="60" height="60" rx="6" fill="#B4C7E6" stroke="#2E5FA3" stroke-width="2.5"/><path d="M 180 624 L 240 616 L 240 460 L 240 400 L 286 352 L 286 192" fill="none" stroke="#2E5FA3" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#s6b)"/><circle cx="180" cy="624" r="10" fill="#2E5FA3" stroke="#FFFFFF" stroke-width="2.5"/><path d="M 180 16 L 240 24 L 240 180 L 240 240 L 286 288 L 286 448" fill="none" stroke="#AC443D" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#s6r)"/><circle cx="180" cy="16" r="10" fill="#AC443D" stroke="#FFFFFF" stroke-width="2.5"/></g></svg></div><p style="font-size:27px; line-height:1.35; color:#5E6570; text-align:center">두 진영의 공세가 서로 거울상이다</p></div><div style="width:420px; display:flex; flex-direction:column; gap:14px"><h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:30px; font-weight:700; color:#1B1F26; text-align:center">좌우 대칭</h3><div style="position:relative; width:420px; height:492px;"><svg aria-label="클래시로얄 일반 1대1 전장 개념도(축척 아님)" width="274" height="486" viewBox="0 0 274 486" style="position:absolute; left:73px; top:0px; width:274px; height:486px;"><g transform="scale(0.76)"><defs><marker id="s6c" orient="auto" markerWidth="5" markerHeight="5" refX="1.2" refY="2" overflow="visible"><path d="M-3 -1.8 L1 0 L-3 1.8" transform="translate(0 2)" fill="none" stroke="#2E5FA3" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></marker></defs><rect x="1" y="1" width="358" height="638" rx="10" fill="#E4ECF7" stroke="#98A0AB" stroke-width="2"/><path d="M1 11 A10 10 0 0 1 11 1 H349 A10 10 0 0 1 359 11 V300 H1 Z" fill="#F7E6E3"/><rect x="1" y="300" width="358" height="40" fill="#A9C4D9"/><rect x="44" y="294" width="60" height="52" rx="4" fill="#EDE7D9" stroke="#B5AB94" stroke-width="2"/><rect x="256" y="294" width="60" height="52" rx="4" fill="#EDE7D9" stroke="#B5AB94" stroke-width="2"/><rect x="1" y="1" width="358" height="638" rx="10" fill="none" stroke="#98A0AB" stroke-width="2"/><path d="M180 6 V634" stroke="#5C6472" stroke-width="4" stroke-dasharray="12 9" fill="none"/><rect x="140" y="32" width="80" height="80" rx="6" fill="#DB9C95" stroke="#AC443D" stroke-width="2.5"/><rect x="44" y="124" width="60" height="60" rx="6" fill="#E7B2AC" stroke="#AC443D" stroke-width="2.5"/><rect x="256" y="124" width="60" height="60" rx="6" fill="#E7B2AC" stroke="#AC443D" stroke-width="2.5"/><rect x="140" y="528" width="80" height="80" rx="6" fill="#96AEDA" stroke="#2E5FA3" stroke-width="2.5"/><rect x="44" y="456" width="60" height="60" rx="6" fill="#B4C7E6" stroke="#2E5FA3" stroke-width="2.5"/><rect x="256" y="456" width="60" height="60" rx="6" fill="#B4C7E6" stroke="#2E5FA3" stroke-width="2.5"/><path d="M 180 624 L 240 616 L 240 460 L 240 400 L 286 352 L 286 192" fill="none" stroke="#2E5FA3" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#s6c)"/><path d="M 180 624 L 120 616 L 120 460 L 120 400 L 74 352 L 74 192" fill="none" stroke="#2E5FA3" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#s6c)"/><circle cx="180" cy="624" r="12" fill="#2E5FA3" stroke="#FFFFFF" stroke-width="2.5"/></g></svg></div><p style="font-size:27px; line-height:1.35; color:#5E6570; text-align:center">한 자리에서 두 경로가 똑같이 열린다</p></div><div style="flex:1; display:flex; flex-direction:column; gap:24px; justify-content:center"><div style="background:#EEF3FA; border:2px solid #C7D6E8; border-radius:12px; padding:24px 30px; display:flex; flex-direction:column; gap:14px;"><h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:32px; font-weight:700; line-height:1.25; color:#1B3F6E">상하 대칭 — 공정성</h3><ul style="padding:0 0 0 28px; display:flex; flex-direction:column; gap:10px"><li style="font-size:28px; line-height:1.4; color:#5E6570">같은 좌표에 놓으면 <b>같은 거리, 같은 시간</b>이 나온다.</li><li style="font-size:28px; line-height:1.4; color:#5E6570">지형으로 앞서는 쪽이 없다.</li><li style="font-size:28px; line-height:1.4; color:#5E6570">승부를 덱과 판단으로 옮긴다.</li></ul></div><div style="background:#FBF6EC; border:2px solid #E2CFA6; border-radius:12px; padding:24px 30px; display:flex; flex-direction:column; gap:14px;"><h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:32px; font-weight:700; line-height:1.25; color:#A96A12">좌우 대칭 — 두 개의 선택지</h3><ul style="padding:0 0 0 28px; display:flex; flex-direction:column; gap:10px"><li style="font-size:28px; line-height:1.4; color:#5E6570">두 공격로의 거리와 시간이 같다.</li><li style="font-size:28px; line-height:1.4; color:#5E6570">어느 쪽도 지형 손해가 없으므로 <b>고르는 행위 자체가 의미</b>를 갖는다.</li><li style="font-size:28px; line-height:1.4; color:#5E6570">여기서 이 문서의 질문이 시작된다.</li></ul></div></div></div><div style="height:92px; display:flex; flex-direction:column; gap:8px; border-top:3px solid #D8D5CC; padding:12px 0 0"><div style="display:flex; gap:18px; align-items:baseline"><div style="display:flex; gap:12px; align-items:baseline"><p style="font-size:24px; line-height:1.3; font-weight:700; color:#A96A12">A</p><p style="font-size:24px; line-height:1.3; font-weight:700; color:#A96A12">선택지</p><p style="font-size:24px; line-height:1.3; font-weight:400; color:#7C7A72">균형</p><p style="font-size:24px; line-height:1.3; font-weight:400; color:#7C7A72">예외</p></div><p style="font-size:24px; line-height:1.3; color:#D6D4CB">|</p><div style="display:flex; gap:12px; align-items:baseline"><p style="font-size:24px; line-height:1.3; font-weight:700; color:#BBB9B1">B</p><p style="font-size:24px; line-height:1.3; font-weight:400; color:#BBB9B1">비용</p><p style="font-size:24px; line-height:1.3; font-weight:400; color:#BBB9B1">시간</p></div><p style="font-size:24px; line-height:1.3; color:#D6D4CB">|</p><div style="display:flex; gap:12px; align-items:baseline"><p style="font-size:24px; line-height:1.3; font-weight:700; color:#BBB9B1">C</p><p style="font-size:24px; line-height:1.3; font-weight:400; color:#BBB9B1">빌드업</p><p style="font-size:24px; line-height:1.3; font-weight:400; color:#BBB9B1">유인</p><p style="font-size:24px; line-height:1.3; font-weight:400; color:#BBB9B1">전진</p></div><p style="font-size:24px; line-height:1.3; color:#D6D4CB">|</p><div style="display:flex; gap:12px; align-items:baseline"><p style="font-size:24px; line-height:1.3; font-weight:700; color:#BBB9B1">D</p><p style="font-size:24px; line-height:1.3; font-weight:400; color:#BBB9B1">개방</p><p style="font-size:24px; line-height:1.3; font-weight:400; color:#BBB9B1">총력전</p><p style="font-size:24px; line-height:1.3; font-weight:400; color:#BBB9B1">정리</p></div></div><p style="font-size:30px; line-height:1.3; font-weight:700; color:#A96A12; text-align:right">그런데 왜 하필 두 개인가</p></div><p style="position:absolute; left:112px; bottom:52px; width:1300px; font-size:25px; color:#5E6570">2부 · A 전장은 선택을 만든다</p><p style="position:absolute; right:112px; bottom:52px; width:220px; font-size:25px; color:#5E6570; text-align:right; font-variant-numeric:tabular-nums">09 / 19</p></section>
+</div>
+<div class="slide-note"><div class="n-head"><span class="num">09</span><div class="n-lead"><p>상하 대칭은 시작 조건을 같게 만들어 지형 이득을 없앤다. 좌우 대칭은 조건이 같은 두 경로를 만들어 선택을 지형 판단이 아닌 상대 판단으로 바꾼다.</p></div></div></div>
+</div>
+<div class="slide-item" id="s10">
+<div class="slide-frame">
+<section id="y07-bridges" data-transition="fade" style="display:flex; flex-direction:column; gap:16px; padding:64px 112px 130px; background:#f6f5f1">
+  <h2 style="padding:8px 0 0; font-family:'Paperlogy Bold', Arial, sans-serif; font-size:64px; font-weight:700; line-height:1.18; color:#1b1f26">다리가 두 개인 이유</h2>
+  <p style="padding:0 0 0 26px; font-family:Paperlogy, Arial, sans-serif; font-size:40px; font-weight:500; line-height:1.45; color:#1b1f26; border-left:8px solid #1b1f26">교차 지점의 개수가 선택의 폭과 예측 가능성을 동시에 정한다.</p>
+  <div style="height:604px; display:flex; flex-direction:row; gap:26px; align-items:start">
+    <div style="width:377px; display:flex; flex-direction:column; gap:14px">
+      <h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:30px; font-weight:700; text-align:center; color:#1b1f26">다리 1개</h3>
+      <div style="position:relative; width:377px; height:480px; display:flex; flex-direction:column; align-self:stretch">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="클래시로얄 일반 1대1 전장 개념도(축척 아님)" viewBox="0 0 266 474" style="position:absolute; top:0; left:55px; width:266px; height:474px"><g transform="scale(0.74)"><defs><marker id="b7" orient="auto" markerWidth="5" markerHeight="5" refX="1.2" refY="2" overflow="visible"><path d="M-3 -1.8 L1 0 L-3 1.8" transform="translate(0 2)" fill="none" stroke="#2E5FA3" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></marker></defs><rect x="1" y="1" width="358" height="638" rx="10" fill="#E4ECF7" stroke="#98A0AB" stroke-width="2"/><path d="M1 11 A10 10 0 0 1 11 1 H349 A10 10 0 0 1 359 11 V300 H1 Z" fill="#F7E6E3"/><rect x="1" y="300" width="358" height="40" fill="#A9C4D9"/><rect x="150" y="294" width="60" height="52" rx="4" fill="#EDE7D9" stroke="#B5AB94" stroke-width="2"/><rect x="1" y="1" width="358" height="638" rx="10" fill="none" stroke="#98A0AB" stroke-width="2"/><rect x="140" y="32" width="80" height="80" rx="6" fill="#DB9C95" stroke="#AC443D" stroke-width="2.5"/><rect x="44" y="124" width="60" height="60" rx="6" fill="#E7B2AC" stroke="#AC443D" stroke-width="2.5"/><rect x="256" y="124" width="60" height="60" rx="6" fill="#E7B2AC" stroke="#AC443D" stroke-width="2.5"/><rect x="140" y="528" width="80" height="80" rx="6" fill="#96AEDA" stroke="#2E5FA3" stroke-width="2.5"/><rect x="44" y="456" width="60" height="60" rx="6" fill="#B4C7E6" stroke="#2E5FA3" stroke-width="2.5"/><rect x="256" y="456" width="60" height="60" rx="6" fill="#B4C7E6" stroke="#2E5FA3" stroke-width="2.5"/><path d="M 180 624 L 180 470 L 180 400 L 180 352 L 180 192" fill="none" stroke="#2E5FA3" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#b7)"/><circle cx="180" cy="624" r="10" fill="#2E5FA3" stroke="#FFFFFF" stroke-width="2.5"/></g></svg>
+      </div>
+      <p style="font-family:Paperlogy, Arial, sans-serif; font-size:27px; line-height:1.35; text-align:center; color:#5e6570">선택이 없다</p>
+    </div>
+    <div style="width:377px; display:flex; flex-direction:column; gap:14px">
+      <h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:30px; font-weight:700; text-align:center; color:#1b1f26">다리 2개 — 현재</h3>
+      <div style="position:relative; width:377px; height:480px; display:flex; flex-direction:column; align-self:stretch">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="클래시로얄 일반 1대1 전장 개념도(축척 아님)" viewBox="0 0 266 474" style="position:absolute; top:0; left:55px; width:266px; height:474px"><g transform="scale(0.74)"><defs><marker id="b7" orient="auto" markerWidth="5" markerHeight="5" refX="1.2" refY="2" overflow="visible"><path d="M-3 -1.8 L1 0 L-3 1.8" transform="translate(0 2)" fill="none" stroke="#2E5FA3" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></marker></defs><rect x="1" y="1" width="358" height="638" rx="10" fill="#E4ECF7" stroke="#98A0AB" stroke-width="2"/><path d="M1 11 A10 10 0 0 1 11 1 H349 A10 10 0 0 1 359 11 V300 H1 Z" fill="#F7E6E3"/><rect x="1" y="300" width="358" height="40" fill="#A9C4D9"/><rect x="44" y="294" width="60" height="52" rx="4" fill="#EDE7D9" stroke="#B5AB94" stroke-width="2"/><rect x="256" y="294" width="60" height="52" rx="4" fill="#EDE7D9" stroke="#B5AB94" stroke-width="2"/><rect x="1" y="1" width="358" height="638" rx="10" fill="none" stroke="#98A0AB" stroke-width="2"/><rect x="140" y="32" width="80" height="80" rx="6" fill="#DB9C95" stroke="#AC443D" stroke-width="2.5"/><rect x="44" y="124" width="60" height="60" rx="6" fill="#E7B2AC" stroke="#AC443D" stroke-width="2.5"/><rect x="256" y="124" width="60" height="60" rx="6" fill="#E7B2AC" stroke="#AC443D" stroke-width="2.5"/><rect x="140" y="528" width="80" height="80" rx="6" fill="#96AEDA" stroke="#2E5FA3" stroke-width="2.5"/><rect x="44" y="456" width="60" height="60" rx="6" fill="#B4C7E6" stroke="#2E5FA3" stroke-width="2.5"/><rect x="256" y="456" width="60" height="60" rx="6" fill="#B4C7E6" stroke="#2E5FA3" stroke-width="2.5"/><path d="M 180 624 L 240 616 L 240 460 L 240 400 L 286 352 L 286 192" fill="none" stroke="#2E5FA3" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#b7)"/><path d="M 180 624 L 120 616 L 120 460 L 120 400 L 74 352 L 74 192" fill="none" stroke="#2E5FA3" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#b7)"/><circle cx="180" cy="624" r="10" fill="#2E5FA3" stroke="#FFFFFF" stroke-width="2.5"/></g></svg>
+      </div>
+      <p style="font-family:Paperlogy, Arial, sans-serif; font-size:27px; line-height:1.35; text-align:center; color:#5e6570">고를 수 있고, 읽을 수도 있다</p>
+    </div>
+    <div style="width:377px; display:flex; flex-direction:column; gap:14px">
+      <h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:30px; font-weight:700; text-align:center; color:#1b1f26">다리 3개</h3>
+      <div style="position:relative; width:377px; height:480px; display:flex; flex-direction:column; align-self:stretch">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="클래시로얄 일반 1대1 전장 개념도(축척 아님)" viewBox="0 0 266 474" style="position:absolute; top:0; left:55px; width:266px; height:474px"><g transform="scale(0.74)"><defs><marker id="b7" orient="auto" markerWidth="5" markerHeight="5" refX="1.2" refY="2" overflow="visible"><path d="M-3 -1.8 L1 0 L-3 1.8" transform="translate(0 2)" fill="none" stroke="#2E5FA3" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></marker></defs><rect x="1" y="1" width="358" height="638" rx="10" fill="#E4ECF7" stroke="#98A0AB" stroke-width="2"/><path d="M1 11 A10 10 0 0 1 11 1 H349 A10 10 0 0 1 359 11 V300 H1 Z" fill="#F7E6E3"/><rect x="1" y="300" width="358" height="40" fill="#A9C4D9"/><rect x="44" y="294" width="60" height="52" rx="4" fill="#EDE7D9" stroke="#B5AB94" stroke-width="2"/><rect x="150" y="294" width="60" height="52" rx="4" fill="#EDE7D9" stroke="#B5AB94" stroke-width="2"/><rect x="256" y="294" width="60" height="52" rx="4" fill="#EDE7D9" stroke="#B5AB94" stroke-width="2"/><rect x="1" y="1" width="358" height="638" rx="10" fill="none" stroke="#98A0AB" stroke-width="2"/><rect x="140" y="32" width="80" height="80" rx="6" fill="#DB9C95" stroke="#AC443D" stroke-width="2.5"/><rect x="44" y="124" width="60" height="60" rx="6" fill="#E7B2AC" stroke="#AC443D" stroke-width="2.5"/><rect x="256" y="124" width="60" height="60" rx="6" fill="#E7B2AC" stroke="#AC443D" stroke-width="2.5"/><rect x="140" y="528" width="80" height="80" rx="6" fill="#96AEDA" stroke="#2E5FA3" stroke-width="2.5"/><rect x="44" y="456" width="60" height="60" rx="6" fill="#B4C7E6" stroke="#2E5FA3" stroke-width="2.5"/><rect x="256" y="456" width="60" height="60" rx="6" fill="#B4C7E6" stroke="#2E5FA3" stroke-width="2.5"/><path d="M 180 624 L 240 616 L 240 460 L 240 400 L 286 352 L 286 192" fill="none" stroke="#2E5FA3" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#b7)"/><path d="M 180 624 L 120 616 L 120 460 L 120 400 L 74 352 L 74 192" fill="none" stroke="#2E5FA3" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#b7)"/><path d="M 180 624 L 180 470 L 180 400 L 180 352 L 180 192" fill="none" stroke="#2E5FA3" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#b7)"/><circle cx="180" cy="624" r="10" fill="#2E5FA3" stroke="#FFFFFF" stroke-width="2.5"/></g></svg>
+      </div>
+      <p style="font-family:Paperlogy, Arial, sans-serif; font-size:27px; line-height:1.35; text-align:center; color:#5e6570">선택은 늘지만 방어가 분산된다</p>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:14px; justify-content:center; flex:1; padding:24px 30px; background:#fbf6ec; border:2px solid #e2cfa6; border-radius:12px">
+      <h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:32px; font-weight:700; line-height:1.25; color:#a96a12">다리 2개: 선택과 예측 최적화</h3>
+      <p style="font-family:Paperlogy, Arial, sans-serif; font-size:30px; font-weight:400; line-height:1.4; color:#5e6570">하나면 선택지가 없고, 셋이면 너무 복잡해진다.</p>
+      <p style="font-family:Paperlogy, Arial, sans-serif; font-size:30px; font-weight:400; line-height:1.4; color:#5e6570">둘일 때만 <b>플레이어는 고르고, 상대는 읽을 수 있다</b>.</p>
+      <p style="font-family:Paperlogy, Arial, sans-serif; font-size:30px; font-weight:400; line-height:1.4; color:#5e6570">공격의 자유와 방어의 성립이 동시에 가능한 지점이다.</p>
+    </div>
+  </div>
+  <div style="height:92px; display:flex; flex-direction:column; gap:8px; padding:12px 0 0; border-top:3px solid #d8d5cc">
+    <div style="display:flex; flex-direction:row; gap:18px; align-items:baseline">
+      <div style="display:flex; flex-direction:row; gap:12px; align-items:baseline">
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:700; line-height:1.3; color:#a96a12">A</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#7c7a72">선택지</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:700; line-height:1.3; color:#a96a12">균형</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#7c7a72">예외</p>
+      </div>
+      <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; line-height:1.3; color:#d6d4cb">|</p>
+      <div style="display:flex; flex-direction:row; gap:12px; align-items:baseline">
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:700; line-height:1.3; color:#bbb9b1">B</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#bbb9b1">비용</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#bbb9b1">시간</p>
+      </div>
+      <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; line-height:1.3; color:#d6d4cb">|</p>
+      <div style="display:flex; flex-direction:row; gap:12px; align-items:baseline">
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:700; line-height:1.3; color:#bbb9b1">C</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#bbb9b1">빌드업</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#bbb9b1">유인</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#bbb9b1">전진</p>
+      </div>
+      <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; line-height:1.3; color:#d6d4cb">|</p>
+      <div style="display:flex; flex-direction:row; gap:12px; align-items:baseline">
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:700; line-height:1.3; color:#bbb9b1">D</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#bbb9b1">개방</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#bbb9b1">총력전</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#bbb9b1">정리</p>
+      </div>
+    </div>
+    <p style="font-family:Paperlogy, Arial, sans-serif; font-size:30px; font-weight:700; line-height:1.3; text-align:right; color:#a96a12">이 규칙에 예외는 없는가</p>
+  </div>
+  <p style="position:absolute; bottom:52px; left:112px; width:1300px; font-family:Paperlogy, Arial, sans-serif; font-size:25px; color:#5e6570">2부 · A 전장은 선택을 만든다</p>
+  <p style="position:absolute; right:112px; bottom:52px; width:220px; font-family:Paperlogy, Arial, sans-serif; font-size:25px; text-align:right; font-variant-numeric:tabular-nums; color:#5e6570">10 / 19</p>
+  
+</section>
+</div>
+<div class="slide-note"><div class="n-head"><span class="num">10</span><div class="n-lead"><p>하나면 모든 공격이 한 점으로 모여 방어가 자동으로 성립하고 공격은 막힌다. 셋이면 방어가 분산되어 읽기가 무너진다. 둘은 선택의 자유와 읽을 수 있음이 동시에 성립하는 지점이다. 공중 유닛과 타워 파괴 후의 확장 영역은 이 규칙의 예외다.</p></div></div></div>
+</div>
+<div class="slide-item" id="s11">
+<div class="slide-frame">
+<section id="y08-river" data-transition="fade" style="background:#F6F5F1; color:#1B1F26; font-family:'Paperlogy', Arial, sans-serif; padding:64px 112px 130px; display:flex; flex-direction:column; gap:16px"><h2 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:64px; font-weight:700; line-height:1.18; color:#1B1F26; padding:8px 0 0">강과 다리가 만드는 예측 가능성</h2><p style="font-size:40px; line-height:1.45; color:#1B1F26; font-weight:500; border-left:8px solid #1B1F26; padding:0 0 0 26px">두 다리는 지상 유닛의 경로를 제한하지만, 공중 유닛은 그렇지 않다.</p><div style="height:604px; display:flex; gap:30px; align-items:start"><div style="width:545px; display:flex; flex-direction:column; gap:14px"><h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:30px; font-weight:700; color:#1B1F26; text-align:center">지상 — 두 다리로 모인다</h3><div style="position:relative; width:545px; height:492px;"><svg aria-label="클래시로얄 일반 1대1 전장 개념도(축척 아님)" width="274" height="486" viewBox="0 0 274 486" style="position:absolute; left:136px; top:0px; width:274px; height:486px;"><g transform="scale(0.76)"><defs><marker id="e1" orient="auto" markerWidth="5" markerHeight="5" refX="1.2" refY="2" overflow="visible"><path d="M-3 -1.8 L1 0 L-3 1.8" transform="translate(0 2)" fill="none" stroke="#2E5FA3" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></marker></defs><rect x="1" y="1" width="358" height="638" rx="10" fill="#E4ECF7" stroke="#98A0AB" stroke-width="2"/><path d="M1 11 A10 10 0 0 1 11 1 H349 A10 10 0 0 1 359 11 V300 H1 Z" fill="#F7E6E3"/><rect x="1" y="300" width="358" height="40" fill="#A9C4D9"/><rect x="44" y="294" width="60" height="52" rx="4" fill="#EDE7D9" stroke="#B5AB94" stroke-width="2"/><rect x="256" y="294" width="60" height="52" rx="4" fill="#EDE7D9" stroke="#B5AB94" stroke-width="2"/><rect x="1" y="1" width="358" height="638" rx="10" fill="none" stroke="#98A0AB" stroke-width="2"/><rect x="140" y="32" width="80" height="80" rx="6" fill="#DB9C95" stroke="#AC443D" stroke-width="2.5"/><rect x="44" y="124" width="60" height="60" rx="6" fill="#E7B2AC" stroke="#AC443D" stroke-width="2.5"/><rect x="256" y="124" width="60" height="60" rx="6" fill="#E7B2AC" stroke="#AC443D" stroke-width="2.5"/><rect x="140" y="528" width="80" height="80" rx="6" fill="#96AEDA" stroke="#2E5FA3" stroke-width="2.5"/><rect x="44" y="456" width="60" height="60" rx="6" fill="#B4C7E6" stroke="#2E5FA3" stroke-width="2.5"/><rect x="256" y="456" width="60" height="60" rx="6" fill="#B4C7E6" stroke="#2E5FA3" stroke-width="2.5"/><path d="M 250 620 L 246 400 L 286 352 L 286 192" fill="none" stroke="#2E5FA3" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#e1)"/><path d="M 110 620 L 114 400 L 74 352 L 74 192" fill="none" stroke="#2E5FA3" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#e1)"/><circle cx="250" cy="620" r="9" fill="#2E5FA3" stroke="#FFFFFF" stroke-width="2.5"/><circle cx="110" cy="620" r="9" fill="#2E5FA3" stroke="#FFFFFF" stroke-width="2.5"/></g></svg></div><p style="font-size:27px; line-height:1.35; color:#5E6570; text-align:center">호그 라이더 · 로얄 자이언트 · 골렘</p></div><div style="width:545px; display:flex; flex-direction:column; gap:14px"><h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:30px; font-weight:700; color:#1B1F26; text-align:center">공중 — 강 위를 그대로</h3><div style="position:relative; width:545px; height:492px;"><svg aria-label="클래시로얄 일반 1대1 전장 개념도(축척 아님)" width="274" height="486" viewBox="0 0 274 486" style="position:absolute; left:136px; top:0px; width:274px; height:486px;"><g transform="scale(0.76)"><defs><marker id="e2" orient="auto" markerWidth="5" markerHeight="5" refX="1.2" refY="2" overflow="visible"><path d="M-3 -1.8 L1 0 L-3 1.8" transform="translate(0 2)" fill="none" stroke="#6C4FA3" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></marker></defs><rect x="1" y="1" width="358" height="638" rx="10" fill="#E4ECF7" stroke="#98A0AB" stroke-width="2"/><path d="M1 11 A10 10 0 0 1 11 1 H349 A10 10 0 0 1 359 11 V300 H1 Z" fill="#F7E6E3"/><rect x="1" y="300" width="358" height="40" fill="#A9C4D9"/><rect x="44" y="294" width="60" height="52" rx="4" fill="#EDE7D9" stroke="#B5AB94" stroke-width="2"/><rect x="256" y="294" width="60" height="52" rx="4" fill="#EDE7D9" stroke="#B5AB94" stroke-width="2"/><rect x="1" y="1" width="358" height="638" rx="10" fill="none" stroke="#98A0AB" stroke-width="2"/><rect x="140" y="32" width="80" height="80" rx="6" fill="#DB9C95" stroke="#AC443D" stroke-width="2.5"/><rect x="44" y="124" width="60" height="60" rx="6" fill="#E7B2AC" stroke="#AC443D" stroke-width="2.5"/><rect x="256" y="124" width="60" height="60" rx="6" fill="#E7B2AC" stroke="#AC443D" stroke-width="2.5"/><rect x="140" y="528" width="80" height="80" rx="6" fill="#96AEDA" stroke="#2E5FA3" stroke-width="2.5"/><rect x="44" y="456" width="60" height="60" rx="6" fill="#B4C7E6" stroke="#2E5FA3" stroke-width="2.5"/><rect x="256" y="456" width="60" height="60" rx="6" fill="#B4C7E6" stroke="#2E5FA3" stroke-width="2.5"/><path d="M 340 600 L 332 400 L 324 198" fill="none" stroke="#6C4FA3" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="12 9" marker-end="url(#e2)"/><circle cx="340" cy="600" r="9" fill="#6C4FA3" stroke="#FFFFFF" stroke-width="2.5"/></g></svg></div><p style="font-size:27px; line-height:1.35; color:#5E6570; text-align:center">미니언 자이언트 · 벌룬</p></div><div style="width:545px; display:flex; flex-direction:column; gap:14px"><h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:30px; font-weight:700; color:#1B1F26; text-align:center">확장 영역 — 상대의 영역을 침범</h3><div style="position:relative; width:545px; height:492px;"><svg aria-label="클래시로얄 일반 1대1 전장 개념도(축척 아님)" width="274" height="486" viewBox="0 0 274 486" style="position:absolute; left:136px; top:0px; width:274px; height:486px;"><g transform="scale(0.76)"><defs><clipPath id="he3"><rect x="8" y="190" width="164" height="106" rx="6"/></clipPath></defs><defs><marker id="e3" orient="auto" markerWidth="5" markerHeight="5" refX="1.2" refY="2" overflow="visible"><path d="M-3 -1.8 L1 0 L-3 1.8" transform="translate(0 2)" fill="none" stroke="#1C7A68" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></marker></defs><rect x="1" y="1" width="358" height="638" rx="10" fill="#E4ECF7" stroke="#98A0AB" stroke-width="2"/><path d="M1 11 A10 10 0 0 1 11 1 H349 A10 10 0 0 1 359 11 V300 H1 Z" fill="#F7E6E3"/><rect x="1" y="300" width="358" height="40" fill="#A9C4D9"/><rect x="44" y="294" width="60" height="52" rx="4" fill="#EDE7D9" stroke="#B5AB94" stroke-width="2"/><rect x="256" y="294" width="60" height="52" rx="4" fill="#EDE7D9" stroke="#B5AB94" stroke-width="2"/><rect x="1" y="1" width="358" height="638" rx="10" fill="none" stroke="#98A0AB" stroke-width="2"/><g clip-path="url(#he3)"><line x1="-98" y1="296" x2="8" y2="190" stroke="#1C7A68" stroke-width="2" opacity="0.55"/><line x1="-84" y1="296" x2="22" y2="190" stroke="#1C7A68" stroke-width="2" opacity="0.55"/><line x1="-70" y1="296" x2="36" y2="190" stroke="#1C7A68" stroke-width="2" opacity="0.55"/><line x1="-56" y1="296" x2="50" y2="190" stroke="#1C7A68" stroke-width="2" opacity="0.55"/><line x1="-42" y1="296" x2="64" y2="190" stroke="#1C7A68" stroke-width="2" opacity="0.55"/><line x1="-28" y1="296" x2="78" y2="190" stroke="#1C7A68" stroke-width="2" opacity="0.55"/><line x1="-14" y1="296" x2="92" y2="190" stroke="#1C7A68" stroke-width="2" opacity="0.55"/><line x1="0" y1="296" x2="106" y2="190" stroke="#1C7A68" stroke-width="2" opacity="0.55"/><line x1="14" y1="296" x2="120" y2="190" stroke="#1C7A68" stroke-width="2" opacity="0.55"/><line x1="28" y1="296" x2="134" y2="190" stroke="#1C7A68" stroke-width="2" opacity="0.55"/><line x1="42" y1="296" x2="148" y2="190" stroke="#1C7A68" stroke-width="2" opacity="0.55"/><line x1="56" y1="296" x2="162" y2="190" stroke="#1C7A68" stroke-width="2" opacity="0.55"/><line x1="70" y1="296" x2="176" y2="190" stroke="#1C7A68" stroke-width="2" opacity="0.55"/><line x1="84" y1="296" x2="190" y2="190" stroke="#1C7A68" stroke-width="2" opacity="0.55"/><line x1="98" y1="296" x2="204" y2="190" stroke="#1C7A68" stroke-width="2" opacity="0.55"/><line x1="112" y1="296" x2="218" y2="190" stroke="#1C7A68" stroke-width="2" opacity="0.55"/><line x1="126" y1="296" x2="232" y2="190" stroke="#1C7A68" stroke-width="2" opacity="0.55"/><line x1="140" y1="296" x2="246" y2="190" stroke="#1C7A68" stroke-width="2" opacity="0.55"/><line x1="154" y1="296" x2="260" y2="190" stroke="#1C7A68" stroke-width="2" opacity="0.55"/><line x1="168" y1="296" x2="274" y2="190" stroke="#1C7A68" stroke-width="2" opacity="0.55"/><line x1="182" y1="296" x2="288" y2="190" stroke="#1C7A68" stroke-width="2" opacity="0.55"/></g><rect x="8" y="190" width="164" height="106" rx="6" fill="none" stroke="#1C7A68" stroke-width="2.5" stroke-dasharray="9 7"/><rect x="140" y="32" width="80" height="80" rx="6" fill="#DB9C95" stroke="#AC443D" stroke-width="2.5"/><rect x="44" y="124" width="60" height="60" rx="6" fill="#E7B2AC" stroke="#AC443D" stroke-width="2.5" stroke-dasharray="7 6" opacity="0.45"/><rect x="256" y="124" width="60" height="60" rx="6" fill="#E7B2AC" stroke="#AC443D" stroke-width="2.5"/><rect x="140" y="528" width="80" height="80" rx="6" fill="#96AEDA" stroke="#2E5FA3" stroke-width="2.5"/><rect x="44" y="456" width="60" height="60" rx="6" fill="#B4C7E6" stroke="#2E5FA3" stroke-width="2.5"/><rect x="256" y="456" width="60" height="60" rx="6" fill="#B4C7E6" stroke="#2E5FA3" stroke-width="2.5"/><path d="M 74 240 L 108 172 L 140 118" fill="none" stroke="#1C7A68" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#e3)"/><circle cx="74" cy="240" r="11" fill="#1C7A68" stroke="#FFFFFF" stroke-width="2.5"/></g></svg></div><p style="font-size:27px; line-height:1.35; color:#B43726; text-align:center">외곽 타워를 깬 뒤에만 열린다</p></div></div><div style="height:92px; display:flex; flex-direction:column; gap:8px; border-top:3px solid #D8D5CC; padding:12px 0 0"><div style="display:flex; gap:18px; align-items:baseline"><div style="display:flex; gap:12px; align-items:baseline"><p style="font-size:24px; line-height:1.3; font-weight:700; color:#A96A12">A</p><p style="font-size:24px; line-height:1.3; font-weight:400; color:#7C7A72">선택지</p><p style="font-size:24px; line-height:1.3; font-weight:400; color:#7C7A72">균형</p><p style="font-size:24px; line-height:1.3; font-weight:700; color:#A96A12">예외</p></div><p style="font-size:24px; line-height:1.3; color:#D6D4CB">|</p><div style="display:flex; gap:12px; align-items:baseline"><p style="font-size:24px; line-height:1.3; font-weight:700; color:#BBB9B1">B</p><p style="font-size:24px; line-height:1.3; font-weight:400; color:#BBB9B1">비용</p><p style="font-size:24px; line-height:1.3; font-weight:400; color:#BBB9B1">시간</p></div><p style="font-size:24px; line-height:1.3; color:#D6D4CB">|</p><div style="display:flex; gap:12px; align-items:baseline"><p style="font-size:24px; line-height:1.3; font-weight:700; color:#BBB9B1">C</p><p style="font-size:24px; line-height:1.3; font-weight:400; color:#BBB9B1">빌드업</p><p style="font-size:24px; line-height:1.3; font-weight:400; color:#BBB9B1">유인</p><p style="font-size:24px; line-height:1.3; font-weight:400; color:#BBB9B1">전진</p></div><p style="font-size:24px; line-height:1.3; color:#D6D4CB">|</p><div style="display:flex; gap:12px; align-items:baseline"><p style="font-size:24px; line-height:1.3; font-weight:700; color:#BBB9B1">D</p><p style="font-size:24px; line-height:1.3; font-weight:400; color:#BBB9B1">개방</p><p style="font-size:24px; line-height:1.3; font-weight:400; color:#BBB9B1">총력전</p><p style="font-size:24px; line-height:1.3; font-weight:400; color:#BBB9B1">정리</p></div></div><p style="font-size:30px; line-height:1.3; font-weight:700; color:#A96A12; text-align:right">선택은 공짜인가</p></div><p style="position:absolute; left:112px; bottom:52px; width:1300px; font-size:25px; color:#5E6570">2부 · A 전장은 선택을 만든다</p><p style="position:absolute; right:112px; bottom:52px; width:220px; font-size:25px; color:#5E6570; text-align:right; font-variant-numeric:tabular-nums">11 / 19</p></section>
+</div>
+<div class="slide-note"><div class="n-head"><span class="num">11</span><div class="n-lead"><p>지상 유닛은 다리로 수렴하므로 방향이 드러난다. 공중과 확장 영역 배치는 그 예측을 우회하는 두 가지 길이다.</p></div></div></div>
+</div>
+<div class="slide-item" id="s12">
+<div class="slide-frame">
+<section id="y09-cost" data-transition="fade" style="display:flex; flex-direction:column; gap:16px; padding:64px 112px 130px; background:#f6f5f1">
+  <h2 style="padding:8px 0 0; font-family:'Paperlogy Bold', Arial, sans-serif; font-size:64px; font-weight:700; line-height:1.18; color:#1b1f26">선택에는 엘릭서라는 비용이 따른다</h2>
+  <p style="padding:0 0 0 26px; font-family:Paperlogy, Arial, sans-serif; font-size:40px; font-weight:500; line-height:1.45; color:#1b1f26; border-left:8px solid #1b1f26">하나의 엘릭서 풀이 두 공격로를 동시에 감당하게 해, 모든 배치에 값을 매긴다.</p>
+  <div style="height:604px; display:flex; flex-direction:row; gap:44px; align-items:start">
+    <div style="width:470px; display:flex; flex-direction:column; gap:14px">
+      <h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:30px; font-weight:700; text-align:center; color:#1b1f26">한쪽에 쓰면 반대쪽이 빈다</h3>
+      <div style="position:relative; width:470px; height:499px; display:flex; flex-direction:column; align-self:stretch">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="클래시로얄 일반 1대1 전장 개념도(축척 아님)" viewBox="0 0 277 493" style="position:absolute; top:0; left:96px; width:277px; height:493px"><g transform="scale(0.77)"><defs><marker id="c8r" orient="auto" markerWidth="5" markerHeight="5" refX="1.2" refY="2" overflow="visible"><path d="M-3 -1.8 L1 0 L-3 1.8" transform="translate(0 2)" fill="none" stroke="#AC443D" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></marker><marker id="c8b" orient="auto" markerWidth="5" markerHeight="5" refX="1.2" refY="2" overflow="visible"><path d="M-3 -1.8 L1 0 L-3 1.8" transform="translate(0 2)" fill="none" stroke="#2E5FA3" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></marker></defs><rect x="1" y="1" width="358" height="638" rx="10" fill="#E4ECF7" stroke="#98A0AB" stroke-width="2"/><path d="M1 11 A10 10 0 0 1 11 1 H349 A10 10 0 0 1 359 11 V300 H1 Z" fill="#F7E6E3"/><rect x="1" y="300" width="358" height="40" fill="#A9C4D9"/><rect x="44" y="294" width="60" height="52" rx="4" fill="#EDE7D9" stroke="#B5AB94" stroke-width="2"/><rect x="256" y="294" width="60" height="52" rx="4" fill="#EDE7D9" stroke="#B5AB94" stroke-width="2"/><rect x="1" y="1" width="358" height="638" rx="10" fill="none" stroke="#98A0AB" stroke-width="2"/><rect x="140" y="32" width="80" height="80" rx="6" fill="#DB9C95" stroke="#AC443D" stroke-width="2.5"/><rect x="44" y="124" width="60" height="60" rx="6" fill="#E7B2AC" stroke="#AC443D" stroke-width="2.5"/><rect x="256" y="124" width="60" height="60" rx="6" fill="#E7B2AC" stroke="#AC443D" stroke-width="2.5"/><rect x="140" y="528" width="80" height="80" rx="6" fill="#96AEDA" stroke="#2E5FA3" stroke-width="2.5"/><rect x="44" y="456" width="60" height="60" rx="6" fill="#B4C7E6" stroke="#2E5FA3" stroke-width="2.5"/><rect x="256" y="456" width="60" height="60" rx="6" fill="#B4C7E6" stroke="#2E5FA3" stroke-width="2.5"/><path d="M 180 20 L 120 28 L 120 180 L 120 240 L 74 288 L 74 448" fill="none" stroke="#AC443D" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#c8r)"/><circle cx="180" cy="20" r="12" fill="#AC443D" stroke="#FFFFFF" stroke-width="2.5"/><path d="M 180 624 L 240 616 L 240 460 L 240 400 L 286 352 L 286 192" fill="none" stroke="#2E5FA3" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#c8b)"/><circle cx="180" cy="624" r="10" fill="#2E5FA3" stroke="#FFFFFF" stroke-width="2.5"/></g></svg>
+      </div>
+      <p style="font-family:Paperlogy, Arial, sans-serif; font-size:27px; line-height:1.35; text-align:center; color:#5e6570">굵은 화살표 상대 공세 / 가는 화살표 내 압박</p>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:26px; justify-content:center; flex:1">
+      <div style="display:flex; flex-direction:column; gap:16px">
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:700; line-height:1.3; color:#1b1f26">*엘릭서: 유닛과 건물을 배치하기 위해 필요한 자원. 용량은 10.</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:32px; font-weight:700; line-height:1.3; color:#1b1f26">&lt;가용 엘릭서 10&gt;</p>
+        <div style="height:140px; display:flex; flex-direction:row; border:3px solid #d8d5cc; border-radius:12px">
+          <div style="display:flex; flex-direction:column; gap:8px; justify-content:center; flex:6; padding:0 30px; background:#dde6f4; border-right:3px solid #d8d5cc">
+            <p style="font-family:Paperlogy, Arial, sans-serif; font-size:36px; font-weight:700; line-height:1.2; color:#2e5fa3">공격로에 6 소모</p>
+            <p style="font-family:Paperlogy, Arial, sans-serif; font-size:29px; font-weight:400; line-height:1.4; color:#5e6570">플레이어가 공격에 이만큼을 썼다면...</p>
+          </div>
+          <div style="display:flex; flex-direction:column; gap:8px; justify-content:center; flex:4; padding:0 30px; background:#efede6">
+            <p style="font-family:Paperlogy, Arial, sans-serif; font-size:36px; font-weight:700; line-height:1.2; color:#1b1f26">잔여 4</p>
+            <p style="font-family:Paperlogy, Arial, sans-serif; font-size:29px; font-weight:400; line-height:1.4; color:#5e6570">나머지는 방어에 사용된다.</p>
+          </div>
+        </div>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:14px; padding:24px 30px; background:#ffffff; border:2px solid #d8d5cc; border-radius:12px">
+        <ul style="padding:0 0 0 28px; font-family:Paperlogy, Arial, sans-serif; color:#1b1f26">
+          <li>두 공격로는 <b>하나의 엘릭서 풀</b>을 나눠 쓴다. (최대 용량 10)</li>
+          <li>이미 사용한 엘릭서는 되돌릴 수 없다.</li>
+          <li>반대편에 있는 유닛간의 간섭은 거의 불가능하다. (유닛의 인식, 사정거리의 한계)&nbsp;</li>
+          <li>따라서, 방향을 고르는 일이 곧 <b>비용을 치르는 일</b>이 된다.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div style="height:92px; display:flex; flex-direction:column; gap:8px; padding:12px 0 0; border-top:3px solid #d8d5cc">
+    <div style="display:flex; flex-direction:row; gap:18px; align-items:baseline">
+      <div style="display:flex; flex-direction:row; gap:12px; align-items:baseline">
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:700; line-height:1.3; color:#bbb9b1">A</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#bbb9b1">선택지</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#bbb9b1">균형</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#bbb9b1">예외</p>
+      </div>
+      <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; line-height:1.3; color:#d6d4cb">|</p>
+      <div style="display:flex; flex-direction:row; gap:12px; align-items:baseline">
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:700; line-height:1.3; color:#a96a12">B</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:700; line-height:1.3; color:#a96a12">비용</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#7c7a72">시간</p>
+      </div>
+      <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; line-height:1.3; color:#d6d4cb">|</p>
+      <div style="display:flex; flex-direction:row; gap:12px; align-items:baseline">
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:700; line-height:1.3; color:#bbb9b1">C</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#bbb9b1">빌드업</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#bbb9b1">유인</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#bbb9b1">전진</p>
+      </div>
+      <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; line-height:1.3; color:#d6d4cb">|</p>
+      <div style="display:flex; flex-direction:row; gap:12px; align-items:baseline">
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:700; line-height:1.3; color:#bbb9b1">D</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#bbb9b1">개방</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#bbb9b1">총력전</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#bbb9b1">정리</p>
+      </div>
+    </div>
+    <p style="font-family:Paperlogy, Arial, sans-serif; font-size:30px; font-weight:700; line-height:1.3; text-align:right; color:#a96a12">그 엘릭서는 어떻게 다시 채우는가</p>
+  </div>
+  <p style="position:absolute; bottom:52px; left:112px; width:1300px; font-family:Paperlogy, Arial, sans-serif; font-size:25px; color:#5e6570">2부 · B 선택에는 비용이 따른다</p>
+  <p style="position:absolute; right:112px; bottom:52px; width:220px; font-family:Paperlogy, Arial, sans-serif; font-size:25px; text-align:right; font-variant-numeric:tabular-nums; color:#5e6570">12 / 19</p>
+  
+</section>
+</div>
+<div class="slide-note"><div class="n-head"><span class="num">12</span><div class="n-lead"><p>6 / 4 배분은 자원이 한 곳에만 쓰인다는 점을 보이기 위한 예시다. 선택의 자유는 자원 제약과 짝을 이룰 때만 판단이 된다.</p></div></div></div>
+</div>
+<div class="slide-item" id="s13">
+<div class="slide-frame">
+<section id="y10-time" data-transition="fade" style="background:#F6F5F1; color:#1B1F26; font-family:'Paperlogy', Arial, sans-serif; padding:64px 112px 130px; display:flex; flex-direction:column; gap:16px"><h2 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:64px; font-weight:700; line-height:1.18; color:#1B1F26; padding:8px 0 0">엘릭서와 시간을 맞바꾸는 두 방향</h2><p style="font-size:40px; line-height:1.45; color:#1B1F26; font-weight:500; border-left:8px solid #1B1F26; padding:0 0 0 26px">회복 속도를 고정해 두면, 엘릭서와 시간을 맞바꾸는 방향이 공격과 방어로 갈린다.</p><div style="height:604px; display:flex; flex-direction:column; gap:22px"><div style="display:flex; flex-direction:column; gap:12px"><h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:32px; font-weight:700; line-height:1.25; color:#1B1F26">엘릭서는 시간이 지나야 차오른다 — 그 속도는 정해져 있다</h3><div style="position:relative; width:1560px; height:252px;"><div style="position:absolute; left:20px; top:204px; width:1548px; height:4px; background:#1B1F26"></div><div style="position:absolute; left:60px; top:148px; width:220px; height:56px; background:#DDE6F4; border:3px solid #2E5FA3; border-bottom:none; border-radius:8px 8px 0 0"></div><p style="position:absolute; left:20px; top:102px; width:300px; font-size:32px; font-weight:700; line-height:1.2; color:#2E5FA3; text-align:center">×1</p><p style="position:absolute; left:20px; top:218px; width:300px; font-size:27px; font-weight:700; line-height:1.3; color:#1B1F26; text-align:center">0~1분</p><div style="position:absolute; left:372px; top:148px; width:220px; height:56px; background:#DDE6F4; border:3px solid #2E5FA3; border-bottom:none; border-radius:8px 8px 0 0"></div><p style="position:absolute; left:332px; top:102px; width:300px; font-size:32px; font-weight:700; line-height:1.2; color:#2E5FA3; text-align:center">×1</p><p style="position:absolute; left:332px; top:218px; width:300px; font-size:27px; font-weight:700; line-height:1.3; color:#1B1F26; text-align:center">1~2분</p><div style="position:absolute; left:684px; top:92px; width:220px; height:112px; background:#DDE6F4; border:3px solid #2E5FA3; border-bottom:none; border-radius:8px 8px 0 0"></div><p style="position:absolute; left:644px; top:46px; width:300px; font-size:32px; font-weight:700; line-height:1.2; color:#2E5FA3; text-align:center">×2</p><p style="position:absolute; left:644px; top:218px; width:300px; font-size:27px; font-weight:700; line-height:1.3; color:#1B1F26; text-align:center">2~3분</p><div style="position:absolute; left:996px; top:92px; width:220px; height:112px; background:#FAEFDA; border:3px solid #A96A12; border-bottom:none; border-radius:8px 8px 0 0"></div><p style="position:absolute; left:956px; top:46px; width:300px; font-size:32px; font-weight:700; line-height:1.2; color:#A96A12; text-align:center">×2</p><p style="position:absolute; left:956px; top:218px; width:300px; font-size:27px; font-weight:700; line-height:1.3; color:#1B1F26; text-align:center">연장 3~4분</p><div style="position:absolute; left:1308px; top:36px; width:220px; height:168px; background:#FAEFDA; border:3px solid #A96A12; border-bottom:none; border-radius:8px 8px 0 0"></div><p style="position:absolute; left:1268px; top:-10px; width:300px; font-size:32px; font-weight:700; line-height:1.2; color:#A96A12; text-align:center">×3</p><p style="position:absolute; left:1268px; top:218px; width:300px; font-size:27px; font-weight:700; line-height:1.3; color:#1B1F26; text-align:center">연장 4~5분</p></div></div><div style="display:flex; gap:30px; height:274px"><div style="flex:1; background:#DDE6F4; border:3px solid #9FBBDF; border-radius:14px; padding:26px 32px; display:flex; flex-direction:column; gap:18px; justify-content:center"><h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:34px; font-weight:700; line-height:1.25; color:#2E5FA3">공격</h3><div style="display:flex; gap:20px; align-items:center"><p style="font-size:38px; font-weight:700; line-height:1.2; color:#2E5FA3; background:#FFFFFF; border:3px solid #2E5FA3; border-radius:10px; padding:12px 26px">시간</p><x-shape kind="arrow-right" style="width:76px; height:38px; background:#2E5FA3"></x-shape><p style="font-size:38px; font-weight:700; line-height:1.2; color:#2E5FA3; background:#FFFFFF; border:3px solid #2E5FA3; border-radius:10px; padding:12px 26px">엘릭서</p></div><p style="font-size:29px; line-height:1.4; color:#5E6570; font-weight:400; text-align:left">도착까지 걸리는 시간을 들여, 그 사이 차오른 엘릭서를 <b>더 큰 병력</b>으로 바꾼다.</p></div><div style="flex:1; background:#F7E3E1; border:3px solid #E0B4AF; border-radius:14px; padding:26px 32px; display:flex; flex-direction:column; gap:18px; justify-content:center"><h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:34px; font-weight:700; line-height:1.25; color:#B0453E">방어</h3><div style="display:flex; gap:20px; align-items:center"><p style="font-size:38px; font-weight:700; line-height:1.2; color:#B0453E; background:#FFFFFF; border:3px solid #B0453E; border-radius:10px; padding:12px 26px">엘릭서</p><x-shape kind="arrow-right" style="width:76px; height:38px; background:#B0453E"></x-shape><p style="font-size:38px; font-weight:700; line-height:1.2; color:#B0453E; background:#FFFFFF; border:3px solid #B0453E; border-radius:10px; padding:12px 26px">시간</p></div><p style="font-size:29px; line-height:1.4; color:#5E6570; font-weight:400; text-align:left">적은 엘릭서로 상대를 붙잡아, <b>대응할 엘릭서가 찰 시간</b>을 만든다.</p></div></div></div><div style="height:92px; display:flex; flex-direction:column; gap:8px; border-top:3px solid #D8D5CC; padding:12px 0 0"><div style="display:flex; gap:18px; align-items:baseline"><div style="display:flex; gap:12px; align-items:baseline"><p style="font-size:24px; line-height:1.3; font-weight:700; color:#BBB9B1">A</p><p style="font-size:24px; line-height:1.3; font-weight:400; color:#BBB9B1">선택지</p><p style="font-size:24px; line-height:1.3; font-weight:400; color:#BBB9B1">균형</p><p style="font-size:24px; line-height:1.3; font-weight:400; color:#BBB9B1">예외</p></div><p style="font-size:24px; line-height:1.3; color:#D6D4CB">|</p><div style="display:flex; gap:12px; align-items:baseline"><p style="font-size:24px; line-height:1.3; font-weight:700; color:#A96A12">B</p><p style="font-size:24px; line-height:1.3; font-weight:400; color:#7C7A72">비용</p><p style="font-size:24px; line-height:1.3; font-weight:700; color:#A96A12">시간</p></div><p style="font-size:24px; line-height:1.3; color:#D6D4CB">|</p><div style="display:flex; gap:12px; align-items:baseline"><p style="font-size:24px; line-height:1.3; font-weight:700; color:#BBB9B1">C</p><p style="font-size:24px; line-height:1.3; font-weight:400; color:#BBB9B1">빌드업</p><p style="font-size:24px; line-height:1.3; font-weight:400; color:#BBB9B1">유인</p><p style="font-size:24px; line-height:1.3; font-weight:400; color:#BBB9B1">전진</p></div><p style="font-size:24px; line-height:1.3; color:#D6D4CB">|</p><div style="display:flex; gap:12px; align-items:baseline"><p style="font-size:24px; line-height:1.3; font-weight:700; color:#BBB9B1">D</p><p style="font-size:24px; line-height:1.3; font-weight:400; color:#BBB9B1">개방</p><p style="font-size:24px; line-height:1.3; font-weight:400; color:#BBB9B1">총력전</p><p style="font-size:24px; line-height:1.3; font-weight:400; color:#BBB9B1">정리</p></div></div><p style="font-size:30px; line-height:1.3; font-weight:700; color:#A96A12; text-align:right">전장은 공격에 무엇을 요구하는가</p></div><p style="position:absolute; left:112px; bottom:52px; width:1300px; font-size:25px; color:#5E6570">2부 · B 선택에는 비용이 따른다</p><p style="position:absolute; right:112px; bottom:52px; width:220px; font-size:25px; color:#5E6570; text-align:right; font-variant-numeric:tabular-nums">13 / 19</p></section>
+</div>
+<div class="slide-note"><div class="n-head"><span class="num">13</span><div class="n-lead"><p>이 장이 공격과 방어를 가르는 지점이다. 두 전략은 다른 일을 하는 것이 아니라 같은 교환을 반대 방향으로 한다. 회복 속도가 정해져 있기 때문에 이 교환이 성립한다. 후반에 속도가 올라가면 공격 쪽 교환의 값이 커진다.</p></div></div></div>
+</div>
+<div class="slide-item" id="s14">
+<div class="slide-frame">
+<section id="y11-attack" data-transition="fade" style="display:flex; flex-direction:column; gap:16px; padding:64px 112px 130px; background:#f6f5f1">
+  <h2 style="padding:8px 0 0; font-family:'Paperlogy Bold', Arial, sans-serif; font-size:64px; font-weight:700; line-height:1.18; color:#1b1f26">공격 — 전장이 빌드업을 요구한다</h2>
+  <p style="padding:0 0 0 26px; font-family:Paperlogy, Arial, sans-serif; font-size:40px; font-weight:500; line-height:1.45; color:#1b1f26; border-left:8px solid #1b1f26">출발 지점과 타워 사이의 거리가, 병력을 모을 시간을 강제로 만들어 준다.</p>
+  <div style="height:604px; display:flex; flex-direction:row; gap:38px; align-items:start">
+    <div style="width:380px; display:flex; flex-direction:column; gap:14px">
+      <h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:30px; font-weight:700; text-align:center; color:#1b1f26">출발 좌표 비교</h3>
+      <div style="position:relative; width:380px; height:460px; display:flex; flex-direction:column; align-self:stretch">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="클래시로얄 일반 1대1 전장 개념도(축척 아님)" viewBox="0 0 256 454" style="position:absolute; top:0; left:62px; width:256px; height:454px"><g transform="scale(0.71)"><defs><marker id="a1" orient="auto" markerWidth="5" markerHeight="5" refX="1.2" refY="2" overflow="visible"><path d="M-3 -1.8 L1 0 L-3 1.8" transform="translate(0 2)" fill="none" stroke="#2E5FA3" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></marker><marker id="a2" orient="auto" markerWidth="5" markerHeight="5" refX="1.2" refY="2" overflow="visible"><path d="M-3 -1.8 L1 0 L-3 1.8" transform="translate(0 2)" fill="none" stroke="#8A94A3" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></marker></defs><rect x="1" y="1" width="358" height="638" rx="10" fill="#E4ECF7" stroke="#98A0AB" stroke-width="2"/><path d="M1 11 A10 10 0 0 1 11 1 H349 A10 10 0 0 1 359 11 V300 H1 Z" fill="#F7E6E3"/><rect x="1" y="300" width="358" height="40" fill="#A9C4D9"/><rect x="44" y="294" width="60" height="52" rx="4" fill="#EDE7D9" stroke="#B5AB94" stroke-width="2"/><rect x="256" y="294" width="60" height="52" rx="4" fill="#EDE7D9" stroke="#B5AB94" stroke-width="2"/><rect x="1" y="1" width="358" height="638" rx="10" fill="none" stroke="#98A0AB" stroke-width="2"/><rect x="140" y="32" width="80" height="80" rx="6" fill="#DB9C95" stroke="#AC443D" stroke-width="2.5"/><rect x="44" y="124" width="60" height="60" rx="6" fill="#E7B2AC" stroke="#AC443D" stroke-width="2.5"/><rect x="256" y="124" width="60" height="60" rx="6" fill="#E7B2AC" stroke="#AC443D" stroke-width="2.5"/><rect x="140" y="528" width="80" height="80" rx="6" fill="#96AEDA" stroke="#2E5FA3" stroke-width="2.5"/><rect x="44" y="456" width="60" height="60" rx="6" fill="#B4C7E6" stroke="#2E5FA3" stroke-width="2.5"/><rect x="256" y="456" width="60" height="60" rx="6" fill="#B4C7E6" stroke="#2E5FA3" stroke-width="2.5"/><path d="M 180 624 L 240 616 L 240 460 L 240 400 L 286 352 L 286 192" fill="none" stroke="#2E5FA3" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a1)"/><circle cx="180" cy="624" r="11" fill="#2E5FA3" stroke="#FFFFFF" stroke-width="2.5"/><path d="M 286 356 L 286 192" fill="none" stroke="#8A94A3" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="12 9" marker-end="url(#a2)"/><circle cx="286" cy="356" r="11" fill="#8A94A3" stroke="#FFFFFF" stroke-width="2.5"/></g></svg>
+      </div>
+      <p style="font-family:Paperlogy, Arial, sans-serif; font-size:27px; line-height:1.35; text-align:center; color:#5e6570">실선 후방 · 점선 다리 앞</p>
+    </div>
+    <div style="width:470px; display:flex; flex-direction:column; gap:14px; padding:44px 0 0">
+      <div style="display:flex; flex-direction:column">
+        <p style="padding:16px 22px; font-family:Paperlogy, Arial, sans-serif; font-size:30px; font-weight:700; line-height:1.25; text-align:center; color:#1b1f26; background:#ffffff; border:2px solid #d8d5cc; border-radius:10px">뒤에 놓는다</p>
+        <x-shape kind="arrow-down" style="width:38px; height:24px; align-self:center; background:#2e5fa3"></x-shape>
+        <p style="padding:16px 22px; font-family:Paperlogy, Arial, sans-serif; font-size:30px; font-weight:700; line-height:1.25; text-align:center; color:#1b1f26; background:#ffffff; border:2px solid #d8d5cc; border-radius:10px">이동 시간을 지불한다</p>
+        <x-shape kind="arrow-down" style="width:38px; height:24px; align-self:center; background:#2e5fa3"></x-shape>
+        <p style="padding:16px 22px; font-family:Paperlogy, Arial, sans-serif; font-size:30px; font-weight:700; line-height:1.25; text-align:center; color:#1b1f26; background:#ffffff; border:2px solid #d8d5cc; border-radius:10px">그동안 엘릭서가 회복된다</p>
+        <x-shape kind="arrow-down" style="width:38px; height:24px; align-self:center; background:#2e5fa3"></x-shape>
+        <p style="padding:16px 22px; font-family:Paperlogy, Arial, sans-serif; font-size:30px; font-weight:700; line-height:1.25; text-align:center; color:#1b1f26; background:#ffffff; border:2px solid #d8d5cc; border-radius:10px">지원을 붙여 공세를 강화한다</p>
+        <x-shape kind="arrow-down" style="width:38px; height:24px; align-self:center; background:#2e5fa3"></x-shape>
+        <p style="padding:16px 22px; font-family:Paperlogy, Arial, sans-serif; font-size:30px; font-weight:700; line-height:1.25; text-align:center; color:#1b1f26; background:#dde6f4; border:5px solid #2e5fa3; border-radius:10px">상대의 진영으로 넘어가 공격한다</p>
+      </div>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:22px; justify-content:center; flex:1">
+      <div style="display:flex; flex-direction:column; gap:14px; padding:24px 30px; background:#f3f0e8; border:2px solid #dcd5c4; border-radius:12px">
+        <h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:32px; font-weight:700; line-height:1.25; color:#1b1f26">이동 거리가 곧 빌드업 시간</h3>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:30px; font-weight:400; line-height:1.4; color:#5e6570">뒤에 놓는 것은 손해가 아니라 <b>시간을 사는 행위</b>다. 그 시간 동안 회복된 엘릭서가 지원 병력이 된다.</p>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:14px; padding:24px 30px; background:#ffffff; border:2px solid #d8d5cc; border-radius:12px">
+        <h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:32px; font-weight:700; line-height:1.25; color:#1b1f26">전장이 강제하는 계산</h3>
+        <ul style="padding:0 0 0 28px; font-family:Paperlogy, Arial, sans-serif; color:#1b1f26">
+          <li><b>유닛의 이동속도</b> — 느릴수록 더 일찍 놓아야 한다</li>
+          <li>도착까지 남은 시간과 회복될 엘릭서의 양</li>
+          <li>기다리는 동안 반대편이 받는 피해</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div style="height:92px; display:flex; flex-direction:column; gap:8px; padding:12px 0 0; border-top:3px solid #d8d5cc">
+    <div style="display:flex; flex-direction:row; gap:18px; align-items:baseline">
+      <div style="display:flex; flex-direction:row; gap:12px; align-items:baseline">
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:700; line-height:1.3; color:#bbb9b1">A</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#bbb9b1">선택지</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#bbb9b1">균형</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#bbb9b1">예외</p>
+      </div>
+      <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; line-height:1.3; color:#d6d4cb">|</p>
+      <div style="display:flex; flex-direction:row; gap:12px; align-items:baseline">
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:700; line-height:1.3; color:#bbb9b1">B</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#bbb9b1">비용</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#bbb9b1">시간</p>
+      </div>
+      <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; line-height:1.3; color:#d6d4cb">|</p>
+      <div style="display:flex; flex-direction:row; gap:12px; align-items:baseline">
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:700; line-height:1.3; color:#a96a12">C</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:700; line-height:1.3; color:#a96a12">빌드업</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#7c7a72">유인</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#7c7a72">전진</p>
+      </div>
+      <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; line-height:1.3; color:#d6d4cb">|</p>
+      <div style="display:flex; flex-direction:row; gap:12px; align-items:baseline">
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:700; line-height:1.3; color:#bbb9b1">D</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#bbb9b1">개방</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#bbb9b1">총력전</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#bbb9b1">정리</p>
+      </div>
+    </div>
+    <p style="font-family:Paperlogy, Arial, sans-serif; font-size:30px; font-weight:700; line-height:1.3; text-align:right; color:#a96a12">그러면 막는 쪽은 무엇을 하는가</p>
+  </div>
+  <p style="position:absolute; bottom:52px; left:112px; width:1300px; font-family:Paperlogy, Arial, sans-serif; font-size:25px; color:#5e6570">2부 · C 그래서 공격과 방어가 갈린다</p>
+  <p style="position:absolute; right:112px; bottom:52px; width:220px; font-family:Paperlogy, Arial, sans-serif; font-size:25px; text-align:right; font-variant-numeric:tabular-nums; color:#5e6570">14 / 19</p>
+  
+</section>
+</div>
+<div class="slide-note"><div class="n-head"><span class="num">14</span><div class="n-lead"><p>공격의 핵심은 카드 한 장이 아니라 이동 시간을 계산해 여러 장을 한 타이밍에 모으는 일이다. 상대도 같은 시간 동안 회복하므로, 얻는 것은 자원 우위가 아니라 밀도다.</p></div></div></div>
+</div>
+<div class="slide-item" id="s15">
+<div class="slide-frame">
+<section id="y12-defense" data-transition="fade" style="background:#F6F5F1; color:#1B1F26; font-family:'Paperlogy', Arial, sans-serif; padding:64px 112px 130px; display:flex; flex-direction:column; gap:16px"><h2 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:64px; font-weight:700; line-height:1.18; color:#1B1F26; padding:8px 0 0">방어 — 중앙이 시간을 싸게 만든다</h2><p style="font-size:40px; line-height:1.45; color:#1B1F26; font-weight:500; border-left:8px solid #1B1F26; padding:0 0 0 26px">두 공격로가 공유하는 중앙은, 같은 엘릭서로 더 긴 시간을 살 수 있는 자리로 설계돼 있다.</p><div style="height:604px; display:flex; gap:30px; align-items:start"><div style="width:430px; display:flex; flex-direction:column; gap:14px"><h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:30px; font-weight:700; color:#1B1F26; text-align:center">그대로 두면</h3><div style="position:relative; width:430px; height:492px;"><svg aria-label="클래시로얄 일반 1대1 전장 개념도(축척 아님)" width="274" height="486" viewBox="0 0 274 486" style="position:absolute; left:78px; top:0px; width:274px; height:486px;"><g transform="scale(0.76)"><defs><marker id="v1" orient="auto" markerWidth="5" markerHeight="5" refX="1.2" refY="2" overflow="visible"><path d="M-3 -1.8 L1 0 L-3 1.8" transform="translate(0 2)" fill="none" stroke="#AC443D" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></marker></defs><rect x="1" y="1" width="358" height="638" rx="10" fill="#E4ECF7" stroke="#98A0AB" stroke-width="2"/><path d="M1 11 A10 10 0 0 1 11 1 H349 A10 10 0 0 1 359 11 V300 H1 Z" fill="#F7E6E3"/><rect x="1" y="300" width="358" height="40" fill="#A9C4D9"/><rect x="44" y="294" width="60" height="52" rx="4" fill="#EDE7D9" stroke="#B5AB94" stroke-width="2"/><rect x="256" y="294" width="60" height="52" rx="4" fill="#EDE7D9" stroke="#B5AB94" stroke-width="2"/><rect x="1" y="1" width="358" height="638" rx="10" fill="none" stroke="#98A0AB" stroke-width="2"/><rect x="140" y="32" width="80" height="80" rx="6" fill="#DB9C95" stroke="#AC443D" stroke-width="2.5"/><rect x="44" y="124" width="60" height="60" rx="6" fill="#E7B2AC" stroke="#AC443D" stroke-width="2.5"/><rect x="256" y="124" width="60" height="60" rx="6" fill="#E7B2AC" stroke="#AC443D" stroke-width="2.5"/><rect x="140" y="528" width="80" height="80" rx="6" fill="#96AEDA" stroke="#2E5FA3" stroke-width="2.5"/><rect x="44" y="456" width="60" height="60" rx="6" fill="#B4C7E6" stroke="#2E5FA3" stroke-width="2.5"/><rect x="256" y="456" width="60" height="60" rx="6" fill="#B4C7E6" stroke="#2E5FA3" stroke-width="2.5"/><path d="M 286 220 L 286 300 L 286 380 L 286 444" fill="none" stroke="#AC443D" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#v1)"/><circle cx="286" cy="220" r="11" fill="#AC443D" stroke="#FFFFFF" stroke-width="2.5"/></g></svg></div><p style="font-size:27px; line-height:1.35; color:#5E6570; text-align:center">한 공격로로 곧장 들어온다</p></div><div style="width:430px; display:flex; flex-direction:column; gap:14px"><h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:30px; font-weight:700; color:#1B1F26; text-align:center">중앙으로 끌면</h3><div style="position:relative; width:430px; height:492px;"><svg aria-label="클래시로얄 일반 1대1 전장 개념도(축척 아님)" width="274" height="486" viewBox="0 0 274 486" style="position:absolute; left:78px; top:0px; width:274px; height:486px;"><g transform="scale(0.76)"><defs><marker id="v2" orient="auto" markerWidth="5" markerHeight="5" refX="1.2" refY="2" overflow="visible"><path d="M-3 -1.8 L1 0 L-3 1.8" transform="translate(0 2)" fill="none" stroke="#AC443D" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></marker></defs><rect x="1" y="1" width="358" height="638" rx="10" fill="#E4ECF7" stroke="#98A0AB" stroke-width="2"/><path d="M1 11 A10 10 0 0 1 11 1 H349 A10 10 0 0 1 359 11 V300 H1 Z" fill="#F7E6E3"/><rect x="1" y="300" width="358" height="40" fill="#A9C4D9"/><rect x="44" y="294" width="60" height="52" rx="4" fill="#EDE7D9" stroke="#B5AB94" stroke-width="2"/><rect x="256" y="294" width="60" height="52" rx="4" fill="#EDE7D9" stroke="#B5AB94" stroke-width="2"/><rect x="1" y="1" width="358" height="638" rx="10" fill="none" stroke="#98A0AB" stroke-width="2"/><rect x="140" y="32" width="80" height="80" rx="6" fill="#DB9C95" stroke="#AC443D" stroke-width="2.5"/><rect x="44" y="124" width="60" height="60" rx="6" fill="#E7B2AC" stroke="#AC443D" stroke-width="2.5"/><rect x="256" y="124" width="60" height="60" rx="6" fill="#E7B2AC" stroke="#AC443D" stroke-width="2.5"/><rect x="140" y="528" width="80" height="80" rx="6" fill="#96AEDA" stroke="#2E5FA3" stroke-width="2.5"/><rect x="44" y="456" width="60" height="60" rx="6" fill="#B4C7E6" stroke="#2E5FA3" stroke-width="2.5"/><rect x="256" y="456" width="60" height="60" rx="6" fill="#B4C7E6" stroke="#2E5FA3" stroke-width="2.5"/><path d="M74 486 L180 404" stroke="#4A5462" stroke-width="4" stroke-dasharray="10 8" fill="none"/><path d="M286 486 L180 404" stroke="#4A5462" stroke-width="4" stroke-dasharray="10 8" fill="none"/><path d="M180 568 L180 404" stroke="#4A5462" stroke-width="4" stroke-dasharray="10 8" fill="none"/><path d="M 286 220 L 286 310 L 280 360 L 232 392 L 204 400" fill="none" stroke="#AC443D" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#v2)"/><circle cx="286" cy="220" r="11" fill="#AC443D" stroke="#FFFFFF" stroke-width="2.5"/><rect x="165" y="385" width="30" height="30" rx="4" fill="#2F6E62" stroke="#FFFFFF" stroke-width="2.5"/></g></svg></div><p style="font-size:27px; line-height:1.35; color:#5E6570; text-align:center">길이 길어지고 타워 사격이 겹친다</p></div><div style="flex:1; display:flex; flex-direction:column; gap:24px; justify-content:center"><div style="background:#E8F1EE; border:2px solid #B6D3CB; border-radius:12px; padding:24px 30px; display:flex; flex-direction:column; gap:14px;"><h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:32px; font-weight:700; line-height:1.25; color:#2F6E62">건물 하나가 경로를 되돌린다</h3><p style="font-size:30px; line-height:1.4; color:#5E6570; font-weight:400; text-align:left">중앙 건물은 <b>적은 엘릭서</b>로 상대의 큰 공세를 붙잡아 둔다. 그 지연 동안 내 엘릭서가 차올라 대응 카드를 낼 수 있게 된다.</p></div><div style="background:#FFFFFF; border:2px solid #D8D5CC; border-radius:12px; padding:24px 30px; display:flex; flex-direction:column; gap:14px;"><h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:32px; font-weight:700; line-height:1.25; color:#1B1F26">그 자리는 화력이 겹친다</h3><p style="font-size:30px; line-height:1.4; color:#5E6570; font-weight:400; text-align:left">중앙은 두 외곽 타워와 킹 타워가 함께 닿는 지점이다. <b>추가 엘릭서 없이</b> 타워 화력이 얹히므로 방어의 가성비가 가장 좋은 자리다.</p></div></div></div><div style="height:92px; display:flex; flex-direction:column; gap:8px; border-top:3px solid #D8D5CC; padding:12px 0 0"><div style="display:flex; gap:18px; align-items:baseline"><div style="display:flex; gap:12px; align-items:baseline"><p style="font-size:24px; line-height:1.3; font-weight:700; color:#BBB9B1">A</p><p style="font-size:24px; line-height:1.3; font-weight:400; color:#BBB9B1">선택지</p><p style="font-size:24px; line-height:1.3; font-weight:400; color:#BBB9B1">균형</p><p style="font-size:24px; line-height:1.3; font-weight:400; color:#BBB9B1">예외</p></div><p style="font-size:24px; line-height:1.3; color:#D6D4CB">|</p><div style="display:flex; gap:12px; align-items:baseline"><p style="font-size:24px; line-height:1.3; font-weight:700; color:#BBB9B1">B</p><p style="font-size:24px; line-height:1.3; font-weight:400; color:#BBB9B1">비용</p><p style="font-size:24px; line-height:1.3; font-weight:400; color:#BBB9B1">시간</p></div><p style="font-size:24px; line-height:1.3; color:#D6D4CB">|</p><div style="display:flex; gap:12px; align-items:baseline"><p style="font-size:24px; line-height:1.3; font-weight:700; color:#A96A12">C</p><p style="font-size:24px; line-height:1.3; font-weight:400; color:#7C7A72">빌드업</p><p style="font-size:24px; line-height:1.3; font-weight:700; color:#A96A12">유인</p><p style="font-size:24px; line-height:1.3; font-weight:400; color:#7C7A72">전진</p></div><p style="font-size:24px; line-height:1.3; color:#D6D4CB">|</p><div style="display:flex; gap:12px; align-items:baseline"><p style="font-size:24px; line-height:1.3; font-weight:700; color:#BBB9B1">D</p><p style="font-size:24px; line-height:1.3; font-weight:400; color:#BBB9B1">개방</p><p style="font-size:24px; line-height:1.3; font-weight:400; color:#BBB9B1">총력전</p><p style="font-size:24px; line-height:1.3; font-weight:400; color:#BBB9B1">정리</p></div></div><p style="font-size:30px; line-height:1.3; font-weight:700; color:#A96A12; text-align:right">타워가 깨지면 전장은 무엇을 바꾸는가</p></div><p style="position:absolute; left:112px; bottom:52px; width:1300px; font-size:25px; color:#5E6570">2부 · C 그래서 공격과 방어가 갈린다</p><p style="position:absolute; right:112px; bottom:52px; width:220px; font-size:25px; color:#5E6570; text-align:right; font-variant-numeric:tabular-nums">15 / 19</p></section>
+</div>
+<div class="slide-note"><div class="n-head"><span class="num">15</span><div class="n-lead"><p>방어의 목적은 막는 것 자체가 아니라 대응할 엘릭서가 찰 때까지 버는 것이다. 중앙은 그 일을 가장 싸게 할 수 있는 자리이고, 이 사실이 14쪽 제안의 전제가 된다.</p></div></div></div>
+</div>
+<div class="slide-item" id="s16">
+<div class="slide-frame">
+<section id="y13-breach" data-transition="fade" style="background:#F6F5F1; color:#1B1F26; font-family:'Paperlogy', Arial, sans-serif; padding:64px 112px 130px; display:flex; flex-direction:column; gap:16px"><h2 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:64px; font-weight:700; line-height:1.18; color:#1B1F26; padding:8px 0 0">타워가 깨지면 배치 영역이 바뀐다</h2><p style="font-size:40px; line-height:1.45; color:#1B1F26; font-weight:500; border-left:8px solid #1B1F26; padding:0 0 0 26px">전장은 타워 파괴를 배치 영역의 확장으로 보상하고, 동시에 킹 타워를 깨워 되갚는다.</p><div style="height:604px; display:flex; gap:34px; align-items:start"><div style="width:470px; display:flex; flex-direction:column; gap:14px"><h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:30px; font-weight:700; color:#1B1F26; text-align:center">파괴 전</h3><div style="position:relative; width:470px; height:480px;"><svg aria-label="클래시로얄 일반 1대1 전장 개념도(축척 아님)" width="266" height="474" viewBox="0 0 266 474" style="position:absolute; left:102px; top:0px; width:266px; height:474px;"><g transform="scale(0.74)"><defs><marker id="w1" orient="auto" markerWidth="5" markerHeight="5" refX="1.2" refY="2" overflow="visible"><path d="M-3 -1.8 L1 0 L-3 1.8" transform="translate(0 2)" fill="none" stroke="#2E5FA3" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></marker></defs><rect x="1" y="1" width="358" height="638" rx="10" fill="#E4ECF7" stroke="#98A0AB" stroke-width="2"/><path d="M1 11 A10 10 0 0 1 11 1 H349 A10 10 0 0 1 359 11 V300 H1 Z" fill="#F7E6E3"/><rect x="1" y="300" width="358" height="40" fill="#A9C4D9"/><rect x="44" y="294" width="60" height="52" rx="4" fill="#EDE7D9" stroke="#B5AB94" stroke-width="2"/><rect x="256" y="294" width="60" height="52" rx="4" fill="#EDE7D9" stroke="#B5AB94" stroke-width="2"/><rect x="1" y="1" width="358" height="638" rx="10" fill="none" stroke="#98A0AB" stroke-width="2"/><rect x="8" y="346" width="344" height="286" rx="6" fill="#2E5FA3" fill-opacity="0.16" stroke="#2E5FA3" stroke-width="2.5" stroke-dasharray="9 7"/><rect x="140" y="32" width="80" height="80" rx="6" fill="#DB9C95" stroke="#AC443D" stroke-width="2.5"/><rect x="44" y="124" width="60" height="60" rx="6" fill="#E7B2AC" stroke="#AC443D" stroke-width="2.5"/><rect x="256" y="124" width="60" height="60" rx="6" fill="#E7B2AC" stroke="#AC443D" stroke-width="2.5"/><rect x="140" y="528" width="80" height="80" rx="6" fill="#96AEDA" stroke="#2E5FA3" stroke-width="2.5"/><rect x="44" y="456" width="60" height="60" rx="6" fill="#B4C7E6" stroke="#2E5FA3" stroke-width="2.5"/><rect x="256" y="456" width="60" height="60" rx="6" fill="#B4C7E6" stroke="#2E5FA3" stroke-width="2.5"/><circle cx="286" cy="356" r="11" fill="#2E5FA3" stroke="#FFFFFF" stroke-width="2.5"/><path d="M 286 352 L 286 192" fill="none" stroke="#2E5FA3" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#w1)"/></g></svg></div><p style="font-size:27px; line-height:1.35; color:#5E6570; text-align:center">배치 영역은 자기 진영까지</p></div><div style="width:470px; display:flex; flex-direction:column; gap:14px"><h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:30px; font-weight:700; color:#1B1F26; text-align:center">파괴 후</h3><div style="position:relative; width:470px; height:480px;"><svg aria-label="클래시로얄 일반 1대1 전장 개념도(축척 아님)" width="266" height="474" viewBox="0 0 266 474" style="position:absolute; left:102px; top:0px; width:266px; height:474px;"><g transform="scale(0.74)"><defs><clipPath id="hw2"><rect x="8" y="190" width="164" height="106" rx="6"/></clipPath></defs><defs><marker id="w2" orient="auto" markerWidth="5" markerHeight="5" refX="1.2" refY="2" overflow="visible"><path d="M-3 -1.8 L1 0 L-3 1.8" transform="translate(0 2)" fill="none" stroke="#2E5FA3" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></marker></defs><rect x="1" y="1" width="358" height="638" rx="10" fill="#E4ECF7" stroke="#98A0AB" stroke-width="2"/><path d="M1 11 A10 10 0 0 1 11 1 H349 A10 10 0 0 1 359 11 V300 H1 Z" fill="#F7E6E3"/><rect x="1" y="300" width="358" height="40" fill="#A9C4D9"/><rect x="44" y="294" width="60" height="52" rx="4" fill="#EDE7D9" stroke="#B5AB94" stroke-width="2"/><rect x="256" y="294" width="60" height="52" rx="4" fill="#EDE7D9" stroke="#B5AB94" stroke-width="2"/><rect x="1" y="1" width="358" height="638" rx="10" fill="none" stroke="#98A0AB" stroke-width="2"/><rect x="8" y="346" width="344" height="286" rx="6" fill="#2E5FA3" fill-opacity="0.16" stroke="#2E5FA3" stroke-width="2.5" stroke-dasharray="9 7"/><g clip-path="url(#hw2)"><line x1="-98" y1="296" x2="8" y2="190" stroke="#2E5FA3" stroke-width="2" opacity="0.55"/><line x1="-84" y1="296" x2="22" y2="190" stroke="#2E5FA3" stroke-width="2" opacity="0.55"/><line x1="-70" y1="296" x2="36" y2="190" stroke="#2E5FA3" stroke-width="2" opacity="0.55"/><line x1="-56" y1="296" x2="50" y2="190" stroke="#2E5FA3" stroke-width="2" opacity="0.55"/><line x1="-42" y1="296" x2="64" y2="190" stroke="#2E5FA3" stroke-width="2" opacity="0.55"/><line x1="-28" y1="296" x2="78" y2="190" stroke="#2E5FA3" stroke-width="2" opacity="0.55"/><line x1="-14" y1="296" x2="92" y2="190" stroke="#2E5FA3" stroke-width="2" opacity="0.55"/><line x1="0" y1="296" x2="106" y2="190" stroke="#2E5FA3" stroke-width="2" opacity="0.55"/><line x1="14" y1="296" x2="120" y2="190" stroke="#2E5FA3" stroke-width="2" opacity="0.55"/><line x1="28" y1="296" x2="134" y2="190" stroke="#2E5FA3" stroke-width="2" opacity="0.55"/><line x1="42" y1="296" x2="148" y2="190" stroke="#2E5FA3" stroke-width="2" opacity="0.55"/><line x1="56" y1="296" x2="162" y2="190" stroke="#2E5FA3" stroke-width="2" opacity="0.55"/><line x1="70" y1="296" x2="176" y2="190" stroke="#2E5FA3" stroke-width="2" opacity="0.55"/><line x1="84" y1="296" x2="190" y2="190" stroke="#2E5FA3" stroke-width="2" opacity="0.55"/><line x1="98" y1="296" x2="204" y2="190" stroke="#2E5FA3" stroke-width="2" opacity="0.55"/><line x1="112" y1="296" x2="218" y2="190" stroke="#2E5FA3" stroke-width="2" opacity="0.55"/><line x1="126" y1="296" x2="232" y2="190" stroke="#2E5FA3" stroke-width="2" opacity="0.55"/><line x1="140" y1="296" x2="246" y2="190" stroke="#2E5FA3" stroke-width="2" opacity="0.55"/><line x1="154" y1="296" x2="260" y2="190" stroke="#2E5FA3" stroke-width="2" opacity="0.55"/><line x1="168" y1="296" x2="274" y2="190" stroke="#2E5FA3" stroke-width="2" opacity="0.55"/><line x1="182" y1="296" x2="288" y2="190" stroke="#2E5FA3" stroke-width="2" opacity="0.55"/></g><rect x="8" y="190" width="164" height="106" rx="6" fill="none" stroke="#2E5FA3" stroke-width="2.5" stroke-dasharray="9 7"/><rect x="140" y="32" width="80" height="80" rx="6" fill="#DB9C95" stroke="#AC443D" stroke-width="2.5"/><rect x="44" y="124" width="60" height="60" rx="6" fill="#E7B2AC" stroke="#AC443D" stroke-width="2.5" stroke-dasharray="7 6" opacity="0.45"/><rect x="256" y="124" width="60" height="60" rx="6" fill="#E7B2AC" stroke="#AC443D" stroke-width="2.5"/><rect x="140" y="528" width="80" height="80" rx="6" fill="#96AEDA" stroke="#2E5FA3" stroke-width="2.5"/><rect x="44" y="456" width="60" height="60" rx="6" fill="#B4C7E6" stroke="#2E5FA3" stroke-width="2.5"/><rect x="256" y="456" width="60" height="60" rx="6" fill="#B4C7E6" stroke="#2E5FA3" stroke-width="2.5"/><circle cx="74" cy="240" r="11" fill="#2E5FA3" stroke="#FFFFFF" stroke-width="2.5"/><path d="M 74 236 L 108 170 L 140 118" fill="none" stroke="#2E5FA3" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#w2)"/><circle cx="180" cy="72" r="56" fill="none" stroke="#AC443D" stroke-width="4" stroke-dasharray="9 8"/></g></svg></div><p style="font-size:27px; line-height:1.35; color:#5E6570; text-align:center">빗금만큼 출발점이 앞당겨진다</p></div><div style="flex:1; display:flex; flex-direction:column; gap:24px; justify-content:center"><div style="background:#DDE6F4; border:2px solid #9FBBDF; border-radius:12px; padding:24px 30px; display:flex; flex-direction:column; gap:14px;"><h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:32px; font-weight:700; line-height:1.25; color:#2E5FA3">출발점이 앞으로 당겨진다</h3><p style="font-size:30px; line-height:1.4; color:#5E6570; font-weight:400; text-align:left">넓어진 영역에 곧바로 놓을 수 있다. 후방에서부터 끌고 올 필요 없이 <b>상대 진영 앞에서 시작</b>한다.</p></div><div style="background:#FAEBE9; border:2px solid #E4C3BF; border-radius:12px; padding:24px 30px; display:flex; flex-direction:column; gap:14px;"><h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:32px; font-weight:700; line-height:1.25; color:#AC443D">안쪽은 더 단단해진다</h3><p style="font-size:30px; line-height:1.4; color:#5E6570; font-weight:400; text-align:left">외곽 타워가 사라지면 <b>킹 타워가 방어에 참여한다</b>. 앞은 열렸지만 중앙은 두꺼워진다. 밀고도 되밀리는 이유다.</p></div></div></div><div style="height:92px; display:flex; flex-direction:column; gap:8px; border-top:3px solid #D8D5CC; padding:12px 0 0"><div style="display:flex; gap:18px; align-items:baseline"><div style="display:flex; gap:12px; align-items:baseline"><p style="font-size:24px; line-height:1.3; font-weight:700; color:#BBB9B1">A</p><p style="font-size:24px; line-height:1.3; font-weight:400; color:#BBB9B1">선택지</p><p style="font-size:24px; line-height:1.3; font-weight:400; color:#BBB9B1">균형</p><p style="font-size:24px; line-height:1.3; font-weight:400; color:#BBB9B1">예외</p></div><p style="font-size:24px; line-height:1.3; color:#D6D4CB">|</p><div style="display:flex; gap:12px; align-items:baseline"><p style="font-size:24px; line-height:1.3; font-weight:700; color:#BBB9B1">B</p><p style="font-size:24px; line-height:1.3; font-weight:400; color:#BBB9B1">비용</p><p style="font-size:24px; line-height:1.3; font-weight:400; color:#BBB9B1">시간</p></div><p style="font-size:24px; line-height:1.3; color:#D6D4CB">|</p><div style="display:flex; gap:12px; align-items:baseline"><p style="font-size:24px; line-height:1.3; font-weight:700; color:#A96A12">C</p><p style="font-size:24px; line-height:1.3; font-weight:400; color:#7C7A72">빌드업</p><p style="font-size:24px; line-height:1.3; font-weight:400; color:#7C7A72">유인</p><p style="font-size:24px; line-height:1.3; font-weight:700; color:#A96A12">전진</p></div><p style="font-size:24px; line-height:1.3; color:#D6D4CB">|</p><div style="display:flex; gap:12px; align-items:baseline"><p style="font-size:24px; line-height:1.3; font-weight:700; color:#BBB9B1">D</p><p style="font-size:24px; line-height:1.3; font-weight:400; color:#BBB9B1">개방</p><p style="font-size:24px; line-height:1.3; font-weight:400; color:#BBB9B1">총력전</p><p style="font-size:24px; line-height:1.3; font-weight:400; color:#BBB9B1">정리</p></div></div><p style="font-size:30px; line-height:1.3; font-weight:700; color:#A96A12; text-align:right">그러면 방어의 자리를 열어 보면 어떻게 되는가</p></div><p style="position:absolute; left:112px; bottom:52px; width:1300px; font-size:25px; color:#5E6570">2부 · C 그래서 공격과 방어가 갈린다</p><p style="position:absolute; right:112px; bottom:52px; width:220px; font-size:25px; color:#5E6570; text-align:right; font-variant-numeric:tabular-nums">16 / 19</p></section>
+</div>
+<div class="slide-note"><div class="n-head"><span class="num">16</span><div class="n-lead"><p>타워 파괴는 지형이 아니라 배치 영역을 바꾼다. 놓을 수 있는 자리가 상대 진영까지 넓어지면 공격의 출발선이 달라지고, 동시에 킹 타워가 깨어나 안쪽 방어가 두꺼워진다. 넓어진 영역은 점령한 땅이 아니라 새 출발점이다.</p></div></div></div>
+</div>
+<div class="slide-item" id="s17">
+<div class="slide-frame">
+<section id="y14-proposal" data-transition="fade" style="display:flex; flex-direction:column; gap:16px; padding:64px 112px 130px; background:#fbf6ec">
+  <h2 style="padding:8px 0 0; font-family:'Paperlogy Bold', Arial, sans-serif; font-size:64px; font-weight:700; line-height:1.18; color:#1b1f26">제안 — 후반 중앙 개방</h2>
+  <p style="padding:0 0 0 26px; font-family:Paperlogy, Arial, sans-serif; font-size:40px; font-weight:500; line-height:1.45; color:#1b1f26; border-left:8px solid #a96a12">후반에 중앙을 열어, 방어 구역이던 자리를 세 번째 공격로로 바꾼다.</p>
+  <div style="height:604px; display:flex; flex-direction:row; gap:38px; align-items:start">
+    <div style="width:400px; display:flex; flex-direction:column; gap:14px">
+      <h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:30px; font-weight:700; text-align:center; color:#1b1f26">방어 구역이던 중앙이 통로가 된다</h3>
+      <div style="position:relative; width:400px; height:460px; display:flex; flex-direction:column; align-self:stretch">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="클래시로얄 일반 1대1 전장 개념도(축척 아님)" viewBox="0 0 256 454" style="position:absolute; top:0; left:72px; width:256px; height:454px"><g transform="scale(0.71)"><rect x="1" y="1" width="358" height="638" rx="10" fill="#E4ECF7" stroke="#98A0AB" stroke-width="2"/><path d="M1 11 A10 10 0 0 1 11 1 H349 A10 10 0 0 1 359 11 V300 H1 Z" fill="#F7E6E3"/><rect x="1" y="300" width="358" height="40" fill="#A9C4D9"/><rect x="44" y="294" width="60" height="52" rx="4" fill="#EDE7D9" stroke="#B5AB94" stroke-width="2"/><rect x="256" y="294" width="60" height="52" rx="4" fill="#EDE7D9" stroke="#B5AB94" stroke-width="2"/><rect x="1" y="1" width="358" height="638" rx="10" fill="none" stroke="#98A0AB" stroke-width="2"/><rect x="150" y="294" width="60" height="52" rx="4" fill="#FAEFDA" stroke="#A96A12" stroke-width="3" stroke-dasharray="10 7"/><rect x="140" y="32" width="80" height="80" rx="6" fill="#DB9C95" stroke="#AC443D" stroke-width="2.5"/><rect x="44" y="124" width="60" height="60" rx="6" fill="#E7B2AC" stroke="#AC443D" stroke-width="2.5"/><rect x="256" y="124" width="60" height="60" rx="6" fill="#E7B2AC" stroke="#AC443D" stroke-width="2.5"/><rect x="140" y="528" width="80" height="80" rx="6" fill="#96AEDA" stroke="#2E5FA3" stroke-width="2.5"/><rect x="44" y="456" width="60" height="60" rx="6" fill="#B4C7E6" stroke="#2E5FA3" stroke-width="2.5"/><rect x="256" y="456" width="60" height="60" rx="6" fill="#B4C7E6" stroke="#2E5FA3" stroke-width="2.5"/><rect x="148" y="292" width="64" height="56" rx="5" fill="none" stroke="#A96A12" stroke-width="4" stroke-dasharray="11 8"/></g></svg>
+      </div>
+      <p style="font-family:Paperlogy, Arial, sans-serif; font-size:27px; line-height:1.35; text-align:center; color:#5e6570">주황 점선이 새로 여는 다리</p>
+    </div>
+    <div style="width:500px; display:flex; flex-direction:column; gap:14px">
+      <h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:32px; font-weight:700; line-height:1.25; color:#1b1f26">개방 시점</h3>
+      <div style="display:flex; flex-direction:column; gap:14px">
+        <div style="display:flex; flex-direction:row; gap:20px; align-items:center; padding:16px 22px; background:#ffffff; border:2px solid #d8d5cc; border-radius:10px">
+          <p style="width:104px; font-family:Paperlogy, Arial, sans-serif; font-size:31px; font-weight:700; font-variant-numeric:tabular-nums; color:#1b1f26">0:00</p>
+          <p style="flex:1; font-family:Paperlogy, Arial, sans-serif; font-size:28px; line-height:1.3; color:#5e6570">좌우 두 다리로 공격 · 중앙은 방어 구역</p>
+        </div>
+        <div style="display:flex; flex-direction:row; gap:20px; align-items:center; padding:16px 22px; background:#ffffff; border:2px solid #d8d5cc; border-radius:10px">
+          <p style="width:104px; font-family:Paperlogy, Arial, sans-serif; font-size:31px; font-weight:700; font-variant-numeric:tabular-nums; color:#1b1f26">1:57</p>
+          <p style="flex:1; font-family:Paperlogy, Arial, sans-serif; font-size:28px; line-height:1.3; color:#5e6570">예고 신호 3초</p>
+        </div>
+        <div style="display:flex; flex-direction:row; gap:20px; align-items:center; padding:16px 22px; background:#faefda; border:2px solid #a96a12; border-radius:10px">
+          <p style="width:104px; font-family:Paperlogy, Arial, sans-serif; font-size:31px; font-weight:700; font-variant-numeric:tabular-nums; color:#a96a12">2:00</p>
+          <p style="flex:1; font-family:Paperlogy, Arial, sans-serif; font-size:28px; line-height:1.3; color:#5e6570">중앙 개방 · 엘릭서 ×2 전환</p>
+        </div>
+        <div style="display:flex; flex-direction:row; gap:20px; align-items:center; padding:16px 22px; background:#ffffff; border:2px solid #d8d5cc; border-radius:10px">
+          <p style="width:104px; font-family:Paperlogy, Arial, sans-serif; font-size:31px; font-weight:700; font-variant-numeric:tabular-nums; color:#1b1f26">종료</p>
+          <p style="flex:1; font-family:Paperlogy, Arial, sans-serif; font-size:28px; line-height:1.3; color:#5e6570">개방 상태 유지</p>
+        </div>
+      </div>
+    </div>
+    <div style="display:flex; flex-direction:column; flex:1">
+      <div style="display:flex; flex-direction:column; gap:14px; padding:24px 30px; background:#ffffff; border:2px solid #e2cfa6; border-radius:12px">
+        <h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:32px; font-weight:700; line-height:1.25; color:#a96a12">왜 후반인가</h3>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:29px; font-weight:400; line-height:1.4; color:#5e6570">엘릭서의 회복속도가 빨라지는 후반부에 공격 선택지를 하나 더 추가함으로써, 전투의 양상을 바꾸고 더욱 공격적으로 상대의 타워를 노릴 수 있게 된다.</p>
+        <ul style="padding:0 0 0 28px; font-family:Paperlogy, Arial, sans-serif; color:#1b1f26">
+          <li>폭은 기존 다리와 같다.</li>
+          <li>새 다리 위에 직접 배치할 수는 없다.</li>
+          <li>대상 선택 규칙은 그대로 둔다.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div style="height:92px; display:flex; flex-direction:column; gap:8px; padding:12px 0 0; border-top:3px solid #d8d5cc">
+    <div style="display:flex; flex-direction:row; gap:18px; align-items:baseline">
+      <div style="display:flex; flex-direction:row; gap:12px; align-items:baseline">
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:700; line-height:1.3; color:#bbb9b1">A</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#bbb9b1">선택지</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#bbb9b1">균형</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#bbb9b1">예외</p>
+      </div>
+      <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; line-height:1.3; color:#d6d4cb">|</p>
+      <div style="display:flex; flex-direction:row; gap:12px; align-items:baseline">
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:700; line-height:1.3; color:#bbb9b1">B</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#bbb9b1">비용</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#bbb9b1">시간</p>
+      </div>
+      <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; line-height:1.3; color:#d6d4cb">|</p>
+      <div style="display:flex; flex-direction:row; gap:12px; align-items:baseline">
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:700; line-height:1.3; color:#bbb9b1">C</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#bbb9b1">빌드업</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#bbb9b1">유인</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#bbb9b1">전진</p>
+      </div>
+      <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; line-height:1.3; color:#d6d4cb">|</p>
+      <div style="display:flex; flex-direction:row; gap:12px; align-items:baseline">
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:700; line-height:1.3; color:#a96a12">D</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:700; line-height:1.3; color:#a96a12">개방</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#7c7a72">총력전</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#7c7a72">정리</p>
+      </div>
+    </div>
+    <p style="font-family:Paperlogy, Arial, sans-serif; font-size:30px; font-weight:700; line-height:1.3; text-align:right; color:#a96a12">그러면 경기 양상이 어떻게 바뀌는가</p>
+  </div>
+  <p style="position:absolute; bottom:52px; left:112px; width:1300px; font-family:Paperlogy, Arial, sans-serif; font-size:25px; color:#5e6570">2부 · D 그래서 무엇을 바꿀 수 있을까?</p>
+  <p style="position:absolute; right:112px; bottom:52px; width:220px; font-family:Paperlogy, Arial, sans-serif; font-size:25px; text-align:right; font-variant-numeric:tabular-nums; color:#5e6570">17 / 19</p>
+  
+</section>
+</div>
+<div class="slide-note"><div class="n-head"><span class="num">17</span><div class="n-lead"><p>12쪽에서 중앙은 적은 엘릭서로 시간을 벌던 자리였다. 그 자리를 통로로 열면 방어는 가장 싼 수단을 잃고, 공격은 길게 모으지 않고도 들어갈 수 있다.</p></div></div></div>
+</div>
+<div class="slide-item" id="s18">
+<div class="slide-frame">
+<section id="y15-shift" data-transition="fade" style="display:flex; flex-direction:column; gap:16px; padding:64px 112px 130px; background:#f6f5f1">
+  <h2 style="padding:8px 0 0; font-family:'Paperlogy Bold', Arial, sans-serif; font-size:64px; font-weight:700; line-height:1.18; color:#1b1f26">방어 중심에서 총력전으로</h2>
+  <p style="padding:0 0 0 26px; font-family:Paperlogy, Arial, sans-serif; font-size:40px; font-weight:500; line-height:1.45; color:#1b1f26; border-left:8px solid #1b1f26">지키던 자리가 전선이 되면, 전장은 두 진영을 같은 축으로 동시에 밀어 넣는다.</p>
+  <div style="height:604px; display:flex; flex-direction:row; gap:26px; align-items:start">
+    <div style="width:380px; display:flex; flex-direction:column; gap:14px">
+      <h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:30px; font-weight:700; text-align:center; color:#1b1f26">지금 — 중앙은 방어의 자리</h3>
+      <div style="position:relative; width:380px; height:454px; display:flex; flex-direction:column; align-self:stretch">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="클래시로얄 일반 1대1 전장 개념도(축척 아님)" viewBox="0 0 252 448" style="position:absolute; top:0; left:64px; width:252px; height:448px"><g transform="scale(0.7)"><defs><marker id="z1" orient="auto" markerWidth="5" markerHeight="5" refX="1.2" refY="2" overflow="visible"><path d="M-3 -1.8 L1 0 L-3 1.8" transform="translate(0 2)" fill="none" stroke="#AC443D" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></marker></defs><rect x="1" y="1" width="358" height="638" rx="10" fill="#E4ECF7" stroke="#98A0AB" stroke-width="2"/><path d="M1 11 A10 10 0 0 1 11 1 H349 A10 10 0 0 1 359 11 V300 H1 Z" fill="#F7E6E3"/><rect x="1" y="300" width="358" height="40" fill="#A9C4D9"/><rect x="44" y="294" width="60" height="52" rx="4" fill="#EDE7D9" stroke="#B5AB94" stroke-width="2"/><rect x="256" y="294" width="60" height="52" rx="4" fill="#EDE7D9" stroke="#B5AB94" stroke-width="2"/><rect x="1" y="1" width="358" height="638" rx="10" fill="none" stroke="#98A0AB" stroke-width="2"/><rect x="140" y="32" width="80" height="80" rx="6" fill="#DB9C95" stroke="#AC443D" stroke-width="2.5"/><rect x="44" y="124" width="60" height="60" rx="6" fill="#E7B2AC" stroke="#AC443D" stroke-width="2.5"/><rect x="256" y="124" width="60" height="60" rx="6" fill="#E7B2AC" stroke="#AC443D" stroke-width="2.5"/><rect x="140" y="528" width="80" height="80" rx="6" fill="#96AEDA" stroke="#2E5FA3" stroke-width="2.5"/><rect x="44" y="456" width="60" height="60" rx="6" fill="#B4C7E6" stroke="#2E5FA3" stroke-width="2.5"/><rect x="256" y="456" width="60" height="60" rx="6" fill="#B4C7E6" stroke="#2E5FA3" stroke-width="2.5"/><rect x="114" y="346" width="132" height="104" rx="6" fill="#2F6E62" fill-opacity="0.18" stroke="#2F6E62" stroke-width="2.5" stroke-dasharray="9 7"/><path d="M 286 220 L 286 320 L 250 372 L 206 398" fill="none" stroke="#AC443D" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#z1)"/><rect x="165" y="385" width="30" height="30" rx="4" fill="#2F6E62" stroke="#FFFFFF" stroke-width="2.5"/></g></svg>
+      </div>
+      <p style="font-family:Paperlogy, Arial, sans-serif; font-size:27px; line-height:1.35; text-align:center; color:#5e6570">유인해서 막는 구역</p>
+    </div>
+    <div style="width:380px; display:flex; flex-direction:column; gap:14px">
+      <h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:30px; font-weight:700; text-align:center; color:#1b1f26">개방 후 — 중앙이 전선</h3>
+      <div style="position:relative; width:380px; height:454px; display:flex; flex-direction:column; align-self:stretch">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="클래시로얄 일반 1대1 전장 개념도(축척 아님)" viewBox="0 0 252 448" style="position:absolute; top:0; left:64px; width:252px; height:448px"><g transform="scale(0.7)"><defs><marker id="z2" orient="auto" markerWidth="5" markerHeight="5" refX="1.2" refY="2" overflow="visible"><path d="M-3 -1.8 L1 0 L-3 1.8" transform="translate(0 2)" fill="none" stroke="#AC443D" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></marker><marker id="z3" orient="auto" markerWidth="5" markerHeight="5" refX="1.2" refY="2" overflow="visible"><path d="M-3 -1.8 L1 0 L-3 1.8" transform="translate(0 2)" fill="none" stroke="#2E5FA3" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></marker></defs><rect x="1" y="1" width="358" height="638" rx="10" fill="#E4ECF7" stroke="#98A0AB" stroke-width="2"/><path d="M1 11 A10 10 0 0 1 11 1 H349 A10 10 0 0 1 359 11 V300 H1 Z" fill="#F7E6E3"/><rect x="1" y="300" width="358" height="40" fill="#A9C4D9"/><rect x="44" y="294" width="60" height="52" rx="4" fill="#EDE7D9" stroke="#B5AB94" stroke-width="2"/><rect x="256" y="294" width="60" height="52" rx="4" fill="#EDE7D9" stroke="#B5AB94" stroke-width="2"/><rect x="1" y="1" width="358" height="638" rx="10" fill="none" stroke="#98A0AB" stroke-width="2"/><rect x="150" y="294" width="60" height="52" rx="4" fill="#FAEFDA" stroke="#A96A12" stroke-width="3" stroke-dasharray="10 7"/><rect x="140" y="32" width="80" height="80" rx="6" fill="#DB9C95" stroke="#AC443D" stroke-width="2.5"/><rect x="44" y="124" width="60" height="60" rx="6" fill="#E7B2AC" stroke="#AC443D" stroke-width="2.5"/><rect x="256" y="124" width="60" height="60" rx="6" fill="#E7B2AC" stroke="#AC443D" stroke-width="2.5"/><rect x="140" y="528" width="80" height="80" rx="6" fill="#96AEDA" stroke="#2E5FA3" stroke-width="2.5"/><rect x="44" y="456" width="60" height="60" rx="6" fill="#B4C7E6" stroke="#2E5FA3" stroke-width="2.5"/><rect x="256" y="456" width="60" height="60" rx="6" fill="#B4C7E6" stroke="#2E5FA3" stroke-width="2.5"/><path d="M 180 16 L 180 180 L 180 260 L 180 300" fill="none" stroke="#AC443D" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#z2)"/><path d="M 180 624 L 180 460 L 180 400 L 180 344" fill="none" stroke="#2E5FA3" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#z3)"/></g></svg>
+      </div>
+      <p style="font-family:Paperlogy, Arial, sans-serif; font-size:27px; line-height:1.35; text-align:center; color:#5e6570">양쪽이 동시에 밀어붙인다</p>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:24px; justify-content:center; flex:1">
+      <div style="display:flex; flex-direction:column; gap:14px; padding:24px 30px; background:#fbf6ec; border:2px solid #e2cfa6; border-radius:12px">
+        <h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:32px; font-weight:700; line-height:1.25; color:#a96a12">Pros</h3>
+        <ul style="padding:0 0 0 28px; font-family:Paperlogy, Arial, sans-serif; color:#1b1f26">
+          <li>공격과 수비 전략에 변주를 줄 수 있다.</li>
+          <li>방어만을 위한 중앙지역이 공격 루트로 쓰일 수 있게 된다.</li>
+          <li>중앙을 확보하기 위해 더 치열한 전략이 오고갈 수 있다.</li>
+        </ul>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:14px; padding:24px 30px; background:#faebe9; border:2px solid #e4c3bf; border-radius:12px">
+        <h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:32px; font-weight:700; line-height:1.25; color:#ac443d">Cons</h3>
+        <ul style="padding:0 0 0 28px; font-family:Paperlogy, Arial, sans-serif; color:#1b1f26">
+          <li>중앙이 최단 경로가 되어 <b>좌우가 죽을</b> 수 있다.</li>
+          <li>킹 타워가 과도하게 노출된다.</li>
+          <li>방어가 세 방향으로 분산된다.</li>
+          <li>양쪽의 타워 중 어느 곳을 우선시 공격할지 메커니즘을 설계해야 한다.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div style="height:92px; display:flex; flex-direction:column; gap:8px; padding:12px 0 0; border-top:3px solid #d8d5cc">
+    <div style="display:flex; flex-direction:row; gap:18px; align-items:baseline">
+      <div style="display:flex; flex-direction:row; gap:12px; align-items:baseline">
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:700; line-height:1.3; color:#bbb9b1">A</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#bbb9b1">선택지</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#bbb9b1">균형</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#bbb9b1">예외</p>
+      </div>
+      <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; line-height:1.3; color:#d6d4cb">|</p>
+      <div style="display:flex; flex-direction:row; gap:12px; align-items:baseline">
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:700; line-height:1.3; color:#bbb9b1">B</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#bbb9b1">비용</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#bbb9b1">시간</p>
+      </div>
+      <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; line-height:1.3; color:#d6d4cb">|</p>
+      <div style="display:flex; flex-direction:row; gap:12px; align-items:baseline">
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:700; line-height:1.3; color:#bbb9b1">C</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#bbb9b1">빌드업</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#bbb9b1">유인</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#bbb9b1">전진</p>
+      </div>
+      <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; line-height:1.3; color:#d6d4cb">|</p>
+      <div style="display:flex; flex-direction:row; gap:12px; align-items:baseline">
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:700; line-height:1.3; color:#a96a12">D</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#7c7a72">개방</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:700; line-height:1.3; color:#a96a12">총력전</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#7c7a72">정리</p>
+      </div>
+    </div>
+    <p style="font-family:Paperlogy, Arial, sans-serif; font-size:30px; font-weight:700; line-height:1.3; text-align:right; color:#a96a12">그래서 무엇이 남는가</p>
+  </div>
+  <p style="position:absolute; bottom:52px; left:112px; width:1300px; font-family:Paperlogy, Arial, sans-serif; font-size:25px; color:#5e6570">2부 · D 그래서 무엇을 바꿀 수 있을까?</p>
+  <p style="position:absolute; right:112px; bottom:52px; width:220px; font-family:Paperlogy, Arial, sans-serif; font-size:25px; text-align:right; font-variant-numeric:tabular-nums; color:#5e6570">18 / 19</p>
+  
+</section>
+</div>
+<div class="slide-note"><div class="n-head"><span class="num">18</span><div class="n-lead"><p>중앙은 원래 방어가 화력을 모으는 자리였다. 통로가 되면 그 자리를 두고 양쪽이 동시에 밀기 때문에 경기가 총력전으로 기운다. 선택지가 늘었는지 줄었는지는 세 경로가 모두 쓰이는지로 판단한다.</p></div></div></div>
+</div>
+<div class="slide-item" id="s19">
+<div class="slide-frame">
+<section id="y16-conclusion" data-transition="fade" style="display:flex; flex-direction:column; gap:16px; padding:64px 112px 130px; background:#f6f5f1">
+  <h2 style="padding:8px 0 0; font-family:'Paperlogy Bold', Arial, sans-serif; font-size:64px; font-weight:700; line-height:1.18; color:#1b1f26">결론</h2>
+  <p style="padding:0 0 0 26px; font-family:Paperlogy, Arial, sans-serif; font-size:40px; font-weight:500; line-height:1.45; color:#1b1f26; border-left:8px solid #1b1f26">고정된 전장이 만드는 것은 지형이 아니라, 플레이어가 매 순간 치러야 하는 선택이다.</p>
+  <div style="height:604px; display:flex; flex-direction:column; gap:22px">
+    <div style="height:390px; display:flex; flex-direction:row; gap:20px">
+      <div style="display:flex; flex-direction:column; gap:18px; justify-content:center; flex:1; padding:26px 30px; background:#eef3fa; border:2px solid #d8d5cc; border-radius:12px">
+        <h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:34px; font-weight:700; line-height:1.25; color:#1b3f6e">지형이 선택지를 만들고</h3>
+        <ul style="padding:0 0 0 28px; font-family:Paperlogy, Arial, sans-serif; font-size:29px; line-height:1.5; color:#1b1f26">
+          <li>두 개의 교차 지점</li>
+          <li>조건이 같은 두 경로</li>
+          <li>공유하는 중앙 공간</li>
+        </ul>
+      </div>
+      <x-shape kind="arrow-right" style="width:72px; height:36px; align-self:center; background:#5e6570"></x-shape>
+      <div style="display:flex; flex-direction:column; gap:18px; justify-content:center; flex:1; padding:26px 30px; background:#ffffff; border:2px solid #d8d5cc; border-radius:12px">
+        <h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:34px; font-weight:700; line-height:1.25; color:#55596a">비용(엘릭서)을 지불해 선택하면</h3>
+        <ul style="padding:0 0 0 28px; font-family:Paperlogy, Arial, sans-serif; font-size:29px; line-height:1.5; color:#1b1f26">
+          <li>하나의 풀, 최대 10</li>
+          <li>정해진 속도로만 회복</li>
+          <li>한쪽 경로에 쓰인 만큼 반대쪽이 빈다</li>
+        </ul>
+      </div>
+      <x-shape kind="arrow-right" style="width:72px; height:36px; align-self:center; background:#5e6570"></x-shape>
+      <div style="display:flex; flex-direction:column; gap:18px; justify-content:center; flex:1; padding:26px 30px; background:#fbf6ec; border:2px solid #d8d5cc; border-radius:12px">
+        <h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:34px; font-weight:700; line-height:1.25; color:#a96a12">공방이 오고 간다</h3>
+        <ul style="width:434px; padding:0 0 0 28px; font-family:Paperlogy, Arial, sans-serif; font-size:29px; line-height:1.5; color:#1b1f26">
+          <li>공격 — 시간으로 엘릭서를 모은다</li>
+          <li>방어 — 엘릭서로 시간을 번다</li>
+          <li>중앙 — 방어가 가장 싼 자리</li>
+        </ul>
+      </div>
+    </div>
+    <div style="height:192px; display:flex; flex-direction:column; gap:14px; justify-content:center; padding:24px 30px; background:#ffffff; border:2px solid #d8d5cc; border-radius:12px">
+      <h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:32px; font-weight:700; line-height:1.25; color:#a96a12">설계 의도</h3>
+      <p style="font-family:Paperlogy, Arial, sans-serif; font-size:31px; font-weight:400; line-height:1.4; color:#1b1f26">단순한 지형과 규칙에 플레이어 간의 상호작용을 더해 치열한 공방전을 주고 받을 수 있게 한다. 여러 선택지 — 어디로 공격할지, 어떤 카드를 사용할지 등 — 를 제공함으로써, 플레이어가 매 순간 더 효율적으로 자원을 활용하여 최선의 선택을 하도록 유도한다.</p>
+    </div>
+  </div>
+  <div style="height:92px; display:flex; flex-direction:column; gap:8px; padding:12px 0 0; border-top:3px solid #d8d5cc">
+    <div style="display:flex; flex-direction:row; gap:18px; align-items:baseline">
+      <div style="display:flex; flex-direction:row; gap:12px; align-items:baseline">
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:700; line-height:1.3; color:#bbb9b1">A</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#bbb9b1">선택지</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#bbb9b1">균형</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#bbb9b1">예외</p>
+      </div>
+      <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; line-height:1.3; color:#d6d4cb">|</p>
+      <div style="display:flex; flex-direction:row; gap:12px; align-items:baseline">
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:700; line-height:1.3; color:#bbb9b1">B</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#bbb9b1">비용</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#bbb9b1">시간</p>
+      </div>
+      <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; line-height:1.3; color:#d6d4cb">|</p>
+      <div style="display:flex; flex-direction:row; gap:12px; align-items:baseline">
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:700; line-height:1.3; color:#bbb9b1">C</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#bbb9b1">빌드업</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#bbb9b1">유인</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#bbb9b1">전진</p>
+      </div>
+      <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; line-height:1.3; color:#d6d4cb">|</p>
+      <div style="display:flex; flex-direction:row; gap:12px; align-items:baseline">
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:700; line-height:1.3; color:#a96a12">D</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#7c7a72">개방</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:400; line-height:1.3; color:#7c7a72">총력전</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; font-weight:700; line-height:1.3; color:#a96a12">정리</p>
+      </div>
+    </div>
+    <p style="font-family:Paperlogy, Arial, sans-serif; font-size:30px; line-height:1.3; color:#1b1f26"></p>
+  </div>
+  <p id="e2-iw18hh" style="position:absolute; right:112px; bottom:52px; width:220px; font-family:Paperlogy, Arial, sans-serif; font-size:25px; text-align:right; font-variant-numeric:tabular-nums; color:#5e6570">19 / 19</p>
+  
+</section>
+</div>
+<div class="slide-note"><div class="n-head"><span class="num">19</span><div class="n-lead"><p>세 칸이 문서 전체의 논리다. 지형이 선택지를 만들고, 엘릭서가 값을 치르고, 그 위에서 공격과 방어가 오간다. 마지막 칸은 이 전장이 플레이어에게 시키는 일을 한 문장으로 정리한다 — 자원과 시간을 어디에 쓸지 계속 고르게 만드는 것.</p></div></div></div>
+</div>
+</div>
+<nav class="deck-nav"><a href="genshin.html">← 원신 몬드 레벨디자인 역기획</a> <a href="./">역기획서 목록 →</a></nav>
+</main>
+<footer class="foot"><div class="wrap">© 장대규 · 글꼴: 페이퍼로지(Paperlogy, SIL OFL 1.1)</div></footer>
+</div>
+<div class="present" aria-modal="true" role="dialog">
+<div class="stage"></div>
+<div class="bar"><button class="prev" type="button">← 이전</button><span class="count"></span><button class="next" type="button">다음 →</button><button class="close" type="button">닫기 (Esc)</button></div>
+</div>
+</body>
+</html>

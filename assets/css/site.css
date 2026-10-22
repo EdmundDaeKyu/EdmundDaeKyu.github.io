@@ -3,6 +3,9 @@
 @font-face { font-family: "Paperlogy"; src: url("../fonts/Paperlogy-4Regular.ttf") format("truetype"); font-weight: 400; font-display: swap; }
 @font-face { font-family: "Paperlogy SemiBold"; src: url("../fonts/Paperlogy-6SemiBold.ttf") format("truetype"); font-weight: 400; font-display: swap; }
 @font-face { font-family: "Paperlogy ExtraBold"; src: url("../fonts/Paperlogy-8ExtraBold.ttf") format("truetype"); font-weight: 400; font-display: swap; }
+/* 역기획서 덱(analysis/)이 쓰는 굵기 */
+@font-face { font-family: "Paperlogy Bold"; src: url("../fonts/Paperlogy-7Bold.woff2") format("woff2"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Paperlogy Black"; src: url("../fonts/Paperlogy-9Black.woff2") format("woff2"); font-weight: 400; font-display: swap; }
 
 :root {
   --bg: #F6F5F1;

@@ -1,0 +1,70 @@
+{
+  "v": 4,
+  "attachments": {},
+  "cover": "c01-cover",
+  "createdOnFiles": {
+    "at": "2026-10-19T12:00:00Z",
+    "v": 1
+  },
+  "designSystems": [],
+  "faces": {
+    "paperlogy": {
+      "family": "Paperlogy",
+      "src": "/_blob/70aae0f257198ee5521f7aa8f2b3ed0f"
+    },
+    "paperlogy-black": {
+      "family": "Paperlogy Black",
+      "src": "/_blob/a78ec05f101e524f06f9eda09511be5c"
+    },
+    "paperlogy-bold": {
+      "family": "Paperlogy Bold",
+      "src": "/_blob/372c134f028c162fe6d65cc72ee682fc"
+    }
+  },
+  "lists": "css",
+  "order": [
+    "c01-cover",
+    "g01-goals",
+    "l0-lane",
+    "m1-role",
+    "m2-wave",
+    "m3-gold",
+    "m4-xp",
+    "m6-curve",
+    "t1-role",
+    "t3-siege",
+    "t5-plates",
+    "e2-fourteen",
+    "e3-gap",
+    "s2-repair",
+    "z1-conclusion"
+  ],
+  "sections": {
+    "s1": {
+      "description": "표지와 설계 목표",
+      "start": "c01-cover"
+    },
+    "s2": {
+      "description": "미니언 기획",
+      "start": "l0-lane"
+    },
+    "s3": {
+      "description": "포탑 기획",
+      "start": "t1-role"
+    },
+    "s4": {
+      "description": "경제 · 밸런스",
+      "start": "e2-fourteen"
+    },
+    "s5": {
+      "before": null,
+      "description": "보완 기획",
+      "start": "s2-repair"
+    },
+    "s6": {
+      "description": "결론",
+      "start": "z1-conclusion"
+    }
+  },
+  "title": "소환사의 협곡 미니언·포탑 시스템 기획 (2편)"
+}

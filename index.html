@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>장대규 · 게임 기획 포트폴리오</title>
-<meta name="description" content="게임 기획 포트폴리오. Edgerunners — 사이버펑크 2077을 탑다운 로그라이트로 재구성한 게임.">
+<meta name="description" content="게임 기획 포트폴리오. Edgerunners — 사이버펑크 2077을 탑다운 로그라이트로 재구성한 게임. 리그 오브 레전드 · 엘든 링 · 원신 · 클래시 로얄 역기획서.">
 <link rel="stylesheet" href="assets/css/site.css">
 <style>
   .hero { padding: 88px 0 72px; }
@@ -23,6 +23,17 @@
     .project .shot img { min-height: 0; aspect-ratio: 16 / 9; }
     .project .body { padding: 26px; }
   }
+  .studies { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+  .study { display: flex; flex-direction: column; color: var(--ink); transition: border-color 0.15s, transform 0.15s; }
+  .study:hover { text-decoration: none; border-color: var(--ink-3); transform: translateY(-2px); }
+  .study img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: var(--dark); }
+  .study .body { display: flex; flex-direction: column; gap: 6px; padding: 18px 20px 20px; }
+  .study .game { font-family: var(--semi); font-size: 13px; color: var(--accent); }
+  .study h3 { font-size: 20px; margin: 0; }
+  .study p { color: var(--ink-3); font-size: 14.5px; margin: 0; }
+  .more { margin-top: 18px; }
+  @media (max-width: 900px) { .studies { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 640px) { .studies { grid-template-columns: minmax(0, 1fr); } }
   @media (max-width: 640px) { .hero { padding: 56px 0 44px; } .hero h1 { font-size: 42px; } }
 </style>
 </head>
@@ -30,7 +41,7 @@
 <div class="scroll-root">
 <header class="site-head"><div class="wrap">
 <a class="brand" href="./">장대규</a>
-<nav><a class="on" href="./">홈</a><a href="edgerunners/">Edgerunners</a></nav>
+<nav><a class="on" href="./">홈</a><a href="edgerunners/">Edgerunners</a><a href="analysis/">역기획서</a></nav>
 </div></header>
 
 <main class="wrap">
@@ -54,6 +65,19 @@
 <div class="btn-row"><a class="btn" href="edgerunners/">게임 보기</a><a class="btn ghost" href="edgerunners/plan/">기획서 보기</a><a class="btn ghost" href="edgerunners/log/">작업 내역 보기</a></div>
 </div>
 </article>
+</section>
+
+<section class="block" id="analysis">
+<h2>역기획서</h2>
+<p class="sub">출시된 게임의 레벨과 시스템을 기획자 입장에서 다시 설계해 본 문서. 각 구조가 어떤 목표로 그 수치와 배치가 되었는지 정리했다.</p>
+<div class="studies">
+<a class="card study" href="analysis/lol1.html"><img src="assets/img/lol1_01.webp" alt=""><div class="body"><span class="game">리그 오브 레전드</span><h3>소환사의 협곡 레벨디자인</h3><p>세 갈래 길과 정글, 오브젝트, 시야 배치가 대칭 속 공정성과 국면 전환을 만드는 구조.</p></div></a>
+<a class="card study" href="analysis/lol2.html"><img src="assets/img/lol2_02.webp" alt=""><div class="body"><span class="game">리그 오브 레전드</span><h3>미니언 · 포탑 시스템 기획</h3><p>미니언의 골드 · 경험치와 포탑 수치를 설계 목표에서부터 정하고 라인전 경제를 다룬 기획.</p></div></a>
+<a class="card study" href="analysis/limgrave.html"><img src="assets/img/limgrave_card.webp" alt=""><div class="body"><span class="game">엘든 링</span><h3>림그레이브 레벨디자인</h3><p>지도 · 밀도 · 시야 · 사정거리로 첫 보스까지 플레이어를 학습시키는 구조.</p></div></a>
+<a class="card study" href="analysis/genshin.html"><img src="assets/img/genshin_01.webp" alt=""><div class="body"><span class="game">원신</span><h3>몬드 레벨디자인</h3><p>몬드성과 신상을 기준점으로 탐험 범위를 넓혀 가는 배치와 순환 구조.</p></div></a>
+<a class="card study" href="analysis/clash.html"><img src="assets/img/clash_01.webp" alt=""><div class="body"><span class="game">클래시 로얄</span><h3>아레나 레벨디자인</h3><p>고정된 전장의 대칭과 다리 · 강, 엘릭서 비용이 공격과 방어를 나누는 구조.</p></div></a>
+</div>
+<div class="btn-row more"><a class="btn ghost" href="analysis/">역기획서 전체 보기</a></div>
 </section>
 </main>
 

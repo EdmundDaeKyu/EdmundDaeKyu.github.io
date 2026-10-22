@@ -11,6 +11,8 @@
 | `edgerunners/plan/index.html` | Edgerunners 기획서 목록 — 개요 하나와 세부 기획서 다섯. `tools/build_decks.pl`이 만든다 |
 | `edgerunners/plan/<덱>.html` | 기획서 한 벌. `tools/build_decks.pl`이 만든다(손으로 고치지 않는다) |
 | `edgerunners/log/index.html` | Edgerunners 작업 내역 — 개발 과정 덱. 역시 `tools/build_decks.pl`이 만든다 |
+| `analysis/index.html` | 역기획서 목록 — 리그 오브 레전드 1 · 2편, 엘든 링 림그레이브, 원신 몬드, 클래시로얄. `tools/build_decks.pl`이 만든다 |
+| `analysis/<덱>.html` | 역기획서 한 벌. `tools/build_decks.pl`이 만든다(손으로 고치지 않는다) |
 | `assets/` | 글꼴(페이퍼로지), 스타일, 슬라이드 보기 스크립트, 그림(WebP) |
 | `src/decks/<덱>/` | 덱 원본. claude.ai Slides 덱의 `deck.json`과 `slides/*.html`, 장마다 붙는 설명 `notes/<장 id>.md` |
 | `tools/NOTES_FORMAT.md` | 장별 설명을 쓰는 형식(칸 · 소제목 · 도식) |
@@ -36,6 +38,14 @@
    ```bash
    perl tools/build_decks.pl
    ```
+
+## 역기획서를 더하거나 고친 뒤
+
+1. claude.ai 덱의 `deck.json`과 `slides/*.html`을 `src/decks/<덱>/`에 넣고, `tools/build_decks.pl`의 `@DECKS`에 `'study'` 묶음으로 한 줄을 더한다(마지막 칸은 카드에 붙는 게임 이름).
+2. 그림은 위와 같이 `tools/images.tsv`에 짝을 적고 WebP로 만든다. 이름은 `<덱>_<번호>`로 맞췄다.
+3. 림그레이브는 Keynote PDF라 장마다 1920×1080 그림 한 장(`limgrave_<번호>.webp`)으로 옮겼다. 원본을 고치면 PDF에서 다시 뽑는다.
+4. 홈(`index.html`)의 역기획서 카드는 손으로 쓴 것이라 덱을 더하면 함께 고친다.
+5. `perl tools/build_decks.pl`
 
 ## 미리 보기
 
