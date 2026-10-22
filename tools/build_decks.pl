@@ -173,6 +173,9 @@ sub page_path {
 sub up_of { my ($group) = @_; return $group eq 'study' ? '../' : '../../'; }
 
 # 같은 묶음 안에서 앞뒤 덱 링크. Edgerunners 페이지는 edgerunners/<묶음>/, 역기획서는 analysis/ 아래에 있다.
+# 덱별 기획 요약 보기 페이지. 기획서는 plan/summary-<덱>.html, 작업 내역은 log/summary.html
+sub summary_file { my ($d) = @_; return $d->[1] eq 'log' ? 'summary.html' : "summary-$d->[0].html"; }
+
 sub link_to {
   my ($from, $to) = @_;
   my $file = ($to->[1] eq 'log' || $to->[0] eq 'overview') ? '' : "$to->[0].html";
@@ -258,7 +261,7 @@ for my $d (grep { $_->[1] ne 'study' } @DECKS) {
 sub doc_index {
   my ($cur) = @_;
   my @er = grep { $_->[1] ne 'study' } @DECKS;
-  my $h = qq(<details class="doc-index" open><summary>기획서 목차</summary>\n<a class="di-pdf" href="@{[ $cur->[1] eq 'log' ? '../plan/' : '' ]}summary.html">기획 요약 보기 · 14장</a>\n);
+  my $h = qq(<details class="doc-index" open><summary>기획서 목차</summary>\n<a class="di-pdf" href="@{[ $cur->[1] eq 'log' ? '../plan/' : '' ]}summary.html">전체 기획 요약 · 14장</a>\n);
   my $k = 0;
   for my $d (@er) {
     my $href = link_to($cur, $d);
@@ -279,6 +282,7 @@ sub doc_index {
 
 my $missing = 0;
 my %raw;  # "덱/장" → 슬라이드 원본(요약 PDF용)
+my %only;  # 덱 → 설명 없이 슬라이드만 모은 목록(덱별 기획 요약 보기용)
 my %count;
 my @plan = grep { $_->[1] eq 'plan' } @DECKS;
 for my $d (@DECKS) {
@@ -323,6 +327,7 @@ for my $d (@DECKS) {
       push @items, sprintf(qq(<div class="sec-head" id="part%d"><span class="sec-k">%02d</span><h2>%s</h2></div>), $k, $k, esc($desc));
     }
     push @items, qq(<div class="slide-item" id="s$n">\n<div class="slide-frame">\n$html\n</div>\n$note_html\n</div>);
+    push @{ $only{$id} }, qq(<div class="slide-item" id="s$n">\n<div class="slide-frame">\n$html\n</div>\n</div>);
   }
   my $count = scalar @ids;
   $count{$id} = $count;
@@ -340,7 +345,10 @@ for my $d (@DECKS) {
   if ($group ne 'study') {
     $open = qq(<div class="plan-layout">\n) . doc_index($d) . qq(<div class="plan-main">);
     $close = "</div>\n</div>";
-    $pdf = qq(\n<a class="btn ghost" href="@{[ $group eq 'log' ? '../plan/' : '' ]}summary.html">기획 요약 보기 · 14장</a>);
+    # 개요 기획서는 전체 기획 요약(14장), 세부 기획서와 작업 내역은 그 덱의 슬라이드만 띄운다
+    $pdf = $id eq 'overview'
+      ? qq(\n<a class="btn ghost" href="summary.html">기획 요약 보기 · 14장</a>)
+      : qq(\n<a class="btn ghost" href="@{[ summary_file($d) ]}">기획 요약 보기 · ${count}장</a>);
   }
   my $page = shell(
     main_class => $group eq 'study' ? 'wrap' : 'wrap wide',
@@ -465,6 +473,47 @@ $items</div>
 ),
   ));
   print "plan/summary.html: 기획 요약 보기\n";
+}
+
+
+# ── 덱별 기획 요약 보기: 세부 기획서와 작업 내역의 슬라이드만 설명 없이 모아 바로 발표 모드로 연다 ──
+for my $d (grep { $_->[1] ne 'study' && $_->[0] ne 'overview' } @DECKS) {
+  my ($id, $group, $title) = @$d;
+  my $n = $count{$id};
+  my $items = join("\n", @{ $only{$id} });
+  my $back = $group eq 'log' ? './' : "$id.html";
+  my $all = $group eq 'log' ? '../plan/summary.html' : 'summary.html';
+  spit("$root/edgerunners/$group/" . summary_file($d), shell(
+    title => "$title 요약 · Edgerunners",
+    desc => "Edgerunners $title 슬라이드 ${n}장.",
+    main_class => 'wrap wide',
+    head => qq(<link rel="stylesheet" href="../../assets/css/deck.css">\n<script src="../../assets/js/deck.js" defer></script>\n),
+    tabs => tabs($group),
+    body => qq(<div class="plan-layout">\n) . doc_index($d) . qq(<div class="plan-main">
+<div class="deck-head" id="top">
+<p class="eyebrow">Edgerunners 기획서</p>
+<h1>${title} 요약</h1>
+<p class="lead">${title}의 슬라이드 ${n}장만 모았습니다. 장별 설명은 기획서 본문에서 볼 수 있습니다.</p>
+<div class="deck-tools">
+<button class="btn" type="button" data-present="0">슬라이드 보기</button>
+<a class="btn ghost" href="$back">설명과 함께 보기</a>
+<a class="btn ghost" href="$all">전체 기획 요약 · 14장</a>
+<span class="small">${n}장 · ←/→ 키로 넘기고 Esc로 닫습니다</span>
+</div>
+</div>
+<div class="slides">
+$items
+</div>
+</div>
+</div>),
+    tail => qq(<div class="present" aria-modal="true" role="dialog">
+<div class="stage"></div>
+<div class="bar"><button class="prev" type="button">← 이전</button><span class="count"></span><button class="next" type="button">다음 →</button><button class="close" type="button">닫기 (Esc)</button></div>
+</div>
+<script>document.addEventListener("DOMContentLoaded", function () { setTimeout(function () { var b = document.querySelector("[data-present]"); if (b && !location.hash) b.click(); }, 60); });</script>
+),
+  ));
+  print "$group/" . summary_file($d) . ": ${n}장 요약 보기\n";
 }
 
 # ── 역기획서 목록 ──

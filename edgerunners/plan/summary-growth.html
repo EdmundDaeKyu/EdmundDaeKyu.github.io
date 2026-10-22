@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>성장 기획서 요약 · Edgerunners</title>
+<meta name="description" content="Edgerunners 성장 기획서 슬라이드 10장.">
+<link rel="stylesheet" href="../../assets/css/site.css">
+<link rel="stylesheet" href="../../assets/css/deck.css">
+<script src="../../assets/js/deck.js" defer></script>
+</head>
+<body>
+<div class="scroll-root">
+<header class="site-head"><div class="wrap wide">
+<a class="brand" href="../../">장대규</a>
+<nav><a href="../../">홈</a><a class="on" href="../../edgerunners/">Edgerunners</a><a href="../../analysis/">역기획서</a><a href="../../ai/">AI 활용</a></nav>
+</div></header>
+<main class="wrap wide">
+<nav class="tabs"><a href="../">게임</a><a class="on" href="../plan/">기획서</a><a href="../log/">작업 내역</a></nav>
+<div class="plan-layout">
+<details class="doc-index" open><summary>기획서 목차</summary>
+<a class="di-pdf" href="summary.html">전체 기획 요약 · 14장</a>
+<div class="di-deck"><a class="di-title" href="./"><span>개요</span>개요 기획서</a><ol><li class="di-sec">1. 게임 소개와 핵심 재미</li><li><a href="./#s1">표지</a></li><li><a href="./#s2">사이버웨어와 무기로 빌드를 만드는 탑다운 로그라이트</a></li><li><a href="./#s3">빌드 구성, 빌드 시험, 적 웨이브 처치</a></li><li class="di-sec">2. 빌드를 만들고 시험하는 구조</li><li><a href="./#s4">시설 출격부터 방 12개를 거쳐 보스까지의 진행</a></li><li><a href="./#s5">사이버웨어 8부위와 부위별 단일 역할</a></li><li><a href="./#s6">빌드별 플레이 방식 차이</a></li><li><a href="./#s7">2077 무기 · 사이버웨어의 탑다운 전투용 재설계</a></li><li><a href="./#s8">방 진행에 따른 신규 요소 단계별 추가</a></li><li><a href="./#s9">판 안 성장 초기화, 판 밖 성장 유지</a></li><li class="di-sec">3. 전투 규칙과 레벨 제작</li><li><a href="./#s10">모든 공격의 예고와 대시로 피할 수 없는 위협</a></li><li><a href="./#s11">레벨 제작 순서: 손그림, 격자 도면, 실제 플레이</a></li><li class="di-sec">4. 세부 기획서 안내</li><li><a href="./#s12">주제별 세부 기획서 구성</a></li></ol></div>
+<div class="di-deck"><a class="di-title" href="combat.html"><span>세부 01</span>전투 규칙</a><ol><li class="di-sec">1. 기본 능력치와 대시</li><li><a href="combat.html#s1">표지</a></li><li><a href="combat.html#s2">낮은 엄폐물 한 칸 기준의 대시 거리 설정</a></li><li><a href="combat.html#s3">적 공격 예고보다 긴 대시 1회 충전 시간</a></li><li class="di-sec">2. 공격 예고 규칙</li><li><a href="combat.html#s4">주황색 공격 범위, 빨간색 판정 시점 표시</a></li><li><a href="combat.html#s5">실제 판정 범위와 동일한 예고 표시</a></li><li class="di-sec">3. 피해 기준표와 받는 피해</li><li><a href="combat.html#s6">모든 피해 수치에 적용하는 단일 기준표</a></li><li><a href="combat.html#s7">피해 감소 중첩 시 받는 피해 하한</a></li><li class="di-sec">4. 대시로 피할 수 없는 위협</li><li><a href="combat.html#s8">발판에 서 있는 동안 지속되는 전기 발판 피해</a></li><li><a href="combat.html#s9">오작동 시 2.5초 대시 불가</a></li></ol></div>
+<div class="di-deck"><a class="di-title" href="system.html"><span>세부 02</span>시스템</a><ol><li class="di-sec">1. 무기와 사이버웨어 8부위</li><li><a href="system.html#s1">표지</a></li><li><a href="system.html#s2">무기별 우클릭 고유 능력</a></li><li><a href="system.html#s3">사이버웨어 8부위와 부위별 담당 영역</a></li><li class="di-sec">2. 사이버웨어 레벨, 숙련도, 프로토타입, 해킹 모드</li><li><a href="system.html#s4">레벨업은 새 기능, 숙련도는 수치 강화</a></li><li><a href="system.html#s5">프로토타입의 효과와 대가</a></li><li><a href="system.html#s6">대상과 클릭 버튼별 해킹 효과</a></li><li class="di-sec">3. 죽어도 유지되는 성장과 코인, 카드, 회차</li><li><a href="system.html#s7">사망 후에도 유지되는 레벨, 명상, 숙련도</a></li><li><a href="system.html#s8">코인 가격 — 강화 300, 해금 500, 슬롯 확장 1500 이상</a></li><li><a href="system.html#s9">신화 카드 획득처 — 훈련장 좌대와 작업대</a></li><li><a href="system.html#s10">보스 처치 후 업그레이드를 유지한 다음 회차 진입</a></li></ol></div>
+<div class="di-deck"><a class="di-title" href="level.html"><span>세부 03</span>레벨</a><ol><li class="di-sec">1. 방을 그리는 도구와 규칙</li><li><a href="level.html#s1">표지</a></li><li><a href="level.html#s2">레벨 제작 순서 — 손그림, 격자 도면, 실제 플레이</a></li><li><a href="level.html#s3">도면만으로 대시 통과 지점을 판별하는 격자 규칙</a></li><li><a href="level.html#s4">그린 방을 즉시 플레이로 시험하는 편집 흐름</a></li><li class="di-sec">2. 방 종류별 도면 목록</li><li><a href="level.html#s5">전투방 도면 후보와 무작위 선택</a></li><li><a href="level.html#s6">엘리트방 전용 도면 두 개</a></li><li><a href="level.html#s7">어두운 방에서 싸우는 ??? 방 전용 도면</a></li><li><a href="level.html#s8">중심선을 비운 보스방 도면</a></li><li class="di-sec">3. 첫 런의 등장 순서와 웨이브</li><li><a href="level.html#s9">방 번호별 신규 장치 등장 순서</a></li><li><a href="level.html#s10">모든 방의 최소 두 웨이브 구성</a></li><li class="di-sec">4. 방 종류와 보스</li><li><a href="level.html#s11">보상과 비용 기준의 방 종류 구분</a></li><li><a href="level.html#s12">체간 붕괴 후 처형 중심의 보스 피해 구조</a></li></ol></div>
+<div class="di-deck"><a class="di-title" href="tutorial.html"><span>세부 04</span>튜토리얼</a><ol><li class="di-sec">1. 튜토리얼의 교습 방식과 맵 세 개의 구성</li><li><a href="tutorial.html#s1">표지</a></li><li><a href="tutorial.html#s2">시간 정지 후 한 번에 한 가지씩 교습</a></li><li><a href="tutorial.html#s3">숲속 맵 세 개로 구성한 튜토리얼</a></li><li class="di-sec">2. 단계별로 가르치는 것</li><li><a href="tutorial.html#s4">맨손 대시 · 회피 학습과 카타나 획득</a></li><li><a href="tutorial.html#s5">근접 · 원거리 적 동시 등장 시점의 우클릭 해금</a></li><li><a href="tutorial.html#s6">수류탄으로만 처치되는 적을 이용한 수류탄 교습</a></li><li><a href="tutorial.html#s7">코칭 컷 없이 스스로 길을 찾는 마지막 단계</a></li><li class="di-sec">3. 지형 안내와 단계별 정리</li><li><a href="tutorial.html#s8">지형을 이용한 진행 경로 안내</a></li><li><a href="tutorial.html#s9">배운 조작의 수행을 조건으로 한 단계 진행</a></li></ol></div>
+<div class="di-deck on"><a class="di-title" href="#top"><span>세부 05</span>성장</a><ol><li class="di-sec">1. 죽거나 보스를 처치했을 때 남는 것</li><li><a href="#s1">표지</a></li><li><a href="#s2">사망 시 빌드 손실, 경험치 · 숙련도 · 코인 유지</a></li><li class="di-sec">2. 경험치와 레벨, 명상, 숙련도</li><li><a href="#s3">레벨업 보상: 체력 회복과 스킬 포인트 1</a></li><li><a href="#s4">세 갈래 다섯 칸 구조의 명상과 마지막 칸 궁극기</a></li><li><a href="#s5">장착 중 처치 수로 오르고 사망 시에도 유지되는 숙련도</a></li><li class="di-sec">3. 사이버웨어 레벨과 프로토타입 대가</li><li><a href="#s6">같은 사이버웨어 재획득 시 새 기능 추가</a></li><li><a href="#s7">숙련도 단계마다 1/3씩 감소하는 프로토타입 대가</a></li><li class="di-sec">4. 코인과 작업대, 회차, 성장 정리</li><li><a href="#s8">사망 시 유지되는 코인과 새 선택지 항목의 높은 가격</a></li><li><a href="#s9">보스 처치 후 빌드를 유지한 다음 회차 진행</a></li><li><a href="#s10">적 처치로 함께 쌓이는 경험치 · 숙련도 · 코인</a></li></ol></div>
+<div class="di-deck"><a class="di-title" href="../log/"><span>작업 내역</span>작업 내역</a><ol><li class="di-sec">1. 개발 기간의 흐름과 주요 수치 변화</li><li><a href="../log/#s1">표지</a></li><li><a href="../log/#s2">62일의 작업 배분 — 기반, 재설계, 완성도</a></li><li><a href="../log/#s3">주요 수치 변경 내역</a></li><li class="di-sec">2. 결정 기록과 기각 · 개편한 결정</li><li><a href="../log/#s4">플레이와 측정으로 바꾼 결정</a></li><li><a href="../log/#s5">보상 좌대 위치로 인한 도면 중심 구조 누락</a></li><li><a href="../log/#s6">바닥 함정 기각, 전기 발판 개편</a></li><li><a href="../log/#s7">실제 판정에 맞춘 공격 예고 범위</a></li><li><a href="../log/#s8">사이버웨어 성장 개편 — 레벨 시스템 도입</a></li><li><a href="../log/#s9">10-14 보스 개선안의 반영 결과</a></li><li><a href="../log/#s10">표지</a></li><li><a href="../log/#s11">바깥 네 방에서 숲길 세 단계로 바뀐 튜토리얼</a></li><li class="di-sec">3. 직접 플레이하며 바꾼 것</li><li><a href="../log/#s12">직접 플레이로 찾은 문제와 변경 내용</a></li><li class="di-sec">4. 중간 평가와 남은 과제</li><li><a href="../log/#s13">10-07 중간 평가 문제의 2주 후 재점검</a></li><li><a href="../log/#s14">미결 기획 과제</a></li></ol></div>
+</details>
+<div class="plan-main">
+<div class="deck-head" id="top">
+<p class="eyebrow">Edgerunners 기획서</p>
+<h1>성장 기획서 요약</h1>
+<p class="lead">성장 기획서의 슬라이드 10장만 모았습니다. 장별 설명은 기획서 본문에서 볼 수 있습니다.</p>
+<div class="deck-tools">
+<button class="btn" type="button" data-present="0">슬라이드 보기</button>
+<a class="btn ghost" href="growth.html">설명과 함께 보기</a>
+<a class="btn ghost" href="summary.html">전체 기획 요약 · 14장</a>
+<span class="small">10장 · ←/→ 키로 넘기고 Esc로 닫습니다</span>
+</div>
+</div>
+<div class="slides">
+<div class="slide-item" id="s1">
+<div class="slide-frame">
+<section id="cover" data-transition="fade" style="background:#F6F5F1;color:#17181C;font-family:'Paperlogy', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:center;gap:28px">
+<img src="../../assets/img/portfolio_hero_alt.webp" data-crop="1 85% 50%" alt="카타나를 든 플레이어가 적 무리 사이를 베고 지나가며 잔상을 남긴 장면" style="position:absolute;left:880px;top:0;width:1040px;height:1080px;object-fit:cover">
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;letter-spacing:3px;color:#0077A3;width:680px">성장 기획서</p>
+<h1 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:112px;font-weight:400;line-height:1;color:#17181C;width:700px">EDGE<br>RUNNERS</h1>
+<p style="font-size:34px;line-height:1.45;color:#17181C;width:660px">사이버펑크 2077을 탑다운 로그라이트로 재구성한 게임.<br>빌드를 조합 · 시험하며 적을 처치하는 구조.</p>
+<p style="font-size:28px;line-height:1.5;color:#3E434D;width:660px">플레이어 성장 방법과 사망 · 보스 처치 시 남는 요소 정리.</p>
+<div style="display:flex;flex-direction:column;gap:6px;width:660px">
+<p style="font-size:26px;color:#5B606B">장대규</p>
+<p style="font-size:26px;color:#5B606B">1인 개발, Godot 4.7.2, 2026.08.21 – 10.21</p>
+</div>
+
+</section>
+</div>
+</div>
+<div class="slide-item" id="s2">
+<div class="slide-frame">
+<section id="keep" data-transition="fade" style="background:#F6F5F1;color:#17181C;font-family:'Paperlogy', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:44px">
+<div style="display:flex;flex-direction:column;gap:10px">
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;letter-spacing:2px;color:#0077A3">01  남는 것과 잃는 것</p>
+<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">사망 시 빌드 손실, 경험치 · 숙련도 · 코인 유지</h2>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:32px">
+<div style="display:flex;flex-direction:column;gap:22px;background:#FFFFFF;padding:36px;border-radius:12px;border-left:8px solid #C2185B">
+<div style="display:flex;flex-direction:column;gap:6px">
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#C2185B">사망 시 손실</p>
+<h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:36px;font-weight:400;color:#17181C">한 판 안의 성장</h3>
+</div>
+<div style="display:flex;flex-direction:row;flex-wrap:wrap;gap:10px">
+<p style="font-size:24px;color:#17181C;background:#F6F5F1;border:1px solid #D9D7CF;padding:4px 16px;border-radius:999px">장착한 사이버웨어와 레벨</p>
+<p style="font-size:24px;color:#17181C;background:#F6F5F1;border:1px solid #D9D7CF;padding:4px 16px;border-radius:999px">카드</p>
+<p style="font-size:24px;color:#17181C;background:#F6F5F1;border:1px solid #D9D7CF;padding:4px 16px;border-radius:999px">스탯 보상</p>
+<p style="font-size:24px;color:#17181C;background:#F6F5F1;border:1px solid #D9D7CF;padding:4px 16px;border-radius:999px">훈련장에서 붙인 무기 속성</p>
+<p style="font-size:24px;color:#17181C;background:#F6F5F1;border:1px solid #D9D7CF;padding:4px 16px;border-radius:999px">회차</p>
+</div>
+<p style="font-size:25px;line-height:1.55;color:#3E434D">사이버웨어가 사망 후에도 남으면 몇 판 만에 모든 슬롯이 채워집니다.<br>이 경우 판마다 다른 빌드를 시도할 이유가 사라집니다.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:22px;background:#FFFFFF;padding:36px;border-radius:12px;border-left:8px solid #0077A3">
+<div style="display:flex;flex-direction:column;gap:6px">
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#0077A3">사망 시 유지</p>
+<h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:36px;font-weight:400;color:#17181C">판 간 누적 성장</h3>
+</div>
+<div style="display:flex;flex-direction:row;flex-wrap:wrap;gap:10px">
+<p style="font-size:24px;color:#17181C;background:#F6F5F1;border:1px solid #D9D7CF;padding:4px 16px;border-radius:999px">경험치 · 레벨</p>
+<p style="font-size:24px;color:#17181C;background:#F6F5F1;border:1px solid #D9D7CF;padding:4px 16px;border-radius:999px">명상</p>
+<p style="font-size:24px;color:#17181C;background:#F6F5F1;border:1px solid #D9D7CF;padding:4px 16px;border-radius:999px">숙련도</p>
+<p style="font-size:24px;color:#17181C;background:#F6F5F1;border:1px solid #D9D7CF;padding:4px 16px;border-radius:999px">코인</p>
+<p style="font-size:24px;color:#17181C;background:#F6F5F1;border:1px solid #D9D7CF;padding:4px 16px;border-radius:999px">작업대 영구 강화</p>
+<p style="font-size:24px;color:#17181C;background:#F6F5F1;border:1px solid #D9D7CF;padding:4px 16px;border-radius:999px">무기 해금</p>
+<p style="font-size:24px;color:#17181C;background:#F6F5F1;border:1px solid #D9D7CF;padding:4px 16px;border-radius:999px">장착한 두 무기</p>
+</div>
+<p style="font-size:25px;line-height:1.55;color:#3E434D">사망한 판에서 쌓은 경험치, 숙련도, 코인은 그대로 유지됩니다.<br>따라서 사망한 판의 플레이도 다음 판의 성장으로 이어집니다.</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:row;gap:40px;align-items:center;padding:28px 36px;background:#FFFFFF;border-radius:12px;border:1px solid #D9D7CF">
+<h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;color:#17181C;width:280px">보스 처치 시</h3>
+<p style="font-size:26px;line-height:1.55;color:#3E434D;flex:1">왼쪽 칸의 요소도 모두 유지한 채 다음 회차로 진행합니다.<br>대신 적의 체력과 피해가 회차마다 증가합니다.</p>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:800px;font-size:24px;color:#8A8F99">EDGERUNNERS 성장 기획서</p>
+<p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#8A8F99">02</p>
+
+</section>
+</div>
+</div>
+<div class="slide-item" id="s3">
+<div class="slide-frame">
+<section id="xp" data-transition="fade" style="background:#ECEBE6;color:#17181C;font-family:'Paperlogy', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:44px">
+<div style="display:flex;flex-direction:column;gap:10px">
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;letter-spacing:2px;color:#0077A3">02  경험치와 레벨</p>
+<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">레벨업 보상: 체력 회복과 스킬 포인트 1</h2>
+</div>
+<div style="display:flex;flex-direction:row;gap:40px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:20px;width:568px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#FFFFFF;padding:28px 32px;border-radius:12px">
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#5B606B">처치 경험치</p>
+<div style="display:flex;flex-direction:row;gap:44px">
+<div style="display:flex;flex-direction:column;gap:6px"><p style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:56px;line-height:1;color:#0077A3">1</p><p style="font-size:24px;color:#5B606B">일반</p></div>
+<div style="display:flex;flex-direction:column;gap:6px"><p style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:56px;line-height:1;color:#0077A3">5</p><p style="font-size:24px;color:#5B606B">엘리트</p></div>
+<div style="display:flex;flex-direction:column;gap:6px"><p style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:56px;line-height:1;color:#0077A3">30</p><p style="font-size:24px;color:#5B606B">보스</p></div>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;background:#FFFFFF;padding:28px 32px;border-radius:12px">
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#5B606B">숙련도 단계 보너스</p>
+<div style="display:flex;flex-direction:row;gap:44px">
+<div style="display:flex;flex-direction:column;gap:6px"><p style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:56px;line-height:1;color:#0077A3">15</p><p style="font-size:24px;color:#5B606B">1단계</p></div>
+<div style="display:flex;flex-direction:column;gap:6px"><p style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:56px;line-height:1;color:#0077A3">30</p><p style="font-size:24px;color:#5B606B">2단계</p></div>
+<div style="display:flex;flex-direction:column;gap:6px"><p style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:56px;line-height:1;color:#0077A3">60</p><p style="font-size:24px;color:#5B606B">3단계</p></div>
+</div>
+</div>
+<div style="display:flex;flex-direction:row;gap:28px;align-items:center;background:#FFFFFF;padding:28px 32px;border-radius:12px">
+<div style="display:flex;flex-direction:column;gap:6px"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#5B606B">최대 레벨</p><p style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:56px;line-height:1;color:#17181C">28</p></div>
+<p style="font-size:25px;line-height:1.55;color:#3E434D">누적 경험치 3078<br>스킬 포인트 27, 명상 전체 습득 가능</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px;flex:1;background:#FFFFFF;padding:36px 40px;border-radius:12px">
+<div style="display:flex;flex-direction:column;gap:6px">
+<h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;color:#17181C">다음 레벨까지 필요한 경험치</h3>
+<p style="font-size:24px;color:#5B606B">30 + 6 × 현재 레벨</p>
+</div>
+<div style="display:flex;flex-direction:row;gap:10px;align-items:end;height:300px">
+<div style="width:26px;height:56px;background:#0077A3;border-radius:4px 4px 0 0"></div>
+<div style="width:26px;height:66px;background:#0077A3;border-radius:4px 4px 0 0"></div>
+<div style="width:26px;height:75px;background:#0077A3;border-radius:4px 4px 0 0"></div>
+<div style="width:26px;height:84px;background:#0077A3;border-radius:4px 4px 0 0"></div>
+<div style="width:26px;height:94px;background:#0077A3;border-radius:4px 4px 0 0"></div>
+<div style="width:26px;height:103px;background:#0077A3;border-radius:4px 4px 0 0"></div>
+<div style="width:26px;height:113px;background:#0077A3;border-radius:4px 4px 0 0"></div>
+<div style="width:26px;height:122px;background:#0077A3;border-radius:4px 4px 0 0"></div>
+<div style="width:26px;height:131px;background:#0077A3;border-radius:4px 4px 0 0"></div>
+<div style="width:26px;height:141px;background:#0077A3;border-radius:4px 4px 0 0"></div>
+<div style="width:26px;height:150px;background:#0077A3;border-radius:4px 4px 0 0"></div>
+<div style="width:26px;height:159px;background:#0077A3;border-radius:4px 4px 0 0"></div>
+<div style="width:26px;height:169px;background:#0077A3;border-radius:4px 4px 0 0"></div>
+<div style="width:26px;height:178px;background:#0077A3;border-radius:4px 4px 0 0"></div>
+<div style="width:26px;height:188px;background:#0077A3;border-radius:4px 4px 0 0"></div>
+<div style="width:26px;height:197px;background:#0077A3;border-radius:4px 4px 0 0"></div>
+<div style="width:26px;height:206px;background:#0077A3;border-radius:4px 4px 0 0"></div>
+<div style="width:26px;height:216px;background:#0077A3;border-radius:4px 4px 0 0"></div>
+<div style="width:26px;height:225px;background:#0077A3;border-radius:4px 4px 0 0"></div>
+<div style="width:26px;height:234px;background:#0077A3;border-radius:4px 4px 0 0"></div>
+<div style="width:26px;height:244px;background:#0077A3;border-radius:4px 4px 0 0"></div>
+<div style="width:26px;height:253px;background:#0077A3;border-radius:4px 4px 0 0"></div>
+<div style="width:26px;height:263px;background:#0077A3;border-radius:4px 4px 0 0"></div>
+<div style="width:26px;height:272px;background:#0077A3;border-radius:4px 4px 0 0"></div>
+<div style="width:26px;height:281px;background:#0077A3;border-radius:4px 4px 0 0"></div>
+<div style="width:26px;height:291px;background:#0077A3;border-radius:4px 4px 0 0"></div>
+<div style="width:26px;height:300px;background:#17181C;border-radius:4px 4px 0 0"></div>
+</div>
+<div style="display:flex;flex-direction:row;justify-content:space-between;width:962px;border-top:2px solid #17181C;padding:10px 0 0">
+<p style="font-size:24px;color:#5B606B">1레벨 → 2레벨: 36</p>
+<p style="font-size:24px;color:#5B606B">27레벨 → 28레벨: 192</p>
+</div>
+<p style="font-size:24px;line-height:1.5;color:#3E434D">목표: 명상 전체 습득까지 7판 안팎.</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:800px;font-size:24px;color:#8A8F99">EDGERUNNERS 성장 기획서</p>
+<p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#8A8F99">03</p>
+
+</section>
+</div>
+</div>
+<div class="slide-item" id="s4">
+<div class="slide-frame">
+<section id="meditation" data-transition="fade" style="background:#F6F5F1;color:#17181C;font-family:'Paperlogy', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:44px">
+<div style="display:flex;flex-direction:column;gap:10px">
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;letter-spacing:2px;color:#0077A3">03  명상</p>
+<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">세 갈래 다섯 칸 구조의 명상과 마지막 칸 궁극기</h2>
+</div>
+<div style="display:flex;flex-direction:row;gap:44px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:16px;width:960px">
+<img src="../../assets/img/growth_meditation.webp" alt="명상 창. 생존, 전투, 이동 세 갈래의 다섯 칸을 모두 배운 상태이고, 오른쪽에는 숙련도 가지가 있다. 왼쪽 아래 설명 칸에 처형 궁극기가 떠 있다" style="width:960px;height:540px;object-fit:cover;border-radius:12px">
+<p style="font-size:24px;line-height:1.5;color:#5B606B">레벨 28에 모든 칸을 배운 명상 창. 오른쪽 가지는 숙련도.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:14px;flex:1">
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#5B606B">칸마다 필요한 스킬 포인트</p>
+<div style="display:flex;flex-direction:row;gap:10px;align-items:center">
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;width:52px;height:52px;line-height:52px;text-align:center;background:#ECEBE6;color:#17181C;border-radius:8px">1</p>
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;width:52px;height:52px;line-height:52px;text-align:center;background:#ECEBE6;color:#17181C;border-radius:8px">1</p>
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;width:52px;height:52px;line-height:52px;text-align:center;background:#ECEBE6;color:#17181C;border-radius:8px">2</p>
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;width:52px;height:52px;line-height:52px;text-align:center;background:#ECEBE6;color:#17181C;border-radius:8px">2</p>
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;width:52px;height:52px;line-height:52px;text-align:center;background:#0077A3;color:#FFFFFF;border-radius:8px">3</p>
+<p style="font-size:24px;color:#3E434D;padding:0 0 0 12px">갈래당 9, 전체 27</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:4px;background:#FFFFFF;padding:18px 24px;border-radius:12px;border-left:6px solid #0077A3">
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#17181C">생존 ⑤ 버티기 폭발</p>
+<p style="font-size:24px;line-height:1.45;color:#3E434D">버티는 순간 주변 6.5m의 적에게 피해 150, 기절 1.5초</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:4px;background:#FFFFFF;padding:18px 24px;border-radius:12px;border-left:6px solid #0077A3">
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#17181C">전투 ⑤ 처형</p>
+<p style="font-size:24px;line-height:1.45;color:#3E434D">공격한 적의 체력이 20% 이하가 되면 즉시 처치 (보스 제외)</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:4px;background:#FFFFFF;padding:18px 24px;border-radius:12px;border-left:6px solid #0077A3">
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#17181C">이동 ⑤ 대시 관통</p>
+<p style="font-size:24px;line-height:1.45;color:#3E434D">대시로 지나간 적에게 피해 15, 넘어뜨림 1.2초</p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:800px;font-size:24px;color:#8A8F99">EDGERUNNERS 성장 기획서</p>
+<p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#8A8F99">04</p>
+
+</section>
+</div>
+</div>
+<div class="slide-item" id="s5">
+<div class="slide-frame">
+<section id="proficiency" data-transition="fade" style="background:#ECEBE6;color:#17181C;font-family:'Paperlogy', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:44px">
+<div style="display:flex;flex-direction:column;gap:10px">
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;letter-spacing:2px;color:#0077A3">04  숙련도</p>
+<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">장착 중 처치 수로 오르고 사망 시에도 유지되는 숙련도</h2>
+</div>
+<div style="display:flex;flex-direction:row;gap:40px;align-items:end">
+<div style="display:flex;flex-direction:column;gap:16px;width:500px">
+<div style="display:flex;flex-direction:column;gap:6px;background:#FFFFFF;padding:24px 28px;border-radius:12px">
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#5B606B">무기</p>
+<p style="font-size:26px;line-height:1.45;color:#17181C">손에 든 무기만 집계</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:6px;background:#FFFFFF;padding:24px 28px;border-radius:12px">
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#5B606B">사이버웨어</p>
+<p style="font-size:26px;line-height:1.45;color:#17181C">장착한 것 전부 집계</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:6px;background:#FFFFFF;padding:24px 28px;border-radius:12px">
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#5B606B">적이 많이 나오는 방</p>
+<p style="font-size:26px;line-height:1.45;color:#17181C">한 마리를 1회로 집계</p>
+</div>
+<p style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:30px;line-height:1.4;color:#0077A3;padding:12px 0 0">레벨업은 새 기능,<br>숙련도는 수치 상승 담당.</p>
+</div>
+<div style="display:flex;flex-direction:row;gap:20px;align-items:end;flex:1">
+<div style="display:flex;flex-direction:column;gap:14px;flex:1;height:380px;background:#FFFFFF;padding:28px;border-radius:12px;border-top:8px solid #0077A3">
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#0077A3">1단계</p>
+<div style="display:flex;flex-direction:row;gap:12px;align-items:baseline"><p style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:64px;line-height:1;color:#17181C">105</p><p style="font-size:24px;color:#5B606B">처치</p></div>
+<div style="display:flex;flex-direction:column;gap:8px;border-top:1px solid #D9D7CF;padding:14px 0 0">
+<div style="display:flex;flex-direction:row;justify-content:space-between"><p style="font-size:24px;color:#5B606B">핵심 수치</p><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#17181C">약 +5%</p></div>
+<div style="display:flex;flex-direction:row;justify-content:space-between"><p style="font-size:24px;color:#5B606B">프로토타입 대가</p><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#C2185B">2/3 남음</p></div>
+<div style="display:flex;flex-direction:row;justify-content:space-between"><p style="font-size:24px;color:#5B606B">보너스 경험치</p><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#17181C">15</p></div>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:14px;flex:1;height:470px;background:#FFFFFF;padding:28px;border-radius:12px;border-top:8px solid #0077A3">
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#0077A3">2단계</p>
+<div style="display:flex;flex-direction:row;gap:12px;align-items:baseline"><p style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:64px;line-height:1;color:#17181C">315</p><p style="font-size:24px;color:#5B606B">처치</p></div>
+<div style="display:flex;flex-direction:column;gap:8px;border-top:1px solid #D9D7CF;padding:14px 0 0">
+<div style="display:flex;flex-direction:row;justify-content:space-between"><p style="font-size:24px;color:#5B606B">핵심 수치</p><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#17181C">약 +10%</p></div>
+<div style="display:flex;flex-direction:row;justify-content:space-between"><p style="font-size:24px;color:#5B606B">프로토타입 대가</p><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#C2185B">1/3 남음</p></div>
+<div style="display:flex;flex-direction:row;justify-content:space-between"><p style="font-size:24px;color:#5B606B">보너스 경험치</p><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#17181C">30</p></div>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:14px;flex:1;height:560px;background:#FFFFFF;padding:28px;border-radius:12px;border-top:8px solid #17181C">
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#17181C">3단계</p>
+<div style="display:flex;flex-direction:row;gap:12px;align-items:baseline"><p style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:64px;line-height:1;color:#17181C">630</p><p style="font-size:24px;color:#5B606B">처치</p></div>
+<div style="display:flex;flex-direction:column;gap:8px;border-top:1px solid #D9D7CF;padding:14px 0 0">
+<div style="display:flex;flex-direction:row;justify-content:space-between"><p style="font-size:24px;color:#5B606B">핵심 수치</p><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#17181C">약 +15%</p></div>
+<div style="display:flex;flex-direction:row;justify-content:space-between"><p style="font-size:24px;color:#5B606B">프로토타입 대가</p><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#0077A3">사라짐</p></div>
+<div style="display:flex;flex-direction:row;justify-content:space-between"><p style="font-size:24px;color:#5B606B">보너스 경험치</p><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#17181C">60</p></div>
+</div>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:800px;font-size:24px;color:#8A8F99">EDGERUNNERS 성장 기획서</p>
+<p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#8A8F99">05</p>
+
+</section>
+</div>
+</div>
+<div class="slide-item" id="s6">
+<div class="slide-frame">
+<section id="levels" data-transition="fade" style="background:#F6F5F1;color:#17181C;font-family:'Paperlogy', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:44px">
+<div style="display:flex;flex-direction:column;gap:10px">
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;letter-spacing:2px;color:#0077A3">05  사이버웨어 레벨</p>
+<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">같은 사이버웨어 재획득 시 새 기능 추가</h2>
+</div>
+<div style="display:flex;flex-direction:row;gap:44px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:16px;width:960px">
+<img src="../../assets/img/growth_ripperdoc.webp" alt="리퍼닥 창. 레벨업, 부작용 제거, 새 사이버웨어 세 칸으로 나뉘고, 레벨업 칸에 Lv2 강화 300, Lv3 강화 500 버튼이 있다" style="width:960px;height:540px;object-fit:cover;border-radius:12px">
+<p style="font-size:24px;line-height:1.5;color:#5B606B">리퍼닥 창. 장착한 사이버웨어의 코인 레벨업, 새 사이버웨어 구매.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px;flex:1">
+<div style="display:flex;flex-direction:column;gap:14px;background:#FFFFFF;padding:26px 30px;border-radius:12px;border:1px solid #D9D7CF">
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#5B606B">예: 투사체 발사기</p>
+<div style="display:flex;flex-direction:row;gap:16px;align-items:center"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#17181C;background:#ECEBE6;padding:4px 14px;border-radius:8px">Lv1</p><p style="font-size:26px;color:#17181C">조준한 곳에 로켓 발사</p></div>
+<div style="display:flex;flex-direction:row;gap:16px;align-items:center"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#FFFFFF;background:#0077A3;padding:4px 14px;border-radius:8px">Lv2</p><p style="font-size:26px;color:#17181C">유도탄으로 변경</p></div>
+<div style="display:flex;flex-direction:row;gap:16px;align-items:center"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#FFFFFF;background:#17181C;padding:4px 14px;border-radius:8px">Lv3</p><p style="font-size:26px;color:#17181C">2발씩 연사</p></div>
+</div>
+<div style="display:flex;flex-direction:column;gap:4px;background:#FFFFFF;padding:26px 30px;border-radius:12px;border:1px solid #D9D7CF">
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#5B606B;padding:0 0 8px">리퍼닥 가격 (코인)</p>
+<div style="display:flex;flex-direction:row;justify-content:space-between;align-items:baseline;padding:8px 0;border-bottom:1px solid #D9D7CF"><p style="font-size:26px;color:#3E434D">Lv2로 올리기</p><p style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;color:#17181C">300</p></div>
+<div style="display:flex;flex-direction:row;justify-content:space-between;align-items:baseline;padding:8px 0;border-bottom:1px solid #D9D7CF"><p style="font-size:26px;color:#3E434D">Lv3로 올리기</p><p style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;color:#17181C">500</p></div>
+<div style="display:flex;flex-direction:row;justify-content:space-between;align-items:baseline;padding:8px 0;border-bottom:1px solid #D9D7CF"><p style="font-size:26px;color:#3E434D">새 사이버웨어 (Lv1)</p><p style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;color:#17181C">350</p></div>
+<div style="display:flex;flex-direction:row;justify-content:space-between;align-items:baseline;padding:8px 0"><p style="font-size:26px;color:#3E434D">프로토타입 대가 제거</p><p style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;color:#C2185B">600</p></div>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:800px;font-size:24px;color:#8A8F99">EDGERUNNERS 성장 기획서</p>
+<p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#8A8F99">06</p>
+
+</section>
+</div>
+</div>
+<div class="slide-item" id="s7">
+<div class="slide-frame">
+<section id="proto" data-transition="fade" style="background:#ECEBE6;color:#17181C;font-family:'Paperlogy', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:44px">
+<div style="display:flex;flex-direction:column;gap:10px">
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;letter-spacing:2px;color:#0077A3">06  프로토타입 대가</p>
+<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">숙련도 단계마다 1/3씩 감소하는 프로토타입 대가</h2>
+</div>
+<div style="display:flex;flex-direction:row;gap:40px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:20px;width:1000px;background:#FFFFFF;padding:36px 44px;border-radius:12px">
+<h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;color:#17181C">예: 저거너트의 대가 (이동 속도 −20%)</h3>
+<div style="display:flex;flex-direction:row;gap:48px;align-items:end;height:340px">
+<div style="display:flex;flex-direction:column;gap:10px;align-items:center;justify-content:end;width:180px;height:340px"><p style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;color:#C2185B">−20%</p><div style="width:120px;height:270px;background:#C2185B;border-radius:6px 6px 0 0"></div></div>
+<div style="display:flex;flex-direction:column;gap:10px;align-items:center;justify-content:end;width:180px;height:340px"><p style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;color:#C2185B">−13%</p><div style="width:120px;height:180px;background:#C2185B;border-radius:6px 6px 0 0"></div></div>
+<div style="display:flex;flex-direction:column;gap:10px;align-items:center;justify-content:end;width:180px;height:340px"><p style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;color:#C2185B">−7%</p><div style="width:120px;height:90px;background:#C2185B;border-radius:6px 6px 0 0"></div></div>
+<div style="display:flex;flex-direction:column;gap:10px;align-items:center;justify-content:end;width:180px;height:340px"><p style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;color:#0077A3">없음</p></div>
+</div>
+<div style="display:flex;flex-direction:row;gap:48px;border-top:2px solid #17181C;padding:12px 0 0">
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;width:180px;text-align:center;color:#17181C">숙련도 0단계</p>
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;width:180px;text-align:center;color:#17181C">1단계</p>
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;width:180px;text-align:center;color:#17181C">2단계</p>
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;width:180px;text-align:center;color:#17181C">3단계</p>
+</div>
+<div style="display:flex;flex-direction:row;gap:48px">
+<p style="font-size:24px;width:180px;text-align:center;color:#5B606B">제거 600</p>
+<p style="font-size:24px;width:180px;text-align:center;color:#5B606B">제거 400</p>
+<p style="font-size:24px;width:180px;text-align:center;color:#5B606B">제거 200</p>
+<p style="font-size:24px;width:180px;text-align:center;color:#5B606B">제거 불필요</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:16px;flex:1">
+<div style="display:flex;flex-direction:column;gap:8px;background:#FFFFFF;padding:24px 28px;border-radius:12px;border-left:6px solid #C2185B">
+<h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:28px;font-weight:400;color:#17181C">켜고 끄는 대가</h3>
+<p style="font-size:24px;line-height:1.5;color:#3E434D">과부하 발사기의 자기 폭발, 소각 각부의 불길 피해는 감소 없이 3단계에서 한 번에 사라집니다.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px;background:#FFFFFF;padding:24px 28px;border-radius:12px;border-left:6px solid #0077A3">
+<h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:28px;font-weight:400;color:#17181C">사망 시 숙련도 유지</h3>
+<p style="font-size:24px;line-height:1.5;color:#3E434D">같은 프로토타입을 다음 판에 다시 얻으면 줄어든 대가로 시작합니다.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px;background:#FFFFFF;padding:24px 28px;border-radius:12px;border-left:6px solid #17181C">
+<h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:28px;font-weight:400;color:#17181C">리퍼닥에서 대가 제거</h3>
+<p style="font-size:24px;line-height:1.5;color:#3E434D">코인으로 즉시 제거 가능합니다. 비용은 숙련도 단계마다 200씩 감소합니다.</p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:800px;font-size:24px;color:#8A8F99">EDGERUNNERS 성장 기획서</p>
+<p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#8A8F99">07</p>
+
+</section>
+</div>
+</div>
+<div class="slide-item" id="s8">
+<div class="slide-frame">
+<section id="economy" data-transition="fade" style="background:#F6F5F1;color:#17181C;font-family:'Paperlogy', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:44px">
+<div style="display:flex;flex-direction:column;gap:10px">
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;letter-spacing:2px;color:#0077A3">07  코인과 작업대</p>
+<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">사망 시 유지되는 코인과 새 선택지 항목의 높은 가격</h2>
+</div>
+<div style="display:flex;flex-direction:row;gap:44px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:16px;width:900px">
+<img src="../../assets/img/growth_workbench_slot.webp" alt="장비 업그레이드 작업대의 슬롯 탭. 팔 확장 포트, OS 보조 코어, 다리 · 신경계 · 골격 · 순환계 · 외피 확장 포트가 목록에 있고, 오른쪽에 1500 코인으로 강화 버튼이 있다" style="width:900px;height:506px;object-fit:cover;border-radius:12px">
+<p style="font-size:24px;line-height:1.5;color:#5B606B">작업대 슬롯 탭에서 눈을 뺀 일곱 부위의 슬롯을 하나씩 확장합니다.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px;flex:1">
+<div style="display:flex;flex-direction:column;gap:12px;background:#FFFFFF;padding:24px 30px;border-radius:12px;border:1px solid #D9D7CF">
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#5B606B">코인 획득</p>
+<div style="display:flex;flex-direction:row;gap:44px">
+<div style="display:flex;flex-direction:column;gap:6px"><p style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:52px;line-height:1;color:#0077A3">300</p><p style="font-size:24px;color:#5B606B">새 게임 시작</p></div>
+<div style="display:flex;flex-direction:column;gap:6px"><p style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:52px;line-height:1;color:#0077A3">10</p><p style="font-size:24px;color:#5B606B">일반 적</p></div>
+<div style="display:flex;flex-direction:column;gap:6px"><p style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:52px;line-height:1;color:#0077A3">30</p><p style="font-size:24px;color:#5B606B">엘리트</p></div>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:14px;background:#FFFFFF;padding:24px 30px;border-radius:12px;border:1px solid #D9D7CF">
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#5B606B">시설 구매 영구 강화 (코인)</p>
+<div style="display:flex;flex-direction:row;gap:16px;align-items:center"><p style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:30px;width:84px;text-align:right;color:#17181C">300</p><div style="width:30px;height:26px;background:#0077A3;border-radius:4px"></div><p style="font-size:24px;color:#3E434D">바디슈트 · 무기 데미지 한 단계</p></div>
+<div style="display:flex;flex-direction:row;gap:16px;align-items:center"><p style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:30px;width:84px;text-align:right;color:#17181C">500</p><div style="width:50px;height:26px;background:#0077A3;border-radius:4px"></div><p style="font-size:24px;color:#3E434D">무기 해금</p></div>
+<div style="display:flex;flex-direction:row;gap:16px;align-items:center"><p style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:30px;width:84px;text-align:right;color:#17181C">900</p><div style="width:90px;height:26px;background:#0077A3;border-radius:4px"></div><p style="font-size:24px;color:#3E434D">속성 변환기</p></div>
+<div style="display:flex;flex-direction:row;gap:16px;align-items:center"><p style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:30px;width:84px;text-align:right;color:#17181C">1500</p><div style="width:150px;height:26px;background:#0077A3;border-radius:4px"></div><p style="font-size:24px;color:#3E434D">신화 · 확장 포트</p></div>
+<div style="display:flex;flex-direction:row;gap:16px;align-items:center"><p style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:30px;width:84px;text-align:right;color:#17181C">3000</p><div style="width:300px;height:26px;background:#17181C;border-radius:4px"></div><p style="font-size:24px;color:#3E434D">OS 보조 코어</p></div>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:800px;font-size:24px;color:#8A8F99">EDGERUNNERS 성장 기획서</p>
+<p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#8A8F99">08</p>
+
+</section>
+</div>
+</div>
+<div class="slide-item" id="s9">
+<div class="slide-frame">
+<section id="cycle" data-transition="fade" style="background:#ECEBE6;color:#17181C;font-family:'Paperlogy', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:44px">
+<div style="display:flex;flex-direction:column;gap:10px">
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;letter-spacing:2px;color:#0077A3">08  회차</p>
+<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">보스 처치 후 빌드를 유지한 다음 회차 진행</h2>
+</div>
+<div style="display:flex;flex-direction:column;gap:16px;background:#FFFFFF;padding:28px 40px;border-radius:12px">
+<div style="display:flex;flex-direction:row;gap:32px;align-items:center">
+<div style="display:flex;flex-direction:row;gap:10px;align-items:center"><div style="width:24px;height:24px;background:#0077A3;border-radius:4px"></div><p style="font-size:24px;color:#17181C">적 체력 (회차마다 +50%)</p></div>
+<div style="display:flex;flex-direction:row;gap:10px;align-items:center"><div style="width:24px;height:24px;background:#C2185B;border-radius:4px"></div><p style="font-size:24px;color:#17181C">적 피해 (회차마다 +30%)</p></div>
+</div>
+<div style="display:flex;flex-direction:row;gap:72px;align-items:end;height:300px">
+<div style="display:flex;flex-direction:row;gap:8px;align-items:end;width:120px">
+<div style="display:flex;flex-direction:column;gap:6px;align-items:center;width:56px"><p style="font-size:24px;color:#0077A3">×1.0</p><div style="width:56px;height:58px;background:#0077A3;border-radius:4px 4px 0 0"></div></div>
+<div style="display:flex;flex-direction:column;gap:6px;align-items:center;width:56px"><p style="font-size:24px;color:#C2185B">×1.0</p><div style="width:56px;height:58px;background:#C2185B;border-radius:4px 4px 0 0"></div></div>
+</div>
+<div style="display:flex;flex-direction:row;gap:8px;align-items:end;width:120px">
+<div style="display:flex;flex-direction:column;gap:6px;align-items:center;width:56px"><p style="font-size:24px;color:#0077A3">×1.5</p><div style="width:56px;height:87px;background:#0077A3;border-radius:4px 4px 0 0"></div></div>
+<div style="display:flex;flex-direction:column;gap:6px;align-items:center;width:56px"><p style="font-size:24px;color:#C2185B">×1.3</p><div style="width:56px;height:75px;background:#C2185B;border-radius:4px 4px 0 0"></div></div>
+</div>
+<div style="display:flex;flex-direction:row;gap:8px;align-items:end;width:120px">
+<div style="display:flex;flex-direction:column;gap:6px;align-items:center;width:56px"><p style="font-size:24px;color:#0077A3">×2.0</p><div style="width:56px;height:116px;background:#0077A3;border-radius:4px 4px 0 0"></div></div>
+<div style="display:flex;flex-direction:column;gap:6px;align-items:center;width:56px"><p style="font-size:24px;color:#C2185B">×1.6</p><div style="width:56px;height:92px;background:#C2185B;border-radius:4px 4px 0 0"></div></div>
+</div>
+<div style="display:flex;flex-direction:row;gap:8px;align-items:end;width:120px">
+<div style="display:flex;flex-direction:column;gap:6px;align-items:center;width:56px"><p style="font-size:24px;color:#0077A3">×2.5</p><div style="width:56px;height:144px;background:#0077A3;border-radius:4px 4px 0 0"></div></div>
+<div style="display:flex;flex-direction:column;gap:6px;align-items:center;width:56px"><p style="font-size:24px;color:#C2185B">×1.9</p><div style="width:56px;height:110px;background:#C2185B;border-radius:4px 4px 0 0"></div></div>
+</div>
+<div style="display:flex;flex-direction:row;gap:8px;align-items:end;width:120px">
+<div style="display:flex;flex-direction:column;gap:6px;align-items:center;width:56px"><p style="font-size:24px;color:#0077A3">×3.0</p><div style="width:56px;height:173px;background:#0077A3;border-radius:4px 4px 0 0"></div></div>
+<div style="display:flex;flex-direction:column;gap:6px;align-items:center;width:56px"><p style="font-size:24px;color:#C2185B">×2.2</p><div style="width:56px;height:127px;background:#C2185B;border-radius:4px 4px 0 0"></div></div>
+</div>
+<div style="display:flex;flex-direction:row;gap:8px;align-items:end;width:120px">
+<div style="display:flex;flex-direction:column;gap:6px;align-items:center;width:56px"><p style="font-size:24px;color:#0077A3">×3.5</p><div style="width:56px;height:202px;background:#0077A3;border-radius:4px 4px 0 0"></div></div>
+<div style="display:flex;flex-direction:column;gap:6px;align-items:center;width:56px"><p style="font-size:24px;color:#C2185B">×2.5</p><div style="width:56px;height:144px;background:#C2185B;border-radius:4px 4px 0 0"></div></div>
+</div>
+<div style="display:flex;flex-direction:row;gap:8px;align-items:end;width:120px">
+<div style="display:flex;flex-direction:column;gap:6px;align-items:center;width:56px"><p style="font-size:24px;color:#0077A3">×4.0</p><div style="width:56px;height:231px;background:#0077A3;border-radius:4px 4px 0 0"></div></div>
+<div style="display:flex;flex-direction:column;gap:6px;align-items:center;width:56px"><p style="font-size:24px;color:#C2185B">×2.6</p><div style="width:56px;height:150px;background:#C2185B;border-radius:4px 4px 0 0"></div></div>
+</div>
+<div style="display:flex;flex-direction:row;gap:8px;align-items:end;width:120px">
+<div style="display:flex;flex-direction:column;gap:6px;align-items:center;width:56px"><p style="font-size:24px;color:#0077A3">×4.5</p><div style="width:56px;height:260px;background:#0077A3;border-radius:4px 4px 0 0"></div></div>
+<div style="display:flex;flex-direction:column;gap:6px;align-items:center;width:56px"><p style="font-size:24px;color:#C2185B">×2.6</p><div style="width:56px;height:150px;background:#C2185B;border-radius:4px 4px 0 0"></div></div>
+</div>
+</div>
+<div style="display:flex;flex-direction:row;gap:72px;border-top:2px solid #17181C;padding:10px 0 0">
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;width:120px;text-align:center;color:#17181C">1회차</p>
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;width:120px;text-align:center;color:#17181C">2회차</p>
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;width:120px;text-align:center;color:#17181C">3회차</p>
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;width:120px;text-align:center;color:#17181C">4회차</p>
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;width:120px;text-align:center;color:#17181C">5회차</p>
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;width:120px;text-align:center;color:#17181C">6회차</p>
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;width:120px;text-align:center;color:#17181C">7회차</p>
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;width:120px;text-align:center;white-space:nowrap;color:#17181C">8회차 이후</p>
+</div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px">
+<div style="display:flex;flex-direction:column;gap:6px;background:#FFFFFF;padding:22px 28px;border-radius:12px;border-left:6px solid #0077A3">
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#5B606B">유지 요소</p>
+<p style="font-size:26px;color:#17181C">사이버웨어, 카드, 코인, 스탯 보상</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:6px;background:#FFFFFF;padding:22px 28px;border-radius:12px;border-left:6px solid #17181C">
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#5B606B">배율 상한</p>
+<p style="font-size:26px;color:#17181C">체력 ×4.5, 피해 ×2.6</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:6px;background:#FFFFFF;padding:22px 28px;border-radius:12px;border-left:6px solid #C2185B">
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#5B606B">사망 시</p>
+<p style="font-size:26px;color:#17181C">1회차로 복귀</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:800px;font-size:24px;color:#8A8F99">EDGERUNNERS 성장 기획서</p>
+<p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#8A8F99">09</p>
+
+</section>
+</div>
+</div>
+<div class="slide-item" id="s10">
+<div class="slide-frame">
+<section id="loop" data-transition="fade" style="background:#F6F5F1;color:#17181C;font-family:'Paperlogy', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:44px">
+<div style="display:flex;flex-direction:column;gap:10px">
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;letter-spacing:2px;color:#0077A3">09  정리</p>
+<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">적 처치로 함께 쌓이는 경험치 · 숙련도 · 코인</h2>
+</div>
+<div style="display:flex;flex-direction:row;gap:16px;align-items:stretch">
+<div style="display:flex;flex-direction:column;justify-content:center;gap:8px;width:240px;background:#17181C;padding:28px;border-radius:12px">
+<p style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:40px;line-height:1.2;color:#F6F5F1">적 처치</p>
+</div>
+<div style="display:flex;flex-direction:column;justify-content:space-around;width:48px">
+<svg aria-label="다음 단계로" width="48" height="24" viewBox="0 0 48 24"><path d="M2 12H34" stroke="#8A8F99" stroke-width="3" fill="none"/><path d="M32 4L46 12L32 20Z" fill="#8A8F99"/></svg>
+<svg aria-label="다음 단계로" width="48" height="24" viewBox="0 0 48 24"><path d="M2 12H34" stroke="#8A8F99" stroke-width="3" fill="none"/><path d="M32 4L46 12L32 20Z" fill="#8A8F99"/></svg>
+<svg aria-label="다음 단계로" width="48" height="24" viewBox="0 0 48 24"><path d="M2 12H34" stroke="#8A8F99" stroke-width="3" fill="none"/><path d="M32 4L46 12L32 20Z" fill="#8A8F99"/></svg>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px;flex:1">
+<div style="display:flex;flex-direction:row;gap:12px;align-items:center">
+<div style="display:flex;flex-direction:column;gap:4px;flex:1;background:#FFFFFF;padding:20px 24px;border-radius:12px;border-left:6px solid #0077A3"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#17181C">경험치</p><p style="font-size:24px;line-height:1.45;color:#3E434D">일반 1 · 엘리트 5 · 보스 30</p></div>
+<svg aria-label="다음 단계로" width="48" height="24" viewBox="0 0 48 24"><path d="M2 12H34" stroke="#8A8F99" stroke-width="3" fill="none"/><path d="M32 4L46 12L32 20Z" fill="#8A8F99"/></svg>
+<div style="display:flex;flex-direction:column;gap:4px;flex:1;background:#FFFFFF;padding:20px 24px;border-radius:12px;border-left:6px solid #0077A3"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#17181C">레벨업</p><p style="font-size:24px;line-height:1.45;color:#3E434D">체력 회복 · 스킬 포인트 1</p></div>
+<svg aria-label="다음 단계로" width="48" height="24" viewBox="0 0 48 24"><path d="M2 12H34" stroke="#8A8F99" stroke-width="3" fill="none"/><path d="M32 4L46 12L32 20Z" fill="#8A8F99"/></svg>
+<div style="display:flex;flex-direction:column;gap:4px;flex:1;background:#FFFFFF;padding:20px 24px;border-radius:12px;border-left:6px solid #0077A3"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#17181C">명상</p><p style="font-size:24px;line-height:1.45;color:#3E434D">세 갈래 15칸 · 궁극기 셋</p></div>
+</div>
+<div style="display:flex;flex-direction:row;gap:12px;align-items:center">
+<div style="display:flex;flex-direction:column;gap:4px;flex:1;background:#FFFFFF;padding:20px 24px;border-radius:12px;border-left:6px solid #17181C"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#17181C">숙련도</p><p style="font-size:24px;line-height:1.45;color:#3E434D">장비마다 105 · 315 · 630</p></div>
+<svg aria-label="다음 단계로" width="48" height="24" viewBox="0 0 48 24"><path d="M2 12H34" stroke="#8A8F99" stroke-width="3" fill="none"/><path d="M32 4L46 12L32 20Z" fill="#8A8F99"/></svg>
+<div style="display:flex;flex-direction:column;gap:4px;flex:1;background:#FFFFFF;padding:20px 24px;border-radius:12px;border-left:6px solid #17181C"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#17181C">단계 상승</p><p style="font-size:24px;line-height:1.45;color:#3E434D">핵심 수치 약 +5% · 보너스 경험치</p></div>
+<svg aria-label="다음 단계로" width="48" height="24" viewBox="0 0 48 24"><path d="M2 12H34" stroke="#8A8F99" stroke-width="3" fill="none"/><path d="M32 4L46 12L32 20Z" fill="#8A8F99"/></svg>
+<div style="display:flex;flex-direction:column;gap:4px;flex:1;background:#FFFFFF;padding:20px 24px;border-radius:12px;border-left:6px solid #17181C"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#17181C">프로토타입 대가</p><p style="font-size:24px;line-height:1.45;color:#3E434D">단계마다 1/3씩 감소</p></div>
+</div>
+<div style="display:flex;flex-direction:row;gap:12px;align-items:center">
+<div style="display:flex;flex-direction:column;gap:4px;flex:1;background:#FFFFFF;padding:20px 24px;border-radius:12px;border-left:6px solid #C2185B"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#17181C">코인</p><p style="font-size:24px;line-height:1.45;color:#3E434D">일반 적 10 · 엘리트 30</p></div>
+<svg aria-label="다음 단계로" width="48" height="24" viewBox="0 0 48 24"><path d="M2 12H34" stroke="#8A8F99" stroke-width="3" fill="none"/><path d="M32 4L46 12L32 20Z" fill="#8A8F99"/></svg>
+<div style="display:flex;flex-direction:column;gap:4px;flex:1;background:#FFFFFF;padding:20px 24px;border-radius:12px;border-left:6px solid #C2185B"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#17181C">진열대 · 작업대</p><p style="font-size:24px;line-height:1.45;color:#3E434D">시설 입장방에서 구매</p></div>
+<svg aria-label="다음 단계로" width="48" height="24" viewBox="0 0 48 24"><path d="M2 12H34" stroke="#8A8F99" stroke-width="3" fill="none"/><path d="M32 4L46 12L32 20Z" fill="#8A8F99"/></svg>
+<div style="display:flex;flex-direction:column;gap:4px;flex:1;background:#FFFFFF;padding:20px 24px;border-radius:12px;border-left:6px solid #C2185B"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#17181C">영구 강화</p><p style="font-size:24px;line-height:1.45;color:#3E434D">무기 해금 · 슬롯 확장 · 속성 변환기</p></div>
+</div>
+</div>
+</div>
+<div style="display:flex;flex-direction:row;gap:32px;align-items:center;padding:24px 32px;background:#FFFFFF;border-radius:12px;border:1px solid #D9D7CF">
+<p style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:30px;color:#0077A3;width:420px">세 가지 모두 사망 시 유지</p>
+<p style="font-size:26px;line-height:1.5;color:#3E434D;flex:1">빌드를 잃은 판의 플레이도 다음 판의 시작 전력을 높입니다.</p>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:800px;font-size:24px;color:#8A8F99">EDGERUNNERS 성장 기획서</p>
+<p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#8A8F99">10</p>
+
+</section>
+</div>
+</div>
+</div>
+</div>
+</div></main>
+<footer class="foot"><div class="wrap">© 장대규 · 글꼴: 페이퍼로지(Paperlogy, SIL OFL 1.1)</div></footer>
+</div>
+<div class="present" aria-modal="true" role="dialog">
+<div class="stage"></div>
+<div class="bar"><button class="prev" type="button">← 이전</button><span class="count"></span><button class="next" type="button">다음 →</button><button class="close" type="button">닫기 (Esc)</button></div>
+</div>
+<script>document.addEventListener("DOMContentLoaded", function () { setTimeout(function () { var b = document.querySelector("[data-present]"); if (b && !location.hash) b.click(); }, 60); });</script>
+</body>
+</html>
