@@ -18,7 +18,7 @@ binmode STDERR, ':encoding(UTF-8)';
 
 # [id, 묶음, 제목, 목록 카드 이름, 소개, 목록 카드 그림]
 my @DECKS = (
-  ['overview', 'plan', '개요 기획서', '개요 기획서', '어떤 게임이고 핵심 재미가 무엇인지, 전체 구조를 한눈에 정리했다.', 'portfolio_hero'],
+  ['overview', 'plan', '개요 기획서', '개요 기획서', '어떤 게임인지, 빌드 조합과 2077과 다르게 쓴 무기와 사이버웨어, 한 판의 구조를 정리했다.', 'portfolio_hero'],
   ['combat',   'plan', '전투 규칙 기획서', '전투 규칙', '기본 능력치, 공격 예고 규칙, 피해 기준, 대시로 피할 수 없는 위협.', 'portfolio_crowd'],
   ['system',   'plan', '시스템 기획서', '시스템', '무기, 사이버웨어 8부위와 레벨, 프로토타입, 해킹, 성장과 경제.', 'portfolio_netrunner'],
   ['level',    'plan', '레벨 기획서', '레벨', '맵 제작 과정, 맵 목록, 첫 판의 등장 순서, 보스.', 'combat_pinwheel_top'],
@@ -306,7 +306,13 @@ spit("$root/edgerunners/plan/index.html", shell(
   .deck-card.main img { height: 100%; aspect-ratio: auto; min-height: 300px; }
   .deck-card.main .body { padding: 36px; justify-content: center; }
   .deck-card.main h3 { font-size: 32px; }
-  @media (max-width: 900px) { .deck-card.main { grid-template-columns: minmax(0, 1fr); } .deck-card.main img { min-height: 0; aspect-ratio: 16 / 9; } }
+  /* 좁은 화면에서는 다른 카드와 같은 세로 짜임으로 둔다. grid 안의 그림에 height: 100%가 남으면 모바일 브라우저에 따라 그림 높이가 틀어져 아래 글씨를 덮었다 */
+  @media (max-width: 900px) {
+    .deck-card.main { display: flex; }
+    .deck-card.main img { height: auto; min-height: 0; aspect-ratio: 16 / 9; }
+    .deck-card.main .body { padding: 24px; }
+    .deck-card.main h3 { font-size: 26px; }
+  }
 </style>
 HTML
   tabs => tabs('plan'),

@@ -21,7 +21,13 @@
   .deck-card.main img { height: 100%; aspect-ratio: auto; min-height: 300px; }
   .deck-card.main .body { padding: 36px; justify-content: center; }
   .deck-card.main h3 { font-size: 32px; }
-  @media (max-width: 900px) { .deck-card.main { grid-template-columns: minmax(0, 1fr); } .deck-card.main img { min-height: 0; aspect-ratio: 16 / 9; } }
+  /* 좁은 화면에서는 다른 카드와 같은 세로 짜임으로 둔다. grid 안의 그림에 height: 100%가 남으면 모바일 브라우저에 따라 그림 높이가 틀어져 아래 글씨를 덮었다 */
+  @media (max-width: 900px) {
+    .deck-card.main { display: flex; }
+    .deck-card.main img { height: auto; min-height: 0; aspect-ratio: 16 / 9; }
+    .deck-card.main .body { padding: 24px; }
+    .deck-card.main h3 { font-size: 26px; }
+  }
 </style>
 </head>
 <body>
@@ -40,7 +46,7 @@
 <div class="grid two decks">
 <a class="card deck-card main" href="overview.html">
 <img src="../../assets/img/portfolio_hero.webp" alt="">
-<div class="body"><span class="num">개요</span><h3>개요 기획서</h3><p>어떤 게임이고 핵심 재미가 무엇인지, 전체 구조를 한눈에 정리했다.</p><span class="count">11장</span></div>
+<div class="body"><span class="num">개요</span><h3>개요 기획서</h3><p>어떤 게임인지, 빌드 조합과 2077과 다르게 쓴 무기와 사이버웨어, 한 판의 구조를 정리했다.</p><span class="count">12장</span></div>
 </a>
 <a class="card deck-card" href="combat.html">
 <img src="../../assets/img/portfolio_crowd.webp" alt="">

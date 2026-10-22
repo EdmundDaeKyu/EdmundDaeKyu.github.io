@@ -4,7 +4,7 @@
   "lists": "css",
   "title": "Edgerunners 개요 기획서",
   "cover": "cover",
-  "order": ["cover", "overview", "fun", "loop", "build", "examples", "rooms", "growth", "combat", "levels", "docs"],
+  "order": ["cover", "overview", "fun", "loop", "build", "examples", "reinterpret", "rooms", "growth", "combat", "levels", "docs"],
   "sections": {
     "s1": {"description": "무슨 게임이고 무엇이 재미인가", "start": "cover"},
     "s2": {"description": "빌드를 만들고 시험하는 구조", "start": "loop"},
