@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>연운 월드 디자인 고찰: 세계의 상태는 어디까지 반영되어야 하는가 · 장대규</title>
+<meta name="description" content="연운 월드 디자인 고찰. 세계의 상태는 어디까지 반영되어야 하는가 1장 이후 고향 마을에서 주요 NPC와 서브퀘스트가 주인공을 서로 다르게 대하는 모순의 원인을 짚고, 적은 비용으로 바로잡는 방법 세 가지를 제안했습니다.">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+<div class="scroll-root">
+<header class="site-head"><div class="wrap">
+<a class="brand" href="../">장대규</a>
+<nav><a href="../">홈</a><a href="../edgerunners/">Edgerunners</a><a href="../analysis/">역기획서</a><a class="on" href="../essays/">고찰</a><a href="../ai/">AI 활용</a></nav>
+</div></header>
+<main class="wrap">
+
+<article class="essay">
+<header class="essay-head">
+<p class="eyebrow">고찰 · 연운</p>
+<h1>연운 월드 디자인 고찰</h1>
+<p class="subtitle">세계의 상태는 어디까지 반영되어야 하는가</p>
+<p class="meta">2026.10.22 · 장대규 · 연재 「세계의 상태와 서사」 2편</p>
+</header>
+<dl class="essay-sum">
+<div><dt>문제</dt><dd>1장 이후 청하의 주요 NPC는 주인공을 낯선 사람으로 대하지만, 바로 근처 서브퀘스트는 여전히 소당주로 대한다.</dd></div>
+<div><dt>원인</dt><dd>주요 NPC만 1장 완료 여부를 확인하고, 서브퀘스트는 상태 확인 없이 한 가지 버전으로 남았다.</dd></div>
+<div><dt>제안</dt><dd>호칭과 첫 대사만 분기하고, 고향의 주요 인물 한두 명에게는 예외를 이야기 안에서 설명한다.</dd></div>
+</dl>
+<div class="essay-body">
+<p>연운(Where Winds Meet)은 무협 세계를 넓은 오픈월드로 구현한 게임이다. 1장은 주인공의 고향 청하*에서 시작해, 마을이 습격당하고 주인공인 소당주*와 친구 홍선이 죽은 것으로 알려지며 끝난다. 이후 주인공은 고향을 떠나 개봉*으로 향하고, 이야기는 강호 전체로 넓어진다.</p>
+<p class="fn">* 청하: 주인공의 고향이자 1장의 무대가 되는 지역.</p>
+<p class="fn">* 소당주: 1장에서 마을 사람들이 주인공을 부르는 호칭.</p>
+<p class="fn">* 개봉: 2장부터 이야기의 중심이 되는 대도시.</p>
+<p>1장의 결말은 세계의 상태를 크게 바꾼다. 마을 사람들에게 소당주는 이제 죽은 사람이다. 그런데 이 바뀐 상태가 게임 안에서 일관되게 유지되지 않는 장면이 있었다. 필자는 이 장면이 월드 디자인에서 놓치기 쉬운 문제, 즉 세계의 상태를 어디까지 반영해야 하는가를 잘 보여준다고 생각해 짧게 정리해 보고자 한다.</p>
+<figure>
+<img src="../assets/img/wwm_keyart.webp" alt="연운 키 아트: 산수 속 누각을 바라보는 검객" loading="lazy">
+<figcaption>연운(Where Winds Meet) 키 아트.<span class="src">출처: <a href="https://store.epicgames.com/p/where-winds-meet-58a176?lang=ko" target="_blank" rel="noopener">에픽게임즈 스토어 연운 페이지</a></span></figcaption>
+</figure>
+
+<h2 id="s1">1. 무엇이 어긋나는가</h2>
+<p>1장을 마치고 청하로 돌아가면 마을의 주요 NPC들은 주인공을 알아보지 못한다. 약방의 소녀처럼 1장 전까지 주인공을 소당주로 부르던 인물도 이제는 처음 보는 낯선 사람을 대하듯 말을 건단다. 주인공이 1장 끝에서 가면을 쓰고 떠난다는 점을 생각하면 이 반응은 자연스럽다. 게임이 '소당주는 죽었다'는 새 규칙을 세계에 적용한 것이다.</p>
+<p>문제는 바로 근처에서 진행되는 서브퀘스트다. 이 서브퀘스트는 1장의 진행 여부와 관계없이 언제나 주인공을 소당주로 인식한다. 같은 마을, 같은 시점인데도 한쪽에서는 낯선 사람이고 다른 쪽에서는 소당주다. 플레이어는 서로 다른 두 세계 상태를 동시에 마주하게 되고, 이 순간 1장의 결말이 만들어 낸 무게도 함께 흐려진다.</p>
+<div class="table-scroll"><table>
+<thead><tr><th>구분</th><th>1장 이전</th><th>1장 이후</th></tr></thead>
+<tbody>
+<tr><td>주요 NPC 대화 (약방 소녀 등)</td><td>소당주로 인식</td><td>낯선 사람으로 인식</td></tr>
+<tr><td>근처 서브퀘스트</td><td>소당주로 인식</td><td>소당주로 인식 (모순)</td></tr>
+</tbody>
+</table></div>
+
+<h2 id="s2">2. 바뀌지 않는 것보다 어설프게 바뀌는 것</h2>
+<p>필자는 앞서 <a href="pragmata.html">프래그마타의 셸터가 최종 보스전 직전에도 평소와 같은 모습을 유지해 서사의 긴박함을 해친다는 글</a>을 쓴 적이 있다. 두 게임의 문제는 비슷해 보이지만 성격이 다르다.</p>
+<p>프래그마타는 세계가 바뀌어야 할 때 바뀌지 않는 문제였다. 연운은 세계가 바뀌긴 했지만 일부만 바뀐 문제다. 필자는 후자가 몰입을 더 크게 해친다고 본다. 게임이 스스로 '이제 세계가 달라졌다'는 규칙을 먼저 보여주었기 때문에, 그 규칙에서 벗어난 예외는 더 또렷하게 눈에 띄기 때문이다. 플레이어는 이를 설계의 의도가 아니라 누락으로 받아들이게 된다.</p>
+<div class="table-scroll"><table>
+<thead><tr><th>구분</th><th>프래그마타</th><th>연운</th></tr></thead>
+<tbody>
+<tr><td>문제의 유형</td><td>바뀌어야 할 세계가 바뀌지 않음</td><td>바뀐 세계가 일부에만 적용됨</td></tr>
+<tr><td>드러나는 곳</td><td>최종 보스전 직전 셸터</td><td>1장 이후 고향 마을의 서브퀘스트</td></tr>
+<tr><td>플레이어의 인식</td><td>긴박함을 장치로 느낀다</td><td>세계의 규칙을 믿을 수 없게 된다</td></tr>
+</tbody>
+</table></div>
+
+<h2 id="s3">3. 왜 이런 일이 생기는가</h2>
+<p>필자는 이 문제가 의도된 설계라기보다 제작 비용과 타협한 결과일 가능성이 크다고 본다. 오픈월드에서는 서브퀘스트를 메인 스토리와 관계없이 언제든 진행할 수 있도록 열어 두는 경우가 많다. 이때 퀘스트마다 1장 이전 버전과 이후 버전을 따로 만들면 대사와 연출, 테스트해야 할 경우의 수가 두 배로 늘어난다. 그래서 주요 NPC의 대사만 1장 완료 여부에 따라 나누고, 서브퀘스트는 한 가지 버전으로 남겨 두기 쉽다.</p>
+<p>아래 흐름을 보면 차이가 분명하다. 주요 NPC는 대화를 시작할 때 1장 완료 여부를 확인하지만, 서브퀘스트는 이 확인 단계 없이 곧바로 소당주를 전제로 진행된다.</p>
+<figure>
+<div class="diagram">
+<svg viewBox="0 44 760 250" role="img" aria-label="상태 확인 흐름. 주요 NPC 대화는 1장 완료 여부를 확인해 낯선 사람 또는 소당주로 대하지만, 근처 서브퀘스트는 상태 확인 없이 항상 소당주로 대한다." font-size="14">
+<defs><marker id="st-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#8A8F99"/></marker></defs>
+<text x="24" y="62" font-size="12.5" fill="#5B606B">주요 NPC 대화</text>
+<text x="24" y="212" font-size="12.5" fill="#5B606B">근처 서브퀘스트</text>
+<g fill="none" stroke="#8A8F99" stroke-width="1.25">
+<path d="M188 118H264" marker-end="url(#st-arrow)"/>
+<path d="M394 118H450V86H518" marker-end="url(#st-arrow)"/>
+<path d="M450 118V150H518" marker-end="url(#st-arrow)"/>
+<path d="M188 262H264" marker-end="url(#st-arrow)"/>
+<path d="M394 262H518" marker-end="url(#st-arrow)"/>
+</g>
+<rect x="32" y="96" width="156" height="44" rx="8" fill="#FFFFFF" stroke="#8A8F99" stroke-width="1.25"/>
+<text x="110" y="123" text-anchor="middle" fill="#17181C">약방 소녀와 대화</text>
+<polygon points="266,118 330,84 394,118 330,152" fill="#FFFFFF" stroke="#8A8F99" stroke-width="1.25"/>
+<text x="330" y="123" text-anchor="middle" fill="#17181C">1장 완료?</text>
+<rect x="520" y="64" width="180" height="44" rx="8" fill="#FFFFFF" stroke="#8A8F99" stroke-width="1.25"/>
+<text x="610" y="91" text-anchor="middle" fill="#17181C">낯선 사람으로 대함</text>
+<rect x="520" y="128" width="180" height="44" rx="8" fill="#FFFFFF" stroke="#8A8F99" stroke-width="1.25"/>
+<text x="610" y="155" text-anchor="middle" fill="#17181C">소당주로 대함</text>
+<text x="462" y="78" font-size="12.5" fill="#5B606B">예</text>
+<text x="462" y="168" font-size="12.5" fill="#5B606B">아니오</text>
+<rect x="32" y="240" width="156" height="44" rx="8" fill="#FFFFFF" stroke="#8A8F99" stroke-width="1.25"/>
+<text x="110" y="267" text-anchor="middle" fill="#17181C">서브퀘스트 시작</text>
+<rect x="266" y="240" width="128" height="44" rx="8" fill="none" stroke="#C2185B" stroke-width="2" stroke-dasharray="5 4"/>
+<text x="330" y="267" text-anchor="middle" fill="#17181C">상태 확인 없음</text>
+<rect x="520" y="240" width="180" height="44" rx="8" fill="#C2185B" fill-opacity="0.12" stroke="#C2185B" stroke-width="2"/>
+<text x="610" y="267" text-anchor="middle" fill="#17181C" font-family="Paperlogy SemiBold, Paperlogy, sans-serif">항상 소당주로 대함</text>
+</svg>
+</div>
+<figcaption>상태 확인 흐름 · 주요 NPC와 서브퀘스트. 서브퀘스트만 1장 완료 여부를 확인하지 않는다.</figcaption>
+</figure>
+<p>같은 마을 안에 상태를 확인하는 대상과 확인하지 않는 대상이 섞여 있다는 점이 모순의 원인이다.</p>
+
+<h2 id="s4">4. 어떻게 바로잡을 수 있는가</h2>
+<p>필자는 세 가지 방법을 생각해 보았다. 모두 퀘스트 전체를 두 벌 만드는 것보다 적은 비용으로 모순을 없애는 데 초점을 두었다.</p>
+<ol>
+<li><b>서브퀘스트에 진행 조건 걸기</b>: 1장 이전에만 진행할 수 있게 막고, 1장이 끝나면 퀘스트가 사라지거나 놓친 퀘스트로 처리된다. 가장 확실하지만, 플레이어가 콘텐츠를 영영 놓칠 수 있다는 부담이 있다.</li>
+<li><b>호칭과 첫 대사만 분기하기</b>: 퀘스트 구조는 그대로 두고, 1장 이후에는 NPC가 주인공을 낯선 무사로 부르도록 호칭과 첫 대사만 바꾼다. 바뀌는 양이 적어 비용 대비 효과가 가장 크다.</li>
+<li><b>이야기 안에서 예외를 설명하기</b>: 이 NPC만 가면 너머의 주인공을 알아본다는 설정을 넣고, 죽은 줄 알았던 사람을 다시 만난 반응을 짧게 추가한다. 모순이었던 장면이 오히려 감정적인 장면이 될 수 있다.</li>
+</ol>
+<p>필자가 가장 현실적이라고 보는 방법은 2번이다. 다만 청하처럼 이야기의 출발점이자 감정적 무게가 큰 고향이라면, 주요 인물 한두 명에게는 3번을 적용해 볼 만하다.</p>
+
+<h2 id="s5">마치며</h2>
+<p>오픈월드에서 모든 콘텐츠가 메인 스토리의 변화를 따라갈 수는 없다. 하지만 게임이 스스로 세계의 규칙을 바꿨다면, 적어도 같은 공간 안에서는 그 규칙이 일관되게 지켜져야 한다. 필자는 월드 디자인에서 중요한 것이 세계를 얼마나 많이 바꾸느냐보다, 바꾼 것을 얼마나 일관되게 지키느냐에 있다고 생각한다. 플레이어가 세계를 믿을 수 있어야, 그 세계에서 벌어지는 이야기에도 몰입할 수 있기 때문이다.</p>
+</div>
+<nav class="essay-series" aria-label="연재">
+<p class="label">연재 「세계의 상태와 서사」 · 전 2편</p>
+<div class="pn"><a href="pragmata.html"><em>← 이전 글 · 1편</em><b>프래그마타 레벨 디자인 고찰: 다시 찾아가는 이유는 긴박함과 맞물리는가</b></a><span class="next">연재의 최신 글입니다</span></div>
+<div class="btn-row" style="margin-top:18px"><a class="btn ghost" href="./">고찰 목록</a></div>
+</nav>
+</article>
+</main>
+<footer class="foot"><div class="wrap">© 장대규 · 글꼴: 페이퍼로지(Paperlogy, SIL OFL 1.1)</div></footer>
+</div>
+</body>
+</html>

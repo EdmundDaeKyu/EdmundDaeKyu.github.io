@@ -7,6 +7,7 @@
 # 기획서 덱은 edgerunners/plan/<덱>.html, 작업 내역 덱은 edgerunners/log/index.html,
 # 역기획서 덱은 analysis/<덱>.html로 나간다. 기획서 목록(edgerunners/plan/index.html)과
 # 역기획서 목록(analysis/index.html)도 여기서 만든다(장 수가 덱과 어긋나지 않게).
+# 고찰(essays/)은 src/essays/<id>.html 본문을 @ESSAYS 순서로 감싸 essays/<id>.html과 목록으로 낸다.
 #
 # 장마다 아래에 붙는 설명은 src/decks/<덱>/notes/<id>.md에서 온다(형식: tools/NOTES_FORMAT.md).
 # 그 파일이 없으면 슬라이드의 <aside>(발표자 노트)를 한 문단으로 쓴다.
@@ -191,7 +192,7 @@ sub tabs {
 # 머리 메뉴. $on은 'edgerunners' 또는 'analysis'
 sub site_nav {
   my ($up, $on) = @_;
-  my @m = (['home', '', '홈'], ['edgerunners', 'edgerunners/', 'Edgerunners'], ['analysis', 'analysis/', '역기획서'], ['ai', 'ai/', 'AI 활용']);
+  my @m = (['home', '', '홈'], ['edgerunners', 'edgerunners/', 'Edgerunners'], ['analysis', 'analysis/', '역기획서'], ['essays', 'essays/', '고찰'], ['ai', 'ai/', 'AI 활용']);
   return '<nav>' . join('', map { '<a' . ($_->[0] eq $on ? ' class="on"' : '') . qq( href="$up$_->[1]">$_->[2]</a>) } @m) . '</nav>';
 }
 
@@ -555,4 +556,103 @@ HTML
   tail => '',
 ));
 print 'analysis/index.html: 역기획서 ' . scalar(@study) . "개\n";
+# ── 고찰 — 짧은 칼럼. 본문은 src/essays/<id>.html, 연재 순서는 이 배열 순서 ──
+# [id, 게임, 제목, 부제, 날짜, 카드 그림, 카드 소개, [문제, 원인, 제안]]
+my @ESSAYS = (
+  ['pragmata', '프래그마타', '프래그마타 레벨 디자인 고찰', '다시 찾아가는 이유는 긴박함과 맞물리는가', '2026.10.05', 'pragmata_keyart',
+   '최종 보스전 직전에도 평소와 같은 셸터와 후반부 수집이 서사의 긴박함과 어긋나는 이유를 짚고, 구조는 두고 동기와 연출을 바꾸는 다섯 가지를 제안했습니다.',
+   ['휴고가 죽어 가는 가장 긴박한 후반부에, 레벨 구조는 이전 지역을 천천히 돌며 수집하도록 유도한다.',
+    '게이팅 자체가 아니라, 재방문 동기와 최종 보스전 직전 셸터의 연출이 위기 상황을 반영하지 않는다.',
+    '구조는 유지하고 재방문을 메인 경로 · 위기 대응과 연결하며, 최종 셸터를 결전 전용 연출로 바꾼다.']],
+  ['yeonun', '연운', '연운 월드 디자인 고찰', '세계의 상태는 어디까지 반영되어야 하는가', '2026.10.22', 'wwm_keyart',
+   '1장 이후 고향 마을에서 주요 NPC와 서브퀘스트가 주인공을 서로 다르게 대하는 모순의 원인을 짚고, 적은 비용으로 바로잡는 방법 세 가지를 제안했습니다.',
+   ['1장 이후 청하의 주요 NPC는 주인공을 낯선 사람으로 대하지만, 바로 근처 서브퀘스트는 여전히 소당주로 대한다.',
+    '주요 NPC만 1장 완료 여부를 확인하고, 서브퀘스트는 상태 확인 없이 한 가지 버전으로 남았다.',
+    '호칭과 첫 대사만 분기하고, 고향의 주요 인물 한두 명에게는 예외를 이야기 안에서 설명한다.']],
+);
+my $SERIES = '세계의 상태와 서사';
+
+for my $i (0 .. $#ESSAYS) {
+  my $e = $ESSAYS[$i];
+  my ($id, $game, $title, $sub, $date, $img, $card, $sum) = @$e;
+  my $body = slurp("$root/src/essays/$id.html");
+  my ($prev, $next) = ($i > 0 ? $ESSAYS[$i - 1] : undef, $i < $#ESSAYS ? $ESSAYS[$i + 1] : undef);
+  my $pn = ($prev ? qq(<a href="$prev->[0].html"><em>← 이전 글 · ${\ ($i)}편</em><b>$prev->[2]: $prev->[3]</b></a>) : '<span>시리즈의 첫 글입니다</span>')
+         . ($next ? qq(<a class="next" href="$next->[0].html"><em>다음 글 · ${\ ($i + 2)}편 →</em><b>$next->[2]: $next->[3]</b></a>) : '<span class="next">연재의 최신 글입니다</span>');
+  my $n = $i + 1; my $total = scalar @ESSAYS;
+  spit("$root/essays/$id.html", shell(
+    title => "$title: $sub · 장대규",
+    desc => "$title. $sub $card",
+    up => '../',
+    main_class => 'wrap',
+    nav => site_nav('../', 'essays'),
+    head => '',
+    tabs => '',
+    body => <<"HTML",
+<article class="essay">
+<header class="essay-head">
+<p class="eyebrow">고찰 · $game</p>
+<h1>$title</h1>
+<p class="subtitle">$sub</p>
+<p class="meta">$date · 장대규 · 연재 「$SERIES」 ${n}편</p>
+</header>
+<dl class="essay-sum">
+<div><dt>문제</dt><dd>$sum->[0]</dd></div>
+<div><dt>원인</dt><dd>$sum->[1]</dd></div>
+<div><dt>제안</dt><dd>$sum->[2]</dd></div>
+</dl>
+<div class="essay-body">
+$body</div>
+<nav class="essay-series" aria-label="연재">
+<p class="label">연재 「$SERIES」 · 전 ${total}편</p>
+<div class="pn">$pn</div>
+<div class="btn-row" style="margin-top:18px"><a class="btn ghost" href="./">고찰 목록</a></div>
+</nav>
+</article>
+HTML
+    tail => '',
+  ));
+  print "essays/$id.html: $title\n";
+}
+
+my $ecards = '';
+for my $i (0 .. $#ESSAYS) {
+  my $e = $ESSAYS[$i]; my $n = $i + 1;
+  $ecards .= qq(<a class="card deck-card" href="$e->[0].html">\n<img src="../assets/img/$e->[5].webp" alt="">\n)
+    . qq(<div class="body"><span class="num">$e->[1] · ${n}편 · $e->[4]</span><h3>$e->[2]</h3><p class="q">$e->[3]</p><p>$e->[6]</p></div>\n</a>\n);
+}
+spit("$root/essays/index.html", shell(
+  title => '장대규 · 고찰',
+  desc => '게임 기획 고찰. ' . join(', ', map { "$_->[2]: $_->[3]" } @ESSAYS) . '.',
+  up => '../',
+  nav => site_nav('../', 'essays'),
+  head => <<'HTML',
+<style>
+  .plan-head { padding: 40px 0 8px; }
+  .plan-head h1 { font-size: 46px; margin: 8px 0 12px; }
+  .series-label { margin-top: 28px; font-family: var(--semi); font-size: 15px; color: var(--ink-3); }
+  .decks { padding: 14px 0 72px; }
+  .deck-card { display: flex; flex-direction: column; color: var(--ink); transition: border-color 0.15s, transform 0.15s; }
+  .deck-card:hover { text-decoration: none; border-color: var(--ink-3); transform: translateY(-2px); }
+  .deck-card img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: var(--dark); }
+  .deck-card .body { display: flex; flex-direction: column; gap: 6px; }
+  .deck-card .num { font-family: var(--semi); font-size: 13px; color: var(--accent); }
+  .deck-card .q { font-family: var(--semi); color: var(--ink-2); font-size: 16px; }
+  .deck-card p { color: var(--ink-3); font-size: 15px; }
+</style>
+HTML
+  tabs => '',
+  body => <<"HTML",
+<div class="plan-head">
+<p class="eyebrow">고찰</p>
+<h1>고찰</h1>
+<p class="lead">직접 플레이한 게임에서 레벨과 월드가 서사와 어긋나는 지점을 짚은 짧은 글입니다.<br>문제가 구조에 있는지, 그 위의 동기와 연출에 있는지 나눠 보고 바로잡을 방법을 제안했습니다.</p>
+<p class="series-label">연재 「$SERIES」 — 세계가 이야기만큼 바뀌는가, 바뀐 것을 일관되게 지키는가</p>
+</div>
+<div class="grid two decks">
+$ecards</div>
+HTML
+  tail => '',
+));
+print 'essays/index.html: 고찰 ' . scalar(@ESSAYS) . "편\n";
 die "짝이 없는 그림 ${missing}개 — tools/images.tsv에 넣을 것\n" if $missing;
