@@ -101,39 +101,39 @@
 <section class="block" id="design">
 <p class="sec-no">02 · 기획 역량</p>
 <h2>의도 → 과정 → 결과</h2>
-<p class="sub">Edgerunners를 만들며 내린 결정 중 네 가지입니다. 무엇을 의도했고, 플레이와 측정에서 무엇이 어긋났고, 어떻게 고쳤는지 정리했습니다.</p>
+<p class="sub">Edgerunners를 만들며 가장 공들인 네 가지입니다. 무엇을 의도했고, 어떤 과정을 거쳐, 어떤 결과를 냈는지 정리했습니다.</p>
 <div class="cases">
 <article class="card case">
-<img src="assets/img/portfolio_crowd.webp" alt="" loading="lazy">
+<img src="assets/img/case_weapons.webp" alt="" loading="lazy">
 <div class="body">
-<span class="game">전투</span>
-<h3>공격 예고를 실제 판정과 같은 크기로</h3>
-<dl><div><dt>의도</dt><dd>표시가 실제 판정보다 넓으면 플레이어가 잘못 배웁니다. 보이는 대로 피할 수 있어야 합니다.</dd></div><div><dt>과정</dt><dd>근접병의 둘레 링 예고가 등 뒤도 맞는 것처럼 보였습니다. 실제 공격 범위인 전방 2.3m · 70° 부채꼴로 표시했고, 다섯 개가 겹치면 화면이 덮여 투명도를 0.34에서 0.16으로 낮췄습니다.</dd></div><div class="res"><dt>결과</dt><dd>모양은 피하는 방법, 색은 남은 시간을 뜻하도록 모든 적의 예고 규칙을 하나로 정했습니다.</dd></div></dl>
-<a class="more-link" href="edgerunners/log/#s7">작업 내역에서 자세히 →</a>
+<span class="game">전투 · 무기</span>
+<h3>무기마다 싸우는 방식이 다른 우클릭 능력</h3>
+<dl><div><dt>의도</dt><dd>무기를 바꾸면 싸우는 방식도 달라져야 무기 선택이 곧 빌드 선택이 됩니다.</dd></div><div><dt>과정</dt><dd>좌클릭 기본 공격의 차이는 작게 두고, 무기 8종에 우클릭 고유 능력을 하나씩 줬습니다. 카타나는 관통 발도, 해머는 던진 뒤 회수, 나이프는 꽂힌 적 뒤로 순간이동, 체인소드는 벽까지 밀어붙이기, 피스톨은 수류탄, 스나이퍼는 관통 사격입니다.</dd></div><div class="res"><dt>결과</dt><dd>적 · 벽 · 장치의 위치를 활용하는 능력 위주로 구성해, 같은 방에서도 무기에 따라 동선이 달라집니다. 첫 판은 카타나와 피스톨로 차이를 익힌 뒤 나머지를 해금합니다.</dd></div></dl>
+<a class="more-link" href="edgerunners/plan/system.html#s2">시스템 기획서에서 자세히 →</a>
 </div>
 </article>
 <article class="card case">
-<img src="assets/img/combat_1.webp" alt="" loading="lazy">
+<img src="assets/img/case_handmap.webp" alt="" loading="lazy">
 <div class="body">
 <span class="game">레벨</span>
-<h3>손그림을 도면으로 옮길 때 빠진 중심 구조</h3>
-<dl><div><dt>의도</dt><dd>손그림 전투방의 중심 구조(바람개비 십자, I자)를 격자 도면에 그대로 옮기려 했습니다.</dd></div><div><dt>과정</dt><dd>보상 좌대가 항상 방 한가운데에 놓여 중심 구조가 빠져 있었습니다. 완성된 방을 손그림과 나란히 놓고 비교해 찾았습니다.</dd></div><div class="res"><dt>결과</dt><dd>설계는 유지하고 편집기를 고쳤습니다. 격자에 보상 위치 칸을 추가했고, 손그림 비율(4:3)에 맞춰 방을 40×30m로 넓혔습니다.</dd></div></dl>
-<a class="more-link" href="edgerunners/log/#s5">작업 내역에서 자세히 →</a>
+<h3>손으로 그린 도면을 실제 레벨로</h3>
+<dl><div><dt>의도</dt><dd>방마다 의도한 플레이를 손그림으로 먼저 정하고, 그 구조를 그대로 게임에 옮기는 것을 목표로 했습니다.</dd></div><div><dt>과정</dt><dd>전투방, 엘리트방, 프로토타입(???) 방, 보스방, 그리고 가장 중요한 튜토리얼 스테이지까지 손그림 → 2m 격자 도면 → 실제 플레이 순서로 만들었습니다. 완성된 방을 손그림과 나란히 비교해, 보상 좌대 때문에 중심 구조가 빠진 문제도 찾아 고쳤습니다.</dd></div><div class="res"><dt>결과</dt><dd>직접 그린 맵 8개(전투 3, 엘리트 2, ??? 2, 보스 1)와 튜토리얼 숲길 3단계를 손그림대로 제작했습니다.</dd></div></dl>
+<a class="more-link" href="edgerunners/plan/level.html#s2">레벨 기획서에서 자세히 →</a>
 </div>
 </article>
 <article class="card case">
-<img src="assets/img/hazard_shock.webp" alt="" loading="lazy">
+<img src="assets/img/case_rejected.webp" alt="" loading="lazy">
 <div class="body">
-<span class="game">레벨 장치</span>
-<h3>기각한 아이디어 — 바닥 함정</h3>
-<dl><div><dt>의도</dt><dd>폭탄은 위치, 전기 발판은 타이밍, 바닥 함정은 경로 판단을 맡도록 장치의 역할을 셋으로 나눴습니다.</dd></div><div><dt>과정</dt><dd>바닥 함정 피해를 5에서 18로 올려도 "이 길로 갈 것인가"와 "여기 머무를 것인가"가 같은 판단이 되었습니다. 켜짐 · 꺼짐 주기가 있는 전기 발판은 기다리기만 하게 만들었습니다.</dd></div><div class="res"><dt>결과</dt><dd>바닥 함정을 기각하고, 전기 발판은 빠르게 통과하면 피해 없이 통과할 수 있도록 설계를 바꿨습니다. 번갈아 켜지는 메커니즘은 삭제하되, 타이밍에 맞춰 대시로 발판을 넘나드는 플레이는 유지했습니다.</dd></div></dl>
+<span class="game">기각한 아이디어</span>
+<h3>측정한 뒤 기각한 아이디어</h3>
+<dl><div><dt>의도</dt><dd>새 장치와 적 AI가 실제 플레이에 기여하는지 확인한 뒤 남길지 정했습니다.</dd></div><div><dt>과정</dt><dd>바닥 함정은 피해를 5에서 18로 올려도 전기 발판과 플레이어의 판단이 같았습니다. 원거리 적의 엄폐 AI는 세 번 고친 뒤 실제 방 일곱 곳에서 측정했는데, 14명 중 4명만 숨을 위치를 찾았습니다.</dd></div><div class="res"><dt>결과</dt><dd>두 아이디어를 기각했습니다. 바닥 장치는 전기 발판 하나로 정리하고, 엄폐물은 플레이어만 사용합니다.</dd></div></dl>
 <a class="more-link" href="edgerunners/log/#s6">작업 내역에서 자세히 →</a>
 </div>
 </article>
 <article class="card case">
 <img src="assets/img/growth_meditation.webp" alt="" loading="lazy">
 <div class="body">
-<span class="game">시스템</span>
+<span class="game">시스템 · 성장</span>
 <h3>사이버웨어 성장 개편 — 레벨 시스템</h3>
 <dl><div><dt>의도</dt><dd>특정 부위의 사이버웨어가 다 차면 다른 보상을 고르거나 장비를 교체하는 것밖에 할 수 없어 육성의 재미가 떨어졌습니다.</dd></div><div><dt>과정</dt><dd>트리(가지) 성장도 검토했습니다. 업그레이드마다 다른 방향으로 클 수 있지만, 다른 계열 장비로 갈아타기 어려웠습니다.</dd></div><div class="res"><dt>결과</dt><dd>레벨 시스템으로 확정했습니다. 같은 사이버웨어를 다시 얻으면 수치가 아니라 메커니즘과 기능이 추가되거나 강화됩니다.</dd></div></dl>
 <a class="more-link" href="edgerunners/log/#s8">작업 내역에서 자세히 →</a>
