@@ -52,6 +52,8 @@
   .rm-pair img, .ref-slot { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; border-radius: 10px; display: block; }
   .ref-slot { border: 2px dashed var(--line); background: var(--bg-alt); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; color: var(--ink-4); font-family: var(--semi); font-size: 15px; }
   .ref-slot small { font-family: var(--body); font-size: 13px; }
+  .rm-pair figcaption .src { display: block; margin-top: 4px; font-size: 12.5px; color: var(--ink-4); }
+  .rm-pair figcaption .src a { color: var(--ink-3); text-decoration: underline; }
   .rm-pair figcaption { font-size: 14.5px; line-height: 1.6; color: var(--ink-2); }
   .rm-pair figcaption b, .rm-why p b { display: block; font-family: var(--semi); font-weight: 400; font-size: 13px; color: var(--ink-4); margin-bottom: 2px; }
   .rm-game figcaption b { color: var(--accent); }
@@ -59,6 +61,7 @@
   .rm-why .part { font-family: var(--semi); font-size: 13px; color: var(--accent); }
   .rm-why h3 { font-size: 28px; margin: 0; }
   .rm-why p { color: var(--ink-2); margin: 0; }
+  .rm-credit { font-size: 13px; color: var(--ink-4); margin: 0; text-align: right; }
   .rm-nav { display: flex; align-items: center; justify-content: center; gap: 14px; }
   .rm-nav > button { width: 42px; height: 42px; border-radius: 50%; border: 1px solid var(--line); background: var(--card); font-size: 18px; cursor: pointer; color: var(--ink); }
   .rm-dots { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; }
@@ -168,33 +171,34 @@
 <div class="rm-track" tabindex="0">
 <article class="rm-slide" id="remake-1" aria-label="1 / 4 산데비스탄">
 <div class="rm-pair">
-<figure class="rm-ref"><div class="ref-slot"><span>원작 이미지 자리</span><small>사이버펑크 2077 · 산데비스탄</small></div><figcaption><b>원작</b>일정 시간 주변 시간을 늦추고, 사용자만 정상 속도로 움직입니다.</figcaption></figure>
+<figure class="rm-ref"><img src="../assets/img/ref2077_sandevistan.webp" alt="사이버펑크 2077의 산데비스탄 사용 장면" loading="lazy"><figcaption><b>원작 · 사이버펑크 2077</b>일정 시간 주변 시간을 늦추고, 사용자만 정상 속도로 움직입니다.<small class="src">이미지 출처: <a href="https://www.youtube.com/watch?v=R_BWwiRo_Ds" target="_blank" rel="noopener">YouTube</a></small></figcaption></figure>
 <figure class="rm-game"><img src="../assets/img/portfolio_sande.webp" alt="느려진 총알 사이를 잔상을 끌며 지나가는 장면" loading="lazy"><figcaption><b>Edgerunners</b>켜고 끌 수 있는 감속과 공격력 +25%. 적을 처치할 때마다 지속 시간이 0.4초 늘어납니다(Lv2).</figcaption></figure>
 </div>
 <div class="rm-why"><span class="part">OS · E키</span><h3>산데비스탄</h3><p><b>바꾼 이유</b>처치를 이어 가는 동안 효과가 길어지도록 바꿔, 무리 사이를 지나며 연달아 베는 플레이를 보상합니다.</p></div>
 </article>
 <article class="rm-slide" id="remake-2" aria-label="2 / 4 사이버덱">
 <div class="rm-pair">
-<figure class="rm-ref"><div class="ref-slot"><span>원작 이미지 자리</span><small>사이버펑크 2077 · 사이버덱</small></div><figcaption><b>원작</b>적을 스캔하고 퀵핵으로 방해하거나 피해를 줍니다.</figcaption></figure>
+<figure class="rm-ref"><img src="../assets/img/ref2077_cyberdeck.webp" alt="사이버펑크 2077의 사이버덱 사용 장면" loading="lazy"><figcaption><b>원작 · 사이버펑크 2077</b>적을 스캔하고 퀵핵으로 방해하거나 피해를 줍니다.<small class="src">이미지 출처: <a href="https://www.ign.com/wikis/cyberpunk-2077/Cyberpunk_Hacking_Explained_and_Breach_Protocol_Tips" target="_blank" rel="noopener">IGN</a></small></figcaption></figure>
 <figure class="rm-game"><img src="../assets/img/portfolio_netrunner.webp" alt="해킹 모드에서 적, 드럼통, 전기 발판을 해킹하는 장면" loading="lazy"><figcaption><b>Edgerunners</b>해킹 모드에서는 적과 플레이어 모두 0.35배로 느려지고, 좌 · 우클릭으로 적, 드럼통, 전기 발판을 해킹합니다.</figcaption></figure>
 </div>
 <div class="rm-why"><span class="part">OS · E키</span><h3>사이버덱</h3><p><b>바꾼 이유</b>실시간 탑다운 난전에서 대상을 고를 시간을 확보하고, 방에 놓인 장치까지 공격 수단으로 쓰게 합니다.</p></div>
 </article>
 <article class="rm-slide" id="remake-3" aria-label="3 / 4 고릴라 암즈">
 <div class="rm-pair">
-<figure class="rm-ref"><div class="ref-slot"><span>원작 이미지 자리</span><small>사이버펑크 2077 · 고릴라 암즈</small></div><figcaption><b>원작</b>주먹으로 싸우는 근접 무기입니다.</figcaption></figure>
+<figure class="rm-ref"><img src="../assets/img/ref2077_gorilla.webp" alt="사이버펑크 2077의 고릴라 암즈 사용 장면" loading="lazy"><figcaption><b>원작 · 사이버펑크 2077</b>주먹으로 싸우는 근접 무기입니다.<small class="src">이미지 출처: <a href="https://www.rockpapershotgun.com/cyberpunk-2077-gorilla-arms-how-to-get-legendary-gorilla-arms-cyberware" target="_blank" rel="noopener">Rock Paper Shotgun</a></small></figcaption></figure>
 <figure class="rm-game"><img src="../assets/img/portfolio_gorilla.webp" alt="내려찍은 자리에서 바닥이 갈라지며 주변 적이 쓰러진 장면" loading="lazy"><figcaption><b>Edgerunners</b>무기 슬롯과 별도인 능력으로, 적을 잡아 던지거나 내려찍습니다. 던진 적과 부딪힌 적도 넘어집니다(Lv2).</figcaption></figure>
 </div>
 <div class="rm-why"><span class="part">팔 · 3번 키</span><h3>고릴라 암즈</h3><p><b>바꾼 이유</b>손에 든 무기를 바꾸지 않고 꺼내 쓰는 군중 제어 수단으로 만들어, 어떤 빌드와도 함께 쓸 수 있게 했습니다.</p></div>
 </article>
 <article class="rm-slide" id="remake-4" aria-label="4 / 4 근접 무기">
 <div class="rm-pair">
-<figure class="rm-ref"><div class="ref-slot"><span>원작 이미지 자리</span><small>사이버펑크 2077 · 근접 무기</small></div><figcaption><b>원작</b>베거나 내려치는 무기입니다.</figcaption></figure>
+<figure class="rm-ref"><img src="../assets/img/ref2077_katana.webp" alt="사이버펑크 2077의 근접 무기 사용 장면" loading="lazy"><figcaption><b>원작 · 사이버펑크 2077</b>베거나 내려치는 무기입니다.<small class="src">이미지 출처: <a href="https://www.pcgamer.com/how-to-get-cyberpunk-2077-witcher-gear/" target="_blank" rel="noopener">PC Gamer</a></small></figcaption></figure>
 <figure class="rm-game"><img src="../assets/img/lesson_s2_lunge.webp" alt="카타나 발도로 앞으로 길게 돌진하며 베는 장면" loading="lazy"><figcaption><b>Edgerunners</b>무기마다 우클릭 고유 능력이 하나씩 있습니다. 카타나는 적을 관통하며 베고, 해머는 던진 뒤 회수하고, 나이프는 꽂힌 적 뒤로 순간이동해 찌릅니다.</figcaption></figure>
 </div>
 <div class="rm-why"><span class="part">카타나 · 해머 · 나이프</span><h3>근접 무기</h3><p><b>바꾼 이유</b>같은 근접 무기라도 적에게 다가가는 방법을 다르게 해, 무기 선택이 빌드 선택이 되도록 했습니다.</p></div>
 </article>
 </div>
+<p class="rm-credit">원작 이미지 © CD PROJEKT RED. 비교 설명을 위해 인용했습니다.</p>
 <div class="rm-nav"><button type="button" class="rm-prev" aria-label="이전">←</button><div class="rm-dots"><button type="button" data-go="1" aria-label="1번째 항목">산데비스탄</button><button type="button" data-go="2" aria-label="2번째 항목">사이버덱</button><button type="button" data-go="3" aria-label="3번째 항목">고릴라 암즈</button><button type="button" data-go="4" aria-label="4번째 항목">근접 무기</button></div><button type="button" class="rm-next" aria-label="다음">→</button></div>
 </div>
 </section>
