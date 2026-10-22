@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>엘든 링 림그레이브 레벨디자인 분석 · 장대규 역기획서</title>
-<meta name="description" content="장대규 역기획서 엘든 링 림그레이브 레벨디자인 분석. 지도 · 밀도 · 시야 · 사정거리로 첫 보스 멀기트까지 학습시키는 구조를 분석하고, 초반 이탈을 줄이는 신호 설계를 제안했습니다.">
+<title>엘든 링 림그레이브 레벨디자인 기획서 · 장대규 역기획서</title>
+<meta name="description" content="장대규 역기획서 엘든 링 림그레이브 레벨디자인 기획서. 지도 · 밀도 · 시야 · 인식거리의 장단점을 정리하고, 축복의 인도가 만드는 초반 공백과 이탈을 짚어 성장할 곳을 알려 주는 개선안 3가지를 제안했습니다.">
 <link rel="stylesheet" href="../assets/css/site.css">
 <link rel="stylesheet" href="../assets/css/deck.css">
 <script src="../assets/js/deck.js" defer></script>
@@ -20,93 +20,835 @@
 
 <div class="deck-head" id="top">
 <p class="eyebrow">역기획서 · 엘든 링</p>
-<h1>엘든 링 림그레이브 레벨디자인 분석</h1>
-<p class="lead">지도 · 밀도 · 시야 · 사정거리로 첫 보스 멀기트까지 학습시키는 구조를 분석하고, 초반 이탈을 줄이는 신호 설계를 제안했습니다.</p>
+<h1>엘든 링 림그레이브 레벨디자인 기획서</h1>
+<p class="lead">지도 · 밀도 · 시야 · 인식거리의 장단점을 정리하고, 축복의 인도가 만드는 초반 공백과 이탈을 짚어 성장할 곳을 알려 주는 개선안 3가지를 제안했습니다.</p>
 <div class="deck-tools">
 <button class="btn" type="button" data-present="0">슬라이드 보기</button>
-<span class="small">10장 · 슬라이드를 누르면 크게 보이고, 화살표 키로 넘길 수 있습니다</span>
+<span class="small">20장 · 슬라이드를 누르면 크게 보이고, 화살표 키로 넘길 수 있습니다</span>
 </div>
 </div>
 <div class="slides">
+<div class="sec-head" id="part1"><span class="sec-k">01</span><h2>1부 표지와 문서의 주장</h2></div>
 <div class="slide-item" id="s1">
 <div class="slide-frame">
-<section style="background:#F7F4EC">
-  <img src="../assets/img/limgrave_01.webp" alt="표지 — 엘든 링 림그레이브 레벨디자인 분석" style="position:absolute; left:0; top:0; width:1920px; height:1080px; object-fit:cover">
+<section id="c1-cover" data-transition="fade" style="display:flex; flex-direction:column; gap:16px; padding:64px 112px 130px; background:#14181f; font-family:Paperlogy, Arial, sans-serif; color:#f2efe6">
+  <img src="../assets/img/limgrave_overlook.webp" alt="폭풍 언덕에서 내려다본 림그레이브 평원과 황금 나무" style="position:absolute; top:0; left:0; width:1920px; height:1080px; object-fit:cover; opacity:0.7">
+  <div style="position:absolute; top:0; left:0; width:1920px; height:1080px; display:flex; flex-direction:column; background:linear-gradient(90deg, #10141cf5 0%, #10141cdc 46%, #10141c40 100%)">
+  </div>
+  <div style="position:relative; height:886px; display:flex; flex-direction:column; justify-content:space-between">
+    <div style="display:flex; flex-direction:column; gap:26px">
+      <p style="font-size:27px; letter-spacing:5px; color:#d6b866">레벨디자인 기획서 · 포트폴리오</p>
+      <h1 style="font-family:'Paperlogy Black', Arial, sans-serif; font-size:84px; font-weight:700; line-height:1.18; color:#f2efe6">엘든 링 림그레이브<br>레벨디자인 기획서</h1>
+      <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:36px; line-height:1.4; color:#e4dfd2">1부 · 림그레이브의 기본 구조와 장단점</p>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:12px">
+      <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:38px; font-weight:700; line-height:1.3; color:#f2efe6">장대규</p>
+      <p style="font-size:27px; line-height:1.5; color:#b9bfc9">jdk47888@naver.com &nbsp;&nbsp;·&nbsp;&nbsp; 010-8854-7342</p>
+    </div>
+  </div>
+  <p style="position:absolute; bottom:52px; left:112px; width:1300px; font-size:25px; color:#9aa2ae">림그레이브는 플레이어를 학습시키며 선별합니다</p>
+  <p style="position:absolute; right:112px; bottom:52px; width:220px; font-size:25px; text-align:right; font-variant-numeric:tabular-nums; color:#9aa2ae">01 / 20</p>
+  
 </section>
 </div>
-
+<div class="slide-note"><div class="n-head"><span class="num">01</span><div class="n-lead"><p>표지입니다.</p></div></div><details class="n-more"><summary>자세히 보기</summary><div class="n-aside"><p>배경은 폭풍 언덕에서 내려다본 림그레이브입니다. 1부는 림그레이브의 기본 레벨디자인 요소를 장단점과 함께 정리하고, 2부는 축복의 인도와 초반 이탈 문제, 개선안을 다룹니다.</p></div></details></div>
 </div>
 <div class="slide-item" id="s2">
 <div class="slide-frame">
-<section style="background:#F7F4EC">
-  <img src="../assets/img/limgrave_02.webp" alt="엘든 링의 튜토리얼 지역인 림그레이브" style="position:absolute; left:0; top:0; width:1920px; height:1080px; object-fit:cover">
+<section id="a01-hook" data-transition="fade" style="display:flex; flex-direction:column; gap:24px; padding:64px 112px 130px; background:#f6f5f1">
+  <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:26px; letter-spacing:3px; color:#7d5f17">들어가며</p>
+  <div style="display:flex; flex-direction:row; gap:56px; align-items:start">
+    <div style="display:flex; flex-direction:column; gap:30px; flex:1">
+      <h2 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:60px; font-weight:700; line-height:1.22; color:#1b1f26">엘든 링 400시간 · 5회차 후<br>다시 걸은 림그레이브</h2>
+      <p style="font-family:Paperlogy, Arial, sans-serif; font-size:32px; line-height:1.5; color:#3d434d">5회차를 돌고 튜토리얼 지역을 다시 걸으며, 거대한 세계를 국소 단위로 나누어 플레이어를 이끄는 설계에 주목했습니다.</p>
+      <div style="display:flex; flex-direction:column; gap:12px; padding:30px 36px; background:#1b1f26; border-radius:10px">
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:26px; color:#d6b866">이 문서의 주장</p>
+        <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:42px; line-height:1.3; color:#f2efe6">림그레이브는 플레이어를<br>학습시키며 선별합니다.</p>
+      </div>
+    </div>
+    <img src="../assets/img/limgrave_arrival.webp" alt="지하에서 나와 처음 림그레이브를 내려다보는 장면" style="width:780px; height:439px; border-radius:10px">
+  </div>
+  <div style="display:flex; flex-direction:row; gap:24px">
+    <div style="display:flex; flex-direction:column; gap:8px; flex:1; padding:24px 30px; background:#ffffff; border:2px solid #dcd7cb; border-radius:10px">
+      <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:30px; color:#1b1f26">1부 · 기본 구조와 장단점</p>
+      <p style="font-family:Paperlogy, Arial, sans-serif; font-size:27px; line-height:1.4; color:#4a515c">3단계 단위 · 지도 · 밀도 · 시야 · 인식거리</p>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:8px; flex:1; padding:24px 30px; background:#ffffff; border:2px solid #dcd7cb; border-radius:10px">
+      <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:30px; color:#1b1f26">2부 · 선별의 문제와 개선안</p>
+      <p style="font-family:Paperlogy, Arial, sans-serif; font-size:27px; line-height:1.4; color:#4a515c">축복의 인도 · 역류 성장 · 초반 이탈 · 개선안 3가지</p>
+    </div>
+  </div>
+  <p style="position:absolute; bottom:52px; left:112px; width:1300px; font-family:Paperlogy, Arial, sans-serif; font-size:24px; color:#6b7380">엘든 링 림그레이브 레벨디자인 기획서 · 들어가며</p>
+  <p style="position:absolute; right:112px; bottom:52px; width:220px; font-family:Paperlogy, Arial, sans-serif; font-size:24px; text-align:right; font-variant-numeric:tabular-nums; color:#6b7380">02 / 20</p>
+  
 </section>
 </div>
-
+<div class="slide-note"><div class="n-head"><span class="num">02</span><div class="n-lead"><p>엘든 링을 약 400시간, 5회차 플레이했습니다.</p></div></div><details class="n-more"><summary>자세히 보기</summary><div class="n-aside"><p>다시 걸어 본 림그레이브는 거대한 세계를 국소 단위로 나누어 플레이어를 이끄는 지역이었습니다. 이 문서는 그 구조를 정리하고(1부), 그 구조가 일부 플레이어를 걸러 내는 문제와 개선안을 제시합니다(2부).</p></div></details></div>
 </div>
+<div class="sec-head" id="part2"><span class="sec-k">02</span><h2>1부 림그레이브의 기본 구조와 장단점</h2></div>
 <div class="slide-item" id="s3">
 <div class="slide-frame">
-<section style="background:#F7F4EC">
-  <img src="../assets/img/limgrave_03.webp" alt="탐험 욕구를 자극하는 엘든 링의 지도" style="position:absolute; left:0; top:0; width:1920px; height:1080px; object-fit:cover">
+<section id="a02-overview" data-transition="fade" style="display:flex; flex-direction:column; gap:24px; padding:64px 112px 130px; background:#f6f5f1; font-family:Paperlogy, Arial, sans-serif; color:#1b1f26">
+  <h2 style="padding:8px 0 0; font-family:'Paperlogy Bold', Arial, sans-serif; font-size:60px; font-weight:700; line-height:1.18; color:#1b1f26">림그레이브 개요</h2>
+  <p style="padding:0 0 0 26px; font-size:34px; line-height:1.4; color:#1b1f26; border-left:8px solid #8a6a1c">설계 목표: 플레이어가 멀기트를 넘을 만큼 성장하는 방법을 스스로 익히게 합니다.</p>
+  <div style="display:flex; flex-direction:row; gap:40px; align-items:start">
+    <img src="../assets/img/limgrave_map_zones.webp" alt="림그레이브 지도. 관문 앞에서 북서쪽 고지대(멀기트, 스톰빌 성 방향)는 금색, 그 밖의 동쪽과 남쪽 저지대(동쪽 숲, 남쪽 호수, 흐느낌의 반도 방향)는 파란색으로 표시" style="width:820px; height:520px; object-fit:cover; border-radius:10px; background:#1b1f26">
+    <div style="flex:1; display:flex; flex-direction:column; gap:16px">
+      <div style="display:flex; flex-direction:column; gap:6px; padding:20px 26px; background:#ffffff; border-left:8px solid #1b1f26; border-radius:6px">
+        <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:29px; color:#1b1f26">역할 · 튜토리얼 지역</p>
+        <p style="font-size:26px; line-height:1.4; color:#4a515c">게임을 시작한 플레이어가 처음 도착하는 오픈 필드</p>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:6px; padding:20px 26px; background:#ffffff; border-left:8px solid #1b1f26; border-radius:6px">
+        <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:29px; color:#1b1f26">관문 · 흉조 멀기트</p>
+        <p style="font-size:26px; line-height:1.4; color:#4a515c">다음 레거시 던전 스톰빌 성 입구를 막는 첫 관문 보스</p>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:6px; padding:20px 26px; background:#fbf3df; border-left:8px solid #8a6a1c; border-radius:6px">
+        <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:29px; color:#1b1f26">인도 방향 · 고지대</p>
+        <p style="font-size:26px; line-height:1.4; color:#4a515c">축복의 인도는 관문 앞 → 멀기트 → 스톰빌 성을 가리킵니다.<br>난이도가 높은 적이 모인 경로입니다.</p>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:6px; padding:20px 26px; background:#e8eef7; border-left:8px solid #2e5fa3; border-radius:6px">
+        <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:29px; color:#1b1f26">인도 밖 · 동쪽과 남쪽 저지대</p>
+        <p style="font-size:26px; line-height:1.4; color:#4a515c">고지대를 뺀 동쪽 숲과 남쪽 호수 일대입니다.<br>탐험할 곳이 많고 비교적 쉬운 보스와 던전이 있습니다.<br>남쪽으로 흐느낌의 반도가 이어집니다.</p>
+      </div>
+    </div>
+  </div>
+  <p style="position:absolute; left:112px; bottom:52px; width:1300px; font-size:24px; color:#6b7380">엘든 링 림그레이브 레벨디자인 기획서 · 1부 기본 구조</p>
+  <p style="position:absolute; right:112px; bottom:52px; width:220px; font-size:24px; text-align:right; font-variant-numeric:tabular-nums; color:#6b7380">03 / 20</p>
+  
 </section>
 </div>
-
+<div class="slide-note"><div class="n-head"><span class="num">03</span><div class="n-lead"><p>고지대가 곧 강한 적이라는 뜻은 아닙니다.</p></div></div><details class="n-more"><summary>자세히 보기</summary><div class="n-aside"><p>축복의 인도가 난이도 높은 적이 모인 곳, 멀기트와 스톰빌 성이 있는 고지대로 플레이어를 이끌 뿐입니다. 반대로 저지대에는 탐험할 곳이 더 많고, 비교적 쉽게 상대할 보스와 던전이 있습니다. 이 차이가 2부의 출발점입니다.</p></div></details></div>
 </div>
 <div class="slide-item" id="s4">
 <div class="slide-frame">
-<section style="background:#F7F4EC">
-  <img src="../assets/img/limgrave_04.webp" alt="플레이어를 성장시키는 밀도의 순환" style="position:absolute; left:0; top:0; width:1920px; height:1080px; object-fit:cover">
+<section id="a03-units" data-transition="fade" style="display:flex; flex-direction:column; gap:24px; padding:64px 112px 130px; background:#f6f5f1; font-family:Paperlogy, Arial, sans-serif; color:#1b1f26">
+  <h2 style="padding:8px 0 0; font-family:'Paperlogy Bold', Arial, sans-serif; font-size:60px; font-weight:700; line-height:1.18; color:#1b1f26">세계를 나누는 3단계 단위</h2>
+  <p style="padding:0 0 0 26px; font-size:34px; line-height:1.4; color:#1b1f26; border-left:8px solid #8a6a1c">넓은 지역을 거점과 조우 단위로 나누어, 한 번에 하나씩 판단하게 합니다.</p>
+  <div style="display:flex; flex-direction:row; gap:0px; align-items:stretch">
+    <div style="flex:1; display:flex; flex-direction:column; gap:12px; padding:30px 32px; background:#1b1f26; border-radius:10px 0 0 10px">
+      <p style="font-size:26px; color:#d6b866">지역 · 매크로</p>
+      <h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:38px; font-weight:700; color:#f2efe6">림그레이브 전체</h3>
+      <p style="font-size:27px; line-height:1.45; color:#cfd4dc">목표 하나: 멀기트 돌파<br>방향: 축복의 인도, 황금 나무와 스톰빌 성 같은 랜드마크</p>
+    </div>
+    <div style="width:56px; display:flex; flex-direction:column; justify-content:center; align-items:center; background:#2b313b">
+      <x-shape kind="arrow-right" style="width:40px; height:24px; background:#d6b866"></x-shape>
+    </div>
+    <div style="flex:1; display:flex; flex-direction:column; gap:12px; padding:30px 32px; background:#3a414d">
+      <p style="font-size:26px; color:#d6b866">거점 · 메조</p>
+      <h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:38px; font-weight:700; color:#f2efe6">교회 · 폐허 · 동굴 · 지하묘지</h3>
+      <p style="font-size:27px; line-height:1.45; color:#cfd4dc">거점마다 목표와 보상이 하나씩<br>축복이 구간을 나누어 실패 비용을 줄임</p>
+    </div>
+    <div style="width:56px; display:flex; flex-direction:column; justify-content:center; align-items:center; background:#4a515e">
+      <x-shape kind="arrow-right" style="width:40px; height:24px; background:#d6b866"></x-shape>
+    </div>
+    <div style="flex:1; display:flex; flex-direction:column; gap:12px; padding:30px 32px; background:#5a6271; border-radius:0 10px 10px 0">
+      <p style="font-size:26px; color:#f0dca4">조우 · 마이크로</p>
+      <h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:38px; font-weight:700; color:#f2efe6">적 한 무리 · 정예 한 체</h3>
+      <p style="font-size:27px; line-height:1.45; color:#e6e9ee">인식거리, 공격 예비동작, 회피 시점을 익히는 최소 단위</p>
+    </div>
+  </div>
+  <div style="display:flex; flex-direction:row; gap:16px; align-items:center; padding:20px 28px; background:#ffffff; border:2px solid #dcd7cb; border-radius:10px">
+    <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:27px; color:#7d5f17; white-space:nowrap">예시</p>
+    <p style="font-size:27px; line-height:1.4; color:#3d434d">림그레이브 → 관문 앞 폐허(거점) → 모닥불을 둘러싼 고드릭 병사 한 무리(조우)</p>
+  </div>
+  <div style="display:flex; flex-direction:row; gap:24px">
+    <div style="flex:1; display:flex; flex-direction:column; gap:8px; padding:22px 28px; background:#e8eef7; border-radius:10px">
+      <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:28px; color:#2e5fa3">장점</p>
+      <p style="font-size:27px; line-height:1.45; color:#1b1f26">세계는 넓어도 한 번에 판단할 범위는 작습니다.<br>처음 오픈월드를 접한 플레이어도 부담이 적습니다.</p>
+    </div>
+    <div style="flex:1; display:flex; flex-direction:column; gap:8px; padding:22px 28px; background:#f6e4df; border-radius:10px">
+      <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:28px; color:#a03b30">단점</p>
+      <p style="font-size:27px; line-height:1.45; color:#1b1f26">단위와 단위 사이, 즉 다음에 어느 거점으로 갈지는 플레이어가 정해야 합니다.</p>
+    </div>
+  </div>
+  <p style="position:absolute; left:112px; bottom:52px; width:1300px; font-size:24px; color:#6b7380">엘든 링 림그레이브 레벨디자인 기획서 · 1부 기본 구조</p>
+  <p style="position:absolute; right:112px; bottom:52px; width:220px; font-size:24px; text-align:right; font-variant-numeric:tabular-nums; color:#6b7380">04 / 20</p>
+  
 </section>
 </div>
-
+<div class="slide-note"><div class="n-head"><span class="num">04</span><div class="n-lead"><p>림그레이브는 지역, 거점, 조우의 세 단위로 나뉩니다.</p></div></div><details class="n-more"><summary>자세히 보기</summary><div class="n-aside"><p>지역 단위에서는 목표가 멀기트 하나뿐이고, 거점 단위에서는 거점마다 목표와 보상이 하나씩 있으며, 조우 단위에서는 적 한 무리의 인식거리와 공격을 익힙니다. 단위 사이의 연결, 즉 다음 거점의 선택은 플레이어에게 맡겨져 있습니다. 이 부분이 2부의 문제와 이어집니다.</p></div></details></div>
 </div>
 <div class="slide-item" id="s5">
 <div class="slide-frame">
-<section style="background:#F7F4EC">
-  <img src="../assets/img/limgrave_05.webp" alt="플레이어에게 정보를 제공하는 시야" style="position:absolute; left:0; top:0; width:1920px; height:1080px; object-fit:cover">
+<section id="a04-map" data-transition="fade" style="display:flex; flex-direction:column; gap:24px; padding:64px 112px 130px; background:#f6f5f1; font-family:Paperlogy, Arial, sans-serif; color:#1b1f26">
+  <h2 style="padding:8px 0 0; font-family:'Paperlogy Bold', Arial, sans-serif; font-size:60px; font-weight:700; line-height:1.18; color:#1b1f26">채우는 지도</h2>
+  <p style="padding:0 0 0 26px; font-size:34px; line-height:1.4; color:#1b1f26; border-left:8px solid #8a6a1c">지도는 비어 있는 상태로 시작하고, 플레이어가 발견한 것만 기록합니다.</p>
+  <div style="display:flex; flex-direction:row; gap:36px; align-items:start">
+    <div style="width:880px; display:flex; flex-direction:column; gap:18px">
+      <div style="display:flex; flex-direction:row; gap:16px">
+        <img src="../assets/img/limgrave_map_found.webp" alt="지도 조각 비석에서 림그레이브 서부 지도를 얻는 장면" style="width:432px; height:290px; object-fit:cover; border-radius:8px">
+        <img src="../assets/img/limgrave_map_fog.webp" alt="지도 조각을 얻지 않은 지역이 회색으로 비어 있는 지도" style="width:432px; height:290px; object-fit:cover; border-radius:8px">
+      </div>
+      <div style="display:flex; flex-direction:row; gap:0px; align-items:stretch">
+        <div style="flex:1; display:flex; flex-direction:column; gap:4px; padding:18px 20px; background:#1b1f26; border-radius:8px 0 0 8px">
+          <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:28px; color:#f2efe6">발견</p>
+          <p style="font-size:24px; line-height:1.35; color:#cfd4dc">지도 조각 · 축복 · 입구</p>
+        </div>
+        <div style="flex:1; display:flex; flex-direction:column; gap:4px; padding:18px 20px; background:#3a414d">
+          <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:28px; color:#f2efe6">판단</p>
+          <p style="font-size:24px; line-height:1.35; color:#cfd4dc">지금 갈지, 나중에 올지</p>
+        </div>
+        <div style="flex:1; display:flex; flex-direction:column; gap:4px; padding:18px 20px; background:#5a6271; border-radius:0 8px 8px 0">
+          <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:28px; color:#f2efe6">표시</p>
+          <p style="font-size:24px; line-height:1.35; color:#e6e9ee">직접 마커를 찍고 이동</p>
+        </div>
+      </div>
+      <p style="font-size:27px; line-height:1.45; color:#4a515c">지도 조각은 지형과 큰 지명만 보여 줍니다.<br>축복과 던전 입구는 직접 찾아야 지도에 남습니다.</p>
+    </div>
+    <div style="flex:1; display:flex; flex-direction:column; gap:16px">
+      <div style="display:flex; flex-direction:column; gap:8px; padding:22px 28px; background:#e8eef7; border-radius:10px">
+        <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:28px; color:#2e5fa3">장점</p>
+        <p style="font-size:27px; line-height:1.5; color:#1b1f26">지도가 곧 탐험 기록입니다.<br>마커를 지워 나가는 지도와 달리, 다음 목표를 플레이어가 정합니다.</p>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:8px; padding:22px 28px; background:#f6e4df; border-radius:10px">
+        <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:28px; color:#a03b30">단점</p>
+        <p style="font-size:27px; line-height:1.5; color:#1b1f26">방문 전에는 마커가 없어 처음 지역에서 막막합니다.<br>진행도를 확인할 방법이 없습니다.<br>놓친 장소는 대부분 2회차에서야 알게 됩니다.</p>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:8px; padding:22px 28px; background:#ffffff; border:2px solid #dcd7cb; border-radius:10px">
+        <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:28px; color:#7d5f17">출시 후 보완</p>
+        <p style="font-size:27px; line-height:1.5; color:#1b1f26">1.03 패치(2022.3)에서 만난 NPC의 아이콘과 이름을 지도에 기록하는 기능이 추가되었습니다.</p>
+      </div>
+    </div>
+  </div>
+  <p style="position:absolute; left:112px; bottom:52px; width:1300px; font-size:24px; color:#6b7380">엘든 링 림그레이브 레벨디자인 기획서 · 1부 기본 구조</p>
+  <p style="position:absolute; right:112px; bottom:52px; width:220px; font-size:24px; text-align:right; font-variant-numeric:tabular-nums; color:#6b7380">05 / 20</p>
+  
 </section>
 </div>
-
+<div class="slide-note"><div class="n-head"><span class="num">05</span><div class="n-lead"><p>엘든 링의 지도는 채우는 지도입니다.</p></div></div><details class="n-more"><summary>자세히 보기</summary><div class="n-aside"><p>지도 조각은 지형만 보여 주고, 축복과 던전 입구는 직접 발견해야 표시됩니다. 장점은 탐험의 기록이 남고 다음 목표를 플레이어가 정한다는 점입니다. 단점은 방문 전에는 아무 마커도 없어 막막하고, 진행도를 확인할 수 없어 무엇을 놓쳤는지 알 수 없다는 점입니다. 출시 후 1.03 패치에서 만난 NPC를 지도에 기록하는 기능이 추가된 것은 개발사도 NPC 누락 문제를 보완한 사례입니다. 출처: 1.03 패치 노트(Dexerto, 2022.3.17).</p></div></details></div>
 </div>
 <div class="slide-item" id="s6">
 <div class="slide-frame">
-<section style="background:#F7F4EC">
-  <img src="../assets/img/limgrave_06.webp" alt="엘든 링 전투의 핵심: 인식거리와 사정거리" style="position:absolute; left:0; top:0; width:1920px; height:1080px; object-fit:cover">
+<section id="a05-density" data-transition="fade" style="display:flex; flex-direction:column; gap:24px; padding:64px 112px 130px; background:#f6f5f1">
+  <h2 style="padding:8px 0 0; font-family:'Paperlogy Bold', Arial, sans-serif; font-size:60px; font-weight:700; line-height:1.18; color:#1b1f26">밀도의 순환</h2>
+  <p style="padding:0 0 0 26px; font-family:Paperlogy, Arial, sans-serif; font-size:34px; line-height:1.4; color:#1b1f26; border-left:8px solid #8a6a1c">저밀도 필드와 고밀도 던전을 오가는 동안 플레이어가 성장합니다.</p>
+  <div style="display:flex; flex-direction:row; gap:36px; align-items:start">
+    <div style="position:relative; width:1060px; height:560px; display:flex; flex-direction:column">
+      <svg xmlns="http://www.w3.org/2000/svg" aria-label="플레이 시간에 따른 긴장도와 성장 그래프. 필드와 던전이 번갈아 나오며 긴장도는 던전에서 크게 오르고 필드에서는 조금만 내려간다. 성장은 던전을 마치고 필드로 나올 때, 그리고 멀기트를 넘어 스톰빌 성에 들어설 때 계단식으로 오른다" viewBox="0 0 1060 560" style="position:absolute; top:0; left:0; width:1060px; height:560px">
+        <rect x="0" y="40" width="1060" height="440" fill="#ffffff" stroke="#dcd7cb" stroke-width="2" rx="8"/>
+        <rect x="2" y="42" width="178" height="436" fill="#eaf0e2"/>
+        <rect x="180" y="42" width="130" height="436" fill="#efe3cf"/>
+        <rect x="310" y="42" width="170" height="436" fill="#eaf0e2"/>
+        <rect x="480" y="42" width="130" height="436" fill="#efe3cf"/>
+        <rect x="610" y="42" width="160" height="436" fill="#eaf0e2"/>
+        <rect x="770" y="42" width="120" height="436" fill="#e9d3cf"/>
+        <rect x="890" y="42" width="168" height="436" fill="#e2dccd"/>
+        <line x1="2" y1="470" x2="1058" y2="470" stroke="#6b7380" stroke-width="2"/>
+        <line x1="2" y1="470" x2="2" y2="42" stroke="#6b7380" stroke-width="2"/>
+        <path d="M2 300 L160 300 L200 185 L290 170 L330 245 L460 245 L500 160 L590 145 L630 230 L750 230 L790 105 L880 95 L910 150 L1056 140" fill="none" stroke="#b5652a" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+        <path d="M2 440 L310 440 L310 370 L610 370 L610 300 L890 300 L890 220 L1056 220" fill="none" stroke="#2e5fa3" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+        <circle cx="310" cy="370" r="9" fill="#2e5fa3"/>
+        <circle cx="610" cy="300" r="9" fill="#2e5fa3"/>
+        <circle cx="890" cy="220" r="9" fill="#2e5fa3"/>
+      </svg>
+      <p style="position:absolute; top:0; left:12px; width:160px; font-family:Paperlogy, Arial, sans-serif; font-size:24px; color:#4d6b3a">필드</p>
+      <p style="position:absolute; top:0; left:184px; width:124px; font-family:Paperlogy, Arial, sans-serif; font-size:24px; color:#8a5a1e">던전</p>
+      <p style="position:absolute; top:0; left:314px; width:160px; font-family:Paperlogy, Arial, sans-serif; font-size:24px; color:#4d6b3a">필드</p>
+      <p style="position:absolute; top:0; left:484px; width:124px; font-family:Paperlogy, Arial, sans-serif; font-size:24px; color:#8a5a1e">던전</p>
+      <p style="position:absolute; top:0; left:614px; width:150px; font-family:Paperlogy, Arial, sans-serif; font-size:24px; color:#4d6b3a">필드</p>
+      <p style="position:absolute; top:0; left:774px; width:114px; font-family:Paperlogy, Arial, sans-serif; font-size:24px; color:#a03b30">멀기트</p>
+      <p style="position:absolute; top:0; left:894px; width:164px; font-family:Paperlogy, Arial, sans-serif; font-size:24px; color:#5e5747">스톰빌 성</p>
+      <p style="position:absolute; top:490px; left:640px; width:416px; font-family:Paperlogy, Arial, sans-serif; font-size:24px; text-align:right; color:#4a515c">플레이 시간 →</p>
+      <div style="position:absolute; top:500px; left:0; width:620px; height:48px; display:flex; flex-direction:row; gap:28px; align-items:center">
+        <div style="width:36px; height:6px; display:flex; flex-direction:column; background:#b5652a">
+        </div>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; color:#1b1f26">긴장도</p>
+        <div style="width:36px; height:6px; display:flex; flex-direction:column; background:#2e5fa3">
+        </div>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; color:#1b1f26">성장(던전을 마치고 필드로 나올 때)</p>
+      </div>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:16px; flex:1">
+      <div style="display:flex; flex-direction:column; gap:6px; padding:18px 24px; background:#ffffff; border-left:8px solid #4d6b3a; border-radius:6px">
+        <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:27px; color:#1b1f26">필드</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:25px; line-height:1.4; color:#4a515c">적 사이 간격이 넓어 싸울지 피할지 고릅니다.<br>탐색과 휴식 구간입니다.</p>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:6px; padding:18px 24px; background:#ffffff; border-left:8px solid #8a5a1e; border-radius:6px">
+        <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:27px; color:#1b1f26">던전</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:25px; line-height:1.4; color:#4a515c">좁은 통로에 적이 몰려 있고, 끝에 보스와 성장 보상이 있습니다.</p>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:6px; padding:18px 24px; background:#e8eef7; border-radius:8px">
+        <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:27px; color:#2e5fa3">장점</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:25px; line-height:1.4; color:#1b1f26">긴장과 이완이 반복되어 피로가 덜 쌓입니다.</p>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:6px; padding:18px 24px; background:#f6e4df; border-radius:8px">
+        <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:27px; color:#a03b30">단점</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:25px; line-height:1.4; color:#1b1f26">처음 가는 곳은 필드도 위험 요소라, 이완 구간이 크게 느껴지지 않을 수 있습니다.</p>
+      </div>
+    </div>
+  </div>
+  <p style="position:absolute; bottom:52px; left:112px; width:1300px; font-family:Paperlogy, Arial, sans-serif; font-size:24px; color:#6b7380">엘든 링 림그레이브 레벨디자인 기획서 · 1부 기본 구조</p>
+  <p style="position:absolute; right:112px; bottom:52px; width:220px; font-family:Paperlogy, Arial, sans-serif; font-size:24px; text-align:right; font-variant-numeric:tabular-nums; color:#6b7380">06 / 20</p>
+  
 </section>
 </div>
-
+<div class="slide-note"><div class="n-head"><span class="num">06</span><div class="n-lead"><p>그래프는 개념도이며 수치는 실측값이 아닙니다.</p></div></div><details class="n-more"><summary>자세히 보기</summary><div class="n-aside"><p>필드(저밀도)와 던전(고밀도)이 번갈아 나오고, 긴장도는 던전에서 크게 오르고 필드에서는 조금만 내려갑니다. 처음 가는 필드도 위험 요소이기 때문입니다. 성장은 던전 끝의 보스와 보상을 얻고 필드로 나올 때 계단식으로 오르며, 멀기트를 넘어 스톰빌 성에 들어설 때 한 번 더 오릅니다. 즉 플레이어는 고밀도와 저밀도를 오가는 동안 성장합니다. 단점은 처음 방문하는 지역은 필드라도 위험 요소이므로, 밀도의 순환이 주는 이완이 기대만큼 크지 않을 수 있다는 점입니다.</p></div></details></div>
 </div>
 <div class="slide-item" id="s7">
 <div class="slide-frame">
-<section style="background:#F7F4EC">
-  <img src="../assets/img/limgrave_07.webp" alt="축복의 인도와 의도된 불합리함" style="position:absolute; left:0; top:0; width:1920px; height:1080px; object-fit:cover">
+<section id="a06-sight" data-transition="fade" style="display:flex; flex-direction:column; gap:24px; padding:64px 112px 130px; background:#f6f5f1; font-family:Paperlogy, Arial, sans-serif; color:#1b1f26">
+  <h2 style="padding:8px 0 0; font-family:'Paperlogy Bold', Arial, sans-serif; font-size:60px; font-weight:700; line-height:1.18; color:#1b1f26">정보를 주는 시야</h2>
+  <p style="padding:0 0 0 26px; font-size:34px; line-height:1.4; color:#1b1f26; border-left:8px solid #8a6a1c">지형과 빛으로 갈 곳과 위험을 글 없이 먼저 보여 줍니다.</p>
+  <div style="display:flex; flex-direction:row; gap:24px">
+    <div style="flex:1; display:flex; flex-direction:column; gap:12px">
+      <img src="../assets/img/limgrave_overlook.webp" alt="언덕 위에서 멀리 황금 나무와 폐허가 보이는 열린 지형" style="width:538px; height:290px; object-fit:cover; border-radius:8px">
+      <h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:30px; font-weight:700; color:#1b1f26">열린 지형</h3>
+      <p style="font-size:26px; line-height:1.5; color:#4a515c">랜드마크와 적 무리를 멀리서 먼저 보여 줍니다.<br>접근 경로를 고를 시간을 줍니다.</p>
+    </div>
+    <div style="flex:1; display:flex; flex-direction:column; gap:12px">
+      <img src="../assets/img/limgrave_cave.webp" alt="좁고 어두운 동굴 통로" style="width:538px; height:290px; object-fit:cover; border-radius:8px">
+      <h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:30px; font-weight:700; color:#1b1f26">닫힌 지형</h3>
+      <p style="font-size:26px; line-height:1.5; color:#4a515c">동굴과 지하묘지는 시야를 끊어 긴장과 기습을 만듭니다.</p>
+    </div>
+    <div style="flex:1; display:flex; flex-direction:column; gap:12px">
+      <img src="../assets/img/limgrave_light.webp" alt="어둠 속에서 빛나는 황금빛 나무" style="width:538px; height:290px; object-fit:cover; border-radius:8px">
+      <h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:30px; font-weight:700; color:#1b1f26">빛</h3>
+      <p style="font-size:26px; line-height:1.5; color:#4a515c">축복, 아이템, 입구를 밝혀 시선을 끕니다.</p>
+      <p style="padding:10px 0 0; font-size:24px; line-height:1.45; color:#6b7380; border-top:1px solid #cfc9bb">※ 전투 중의 빛도 정보가 됩니다.<br>멀기트 2페이즈의 빛나는 무기, 원거리 마법사의 마법, 처치 후 드롭 아이템의 빛이 해당합니다.</p>
+    </div>
+  </div>
+  <div style="display:flex; flex-direction:row; gap:24px">
+    <div style="flex:1; display:flex; flex-direction:column; gap:8px; padding:20px 28px; background:#e8eef7; border-radius:10px">
+      <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:28px; color:#2e5fa3">장점</p>
+      <p style="font-size:26px; line-height:1.45; color:#1b1f26">텍스트 안내 없이 시선을 유도하므로 탐험의 몰입이 깨지지 않습니다.</p>
+    </div>
+    <div style="flex:1; display:flex; flex-direction:column; gap:8px; padding:20px 28px; background:#f6e4df; border-radius:10px">
+      <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:28px; color:#a03b30">단점</p>
+      <p style="font-size:26px; line-height:1.45; color:#1b1f26">밤에만 나타나는 적은 낮의 시야 정보로 미리 알 수 없습니다.<br>같은 길이 시간대에 따라 다른 위험이 됩니다.</p>
+    </div>
+  </div>
+  <p style="position:absolute; left:112px; bottom:52px; width:1300px; font-size:24px; color:#6b7380">엘든 링 림그레이브 레벨디자인 기획서 · 1부 기본 구조</p>
+  <p style="position:absolute; right:112px; bottom:52px; width:220px; font-size:24px; text-align:right; font-variant-numeric:tabular-nums; color:#6b7380">07 / 20</p>
+  
 </section>
 </div>
-
+<div class="slide-note"><div class="n-head"><span class="num">07</span><div class="n-lead"><p>시야는 레벨디자인의 기본 도구입니다.</p></div></div><details class="n-more"><summary>자세히 보기</summary><div class="n-aside"><p>열린 지형은 정보를 먼저 주고, 닫힌 지형은 정보를 끊어 긴장을 만들며, 빛은 시선을 끕니다. 전투 중의 빛(멀기트 2페이즈의 빛나는 무기, 원거리 마법사의 마법, 드롭 아이템의 빛)도 같은 역할을 합니다. 단점은 밤에만 나타나는 적처럼 시간대에 따라 바뀌는 위협은 시야 정보로 미리 알 수 없다는 점입니다.</p></div></details></div>
 </div>
 <div class="slide-item" id="s8">
 <div class="slide-frame">
-<section style="background:#F7F4EC">
-  <img src="../assets/img/limgrave_08.webp" alt="학습의 대가 — 첫 2시간을 버티지 못하면 떠난다" style="position:absolute; left:0; top:0; width:1920px; height:1080px; object-fit:cover">
+<section id="a07-range" data-transition="fade" style="display:flex; flex-direction:column; gap:24px; padding:64px 112px 130px; background:#f6f5f1; font-family:Paperlogy, Arial, sans-serif; color:#1b1f26">
+  <h2 style="padding:8px 0 0; font-family:'Paperlogy Bold', Arial, sans-serif; font-size:60px; font-weight:700; line-height:1.18; color:#1b1f26">인식거리를 가르치는 배치</h2>
+  <p style="padding:0 0 0 26px; font-size:34px; line-height:1.4; color:#1b1f26; border-left:8px solid #8a6a1c">트리가드를 피해 가는 길에서 관문 앞 경계병까지, 적의 인식거리를 순서대로 체득하게 합니다.</p>
+  <div style="display:flex; flex-direction:row; gap:24px">
+    <img src="../assets/img/limgrave_tree_sentinel.webp" alt="첫 평원에서 말을 탄 트리가드가 다가오는 장면" style="width:836px; height:350px; object-fit:cover; border-radius:8px">
+    <img src="../assets/img/limgrave_gatefront.webp" alt="관문 앞 폐허에서 고드릭 병사들이 모닥불 주변을 지키는 장면" style="width:836px; height:350px; object-fit:cover; border-radius:8px">
+  </div>
+  <div style="display:flex; flex-direction:row; gap:0px; align-items:stretch">
+    <div style="flex:1; display:flex; flex-direction:column; gap:4px; padding:18px 22px; background:#1b1f26; border-radius:8px 0 0 8px">
+      <p style="font-size:24px; color:#d6b866">1 · 첫 평원</p>
+      <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:27px; line-height:1.35; color:#f2efe6">순찰하는 트리가드 발견</p>
+    </div>
+    <div style="flex:1; display:flex; flex-direction:column; gap:4px; padding:18px 22px; background:#2f3540">
+      <p style="font-size:24px; color:#d6b866">2 · 우회</p>
+      <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:27px; line-height:1.35; color:#f2efe6">뒤로 돌거나 멀리 떨어져 지나감</p>
+    </div>
+    <div style="flex:1; display:flex; flex-direction:column; gap:4px; padding:18px 22px; background:#434a57">
+      <p style="font-size:24px; color:#f0dca4">3 · 관문 앞 폐허</p>
+      <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:27px; line-height:1.35; color:#f2efe6">경계 근무 중인 고드릭 병사</p>
+    </div>
+    <div style="flex:1; display:flex; flex-direction:column; gap:4px; padding:18px 22px; background:#5a6271; border-radius:0 8px 8px 0">
+      <p style="font-size:24px; color:#f0dca4">4 · 체득</p>
+      <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:27px; line-height:1.35; color:#f2efe6">어디까지 다가가면 들키는지 익힘</p>
+    </div>
+  </div>
+  <div style="display:flex; flex-direction:row; gap:24px">
+    <div style="flex:1; display:flex; flex-direction:column; gap:8px; padding:20px 28px; background:#e8eef7; border-radius:10px">
+      <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:28px; color:#2e5fa3">장점</p>
+      <p style="font-size:26px; line-height:1.45; color:#1b1f26">전투 전에 싸울지 피할지 고르는 법을 배웁니다. 피하는 것도 정답이 됩니다.</p>
+    </div>
+    <div style="flex:1; display:flex; flex-direction:column; gap:8px; padding:20px 28px; background:#f6e4df; border-radius:10px">
+      <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:28px; color:#a03b30">단점</p>
+      <p style="font-size:26px; line-height:1.45; color:#1b1f26">인식거리가 짧습니다.<br>초반에 얻는 탈것인 영마 토렌트로 적을 따돌릴 수 있습니다.<br>전투 없이 고레벨 지역을 지나가며 파밍할 수 있습니다.</p>
+    </div>
+  </div>
+  <p style="position:absolute; left:112px; bottom:52px; width:1300px; font-size:24px; color:#6b7380">엘든 링 림그레이브 레벨디자인 기획서 · 1부 기본 구조</p>
+  <p style="position:absolute; right:112px; bottom:52px; width:220px; font-size:24px; text-align:right; font-variant-numeric:tabular-nums; color:#6b7380">08 / 20</p>
+  
 </section>
 </div>
-
+<div class="slide-note"><div class="n-head"><span class="num">08</span><div class="n-lead"><p>플레이어가 처음 만나는 강적 트리가드는 이기라고 둔 적이 아니라 피해 가라고 둔 적입니다.</p></div></div><details class="n-more"><summary>자세히 보기</summary><div class="n-aside"><p>트리가드의 인식거리를 피해 뒤로 돌거나 멀리 떨어져 지나가면, 성벽 앞 관문 쪽 폐허에 고드릭 병사들이 모여 있습니다. 경계 근무를 서는 병사들을 통해 플레이어는 어디까지 다가가면 발견되는지를 체득합니다. 단점은 인식거리가 짧아, 초반에 멜리나에게서 받는 탈것인 영마 토렌트를 활용하면 전투 한 번 없이 도망 다니며 고레벨 지역을 파밍할 수 있다는 점입니다.</p></div></details></div>
 </div>
 <div class="slide-item" id="s9">
 <div class="slide-frame">
-<section style="background:#F7F4EC">
-  <img src="../assets/img/limgrave_09.webp" alt="정보만 늘리고, 자유는 지킨다" style="position:absolute; left:0; top:0; width:1920px; height:1080px; object-fit:cover">
+<section id="a08-summary" data-transition="fade" style="display:flex; flex-direction:column; gap:24px; padding:64px 112px 130px; background:#f6f5f1; font-family:Paperlogy, Arial, sans-serif; color:#1b1f26">
+  <h2 style="padding:8px 0 0; font-family:'Paperlogy Bold', Arial, sans-serif; font-size:60px; font-weight:700; line-height:1.18; color:#1b1f26">1부 정리 · 요소별 장단점</h2>
+  <p style="padding:0 0 0 26px; font-size:34px; line-height:1.4; color:#1b1f26; border-left:8px solid #8a6a1c">다섯 요소 모두 성장하는 방법은 가르치지만, 성장할 장소는 알려 주지 않습니다.</p>
+  <table style="width:1696px; font-family:Paperlogy, Arial, sans-serif; font-size:32px; color:#1b1f26">
+    <tr style="background:#1b1f26">
+      <th style="width:15%; color:#f2efe6; padding:14px 18px">요소</th>
+      <th style="width:23%; color:#f2efe6">설계 목표</th>
+      <th style="width:31%; color:#9fc0ee">장점</th>
+      <th style="width:31%; color:#f0b2a8">단점</th>
+    </tr>
+    <tr style="background:#ffffff">
+      <td>3단계 단위</td>
+      <td>한 번에 판단할 범위를 줄임</td>
+      <td>넓은 세계에서도 부담이 적음</td>
+      <td>다음 거점 선택은 플레이어 몫</td>
+    </tr>
+    <tr style="background:#f6f5f1">
+      <td>지도</td>
+      <td>발견을 기록</td>
+      <td>다음 목표를 플레이어가 정함</td>
+      <td>막막함, 진행도 확인 불가</td>
+    </tr>
+    <tr style="background:#ffffff">
+      <td>밀도</td>
+      <td>긴장과 이완, 성장 보상</td>
+      <td>피로가 쌓이지 않음</td>
+      <td>첫 방문 지역은 필드도 위험</td>
+    </tr>
+    <tr style="background:#f6f5f1">
+      <td>시야</td>
+      <td>글 없이 정보 제공</td>
+      <td>몰입을 깨지 않는 유도</td>
+      <td>밤에만 나오는 위협은 예측 불가</td>
+    </tr>
+    <tr style="background:#ffffff">
+      <td>인식거리</td>
+      <td>교전 여부를 고르게 함</td>
+      <td>피하는 것도 정답이 됨</td>
+      <td>짧아서 토렌트로 우회 파밍 가능</td>
+    </tr>
+  </table>
+  <div style="display:flex; flex-direction:row; gap:24px; align-items:center; padding:26px 32px; background:#1b1f26; border-radius:10px">
+    <p style="font-size:26px; color:#d6b866; white-space:nowrap">공통 한계</p>
+    <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:32px; line-height:1.45; color:#f2efe6">지금 어디로 가야 성장할 수 있는지는 어느 요소도 알려 주지 않습니다.</p>
+  </div>
+  <p style="position:absolute; left:112px; bottom:52px; width:1300px; font-size:24px; color:#6b7380">엘든 링 림그레이브 레벨디자인 기획서 · 1부 기본 구조</p>
+  <p style="position:absolute; right:112px; bottom:52px; width:220px; font-size:24px; text-align:right; font-variant-numeric:tabular-nums; color:#6b7380">09 / 20</p>
+  
 </section>
 </div>
-
+<div class="slide-note"><div class="n-head"><span class="num">09</span><div class="n-lead"><p>1부의 다섯 요소를 설계 목표, 장점, 단점으로 정리했습니다.</p></div></div><details class="n-more"><summary>자세히 보기</summary><div class="n-aside"><p>공통점은 모두 성장하는 방법(싸울지 피할지, 어디가 위험한지, 언제 쉬는지)은 가르치지만, 지금 어디로 가야 성장할 수 있는지는 알려 주지 않는다는 점입니다.</p></div></details></div>
 </div>
 <div class="slide-item" id="s10">
 <div class="slide-frame">
-<section style="background:#F7F4EC">
-  <img src="../assets/img/limgrave_10.webp" alt="림그레이브는 플레이어를 졸업시키는 튜토리얼이다" style="position:absolute; left:0; top:0; width:1920px; height:1080px; object-fit:cover">
+<section id="c1-end" data-transition="fade" style="display:flex; flex-direction:column; gap:40px; justify-content:center; padding:64px 112px 130px; background:#14181f">
+  <img src="../assets/img/limgrave_erdtree.webp" alt="" style="position:absolute; top:0; left:0; width:1920px; height:1080px; opacity:0.45">
+  <div style="position:absolute; top:0; left:0; width:1920px; height:1080px; display:flex; flex-direction:column; background:linear-gradient(90deg, #10141cf2 0%, #10141cd0 55%, #10141c66 100%)">
+  </div>
+  <div style="position:relative; display:flex; flex-direction:column; gap:40px">
+    <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:28px; letter-spacing:3px; color:#d6b866">1부를 마치며</p>
+    <h2 style="width:1400px; font-family:'Paperlogy Black', Arial, sans-serif; font-size:68px; font-weight:700; line-height:1.3; color:#f2efe6">림그레이브는 성장하는 방법을 가르칩니다.<br>다만, 어디서 성장할지는 가르치지 않습니다.</h2>
+    <p style="width:1407px; font-family:Paperlogy, Arial, sans-serif; font-size:32px; line-height:1.55; color:#cfd4dc">림그레이브는 지도, 밀도, 시야, 인식거리를 통해 플레이어에게 성장 문법을 학습시킵니다.&nbsp;<br>하지만 역설적이게도, 플레이어를 이끄는 축복의 인도는 성장할 곳이 아닌 가장 어려운 관문을 가리킵니다.</p>
+  </div>
+  <p style="position:absolute; bottom:52px; left:112px; width:1300px; font-family:Paperlogy, Arial, sans-serif; font-size:24px; color:#9aa2ae">엘든 링 림그레이브 레벨디자인 기획서 · 1부 기본 구조</p>
+  <p style="position:absolute; right:112px; bottom:52px; width:220px; font-family:Paperlogy, Arial, sans-serif; font-size:24px; text-align:right; font-variant-numeric:tabular-nums; color:#9aa2ae">10 / 20</p>
+  
 </section>
 </div>
-
+<div class="slide-note"><div class="n-head"><span class="num">10</span><div class="n-lead"><p>1부의 결론입니다.</p></div></div><details class="n-more"><summary>자세히 보기</summary><div class="n-aside"><p>기본 요소는 성장하는 방법을 가르치지만 성장할 장소는 알려 주지 않고, 축복의 인도는 오히려 가장 어려운 관문을 가리킵니다. 2부는 이 지점이 플레이어를 어떻게 선별하는지, 그리고 어떻게 개선할 수 있는지를 다룹니다.</p></div></details></div>
+</div>
+<div class="sec-head" id="part3"><span class="sec-k">03</span><h2>2부 축복의 인도와 초반 이탈</h2></div>
+<div class="slide-item" id="s11">
+<div class="slide-frame">
+<section id="c2-cover" data-transition="fade" style="display:flex; flex-direction:column; gap:16px; padding:64px 112px 130px; background:#14181f; font-family:Paperlogy, Arial, sans-serif; color:#f2efe6">
+  <img src="../assets/img/limgrave_guide_beam.webp" alt="축복의 빛줄기가 스톰빌 성 쪽을 가리키는 장면" style="position:absolute; top:0; left:0; width:1920px; height:1080px; object-fit:cover; opacity:0.72">
+  <div style="position:absolute; top:0; left:0; width:1920px; height:1080px; display:flex; flex-direction:column; background:linear-gradient(90deg, #10141cf5 0%, #10141cdc 46%, #10141c33 100%)">
+  </div>
+  <div style="position:relative; height:886px; display:flex; flex-direction:column; justify-content:center; gap:30px">
+    <p style="font-size:27px; letter-spacing:5px; color:#d6b866">엘든 링 림그레이브 레벨디자인 기획서</p>
+    <h1 style="font-family:'Paperlogy Black', Arial, sans-serif; font-size:84px; font-weight:700; line-height:1.2; color:#f2efe6">2부<br>학습시키며 선별한다</h1>
+    <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:36px; line-height:1.4; color:#e4dfd2">축복의 인도와 초반 이탈, 그리고 개선안</p>
+  </div>
+  <p style="position:absolute; left:112px; bottom:52px; width:1300px; font-size:25px; color:#9aa2ae">장대규 · jdk47888@naver.com</p>
+  <p style="position:absolute; right:112px; bottom:52px; width:220px; font-size:25px; text-align:right; font-variant-numeric:tabular-nums; color:#9aa2ae">11 / 20</p>
+  
+</section>
+</div>
+<div class="slide-note"><div class="n-head"><span class="num">11</span><div class="n-lead"><p>2부 표지입니다.</p></div></div><details class="n-more"><summary>자세히 보기</summary><div class="n-aside"><p>배경은 축복의 빛줄기가 스톰빌 성 쪽을 가리키는 장면입니다. 2부는 축복의 인도가 만드는 의도된 불합리함, 엘든 링만의 역류 성장, 그로 인한 초반 이탈과 개선안을 다룹니다.</p></div></details></div>
+</div>
+<div class="slide-item" id="s12">
+<div class="slide-frame">
+<section id="b01-guide" data-transition="fade" style="display:flex; flex-direction:column; gap:24px; padding:64px 112px 130px; background:#f6f5f1; font-family:Paperlogy, Arial, sans-serif; color:#1b1f26">
+  <h2 style="padding:8px 0 0; font-family:'Paperlogy Bold', Arial, sans-serif; font-size:60px; font-weight:700; line-height:1.18; color:#1b1f26">축복의 인도가 가리키는 곳</h2>
+  <p style="padding:0 0 0 26px; font-size:34px; line-height:1.4; color:#1b1f26; border-left:8px solid #8a6a1c">축복의 인도는 성장할 장소가 아니라 가장 어려운 길을 가리킵니다.</p>
+  <div style="display:flex; flex-direction:row; gap:24px">
+    <div style="flex:1; display:flex; flex-direction:column; gap:10px">
+      <img src="../assets/img/limgrave_guide_npc.webp" alt="NPC가 축복의 인도가 가리키는 곳은 절벽 성 스톰빌이라고 말하는 장면" style="width:836px; height:410px; object-fit:cover; border-radius:8px">
+      <p style="font-size:25px; color:#4a515c">NPC 대사 “축복의 인도가 가리키는 곳, 절벽 성 스톰빌로”</p>
+    </div>
+    <div style="flex:1; display:flex; flex-direction:column; gap:10px">
+      <img src="../assets/img/limgrave_margit.webp" alt="스톰빌 성 앞에서 흉조 멀기트가 등장하는 장면" style="width:836px; height:410px; object-fit:cover; border-radius:8px">
+      <p style="font-size:25px; color:#4a515c">인도의 끝에서 만나는 첫 관문 보스, 흉조 멀기트</p>
+    </div>
+  </div>
+  <div style="display:flex; flex-direction:row; gap:24px; align-items:stretch">
+    <div style="flex:1; display:flex; flex-direction:column; gap:10px; padding:24px 30px; background:#fbf3df; border-left:8px solid #8a6a1c; border-radius:6px">
+      <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:30px; color:#1b1f26">인도를 따르는 길</p>
+      <p style="font-size:27px; line-height:1.45; color:#3d434d">관문 앞 → 흉조 멀기트 → 스톰빌 성. 난이도가 높은 적이 모여 있는 경로입니다.</p>
+    </div>
+    <div style="flex:1; display:flex; flex-direction:column; gap:10px; padding:24px 30px; background:#e8eef7; border-left:8px solid #2e5fa3; border-radius:6px">
+      <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:30px; color:#1b1f26">인도 밖의 길</p>
+      <p style="font-size:27px; line-height:1.45; color:#3d434d">고지대를 뺀 동쪽과 남쪽 저지대, 그리고 흐느낌의 반도. 탐험할 곳이 많고, 비교적 쉬운 보스와 던전이 있습니다.</p>
+    </div>
+  </div>
+  <p style="position:absolute; left:112px; bottom:52px; width:1300px; font-size:24px; color:#6b7380">엘든 링 림그레이브 레벨디자인 기획서 · 2부 선별</p>
+  <p style="position:absolute; right:112px; bottom:52px; width:220px; font-size:24px; text-align:right; font-variant-numeric:tabular-nums; color:#6b7380">12 / 20</p>
+  
+</section>
+</div>
+<div class="slide-note"><div class="n-head"><span class="num">12</span><div class="n-lead"><p>축복의 인도는 대부분의 게임에서 플레이어를 안전하게 다음 목표로 데려가는 장치입니다.</p></div></div><details class="n-more"><summary>자세히 보기</summary><div class="n-aside"><p>림그레이브의 인도는 반대로, 플레이어를 난이도가 높은 적이 모인 고지대와 첫 관문 보스 멀기트, 그 너머 스톰빌 성으로 곧장 이끕니다. 반면 인도가 가리키지 않는 저지대와 남쪽에는 탐험할 곳이 많고 비교적 쉬운 보스와 던전이 있습니다. 인도를 그대로 따르면 막히도록 둔, 의도된 불합리함입니다.</p></div></details></div>
+</div>
+<div class="slide-item" id="s13">
+<div class="slide-frame">
+<section id="b02-upstream" data-transition="fade" style="display:flex; flex-direction:column; gap:24px; padding:64px 112px 130px; background:#f6f5f1">
+  <h2 style="padding:8px 0 0; font-family:'Paperlogy Bold', Arial, sans-serif; font-size:60px; font-weight:700; line-height:1.18; color:#1b1f26">역류 성장 · 엘든 링만의 플레이 문법</h2>
+  <p style="padding:0 0 0 26px; font-family:Paperlogy, Arial, sans-serif; font-size:34px; line-height:1.4; color:#1b1f26; border-left:8px solid #8a6a1c">인도를 따라 나아가려면, 역설적으로 인도를 거슬러 성장해야 합니다.</p>
+  <div style="position:relative; width:1696px; height:470px; display:flex; flex-direction:column; align-self:stretch">
+    <div style="position:absolute; top:165px; left:0; width:280px; height:140px; display:flex; flex-direction:column; justify-content:center; padding:0 22px; background:#1b1f26; border-radius:8px">
+      <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:29px; line-height:1.35; color:#f2efe6">축복의 인도를 따라 북쪽으로</p>
+    </div>
+    <div style="position:absolute; top:165px; left:330px; width:280px; height:140px; display:flex; flex-direction:column; justify-content:center; padding:0 22px; background:#ffffff; border:3px solid #a03b30; border-radius:8px">
+      <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:29px; line-height:1.35; color:#1b1f26">흉조 멀기트에게 패배</p>
+    </div>
+    <div style="position:absolute; top:10px; left:700px; width:280px; height:140px; display:flex; flex-direction:column; justify-content:center; padding:0 22px; background:#ffffff; border:2px solid #b9b3a5; border-radius:8px">
+      <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; color:#6b7380">인도만 따르는 플레이어</p>
+      <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:29px; line-height:1.35; color:#1b1f26">같은 길로 재도전</p>
+    </div>
+    <div style="position:absolute; top:10px; left:1050px; width:646px; height:140px; display:flex; flex-direction:column; justify-content:center; padding:0 26px; background:#f6e4df; border:2px solid #a03b30; border-radius:8px">
+      <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:29px; line-height:1.35; color:#a03b30">반복 패배 → 실력 문제로 받아들이고 이탈</p>
+    </div>
+    <div style="position:absolute; top:320px; left:700px; width:280px; height:140px; display:flex; flex-direction:column; justify-content:center; padding:0 22px; background:#ffffff; border:2px solid #2e5fa3; border-radius:8px">
+      <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; color:#2e5fa3">엘든 링이 기대하는 길</p>
+      <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:29px; line-height:1.35; color:#1b1f26">인도 반대로,&nbsp;<br>저지대와 남쪽</p>
+    </div>
+    <div style="position:absolute; top:320px; left:1050px; width:280px; height:140px; display:flex; flex-direction:column; justify-content:center; padding:0 22px; background:#ffffff; border:2px solid #2e5fa3; border-radius:8px">
+      <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:29px; line-height:1.35; color:#1b1f26">던전과 쉬운 보스로 성장</p>
+    </div>
+    <div style="position:absolute; top:320px; left:1416px; width:280px; height:140px; display:flex; flex-direction:column; justify-content:center; padding:0 22px; background:#2e5fa3; border-radius:8px">
+      <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:29px; line-height:1.35; color:#f2efe6">재도전 → 스톰빌 성</p>
+    </div>
+    <x-connector x1="280" y1="235" x2="330" y2="235" style="color:#4a515c; border-width:3px"></x-connector>
+    <x-connector x1="610" y1="235" x2="655" y2="235" head="none" style="color:#4a515c; border-width:3px"></x-connector>
+    <x-connector x1="655" y1="235" x2="655" y2="80" head="none" style="color:#4a515c; border-width:3px"></x-connector>
+    <x-connector x1="655" y1="235" x2="655" y2="390" head="none" style="color:#2e5fa3; border-width:3px"></x-connector>
+    <x-connector x1="655" y1="80" x2="700" y2="80" style="color:#4a515c; border-width:3px"></x-connector>
+    <x-connector x1="655" y1="390" x2="700" y2="390" style="color:#2e5fa3; border-width:3px"></x-connector>
+    <x-connector x1="980" y1="80" x2="1050" y2="80" style="color:#a03b30; border-width:3px"></x-connector>
+    <x-connector x1="980" y1="390" x2="1050" y2="390" style="color:#2e5fa3; border-width:3px"></x-connector>
+    <x-connector x1="1330" y1="390" x2="1416" y2="390" style="color:#2e5fa3; border-width:3px"></x-connector>
+  </div>
+  <div style="display:flex; flex-direction:row; gap:24px">
+    <div style="display:flex; flex-direction:column; gap:8px; flex:1; padding:20px 28px; background:#e8eef7; border-radius:10px">
+      <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:28px; color:#2e5fa3">장점</p>
+      <p style="font-family:Paperlogy, Arial, sans-serif; font-size:27px; line-height:1.5; color:#1b1f26">자유 탐험이 곧 성장 수단이 됩니다.&nbsp;<br>스스로 우회로를 찾아 돌파했을 때의 성취가 큽니다.</p>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:8px; flex:1; padding:20px 28px; background:#f6e4df; border-radius:10px">
+      <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:28px; color:#a03b30">단점</p>
+      <p style="font-family:Paperlogy, Arial, sans-serif; font-size:27px; line-height:1.5; color:#1b1f26">거슬러 가야 한다는 사실 자체를 게임이 알려 주지 않습니다.&nbsp;<br>이 문법을 모르는 플레이어는 같은 벽에 반복해서 부딪힙니다.</p>
+    </div>
+  </div>
+  <p style="position:absolute; bottom:52px; left:112px; width:1300px; font-family:Paperlogy, Arial, sans-serif; font-size:24px; color:#6b7380">엘든 링 림그레이브 레벨디자인 기획서 · 2부 선별</p>
+  <p style="position:absolute; right:112px; bottom:52px; width:220px; font-family:Paperlogy, Arial, sans-serif; font-size:24px; text-align:right; font-variant-numeric:tabular-nums; color:#6b7380">13 / 20</p>
+  
+</section>
+</div>
+<div class="slide-note"><div class="n-head"><span class="num">13</span><div class="n-lead"><p>엘든 링에서 가장 크고 특이한 지점은 정석적인 흐름을 거스르는 게임플레이입니다.</p></div></div><details class="n-more"><summary>자세히 보기</summary><div class="n-aside"><p>축복의 인도를 반드시 따라가는 것이 중요한 것이 아니라, 그 인도를 따라서 나아갈 수 있도록 역설적으로 흐름을 거슬러 성장하는 것이 필요합니다. 일반적인 튜토리얼은 안내를 따르면 성장하고 관문을 통과합니다. 림그레이브는 안내를 따르면 관문에서 막히고, 안내 밖에서 성장해야 통과합니다. 이 문법을 스스로 깨닫는 플레이어는 남고, 깨닫지 못한 플레이어는 걸러집니다.</p></div></details></div>
+</div>
+<div class="slide-item" id="s14">
+<div class="slide-frame">
+<section id="b03-metrics" data-transition="fade" style="display:flex; flex-direction:column; gap:24px; padding:64px 112px 130px; background:#f6f5f1">
+  <h2 style="padding:8px 0 0; font-family:'Paperlogy Bold', Arial, sans-serif; font-size:60px; font-weight:700; line-height:1.18; color:#1b1f26">선별의 지표 · Steam 업적 달성률</h2>
+  <p style="padding:0 0 0 26px; font-family:Paperlogy, Arial, sans-serif; font-size:34px; line-height:1.4; color:#1b1f26; border-left:8px solid #8a6a1c">Steam 구매자 4명 중 1명은 원탁에 도착하지 못했습니다.</p>
+  <div style="display:flex; flex-direction:row; gap:48px; align-items:start">
+    <div style="width:1080px; display:flex; flex-direction:column; gap:44px; padding:40px 36px; background:#ffffff; border:2px solid #dcd7cb; border-radius:10px">
+      <div style="display:flex; flex-direction:row; gap:20px; align-items:center">
+        <p style="width:250px; font-family:Paperlogy, Arial, sans-serif; font-size:28px; color:#1b1f26">원탁 도착</p>
+        <div style="width:600px; height:48px; display:flex; flex-direction:row; background:#ece8de; border-radius:4px">
+          <div style="width:450px; height:48px; display:flex; flex-direction:column; background:#1b1f26; border-radius:4px 0 0 4px">
+          </div>
+        </div>
+        <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:32px; font-variant-numeric:tabular-nums; color:#1b1f26">75.0%</p>
+      </div>
+      <div style="display:flex; flex-direction:row; gap:20px; align-items:center">
+        <p style="width:250px; font-family:Paperlogy, Arial, sans-serif; font-size:28px; color:#1b1f26">멀기트 처치</p>
+        <div style="width:600px; height:48px; display:flex; flex-direction:row; background:#ece8de; border-radius:4px">
+          <div style="width:425px; height:48px; display:flex; flex-direction:column; background:#a03b30; border-radius:4px 0 0 4px">
+          </div>
+        </div>
+        <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:32px; font-variant-numeric:tabular-nums; color:#a03b30">70.9%</p>
+      </div>
+      <div style="display:flex; flex-direction:row; gap:20px; align-items:center">
+        <p style="width:250px; font-family:Paperlogy, Arial, sans-serif; font-size:28px; color:#1b1f26">고드릭 처치</p>
+        <div style="width:600px; height:48px; display:flex; flex-direction:row; background:#ece8de; border-radius:4px">
+          <div style="width:391px; height:48px; display:flex; flex-direction:column; background:#5a6271; border-radius:4px 0 0 4px">
+          </div>
+        </div>
+        <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:32px; font-variant-numeric:tabular-nums; color:#1b1f26">65.1%</p>
+      </div>
+      <div style="display:flex; flex-direction:row; gap:20px; align-items:center">
+        <p style="width:250px; font-family:Paperlogy, Arial, sans-serif; font-size:28px; color:#1b1f26">엔딩 도달</p>
+        <div style="width:600px; height:48px; display:flex; flex-direction:row; background:#ece8de; border-radius:4px">
+          <div style="width:143px; height:48px; display:flex; flex-direction:column; background:#8a929f; border-radius:4px 0 0 4px">
+          </div>
+        </div>
+        <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:32px; font-variant-numeric:tabular-nums; color:#1b1f26">23.9%</p>
+      </div>
+      <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; line-height:1.45; color:#6b7380">Steam 전체 업적 달성률(2026.10.22 확인). 구매 후 실행하지 않은 계정도 포함됩니다.<br>원탁은 대부분 멀기트를 넘거나 폭풍 언덕 절벽길을 지나 처음 도착하는 거점입니다.</p>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:20px; flex:1">
+      <div style="display:flex; flex-direction:column; gap:6px; padding:26px 30px; background:#1b1f26; border-radius:10px">
+        <p style="font-family:'Paperlogy Black', Arial, sans-serif; font-size:72px; line-height:1.1; color:#f0dca4">25.0%</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:27px; line-height:1.45; color:#cfd4dc">원탁 도착 전에 멈춘 비율<br>대부분 림그레이브 구간입니다.</p>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:6px; padding:24px 30px; background:#ffffff; border:2px solid #dcd7cb; border-radius:10px">
+        <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:30px; color:#1b1f26">3,000만 장</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:26px; line-height:1.45; color:#4a515c">전 플랫폼 누적 출하량(2025.4)<br>소울라이크 팬층을 넘어선 대중 작품입니다.</p>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:6px; padding:24px 30px; background:#fbf3df; border-left:8px solid #8a6a1c; border-radius:6px">
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:26px; line-height:1.45; color:#1b1f26">저도 첫 회차에는 림그레이브에서 낙오했습니다.</p>
+      </div>
+    </div>
+  </div>
+  <p style="position:absolute; bottom:52px; left:112px; width:1300px; font-family:Paperlogy, Arial, sans-serif; font-size:24px; color:#6b7380">엘든 링 림그레이브 레벨디자인 기획서 · 2부 선별</p>
+  <p style="position:absolute; right:112px; bottom:52px; width:220px; font-family:Paperlogy, Arial, sans-serif; font-size:24px; text-align:right; font-variant-numeric:tabular-nums; color:#6b7380">14 / 20</p>
+  
+</section>
+</div>
+<div class="slide-note"><div class="n-head"><span class="num">14</span><div class="n-lead"><p>Steam 전체 업적 달성률 기준입니다(2026년 10월 22일 확인).</p></div></div><details class="n-more"><summary>자세히 보기</summary><div class="n-aside"><p>가장 많이 달성된 업적이 원탁 도착(75.0%)이고, 멀기트 처치 70.9%, 고드릭 처치 65.1%, 엔딩(엘든 로드) 23.9%입니다. 구매 후 실행하지 않은 계정도 포함되므로 실제 이탈률보다 높게 잡힐 수 있지만, 가장 큰 감소가 림그레이브 구간에서 일어난다는 점은 분명합니다. 판매량은 2025년 4월 기준 전 플랫폼 3,000만 장 출하입니다(Game Informer). 출처: Steam Global Achievement Stats(app 1245620).</p></div></details></div>
+</div>
+<div class="slide-item" id="s15">
+<div class="slide-frame">
+<section id="b04-response" data-transition="fade" style="display:flex; flex-direction:column; gap:24px; padding:64px 112px 130px; background:#f6f5f1; font-family:Paperlogy, Arial, sans-serif; color:#1b1f26">
+  <h2 style="padding:8px 0 0; font-family:'Paperlogy Bold', Arial, sans-serif; font-size:60px; font-weight:700; line-height:1.18; color:#1b1f26">개발사의 대응과 남은 공백</h2>
+  <p style="padding:0 0 0 26px; font-size:34px; line-height:1.4; color:#1b1f26; border-left:8px solid #8a6a1c">난이도와 보상은 조정했지만, 어디서 성장해야 하는지는 여전히 알려 주지 않습니다.</p>
+  <table style="width:1696px; font-family:Paperlogy, Arial, sans-serif; font-size:26px; color:#1b1f26">
+    <tr style="background:#5a6271">
+      <th style="width:18%; color:#f2efe6; padding:12px 18px">시점</th>
+      <th style="width:21%; color:#f2efe6">조치</th>
+      <th style="width:12%; color:#f2efe6">바꾼 것</th>
+      <th style="width:49%; color:#ffd2c9">남은 한계</th>
+    </tr>
+    <tr style="background:#ffffff">
+      <td>출시 전</td>
+      <td>멀기트 난이도 하향</td>
+      <td>난이도</td>
+      <td>왜 막혔는지, 어디서 준비할지는 알려 주지 않습니다.</td>
+    </tr>
+    <tr style="background:#f6f5f1">
+      <td>2022.3 · 1.03 패치</td>
+      <td>만난 NPC 지도 기록</td>
+      <td>지도 정보</td>
+      <td>이미 만난 NPC만 기록됩니다.<br>가 보지 않은 성장 장소는 그대로 비어 있습니다.</td>
+    </tr>
+    <tr style="background:#ffffff">
+      <td>2022.3 · 1.03 패치</td>
+      <td>단조석 드롭률 상향</td>
+      <td>성장 속도</td>
+      <td>성장할 장소를 찾는 문제는 그대로입니다.</td>
+    </tr>
+  </table>
+  <div style="display:flex; flex-direction:column; gap:22px; padding:32px 36px; background:#1b1f26; border:3px solid #d6b866; border-radius:12px; box-shadow:0 12px 32px rgba(20,24,31,0.28)">
+    <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:28px; letter-spacing:2px; color:#d6b866">2부의 핵심</p>
+    <p style="font-family:'Paperlogy Black', Arial, sans-serif; font-size:42px; line-height:1.4; color:#f2efe6">초반 난이도 곡선에는 <span style="color:#f0c75e">공백</span>이 있고, 개발사의 조치로도 메워지지 않았습니다.</p>
+    <div style="display:flex; flex-direction:row; gap:0px; align-items:stretch">
+      <div style="flex:1; display:flex; flex-direction:column; gap:6px; padding:20px 24px; background:#3a2a2a; border-radius:8px 0 0 8px">
+        <p style="font-size:24px; color:#f0b2a8">공백</p>
+        <p style="font-size:27px; line-height:1.4; color:#f2efe6">멀기트 앞에서 막힌 플레이어는<br>어디서 성장할지 알 수 없음</p>
+      </div>
+      <div style="width:52px; display:flex; flex-direction:column; justify-content:center; align-items:center; background:#2b313b">
+        <x-shape kind="arrow-right" style="width:36px; height:22px; background:#d6b866"></x-shape>
+      </div>
+      <div style="flex:1; display:flex; flex-direction:column; gap:6px; padding:20px 24px; background:#2b313b">
+        <p style="font-size:24px; color:#d6b866">개발사의 조치</p>
+        <p style="font-size:27px; line-height:1.4; color:#f2efe6">난이도 · 지도 · 성장 속도만 조정<br>공백은 그대로 남음</p>
+      </div>
+      <div style="width:52px; display:flex; flex-direction:column; justify-content:center; align-items:center; background:#2b313b">
+        <x-shape kind="arrow-right" style="width:36px; height:22px; background:#d6b866"></x-shape>
+      </div>
+      <div style="flex:1; display:flex; flex-direction:column; gap:6px; padding:20px 24px; background:#2e5fa3; border-radius:0 8px 8px 0">
+        <p style="font-size:24px; color:#dfe9f7">이 기획서의 개선안</p>
+        <p style="font-size:27px; line-height:1.4; color:#ffffff">성장할 곳을 알려 주는 정보를 더함<br>17~19쪽</p>
+      </div>
+    </div>
+  </div>
+  <p style="position:absolute; left:112px; bottom:52px; width:1300px; font-size:24px; color:#6b7380">엘든 링 림그레이브 레벨디자인 기획서 · 2부 선별</p>
+  <p style="position:absolute; right:112px; bottom:52px; width:220px; font-size:24px; text-align:right; font-variant-numeric:tabular-nums; color:#6b7380">15 / 20</p>
+  
+</section>
+</div>
+<div class="slide-note"><div class="n-head"><span class="num">15</span><div class="n-lead"><p>멀기트 하향은 출시 후가 아니라 출시 전에 이루어졌습니다.</p></div></div><details class="n-more"><summary>자세히 보기</summary><div class="n-aside"><p>기타오 야스히로 프로듀서는 2022년 2월 인터뷰에서, 네트워크 테스트의 멀기트가 초반 보스로서는 어려운 편이라 조정했다고 밝혔습니다(GamesRadar, GGRecon). 출시 후 1.03 패치(2022년 3월)에서는 만난 NPC의 아이콘과 이름을 지도에 기록하는 기능, 일부 적의 단조석 드롭률 상향이 들어갔습니다(Dexerto, Automaton). 세 조치 모두 난이도, 지도, 성장 속도를 다뤘지만, 인도를 거슬러 다른 곳에서 성장해야 한다는 정보는 다루지 않았습니다. 즉 초반 난이도 곡선의 공백은 출시 후에도 메워지지 않았고, 이 공백이 2부 개선안의 대상입니다.</p></div></details></div>
+</div>
+<div class="slide-item" id="s16">
+<div class="slide-frame">
+<section id="b05-gap" data-transition="fade" style="display:flex; flex-direction:column; gap:24px; padding:64px 112px 130px; background:#f6f5f1; font-family:Paperlogy, Arial, sans-serif; color:#1b1f26">
+  <h2 style="padding:8px 0 0; font-family:'Paperlogy Bold', Arial, sans-serif; font-size:60px; font-weight:700; line-height:1.18; color:#1b1f26">난이도 완화 장치까지의 공백</h2>
+  <p style="padding:0 0 0 26px; font-size:34px; line-height:1.4; color:#1b1f26; border-left:8px solid #8a6a1c">완화 장치는 이미 게임에 있지만, 찾아가야만 얻을 수 있습니다.</p>
+  <div style="display:flex; flex-direction:row; gap:36px; align-items:start">
+    <div style="flex:1; display:flex; flex-direction:column; gap:16px">
+      <h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:32px; font-weight:700; color:#1b1f26">영체 소환 · 환혼의 종</h3>
+      <div style="display:flex; flex-direction:column; gap:0px">
+        <p style="padding:14px 22px; font-size:26px; background:#ffffff; border:2px solid #dcd7cb; border-radius:8px 8px 0 0">1. 트리가드를 우회해 관문 앞으로</p>
+        <p style="padding:14px 22px; font-size:26px; background:#ffffff; border:2px solid #dcd7cb; border-top:none">2. 세 번째 축복에서 멜리나 · 토렌트 획득</p>
+        <p style="padding:14px 22px; font-size:26px; background:#ffffff; border:2px solid #dcd7cb; border-top:none">3. 엘레의 교회로 돌아가 레나와 만남</p>
+        <p style="padding:14px 22px; font-family:'Paperlogy Bold', Arial, sans-serif; font-size:26px; color:#f2efe6; background:#2e5fa3; border:2px solid #2e5fa3; border-radius:0 0 8px 8px">4. 환혼의 종 · 낙오된 늑대의 뼛가루</p>
+      </div>
+      <p style="font-size:25px; line-height:1.45; color:#a03b30">레나를 놓치면 원탁의 상인에게서 사야 합니다.</p>
+    </div>
+    <div style="flex:1; display:flex; flex-direction:column; gap:16px">
+      <h3 style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:32px; font-weight:700; color:#1b1f26">보스 공략 도구 · 멀기트의 구속구</h3>
+      <div style="display:flex; flex-direction:column; gap:0px">
+        <p style="padding:14px 22px; font-size:26px; background:#ffffff; border:2px solid #dcd7cb; border-radius:8px 8px 0 0">1. 흐린 강 동굴 발견</p>
+        <p style="padding:14px 22px; font-size:26px; background:#ffffff; border:2px solid #dcd7cb; border-top:none">2. 패치와 싸운 뒤 살려 줌</p>
+        <p style="padding:14px 22px; font-size:26px; background:#ffffff; border:2px solid #dcd7cb; border-top:none">3. 패치의 상점에서 5,000룬에 구매</p>
+        <p style="padding:14px 22px; font-family:'Paperlogy Bold', Arial, sans-serif; font-size:26px; color:#f2efe6; background:#2e5fa3; border:2px solid #2e5fa3; border-radius:0 0 8px 8px">4. 멀기트 1페이즈에서 최대 2회 구속</p>
+      </div>
+      <p style="font-size:25px; line-height:1.45; color:#a03b30">게임 안에서 이 아이템으로 이끄는 단서가 없습니다.</p>
+    </div>
+    <img src="../assets/img/limgrave_spirit_bell.webp" alt="레나에게서 환혼의 종과 낙오된 늑대의 뼛가루를 받는 장면" style="width:470px; height:420px; object-fit:cover; border-radius:8px">
+  </div>
+  <div style="display:flex; flex-direction:row; gap:24px; align-items:center; padding:24px 32px; background:#1b1f26; border-radius:10px">
+    <p style="font-size:26px; color:#d6b866; white-space:nowrap">공백</p>
+    <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:30px; line-height:1.45; color:#f2efe6">멀기트 앞에서 반복 도전하는 플레이어는 두 장치 모두에 닿지 못합니다. 도움이 가장 필요한 플레이어가 도움에서 가장 멉니다.</p>
+  </div>
+  <p style="position:absolute; left:112px; bottom:52px; width:1300px; font-size:24px; color:#6b7380">엘든 링 림그레이브 레벨디자인 기획서 · 2부 선별</p>
+  <p style="position:absolute; right:112px; bottom:52px; width:220px; font-size:24px; text-align:right; font-variant-numeric:tabular-nums; color:#6b7380">16 / 20</p>
+  
+</section>
+</div>
+<div class="slide-note"><div class="n-head"><span class="num">16</span><div class="n-lead"><p>엘든 링에서 난이도를 낮추는 가장 큰 장치는 플레이어 혼자 돌파하는 대신 영체를 소환해 함께 싸우는 시스템입니다.</p></div></div><details class="n-more"><summary>자세히 보기</summary><div class="n-aside"><p>그러나 영체를 부르는 환혼의 종은 트리가드를 지나 토렌트를 얻고, 엘레의 교회로 돌아가 레나를 만나야 처음 얻을 수 있습니다. 레나를 놓치면 원탁의 상인에게서 구매해야 합니다. 멀기트의 구속구도 흐린 강 동굴의 패치를 살려 주고 5,000룬에 사야 하며, 게임 안에 이 아이템으로 이끄는 단서는 없습니다. 출처: GameRevolution(환혼의 종), Fextralife · Dexerto(멀기트의 구속구).</p></div></details></div>
+</div>
+<div class="sec-head" id="part4"><span class="sec-k">04</span><h2>2부 문제 정의와 개선안</h2></div>
+<div class="slide-item" id="s17">
+<div class="slide-frame">
+<section id="b06-principle" data-transition="fade" style="display:flex; flex-direction:column; gap:24px; padding:64px 112px 130px; background:#f6f5f1; font-family:Paperlogy, Arial, sans-serif; color:#1b1f26">
+  <h2 style="padding:8px 0 0; font-family:'Paperlogy Bold', Arial, sans-serif; font-size:60px; font-weight:700; line-height:1.18; color:#1b1f26">문제 정의와 개선 원칙</h2>
+  <p style="padding:0 0 0 26px; font-size:34px; line-height:1.4; color:#1b1f26; border-left:8px solid #8a6a1c">문제는 난이도가 아니라 정보입니다.</p>
+  <div style="display:flex; flex-direction:row; gap:36px; align-items:stretch">
+    <div style="width:760px; display:flex; flex-direction:column; gap:18px; padding:32px 36px; background:#1b1f26; border-radius:10px">
+      <p style="font-size:26px; color:#d6b866">문제</p>
+      <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:34px; line-height:1.45; color:#f2efe6">플레이어는 멀기트 앞 반복 패배를 실력 문제로 받아들이고 떠납니다.</p>
+      <p style="font-size:28px; line-height:1.5; color:#cfd4dc">실제 원인은 준비 부족입니다.<br>다른 곳에서 더 성장할 수 있다는 정보가 없기 때문입니다.</p>
+      <div style="flex:1"></div>
+      <p style="font-size:26px; color:#d6b866">개선 목표</p>
+      <p style="font-size:28px; line-height:1.5; color:#f2efe6">학습을 더 빠르게, 그리고 내 실력 탓이 아니라는 것을 받아들이게 합니다.</p>
+    </div>
+    <div style="flex:1; display:flex; flex-direction:column; gap:16px">
+      <div style="display:flex; flex-direction:row; gap:22px; align-items:start; padding:24px 28px; background:#ffffff; border:2px solid #dcd7cb; border-radius:10px">
+        <p style="font-family:'Paperlogy Black', Arial, sans-serif; font-size:44px; line-height:1; color:#8a6a1c">1</p>
+        <div style="flex:1; display:flex; flex-direction:column; gap:6px">
+          <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:30px; color:#1b1f26">난이도는 그대로</p>
+          <p style="font-size:26px; line-height:1.45; color:#4a515c">적 배치, 보스 능력치, 보상 수치를 바꾸지 않습니다.</p>
+        </div>
+      </div>
+      <div style="display:flex; flex-direction:row; gap:22px; align-items:start; padding:24px 28px; background:#ffffff; border:2px solid #dcd7cb; border-radius:10px">
+        <p style="font-family:'Paperlogy Black', Arial, sans-serif; font-size:44px; line-height:1; color:#8a6a1c">2</p>
+        <div style="flex:1; display:flex; flex-direction:column; gap:6px">
+          <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:30px; color:#1b1f26">위험이 아니라 성장 장소를 알림</p>
+          <p style="font-size:26px; line-height:1.45; color:#4a515c">위험은 죽으면서 어차피 배웁니다.<br>필요한 정보는 위험하니 다른 곳에서 성장하라는 것입니다.</p>
+        </div>
+      </div>
+      <div style="display:flex; flex-direction:row; gap:22px; align-items:start; padding:24px 28px; background:#ffffff; border:2px solid #dcd7cb; border-radius:10px">
+        <p style="font-family:'Paperlogy Black', Arial, sans-serif; font-size:44px; line-height:1; color:#8a6a1c">3</p>
+        <div style="flex:1; display:flex; flex-direction:column; gap:6px">
+          <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:30px; color:#1b1f26">강제하지 않음</p>
+          <p style="font-size:26px; line-height:1.45; color:#4a515c">길을 막거나 마커를 찍지 않고, 단서만 둡니다. 탐험의 자유는 유지합니다.</p>
+        </div>
+      </div>
+      <p style="font-size:25px; line-height:1.45; color:#4a515c">기준은 소울라이크 팬이 아니라 대중입니다.<br>엘든 링은 3,000만 장이 팔린, 더 넓은 층이 플레이하는 작품입니다.</p>
+    </div>
+  </div>
+  <p style="position:absolute; left:112px; bottom:52px; width:1300px; font-size:24px; color:#6b7380">엘든 링 림그레이브 레벨디자인 기획서 · 2부 개선안</p>
+  <p style="position:absolute; right:112px; bottom:52px; width:220px; font-size:24px; text-align:right; font-variant-numeric:tabular-nums; color:#6b7380">17 / 20</p>
+  
+</section>
+</div>
+<div class="slide-note"><div class="n-head"><span class="num">17</span><div class="n-lead"><p>소울라이크에 떠먹여 주자는 제안이 아닙니다.</p></div></div><details class="n-more"><summary>자세히 보기</summary><div class="n-aside"><p>난이도와 보상은 그대로 두고 정보만 늘려, 플레이어가 더 빠르게 학습하고 자신의 실력 문제가 아니라는 것을 받아들이게 하는 것이 목표입니다. 엘든 링은 대중성을 더 챙긴 작품이고 실제로 더 많은 유저가 플레이하는 게임이므로, 소울라이크 팬의 기준보다 대중성을 위한 기준이 중요합니다.</p></div></details></div>
+</div>
+<div class="slide-item" id="s18">
+<div class="slide-frame">
+<section id="b07-proposals" data-transition="fade" style="display:flex; flex-direction:column; gap:24px; padding:64px 112px 130px; background:#f6f5f1; font-family:Paperlogy, Arial, sans-serif; color:#1b1f26">
+  <h2 style="padding:8px 0 0; font-family:'Paperlogy Bold', Arial, sans-serif; font-size:60px; font-weight:700; line-height:1.18; color:#1b1f26">개선안 · 성장 장소를 알리는 단서 3가지</h2>
+  <p style="padding:0 0 0 26px; font-size:34px; line-height:1.4; color:#1b1f26; border-left:8px solid #2e5fa3">이미 있는 시스템을 다시 써서, 인도 밖으로 가라는 정보를 더합니다.</p>
+  <div style="display:flex; flex-direction:row; gap:24px; align-items:stretch">
+    <div style="flex:1; display:flex; flex-direction:column; gap:14px; padding:0 0 26px; background:#ffffff; border:2px solid #dcd7cb; border-radius:10px; overflow:hidden">
+      <img src="../assets/img/limgrave_npc_south.webp" alt="NPC가 남쪽 숲 끝의 성채를 언급하는 대화 장면" style="width:534px; height:360px; object-fit:cover">
+      <div style="display:flex; flex-direction:column; gap:12px; padding:0 26px">
+        <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:30px; color:#2e5fa3">① NPC 단서 대사</p>
+        <p style="font-size:27px; line-height:1.5; color:#1b1f26">예시 · “저 높은 곳의 적은 지금의 그대에게 버겁소. 만반의 준비를 원한다면 남쪽 반도로 내려가 보시오.”</p>
+        <p style="font-size:25px; line-height:1.5; color:#4a515c">현재 NPC는 장소만 말합니다.<br>그곳에서 성장할 수 있다는 이유를 더합니다.<br>멀기트 패배 후 대사가 바뀝니다.</p>
+      </div>
+    </div>
+    <div style="flex:1; display:flex; flex-direction:column; gap:14px; padding:0 0 26px; background:#ffffff; border:2px solid #dcd7cb; border-radius:10px; overflow:hidden">
+      <img src="../assets/img/limgrave_melina.webp" alt="멜리나가 축복의 빛줄기에 대해 말하는 장면" style="width:534px; height:360px; object-fit:cover">
+      <div style="display:flex; flex-direction:column; gap:12px; padding:0 26px">
+        <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:30px; color:#2e5fa3">② 보조 인도</p>
+        <p style="font-size:27px; line-height:1.5; color:#1b1f26">멀기트에게 패배한 뒤 축복에서 쉬면, 기존 인도와 함께 저지대와 남쪽을 가리키는 빛줄기 하나를 더 보여 줍니다.</p>
+        <p style="font-size:25px; line-height:1.5; color:#4a515c">새 UI 없이 기존 인도 시스템을 다시 씁니다.</p>
+      </div>
+    </div>
+    <div style="flex:1; display:flex; flex-direction:column; gap:14px; padding:0 0 26px; background:#ffffff; border:2px solid #dcd7cb; border-radius:10px; overflow:hidden">
+      <img src="../assets/img/limgrave_kale.webp" alt="엘레의 교회에서 방랑 상인 칼레의 상점 메뉴를 연 장면" style="width:534px; height:360px; object-fit:cover">
+      <div style="display:flex; flex-direction:column; gap:12px; padding:0 26px">
+        <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:30px; color:#2e5fa3">③ 약점 단서</p>
+        <p style="font-size:27px; line-height:1.5; color:#1b1f26">첫 상인 칼레가 멀기트의 구속구와 그것을 파는 흐린 강 동굴의 상인을 언급합니다.</p>
+        <p style="font-size:25px; line-height:1.5; color:#4a515c">이미 있는 해법으로 가는 길을 연결합니다.<br>구속구 효과는 그대로입니다.</p>
+      </div>
+    </div>
+  </div>
+  <p style="position:absolute; left:112px; bottom:52px; width:1300px; font-size:24px; color:#6b7380">엘든 링 림그레이브 레벨디자인 기획서 · 2부 개선안</p>
+  <p style="position:absolute; right:112px; bottom:52px; width:220px; font-size:24px; text-align:right; font-variant-numeric:tabular-nums; color:#6b7380">18 / 20</p>
+  
+</section>
+</div>
+<div class="slide-note"><div class="n-head"><span class="num">18</span><div class="n-lead"><p>세 개선안 모두 이미 있는 시스템을 다시 씁니다.</p></div></div><details class="n-more"><summary>자세히 보기</summary><div class="n-aside"><p>① NPC 단서 대사: 현재 NPC들은 남쪽 숲 끝의 성채나 서쪽 해안의 폐교회처럼 장소는 언급하지만, 그곳에서 성장할 수 있다는 이유는 말하지 않습니다. 멀기트나 트리가드가 위험하니 만반의 준비를 원한다면 흐느낌의 반도로 가 보라는 단서를 더합니다. 예시 대사는 기획 의도를 보여 주기 위한 초안입니다. ② 보조 인도: 인도를 멀기트 방향으로만 쏘지 않고, 패배 후에는 저지대 방향으로도 한 줄기 더 보여 줍니다. ③ 약점 단서: 첫 상인이 멀기트의 구속구의 존재와 판매자를 언급해, 이미 있는 해법으로 가는 길을 연결합니다.</p></div></details></div>
+</div>
+<div class="slide-item" id="s19">
+<div class="slide-frame">
+<section id="b08-eval" data-transition="fade" style="display:flex; flex-direction:column; gap:24px; padding:64px 112px 130px; background:#f6f5f1">
+  <h2 style="padding:8px 0 0; font-family:'Paperlogy Bold', Arial, sans-serif; font-size:60px; font-weight:700; line-height:1.18; color:#1b1f26">개선안 평가와 효과 측정 기준</h2>
+  <p style="padding:0 0 0 26px; font-family:Paperlogy, Arial, sans-serif; font-size:34px; line-height:1.4; color:#1b1f26; border-left:8px solid #2e5fa3">세 안 모두 패배한 뒤에만 나타나, 스스로 길을 찾는 플레이어의 경험은 바꾸지 않습니다.</p>
+  <table style="width:1696px; font-family:Paperlogy, Arial, sans-serif; font-size:32px; color:#1b1f26">
+    <tr style="background:#1b1f26"><th style="padding:14px 18px; width:16%; color:#f2efe6">개선안</th><th style="padding:14px 18px; width:28%; color:#9fc0ee">기대 효과</th><th style="padding:14px 18px; width:28%; color:#f0b2a8">위험 요소</th><th style="padding:14px 18px; width:28%; color:#f2efe6">대응</th></tr>
+    <tr style="background:#ffffff"><td style="padding:14px 18px">① NPC 대사</td><td style="padding:14px 18px">성장할 장소와 이유를 이야기로 전달</td><td style="padding:14px 18px">NPC를 만나지 못하면 효과 없음</td><td style="padding:14px 18px">멀기트 앞 축복 근처 NPC에 배치</td></tr>
+    <tr style="background:#f6f5f1"><td style="padding:14px 18px">② 보조 인도</td><td style="padding:14px 18px">갈 방향을 즉시 보여 줌</td><td style="padding:14px 18px">정답을 알려 주는 느낌, 탐험 자율성 감소</td><td style="padding:14px 18px">패배 후에만, 한 줄기만 표시</td></tr>
+    <tr style="background:#ffffff"><td style="padding:14px 18px">③ 약점 단서</td><td style="padding:14px 18px">이미 있는 해법을 활용</td><td style="padding:14px 18px">보스 공략 체감 난이도 하락</td><td style="padding:14px 18px">구속구 효과는 그대로 유지</td></tr>
+  </table>
+  <p style="font-family:Paperlogy, Arial, sans-serif; font-size:26px; line-height:1.45; color:#4a515c">개선안 적용 후 효과를 확인할 기준입니다.<br>원탁 도착률 · 멀기트 처치율만 공개 수치가 있고, 나머지는 플레이 로그로 측정합니다.</p>
+  <div style="display:flex; flex-direction:row; gap:24px">
+    <div style="display:flex; flex-direction:column; gap:6px; flex:1; padding:22px 32px; background:#ffffff; border-top:6px solid #2e5fa3; border-radius:6px">
+      <p style="font-family:Paperlogy, Arial, sans-serif; font-size:25px; color:#4a515c">측정 지표 1</p>
+      <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:32px; line-height:1.35; color:#1b1f26">원탁 도착률 · 멀기트 처치율</p>
+      <p style="font-family:Paperlogy, Arial, sans-serif; font-size:27px; line-height:1.45; color:#4a515c">현재 75.0% · 70.9%에서 상승하는지</p>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:6px; flex:1; padding:22px 32px; background:#ffffff; border-top:6px solid #2e5fa3; border-radius:6px">
+      <p style="font-family:Paperlogy, Arial, sans-serif; font-size:25px; color:#4a515c">측정 지표 2</p>
+      <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:32px; line-height:1.35; color:#1b1f26">멀기트 평균 도전 횟수</p>
+      <p style="font-family:Paperlogy, Arial, sans-serif; font-size:27px; line-height:1.45; color:#4a515c">처치까지의 사망 횟수가 감소하는지</p>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:6px; flex:1; padding:22px 32px; background:#ffffff; border-top:6px solid #2e5fa3; border-radius:6px">
+      <p style="font-family:Paperlogy, Arial, sans-serif; font-size:25px; color:#4a515c">측정 지표 3</p>
+      <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:32px; line-height:1.35; color:#1b1f26">패배 후 인도 밖 방문률</p>
+      <p style="width:498px; font-family:Paperlogy, Arial, sans-serif; font-size:27px; line-height:1.45; color:#4a515c">흐느낌의 반도 · 저지대 던전 방문이 증가하는지</p>
+    </div>
+  </div>
+  <p style="position:absolute; bottom:52px; left:112px; width:1300px; font-family:Paperlogy, Arial, sans-serif; font-size:24px; color:#6b7380">엘든 링 림그레이브 레벨디자인 기획서 · 2부 개선안</p>
+  <p style="position:absolute; right:112px; bottom:52px; width:220px; font-family:Paperlogy, Arial, sans-serif; font-size:24px; text-align:right; font-variant-numeric:tabular-nums; color:#6b7380">19 / 20</p>
+  
+</section>
+</div>
+<div class="slide-note"><div class="n-head"><span class="num">19</span><div class="n-lead"><p>각 개선안의 기대 효과와 위험 요소, 대응입니다.</p></div></div><details class="n-more"><summary>자세히 보기</summary><div class="n-aside"><p>세 안 모두 멀기트에게 패배한 뒤에만 나타나므로, 스스로 역류 성장을 깨닫는 플레이어의 경험은 바뀌지 않습니다. 효과는 원탁 도착률과 멀기트 처치율, 멀기트 평균 도전 횟수, 패배 후 인도 밖 지역 방문률로 측정합니다. 아직 적용 전인 제안이므로 검증된 결과가 아니라, 적용 후 확인할 기준입니다. 원탁 도착률과 멀기트 처치율은 Steam 업적으로 공개된 기준값이 있고, 나머지는 플레이 로그로 측정합니다.</p></div></details></div>
+</div>
+<div class="slide-item" id="s20">
+<div class="slide-frame">
+<section id="c2-end" data-transition="fade" style="display:flex; flex-direction:column; gap:40px; justify-content:center; padding:64px 112px 130px; background:#14181f">
+  <img src="../assets/img/limgrave_erdtree.webp" alt="" style="position:absolute; top:0; left:0; width:1920px; height:1080px; opacity:0.5">
+  <div style="position:absolute; top:0; left:0; width:1920px; height:1080px; display:flex; flex-direction:column; background:linear-gradient(90deg, #10141cf5 0%, #10141cd8 60%, #10141c80 100%)">
+  </div>
+  <div style="position:relative; display:flex; flex-direction:column; gap:36px">
+    <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:28px; letter-spacing:3px; color:#d6b866">결론</p>
+    <h2 style="width:1500px; font-family:'Paperlogy Black', Arial, sans-serif; font-size:64px; font-weight:700; line-height:1.3; color:#f2efe6">엘든 링의 림그레이브는<br>플레이어를 학습시키고, 선별합니다.</h2>
+    <p style="width:1500px; font-family:Paperlogy, Arial, sans-serif; font-size:34px; line-height:1.6; color:#cfd4dc">림그레이브는 엘든 링만의 플레이 문법을 학습시키는 곳입니다.<br>차별적인 시스템으로 플레이어를 인도하지만, 모든 것을 떠먹여 주지는 않습니다.</p>
+    <p style="width:1500px; font-family:'Paperlogy Bold', Arial, sans-serif; font-size:34px; line-height:1.6; color:#f0dca4">제시된 개선안으로 더 많은 플레이어가 림그레이브를 졸업하고, 엘든 링의 세계를 누비기를 기대합니다.</p>
+  </div>
+  <p style="position:absolute; bottom:52px; left:112px; width:1300px; font-family:Paperlogy, Arial, sans-serif; font-size:24px; color:#9aa2ae">장대규 · jdk47888@naver.com · 010-8854-7342</p>
+  <p style="position:absolute; right:112px; bottom:52px; width:220px; font-family:Paperlogy, Arial, sans-serif; font-size:24px; text-align:right; font-variant-numeric:tabular-nums; color:#9aa2ae">20 / 20</p>
+  
+</section>
+</div>
+<div class="slide-note"><div class="n-head"><span class="num">20</span><div class="n-lead"><p>결론입니다.</p></div></div><details class="n-more"><summary>자세히 보기</summary><div class="n-aside"><p>림그레이브는 엘든 링만의 플레이 문법을 학습시키는 곳이며, 모든 것을 떠먹여 주지 않기 때문에 플레이어를 선별합니다. 이 기획서의 개선안은 난이도를 그대로 둔 채 성장할 장소에 대한 정보만 더해, 더 많은 플레이어가 림그레이브를 졸업하게 하는 것을 목표로 합니다.</p></div></details></div>
 </div>
 </div>
 <nav class="deck-nav"><a href="lol2.html">← 소환사의 협곡 미니언·포탑 시스템 기획 (2편)</a> <a href="genshin.html">원신 몬드 레벨디자인 역기획 →</a></nav>

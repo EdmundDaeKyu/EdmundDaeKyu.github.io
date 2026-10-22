@@ -1,0 +1,62 @@
+<section id="a05-density" data-transition="fade" style="display:flex; flex-direction:column; gap:24px; padding:64px 112px 130px; background:#f6f5f1">
+  <h2 style="padding:8px 0 0; font-family:'Paperlogy Bold', Arial, sans-serif; font-size:60px; font-weight:700; line-height:1.18; color:#1b1f26">밀도의 순환</h2>
+  <p style="padding:0 0 0 26px; font-family:Paperlogy, Arial, sans-serif; font-size:34px; line-height:1.4; color:#1b1f26; border-left:8px solid #8a6a1c">저밀도 필드와 고밀도 던전을 오가는 동안 플레이어가 성장합니다.</p>
+  <div style="display:flex; flex-direction:row; gap:36px; align-items:start">
+    <div style="position:relative; width:1060px; height:560px; display:flex; flex-direction:column">
+      <svg xmlns="http://www.w3.org/2000/svg" aria-label="플레이 시간에 따른 긴장도와 성장 그래프. 필드와 던전이 번갈아 나오며 긴장도는 던전에서 크게 오르고 필드에서는 조금만 내려간다. 성장은 던전을 마치고 필드로 나올 때, 그리고 멀기트를 넘어 스톰빌 성에 들어설 때 계단식으로 오른다" viewBox="0 0 1060 560" style="position:absolute; top:0; left:0; width:1060px; height:560px">
+        <rect x="0" y="40" width="1060" height="440" fill="#ffffff" stroke="#dcd7cb" stroke-width="2" rx="8"/>
+        <rect x="2" y="42" width="178" height="436" fill="#eaf0e2"/>
+        <rect x="180" y="42" width="130" height="436" fill="#efe3cf"/>
+        <rect x="310" y="42" width="170" height="436" fill="#eaf0e2"/>
+        <rect x="480" y="42" width="130" height="436" fill="#efe3cf"/>
+        <rect x="610" y="42" width="160" height="436" fill="#eaf0e2"/>
+        <rect x="770" y="42" width="120" height="436" fill="#e9d3cf"/>
+        <rect x="890" y="42" width="168" height="436" fill="#e2dccd"/>
+        <line x1="2" y1="470" x2="1058" y2="470" stroke="#6b7380" stroke-width="2"/>
+        <line x1="2" y1="470" x2="2" y2="42" stroke="#6b7380" stroke-width="2"/>
+        <path d="M2 300 L160 300 L200 185 L290 170 L330 245 L460 245 L500 160 L590 145 L630 230 L750 230 L790 105 L880 95 L910 150 L1056 140" fill="none" stroke="#b5652a" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+        <path d="M2 440 L310 440 L310 370 L610 370 L610 300 L890 300 L890 220 L1056 220" fill="none" stroke="#2e5fa3" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+        <circle cx="310" cy="370" r="9" fill="#2e5fa3"/>
+        <circle cx="610" cy="300" r="9" fill="#2e5fa3"/>
+        <circle cx="890" cy="220" r="9" fill="#2e5fa3"/>
+      </svg>
+      <p style="position:absolute; top:0; left:12px; width:160px; font-family:Paperlogy, Arial, sans-serif; font-size:24px; color:#4d6b3a">필드</p>
+      <p style="position:absolute; top:0; left:184px; width:124px; font-family:Paperlogy, Arial, sans-serif; font-size:24px; color:#8a5a1e">던전</p>
+      <p style="position:absolute; top:0; left:314px; width:160px; font-family:Paperlogy, Arial, sans-serif; font-size:24px; color:#4d6b3a">필드</p>
+      <p style="position:absolute; top:0; left:484px; width:124px; font-family:Paperlogy, Arial, sans-serif; font-size:24px; color:#8a5a1e">던전</p>
+      <p style="position:absolute; top:0; left:614px; width:150px; font-family:Paperlogy, Arial, sans-serif; font-size:24px; color:#4d6b3a">필드</p>
+      <p style="position:absolute; top:0; left:774px; width:114px; font-family:Paperlogy, Arial, sans-serif; font-size:24px; color:#a03b30">멀기트</p>
+      <p style="position:absolute; top:0; left:894px; width:164px; font-family:Paperlogy, Arial, sans-serif; font-size:24px; color:#5e5747">스톰빌 성</p>
+      <p style="position:absolute; top:490px; left:640px; width:416px; font-family:Paperlogy, Arial, sans-serif; font-size:24px; text-align:right; color:#4a515c">플레이 시간 →</p>
+      <div style="position:absolute; top:500px; left:0; width:620px; height:48px; display:flex; flex-direction:row; gap:28px; align-items:center">
+        <div style="width:36px; height:6px; display:flex; flex-direction:column; background:#b5652a">
+        </div>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; color:#1b1f26">긴장도</p>
+        <div style="width:36px; height:6px; display:flex; flex-direction:column; background:#2e5fa3">
+        </div>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:24px; color:#1b1f26">성장(던전을 마치고 필드로 나올 때)</p>
+      </div>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:16px; flex:1">
+      <div style="display:flex; flex-direction:column; gap:6px; padding:18px 24px; background:#ffffff; border-left:8px solid #4d6b3a; border-radius:6px">
+        <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:27px; color:#1b1f26">필드</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:25px; line-height:1.4; color:#4a515c">적 사이 간격이 넓어 싸울지 피할지 고릅니다.<br>탐색과 휴식 구간입니다.</p>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:6px; padding:18px 24px; background:#ffffff; border-left:8px solid #8a5a1e; border-radius:6px">
+        <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:27px; color:#1b1f26">던전</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:25px; line-height:1.4; color:#4a515c">좁은 통로에 적이 몰려 있고, 끝에 보스와 성장 보상이 있습니다.</p>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:6px; padding:18px 24px; background:#e8eef7; border-radius:8px">
+        <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:27px; color:#2e5fa3">장점</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:25px; line-height:1.4; color:#1b1f26">긴장과 이완이 반복되어 피로가 덜 쌓입니다.</p>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:6px; padding:18px 24px; background:#f6e4df; border-radius:8px">
+        <p style="font-family:'Paperlogy Bold', Arial, sans-serif; font-size:27px; color:#a03b30">단점</p>
+        <p style="font-family:Paperlogy, Arial, sans-serif; font-size:25px; line-height:1.4; color:#1b1f26">처음 가는 곳은 필드도 위험 요소라, 이완 구간이 크게 느껴지지 않을 수 있습니다.</p>
+      </div>
+    </div>
+  </div>
+  <p style="position:absolute; bottom:52px; left:112px; width:1300px; font-family:Paperlogy, Arial, sans-serif; font-size:24px; color:#6b7380">엘든 링 림그레이브 레벨디자인 기획서 · 1부 기본 구조</p>
+  <p style="position:absolute; right:112px; bottom:52px; width:220px; font-family:Paperlogy, Arial, sans-serif; font-size:24px; text-align:right; font-variant-numeric:tabular-nums; color:#6b7380">06 / 20</p>
+  <aside>그래프는 개념도이며 수치는 실측값이 아닙니다. 필드(저밀도)와 던전(고밀도)이 번갈아 나오고, 긴장도는 던전에서 크게 오르고 필드에서는 조금만 내려갑니다. 처음 가는 필드도 위험 요소이기 때문입니다. 성장은 던전 끝의 보스와 보상을 얻고 필드로 나올 때 계단식으로 오르며, 멀기트를 넘어 스톰빌 성에 들어설 때 한 번 더 오릅니다. 즉 플레이어는 고밀도와 저밀도를 오가는 동안 성장합니다. 단점은 처음 방문하는 지역은 필드라도 위험 요소이므로, 밀도의 순환이 주는 이완이 기대만큼 크지 않을 수 있다는 점입니다.</aside>
+</section>

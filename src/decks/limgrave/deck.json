@@ -1,18 +1,50 @@
 {
   "v": 4,
-  "title": "엘든 링 림그레이브 레벨디자인 분석",
-  "cover": "lg01",
+  "createdOnFiles": {
+    "v": 1,
+    "at": "2026-10-22T14:10:00Z"
+  },
+  "title": "엘든 링 림그레이브 레벨디자인 기획서",
+  "cover": "c1-cover",
   "order": [
-    "lg01",
-    "lg02",
-    "lg03",
-    "lg04",
-    "lg05",
-    "lg06",
-    "lg07",
-    "lg08",
-    "lg09",
-    "lg10"
+    "c1-cover",
+    "a01-hook",
+    "a02-overview",
+    "a03-units",
+    "a04-map",
+    "a05-density",
+    "a06-sight",
+    "a07-range",
+    "a08-summary",
+    "c1-end",
+    "c2-cover",
+    "b01-guide",
+    "b02-upstream",
+    "b03-metrics",
+    "b04-response",
+    "b05-gap",
+    "b06-principle",
+    "b07-proposals",
+    "b08-eval",
+    "c2-end"
   ],
-  "source": "Keynote PDF(림그레이브_분석서_통합본.pdf)를 장마다 그림으로 옮김"
+  "sections": {
+    "s1": {
+      "description": "1부 표지와 문서의 주장",
+      "start": "c1-cover"
+    },
+    "s2": {
+      "description": "1부 림그레이브의 기본 구조와 장단점",
+      "start": "a02-overview"
+    },
+    "s3": {
+      "description": "2부 축복의 인도와 초반 이탈",
+      "start": "c2-cover"
+    },
+    "s4": {
+      "description": "2부 문제 정의와 개선안",
+      "start": "b06-principle"
+    }
+  },
+  "source": "claude.ai Slides 덱(엘든 링 림그레이브 레벨디자인 기획서)"
 }
