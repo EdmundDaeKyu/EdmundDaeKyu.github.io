@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>작업 내역 · Edgerunners</title>
-<meta name="description" content="Edgerunners 작업 내역. 62일 동안의 개발 과정과 되돌린 결정, 플레이 검증으로 바꾼 항목을 정리했습니다.">
+<meta name="description" content="Edgerunners 작업 내역. 62일 동안의 개발 과정과 기각 · 개편한 결정, 플레이 검증으로 바꾼 항목을 정리했습니다.">
 <link rel="stylesheet" href="../../assets/css/site.css">
 <link rel="stylesheet" href="../../assets/css/deck.css">
 <script src="../../assets/js/deck.js" defer></script>
@@ -19,34 +19,35 @@
 <nav class="tabs"><a href="../">게임</a><a href="../plan/">기획서</a><a class="on" href="../log/">작업 내역</a></nav>
 <div class="plan-layout">
 <details class="doc-index" open><summary>기획서 목차</summary>
-<a class="di-pdf" href="../../assets/pdf/edgerunners_summary.pdf">요약 PDF 받기</a>
-<div class="di-deck"><a class="di-title" href="../plan/"><span>개요</span>개요 기획서</a><ol><li><a href="../plan/#s1">표지</a></li><li><a href="../plan/#s2">사이버웨어와 무기로 빌드를 만드는 탑다운 로그라이트</a></li><li><a href="../plan/#s3">빌드 구성, 빌드 시험, 적 웨이브 처치</a></li><li><a href="../plan/#s4">시설 출격부터 방 12개를 거쳐 보스까지의 진행</a></li><li><a href="../plan/#s5">사이버웨어 8부위와 부위별 단일 역할</a></li><li><a href="../plan/#s6">빌드별 플레이 방식 차이</a></li><li><a href="../plan/#s7">2077 무기 · 사이버웨어의 탑다운 전투용 재설계</a></li><li><a href="../plan/#s8">방 진행에 따른 신규 요소 단계별 추가</a></li><li><a href="../plan/#s9">판 안 성장 초기화, 판 밖 성장 유지</a></li><li><a href="../plan/#s10">모든 공격의 예고와 대시로 피할 수 없는 위협</a></li><li><a href="../plan/#s11">레벨 제작 순서: 손그림, 격자 도면, 실제 플레이</a></li><li><a href="../plan/#s12">주제별 세부 기획서 구성</a></li></ol></div>
-<div class="di-deck"><a class="di-title" href="../plan/combat.html"><span>세부 01</span>전투 규칙</a><ol><li><a href="../plan/combat.html#s1">표지</a></li><li><a href="../plan/combat.html#s2">낮은 엄폐물 한 칸 기준의 대시 거리 설정</a></li><li><a href="../plan/combat.html#s3">적 공격 예고보다 긴 대시 1회 충전 시간</a></li><li><a href="../plan/combat.html#s4">주황색 공격 범위, 빨간색 판정 시점 표시</a></li><li><a href="../plan/combat.html#s5">실제 판정 범위와 동일한 예고 표시</a></li><li><a href="../plan/combat.html#s6">모든 피해 수치에 적용하는 단일 기준표</a></li><li><a href="../plan/combat.html#s7">피해 감소 중첩 시 받는 피해 하한</a></li><li><a href="../plan/combat.html#s8">위에 머무르는 동안 지속되는 전기 함정 피해</a></li><li><a href="../plan/combat.html#s9">오작동 시 2.5초 대시 불가</a></li></ol></div>
-<div class="di-deck"><a class="di-title" href="../plan/system.html"><span>세부 02</span>시스템</a><ol><li><a href="../plan/system.html#s1">표지</a></li><li><a href="../plan/system.html#s2">무기별 우클릭 고유 능력</a></li><li><a href="../plan/system.html#s3">사이버웨어 8부위와 부위별 담당 영역</a></li><li><a href="../plan/system.html#s4">레벨업은 새 기능, 숙련도는 수치 강화</a></li><li><a href="../plan/system.html#s5">프로토타입의 효과와 대가</a></li><li><a href="../plan/system.html#s6">대상과 클릭 버튼별 해킹 효과</a></li><li><a href="../plan/system.html#s7">사망 후에도 유지되는 레벨, 명상, 숙련도</a></li><li><a href="../plan/system.html#s8">코인 가격 — 강화 300, 해금 500, 슬롯 확장 1500 이상</a></li><li><a href="../plan/system.html#s9">신화 카드 획득처 — 훈련장 좌대와 작업대</a></li><li><a href="../plan/system.html#s10">보스 처치 후 업그레이드를 유지한 다음 회차 진입</a></li></ol></div>
-<div class="di-deck"><a class="di-title" href="../plan/level.html"><span>세부 03</span>레벨</a><ol><li><a href="../plan/level.html#s1">표지</a></li><li><a href="../plan/level.html#s2">레벨 제작 순서 — 손그림, 격자 도면, 실제 플레이</a></li><li><a href="../plan/level.html#s3">도면만으로 대시 통과 지점을 판별하는 격자 규칙</a></li><li><a href="../plan/level.html#s4">그린 방을 즉시 플레이로 시험하는 편집 흐름</a></li><li><a href="../plan/level.html#s5">전투방 도면 후보와 무작위 선택</a></li><li><a href="../plan/level.html#s6">엘리트방, ??? 방, 보스방 전용 도면</a></li><li><a href="../plan/level.html#s7">방 번호별 신규 장치 등장 순서</a></li><li><a href="../plan/level.html#s8">모든 방의 최소 두 웨이브 구성</a></li><li><a href="../plan/level.html#s9">보상과 비용 기준의 방 종류 구분</a></li><li><a href="../plan/level.html#s10">체간 붕괴 후 처형 중심의 보스 피해 구조</a></li></ol></div>
-<div class="di-deck"><a class="di-title" href="../plan/tutorial.html"><span>세부 04</span>튜토리얼</a><ol><li><a href="../plan/tutorial.html#s1">표지</a></li><li><a href="../plan/tutorial.html#s2">시간 정지 후 한 번에 한 가지씩 교습</a></li><li><a href="../plan/tutorial.html#s3">숲속 맵 세 개로 구성한 튜토리얼</a></li><li><a href="../plan/tutorial.html#s4">맨손 대시 · 회피 학습과 카타나 획득</a></li><li><a href="../plan/tutorial.html#s5">근접 · 원거리 적 동시 등장 시점의 우클릭 해금</a></li><li><a href="../plan/tutorial.html#s6">수류탄으로만 처치되는 적을 이용한 수류탄 교습</a></li><li><a href="../plan/tutorial.html#s7">코칭 컷 없이 스스로 길을 찾는 마지막 단계</a></li><li><a href="../plan/tutorial.html#s8">지형을 이용한 진행 경로 안내</a></li><li><a href="../plan/tutorial.html#s9">배운 조작의 수행을 조건으로 한 단계 진행</a></li></ol></div>
-<div class="di-deck"><a class="di-title" href="../plan/growth.html"><span>세부 05</span>성장</a><ol><li><a href="../plan/growth.html#s1">표지</a></li><li><a href="../plan/growth.html#s2">사망 시 빌드 손실, 경험치 · 숙련도 · 코인 유지</a></li><li><a href="../plan/growth.html#s3">레벨업 보상: 체력 회복과 스킬 포인트 1</a></li><li><a href="../plan/growth.html#s4">세 갈래 다섯 칸 구조의 명상과 마지막 칸 궁극기</a></li><li><a href="../plan/growth.html#s5">장착 중 처치 수로 오르고 사망 시에도 유지되는 숙련도</a></li><li><a href="../plan/growth.html#s6">같은 사이버웨어 재획득 시 새 기능 추가</a></li><li><a href="../plan/growth.html#s7">숙련도 단계마다 1/3씩 감소하는 프로토타입 대가</a></li><li><a href="../plan/growth.html#s8">사망 시 유지되는 코인과 새 선택지 항목의 높은 가격</a></li><li><a href="../plan/growth.html#s9">보스 처치 후 빌드를 유지한 다음 회차 진행</a></li><li><a href="../plan/growth.html#s10">적 처치로 함께 쌓이는 경험치 · 숙련도 · 코인</a></li></ol></div>
-<div class="di-deck on"><a class="di-title" href="#top"><span>작업 내역</span>작업 내역</a><ol><li><a href="#s1">표지</a></li><li><a href="#s2">62일의 작업 배분 — 기반, 재설계, 완성도</a></li><li><a href="#s3">주요 수치 변경 내역</a></li><li><a href="#s4">플레이와 측정으로 바꾼 결정</a></li><li><a href="#s5">보상 좌대 위치로 인한 도면 중심 구조 누락</a></li><li><a href="#s6">바닥 함정 삭제와 전기 발판 상시 작동 전환</a></li><li><a href="#s7">실제 판정에 맞춘 공격 예고 범위</a></li><li><a href="#s8">사이버웨어 성장 구조의 2회 변경</a></li><li><a href="#s9">10-14 보스 개선안의 반영 결과</a></li><li><a href="#s10">표지</a></li><li><a href="#s11">바깥 네 방에서 숲길 세 단계로 바뀐 튜토리얼</a></li><li><a href="#s12">직접 플레이로 찾은 문제와 변경 내용</a></li><li><a href="#s13">10-07 중간 평가 문제의 2주 후 재점검</a></li><li><a href="#s14">미결 기획 과제</a></li></ol></div>
+<a class="di-pdf" href="../plan/summary.html">기획 요약 보기 · 14장</a>
+<div class="di-deck"><a class="di-title" href="../plan/"><span>개요</span>개요 기획서</a><ol><li class="di-sec">1. 게임 소개와 핵심 재미</li><li><a href="../plan/#s1">표지</a></li><li><a href="../plan/#s2">사이버웨어와 무기로 빌드를 만드는 탑다운 로그라이트</a></li><li><a href="../plan/#s3">빌드 구성, 빌드 시험, 적 웨이브 처치</a></li><li class="di-sec">2. 빌드를 만들고 시험하는 구조</li><li><a href="../plan/#s4">시설 출격부터 방 12개를 거쳐 보스까지의 진행</a></li><li><a href="../plan/#s5">사이버웨어 8부위와 부위별 단일 역할</a></li><li><a href="../plan/#s6">빌드별 플레이 방식 차이</a></li><li><a href="../plan/#s7">2077 무기 · 사이버웨어의 탑다운 전투용 재설계</a></li><li><a href="../plan/#s8">방 진행에 따른 신규 요소 단계별 추가</a></li><li><a href="../plan/#s9">판 안 성장 초기화, 판 밖 성장 유지</a></li><li class="di-sec">3. 전투 규칙과 레벨 제작</li><li><a href="../plan/#s10">모든 공격의 예고와 대시로 피할 수 없는 위협</a></li><li><a href="../plan/#s11">레벨 제작 순서: 손그림, 격자 도면, 실제 플레이</a></li><li class="di-sec">4. 세부 기획서 안내</li><li><a href="../plan/#s12">주제별 세부 기획서 구성</a></li></ol></div>
+<div class="di-deck"><a class="di-title" href="../plan/combat.html"><span>세부 01</span>전투 규칙</a><ol><li class="di-sec">1. 기본 능력치와 대시</li><li><a href="../plan/combat.html#s1">표지</a></li><li><a href="../plan/combat.html#s2">낮은 엄폐물 한 칸 기준의 대시 거리 설정</a></li><li><a href="../plan/combat.html#s3">적 공격 예고보다 긴 대시 1회 충전 시간</a></li><li class="di-sec">2. 공격 예고 규칙</li><li><a href="../plan/combat.html#s4">주황색 공격 범위, 빨간색 판정 시점 표시</a></li><li><a href="../plan/combat.html#s5">실제 판정 범위와 동일한 예고 표시</a></li><li class="di-sec">3. 피해 기준표와 받는 피해</li><li><a href="../plan/combat.html#s6">모든 피해 수치에 적용하는 단일 기준표</a></li><li><a href="../plan/combat.html#s7">피해 감소 중첩 시 받는 피해 하한</a></li><li class="di-sec">4. 대시로 피할 수 없는 위협</li><li><a href="../plan/combat.html#s8">발판에 서 있는 동안 지속되는 전기 발판 피해</a></li><li><a href="../plan/combat.html#s9">오작동 시 2.5초 대시 불가</a></li></ol></div>
+<div class="di-deck"><a class="di-title" href="../plan/system.html"><span>세부 02</span>시스템</a><ol><li class="di-sec">1. 무기와 사이버웨어 8부위</li><li><a href="../plan/system.html#s1">표지</a></li><li><a href="../plan/system.html#s2">무기별 우클릭 고유 능력</a></li><li><a href="../plan/system.html#s3">사이버웨어 8부위와 부위별 담당 영역</a></li><li class="di-sec">2. 사이버웨어 레벨, 숙련도, 프로토타입, 해킹 모드</li><li><a href="../plan/system.html#s4">레벨업은 새 기능, 숙련도는 수치 강화</a></li><li><a href="../plan/system.html#s5">프로토타입의 효과와 대가</a></li><li><a href="../plan/system.html#s6">대상과 클릭 버튼별 해킹 효과</a></li><li class="di-sec">3. 죽어도 유지되는 성장과 코인, 카드, 회차</li><li><a href="../plan/system.html#s7">사망 후에도 유지되는 레벨, 명상, 숙련도</a></li><li><a href="../plan/system.html#s8">코인 가격 — 강화 300, 해금 500, 슬롯 확장 1500 이상</a></li><li><a href="../plan/system.html#s9">신화 카드 획득처 — 훈련장 좌대와 작업대</a></li><li><a href="../plan/system.html#s10">보스 처치 후 업그레이드를 유지한 다음 회차 진입</a></li></ol></div>
+<div class="di-deck"><a class="di-title" href="../plan/level.html"><span>세부 03</span>레벨</a><ol><li class="di-sec">1. 방을 그리는 도구와 규칙</li><li><a href="../plan/level.html#s1">표지</a></li><li><a href="../plan/level.html#s2">레벨 제작 순서 — 손그림, 격자 도면, 실제 플레이</a></li><li><a href="../plan/level.html#s3">도면만으로 대시 통과 지점을 판별하는 격자 규칙</a></li><li><a href="../plan/level.html#s4">그린 방을 즉시 플레이로 시험하는 편집 흐름</a></li><li class="di-sec">2. 방 종류별 도면 목록</li><li><a href="../plan/level.html#s5">전투방 도면 후보와 무작위 선택</a></li><li><a href="../plan/level.html#s6">엘리트방, ??? 방, 보스방 전용 도면</a></li><li class="di-sec">3. 첫 런의 등장 순서와 웨이브</li><li><a href="../plan/level.html#s7">방 번호별 신규 장치 등장 순서</a></li><li><a href="../plan/level.html#s8">모든 방의 최소 두 웨이브 구성</a></li><li class="di-sec">4. 방 종류와 보스</li><li><a href="../plan/level.html#s9">보상과 비용 기준의 방 종류 구분</a></li><li><a href="../plan/level.html#s10">체간 붕괴 후 처형 중심의 보스 피해 구조</a></li></ol></div>
+<div class="di-deck"><a class="di-title" href="../plan/tutorial.html"><span>세부 04</span>튜토리얼</a><ol><li class="di-sec">1. 튜토리얼의 교습 방식과 맵 세 개의 구성</li><li><a href="../plan/tutorial.html#s1">표지</a></li><li><a href="../plan/tutorial.html#s2">시간 정지 후 한 번에 한 가지씩 교습</a></li><li><a href="../plan/tutorial.html#s3">숲속 맵 세 개로 구성한 튜토리얼</a></li><li class="di-sec">2. 단계별로 가르치는 것</li><li><a href="../plan/tutorial.html#s4">맨손 대시 · 회피 학습과 카타나 획득</a></li><li><a href="../plan/tutorial.html#s5">근접 · 원거리 적 동시 등장 시점의 우클릭 해금</a></li><li><a href="../plan/tutorial.html#s6">수류탄으로만 처치되는 적을 이용한 수류탄 교습</a></li><li><a href="../plan/tutorial.html#s7">코칭 컷 없이 스스로 길을 찾는 마지막 단계</a></li><li class="di-sec">3. 지형 안내와 단계별 정리</li><li><a href="../plan/tutorial.html#s8">지형을 이용한 진행 경로 안내</a></li><li><a href="../plan/tutorial.html#s9">배운 조작의 수행을 조건으로 한 단계 진행</a></li></ol></div>
+<div class="di-deck"><a class="di-title" href="../plan/growth.html"><span>세부 05</span>성장</a><ol><li class="di-sec">1. 죽거나 보스를 처치했을 때 남는 것</li><li><a href="../plan/growth.html#s1">표지</a></li><li><a href="../plan/growth.html#s2">사망 시 빌드 손실, 경험치 · 숙련도 · 코인 유지</a></li><li class="di-sec">2. 경험치와 레벨, 명상, 숙련도</li><li><a href="../plan/growth.html#s3">레벨업 보상: 체력 회복과 스킬 포인트 1</a></li><li><a href="../plan/growth.html#s4">세 갈래 다섯 칸 구조의 명상과 마지막 칸 궁극기</a></li><li><a href="../plan/growth.html#s5">장착 중 처치 수로 오르고 사망 시에도 유지되는 숙련도</a></li><li class="di-sec">3. 사이버웨어 레벨과 프로토타입 대가</li><li><a href="../plan/growth.html#s6">같은 사이버웨어 재획득 시 새 기능 추가</a></li><li><a href="../plan/growth.html#s7">숙련도 단계마다 1/3씩 감소하는 프로토타입 대가</a></li><li class="di-sec">4. 코인과 작업대, 회차, 성장 정리</li><li><a href="../plan/growth.html#s8">사망 시 유지되는 코인과 새 선택지 항목의 높은 가격</a></li><li><a href="../plan/growth.html#s9">보스 처치 후 빌드를 유지한 다음 회차 진행</a></li><li><a href="../plan/growth.html#s10">적 처치로 함께 쌓이는 경험치 · 숙련도 · 코인</a></li></ol></div>
+<div class="di-deck on"><a class="di-title" href="#top"><span>작업 내역</span>작업 내역</a><ol><li class="di-sec">1. 개발 기간의 흐름과 주요 수치 변화</li><li><a href="#s1">표지</a></li><li><a href="#s2">62일의 작업 배분 — 기반, 재설계, 완성도</a></li><li><a href="#s3">주요 수치 변경 내역</a></li><li class="di-sec">2. 결정 기록과 기각 · 개편한 결정</li><li><a href="#s4">플레이와 측정으로 바꾼 결정</a></li><li><a href="#s5">보상 좌대 위치로 인한 도면 중심 구조 누락</a></li><li><a href="#s6">바닥 함정 기각, 전기 발판 개편</a></li><li><a href="#s7">실제 판정에 맞춘 공격 예고 범위</a></li><li><a href="#s8">사이버웨어 성장 개편 — 레벨 시스템 도입</a></li><li><a href="#s9">10-14 보스 개선안의 반영 결과</a></li><li><a href="#s10">표지</a></li><li><a href="#s11">바깥 네 방에서 숲길 세 단계로 바뀐 튜토리얼</a></li><li class="di-sec">3. 직접 플레이하며 바꾼 것</li><li><a href="#s12">직접 플레이로 찾은 문제와 변경 내용</a></li><li class="di-sec">4. 중간 평가와 남은 과제</li><li><a href="#s13">10-07 중간 평가 문제의 2주 후 재점검</a></li><li><a href="#s14">미결 기획 과제</a></li></ol></div>
 </details>
 <div class="plan-main">
 <div class="deck-head" id="top">
 <p class="eyebrow">Edgerunners</p>
 <h1>작업 내역</h1>
-<p class="lead">62일 동안의 개발 과정과 되돌린 결정, 플레이 검증으로 바꾼 항목을 정리했습니다.</p>
+<p class="lead">62일 동안의 개발 과정과 기각 · 개편한 결정, 플레이 검증으로 바꾼 항목을 정리했습니다.</p>
 <div class="deck-tools">
 <button class="btn" type="button" data-present="0">슬라이드 보기</button>
-<a class="btn ghost" href="../../assets/pdf/edgerunners_summary.pdf">요약 PDF · 14쪽</a>
+<a class="btn ghost" href="../plan/summary.html">기획 요약 보기 · 14장</a>
 <span class="small">14장 · 슬라이드를 누르면 크게 보이고, 화살표 키로 넘길 수 있습니다</span>
 </div>
 </div>
 <div class="slides">
+<div class="sec-head" id="part1"><span class="sec-k">01</span><h2>개발 기간의 흐름과 주요 수치 변화</h2></div>
 <div class="slide-item" id="s1">
 <div class="slide-frame">
 <section id="cover" data-transition="fade" style="background:#F6F5F1;color:#17181C;font-family:'Paperlogy', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:center;gap:28px">
-<img src="../../assets/img/map_combat_pinwheel_play.webp" alt="바람개비 전투방의 게임 화면. 플레이어가 높은 엄폐물과 전기 함정 사이에 서 있다" style="position:absolute;left:880px;top:0;width:1040px;height:1080px;object-fit:cover">
+<img src="../../assets/img/map_combat_pinwheel_play.webp" alt="바람개비 전투방의 게임 화면. 플레이어가 높은 엄폐물과 전기 발판 사이에 서 있다" style="position:absolute;left:880px;top:0;width:1040px;height:1080px;object-fit:cover">
 <p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;letter-spacing:3px;color:#0077A3;width:680px">작업 내역</p>
 <h1 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:112px;font-weight:400;line-height:1;color:#17181C;width:700px">EDGE<br>RUNNERS</h1>
-<p style="font-size:34px;line-height:1.45;color:#17181C;width:660px">개발 과정, 되돌린 결정, 플레이 중 변경 사항.<br>62일간의 변경 내용과 이유 정리.</p>
+<p style="font-size:34px;line-height:1.45;color:#17181C;width:660px">개발 과정, 기각 · 개편한 결정, 플레이 중 변경 사항.<br>62일간의 변경 내용과 이유 정리.</p>
 <div style="display:flex;flex-direction:column;gap:6px;width:660px">
 <p style="font-size:26px;color:#5B606B">장대규</p>
 <p style="font-size:26px;color:#5B606B">1인 개발, Godot 4.7.2, 2026.08.21 – 10.21</p>
@@ -55,7 +56,7 @@
 </section>
 </div>
 <div class="slide-note"><div class="n-head"><span class="num">01</span><div class="n-lead">
-<p class="n-key">기획서에서 제외한 개발 과정, 되돌린 결정, 플레이 중 변경 사항을 따로 모은 자료입니다.</p>
+<p class="n-key">기획서에서 제외한 개발 과정, 기각 · 개편한 결정, 플레이 중 변경 사항을 따로 모은 자료입니다.</p>
 </div></div>
 </div>
 </div>
@@ -208,6 +209,7 @@
 </div>
 </details></div>
 </div>
+<div class="sec-head" id="part2"><span class="sec-k">02</span><h2>결정 기록과 기각 · 개편한 결정</h2></div>
 <div class="slide-item" id="s4">
 <div class="slide-frame">
 <section id="format" data-transition="fade" style="background:#F6F5F1;color:#17181C;font-family:'Paperlogy', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:44px">
@@ -227,24 +229,24 @@
 </div>
 </div>
 <div style="display:flex;flex-direction:column;width:748px">
-<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#17181C;padding-bottom:8px">결정 23개 중 바뀌거나 뒤집힌 것 (유지 18 · 바뀜 3 · 뒤집힘 2)</p>
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#17181C;padding-bottom:8px">결정 23개 중 기각하거나 개편한 것 (유지 18 · 개편 3 · 기각 2)</p>
 <div style="display:flex;flex-direction:column;gap:6px;padding:16px 0;border-top:1px solid #D9D7CF">
-<div style="display:flex;flex-direction:row;gap:12px;align-items:center"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#5B606B">결정 7</p><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#FFFFFF;background:#C2185B;padding:2px 14px;border-radius:20px">뒤집힘</p></div>
+<div style="display:flex;flex-direction:row;gap:12px;align-items:center"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#5B606B">결정 7</p><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#FFFFFF;background:#C2185B;padding:2px 14px;border-radius:20px">기각</p></div>
 <p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:27px;line-height:1.4;color:#17181C">전기 위 경직 → 상태 이상 오작동에 통합</p>
 <p style="font-size:24px;line-height:1.45;color:#3E434D">플레이어 경직을 따로 두지 않고 오작동 하나로 정리했습니다.</p>
 </div>
 <div style="display:flex;flex-direction:column;gap:6px;padding:16px 0;border-top:1px solid #D9D7CF">
-<div style="display:flex;flex-direction:row;gap:12px;align-items:center"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#5B606B">결정 18</p><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#FFFFFF;background:#C2185B;padding:2px 14px;border-radius:20px">뒤집힘</p></div>
+<div style="display:flex;flex-direction:row;gap:12px;align-items:center"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#5B606B">결정 18</p><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#FFFFFF;background:#C2185B;padding:2px 14px;border-radius:20px">기각</p></div>
 <p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:27px;line-height:1.4;color:#17181C">적의 엄폐 AI → 삭제</p>
 <p style="font-size:24px;line-height:1.45;color:#3E434D">측정 후 삭제했습니다. 엄폐물은 플레이어만 사용합니다.</p>
 </div>
 <div style="display:flex;flex-direction:column;gap:6px;padding:16px 0;border-top:1px solid #D9D7CF">
-<div style="display:flex;flex-direction:row;gap:12px;align-items:center"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#5B606B">결정 12</p><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#17181C;background:#FFFFFF;border:2px solid #9AA0AA;padding:0 12px;border-radius:20px">바뀜</p></div>
+<div style="display:flex;flex-direction:row;gap:12px;align-items:center"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#5B606B">결정 12</p><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#17181C;background:#FFFFFF;border:2px solid #9AA0AA;padding:0 12px;border-radius:20px">개편</p></div>
 <p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:27px;line-height:1.4;color:#17181C">사이버웨어 성장 트리 → 레벨 → 독립된 줄</p>
 <p style="font-size:24px;line-height:1.45;color:#3E434D">잘못 고른 가지를 되돌릴 수 없는 문제를 없앴습니다.</p>
 </div>
 <div style="display:flex;flex-direction:column;gap:6px;padding:16px 0;border-top:1px solid #D9D7CF">
-<div style="display:flex;flex-direction:row;gap:12px;align-items:center"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#5B606B">결정 3</p><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#17181C;background:#FFFFFF;border:2px solid #9AA0AA;padding:0 12px;border-radius:20px">바뀜</p></div>
+<div style="display:flex;flex-direction:row;gap:12px;align-items:center"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#5B606B">결정 3</p><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#17181C;background:#FFFFFF;border:2px solid #9AA0AA;padding:0 12px;border-radius:20px">개편</p></div>
 <p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:27px;line-height:1.4;color:#17181C">우클릭 해금 3단계 → 2단계</p>
 <p style="font-size:24px;line-height:1.45;color:#3E434D">튜토리얼에서 무기 능력을 더 일찍 쓰게 했습니다.</p>
 </div>
@@ -260,14 +262,14 @@
 </div></div>
 <details class="n-more"><summary>자세히 보기</summary>
 <div class="n-grid c1">
-<div class="n-box wide"><h3>바뀌거나 뒤집힌 결정</h3>
+<div class="n-box wide"><h3>기각하거나 개편한 결정</h3>
 <div class="n-table"><table>
 <tr><th>결정</th><th>상태</th><th>내용</th></tr>
-<tr><td>7번</td><td>뒤집힘</td><td>전기 위에 서 있으면 플레이어도 경직 → 상태 이상 오작동에 통합</td></tr>
-<tr><td>18번</td><td>뒤집힘</td><td>적의 엄폐 AI → 측정 후 삭제, 엄폐물은 플레이어만 사용</td></tr>
-<tr><td>3번</td><td>바뀜</td><td>우클릭 해금 시점 3단계 → 2단계</td></tr>
-<tr><td>8번</td><td>바뀜</td><td>신화 보상 확률 25% → 50%, 두 번 연속 미등장 시 세 번째에 반드시 등장</td></tr>
-<tr><td>12번</td><td>바뀜</td><td>사이버웨어 성장 트리 → 레벨 → 독립된 줄</td></tr>
+<tr><td>7번</td><td>기각</td><td>전기 위에 서 있으면 플레이어도 경직 → 상태 이상 오작동에 통합</td></tr>
+<tr><td>18번</td><td>기각</td><td>적의 엄폐 AI → 측정 후 삭제, 엄폐물은 플레이어만 사용</td></tr>
+<tr><td>3번</td><td>개편</td><td>우클릭 해금 시점 3단계 → 2단계</td></tr>
+<tr><td>8번</td><td>개편</td><td>신화 보상 확률 25% → 50%, 두 번 연속 미등장 시 세 번째에 반드시 등장</td></tr>
+<tr><td>12번</td><td>개편</td><td>사이버웨어 성장 트리 → 레벨 → 독립된 줄</td></tr>
 </table></div>
 </div>
 </div>
@@ -329,10 +331,10 @@
 <li>40×30m는 손그림 비율(4:3)에 맞춘 크기입니다.</li>
 </ul>
 </div>
-<div class="n-box"><h3>버린 것</h3>
+<div class="n-box"><h3>바뀐 점</h3>
 <ul>
-<li>좌대가 항상 가운데에 있다는 단순함을 버렸습니다.</li>
-<li>현재는 방마다 좌대 위치를 지정해야 합니다. 지정하지 않으면 가운데에 놓입니다.</li>
+<li>방마다 좌대 위치를 지정하도록 바꿨습니다.</li>
+<li>지정하지 않으면 가운데에 놓입니다.</li>
 </ul>
 </div>
 </div>
@@ -342,23 +344,23 @@
 <div class="slide-frame">
 <section id="trap" data-transition="fade" style="background:#F6F5F1;color:#17181C;font-family:'Paperlogy', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:48px">
 <div style="display:flex;flex-direction:column;gap:10px">
-<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;letter-spacing:2px;color:#0077A3">05  되돌린 결정 1</p>
-<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">바닥 함정 삭제와 전기 발판 상시 작동 전환</h2>
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;letter-spacing:2px;color:#0077A3">05  기각 · 개편 1</p>
+<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">바닥 함정 기각, 전기 발판 개편</h2>
 </div>
 <div style="display:flex;flex-direction:row;gap:64px;align-items:start">
 <div style="display:flex;flex-direction:column;gap:20px;width:880px">
 <div style="display:flex;flex-direction:column;gap:10px;background:#FFFFFF;padding:28px 36px;border-radius:12px;border-left:8px solid #C2185B">
-<div style="display:flex;flex-direction:row;justify-content:space-between;align-items:center"><h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:34px;font-weight:400;color:#17181C">바닥 함정</h3><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#C2185B">삭제 (09-16)</p></div>
+<div style="display:flex;flex-direction:row;justify-content:space-between;align-items:center"><h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:34px;font-weight:400;color:#17181C">바닥 함정</h3><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#C2185B">기각 (09-16)</p></div>
 <p style="font-size:26px;line-height:1.55;color:#3E434D">08-31에 이동 경로 판단을 유도하는 장치로 추가했습니다.<br>플레이어의 판단 내용이 전기 발판과 같아 완전히 삭제했습니다.</p>
 </div>
 <div style="display:flex;flex-direction:column;gap:10px;background:#FFFFFF;padding:28px 36px;border-radius:12px;border-left:8px solid #0077A3">
-<div style="display:flex;flex-direction:row;justify-content:space-between;align-items:center"><h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:34px;font-weight:400;color:#17181C">전기 발판</h3><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#0077A3">항상 켜짐으로 변경 (09-16)</p></div>
-<p style="font-size:26px;line-height:1.55;color:#3E434D">켜짐 · 꺼짐 주기가 있을 때 플레이어는 건널 타이밍 판단 없이 대기만 했습니다.<br>측정 결과 대시로 3칸(6m)까지 피해 없이 통과했습니다.<br>함정이 길을 막지 않으므로 통과용 틈을 따로 두지 않습니다.<br>통과는 피해 없이 두고, 오래 머무는 쪽에 불이익을 줍니다.</p>
+<div style="display:flex;flex-direction:row;justify-content:space-between;align-items:center"><h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:34px;font-weight:400;color:#17181C">전기 발판</h3><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#0077A3">개편 (09-16)</p></div>
+<p style="font-size:26px;line-height:1.55;color:#3E434D">켜짐 · 꺼짐 주기가 있을 때 플레이어는 건널 타이밍 판단 없이 대기만 했습니다.<br>측정 결과 대시로 3칸(6m)까지 피해 없이 통과했습니다.<br>발판이 길을 막지 않으므로 통과용 틈을 따로 두지 않습니다.<br>전기 발판은 빠르게 통과하면 피해 없이 통과할 수 있도록 설계를 바꿨습니다.</p>
 </div>
 </div>
 <div style="display:flex;flex-direction:column;gap:24px;width:720px">
-<img src="../../assets/img/map_combat_shockring_top.webp" alt="쇼크링 전투방을 위에서 본 모습. 외벽을 따라 주황색 전기 함정이 놓여 있고, 가운데에 낮은 엄폐물이 I자로 놓여 있다" style="width:720px;height:405px;object-fit:cover;border-radius:12px">
-<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#5B606B">현재 대시(3.5m)로 전기 함정 통과 시 받는 피해</p>
+<img src="../../assets/img/map_combat_shockring_top.webp" alt="쇼크링 전투방을 위에서 본 모습. 외벽을 따라 주황색 전기 발판이 놓여 있고, 가운데에 낮은 엄폐물이 I자로 놓여 있다" style="width:720px;height:405px;object-fit:cover;border-radius:12px">
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#5B606B">현재 대시(3.5m)로 전기 발판 통과 시 받는 피해</p>
 <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px">
 <div style="display:flex;flex-direction:column;gap:6px;background:#FFFFFF;padding:18px 24px;border-radius:12px;border:1px solid #D9D7CF"><p style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:48px;line-height:1.1;color:#0077A3">0</p><p style="font-size:24px;color:#3E434D">두 칸(4m)</p></div>
 <div style="display:flex;flex-direction:column;gap:6px;background:#FFFFFF;padding:18px 24px;border-radius:12px;border:1px solid #D9D7CF"><p style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:48px;line-height:1.1;color:#17181C">11.6</p><p style="font-size:24px;color:#3E434D">세 칸(6m)</p></div>
@@ -372,18 +374,18 @@
 </section>
 </div>
 <div class="slide-note"><div class="n-head"><span class="num">06</span><div class="n-lead">
-<p class="n-key">바닥 장치를 전기 함정 하나로 정리했습니다. 전기 함정은 통과보다 체류에 불이익을 주는 장치로 바뀌었습니다.</p>
+<p class="n-key">바닥 함정은 기각하고 바닥 장치를 전기 발판 하나로 정리했습니다. 전기 발판은 빠르게 통과하면 피해 없이 통과할 수 있도록 설계를 바꿨습니다.</p>
 </div></div>
 <details class="n-more"><summary>자세히 보기</summary>
 <div class="n-grid c3">
 <div class="n-box wide"><h3>바닥 함정의 경과</h3>
-<ol class="n-flow"><li><b>08-31 추가</b><span>경로 판단을 유도하는 장치</span></li><li><b>09-07 피해 상향</b><span>5에서 18로 올렸습니다. 5는 총알 한 발(8)보다 작았습니다</span></li><li><b>09-16 삭제</b><span>판단 내용이 전기 함정과 같았습니다</span></li></ol>
+<ol class="n-flow"><li><b>08-31 추가</b><span>경로 판단을 유도하는 장치</span></li><li><b>09-07 피해 상향</b><span>5에서 18로 올렸습니다. 5는 총알 한 발(8)보다 작았습니다</span></li><li><b>09-16 기각</b><span>판단 내용이 전기 발판과 같았습니다</span></li></ol>
 </div>
 <div class="n-box"><h3>전기 발판 주기 제거 이유</h3>
 <ul>
 <li>기존 주기는 꺼짐 2.2초, 예고 0.8초, 켜짐 1.4초였습니다.</li>
 <li>건널 타이밍 판단을 유도하려던 의도와 달리 대기하는 플레이만 남았습니다.</li>
-<li>버린 것은 타이밍 판단과 번갈아 켜지는 연출입니다.</li>
+<li>번갈아 켜지는 메커니즘을 삭제하되, 적절한 타이밍에 맞춰 대시를 활용하여 발판을 넘나드는 플레이스타일은 유지했습니다.</li>
 </ul>
 </div>
 <div class="n-box"><h3>대시 통과 시 받는 피해</h3>
@@ -394,13 +396,13 @@
 <tr><td>네 칸 (8m)</td><td>16</td><td>23.2</td></tr>
 </table></div>
 <p>10-20에 밟는 순간 첫 틱이 들어가도록 바꾸면서 값이 늘었습니다.</p>
-<p>측정 결과 함정이 길을 막지 않으므로 맵에 통과용 틈을 따로 두지 않습니다.</p>
+<p>측정 결과 발판이 길을 막지 않으므로 맵에 통과용 틈을 따로 두지 않습니다.</p>
 </div>
-<div class="n-box"><h3>체류 시 불이익</h3>
+<div class="n-box"><h3>발판에 서 있을 경우</h3>
 <ul>
-<li>함정 위에 서 있으면 0.3초마다 7.8의 피해를 받습니다.</li>
+<li>발판 위에 서 있으면 0.3초마다 7.8의 피해를 받습니다.</li>
 <li>전기 누적이 45를 넘으면 오작동에 걸려 2.5초 동안 대시를 쓸 수 없습니다.</li>
-<li>함정은 항상 한 칸(2m) 타일입니다. 일렬로 세 칸 이상 붙은 곳은 대시로 건너도 피해를 받습니다.</li>
+<li>발판은 항상 한 칸(2m) 타일입니다. 일렬로 세 칸 이상 붙은 곳은 대시로 건너도 피해를 받습니다.</li>
 </ul>
 </div>
 </div>
@@ -430,7 +432,7 @@
 <p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#5B606B">지금: 전방 2.3m, 70°</p>
 </div>
 </div>
-<p style="font-size:25px;line-height:1.55;color:#3E434D">근접병의 실제 판정은 전방뿐이나, 둘레 링 표시로 등 뒤도 맞는 것처럼 보였습니다.<br>현재 실제 도달 거리만큼 전방 부채꼴을 표시합니다.</p>
+<p style="font-size:25px;line-height:1.55;color:#3E434D">근접병의 실제 판정은 전방뿐이나, 둘레 링 표시로 등 뒤도 맞는 것처럼 보였습니다.<br>현재 실제 공격 범위만큼 전방 부채꼴로 표시합니다.</p>
 </div>
 <div style="display:flex;flex-direction:column;gap:20px;background:#FFFFFF;padding:36px;border-radius:12px;border:1px solid #D9D7CF">
 <h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;color:#17181C">알파: 0.34에서 0.16으로</h3>
@@ -497,77 +499,68 @@
 <div class="slide-frame">
 <section id="cyberware" data-transition="fade" style="background:#F6F5F1;color:#17181C;font-family:'Paperlogy', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:44px">
 <div style="display:flex;flex-direction:column;gap:10px">
-<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;letter-spacing:2px;color:#0077A3">07  되돌린 결정 2</p>
-<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">사이버웨어 성장 구조의 2회 변경</h2>
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;letter-spacing:2px;color:#0077A3">07  기각 · 개편 2</p>
+<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">사이버웨어 성장 개편 — 레벨 시스템 도입</h2>
 </div>
 <div style="display:flex;flex-direction:row;gap:16px;align-items:stretch">
 <div style="display:flex;flex-direction:column;gap:12px;width:500px;background:#FFFFFF;padding:36px;border-radius:12px;border:1px solid #D9D7CF">
-<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#5B606B">09-22까지</p>
-<h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:34px;font-weight:400;color:#17181C">트리</h3>
-<div style="display:flex;flex-direction:column;justify-content:center;align-items:center;height:150px;background:#F6F5F1;border-radius:8px">
-<svg aria-label="뿌리에서 두 가지로, 다시 네 가지로 갈리는 트리. 한 갈래만 진하게 골라져 있고 나머지는 점선이다" width="320" height="130" viewBox="0 0 320 130"><line x1="30" y1="65" x2="150" y2="100" stroke="#B8BCC4" stroke-width="3" stroke-dasharray="8 6"/><line x1="150" y1="30" x2="280" y2="12" stroke="#B8BCC4" stroke-width="3" stroke-dasharray="8 6"/><line x1="150" y1="100" x2="280" y2="82" stroke="#B8BCC4" stroke-width="3" stroke-dasharray="8 6"/><line x1="150" y1="100" x2="280" y2="118" stroke="#B8BCC4" stroke-width="3" stroke-dasharray="8 6"/><line x1="30" y1="65" x2="150" y2="30" stroke="#17181C" stroke-width="4"/><line x1="150" y1="30" x2="280" y2="48" stroke="#17181C" stroke-width="4"/><circle cx="150" cy="100" r="10" fill="#FFFFFF" stroke="#B8BCC4" stroke-width="3"/><circle cx="280" cy="12" r="9" fill="#FFFFFF" stroke="#B8BCC4" stroke-width="3"/><circle cx="280" cy="82" r="9" fill="#FFFFFF" stroke="#B8BCC4" stroke-width="3"/><circle cx="280" cy="118" r="9" fill="#FFFFFF" stroke="#B8BCC4" stroke-width="3"/><circle cx="30" cy="65" r="12" fill="#17181C"/><circle cx="150" cy="30" r="12" fill="#17181C"/><circle cx="280" cy="48" r="11" fill="#17181C"/></svg>
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#C2185B">기존 문제</p>
+<h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:34px;font-weight:400;line-height:1.25;color:#17181C">부위가 차면 멈추는 성장</h3>
+<div style="display:flex;flex-direction:column;justify-content:center;align-items:center;gap:12px;height:150px;background:#F6F5F1;border-radius:8px">
+<div style="display:flex;flex-direction:row;gap:10px"><div style="width:44px;height:44px;background:#0077A3;border-radius:8px;"></div><div style="width:44px;height:44px;background:#0077A3;border-radius:8px;"></div><div style="width:44px;height:44px;background:#0077A3;border-radius:8px;"></div></div>
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#C2185B">부위가 가득 참</p>
 </div>
-<p style="font-size:25px;line-height:1.5;color:#3E434D">개조형 가지를 선택하여 성장시켰습니다.<br>보상이 랜덤이라 잘못 고른 가지는 되돌릴 수 없었습니다.</p>
+<p style="font-size:25px;line-height:1.5;color:#3E434D">특정 부위의 사이버웨어가 다 차면 남는 선택지는 다른 보상을 고르거나 그 부위 장비를 교체하는 것뿐이었습니다. 육성의 재미가 떨어졌습니다.</p>
 </div>
 <x-shape kind="arrow-right" style="width:48px;height:28px;background:#9AA0AA;align-self:center"></x-shape>
 <div style="display:flex;flex-direction:column;gap:12px;width:500px;background:#FFFFFF;padding:36px;border-radius:12px;border:1px solid #D9D7CF">
-<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#5B606B">09-22 ~ 10-05</p>
-<h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:34px;font-weight:400;color:#17181C">레벨</h3>
-<div style="display:flex;flex-direction:row;justify-content:center;align-items:center;gap:14px;height:150px;background:#F6F5F1;border-radius:8px">
-<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#17181C;background:#FFFFFF;border:2px solid #9AA0AA;padding:10px 18px;border-radius:8px">Lv1</p>
-<x-shape kind="arrow-right" style="width:32px;height:18px;background:#9AA0AA"></x-shape>
-<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#17181C;background:#CFE6EF;border:2px solid #CFE6EF;padding:10px 18px;border-radius:8px">Lv2</p>
-<x-shape kind="arrow-right" style="width:32px;height:18px;background:#9AA0AA"></x-shape>
-<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#FFFFFF;background:#0077A3;border:2px solid #0077A3;padding:10px 18px;border-radius:8px">Lv3</p>
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#5B606B">검토 · 기각</p>
+<h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:34px;font-weight:400;line-height:1.25;color:#17181C">트리(가지) 성장</h3>
+<div style="display:flex;flex-direction:column;justify-content:center;align-items:center;height:150px;background:#F6F5F1;border-radius:8px">
+<svg aria-label="뿌리에서 두 가지로, 다시 네 가지로 갈리는 트리. 한 갈래만 진하게 골라져 있고 나머지는 점선이다" width="320" height="130" viewBox="0 0 320 130"><line x1="30" y1="65" x2="150" y2="100" stroke="#B8BCC4" stroke-width="3" stroke-dasharray="8 6"/><line x1="150" y1="30" x2="280" y2="12" stroke="#B8BCC4" stroke-width="3" stroke-dasharray="8 6"/><line x1="150" y1="100" x2="280" y2="82" stroke="#B8BCC4" stroke-width="3" stroke-dasharray="8 6"/><line x1="150" y1="100" x2="280" y2="118" stroke="#B8BCC4" stroke-width="3" stroke-dasharray="8 6"/><line x1="30" y1="65" x2="150" y2="30" stroke="#17181C" stroke-width="4"/><line x1="150" y1="30" x2="280" y2="48" stroke="#17181C" stroke-width="4"/><circle cx="150" cy="100" r="10" fill="#FFFFFF" stroke="#B8BCC4" stroke-width="3"/><circle cx="280" cy="12" r="9" fill="#FFFFFF" stroke="#B8BCC4" stroke-width="3"/><circle cx="280" cy="82" r="9" fill="#FFFFFF" stroke="#B8BCC4" stroke-width="3"/><circle cx="280" cy="118" r="9" fill="#FFFFFF" stroke="#B8BCC4" stroke-width="3"/><circle cx="30" cy="65" r="12" fill="#17181C"/><circle cx="150" cy="30" r="12" fill="#17181C"/><circle cx="280" cy="48" r="11" fill="#17181C"/></svg>
 </div>
-<p style="font-size:25px;line-height:1.5;color:#3E434D">가지를 없애고 한 줄을 Lv1에서 Lv3로 성장시켰습니다.<br>10-05에 개조형을 레벨 안에 통합한 결과 15줄만 남았습니다.</p>
+<p style="font-size:25px;line-height:1.5;color:#3E434D">업그레이드마다 다른 방향으로 성장하는 장점이 있었습니다. 하지만 한 계열로 키운 뒤 다른 계열 장비로 갈아타기 어려웠습니다.</p>
 </div>
 <x-shape kind="arrow-right" style="width:48px;height:28px;background:#9AA0AA;align-self:center"></x-shape>
 <div style="display:flex;flex-direction:column;gap:12px;width:500px;background:#FFFFFF;padding:36px;border-radius:12px;border:2px solid #0077A3">
-<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#0077A3">10-06부터</p>
-<h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:34px;font-weight:400;color:#17181C">독립된 줄과 레벨</h3>
-<div style="display:flex;flex-direction:column;justify-content:center;align-items:center;gap:12px;height:150px;background:#F6F5F1;border-radius:8px">
-<div style="display:flex;flex-direction:row;gap:8px"><div style="width:30px;height:30px;background:#FFFFFF;border:2px solid #9AA0AA;border-radius:6px"></div><div style="width:30px;height:30px;background:#CFE6EF;border-radius:6px"></div><div style="width:30px;height:30px;background:#0077A3;border-radius:6px"></div></div>
-<div style="display:flex;flex-direction:row;gap:8px"><div style="width:30px;height:30px;background:#FFFFFF;border:2px solid #9AA0AA;border-radius:6px"></div><div style="width:30px;height:30px;background:#CFE6EF;border-radius:6px"></div><div style="width:30px;height:30px;background:#0077A3;border-radius:6px"></div></div>
-<div style="display:flex;flex-direction:row;gap:8px"><div style="width:30px;height:30px;background:#FFFFFF;border:2px solid #9AA0AA;border-radius:6px"></div><div style="width:30px;height:30px;background:#CFE6EF;border-radius:6px"></div><div style="width:30px;height:30px;background:#0077A3;border-radius:6px"></div></div>
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#0077A3">확정</p>
+<h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:34px;font-weight:400;line-height:1.25;color:#17181C">레벨 시스템</h3>
+<div style="display:flex;flex-direction:row;justify-content:center;align-items:center;gap:14px;height:150px;background:#F6F5F1;border-radius:8px">
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#17181C;background:#FFFFFF;border:2px solid #9AA0AA;padding:10px 18px;border-radius:8px">Lv1</p><x-shape kind="arrow-right" style="width:32px;height:18px;background:#9AA0AA"></x-shape><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#17181C;background:#CFE6EF;border:2px solid #CFE6EF;padding:10px 18px;border-radius:8px">Lv2</p><x-shape kind="arrow-right" style="width:32px;height:18px;background:#9AA0AA"></x-shape><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#FFFFFF;background:#0077A3;border:2px solid #0077A3;padding:10px 18px;border-radius:8px">Lv3</p>
 </div>
-<p style="font-size:25px;line-height:1.5;color:#3E434D">개조형 열 개를 독립된 줄로 복원하여 25줄이 되었습니다.<br>레벨업은 새 기능, 숙련도는 수치를 담당합니다.</p>
+<p style="font-size:25px;line-height:1.5;color:#3E434D">같은 사이버웨어를 다시 얻으면 레벨이 오릅니다. 레벨업은 수치가 아니라 메커니즘과 기능을 추가하거나 강화합니다.</p>
 </div>
 </div>
-<p style="font-size:26px;line-height:1.55;color:#3E434D">버린 것은 숫자만 오르는 레벨입니다.<br>Lv2와 Lv3를 전부 플레이 방식이 달라지는 효과로 다시 만들었습니다.</p>
+<p style="font-size:26px;line-height:1.55;color:#3E434D">수치 상승은 숙련도가 맡고, 레벨은 플레이 방식을 바꾸는 성장만 담당합니다.<br>장비를 갈아타도 새 장비를 다시 키울 수 있어, 빌드를 바꾸는 선택이 막히지 않습니다.</p>
 <p style="position:absolute;left:128px;bottom:64px;width:800px;font-size:24px;color:#8A8F99">EDGERUNNERS 작업 내역</p>
 <p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#8A8F99">08</p>
 
 </section>
 </div>
 <div class="slide-note"><div class="n-head"><span class="num">08</span><div class="n-lead">
-<p class="n-key">트리에서 레벨로 바꾼 결정은 유지했습니다. 레벨 통합으로 줄어든 종류만 다음 날 복원했습니다.</p>
+<p class="n-key">부위가 차면 멈추는 성장을 개편해, 같은 사이버웨어를 다시 얻을 때마다 메커니즘과 기능이 늘어나는 레벨 시스템을 도입했습니다.</p>
 </div></div>
 <details class="n-more"><summary>자세히 보기</summary>
 <div class="n-grid c3">
-<div class="n-box wide"><h3>변경 순서</h3>
-<ol class="n-flow"><li><b>09-22 트리에서 레벨로</b><span>틀린 선택 제거</span></li><li><b>10-05 개조형 통합</b><span>15줄만 남음</span></li><li><b>10-06 독립된 줄 복원</b><span>개조형 열 개를 되살려 25줄</span></li><li><b>10-06 Lv2, Lv3 재작업</b><span>전부 새 기능으로</span></li></ol>
-</div>
-<div class="n-box"><h3>트리 폐기 이유</h3>
-<ul>
-<li>가지가 나뉘면 잘못 고를 수 있습니다.</li>
-<li>보상이 랜덤이라 잘못 고른 가지를 되돌릴 수 없습니다.</li>
-<li>레벨 구조에는 틀린 선택이 없어 보상이 랜덤이어도 빌드가 막히지 않습니다.</li>
-</ul>
+<div class="n-box wide"><h3>개편 흐름</h3>
+<ol class="n-flow"><li><b>기존 문제</b><span>부위가 다 차면 다른 보상 선택이나 장비 교체만 남아 육성의 재미가 떨어짐</span></li><li><b>검토 · 기각</b><span>트리(가지) 성장은 다른 계열 장비로 갈아타기 어려움</span></li><li><b>확정</b><span>레벨 시스템 — 레벨업마다 메커니즘 · 기능 추가 또는 강화</span></li></ol>
 </div>
 <div class="n-box"><h3>레벨업과 숙련도의 역할</h3>
 <div class="n-table"><table>
 <tr><th>구분</th><th>올려 주는 것</th></tr>
-<tr><td>레벨업 (Lv2, Lv3)</td><td>새 기능</td></tr>
+<tr><td>레벨업 (Lv2, Lv3)</td><td>메커니즘 · 기능 추가 또는 강화</td></tr>
 <tr><td>숙련도</td><td>수치</td></tr>
 </table></div>
-<p>숫자만 오르는 레벨은 플레이 중 달라지는 것이 없습니다. 따라서 수치 상승은 숙련도로 옮겼습니다.</p>
+</div>
+<div class="n-box"><h3>레벨 시스템을 고른 이유</h3>
+<ul>
+<li>같은 장비를 키울수록 플레이 방식이 달라집니다.</li>
+<li>장비를 갈아타도 새 장비를 다시 키울 수 있어 빌드 변경이 막히지 않습니다.</li>
+<li>수치만 오르는 성장은 플레이 중 달라지는 것이 없어 숙련도로 분리했습니다.</li>
+</ul>
 </div>
 <div class="n-box"><h3>현재 상태</h3>
 <div class="n-stats"><div><b>32줄</b><span>기본 사이버웨어</span></div><div><b>9개</b><span>프로토타입</span></div></div>
-<ul>
-<li>줄별 변경 경위는 결정 로그 부록에 날짜순으로 기록했습니다.</li>
-</ul>
 </div>
 </div>
 </details></div>
@@ -650,7 +643,7 @@
 <div class="slide-frame">
 <section id="coverai" data-transition="fade" style="background:#F6F5F1;color:#17181C;font-family:'Paperlogy', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:48px">
 <div style="display:flex;flex-direction:column;gap:10px">
-<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;letter-spacing:2px;color:#0077A3">09  되돌린 결정 3</p>
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;letter-spacing:2px;color:#0077A3">09  기각 · 개편 3</p>
 <h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">측정 후 삭제한 적 엄폐 AI</h2>
 </div>
 <div style="display:flex;flex-direction:row;gap:64px;align-items:start">
@@ -663,8 +656,8 @@
 <div style="display:flex;flex-direction:row;gap:24px;align-items:center"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;width:52px;height:52px;line-height:52px;text-align:center;background:#C2185B;color:#FFFFFF;border-radius:26px">5</p><p style="font-size:27px;color:#C2185B">10-16 전부 삭제.</p></div>
 </div>
 <div style="display:flex;flex-direction:column;gap:10px;background:#FFFFFF;padding:32px 36px;border-radius:12px;border:1px solid #D9D7CF">
-<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#5B606B">버린 것</p>
-<p style="font-size:26px;line-height:1.55;color:#3E434D">적이 엄폐물을 쓰는 전투입니다.<br>현재 엄폐물은 플레이어만 사용합니다.</p>
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#5B606B">결과</p>
+<p style="font-size:26px;line-height:1.55;color:#3E434D">적 엄폐 AI를 기각했습니다.<br>현재 엄폐물은 플레이어만 사용합니다.</p>
 </div>
 </div>
 <div style="display:flex;flex-direction:column;gap:20px;width:840px;background:#FFFFFF;padding:44px;border-radius:12px;border:1px solid #D9D7CF">
@@ -709,15 +702,15 @@
 <div class="n-box"><h3>결정 기록 (18번)</h3>
 <div class="n-table"><table>
 <tr><th>항목</th><th>내용</th></tr>
-<tr><td>지금</td><td>뒤집힘</td></tr>
+<tr><td>지금</td><td>기각</td></tr>
 <tr><td>무엇을</td><td>원거리병이 엄폐물 뒤에 숨는 AI를 세 번 고친 뒤 삭제</td></tr>
 <tr><td>왜</td><td>14명 중 4명만 숨을 위치를 찾음</td></tr>
-<tr><td>버린 것</td><td>적이 엄폐물을 쓰는 전투</td></tr>
+<tr><td>결과</td><td>엄폐물은 플레이어만 사용</td></tr>
 </table></div>
 </div>
 <div class="n-box"><h3>같은 기준으로 뺀 것</h3>
 <ul>
-<li>바닥 함정은 플레이어의 판단 내용이 전기 함정과 겹쳐 삭제했습니다.</li>
+<li>바닥 함정은 플레이어의 판단 내용이 전기 발판과 겹쳐 삭제했습니다.</li>
 <li>10-21 재점검에서도 적 엄폐 AI는 줄인 기능으로 기록했습니다.</li>
 </ul>
 </div>
@@ -754,7 +747,7 @@
 </div>
 </div>
 </div>
-<p style="font-size:26px;line-height:1.55;color:#3E434D">재제작 목적은 단계별 교습 내용을 하나로 줄이는 것입니다.<br>버린 것은 곧은 복도의 쉬운 레벨 작업입니다. 보행 가능 칸을 칠하는 길 빌더를 새로 만들었습니다.</p>
+<p style="font-size:26px;line-height:1.55;color:#3E434D">조작 연습(1단계), 무기 활용 연습(2단계), 스스로 복습하는 3단계로 나눠 단계마다 배울 것을 하나로 정했습니다.<br>굽은 숲길을 만들기 위해 보행 가능 칸을 칠하는 길 빌더를 새로 만들었습니다.</p>
 <p style="position:absolute;left:128px;bottom:64px;width:800px;font-size:24px;color:#8A8F99">EDGERUNNERS 작업 내역</p>
 <p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#8A8F99">11</p>
 
@@ -803,6 +796,7 @@
 </div>
 </details></div>
 </div>
+<div class="sec-head" id="part3"><span class="sec-k">03</span><h2>직접 플레이하며 바꾼 것</h2></div>
 <div class="slide-item" id="s12">
 <div class="slide-frame">
 <section id="playtest" data-transition="fade" style="background:#F6F5F1;color:#17181C;font-family:'Paperlogy', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:44px">
@@ -870,6 +864,7 @@
 </div>
 </details></div>
 </div>
+<div class="sec-head" id="part4"><span class="sec-k">04</span><h2>중간 평가와 남은 과제</h2></div>
 <div class="slide-item" id="s13">
 <div class="slide-frame">
 <section id="review" data-transition="fade" style="background:#F6F5F1;color:#17181C;font-family:'Paperlogy', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:40px">
@@ -883,7 +878,7 @@
 <div style="display:flex;flex-direction:row;gap:24px;align-items:center;padding:14px 0;border-bottom:1px solid #D9D7CF"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;width:40px;color:#0077A3">2</p><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;width:520px;color:#17181C">레벨이 둘뿐임</p><p style="font-size:25px;width:780px;color:#3E434D">직접 그린 맵이 둘에서 여덟 개로 증가.</p><div style="display:flex;flex-direction:row;justify-content:end;width:160px"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#FFFFFF;background:#0077A3;border:2px solid #0077A3;padding:4px 16px;border-radius:20px">해결</p></div></div>
 <div style="display:flex;flex-direction:row;gap:24px;align-items:center;padding:14px 0;border-bottom:1px solid #D9D7CF"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;width:40px;color:#0077A3">3</p><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;width:520px;color:#17181C">적 종류가 시스템 규모에 못 미침</p><p style="font-size:25px;width:780px;color:#3E434D">새 적 대신 기존 적에 다른 위협 요소 추가.</p><div style="display:flex;flex-direction:row;justify-content:end;width:160px"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#FFFFFF;background:#0077A3;border:2px solid #0077A3;padding:4px 16px;border-radius:20px">해결</p></div></div>
 <div style="display:flex;flex-direction:row;gap:24px;align-items:center;padding:14px 0;border-bottom:1px solid #D9D7CF"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;width:40px;color:#0077A3">4</p><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;width:520px;color:#17181C">화면 글자 과다</p><p style="font-size:25px;width:780px;color:#3E434D">오른쪽 카드 목록 삭제. 좌대 글자는 유지.</p><div style="display:flex;flex-direction:row;justify-content:end;width:160px"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#FFFFFF;background:#C2185B;border:2px solid #C2185B;padding:4px 16px;border-radius:20px">미해결</p></div></div>
-<div style="display:flex;flex-direction:row;gap:24px;align-items:center;padding:14px 0;border-bottom:1px solid #D9D7CF"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;width:40px;color:#0077A3">5</p><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;width:520px;color:#17181C">끝까지 플레이한 사람 없음</p><p style="font-size:25px;width:780px;color:#3E434D">체크리스트는 비어 있습니다. 플레이 보고가 작업의 출발점이 되었습니다.</p><div style="display:flex;flex-direction:row;justify-content:end;width:160px"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#17181C;background:#FFFFFF;border:2px solid #9AA0AA;padding:4px 16px;border-radius:20px">일부 해결</p></div></div>
+<div style="display:flex;flex-direction:row;gap:24px;align-items:center;padding:14px 0;border-bottom:1px solid #D9D7CF"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;width:40px;color:#0077A3">5</p><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;width:520px;color:#17181C">끝까지 플레이한 사람 없음</p><p style="font-size:25px;width:780px;color:#3E434D">직접 수백 판을 플레이하며 문제를 찾고 수정했습니다.</p><div style="display:flex;flex-direction:row;justify-content:end;width:160px"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#FFFFFF;background:#0077A3;border:2px solid #0077A3;padding:4px 16px;border-radius:20px">해결</p></div></div>
 <div style="display:flex;flex-direction:row;gap:24px;align-items:center;padding:14px 0"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;width:40px;color:#0077A3">6</p><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;width:520px;color:#17181C">움직임이 뻣뻣함</p><p style="font-size:25px;width:780px;color:#3E434D">Mixamo 클립, 래그돌, 무기별 처형 추가.</p><div style="display:flex;flex-direction:row;justify-content:end;width:160px"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#17181C;background:#CFE6EF;border:2px solid #CFE6EF;padding:4px 16px;border-radius:20px">개선</p></div></div>
 </div>
 <p style="font-size:26px;line-height:1.55;color:#3E434D">작업은 마감(10/15)을 넘겨 10-21까지 진행되었습니다.</p>
@@ -905,7 +900,7 @@
 </ul>
 </div>
 <div class="n-box"><h3>평가 당시 수치</h3>
-<div class="n-stats"><div><b>2개</b><span>직접 그린 전투방</span></div><div><b>6개</b><span>적 역할</span></div><div><b>0개</b><span>체크된 플레이테스트 항목</span></div></div>
+<div class="n-stats"><div><b>2개</b><span>직접 그린 전투방</span></div><div><b>6개</b><span>적 역할</span></div></div>
 </div>
 <div class="n-box"><h3>재점검 시 증가 · 축소 항목</h3>
 <div class="n-table"><table>
@@ -919,7 +914,7 @@
 <div class="n-box"><h3>계획 대비 결과</h3>
 <ul>
 <li>새 시스템을 넣지 않는다는 계획은 지키지 못했습니다(해킹 모드, 10-12).</li>
-<li>플레이테스트 체크리스트에 체크된 항목이 없습니다. 한 판 플레이 시간도 측정하지 않았습니다.</li>
+<li>끝까지 플레이한 사람이 없다는 문제는 직접 수백 판을 플레이하며 피드백을 반영해 해결했습니다.</li>
 <li>순서 변경으로 포트폴리오가 달라진다는 제안은 슬라이드 순서에 반영했습니다.</li>
 </ul>
 </div>
@@ -933,7 +928,7 @@
 <p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;letter-spacing:2px;color:#0077A3">13  남은 과제</p>
 <h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">미결 기획 과제</h2>
 </div>
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:24px">
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:32px">
 <div style="display:flex;flex-direction:column;gap:14px;background:#FFFFFF;padding:32px;border-radius:12px;border:1px solid #D9D7CF">
 <h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;line-height:1.25;color:#17181C">좌대 글자 정리</h3>
 <p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#C2185B">지금</p>
@@ -948,20 +943,6 @@
 <p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#0077A3">할 것</p>
 <p style="font-size:25px;line-height:1.5;color:#3E434D">스탯 보상 종류, 스킬 칸 수, Lv3 등장 방을 줄이는 안 검토.</p>
 </div>
-<div style="display:flex;flex-direction:column;gap:14px;background:#FFFFFF;padding:32px;border-radius:12px;border:1px solid #D9D7CF">
-<h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;line-height:1.25;color:#17181C">시야 안개</h3>
-<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#C2185B">지금</p>
-<p style="font-size:25px;line-height:1.5;color:#3E434D">기획만 완료된 상태입니다.<br>위에서 내려다보는 카메라라 벽 뒤의 적도 보입니다.</p>
-<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#0077A3">정할 것</p>
-<p style="font-size:25px;line-height:1.5;color:#3E434D">가려진 적의 표시 방식과 시야를 막는 대상, 눈 사이버웨어와의 연결.</p>
-</div>
-<div style="display:flex;flex-direction:column;gap:14px;background:#FFFFFF;padding:32px;border-radius:12px;border:1px solid #D9D7CF">
-<h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;line-height:1.25;color:#17181C">처음부터 끝까지 플레이</h3>
-<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#C2185B">지금</p>
-<p style="font-size:25px;line-height:1.5;color:#3E434D">플레이테스트 체크리스트가 비어 있습니다. 한 판 플레이 시간도 측정하지 않았습니다.</p>
-<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#0077A3">할 것</p>
-<p style="font-size:25px;line-height:1.5;color:#3E434D">새 게임으로 끝까지 플레이하며 막히는 곳과 사망 원인 수정.</p>
-</div>
 </div>
 <p style="position:absolute;left:128px;bottom:64px;width:800px;font-size:24px;color:#8A8F99">EDGERUNNERS 작업 내역</p>
 <p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#8A8F99">14</p>
@@ -969,17 +950,15 @@
 </section>
 </div>
 <div class="slide-note"><div class="n-head"><span class="num">14</span><div class="n-lead">
-<p class="n-key">남은 과제는 10-07 중간 평가의 미해결 문제와, 기획만 하고 넣지 않은 시스템입니다.</p>
+<p class="n-key">남은 과제는 10-07 중간 평가에서 지적된 문제 중 아직 해결하지 못한 두 가지입니다.</p>
 </div></div>
 <details class="n-more"><summary>자세히 보기</summary>
-<div class="n-grid c2">
+<div class="n-grid c1">
 <div class="n-box wide"><h3>과제와 출처</h3>
 <div class="n-table"><table>
 <tr><th>과제</th><th>출처</th><th>상태</th></tr>
 <tr><td>좌대 글자 정리</td><td>10-07 평가 문제 4</td><td>미해결</td></tr>
 <tr><td>성장 요소 정리</td><td>10-07 평가 문제 1</td><td>일부 해결 (첫 판 명상 잠금)</td></tr>
-<tr><td>시야 안개</td><td>사이버웨어 제안서</td><td>기획만 완료</td></tr>
-<tr><td>처음부터 끝까지 플레이</td><td>10-07 평가 문제 5</td><td>일부 해결</td></tr>
 </table></div>
 </div>
 <div class="n-box"><h3>성장 요소 정리</h3>
@@ -992,19 +971,6 @@
 <li>스킬 칸은 한 판에 두 칸을 못 산다면 숨깁니다.</li>
 <li>스탯 보상은 종류를 줄여 등급 색이 눈에 띄게 합니다.</li>
 <li>사이버웨어 Lv3는 ??? 방과 리퍼닥에서만 나오게 합니다.</li>
-</ul>
-</div>
-<div class="n-box"><h3>시야 안개</h3>
-<h4>도입 목적</h4>
-<ul>
-<li>벽이 정보까지 가려 모퉁이 뒤를 판단하게 합니다.</li>
-<li>눈 사이버웨어에 다시 역할이 생깁니다.</li>
-</ul>
-<h4>선결 과제</h4>
-<ul>
-<li>눈 사이버웨어가 없으면 적의 모션만 보고 회피합니다.</li>
-<li>적이 가려지면 회피 단서가 사라집니다.</li>
-<li>해결안 후보는 예비동작에 들어간 적을 잠시 노출, 정예가 없는 방에만 적용, 정예의 예비동작만 항상 표시입니다.</li>
 </ul>
 </div>
 </div>

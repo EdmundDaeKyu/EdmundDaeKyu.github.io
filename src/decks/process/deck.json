@@ -7,7 +7,7 @@
   "order": ["cover", "timeline", "numbers", "format", "v1", "trap", "shape", "cyberware", "bossplan", "coverai", "tutorial", "playtest", "review", "open"],
   "sections": {
     "s1": {"description": "개발 기간의 흐름과 주요 수치 변화", "start": "cover"},
-    "s2": {"description": "결정 기록과 되돌린 결정", "start": "format"},
+    "s2": {"description": "결정 기록과 기각 · 개편한 결정", "start": "format"},
     "s3": {"description": "직접 플레이하며 바꾼 것", "start": "playtest"},
     "s4": {"description": "중간 평가와 남은 과제", "start": "review"}
   },

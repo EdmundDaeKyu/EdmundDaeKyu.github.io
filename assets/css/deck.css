@@ -144,3 +144,11 @@
 .n-more[open] > summary { margin-bottom: 14px; }
 .n-aside p { font-size: 15.5px; line-height: 1.75; color: var(--ink-2); max-width: 980px; margin: 0 0 0 52px; }
 @media (max-width: 640px) { .n-more > summary, .n-aside p { margin-left: 0; } }
+
+/* 덱 구획(sections) 제목 */
+.sec-head { display: flex; align-items: baseline; gap: 14px; padding: 28px 0 6px; margin-top: 8px; border-top: 2px solid var(--dark); scroll-margin-top: 84px; }
+.slides > .sec-head:first-child { margin-top: 0; }
+.sec-head .sec-k { font-family: var(--bold); font-size: 30px; color: var(--accent); line-height: 1; }
+.sec-head h2 { font-size: 28px; margin: 0; }
+.doc-index li.di-sec { font-family: var(--semi); font-size: 12.5px; color: var(--accent); padding: 8px 0 2px; }
+.doc-index li.di-sec:first-child { padding-top: 0; }

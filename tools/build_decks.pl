@@ -14,6 +14,7 @@
 use strict;
 use warnings;
 use utf8;
+use JSON::PP ();
 binmode STDOUT, ':encoding(UTF-8)';
 binmode STDERR, ':encoding(UTF-8)';
 
@@ -25,7 +26,7 @@ my @DECKS = (
   ['level',    'plan', '레벨 기획서', '레벨', '맵 제작 순서, 격자 규칙, 맵 목록, 첫 판의 요소 등장 순서, 웨이브, 방 종류, 보스를 다룹니다.', 'combat_pinwheel_top'],
   ['tutorial', 'plan', '튜토리얼 기획서', '튜토리얼', '첫 판에만 나오는 숲속 맵 3개와 시간을 멈추는 코칭 컷, 수행 조건에 따른 단계 진행을 다룹니다.', 'trail_overview_1'],
   ['growth',   'plan', '성장 기획서', '성장', '경험치, 명상, 숙련도, 코인, 회차, 사망 후에도 남는 항목을 다룹니다.', 'growth_meditation'],
-  ['process',  'log',  '작업 내역', '작업 내역', '62일 동안의 개발 과정과 되돌린 결정, 플레이 검증으로 바꾼 항목을 정리했습니다.', 'portfolio_boss'],
+  ['process',  'log',  '작업 내역', '작업 내역', '62일 동안의 개발 과정과 기각 · 개편한 결정, 플레이 검증으로 바꾼 항목을 정리했습니다.', 'portfolio_boss'],
   # 역기획서 — 다른 게임의 레벨 · 시스템을 기획자 입장에서 다시 읽은 덱. 목록과 홈 카드에 이 순서로 나간다
   ['lol1',     'study', '소환사의 협곡 레벨디자인 역기획 (1편)', '소환사의 협곡 레벨디자인', '라인 3개와 정글, 오브젝트, 시야 배치가 공정성과 역할 분담, 국면 전환을 만드는 구조를 정리했습니다.', 'lol1_01', '리그 오브 레전드'],
   ['lol2',     'study', '소환사의 협곡 미니언·포탑 시스템 기획 (2편)', '미니언 · 포탑 시스템 기획', '설계 목표에서 미니언 골드 · 경험치와 포탑 수치를 정하고, 라인전 경제와 14분 기준점, 보완 기획을 다룹니다.', 'lol2_02', '리그 오브 레전드'],
@@ -231,18 +232,33 @@ sub slide_title {
   $t =~ s/<br\s*\/?>/ /g; $t =~ s/<[^>]+>//g; $t =~ s/&nbsp;|&#160;/ /g; $t =~ s/\s+/ /g; $t =~ s/^\s+|\s+$//g;
   return $t eq '' ? '(제목 없음)' : $t;
 }
+# 덱의 sections → {시작 장 id => [번호, 설명]}. 설명은 사이트에서 구획 제목으로 쓴다
+sub sections_of {
+  my ($dir) = @_;
+  my $j = JSON::PP->new->utf8->decode(do { open my $f, '<:raw', "$dir/deck.json" or die; local $/; <$f> });
+  my $sec = $j->{sections} || {};
+  my %pos; my $i = 0; $pos{$_} = $i++ for @{ $j->{order} };
+  my @s = sort { $pos{$a->{start}} <=> $pos{$b->{start}} } grep { exists $pos{$_->{start}} } values %$sec;
+  my %m; my $k = 0;
+  $m{$_->{start}} = [++$k, $_->{description}] for @s;
+  return \%m;
+}
 my %titles;
+my %secs;
 for my $d (grep { $_->[1] ne 'study' } @DECKS) {
   my $dir = "$root/src/decks/$d->[0]";
   my ($order) = slurp("$dir/deck.json") =~ /"order"\s*:\s*\[(.*?)\]/s;
-  $titles{$d->[0]} = [ map { slide_title(slurp("$dir/slides/$_.html")) } ($order =~ /"([^"]+)"/g) ];
+  my @oids = ($order =~ /"([^"]+)"/g);
+  $titles{$d->[0]} = [ map { slide_title(slurp("$dir/slides/$_.html")) } @oids ];
+  $titles{"$d->[0]:ids"} = \@oids;
+  $secs{$d->[0]} = sections_of($dir);
 }
 
 # Edgerunners 기획서 · 작업 내역 페이지 왼쪽 목차. 모든 덱의 모든 장을 한 단계로 나열한다
 sub doc_index {
   my ($cur) = @_;
   my @er = grep { $_->[1] ne 'study' } @DECKS;
-  my $h = qq(<details class="doc-index" open><summary>기획서 목차</summary>\n<a class="di-pdf" href="../../assets/pdf/edgerunners_summary.pdf">요약 PDF 받기</a>\n);
+  my $h = qq(<details class="doc-index" open><summary>기획서 목차</summary>\n<a class="di-pdf" href="@{[ $cur->[1] eq 'log' ? '../plan/' : '' ]}summary.html">기획 요약 보기 · 14장</a>\n);
   my $k = 0;
   for my $d (@er) {
     my $href = link_to($cur, $d);
@@ -250,7 +266,12 @@ sub doc_index {
     my $label = $d->[1] eq 'log' ? '작업 내역' : $d->[0] eq 'overview' ? '개요' : sprintf('세부 %02d', ++$k);
     $h .= '<div class="di-deck' . ($d->[0] eq $cur->[0] ? ' on' : '') . qq("><a class="di-title" href="@{[ $href eq '' ? '#top' : $href ]}"><span>$label</span>$d->[3]</a><ol>);
     my $i = 0;
-    $h .= join('', map { $i++; qq(<li><a href="$href#s$i">) . esc($_) . '</a></li>' } @{ $titles{$d->[0]} });
+    my $ids = $titles{"$d->[0]:ids"}; my $sm = $secs{$d->[0]};
+    for my $t (@{ $titles{$d->[0]} }) {
+      my $sid = $ids->[$i]; $i++;
+      $h .= qq(<li class="di-sec">$sm->{$sid}[0]. ) . esc($sm->{$sid}[1]) . '</li>' if $sm->{$sid} && keys(%$sm) > 1;
+      $h .= qq(<li><a href="$href#s$i">) . esc($t) . '</a></li>';
+    }
     $h .= "</ol></div>\n";
   }
   return "$h</details>\n";
@@ -269,6 +290,7 @@ for my $d (@DECKS) {
   my @ids = $order =~ /"([^"]+)"/g;
   my @items;
   my $n = 0;
+  my $sm = $secs{$id} || sections_of($dir);
   my $notes = 0;
   for my $sid (@ids) {
     my $html = slurp("$dir/slides/$sid.html");
@@ -296,6 +318,10 @@ for my $d (@DECKS) {
       my $more = $rest eq '' ? '' : qq(<details class="n-more"><summary>자세히 보기</summary><div class="n-aside"><p>) . esc($rest) . '</p></div></details>';
       $note_html = qq(<div class="slide-note"><div class="n-head"><span class="num">$num</span><div class="n-lead"><p>) . esc($first) . qq(</p></div></div>$more</div>);
     }
+    if ($sm->{$sid} && keys(%$sm) > 1) {
+      my ($k, $desc) = @{ $sm->{$sid} };
+      push @items, sprintf(qq(<div class="sec-head" id="part%d"><span class="sec-k">%02d</span><h2>%s</h2></div>), $k, $k, esc($desc));
+    }
     push @items, qq(<div class="slide-item" id="s$n">\n<div class="slide-frame">\n$html\n</div>\n$note_html\n</div>);
   }
   my $count = scalar @ids;
@@ -314,7 +340,7 @@ for my $d (@DECKS) {
   if ($group ne 'study') {
     $open = qq(<div class="plan-layout">\n) . doc_index($d) . qq(<div class="plan-main">);
     $close = "</div>\n</div>";
-    $pdf = qq(\n<a class="btn ghost" href="../../assets/pdf/edgerunners_summary.pdf">요약 PDF · 14쪽</a>);
+    $pdf = qq(\n<a class="btn ghost" href="@{[ $group eq 'log' ? '../plan/' : '' ]}summary.html">기획 요약 보기 · 14장</a>);
   }
   my $page = shell(
     main_class => $group eq 'study' ? 'wrap' : 'wrap wide',
@@ -397,6 +423,49 @@ $pages</body>
 </html>
 HTML
 print 'summary.html: ' . scalar(@SUMMARY) . "장\n";
+
+# ── 기획 요약 보기(edgerunners/plan/summary.html): 같은 14장을 슬라이드 보기로. 열면 바로 발표 모드가 켜지고 ←/→, Esc가 동작한다 ──
+{
+  my $items = ''; my $k = 0;
+  for my $key (@SUMMARY) {
+    my $h = $raw{$key};
+    $h =~ s{/_blob/([0-9a-f]{32})}{ exists $img{$1} ? "../../assets/img/$img{$1}.webp" : "" }ge;
+    $k++;
+    my ($deck) = split m{/}, $key;
+    my ($dd) = grep { $_->[0] eq $deck } @DECKS;
+    $items .= qq(<div class="slide-item" id="s$k">\n<div class="slide-frame">\n$h\n</div>\n<p class="sum-src">$dd->[2]</p>\n</div>\n);
+  }
+  my $ov = (grep { $_->[0] eq 'overview' } @DECKS)[0];
+  spit("$root/edgerunners/plan/summary.html", shell(
+    title => '기획 요약 · Edgerunners',
+    desc => 'Edgerunners 기획서 핵심 14장 요약.',
+    main_class => 'wrap wide',
+    head => qq(<link rel="stylesheet" href="../../assets/css/deck.css">\n<script src="../../assets/js/deck.js" defer></script>\n<style>.sum-src{font-size:13px;color:var(--ink-4);margin:0;}</style>\n),
+    tabs => tabs('plan'),
+    body => qq(<div class="plan-layout">\n) . doc_index(['summary', 'plan', '기획 요약', '기획 요약']) . qq(<div class="plan-main">
+<div class="deck-head" id="top">
+<p class="eyebrow">Edgerunners 기획서</p>
+<h1>기획 요약</h1>
+<p class="lead">개요 기획서와 세부 기획서에서 핵심 14장을 골랐습니다.</p>
+<div class="deck-tools">
+<button class="btn" type="button" data-present="0">슬라이드 보기</button>
+<a class="btn ghost" href="../../assets/pdf/edgerunners_summary.pdf" download>PDF 내려받기</a>
+<span class="small">14장 · ←/→ 키로 넘기고 Esc로 닫습니다</span>
+</div>
+</div>
+<div class="slides">
+$items</div>
+</div>
+</div>),
+    tail => qq(<div class="present" aria-modal="true" role="dialog">
+<div class="stage"></div>
+<div class="bar"><button class="prev" type="button">← 이전</button><span class="count"></span><button class="next" type="button">다음 →</button><button class="close" type="button">닫기 (Esc)</button></div>
+</div>
+<script>document.addEventListener("DOMContentLoaded", function () { setTimeout(function () { var b = document.querySelector("[data-present]"); if (b && !location.hash) b.click(); }, 60); });</script>
+),
+  ));
+  print "plan/summary.html: 기획 요약 보기\n";
+}
 
 # ── 역기획서 목록 ──
 my @study = grep { $_->[1] eq 'study' } @DECKS;
