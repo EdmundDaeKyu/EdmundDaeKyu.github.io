@@ -1,7 +1,7 @@
 <section id="status" data-transition="fade" style="background:#ECEBE6;color:#17181C;font-family:'Paperlogy', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:40px">
 <div style="display:flex;flex-direction:column;gap:10px">
 <p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;letter-spacing:2px;color:#0077A3">08  대시로 피할 수 없는 위협 2: 상태 이상</p>
-<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">오작동에 걸리면 2.5초 동안 대시를 쓸 수 없다</h2>
+<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">오작동 시 2.5초 대시 불가</h2>
 </div>
 <div style="display:flex;flex-direction:row;gap:48px;align-items:start">
 <div style="display:flex;flex-direction:column;gap:16px;width:820px">
@@ -10,30 +10,29 @@
 <h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;color:#17181C">과열: 공격 불가</h3>
 <div style="display:flex;flex-direction:row;gap:12px;align-items:center"><div style="width:20px;height:20px;background:#E07020;border-radius:10px"></div><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#5B606B">주황, 7초, 초당 4</p></div>
 </div>
-<p style="font-size:25px;line-height:1.55;color:#3E434D">이동과 대시만 가능하다.<br>대시할 때마다 지속 시간의 20%가 줄어든다.</p>
+<p style="font-size:25px;line-height:1.55;color:#3E434D">이동과 대시만 가능.<br>대시할 때마다 지속 시간 20% 감소.</p>
 </div>
 <div style="display:flex;flex-direction:column;gap:8px;background:#FFFFFF;padding:24px 32px;border-radius:12px;border-left:8px solid #1E7FD0">
 <div style="display:flex;flex-direction:row;justify-content:space-between;align-items:center">
 <h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;color:#17181C">오작동: 대시 불가</h3>
 <div style="display:flex;flex-direction:row;gap:12px;align-items:center"><div style="width:20px;height:20px;background:#1E7FD0;border-radius:10px"></div><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#5B606B">파랑, 2.5초, 걸릴 때 10</p></div>
 </div>
-<p style="font-size:25px;line-height:1.55;color:#3E434D">걸리는 순간 0.7초 동안 경직된다.<br>대시 무적에 의존하는 빌드도 이 동안 대시를 쓸 수 없다.</p>
+<p style="font-size:25px;line-height:1.55;color:#3E434D">걸리는 순간 0.7초 경직.<br>대시 무적 의존 빌드도 오작동 중 대시 불가.</p>
 </div>
 <div style="display:flex;flex-direction:column;gap:8px;background:#FFFFFF;padding:24px 32px;border-radius:12px;border-left:8px solid #2E9E52">
 <div style="display:flex;flex-direction:row;justify-content:space-between;align-items:center">
 <h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;color:#17181C">중독: 회복량 절반</h3>
 <div style="display:flex;flex-direction:row;gap:12px;align-items:center"><div style="width:20px;height:20px;background:#2E9E52;border-radius:10px"></div><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#5B606B">초록, 8초, 초당 5</p></div>
 </div>
-<p style="font-size:25px;line-height:1.55;color:#3E434D">리게인, 흡혈, 구급상자 모두 회복량이 절반으로 줄어든다.</p>
+<p style="font-size:25px;line-height:1.55;color:#3E434D">리게인, 흡혈, 구급상자 회복량 모두 절반으로 감소.</p>
 </div>
 </div>
 <div style="display:flex;flex-direction:column;gap:16px;width:796px">
 <img src="/_blob/b09b187b5c60965d597a4c2d80d9ff50" alt="실제 게임의 엘리트방. 파랑, 초록, 빨강 빛의 속성 드론과 초록, 파랑으로 물든 속성 적, 구리 배선 타일의 전기 함정이 있고, 플레이어 둘레에서 화염구가 붉은 고리로 터지고 있다" style="width:796px;height:420px;object-fit:cover;border-radius:12px">
-<p style="font-size:24px;line-height:1.5;color:#5B606B">엘리트방에서 화염구가 터지는 장면</p>
-<p style="font-size:25px;line-height:1.55;color:#3E434D">속성 공격을 하는 적, 속성 드론, 폭발물, 전기 함정이 상태 이상 수치를 누적시킨다.<br>누적치가 45를 넘으면 걸리고, 더 맞지 않으면 3초 동안 유지되다가 초당 8씩 줄어든다.</p>
+<p style="font-size:25px;line-height:1.55;color:#3E434D">속성 공격을 하는 적, 속성 드론, 폭발물, 전기 함정이 상태 이상 수치를 누적시킴.<br>누적치 45 초과 시 상태 이상 발생. 추가 피격이 없으면 3초 유지 후 초당 8씩 감소.</p>
 </div>
 </div>
 <p style="position:absolute;left:128px;bottom:64px;width:800px;font-size:24px;color:#8A8F99">EDGERUNNERS 전투 규칙 기획서</p>
 <p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#8A8F99">09</p>
-<aside>오른쪽은 실제 게임의 엘리트방입니다. 불, 전기, 독 드론과 속성 공격을 하는 적, 전기 함정이 한 방에 있어서 상태 이상을 누적시키는 대상이 한 화면에 모두 보입니다. 순간적인 공격은 모두 대시 한 번으로 피할 수 있으므로, 이것만으로는 난이도를 올리는 방법이 동시에 피해야 하는 공격의 수를 늘리는 것 하나뿐입니다. 그래서 두 번째 축으로 지속 피해(전기 함정)를, 세 번째 축으로 상태 이상을 더했습니다. 세 번째 축의 핵심은 오작동입니다. 대시 무적에 의존하는 빌드도 오작동에 걸리면 대시를 쓸 수 없습니다. 속성 공격을 하는 적은 3번째 방부터 기본 병사의 30%이고, 무기에 속성 색 빛이 돌아서 한눈에 알 수 있습니다. 상태 이상이 붙은 공격은 피해가 0.7배로 낮은 대신, 걸렸을 때의 불이익이 큽니다. 화면에는 게이지 아래에 “오작동이 다 차면 대시 불가”처럼 짧은 문구 하나만 표시합니다. 상태 이상 피해에는 방어력이 적용되지 않습니다. 방어력이 틱 피해를 지워 버리면 상태 이상이 의미가 없어지기 때문입니다. 플레이어가 적에게 거는 속성(불은 점화 폭발, 전기는 1.2초 마비, 독은 10초 동안 받는 피해 1.2배)과는 문턱만 같고 효과가 다릅니다. 적은 무력해지지만, 플레이어는 행동 하나를 못 하게 됩니다.</aside>
+<aside>오른쪽 그림은 실제 게임의 엘리트방임. 불, 전기, 독 드론과 속성 공격을 하는 적, 전기 함정이 한 방에 있어 상태 이상 누적 대상이 한 화면에 모두 보임. 순간 공격은 모두 대시 한 번으로 회피 가능함. 순간 공격만으로는 난이도 조절 수단이 동시 공격 수 증가 하나뿐임. 따라서 두 번째 축으로 지속 피해(전기 함정), 세 번째 축으로 상태 이상을 추가함. 세 번째 축의 핵심은 오작동임. 대시 무적 의존 빌드도 오작동 중에는 대시 불가함. 속성 공격을 하는 적은 3번째 방부터 기본 병사의 30%를 차지함. 무기에 속성 색 빛이 돌아 즉시 식별 가능함. 상태 이상이 붙은 공격은 피해가 0.7배로 낮은 대신 걸렸을 때의 불이익이 큼. 화면에는 게이지 아래에 “오작동이 다 차면 대시 불가” 같은 짧은 문구 하나만 표시함. 상태 이상 피해에는 방어력이 적용되지 않음. 방어력이 틱 피해를 지우면 상태 이상이 무의미해지기 때문임. 플레이어가 적에게 거는 속성(불은 점화 폭발, 전기는 1.2초 마비, 독은 10초 동안 받는 피해 1.2배)과는 문턱만 같고 효과가 다름. 적은 무력화되지만, 플레이어는 행동 하나만 제한됨.</aside>
 </section>

@@ -150,6 +150,13 @@
   }
 
   document.addEventListener("DOMContentLoaded", function () {
+    // 좁은 화면에서는 목차를 접어 두어 본문이 먼저 보이게 한다
+    const index = document.querySelector(".doc-index");
+    if (index && window.innerWidth <= 1100) index.removeAttribute("open");
+    // 넓은 화면: 목차를 지금 보는 기획서 위치까지 내려 둔다
+    const on = index && index.querySelector(".di-deck.on");
+    if (on && window.innerWidth > 1100) index.scrollTop = on.offsetTop - index.offsetTop - 120;
+    if (index) index.querySelector("summary").addEventListener("click", function (e) { if (window.innerWidth > 1100) e.preventDefault(); });
     prepare(document);
     fitAll();
     window.addEventListener("resize", function () { fitAll(); sizeStage(); });

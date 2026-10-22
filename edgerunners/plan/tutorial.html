@@ -4,26 +4,39 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>튜토리얼 기획서 · Edgerunners</title>
-<meta name="description" content="Edgerunners 튜토리얼 기획서. 첫 판에만 진행하는 숲속 맵 세 개와, 시간을 멈추고 가르치는 코칭 컷.">
+<meta name="description" content="Edgerunners 튜토리얼 기획서. 첫 판 한정 숲속 맵 3개, 시간 정지 코칭 컷, 수행 조건 기반 단계 진행.">
 <link rel="stylesheet" href="../../assets/css/site.css">
 <link rel="stylesheet" href="../../assets/css/deck.css">
 <script src="../../assets/js/deck.js" defer></script>
 </head>
 <body>
 <div class="scroll-root">
-<header class="site-head"><div class="wrap">
+<header class="site-head"><div class="wrap wide">
 <a class="brand" href="../../">장대규</a>
 <nav><a href="../../">홈</a><a class="on" href="../../edgerunners/">Edgerunners</a><a href="../../analysis/">역기획서</a></nav>
 </div></header>
-<main class="wrap">
+<main class="wrap wide">
 <nav class="tabs"><a href="../">게임</a><a class="on" href="../plan/">기획서</a><a href="../log/">작업 내역</a></nav>
-<div class="deck-head">
+<div class="plan-layout">
+<details class="doc-index" open><summary>기획서 목차</summary>
+<a class="di-pdf" href="../../assets/pdf/edgerunners_summary.pdf">요약 PDF 받기</a>
+<div class="di-deck"><a class="di-title" href="./"><span>개요</span>개요 기획서</a><ol><li><a href="./#s1">표지</a></li><li><a href="./#s2">사이버웨어와 무기로 빌드를 만드는 탑다운 로그라이트</a></li><li><a href="./#s3">빌드 구성, 빌드 시험, 적 웨이브 처치</a></li><li><a href="./#s4">시설 출격부터 방 12개를 거쳐 보스까지의 진행</a></li><li><a href="./#s5">사이버웨어 8부위와 부위별 단일 역할</a></li><li><a href="./#s6">빌드별 플레이 방식 차이</a></li><li><a href="./#s7">2077 무기 · 사이버웨어의 탑다운 전투용 재설계</a></li><li><a href="./#s8">방 진행에 따른 신규 요소 단계별 추가</a></li><li><a href="./#s9">판 안 성장 초기화, 판 밖 성장 유지</a></li><li><a href="./#s10">모든 공격의 예고와 대시로 피할 수 없는 위협</a></li><li><a href="./#s11">레벨 제작 순서: 손그림, 격자 도면, 실제 플레이</a></li><li><a href="./#s12">주제별 세부 기획서 구성</a></li></ol></div>
+<div class="di-deck"><a class="di-title" href="combat.html"><span>세부 01</span>전투 규칙</a><ol><li><a href="combat.html#s1">표지</a></li><li><a href="combat.html#s2">낮은 엄폐물 한 칸 기준의 대시 거리 설정</a></li><li><a href="combat.html#s3">적 공격 예고보다 긴 대시 1회 충전 시간</a></li><li><a href="combat.html#s4">주황색 공격 범위, 빨간색 판정 시점 표시</a></li><li><a href="combat.html#s5">실제 판정 범위와 동일한 예고 표시</a></li><li><a href="combat.html#s6">모든 피해 수치에 적용하는 단일 기준표</a></li><li><a href="combat.html#s7">피해 감소 중첩 시 받는 피해 하한</a></li><li><a href="combat.html#s8">위에 머무르는 동안 지속되는 전기 함정 피해</a></li><li><a href="combat.html#s9">오작동 시 2.5초 대시 불가</a></li></ol></div>
+<div class="di-deck"><a class="di-title" href="system.html"><span>세부 02</span>시스템</a><ol><li><a href="system.html#s1">표지</a></li><li><a href="system.html#s2">무기별 우클릭 고유 능력</a></li><li><a href="system.html#s3">사이버웨어 8부위와 부위별 담당 영역</a></li><li><a href="system.html#s4">레벨업은 새 기능, 숙련도는 수치 강화</a></li><li><a href="system.html#s5">프로토타입의 효과와 대가</a></li><li><a href="system.html#s6">대상과 클릭 버튼별 해킹 효과</a></li><li><a href="system.html#s7">사망 후에도 유지되는 레벨, 명상, 숙련도</a></li><li><a href="system.html#s8">코인 가격 — 강화 300, 해금 500, 슬롯 확장 1500 이상</a></li><li><a href="system.html#s9">신화 카드 획득처 — 훈련장 좌대와 작업대</a></li><li><a href="system.html#s10">보스 처치 후 업그레이드를 유지한 다음 회차 진입</a></li></ol></div>
+<div class="di-deck"><a class="di-title" href="level.html"><span>세부 03</span>레벨</a><ol><li><a href="level.html#s1">표지</a></li><li><a href="level.html#s2">레벨 제작 순서 — 손그림, 격자 도면, 실제 플레이</a></li><li><a href="level.html#s3">도면만으로 대시 통과 지점을 판별하는 격자 규칙</a></li><li><a href="level.html#s4">그린 방을 즉시 플레이로 시험하는 편집 흐름</a></li><li><a href="level.html#s5">전투방 도면 후보와 무작위 선택</a></li><li><a href="level.html#s6">엘리트방, ??? 방, 보스방 전용 도면</a></li><li><a href="level.html#s7">방 번호별 신규 장치 등장 순서</a></li><li><a href="level.html#s8">모든 방의 최소 두 웨이브 구성</a></li><li><a href="level.html#s9">보상과 비용 기준의 방 종류 구분</a></li><li><a href="level.html#s10">체간 붕괴 후 처형 중심의 보스 피해 구조</a></li></ol></div>
+<div class="di-deck on"><a class="di-title" href="#top"><span>세부 04</span>튜토리얼</a><ol><li><a href="#s1">표지</a></li><li><a href="#s2">시간 정지 후 한 번에 한 가지씩 교습</a></li><li><a href="#s3">숲속 맵 세 개로 구성한 튜토리얼</a></li><li><a href="#s4">맨손 대시 · 회피 학습과 카타나 획득</a></li><li><a href="#s5">근접 · 원거리 적 동시 등장 시점의 우클릭 해금</a></li><li><a href="#s6">수류탄으로만 처치되는 적을 이용한 수류탄 교습</a></li><li><a href="#s7">코칭 컷 없이 스스로 길을 찾는 마지막 단계</a></li><li><a href="#s8">지형을 이용한 진행 경로 안내</a></li><li><a href="#s9">배운 조작의 수행을 조건으로 한 단계 진행</a></li></ol></div>
+<div class="di-deck"><a class="di-title" href="growth.html"><span>세부 05</span>성장</a><ol><li><a href="growth.html#s1">표지</a></li><li><a href="growth.html#s2">사망 시 빌드 손실, 경험치 · 숙련도 · 코인 유지</a></li><li><a href="growth.html#s3">레벨업 보상: 체력 회복과 스킬 포인트 1</a></li><li><a href="growth.html#s4">세 갈래 다섯 칸 구조의 명상과 마지막 칸 궁극기</a></li><li><a href="growth.html#s5">장착 중 처치 수로 오르고 사망 시에도 유지되는 숙련도</a></li><li><a href="growth.html#s6">같은 사이버웨어 재획득 시 새 기능 추가</a></li><li><a href="growth.html#s7">숙련도 단계마다 1/3씩 감소하는 프로토타입 대가</a></li><li><a href="growth.html#s8">사망 시 유지되는 코인과 새 선택지 항목의 높은 가격</a></li><li><a href="growth.html#s9">보스 처치 후 빌드를 유지한 다음 회차 진행</a></li><li><a href="growth.html#s10">적 처치로 함께 쌓이는 경험치 · 숙련도 · 코인</a></li></ol></div>
+<div class="di-deck"><a class="di-title" href="../log/"><span>작업 내역</span>작업 내역</a><ol><li><a href="../log/#s1">표지</a></li><li><a href="../log/#s2">62일 작업의 여덟 구간 구분</a></li><li><a href="../log/#s3">주요 수치 변경 내역</a></li><li><a href="../log/#s4">결정별 네 항목 기록 형식</a></li><li><a href="../log/#s5">보상 좌대 위치로 인한 도면 중심 구조 누락</a></li><li><a href="../log/#s6">바닥 함정 삭제와 전기 발판 상시 작동 전환</a></li><li><a href="../log/#s7">실제 판정에 맞춘 공격 예고 범위</a></li><li><a href="../log/#s8">사이버웨어 성장 구조의 2회 변경</a></li><li><a href="../log/#s9">10-14 보스 개선안의 반영 결과</a></li><li><a href="../log/#s10">표지</a></li><li><a href="../log/#s11">바깥 네 방에서 숲길 세 단계로 바뀐 튜토리얼</a></li><li><a href="../log/#s12">직접 플레이로 찾은 문제와 변경 내용</a></li><li><a href="../log/#s13">10-07 중간 평가 문제의 2주 후 재점검</a></li><li><a href="../log/#s14">미결 기획 과제</a></li></ol></div>
+</details>
+<div class="plan-main">
+<div class="deck-head" id="top">
 <p class="eyebrow">Edgerunners 기획서</p>
 <h1>튜토리얼 기획서</h1>
-<p class="lead">첫 판에만 진행하는 숲속 맵 세 개와, 시간을 멈추고 가르치는 코칭 컷.</p>
+<p class="lead">첫 판 한정 숲속 맵 3개, 시간 정지 코칭 컷, 수행 조건 기반 단계 진행.</p>
 <div class="deck-tools">
-<button class="btn" type="button" data-present="0">슬라이드로 넘겨 보기</button>
-<span class="small">9장 · 슬라이드를 누르면 크게 보고, 화살표 키로 넘긴다</span>
+<button class="btn" type="button" data-present="0">슬라이드 보기</button>
+<a class="btn ghost" href="../../assets/pdf/edgerunners_summary.pdf">요약 PDF · 14쪽</a>
+<span class="small">9장 · 슬라이드 클릭 시 확대, 화살표 키로 이동</span>
 </div>
 </div>
 <div class="slides">
@@ -33,7 +46,7 @@
 <img src="../../assets/img/trail_overview_1.webp" alt="위에서 내려다본 1단계 숲길. 자갈을 깐 구불구불한 길이 숲 사이로 이어지고, 쓰러진 나무가 길을 가로지른다" style="position:absolute;left:880px;top:0;width:1040px;height:1080px;object-fit:cover">
 <p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;letter-spacing:3px;color:#0077A3;width:680px">튜토리얼 기획서</p>
 <h1 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:112px;font-weight:400;line-height:1;color:#17181C;width:700px">EDGE<br>RUNNERS</h1>
-<p style="font-size:34px;line-height:1.45;color:#17181C;width:660px">첫 판에만 진행하는 숲속 맵 세 개의 튜토리얼.<br>적이 공격하기 직전에 시간을 멈추고, 배울 키 하나만 입력받는다.</p>
+<p style="font-size:34px;line-height:1.45;color:#17181C;width:660px">첫 판에만 진행하는 숲속 맵 세 개 구성의 튜토리얼.<br>적 공격 직전에 시간을 멈추고 배울 키 하나만 입력받음.</p>
 <div style="display:flex;flex-direction:column;gap:6px;width:660px">
 <p style="font-size:26px;color:#5B606B">장대규</p>
 <p style="font-size:26px;color:#5B606B">1인 개발, Godot 4.7.2, 2026.08.21 – 10.21</p>
@@ -42,17 +55,17 @@
 </section>
 </div>
 <div class="slide-note"><div class="n-head"><span class="num">01</span><div class="n-lead">
-<p class="n-key">첫 판에서 이동, 회피, 무기 능력, 상태 이상을 차례로 익히고 시설로 들어가게 하는 튜토리얼입니다.</p>
+<p class="n-key">첫 판에서 이동, 회피, 무기 능력, 상태 이상을 차례로 익힌 뒤 시설로 진입하는 튜토리얼.</p>
 </div></div>
 <div class="n-grid c2">
 <div class="n-box wide"><h3>한 판에서의 위치</h3>
-<ol class="n-flow"><li><b>튜토리얼</b><span>새 게임의 첫 판만, 숲속 맵 세 개(1~3단계)</span></li><li><b>시설 입장방</b><span>무기 해금, 작업대, 명상</span></li><li><b>방 12개</b><span>문에 적힌 보상을 보고 고른다</span></li><li><b>보스</b><span>기업 히트맨</span></li></ol>
+<ol class="n-flow"><li><b>튜토리얼</b><span>새 게임의 첫 판만, 숲속 맵 세 개(1~3단계)</span></li><li><b>시설 입장방</b><span>무기 해금, 작업대, 명상</span></li><li><b>방 12개</b><span>문에 적힌 보상을 보고 선택</span></li><li><b>보스</b><span>기업 히트맨</span></li></ol>
 </div>
 <div class="n-box"><h3>목표 표시</h3>
 <ul>
-<li>화면 오른쪽 위에 "시설로 들어가 기업 히트맨을 잡는다"가 세 단계 내내 표시된다.</li>
-<li>그 아래에 단계 이름과 할 일 목록이 붙는다.</li>
-<li>해낸 항목에는 완료 표시가 붙는다.</li>
+<li>화면 오른쪽 위에 "시설로 들어가 기업 히트맨을 잡는다"를 세 단계 내내 표시함.</li>
+<li>목표 아래에 단계 이름과 할 일 목록을 표시함.</li>
+<li>완료한 항목에는 완료 표시가 붙음.</li>
 </ul>
 </div>
 <div class="n-box"><h3>단계별로 배우는 것</h3>
@@ -66,52 +79,51 @@
 <section id="principle" data-transition="fade" style="background:#17181C;color:#F6F5F1;font-family:'Paperlogy', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:40px">
 <div style="display:flex;flex-direction:column;gap:10px">
 <p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;letter-spacing:2px;color:#5CC8F0">01  코칭 컷</p>
-<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#F6F5F1">시간을 멈추고 한 번에 하나씩 가르친다</h2>
+<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#F6F5F1">시간 정지 후 한 번에 한 가지씩 교습</h2>
 </div>
 <div style="display:flex;flex-direction:row;gap:64px;align-items:start">
 <div style="display:flex;flex-direction:column;gap:28px;width:800px">
-<div style="display:flex;flex-direction:row;gap:24px;align-items:start"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;width:52px;height:52px;line-height:52px;text-align:center;background:#5CC8F0;color:#17181C;border-radius:26px">1</p><div style="display:flex;flex-direction:column;gap:6px;width:724px"><h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;line-height:1.25;color:#F6F5F1">시간을 멈춘다</h3><p style="font-size:25px;line-height:1.5;color:#AEB3BC">적이 공격하기 직전에 게임을 멈춘다.</p></div></div>
-<div style="display:flex;flex-direction:row;gap:24px;align-items:start"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;width:52px;height:52px;line-height:52px;text-align:center;background:#5CC8F0;color:#17181C;border-radius:26px">2</p><div style="display:flex;flex-direction:column;gap:6px;width:724px"><h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;line-height:1.25;color:#F6F5F1">카메라를 당긴다</h3><p style="font-size:25px;line-height:1.5;color:#AEB3BC">카메라 각도는 그대로 두고 거리만 좁힌다.</p></div></div>
-<div style="display:flex;flex-direction:row;gap:24px;align-items:start"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;width:52px;height:52px;line-height:52px;text-align:center;background:#5CC8F0;color:#17181C;border-radius:26px">3</p><div style="display:flex;flex-direction:column;gap:6px;width:724px"><h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;line-height:1.25;color:#F6F5F1">한 가지만 설명한다</h3><p style="font-size:25px;line-height:1.5;color:#AEB3BC">자막 한 줄에 한 가지를 설명하고, 설명하는 대상을 화면 가운데에 둔다.</p></div></div>
-<div style="display:flex;flex-direction:row;gap:24px;align-items:start"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;width:52px;height:52px;line-height:52px;text-align:center;background:#5CC8F0;color:#17181C;border-radius:26px">4</p><div style="display:flex;flex-direction:column;gap:6px;width:724px"><h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;line-height:1.25;color:#F6F5F1">키 하나만 입력받는다</h3><p style="font-size:25px;line-height:1.5;color:#AEB3BC">배울 키를 누르면 시간이 다시 흐르고, 성공하면 카메라가 원래 거리로 돌아간다.</p></div></div>
+<div style="display:flex;flex-direction:row;gap:24px;align-items:start"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;width:52px;height:52px;line-height:52px;text-align:center;background:#5CC8F0;color:#17181C;border-radius:26px">1</p><div style="display:flex;flex-direction:column;gap:6px;width:724px"><h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;line-height:1.25;color:#F6F5F1">시간 정지</h3><p style="font-size:25px;line-height:1.5;color:#AEB3BC">적 공격 직전에 게임을 멈춤.</p></div></div>
+<div style="display:flex;flex-direction:row;gap:24px;align-items:start"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;width:52px;height:52px;line-height:52px;text-align:center;background:#5CC8F0;color:#17181C;border-radius:26px">2</p><div style="display:flex;flex-direction:column;gap:6px;width:724px"><h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;line-height:1.25;color:#F6F5F1">카메라 줌인</h3><p style="font-size:25px;line-height:1.5;color:#AEB3BC">카메라 각도는 유지하고 거리만 좁힘.</p></div></div>
+<div style="display:flex;flex-direction:row;gap:24px;align-items:start"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;width:52px;height:52px;line-height:52px;text-align:center;background:#5CC8F0;color:#17181C;border-radius:26px">3</p><div style="display:flex;flex-direction:column;gap:6px;width:724px"><h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;line-height:1.25;color:#F6F5F1">자막 한 줄에 한 가지 설명</h3><p style="font-size:25px;line-height:1.5;color:#AEB3BC">설명 대상을 화면 가운데에 둠.</p></div></div>
+<div style="display:flex;flex-direction:row;gap:24px;align-items:start"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;width:52px;height:52px;line-height:52px;text-align:center;background:#5CC8F0;color:#17181C;border-radius:26px">4</p><div style="display:flex;flex-direction:column;gap:6px;width:724px"><h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;line-height:1.25;color:#F6F5F1">배울 키 하나만 입력</h3><p style="font-size:25px;line-height:1.5;color:#AEB3BC">배울 키 입력 시 시간이 다시 흐름.<br>성공 시 카메라가 원래 거리로 복귀함.</p></div></div>
 </div>
 <div style="display:flex;flex-direction:column;gap:14px;width:800px">
 <img src="../../assets/img/lesson_s2_grenade_coach.webp" alt="수류탄 코칭 컷. 시간이 멈춘 채 한곳에 모인 원거리 적 다섯이 화면 가운데에 있고, 자막에 피스톨의 고유 능력은 수류탄이라는 설명이 나온다" style="width:800px;height:450px;object-fit:cover;border-radius:12px">
-<p style="font-size:24px;color:#AEB3BC">2단계 수류탄 코칭 컷</p>
 </div>
 </div>
-<p style="font-size:26px;line-height:1.55;color:#C9CDD4">글로만 “대시로 피하세요”를 띄우면 플레이어는 읽는 동안 이미 공격에 맞는다.<br>그러면 조작법 대신 튜토리얼 문구는 읽을 틈이 없다는 것을 배우게 된다.</p>
+<p style="font-size:26px;line-height:1.55;color:#C9CDD4">글로만 “대시로 피하세요”를 띄우면 플레이어가 읽는 동안 공격에 맞음.<br>이 경우 플레이어는 조작법 대신 ‘튜토리얼 문구는 읽을 틈이 없음’을 학습함.</p>
 <p style="position:absolute;left:128px;bottom:64px;width:800px;font-size:24px;color:#6F737C">EDGERUNNERS 튜토리얼 기획서</p>
 <p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#6F737C">02</p>
 
 </section>
 </div>
 <div class="slide-note"><div class="n-head"><span class="num">02</span><div class="n-lead">
-<p class="n-key">코칭 컷은 공격을 맞기 전에 설명을 읽을 시간을 주고, 그동안 배울 키 하나만 받습니다.</p>
+<p class="n-key">코칭 컷은 공격을 맞기 전에 설명을 읽을 시간을 줌. 코칭 컷 동안 배울 키 하나만 입력받음.</p>
 </div></div>
 <div class="n-grid c3">
 <div class="n-box wide"><h3>진행 순서</h3>
-<ol class="n-flow"><li><b>적 접근</b><span>공격 직전에 게임 정지</span></li><li><b>카메라 줌인</b><span>각도는 그대로</span></li><li><b>자막</b><span>한 줄에 한 가지</span></li><li><b>키 입력</b><span>배울 키만 받는다</span></li><li><b>다시 진행</b><span>성공하면 카메라 복귀</span></li></ol>
+<ol class="n-flow"><li><b>적 접근</b><span>공격 직전에 게임 정지</span></li><li><b>카메라 줌인</b><span>각도는 그대로</span></li><li><b>자막</b><span>한 줄에 한 가지</span></li><li><b>키 입력</b><span>배울 키만 입력</span></li><li><b>다시 진행</b><span>성공 시 카메라 복귀</span></li></ol>
 </div>
-<div class="n-box"><h3>입력을 막는 방법</h3>
+<div class="n-box"><h3>입력 차단 방식</h3>
 <ul>
-<li>코칭 컷 동안에는 게임 전체를 멈춘다.</li>
-<li>막을 키를 하나씩 지정하지 않으므로, 가르치지 않은 키가 입력되는 일이 없다.</li>
-<li>자막은 F로 넘기고, 마지막 줄에서 배울 키를 받는다.</li>
+<li>코칭 컷 동안 게임 전체를 멈춤.</li>
+<li>막을 키를 하나씩 지정하지 않으므로 가르치지 않은 키는 입력되지 않음.</li>
+<li>자막은 F로 넘김. 마지막 줄에서 배울 키를 입력받음.</li>
 </ul>
 </div>
 <div class="n-box"><h3>카메라</h3>
 <ul>
-<li>실제 전투와 같은 피치 -72°를 유지하고 거리만 줄인다.</li>
-<li>튜토리얼 화면과 전투 화면이 다르면 여기서 익힌 감각이 다음 전투에서 맞지 않는다.</li>
-<li>자막 줄이 바뀌면 카메라가 비추는 대상도 바뀐다.</li>
+<li>실제 전투와 같은 피치 -72°를 유지하고 거리만 줄임.</li>
+<li>튜토리얼 화면과 전투 화면이 다르면 튜토리얼에서 익힌 감각이 다음 전투에서 맞지 않음.</li>
+<li>자막 줄이 바뀌면 카메라가 비추는 대상도 바뀜.</li>
 </ul>
 </div>
-<div class="n-box"><h3>코칭 컷을 쓰지 않는 곳</h3>
+<div class="n-box"><h3>코칭 컷 미사용 구간</h3>
 <ul>
-<li>한 번 배운 조작은 다음부터 스스로 하게 둔다.</li>
-<li>1단계의 나머지 나무 둘, 2단계의 남은 근접 적이 그 예다.</li>
-<li>3단계에는 코칭 컷이 없다.</li>
+<li>한 번 배운 조작은 다음부터 플레이어가 스스로 수행함.</li>
+<li>해당 구간: 1단계의 나머지 나무 둘, 2단계의 남은 근접 적.</li>
+<li>3단계에는 코칭 컷이 없음.</li>
 </ul>
 </div>
 </div>
@@ -122,28 +134,28 @@
 <section id="stages" data-transition="fade" style="background:#ECEBE6;color:#17181C;font-family:'Paperlogy', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:36px">
 <div style="display:flex;flex-direction:column;gap:10px">
 <p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;letter-spacing:2px;color:#0077A3">02  맵 구성</p>
-<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">튜토리얼은 숲속 맵 세 개로 이루어진다</h2>
+<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">숲속 맵 세 개로 구성한 튜토리얼</h2>
 </div>
-<p style="font-size:27px;line-height:1.55;color:#3E434D">1단계부터 3단계까지 맵 세 개를 차례로 지나가고, 맵마다 배우는 주제가 하나씩 있다.</p>
+<p style="font-size:27px;line-height:1.55;color:#3E434D">맵 세 개를 1단계부터 차례로 통과함. 맵마다 학습 주제를 하나씩 둠.</p>
 <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px">
 <div style="display:flex;flex-direction:column;gap:12px">
 <img src="../../assets/img/trail_overview_1.webp" alt="위에서 본 1단계. 자갈을 깐 구불구불한 길이 크게 휘어 돌고, 쓰러진 나무 셋이 길을 가로지르며, 오른쪽 끝에 둥근 공터가 있다" style="width:528px;height:297px;object-fit:cover;border-radius:12px">
 <p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#17181C">1단계  대시와 회피</p>
-<p style="font-size:25px;line-height:1.5;color:#3E434D">길을 막은 쓰러진 나무를 대시로 넘고,<br>공터에서 근접 적 하나와 싸운다</p>
+<p style="font-size:25px;line-height:1.5;color:#3E434D">길을 막은 쓰러진 나무를 대시로 넘음.<br>공터에서 근접 적 하나와 전투.</p>
 </div>
 <div style="display:flex;flex-direction:column;gap:12px">
 <img src="../../assets/img/trail_overview_2.webp" alt="위에서 본 2단계. 곧은 자갈길 양옆으로 숲 바닥이 이어지고, 위쪽에는 큰 나무가, 화면 아래쪽에는 덤불과 바위가 있다" style="width:528px;height:297px;object-fit:cover;border-radius:12px">
 <p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#17181C">2단계  무기 고유 능력</p>
-<p style="font-size:25px;line-height:1.5;color:#3E434D">우클릭 발도와 피스톨 수류탄을<br>처음 써 본다</p>
+<p style="font-size:25px;line-height:1.5;color:#3E434D">우클릭 발도와 피스톨 수류탄을<br>처음 사용함.</p>
 </div>
 <div style="display:flex;flex-direction:column;gap:12px">
 <img src="../../assets/img/trail_overview_3.webp" alt="위에서 본 3단계. 위쪽 길 끝 오른쪽에 주황빛 시설 정문이 있고, 길 중간에서 아래로 갈라지는 샛길 끝에 둥근 공터가 있다" style="width:528px;height:297px;object-fit:cover;border-radius:12px">
 <p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#17181C">3단계  실전 연습</p>
-<p style="font-size:25px;line-height:1.5;color:#3E434D">코칭 없이 두 웨이브를 처치하고,<br>정문을 여는 키를 직접 찾는다</p>
+<p style="font-size:25px;line-height:1.5;color:#3E434D">코칭 없이 두 웨이브를 처치함.<br>정문을 여는 키를 직접 찾음.</p>
 </div>
 </div>
 <div style="display:flex;flex-direction:row;gap:28px;align-items:center;background:#FFFFFF;padding:20px 32px;border-radius:12px;border:1px solid #D9D7CF">
-<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#5B606B">세 단계 내내 표시되는 목표</p>
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#5B606B">세 단계 공통 목표</p>
 <p style="font-size:28px;color:#17181C">시설로 들어가 기업 히트맨을 잡는다</p>
 </div>
 <p style="position:absolute;left:128px;bottom:64px;width:800px;font-size:24px;color:#8A8F99">EDGERUNNERS 튜토리얼 기획서</p>
@@ -152,15 +164,15 @@
 </section>
 </div>
 <div class="slide-note"><div class="n-head"><span class="num">03</span><div class="n-lead">
-<p class="n-key">1~3단계는 서로 다른 숲속 맵이고, 앞 단계에서 얻은 무기를 다음 단계에서 그대로 씁니다.</p>
+<p class="n-key">1~3단계는 서로 다른 숲속 맵임. 앞 단계에서 얻은 무기를 다음 단계에서 그대로 사용함.</p>
 </div></div>
 <div class="n-grid c2">
 <div class="n-box wide"><h3>단계별 맵 구성</h3>
 <div class="n-table"><table>
 <tr><th>단계</th><th>맵 구성</th><th>끝나는 조건</th></tr>
-<tr><td>1단계</td><td>쓰러진 나무 셋이 가로막은 약 75m의 숲길, 길 끝의 둥근 공터</td><td>공터에서 카타나를 얻으면 다음 문이 열린다</td></tr>
-<tr><td>2단계</td><td>곧게 뻗은 숲길 하나</td><td>1로 무기를 바꾸면 다음 문이 열린다</td></tr>
-<tr><td>3단계</td><td>길 끝의 잠긴 시설 정문, 길 중간에서 아래로 갈라져 키가 있는 공터로 가는 샛길</td><td>키를 얻어 정문으로 들어간다</td></tr>
+<tr><td>1단계</td><td>쓰러진 나무 셋이 가로막은 약 75m의 숲길, 길 끝의 둥근 공터</td><td>공터에서 카타나 획득 시 다음 문 개방</td></tr>
+<tr><td>2단계</td><td>곧게 뻗은 숲길 하나</td><td>1로 무기 전환 시 다음 문 개방</td></tr>
+<tr><td>3단계</td><td>길 끝의 잠긴 시설 정문, 길 중간에서 아래로 갈라져 키가 있는 공터로 가는 샛길</td><td>키 획득 후 정문으로 진입</td></tr>
 </table></div>
 </div>
 <div class="n-box"><h3>손에 든 무기</h3>
@@ -168,9 +180,9 @@
 </div>
 <div class="n-box"><h3>공통 규칙</h3>
 <ul>
-<li>새 기능은 그 기능을 쓰는 단계에서 처음 열린다.</li>
-<li>걸을 수 있는 곳의 경계에는 나무, 덤불, 바위를 세운다.</li>
-<li>튜토리얼이 끝나면 바로 시설 입장방으로 이어진다.</li>
+<li>새 기능은 그 기능을 쓰는 단계에서 처음 해금함.</li>
+<li>보행 가능 구역의 경계에 나무, 덤불, 바위를 세움.</li>
+<li>튜토리얼 종료 후 바로 시설 입장방으로 이어짐.</li>
 </ul>
 </div>
 </div>
@@ -181,14 +193,14 @@
 <section id="stage1" data-transition="fade" style="background:#F6F5F1;color:#17181C;font-family:'Paperlogy', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:44px">
 <div style="display:flex;flex-direction:column;gap:10px">
 <p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;letter-spacing:2px;color:#0077A3">03  1단계</p>
-<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">맨손으로 대시와 회피를 배우고 카타나를 얻는다</h2>
+<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">맨손 대시 · 회피 학습과 카타나 획득</h2>
 </div>
 <div style="display:flex;flex-direction:row;gap:64px;align-items:start">
 <div style="display:flex;flex-direction:column;gap:28px;width:1060px">
-<div style="display:flex;flex-direction:row;gap:24px;align-items:start"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;width:52px;height:52px;line-height:52px;text-align:center;background:#17181C;color:#FFFFFF;border-radius:26px">1</p><div style="display:flex;flex-direction:column;gap:6px;width:984px"><h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;line-height:1.25;color:#17181C">쓰러진 나무를 대시로 넘는다</h3><p style="font-size:25px;line-height:1.5;color:#3E434D">나무 양 끝이 숲에 막혀 있어 대시로만 넘을 수 있다.<br>첫 나무 앞에서만 코칭 컷이 나오고, 나머지 둘은 스스로 넘는다.</p></div></div>
-<div style="display:flex;flex-direction:row;gap:24px;align-items:start"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;width:52px;height:52px;line-height:52px;text-align:center;background:#17181C;color:#FFFFFF;border-radius:26px">2</p><div style="display:flex;flex-direction:column;gap:6px;width:984px"><h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;line-height:1.25;color:#17181C">공터의 근접 적 하나를 맨손으로 상대한다</h3><p style="font-size:25px;line-height:1.5;color:#3E434D">적이 다가올 때와 팔을 다 들어 올린 순간에 멈춰 예비동작을 보여 준다.<br>휘두르기 직전에 한 번 더 멈추고 방향키와 Space를 입력받는다.</p></div></div>
-<div style="display:flex;flex-direction:row;gap:24px;align-items:start"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;width:52px;height:52px;line-height:52px;text-align:center;background:#17181C;color:#FFFFFF;border-radius:26px">3</p><div style="display:flex;flex-direction:column;gap:6px;width:984px"><h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;line-height:1.25;color:#17181C">공터 한가운데에서 카타나를 얻는다</h3><p style="font-size:25px;line-height:1.5;color:#3E434D">무기를 손에 쥐여 준 뒤에 설명하면 플레이어는 읽기 전에 먼저 써 본다.<br>그래서 좌대에 두고 F로 줍게 한다.</p></div></div>
-<div style="display:flex;flex-direction:row;gap:24px;align-items:start"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;width:52px;height:52px;line-height:52px;text-align:center;background:#17181C;color:#FFFFFF;border-radius:26px">4</p><div style="display:flex;flex-direction:column;gap:6px;width:984px"><h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;line-height:1.25;color:#17181C">레벨 설명창을 띄운다</h3><p style="font-size:25px;line-height:1.5;color:#3E434D">처음 처치한 적에게서 경험치를 얻은 직후에 경험치와 레벨을 설명한다.</p></div></div>
+<div style="display:flex;flex-direction:row;gap:24px;align-items:start"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;width:52px;height:52px;line-height:52px;text-align:center;background:#17181C;color:#FFFFFF;border-radius:26px">1</p><div style="display:flex;flex-direction:column;gap:6px;width:984px"><h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;line-height:1.25;color:#17181C">쓰러진 나무 대시 통과</h3><p style="font-size:25px;line-height:1.5;color:#3E434D">나무 양 끝이 숲에 막혀 대시로만 통과 가능함.<br>코칭 컷은 첫 나무 앞에만 있음. 나머지 둘은 스스로 넘음.</p></div></div>
+<div style="display:flex;flex-direction:row;gap:24px;align-items:start"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;width:52px;height:52px;line-height:52px;text-align:center;background:#17181C;color:#FFFFFF;border-radius:26px">2</p><div style="display:flex;flex-direction:column;gap:6px;width:984px"><h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;line-height:1.25;color:#17181C">공터 근접 적 하나와 맨손 전투</h3><p style="font-size:25px;line-height:1.5;color:#3E434D">적 접근 시와 팔을 다 들어 올린 순간에 멈추고 예비동작을 보여 줌.<br>휘두르기 직전에 한 번 더 멈추고 방향키와 Space를 입력받음.</p></div></div>
+<div style="display:flex;flex-direction:row;gap:24px;align-items:start"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;width:52px;height:52px;line-height:52px;text-align:center;background:#17181C;color:#FFFFFF;border-radius:26px">3</p><div style="display:flex;flex-direction:column;gap:6px;width:984px"><h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;line-height:1.25;color:#17181C">공터 한가운데 좌대에서 카타나 획득</h3><p style="font-size:25px;line-height:1.5;color:#3E434D">무기를 쥐여 준 뒤 설명하면 플레이어가 설명을 읽기 전에 먼저 사용함.<br>따라서 카타나를 좌대에 두고 F로 줍게 함.</p></div></div>
+<div style="display:flex;flex-direction:row;gap:24px;align-items:start"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;width:52px;height:52px;line-height:52px;text-align:center;background:#17181C;color:#FFFFFF;border-radius:26px">4</p><div style="display:flex;flex-direction:column;gap:6px;width:984px"><h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;line-height:1.25;color:#17181C">레벨 설명창 표시</h3><p style="font-size:25px;line-height:1.5;color:#3E434D">첫 처치로 경험치를 얻은 직후에 경험치와 레벨을 설명함.</p></div></div>
 </div>
 <div style="display:flex;flex-direction:column;gap:20px;width:540px">
 <img src="../../assets/img/lesson_s1_arena.webp" alt="1단계 둥근 공터. 맨손의 플레이어가 자갈 공터에 서 있고, 위쪽 안내 줄에 경비병이 다가오니 팔을 드는 순간 피하라는 문구가 떠 있다" style="width:540px;height:304px;object-fit:cover;border-radius:12px">
@@ -201,7 +213,7 @@
 </section>
 </div>
 <div class="slide-note"><div class="n-head"><span class="num">04</span><div class="n-lead">
-<p class="n-key">1단계는 무기 없이 이동과 회피를 익히는 구간이고, 마지막에 카타나와 레벨을 소개합니다.</p>
+<p class="n-key">1단계는 무기 없이 이동과 회피를 익히는 구간임. 마지막에 카타나와 레벨을 소개함.</p>
 </div></div>
 <div class="n-grid c3">
 <div class="n-box wide"><h3>진행 순서</h3>
@@ -209,29 +221,29 @@
 </div>
 <div class="n-box"><h3>쓰러진 나무</h3>
 <ul>
-<li>나무 자리는 걸을 수 있는 폭이 자갈길 폭으로 좁아진다.</li>
-<li>첫 나무의 코칭 컷에서 Space를 누르면 게임이 대시 방향을 길 쪽으로 맞춰 준다.</li>
-<li>넘은 나무 수는 목표 목록에 (n/3)으로 표시된다.</li>
+<li>나무 자리는 보행 폭이 자갈길 폭으로 좁아짐.</li>
+<li>첫 나무의 코칭 컷에서 Space 입력 시 게임이 대시 방향을 길 쪽으로 보정함.</li>
+<li>넘은 나무 수는 목표 목록에 (n/3)으로 표시됨.</li>
 </ul>
 </div>
 <div class="n-box"><h3>회피 코칭</h3>
 <h4>예비동작을 가르치는 이유</h4>
 <ul>
-<li>눈 사이버웨어가 없으면 주황 공격 범위가 보이지 않는다.</li>
-<li>그래서 첫 판에서는 적이 팔을 드는 예비동작이 유일한 공격 예고다.</li>
+<li>눈 사이버웨어가 없으면 주황 공격 범위가 보이지 않음.</li>
+<li>따라서 첫 판에서는 적이 팔을 드는 예비동작이 유일한 공격 예고임.</li>
 </ul>
 <h4>두 번 나눠 멈추는 이유</h4>
 <ul>
-<li>한 번에 설명하면 팔을 들면 바로 Space를 누르라는 뜻으로 받아들여진다.</li>
-<li>나눠 멈추면 기다렸다가 피하는 타이밍을 익힐 수 있다.</li>
+<li>한 번에 설명하면 ‘팔을 들면 바로 Space’로 받아들여짐.</li>
+<li>나눠 멈추면 기다렸다가 피하는 타이밍을 익힐 수 있음.</li>
 </ul>
 </div>
 <div class="n-box"><h3>레벨 설명</h3>
 <div class="n-stats"><div><b>1</b><span>일반 적 처치 경험치</span></div><div><b>36</b><span>레벨 2까지 필요한 경험치</span></div></div>
 <ul>
-<li>다음 레벨까지 필요한 경험치는 30 + 6×레벨이다.</li>
-<li>레벨이 오르면 체력이 모두 회복되고 스킬 포인트 1을 얻는다.</li>
-<li>경험치는 화면 맨 아래 보라색 막대로 표시되고, 죽어도 유지된다.</li>
+<li>다음 레벨까지 필요한 경험치: 30 + 6×레벨.</li>
+<li>레벨업 시 체력 전부 회복, 스킬 포인트 1 획득.</li>
+<li>경험치는 화면 맨 아래 보라색 막대로 표시됨. 사망 시에도 유지됨.</li>
 </ul>
 </div>
 </div>
@@ -242,16 +254,16 @@
 <section id="stage2a" data-transition="fade" style="background:#ECEBE6;color:#17181C;font-family:'Paperlogy', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:44px">
 <div style="display:flex;flex-direction:column;gap:10px">
 <p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;letter-spacing:2px;color:#0077A3">04  2단계</p>
-<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">근접 적과 원거리 적이 함께 나올 때 우클릭이 열린다</h2>
+<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">근접 · 원거리 적 동시 등장 시점의 우클릭 해금</h2>
 </div>
 <div style="display:flex;flex-direction:row;gap:64px;align-items:start">
 <div style="display:flex;flex-direction:column;gap:28px;width:1060px">
-<div style="display:flex;flex-direction:row;gap:24px;align-items:start"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;width:52px;height:52px;line-height:52px;text-align:center;background:#17181C;color:#FFFFFF;border-radius:26px">1</p><div style="display:flex;flex-direction:column;gap:6px;width:984px"><h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;line-height:1.25;color:#17181C">두 적이 함께 나온다</h3><p style="font-size:25px;line-height:1.5;color:#3E434D">입구에서 10m를 지나면 근접 적과 원거리 적이 함께 나타난다.<br>원거리 적은 근접 적 뒤, 발도가 닿는 거리에 배치한다.</p></div></div>
-<div style="display:flex;flex-direction:row;gap:24px;align-items:start"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;width:52px;height:52px;line-height:52px;text-align:center;background:#17181C;color:#FFFFFF;border-radius:26px">2</p><div style="display:flex;flex-direction:column;gap:6px;width:984px"><h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;line-height:1.25;color:#17181C">적의 종류를 설명한다</h3><p style="font-size:25px;line-height:1.5;color:#3E434D">두 적이 나타난 동안 이동을 막고, 근접 적과 원거리 적을 한 줄씩 설명한다.<br>설명하는 줄마다 그 적을 화면 가운데에 둔다.</p></div></div>
-<div style="display:flex;flex-direction:row;gap:24px;align-items:start"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;width:52px;height:52px;line-height:52px;text-align:center;background:#17181C;color:#FFFFFF;border-radius:26px">3</p><div style="display:flex;flex-direction:column;gap:6px;width:984px"><h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;line-height:1.25;color:#17181C">우클릭 발도로 원거리 적을 처치한다</h3><p style="font-size:25px;line-height:1.5;color:#3E434D">1단계에서 잠겨 있던 우클릭이 여기서 열리고, 첫 발도는 방향을 맞춰 준다.<br>각 기능은 실제로 쓰는 단계가 되어야 열린다.</p></div></div>
+<div style="display:flex;flex-direction:row;gap:24px;align-items:start"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;width:52px;height:52px;line-height:52px;text-align:center;background:#17181C;color:#FFFFFF;border-radius:26px">1</p><div style="display:flex;flex-direction:column;gap:6px;width:984px"><h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;line-height:1.25;color:#17181C">두 적 동시 등장</h3><p style="font-size:25px;line-height:1.5;color:#3E434D">입구에서 10m 통과 시 근접 적과 원거리 적이 함께 등장함.<br>원거리 적은 근접 적 뒤, 발도가 닿는 거리에 배치함.</p></div></div>
+<div style="display:flex;flex-direction:row;gap:24px;align-items:start"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;width:52px;height:52px;line-height:52px;text-align:center;background:#17181C;color:#FFFFFF;border-radius:26px">2</p><div style="display:flex;flex-direction:column;gap:6px;width:984px"><h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;line-height:1.25;color:#17181C">적 종류 설명</h3><p style="font-size:25px;line-height:1.5;color:#3E434D">두 적이 나타난 동안 이동을 막고 근접 적과 원거리 적을 한 줄씩 설명함.<br>줄마다 설명 대상인 적을 화면 가운데에 둠.</p></div></div>
+<div style="display:flex;flex-direction:row;gap:24px;align-items:start"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;width:52px;height:52px;line-height:52px;text-align:center;background:#17181C;color:#FFFFFF;border-radius:26px">3</p><div style="display:flex;flex-direction:column;gap:6px;width:984px"><h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;line-height:1.25;color:#17181C">우클릭 발도로 원거리 적 처치</h3><p style="font-size:25px;line-height:1.5;color:#3E434D">1단계에서 잠긴 우클릭을 2단계에서 해금함. 첫 발도는 방향을 보정함.<br>각 기능은 실제로 쓰는 단계에서 해금함.</p></div></div>
 <div style="display:flex;flex-direction:column;gap:6px;padding:20px 28px;background:#FFFFFF;border-radius:12px;border-left:8px solid #0077A3">
 <p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#0077A3">기획 의도</p>
-<p style="font-size:25px;line-height:1.5;color:#17181C">원거리 적을 근접 적 뒤에 두어, 거리를 좁히며 베는 발도를 쓸 이유를 만든다.</p>
+<p style="font-size:25px;line-height:1.5;color:#17181C">원거리 적을 근접 적 뒤에 배치하여, 거리를 좁히며 베는 발도의 사용 이유를 만듦.</p>
 </div>
 </div>
 <div style="display:flex;flex-direction:column;gap:20px;width:540px">
@@ -265,7 +277,7 @@
 </section>
 </div>
 <div class="slide-note"><div class="n-head"><span class="num">05</span><div class="n-lead">
-<p class="n-key">2단계 앞부분은 적의 종류를 구분하게 하고, 원거리 적을 먼저 처치하는 방법으로 발도를 가르칩니다.</p>
+<p class="n-key">2단계 앞부분은 적의 종류를 구분하게 함. 원거리 적을 먼저 처치하는 방법으로 발도를 교습함.</p>
 </div></div>
 <div class="n-grid c3">
 <div class="n-box wide"><h3>진행 순서</h3>
@@ -274,23 +286,23 @@
 <div class="n-box"><h3>발도 수치</h3>
 <div class="n-stats"><div><b>60</b><span>발도 피해</span></div></div>
 <ul>
-<li>튜토리얼의 원거리 적을 한 번에 처치하도록 맞춘 수치다.</li>
-<li>발도는 적을 관통해 지나가며 벤다.</li>
-<li>횟수와 재사용 시간을 자원으로 쓴다.</li>
+<li>튜토리얼의 원거리 적을 한 번에 처치하도록 맞춘 수치임.</li>
+<li>발도는 적을 관통해 지나가며 벰.</li>
+<li>횟수와 재사용 시간을 자원으로 사용함.</li>
 </ul>
 </div>
-<div class="n-box"><h3>우클릭을 2단계에서 여는 이유</h3>
+<div class="n-box"><h3>우클릭 2단계 해금 이유</h3>
 <ul>
-<li>1단계에서 카타나를 얻어도 우클릭은 잠겨 있다.</li>
-<li>게이지 없이 그냥 누르면 되는 키로 먼저 익숙해지면, 게이지 설명이 뒤늦은 설명이 된다.</li>
-<li>그래서 발도로 우클릭을 처음 열고, 게이지 설명은 수류탄까지 써 본 뒤에 한다.</li>
+<li>1단계에서 카타나를 얻어도 우클릭은 잠긴 상태임.</li>
+<li>게이지 없는 키로 먼저 익숙해지면 게이지 설명이 뒤늦은 설명이 됨.</li>
+<li>따라서 발도로 우클릭을 처음 해금함. 게이지 설명은 수류탄까지 써 본 뒤에 함.</li>
 </ul>
 </div>
 <div class="n-box"><h3>무기 고유 능력</h3>
 <ul>
-<li>좌클릭 기본 공격은 무기 간 차이가 크지 않다.</li>
-<li>무기의 개성은 우클릭 능력에서 나온다.</li>
-<li>그래서 튜토리얼에서 두 기본 무기의 우클릭을 모두 써 보게 한다.</li>
+<li>좌클릭 기본 공격은 무기 간 차이가 작음.</li>
+<li>무기의 개성은 우클릭 능력에서 나옴.</li>
+<li>따라서 튜토리얼에서 두 기본 무기의 우클릭을 모두 사용하게 함.</li>
 </ul>
 </div>
 </div>
@@ -301,30 +313,30 @@
 <section id="stage2b" data-transition="fade" style="background:#ECEBE6;color:#17181C;font-family:'Paperlogy', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:40px">
 <div style="display:flex;flex-direction:column;gap:10px">
 <p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;letter-spacing:2px;color:#0077A3">05  2단계</p>
-<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">수류탄은 수류탄으로만 처치되는 적으로 가르친다</h2>
+<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">수류탄으로만 처치되는 적을 이용한 수류탄 교습</h2>
 </div>
 <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px">
 <div style="display:flex;flex-direction:column;gap:12px">
 <img src="../../assets/img/lesson_s2_grenade_coach.webp" alt="수류탄 코칭 컷. 한곳에 모인 원거리 적 다섯이 멈춰 있고, 자막에 피스톨의 고유 능력은 수류탄이라는 설명이 나온다" style="width:528px;height:297px;object-fit:cover;border-radius:12px">
-<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#17181C">원거리 적 다섯 앞에서 멈추고 우클릭</p>
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#17181C">원거리 적 다섯 앞 정지, 우클릭 입력</p>
 </div>
 <div style="display:flex;flex-direction:column;gap:12px">
 <img src="../../assets/img/lesson_s2_grenade_blast.webp" alt="수류탄이 터지는 장면. 주황 폭발 범위 안의 원거리 적 무리가 한꺼번에 처치된다" style="width:528px;height:297px;object-fit:cover;border-radius:12px">
-<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#17181C">수류탄 한 발로 다섯을 처치</p>
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#17181C">수류탄 한 발로 다섯 처치</p>
 </div>
 <div style="display:flex;flex-direction:column;gap:12px">
 <img src="../../assets/img/lesson_s2_ability_popup.webp" alt="무기 고유 능력 설명창. 노란 게이지와 발동 가능 횟수를 나타내는 원이 그려져 있다" style="width:528px;height:297px;object-fit:cover;border-radius:12px">
-<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#17181C">마지막에 무기 능력 설명창</p>
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#17181C">마지막 단계의 무기 능력 설명창</p>
 </div>
 </div>
 <div style="display:flex;flex-direction:row;gap:64px;align-items:start">
 <div style="display:flex;flex-direction:column;gap:12px;width:1020px">
 <h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:34px;font-weight:400;line-height:1.25;color:#17181C">공략법이 하나뿐인 적 무리</h3>
-<p style="font-size:26px;line-height:1.55;color:#3E434D">피스톨을 얻으면 1을 눌러도 무기가 바뀌지 않는다.<br>원거리 적 다섯은 수류탄으로만 처치되고, 제자리에서만 공격한다.<br>게이지와 횟수를 설명하는 창은 발도와 수류탄을 모두 써 본 뒤에 뜬다.</p>
+<p style="font-size:26px;line-height:1.55;color:#3E434D">피스톨 획득 후에는 1을 눌러도 무기가 바뀌지 않음.<br>원거리 적 다섯은 수류탄으로만 처치되며 제자리에서만 공격함.<br>게이지 · 횟수 설명창은 발도와 수류탄을 모두 써 본 뒤 표시됨.</p>
 </div>
 <div style="display:flex;flex-direction:column;gap:6px;width:580px;padding:20px 28px;background:#FFFFFF;border-radius:12px;border-left:8px solid #0077A3">
 <p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#0077A3">기획 의도</p>
-<p style="font-size:25px;line-height:1.5;color:#17181C">공략법을 수류탄 하나로 좁혀서, 첫 수류탄에 무리 전체를 처치하는 경험을 하게 한다.</p>
+<p style="font-size:25px;line-height:1.5;color:#17181C">공략법을 수류탄 하나로 한정하여, 첫 수류탄으로 무리 전체를 처치하는 경험을 제공함.</p>
 </div>
 </div>
 <p style="position:absolute;left:128px;bottom:64px;width:800px;font-size:24px;color:#8A8F99">EDGERUNNERS 튜토리얼 기획서</p>
@@ -333,7 +345,7 @@
 </section>
 </div>
 <div class="slide-note"><div class="n-head"><span class="num">06</span><div class="n-lead">
-<p class="n-key">2단계 뒷부분은 피스톨의 수류탄을 가르치고, 무기 능력 게이지를 설명한 뒤 무기 전환으로 마무리합니다.</p>
+<p class="n-key">2단계 뒷부분은 피스톨의 수류탄을 교습함. 무기 능력 게이지 설명 후 무기 전환으로 마무리함.</p>
 </div></div>
 <div class="n-grid c3">
 <div class="n-box wide"><h3>진행 순서</h3>
@@ -341,22 +353,22 @@
 </div>
 <div class="n-box"><h3>무리의 규칙</h3>
 <ul>
-<li>총알로는 피해를 입지 않고 수류탄으로만 처치된다.</li>
-<li>다가오지 않고 제자리에서만 공격한다.</li>
-<li>첫 수류탄은 게임이 무리 한가운데로 던져 준다.</li>
+<li>총알로는 피해를 입지 않음. 수류탄으로만 처치됨.</li>
+<li>다가오지 않고 제자리에서만 공격함.</li>
+<li>첫 수류탄은 게임이 무리 한가운데로 던짐.</li>
 </ul>
 </div>
 <div class="n-box"><h3>수류탄 수치</h3>
 <div class="n-stats"><div><b>2</b><span>수류탄 횟수</span></div><div><b>7초</b><span>1회 충전 시간</span></div></div>
 <ul>
-<li>커서 위치에 던진다.</li>
+<li>투척 위치: 커서 위치.</li>
 </ul>
 </div>
 <div class="n-box"><h3>무기 능력 표시</h3>
 <ul>
-<li>체력바 아래의 노란 막대가 충전을, 점이 남은 횟수를 나타낸다.</li>
-<li>화면에는 글자 없이 막대와 점만 표시한다.</li>
-<li>그래서 막대와 점의 뜻은 설명창에서 한 번 알려 준다.</li>
+<li>체력바 아래 노란 막대는 충전, 점은 남은 횟수를 나타냄.</li>
+<li>화면에는 글자 없이 막대와 점만 표시함.</li>
+<li>따라서 막대와 점의 뜻은 설명창에서 한 번 설명함.</li>
 </ul>
 </div>
 </div>
@@ -367,12 +379,12 @@
 <section id="stage3" data-transition="fade" style="background:#F6F5F1;color:#17181C;font-family:'Paperlogy', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:40px">
 <div style="display:flex;flex-direction:column;gap:10px">
 <p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;letter-spacing:2px;color:#0077A3">06  3단계</p>
-<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">마지막 단계는 코칭 컷 없이 스스로 길을 찾게 한다</h2>
+<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">코칭 컷 없이 스스로 길을 찾는 마지막 단계</h2>
 </div>
 <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px">
 <div style="display:flex;flex-direction:column;gap:12px">
 <img src="../../assets/img/lesson_s3_gate.webp" alt="3단계 위쪽 길 끝. 주황빛으로 빛나는 잠긴 시설 정문 앞에 플레이어가 서 있고, 안내 줄에는 엑세스 키를 찾으시오 한 줄만 표시된다" style="width:528px;height:297px;object-fit:cover;border-radius:12px">
-<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#17181C">정문 앞에는 안내 한 줄만</p>
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#17181C">정문 앞 안내 한 줄</p>
 </div>
 <div style="display:flex;flex-direction:column;gap:12px">
 <img src="../../assets/img/lesson_s3_wave1.webp" alt="샛길 끝 공터의 웨이브 1. 아래쪽에서 근접 적 둘이 다가오고, 안내 줄에 무기에 속성 빛이 도는 적을 조심하라는 문구가 표시된다" style="width:528px;height:297px;object-fit:cover;border-radius:12px">
@@ -380,17 +392,17 @@
 </div>
 <div style="display:flex;flex-direction:column;gap:12px">
 <img src="../../assets/img/lesson_s3_status_popup.webp" alt="상태 이상 설명창. 속성 무기를 든 적 셋 옆에 과열, 오작동, 중독이 각각 주황, 파랑, 초록으로 설명되어 있다" style="width:528px;height:297px;object-fit:cover;border-radius:12px">
-<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#17181C">웨이브 1과 함께 상태 이상 설명창</p>
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;color:#17181C">웨이브 1 시작 시 상태 이상 설명창</p>
 </div>
 </div>
 <div style="display:flex;flex-direction:row;gap:64px;align-items:start">
 <div style="display:flex;flex-direction:column;gap:12px;width:1020px">
-<h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:34px;font-weight:400;line-height:1.25;color:#17181C">아래로 가라는 안내는 하지 않는다</h3>
-<p style="font-size:26px;line-height:1.55;color:#3E434D">위쪽 길 끝의 시설 정문은 잠겨 있고, 안내는 “엑세스 키를 찾으시오” 하나뿐이다.<br>샛길 끝 공터에서 근접 2, 원거리 2를 처치하면 근접 3, 원거리 3이 나온다.<br>모두 처치하면 공터 한가운데에 키가 나오고, 키를 얻으면 정문이 열린다.</p>
+<h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:34px;font-weight:400;line-height:1.25;color:#17181C">샛길 방향 안내 없음</h3>
+<p style="font-size:26px;line-height:1.55;color:#3E434D">위쪽 길 끝 시설 정문은 잠겨 있음. 안내는 “엑세스 키를 찾으시오” 하나뿐임.<br>샛길 끝 공터에서 근접 2, 원거리 2 처치 시 근접 3, 원거리 3 등장.<br>모두 처치하면 공터 한가운데에 키가 나옴. 키 획득 시 정문 개방.</p>
 </div>
 <div style="display:flex;flex-direction:column;gap:6px;width:580px;padding:20px 28px;background:#FFFFFF;border-radius:12px;border-left:8px solid #0077A3">
 <p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#0077A3">기획 의도</p>
-<p style="font-size:25px;line-height:1.5;color:#17181C">앞 단계에서 배운 조작을 코칭 없이 써 보게 하고, 길도 스스로 찾게 한다.</p>
+<p style="font-size:25px;line-height:1.5;color:#17181C">앞 단계에서 배운 조작을 코칭 없이 사용하고, 길도 스스로 찾게 함.</p>
 </div>
 </div>
 <p style="position:absolute;left:128px;bottom:64px;width:800px;font-size:24px;color:#8A8F99">EDGERUNNERS 튜토리얼 기획서</p>
@@ -399,11 +411,11 @@
 </section>
 </div>
 <div class="slide-note"><div class="n-head"><span class="num">07</span><div class="n-lead">
-<p class="n-key">3단계는 앞에서 배운 조작을 코칭 없이 쓰는 구간이고, 새로 배우는 것은 상태 이상 하나입니다.</p>
+<p class="n-key">3단계는 앞에서 배운 조작을 코칭 없이 쓰는 구간임. 새로 배우는 것은 상태 이상 하나임.</p>
 </div></div>
 <div class="n-grid c2">
 <div class="n-box wide"><h3>진행 순서</h3>
-<ol class="n-flow"><li><b>시설 정문</b><span>잠겨 있다</span></li><li><b>샛길</b><span>위쪽 길 중간에서 아래로</span></li><li><b>웨이브 1</b><span>근접 2, 원거리 2, 속성 적 둘</span></li><li><b>웨이브 2</b><span>근접 3, 원거리 3, 속성 적 셋</span></li><li><b>키</b><span>공터 한가운데</span></li><li><b>시설 입장방</b><span>정문을 지나 바로</span></li></ol>
+<ol class="n-flow"><li><b>시설 정문</b><span>잠김</span></li><li><b>샛길</b><span>위쪽 길 중간에서 아래로</span></li><li><b>웨이브 1</b><span>근접 2, 원거리 2, 속성 적 둘</span></li><li><b>웨이브 2</b><span>근접 3, 원거리 3, 속성 적 셋</span></li><li><b>키</b><span>공터 한가운데</span></li><li><b>시설 입장방</b><span>정문을 지나 바로</span></li></ol>
 </div>
 <div class="n-box"><h3>상태 이상</h3>
 <div class="n-table"><table>
@@ -413,13 +425,13 @@
 <tr><td>중독 (초록)</td><td>회복량 절반</td><td>8초</td></tr>
 </table></div>
 <ul>
-<li>속성 공격에 맞으면 누적치가 쌓이고, 문턱 45를 넘으면 걸린다.</li>
+<li>속성 공격에 맞으면 누적치가 쌓임. 누적치가 문턱 45를 넘으면 상태 이상에 걸림.</li>
 </ul>
 </div>
 <div class="n-box"><h3>길 안내</h3>
 <ul>
-<li>정문 앞에서는 아래로 가라는 안내를 하지 않는다.</li>
-<li>아래로 갈라지는 샛길에도 자갈을 깔아, 갈 곳을 지형으로 알 수 있게 한다.</li>
+<li>정문 앞에서 샛길 방향 안내를 하지 않음.</li>
+<li>아래로 갈라지는 샛길에도 자갈을 깔아 갈 곳을 지형으로 표시함.</li>
 </ul>
 </div>
 </div>
@@ -430,12 +442,12 @@
 <section id="terrain" data-transition="fade" style="background:#ECEBE6;color:#17181C;font-family:'Paperlogy', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:40px">
 <div style="display:flex;flex-direction:column;gap:10px">
 <p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;letter-spacing:2px;color:#0077A3">07  지형</p>
-<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">지형으로 가야 할 길을 안내한다</h2>
+<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">지형을 이용한 진행 경로 안내</h2>
 </div>
 <div style="display:flex;flex-direction:row;gap:40px;align-items:start">
 <div style="position:relative;width:1090px;height:300px;background:#FFFFFF;border-radius:12px;border:1px solid #D9D7CF;overflow:hidden">
 <svg aria-label="숲길을 위에서 본 도해. 가운데 자갈길 양옆으로 걸을 수 있는 숲 바닥이 있고, 그 바깥 경계를 점선의 보이지 않는 벽과 나무, 덤불, 바위가 둘러싼다. 쓰러진 나무 자리에서는 걸을 수 있는 폭이 자갈길 폭으로 좁아진다" width="1090" height="300" viewBox="0 0 1090 300"><path d="M0,62 H560 V110 H640 V62 H1090 V238 H640 V190 H560 V238 H0 Z" fill="#ECEBE6"/><rect x="0" y="110" width="1090" height="80" fill="#9AA0AA" fill-opacity="0.5"/><path d="M0,62 H560 V110 H640 V62 H1090 M1090,238 H640 V190 H560 V238 H0" fill="none" stroke="#C2185B" stroke-width="3" stroke-dasharray="10 7"/><circle cx="40" cy="34" r="22" fill="#2E9E52" fill-opacity="0.55"/><circle cx="105" cy="38" r="18" fill="#2E9E52" fill-opacity="0.45"/><ellipse cx="165" cy="40" rx="20" ry="15" fill="#5B606B" fill-opacity="0.55"/><circle cx="230" cy="34" r="23" fill="#2E9E52" fill-opacity="0.55"/><circle cx="300" cy="40" r="17" fill="#2E9E52" fill-opacity="0.45"/><circle cx="365" cy="34" r="22" fill="#2E9E52" fill-opacity="0.55"/><ellipse cx="430" cy="42" rx="19" ry="14" fill="#5B606B" fill-opacity="0.55"/><circle cx="495" cy="36" r="21" fill="#2E9E52" fill-opacity="0.55"/><circle cx="582" cy="84" r="20" fill="#2E9E52" fill-opacity="0.55"/><ellipse cx="622" cy="90" rx="17" ry="13" fill="#5B606B" fill-opacity="0.6"/><circle cx="710" cy="36" r="22" fill="#2E9E52" fill-opacity="0.55"/><ellipse cx="775" cy="42" rx="19" ry="14" fill="#5B606B" fill-opacity="0.55"/><circle cx="840" cy="34" r="23" fill="#2E9E52" fill-opacity="0.55"/><circle cx="905" cy="40" r="17" fill="#2E9E52" fill-opacity="0.45"/><circle cx="970" cy="34" r="22" fill="#2E9E52" fill-opacity="0.55"/><circle cx="1045" cy="38" r="20" fill="#2E9E52" fill-opacity="0.45"/><ellipse cx="580" cy="212" rx="18" ry="13" fill="#5B606B" fill-opacity="0.6"/><circle cx="620" cy="216" r="16" fill="#2E9E52" fill-opacity="0.5"/><circle cx="40" cy="262" r="12" fill="#2E9E52" fill-opacity="0.4"/><ellipse cx="120" cy="264" rx="15" ry="11" fill="#5B606B" fill-opacity="0.5"/><circle cx="200" cy="262" r="11" fill="#2E9E52" fill-opacity="0.4"/><circle cx="285" cy="264" r="12" fill="#2E9E52" fill-opacity="0.4"/><ellipse cx="370" cy="262" rx="15" ry="11" fill="#5B606B" fill-opacity="0.5"/><circle cx="455" cy="264" r="11" fill="#2E9E52" fill-opacity="0.4"/><circle cx="530" cy="262" r="12" fill="#2E9E52" fill-opacity="0.4"/><circle cx="700" cy="262" r="12" fill="#2E9E52" fill-opacity="0.4"/><ellipse cx="785" cy="264" rx="15" ry="11" fill="#5B606B" fill-opacity="0.5"/><circle cx="870" cy="262" r="11" fill="#2E9E52" fill-opacity="0.4"/><circle cx="955" cy="264" r="12" fill="#2E9E52" fill-opacity="0.4"/><ellipse cx="1040" cy="262" rx="15" ry="11" fill="#5B606B" fill-opacity="0.5"/><rect x="588" y="100" width="24" height="100" rx="10" fill="#3E434D" transform="rotate(14 600 150)"/></svg>
-<p style="position:absolute;left:20px;top:68px;width:420px;font-size:24px;color:#3E434D">숲 바닥 (걸을 수 있다)</p>
+<p style="position:absolute;left:20px;top:68px;width:420px;font-size:24px;color:#3E434D">숲 바닥 (보행 가능)</p>
 <p style="position:absolute;left:20px;top:133px;width:420px;font-size:24px;color:#17181C">자갈길 (가야 할 길)</p>
 <p style="position:absolute;left:668px;top:133px;width:400px;font-size:24px;color:#17181C">쓰러진 나무 자리</p>
 <p style="position:absolute;left:668px;top:196px;width:400px;font-size:24px;color:#C2185B">점선: 보이지 않는 벽</p>
@@ -444,16 +456,16 @@
 </div>
 <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px">
 <div style="display:flex;flex-direction:column;gap:10px;background:#FFFFFF;padding:28px 32px;border-radius:12px;border:1px solid #D9D7CF">
-<h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;line-height:1.25;color:#17181C">자갈길로 길을 보여 준다</h3>
-<p style="font-size:25px;line-height:1.55;color:#3E434D">가야 할 길에만 자갈을 깐다.<br>길이 꺾이는 곳은 안쪽을 숲으로 막아 가로질러 가지 못하게 한다.</p>
+<h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;line-height:1.25;color:#17181C">자갈길로 경로 표시</h3>
+<p style="font-size:25px;line-height:1.55;color:#3E434D">가야 할 길에만 자갈을 배치함.<br>길이 꺾이는 곳은 안쪽을 숲으로 막아 가로지르기를 차단함.</p>
 </div>
 <div style="display:flex;flex-direction:column;gap:10px;background:#FFFFFF;padding:28px 32px;border-radius:12px;border:1px solid #D9D7CF">
-<h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;line-height:1.25;color:#17181C">걸을 수 있는 곳은 더 넓다</h3>
-<p style="font-size:25px;line-height:1.55;color:#3E434D">자갈 끝에서 숲 바닥으로 몇 m 더 들어갈 수 있다.<br>보이지 않는 벽이 길 바로 옆에서 동선을 강제하지 않게 하기 위해서다.</p>
+<h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;line-height:1.25;color:#17181C">자갈길보다 넓은 보행 범위</h3>
+<p style="font-size:25px;line-height:1.55;color:#3E434D">자갈 끝에서 숲 바닥으로 몇 m 더 이동 가능함.<br>보이지 않는 벽이 길 바로 옆에서 동선을 강제하지 않게 하기 위함.</p>
 </div>
 <div style="display:flex;flex-direction:column;gap:10px;background:#FFFFFF;padding:28px 32px;border-radius:12px;border:1px solid #D9D7CF">
-<h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;line-height:1.25;color:#17181C">막힌 곳은 눈에 보이게 한다</h3>
-<p style="font-size:25px;line-height:1.55;color:#3E434D">경계에는 나무, 덤불, 바위를 촘촘히 세운다.<br>카메라 쪽 아래에는 큰 나무를 심지 않아 화면을 가리지 않는다.</p>
+<h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;line-height:1.25;color:#17181C">막힌 곳의 시각적 표시</h3>
+<p style="font-size:25px;line-height:1.55;color:#3E434D">경계에 나무, 덤불, 바위를 촘촘히 배치함.<br>카메라 쪽(화면 아래)에는 큰 나무를 두지 않아 화면 가림을 방지함.</p>
 </div>
 </div>
 <p style="position:absolute;left:128px;bottom:64px;width:800px;font-size:24px;color:#8A8F99">EDGERUNNERS 튜토리얼 기획서</p>
@@ -462,7 +474,7 @@
 </section>
 </div>
 <div class="slide-note"><div class="n-head"><span class="num">08</span><div class="n-lead">
-<p class="n-key">튜토리얼 맵은 자갈로 갈 길을 보여 주고, 실제로 걸을 수 있는 범위는 보이는 경계에 맞춰 그보다 넓게 둡니다.</p>
+<p class="n-key">튜토리얼 맵은 자갈로 갈 길을 표시함. 실제 보행 범위는 보이는 경계에 맞춰 자갈길보다 넓게 둠.</p>
 </div></div>
 <div class="n-grid c2">
 <div class="n-box wide"><h3>길의 단면</h3>
@@ -492,15 +504,15 @@
 </div>
 <div class="n-box"><h3>쓰러진 나무 자리</h3>
 <ul>
-<li>걸을 수 있는 폭이 자갈길 폭으로 좁아진다.</li>
-<li>나무 양 끝은 숲에 막혀 있어 옆으로 돌아갈 수 없다.</li>
-<li>그래서 대시 말고는 넘어갈 방법이 없다.</li>
+<li>보행 폭이 자갈길 폭으로 좁아짐.</li>
+<li>나무 양 끝은 숲에 막혀 옆으로 돌아갈 수 없음.</li>
+<li>따라서 대시 외의 통과 방법이 없음.</li>
 </ul>
 </div>
-<div class="n-box"><h3>화면을 가리지 않게</h3>
+<div class="n-box"><h3>화면 가림 방지</h3>
 <ul>
-<li>카메라는 피치 -72°로 위에서 내려다보며 플레이어를 따라간다.</li>
-<li>화면 아래쪽에 큰 나무가 있으면 플레이어를 가리므로, 그쪽에는 덤불과 풀만 둔다.</li>
+<li>카메라는 피치 -72°로 위에서 내려다보며 플레이어를 따라감.</li>
+<li>화면 아래쪽의 큰 나무는 플레이어를 가림. 따라서 화면 아래쪽에는 덤불과 풀만 둠.</li>
 </ul>
 </div>
 </div>
@@ -511,54 +523,54 @@
 <section id="summary" data-transition="fade" style="background:#F6F5F1;color:#17181C;font-family:'Paperlogy', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:40px">
 <div style="display:flex;flex-direction:column;gap:10px">
 <p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;letter-spacing:2px;color:#0077A3">08  단계별 정리</p>
-<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">단계마다 배운 것을 해내야 다음 단계로 넘어간다</h2>
+<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">배운 조작의 수행을 조건으로 한 단계 진행</h2>
 </div>
 <div style="display:flex;flex-direction:column">
 <div style="display:flex;flex-direction:row;gap:24px;padding:0 0 14px 0;border-bottom:2px solid #17181C">
 <p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;width:120px;color:#5B606B">단계</p>
 <p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;width:340px;color:#5B606B">주제</p>
-<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;width:500px;color:#5B606B">코칭 컷이 나오는 곳</p>
-<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;width:632px;color:#5B606B">다음 단계로 넘어가는 조건</p>
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;width:500px;color:#5B606B">코칭 컷 위치</p>
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;width:632px;color:#5B606B">다음 단계 진행 조건</p>
 </div>
 <div style="display:flex;flex-direction:row;gap:24px;padding:18px 0;border-bottom:1px solid #D9D7CF">
 <p style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:30px;width:120px;color:#17181C">1단계</p>
 <div style="display:flex;flex-direction:column;gap:6px;width:340px"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:27px;color:#17181C">대시와 회피</p><p style="font-size:24px;line-height:1.45;color:#5B606B">쓰러진 나무, 맨손 전투, 카타나, 레벨</p></div>
-<p style="font-size:25px;line-height:1.5;width:500px;color:#3E434D">첫 나무 앞 (Space)<br>적이 다가올 때, 팔을 들 때<br>휘두르기 직전 (Space)</p>
-<p style="font-size:25px;line-height:1.5;width:632px;color:#3E434D">나무 셋을 대시로 넘고, 근접 적을 처치하고, 카타나를 얻는다.</p>
+<p style="font-size:25px;line-height:1.5;width:500px;color:#3E434D">첫 나무 앞 (Space)<br>적 접근 시, 팔을 들 때<br>휘두르기 직전 (Space)</p>
+<p style="font-size:25px;line-height:1.5;width:632px;color:#3E434D">나무 셋 대시 통과, 근접 적 처치, 카타나 획득</p>
 </div>
 <div style="display:flex;flex-direction:row;gap:24px;padding:18px 0;border-bottom:1px solid #D9D7CF">
 <p style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:30px;width:120px;color:#17181C">2단계</p>
 <div style="display:flex;flex-direction:column;gap:6px;width:340px"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:27px;color:#17181C">무기 고유 능력</p><p style="font-size:24px;line-height:1.45;color:#5B606B">적의 종류, 발도, 수류탄, 무기 전환</p></div>
-<p style="font-size:25px;line-height:1.5;width:500px;color:#3E434D">두 적이 나타난 순간 (우클릭)<br>원거리 적 다섯 앞 (우클릭)<br>무기 고정이 풀릴 때 (1)</p>
-<p style="font-size:25px;line-height:1.5;width:632px;color:#3E434D">발도로 원거리 적을, 수류탄으로 원거리 적 다섯을 처치하고, 1로 무기를 바꾼다.</p>
+<p style="font-size:25px;line-height:1.5;width:500px;color:#3E434D">두 적 등장 순간 (우클릭)<br>원거리 적 다섯 앞 (우클릭)<br>무기 고정 해제 시 (1)</p>
+<p style="font-size:25px;line-height:1.5;width:632px;color:#3E434D">발도로 원거리 적 처치, 수류탄으로 원거리 적 다섯 처치, 1로 무기 전환</p>
 </div>
 <div style="display:flex;flex-direction:row;gap:24px;padding:18px 0;border-bottom:1px solid #D9D7CF">
 <p style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:30px;width:120px;color:#17181C">3단계</p>
 <div style="display:flex;flex-direction:column;gap:6px;width:340px"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:27px;color:#17181C">실전 연습</p><p style="font-size:24px;line-height:1.45;color:#5B606B">두 웨이브, 상태 이상, 키 찾기</p></div>
-<p style="font-size:25px;line-height:1.5;width:500px;color:#3E434D">없음 (스스로 찾게 한다)</p>
-<p style="font-size:25px;line-height:1.5;width:632px;color:#3E434D">두 웨이브를 처치하고 키를 얻어 잠긴 정문을 연다.</p>
+<p style="font-size:25px;line-height:1.5;width:500px;color:#3E434D">없음 (스스로 찾음)</p>
+<p style="font-size:25px;line-height:1.5;width:632px;color:#3E434D">두 웨이브 처치, 키 획득, 잠긴 정문 개방</p>
 </div>
 </div>
-<p style="font-size:26px;line-height:1.55;color:#3E434D">쓰러진 나무는 대시로만 넘을 수 있고, 원거리 적 다섯은 수류탄으로만 처치된다.<br>그래서 다음 단계로 넘어갔다면 배운 조작을 한 번은 해낸 것이다.</p>
+<p style="font-size:26px;line-height:1.55;color:#3E434D">쓰러진 나무는 대시로만 통과 가능함. 원거리 적 다섯은 수류탄으로만 처치됨.<br>따라서 다음 단계 진입은 배운 조작을 최소 1회 수행했음을 의미함.</p>
 <p style="position:absolute;left:128px;bottom:64px;width:800px;font-size:24px;color:#8A8F99">EDGERUNNERS 튜토리얼 기획서</p>
 <p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#8A8F99">09</p>
 
 </section>
 </div>
 <div class="slide-note"><div class="n-head"><span class="num">09</span><div class="n-lead">
-<p class="n-key">각 단계는 배운 조작을 실제로 해내야 끝나도록 짜여 있습니다.</p>
+<p class="n-key">각 단계는 배운 조작을 실제로 수행해야 끝나도록 구성함.</p>
 </div></div>
 <div class="n-grid c2">
-<div class="n-box"><h3>넘어가는 조건이 확인하는 것</h3>
+<div class="n-box"><h3>진행 조건으로 확인하는 조작</h3>
 <div class="n-cards"><div><b>1단계</b><span>대시로만 넘을 수 있는 나무</span></div><div><b>2단계</b><span>수류탄으로만 처치되는 무리</span></div><div><b>3단계</b><span>두 웨이브를 처치해야 나오는 키</span></div></div>
 </div>
-<div class="n-box"><h3>처음 한 번은 게임이 돕는다</h3>
+<div class="n-box"><h3>첫 1회 방향 보정</h3>
 <ul>
-<li>첫 대시, 첫 발도, 첫 수류탄은 게임이 방향을 맞춰 준다.</li>
-<li>첫 시도가 빗나가면 플레이어는 이 기술이 안 통한다고 잘못 배운다.</li>
+<li>첫 대시, 첫 발도, 첫 수류탄은 게임이 방향을 보정함.</li>
+<li>첫 시도가 빗나가면 플레이어가 기술이 통하지 않는다고 잘못 학습함.</li>
 </ul>
 </div>
-<div class="n-box"><h3>스스로 하는 구간</h3>
+<div class="n-box"><h3>스스로 수행하는 구간</h3>
 <ul>
 <li>1단계의 나머지 나무 둘</li>
 <li>2단계의 남은 근접 적</li>
@@ -567,8 +579,8 @@
 </div>
 <div class="n-box"><h3>목표 목록</h3>
 <ul>
-<li>단계마다 할 일이 화면 오른쪽 위 목록에 표시된다.</li>
-<li>해낸 항목에는 완료 표시가 붙는다.</li>
+<li>단계별 할 일을 화면 오른쪽 위 목록에 표시함.</li>
+<li>완료한 항목에는 완료 표시가 붙음.</li>
 </ul>
 </div>
 </div>
@@ -576,6 +588,8 @@
 </div>
 </div>
 <nav class="deck-nav"><a href="level.html">← 레벨 기획서</a> <a href="growth.html">성장 기획서 →</a></nav>
+</div>
+</div>
 </main>
 <footer class="foot"><div class="wrap">© 장대규 · 글꼴: 페이퍼로지(Paperlogy, SIL OFL 1.1)</div></footer>
 </div>

@@ -19,19 +19,19 @@ binmode STDERR, ':encoding(UTF-8)';
 
 # [id, 묶음, 제목, 목록 카드 이름, 소개, 목록 카드 그림]
 my @DECKS = (
-  ['overview', 'plan', '개요 기획서', '개요 기획서', '어떤 게임인지, 빌드 조합과 2077과 다르게 쓴 무기와 사이버웨어, 한 판의 구조를 정리했다.', 'portfolio_hero'],
-  ['combat',   'plan', '전투 규칙 기획서', '전투 규칙', '기본 능력치, 공격 예고 규칙, 피해 기준, 대시로 피할 수 없는 위협.', 'portfolio_crowd'],
-  ['system',   'plan', '시스템 기획서', '시스템', '무기, 사이버웨어 8부위와 레벨, 프로토타입, 해킹, 성장과 경제.', 'portfolio_netrunner'],
-  ['level',    'plan', '레벨 기획서', '레벨', '맵 제작 과정, 맵 목록, 첫 판의 등장 순서, 보스.', 'combat_pinwheel_top'],
-  ['tutorial', 'plan', '튜토리얼 기획서', '튜토리얼', '첫 판에만 진행하는 숲속 맵 세 개와, 시간을 멈추고 가르치는 코칭 컷.', 'trail_overview_1'],
-  ['growth',   'plan', '성장 기획서', '성장', '경험치, 명상, 숙련도, 코인, 회차와, 죽었을 때 남는 것.', 'growth_meditation'],
-  ['process',  'log',  '작업 내역', '작업 내역', '두 달 동안의 개발 과정과 되돌린 결정, 플레이하며 바꾼 것.', 'portfolio_boss'],
+  ['overview', 'plan', '개요 기획서', '개요 기획서', '게임 정의, 핵심 재미, 한 판의 구조, 빌드 조합, 2077 무기 · 사이버웨어 재설계 요약.', 'portfolio_hero'],
+  ['combat',   'plan', '전투 규칙 기획서', '전투 규칙', '대시 거리 · 충전 시간, 공격 예고 규칙, 피해 기준표, 피해 하한, 대시로 피할 수 없는 위협.', 'portfolio_crowd'],
+  ['system',   'plan', '시스템 기획서', '시스템', '무기, 사이버웨어 8부위와 레벨, 프로토타입, 해킹, 성장, 경제, 회차.', 'portfolio_netrunner'],
+  ['level',    'plan', '레벨 기획서', '레벨', '맵 제작 순서, 격자 규칙, 맵 목록, 첫 판의 요소 등장 순서, 웨이브, 방 종류, 보스.', 'combat_pinwheel_top'],
+  ['tutorial', 'plan', '튜토리얼 기획서', '튜토리얼', '첫 판 한정 숲속 맵 3개, 시간 정지 코칭 컷, 수행 조건 기반 단계 진행.', 'trail_overview_1'],
+  ['growth',   'plan', '성장 기획서', '성장', '경험치, 명상, 숙련도, 코인, 회차, 사망 시 유지 항목.', 'growth_meditation'],
+  ['process',  'log',  '작업 내역', '작업 내역', '62일 개발 과정, 되돌린 결정, 플레이 검증으로 바꾼 항목.', 'portfolio_boss'],
   # 역기획서 — 다른 게임의 레벨 · 시스템을 기획자 입장에서 다시 읽은 덱. 목록과 홈 카드에 이 순서로 나간다
-  ['lol1',     'study', '소환사의 협곡 레벨디자인 역기획 (1편)', '소환사의 협곡 레벨디자인', '세 갈래 길과 정글, 오브젝트, 시야 배치가 대칭 속 공정성과 역할 분담, 국면 전환을 만드는 구조를 정리했다.', 'lol1_01', '리그 오브 레전드'],
-  ['lol2',     'study', '소환사의 협곡 미니언·포탑 시스템 기획 (2편)', '미니언 · 포탑 시스템 기획', '미니언의 골드 · 경험치와 포탑 수치를 설계 목표에서부터 정하고, 라인전 경제와 14분 기준점, 격차 보완 기획까지 다뤘다.', 'lol2_02', '리그 오브 레전드'],
-  ['limgrave', 'study', '엘든 링 림그레이브 레벨디자인 분석', '림그레이브 레벨디자인', '지도 · 밀도 · 시야 · 사정거리로 첫 보스 멀기트까지 플레이어를 학습시키는 구조를 분석하고, 초반 이탈을 줄이는 신호 설계를 제안했다.', 'limgrave_card', '엘든 링'],
-  ['genshin',  'study', '원신 몬드 레벨디자인 역기획', '몬드 레벨디자인', '몬드성과 신상을 기준점으로 외곽 보스 · 보상 배치와 정비 · 탐험 순환이 탐험 범위를 넓혀 가는 구조를 정리하고 개선안을 제안했다.', 'genshin_01', '원신'],
-  ['clash',    'study', '클래시로얄 레벨디자인 역기획', '아레나 레벨디자인', '고정된 전장의 대칭과 다리 · 강이 만드는 선택, 엘릭서 비용, 공격과 방어의 분화를 정리하고 전장 변경안을 제안했다.', 'clash_01', '클래시 로얄'],
+  ['lol1',     'study', '소환사의 협곡 레벨디자인 역기획 (1편)', '소환사의 협곡 레벨디자인', '라인 3개 · 정글 · 오브젝트 · 시야 배치가 공정성, 역할 분담, 국면 전환을 만드는 구조 분석.', 'lol1_01', '리그 오브 레전드'],
+  ['lol2',     'study', '소환사의 협곡 미니언·포탑 시스템 기획 (2편)', '미니언 · 포탑 시스템 기획', '설계 목표 기준의 미니언 골드 · 경험치 · 포탑 수치 결정, 라인전 경제, 14분 기준점, 보완 기획.', 'lol2_02', '리그 오브 레전드'],
+  ['limgrave', 'study', '엘든 링 림그레이브 레벨디자인 분석', '림그레이브 레벨디자인', '지도 · 밀도 · 시야 · 사정거리로 첫 보스 멀기트까지 학습시키는 구조 분석, 초반 이탈 감소용 신호 설계 제안.', 'limgrave_card', '엘든 링'],
+  ['genshin',  'study', '원신 몬드 레벨디자인 역기획', '몬드 레벨디자인', '몬드성 · 신상 기준점, 외곽 보스 · 보상 배치, 정비 · 탐험 순환에 따른 탐험 범위 확장 구조 분석, 개선안 제안.', 'genshin_01', '원신'],
+  ['clash',    'study', '클래시로얄 레벨디자인 역기획', '아레나 레벨디자인', '고정 전장의 대칭, 다리 · 강이 만드는 선택, 엘릭서 비용, 공격 · 방어 분화 분석, 전장 변경안 제안.', 'clash_01', '클래시 로얄'],
 );
 
 my $root = $0; $root =~ s{[\\/]tools[\\/][^\\/]+$}{}; $root = '.' if $root eq $0;
@@ -164,6 +164,7 @@ sub page_path {
   my ($d) = @_;
   return 'edgerunners/log/index.html' if $d->[1] eq 'log';
   return "analysis/$d->[0].html" if $d->[1] eq 'study';
+  return 'edgerunners/plan/index.html' if $d->[0] eq 'overview';  # 기획서 탭을 누르면 개요 기획서가 바로 보인다
   return "edgerunners/plan/$d->[0].html";
 }
 
@@ -173,7 +174,7 @@ sub up_of { my ($group) = @_; return $group eq 'study' ? '../' : '../../'; }
 # 같은 묶음 안에서 앞뒤 덱 링크. Edgerunners 페이지는 edgerunners/<묶음>/, 역기획서는 analysis/ 아래에 있다.
 sub link_to {
   my ($from, $to) = @_;
-  my $file = $to->[1] eq 'log' ? '' : "$to->[0].html";
+  my $file = ($to->[1] eq 'log' || $to->[0] eq 'overview') ? '' : "$to->[0].html";
   return $from->[1] eq $to->[1] ? ($file eq '' ? './' : $file) : "../$to->[1]/$file";
 }
 
@@ -193,6 +194,7 @@ sub site_nav {
 sub shell {
   my (%a) = @_;
   $a{up} //= '../../';
+  $a{main_class} //= 'wrap';
   $a{nav} //= site_nav($a{up}, 'edgerunners');
   return <<"HTML";
 <!doctype html>
@@ -206,11 +208,11 @@ sub shell {
 $a{head}</head>
 <body>
 <div class="scroll-root">
-<header class="site-head"><div class="wrap">
+<header class="site-head"><div class="$a{main_class}">
 <a class="brand" href="$a{up}">장대규</a>
 $a{nav}
 </div></header>
-<main class="wrap">
+<main class="$a{main_class}">
 $a{tabs}
 $a{body}</main>
 <footer class="foot"><div class="wrap">© 장대규 · 글꼴: 페이퍼로지(Paperlogy, SIL OFL 1.1)</div></footer>
@@ -220,7 +222,42 @@ $a{tail}</body>
 HTML
 }
 
+# 장 제목: 첫 h1/h2의 글자. 표지는 '표지'
+sub slide_title {
+  my ($html) = @_;
+  return '표지' if $html =~ /<section[^>]*id="[^"]*cover/;
+  my ($t) = $html =~ m{<h[12][^>]*>(.*?)</h[12]>}s;
+  $t = '' unless defined $t;
+  $t =~ s/<br\s*\/?>/ /g; $t =~ s/<[^>]+>//g; $t =~ s/&nbsp;|&#160;/ /g; $t =~ s/\s+/ /g; $t =~ s/^\s+|\s+$//g;
+  return $t eq '' ? '(제목 없음)' : $t;
+}
+my %titles;
+for my $d (grep { $_->[1] ne 'study' } @DECKS) {
+  my $dir = "$root/src/decks/$d->[0]";
+  my ($order) = slurp("$dir/deck.json") =~ /"order"\s*:\s*\[(.*?)\]/s;
+  $titles{$d->[0]} = [ map { slide_title(slurp("$dir/slides/$_.html")) } ($order =~ /"([^"]+)"/g) ];
+}
+
+# Edgerunners 기획서 · 작업 내역 페이지 왼쪽 목차. 모든 덱의 모든 장을 한 단계로 나열한다
+sub doc_index {
+  my ($cur) = @_;
+  my @er = grep { $_->[1] ne 'study' } @DECKS;
+  my $h = qq(<details class="doc-index" open><summary>기획서 목차</summary>\n<a class="di-pdf" href="../../assets/pdf/edgerunners_summary.pdf">요약 PDF 받기</a>\n);
+  my $k = 0;
+  for my $d (@er) {
+    my $href = link_to($cur, $d);
+    $href = '' if $d->[0] eq $cur->[0];
+    my $label = $d->[1] eq 'log' ? '작업 내역' : $d->[0] eq 'overview' ? '개요' : sprintf('세부 %02d', ++$k);
+    $h .= '<div class="di-deck' . ($d->[0] eq $cur->[0] ? ' on' : '') . qq("><a class="di-title" href="@{[ $href eq '' ? '#top' : $href ]}"><span>$label</span>$d->[3]</a><ol>);
+    my $i = 0;
+    $h .= join('', map { $i++; qq(<li><a href="$href#s$i">) . esc($_) . '</a></li>' } @{ $titles{$d->[0]} });
+    $h .= "</ol></div>\n";
+  }
+  return "$h</details>\n";
+}
+
 my $missing = 0;
+my %raw;  # "덱/장" → 슬라이드 원본(요약 PDF용)
 my %count;
 my @plan = grep { $_->[1] eq 'plan' } @DECKS;
 for my $d (@DECKS) {
@@ -237,6 +274,7 @@ for my $d (@DECKS) {
     my $html = slurp("$dir/slides/$sid.html");
     my $aside = '';
     if ($html =~ s{<aside>(.*?)</aside>}{}s) { $aside = $1; $aside =~ s/^\s+|\s+$//g; }
+    $raw{"$id/$sid"} = $html;
     $html =~ s{/_blob/([0-9a-f]{32})}{
       if (exists $img{$1}) { "${up}assets/img/$img{$1}.webp" }
       else { warn "$id/$sid: 그림 짝 없음 $1\n"; $missing++; "" }
@@ -260,14 +298,21 @@ for my $d (@DECKS) {
 
   my @same = grep { $_->[1] eq $group } @DECKS;
   my ($pos) = grep { $same[$_][0] eq $id } 0 .. $#same;
-  my %first = (plan => '<a href="./">← 기획서 목록</a>', log => '<a href="../plan/">← 기획서</a>', study => '<a href="./">← 역기획서 목록</a>');
+  my %first = (plan => '<a href="../">← 게임</a>', log => '<a href="../plan/">← 기획서</a>', study => '<a href="./">← 역기획서 목록</a>');
   my %last = (plan => '<a href="../log/">작업 내역 →</a>', log => '<a href="../">게임 →</a>', study => '<a href="./">역기획서 목록 →</a>');
   my $prev = $pos > 0 ? '<a href="' . link_to($d, $same[$pos - 1]) . "\">← $same[$pos - 1][2]</a>" : $first{$group};
   my $next = $pos < $#same ? '<a href="' . link_to($d, $same[$pos + 1]) . "\">$same[$pos + 1][2] →</a>" : $last{$group};
   my $eyebrow = $group eq 'plan' ? 'Edgerunners 기획서' : $group eq 'study' ? "역기획서 · $d->[6]" : 'Edgerunners';
   my $site = $group eq 'study' ? '장대규 역기획서' : 'Edgerunners';
   my $body = join("\n", @items);
+  my ($open, $close, $pdf) = ('', '', '');
+  if ($group ne 'study') {
+    $open = qq(<div class="plan-layout">\n) . doc_index($d) . qq(<div class="plan-main">);
+    $close = "</div>\n</div>";
+    $pdf = qq(\n<a class="btn ghost" href="../../assets/pdf/edgerunners_summary.pdf">요약 PDF · 14쪽</a>);
+  }
   my $page = shell(
+    main_class => $group eq 'study' ? 'wrap' : 'wrap wide',
     title => "$title · $site",
     desc => "$site $title. $desc",
     up => $up,
@@ -275,19 +320,21 @@ for my $d (@DECKS) {
     head => qq(<link rel="stylesheet" href="${up}assets/css/deck.css">\n<script src="${up}assets/js/deck.js" defer></script>\n),
     tabs => $group eq 'study' ? '' : tabs($group),
     body => <<"HTML",
-<div class="deck-head">
+$open
+<div class="deck-head" id="top">
 <p class="eyebrow">$eyebrow</p>
 <h1>$title</h1>
 <p class="lead">$desc</p>
 <div class="deck-tools">
-<button class="btn" type="button" data-present="0">슬라이드로 넘겨 보기</button>
-<span class="small">${count}장 · 슬라이드를 누르면 크게 보고, 화살표 키로 넘긴다</span>
+<button class="btn" type="button" data-present="0">슬라이드 보기</button>$pdf
+<span class="small">${count}장 · 슬라이드 클릭 시 확대, 화살표 키로 이동</span>
 </div>
 </div>
 <div class="slides">
 $body
 </div>
 <nav class="deck-nav">$prev $next</nav>
+$close
 HTML
     tail => <<"HTML",
 <div class="present" aria-modal="true" role="dialog">
@@ -303,59 +350,48 @@ HTML
   print "$id: ${count}장, 설명 파일 ${notes}개 → $out\n";
 }
 
-# ── 기획서 목록 ──
-my ($main, @rest) = @plan;
-my $cards = qq(<a class="card deck-card main" href="$main->[0].html">\n<img src="../../assets/img/$main->[5].webp" alt="">\n)
-  . qq(<div class="body"><span class="num">개요</span><h3>$main->[3]</h3><p>$main->[4]</p><span class="count">$count{$main->[0]}장</span></div>\n</a>\n);
-my $k = 0;
-for my $d (@rest) {
-  $k++;
-  my $label = sprintf '세부 %02d', $k;
-  $cards .= qq(<a class="card deck-card" href="$d->[0].html">\n<img src="../../assets/img/$d->[5].webp" alt="">\n)
-    . qq(<div class="body"><span class="num">$label</span><h3>$d->[3]</h3><p>$d->[4]</p><span class="count">$count{$d->[0]}장</span></div>\n</a>\n);
+# ── 옛 주소: plan/overview.html은 기획서 탭 첫 화면(plan/index.html)으로 보낸다 ──
+spit("$root/edgerunners/plan/overview.html", <<'HTML');
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><title>개요 기획서 · Edgerunners</title>
+<meta http-equiv="refresh" content="0; url=./">
+<link rel="canonical" href="./">
+<script>location.replace("./" + location.hash);</script>
+</head><body><a href="./">개요 기획서로 이동</a></body></html>
+HTML
+
+# ── 요약 PDF용 페이지(edgerunners/summary.html). PDF는 tools/make_pdf.js가 이 페이지를 인쇄해 만든다 ──
+my @SUMMARY = qw(overview/cover overview/overview overview/fun overview/loop overview/build overview/combat
+  combat/timing system/parts level/flow level/curriculum growth/keep growth/loop process/timeline process/playtest);
+my $pages = '';
+for my $k (@SUMMARY) {
+  my $h = $raw{$k} // die "요약: $k 없음\n";
+  $h =~ s{/_blob/([0-9a-f]{32})}{ exists $img{$1} ? "../assets/img/$img{$1}.webp" : "" }ge;
+  $pages .= qq(<div class="slide-frame">\n$h\n</div>\n);
 }
-my $n_detail = scalar @rest;
-spit("$root/edgerunners/plan/index.html", shell(
-  title => 'Edgerunners · 기획서',
-  desc => 'Edgerunners 기획서. 개요 기획서와 전투 규칙, 시스템, 레벨, 튜토리얼, 성장 세부 기획서.',
-  head => <<'HTML',
+spit("$root/edgerunners/summary.html", <<"HTML");
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>Edgerunners 기획 요약</title>
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="../assets/css/site.css">
+<link rel="stylesheet" href="../assets/css/deck.css">
+<script src="../assets/js/deck.js" defer></script>
 <style>
-  .plan-head { padding: 40px 0 8px; }
-  .plan-head h1 { font-size: 46px; margin: 8px 0 12px; }
-  .decks { padding: 32px 0 72px; }
-  .deck-card { display: flex; flex-direction: column; color: var(--ink); transition: border-color 0.15s, transform 0.15s; }
-  .deck-card:hover { text-decoration: none; border-color: var(--ink-3); transform: translateY(-2px); }
-  .deck-card img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: var(--dark); }
-  .deck-card .body { display: flex; flex-direction: column; gap: 6px; }
-  .deck-card .num { font-family: var(--semi); font-size: 13px; color: var(--accent); }
-  .deck-card p { color: var(--ink-3); font-size: 15px; }
-  .deck-card .count { font-size: 13px; color: var(--ink-4); margin-top: 4px; }
-  .deck-card.main { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); }
-  .deck-card.main img { height: 100%; aspect-ratio: auto; min-height: 300px; }
-  .deck-card.main .body { padding: 36px; justify-content: center; }
-  .deck-card.main h3 { font-size: 32px; }
-  /* 좁은 화면에서는 다른 카드와 같은 세로 짜임으로 둔다. grid 안의 그림에 height: 100%가 남으면 모바일 브라우저에 따라 그림 높이가 틀어져 아래 글씨를 덮었다 */
-  @media (max-width: 900px) {
-    .deck-card.main { display: flex; }
-    .deck-card.main img { height: auto; min-height: 0; aspect-ratio: 16 / 9; }
-    .deck-card.main .body { padding: 24px; }
-    .deck-card.main h3 { font-size: 26px; }
-  }
+  \@page { size: 1920px 1080px; margin: 0; }
+  html, body { height: auto; overflow: visible; background: #FFFFFF; }
+  .slide-frame { width: 1920px; height: 1080px; aspect-ratio: auto; border: 0; border-radius: 0; box-shadow: none; break-after: page; }
+  /* 원래 덱의 쪽 번호는 요약에서 순서가 맞지 않으므로 감춘다 */
+  .slide-frame section > p[style*="right:128px"][style*="bottom:64px"] { display: none; }
 </style>
+</head>
+<body>
+$pages</body>
+</html>
 HTML
-  tabs => tabs('plan'),
-  body => <<"HTML",
-<div class="plan-head">
-<p class="eyebrow">Edgerunners 기획서</p>
-<h1>기획서</h1>
-<p class="lead">전체 구조를 정리한 개요 기획서 하나와 주제별 세부 기획서 ${n_detail}개로 나눴다.<br>슬라이드마다 아래에 항목별 설명을 붙였다. 개발 과정은 <a href="../log/">작업 내역</a>에 따로 정리했다.</p>
-</div>
-<div class="grid two decks">
-$cards</div>
-HTML
-  tail => '',
-));
-print 'plan/index.html: 기획서 ' . scalar(@plan) . "개\n";
+print 'summary.html: ' . scalar(@SUMMARY) . "장\n";
 
 # ── 역기획서 목록 ──
 my @study = grep { $_->[1] eq 'study' } @DECKS;
@@ -388,7 +424,7 @@ HTML
 <div class="plan-head">
 <p class="eyebrow">역기획서</p>
 <h1>역기획서</h1>
-<p class="lead">출시된 게임의 레벨과 시스템을 기획자 입장에서 다시 설계해 본 문서다.<br>각 구조가 어떤 목표를 위해 그 수치와 배치로 정해졌는지 정리하고, 문제가 보이는 부분은 보완 기획을 붙였다.</p>
+<p class="lead">출시작의 레벨 · 시스템을 기획자 관점에서 재설계한 문서.<br>구조별 설계 목표와 수치 · 배치 근거 정리. 문제 구간에는 보완 기획 첨부.</p>
 </div>
 <div class="grid two decks">
 $scards</div>

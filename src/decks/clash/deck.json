@@ -37,19 +37,19 @@
       "start": "x-part1"
     },
     "s3": {
-      "description": "A 전장은 선택을 만든다",
+      "description": "A 전장이 만드는 선택",
       "start": "x-part2"
     },
     "s4": {
-      "description": "B 선택에는 비용이 따른다",
+      "description": "B 선택의 비용",
       "start": "y09-cost"
     },
     "s5": {
-      "description": "C 그래서 공격과 방어가 갈린다",
+      "description": "C 공격과 방어의 분화",
       "start": "y11-attack"
     },
     "s6": {
-      "description": "D 그래서 무엇을 바꿀 수 있는가",
+      "description": "D 전장 변경 제안",
       "start": "y14-proposal"
     }
   },

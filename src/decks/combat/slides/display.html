@@ -1,21 +1,21 @@
 <section id="display" data-transition="fade" style="background:#ECEBE6;color:#17181C;font-family:'Paperlogy', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:44px">
 <div style="display:flex;flex-direction:column;gap:10px">
 <p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;letter-spacing:2px;color:#0077A3">04  예고 표시</p>
-<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">예고 표시는 실제 판정 범위와 같게 그린다</h2>
+<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">실제 판정 범위와 동일한 예고 표시</h2>
 </div>
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px">
 <div style="display:flex;flex-direction:column;gap:20px;background:#FFFFFF;padding:36px;border-radius:12px;border:1px solid #D9D7CF">
-<h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;color:#17181C">범위: 실제로 닿는 거리만큼</h3>
+<h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;color:#17181C">범위: 실제 도달 거리 기준</h3>
 <div style="display:flex;flex-direction:column;gap:10px">
 <div style="display:flex;flex-direction:column;justify-content:center;align-items:center;height:280px;background:#F6F5F1;border-radius:8px">
 <svg aria-label="근접병 앞쪽으로만 펼친 주황색 부채꼴. 점선 호가 내딛기 거리 1.2m를, 바깥 호가 칼 반경을 더한 2.3m를 나타낸다" width="400" height="260" viewBox="0 0 400 260"><path d="M100,130 L263.8,15.3 A200,200 0 0,1 263.8,244.7 Z" fill="#E07020" fill-opacity="0.22" stroke="#E07020" stroke-width="3"/><path d="M185.4,70.2 A104.3,104.3 0 0,1 185.4,189.8" fill="none" stroke="#17181C" stroke-width="2.5" stroke-dasharray="7 6"/><line x1="100" y1="130" x2="124" y2="130" stroke="#17181C" stroke-width="6" stroke-linecap="round"/><circle cx="100" cy="130" r="12" fill="#17181C"/></svg>
 </div>
 <p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#5B606B">전방 2.3m, 70° (점선은 내딛기 1.2m)</p>
 </div>
-<p style="font-size:25px;line-height:1.55;color:#3E434D">표시가 실제보다 넓으면 플레이어가 맞지 않는 곳도 위험하다고 잘못 배운다.<br>돌진 거리는 적이 다가오는 모습으로 알 수 있어서 표시 범위에 넣지 않는다.</p>
+<p style="font-size:25px;line-height:1.55;color:#3E434D">표시가 실제보다 넓으면 플레이어가 안전 지점을 위험 지점으로 잘못 학습함.<br>돌진 거리는 적의 접근 동작으로 판단 가능하므로 표시 범위에서 제외함.</p>
 </div>
 <div style="display:flex;flex-direction:column;gap:20px;background:#FFFFFF;padding:36px;border-radius:12px;border:1px solid #D9D7CF">
-<h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;color:#17181C">알파: 여러 개가 겹칠 때를 기준으로</h3>
+<h3 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:32px;font-weight:400;color:#17181C">알파: 다중 겹침 기준</h3>
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px">
 <div style="display:flex;flex-direction:column;gap:10px">
 <div style="display:flex;flex-direction:column;justify-content:center;align-items:center;height:280px;background:#F6F5F1;border-radius:8px">
@@ -27,13 +27,13 @@
 <div style="display:flex;flex-direction:column;justify-content:center;align-items:center;height:280px;background:#F6F5F1;border-radius:8px">
 <svg aria-label="플레이어를 둘러싼 적 다섯의 부채꼴을 알파 0.16으로 겹친 도해. 겹친 곳에서도 플레이어가 보인다" width="260" height="260" viewBox="0 0 260 260"><path d="M130.0,34.0 L197.7,130.7 A118,118 0 0,1 62.3,130.7 Z" fill="#E07020" fill-opacity="0.16"/><path d="M221.3,100.3 L150.3,194.6 A118,118 0 0,1 108.5,65.8 Z" fill="#E07020" fill-opacity="0.16"/><path d="M186.4,207.7 L74.9,169.2 A118,118 0 0,1 184.4,89.7 Z" fill="#E07020" fill-opacity="0.16"/><path d="M73.6,207.7 L75.6,89.7 A118,118 0 0,1 185.1,169.2 Z" fill="#E07020" fill-opacity="0.16"/><path d="M38.7,100.3 L151.5,65.8 A118,118 0 0,1 109.7,194.6 Z" fill="#E07020" fill-opacity="0.16"/><circle cx="130.0" cy="34.0" r="9" fill="#5B606B"/><circle cx="221.3" cy="100.3" r="9" fill="#5B606B"/><circle cx="186.4" cy="207.7" r="9" fill="#5B606B"/><circle cx="73.6" cy="207.7" r="9" fill="#5B606B"/><circle cx="38.7" cy="100.3" r="9" fill="#5B606B"/><circle cx="130" cy="130" r="10" fill="#17181C"/></svg>
 </div>
-<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#5B606B">다섯 개가 겹칠 때</p>
+<p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;color:#5B606B">다섯 개 겹침</p>
 </div>
 </div>
-<p style="font-size:25px;line-height:1.55;color:#3E434D">예고 표시의 알파 값은 0.16이다.<br>한 개만 볼 때 보기 좋은 값으로 정하면, 적 다섯에게 둘러싸였을 때 화면이 주황색으로 뒤덮인다.</p>
+<p style="font-size:25px;line-height:1.55;color:#3E434D">예고 표시 알파 값 0.16.<br>단일 예고 기준으로 값을 정하면 적 다섯에게 포위될 때 화면 전체가 주황색으로 덮임.</p>
 </div>
 </div>
 <p style="position:absolute;left:128px;bottom:64px;width:800px;font-size:24px;color:#8A8F99">EDGERUNNERS 전투 규칙 기획서</p>
 <p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#8A8F99">05</p>
-<aside>근접병은 실제로 닿는 거리만큼 전방 부채꼴을 그립니다. 범위는 내딛기 1.2m와 칼 반경 1.1m를 더한 약 2.3m이고, 각도는 70°입니다. 예고 표시의 알파 값 0.16은 여러 예고가 겹치는 상황을 기준으로 정했습니다. 발광은 겹칠수록 알파보다 훨씬 빨리 밝아지므로 발광 세기도 함께 낮춥니다. 오른쪽 두 그림은 같은 부채꼴을 알파 0.16으로 한 개, 다섯 개 겹쳐 그린 도해이고 게임 화면은 아닙니다. 바닥 장치도 색만으로는 바닥 장식과 구분되지 않으므로 형태로 구분합니다. 전기 함정에만 구리 배선이 박힌 금속 타일을 쓰고, 그 위에 입히는 색은 타일 무늬가 가려지지 않을 정도(a=0.58)로만 둡니다.</aside>
+<aside>근접병은 실제 도달 거리만큼 전방 부채꼴을 그림. 범위는 내딛기 1.2m와 칼 반경 1.1m의 합인 약 2.3m, 각도는 70°임. 예고 표시 알파 값 0.16은 여러 예고가 겹치는 상황을 기준으로 정함. 발광은 겹칠수록 알파보다 빠르게 밝아지므로 발광 세기도 함께 낮춤. 오른쪽 두 그림은 같은 부채꼴을 알파 0.16으로 한 개, 다섯 개 겹쳐 그린 도해이며 게임 화면이 아님. 바닥 장치도 색만으로는 바닥 장식과 구분되지 않으므로 형태로 구분함. 전기 함정에만 구리 배선이 박힌 금속 타일을 사용함. 타일 위 색은 무늬가 가려지지 않는 수준(a=0.58)으로 제한함.</aside>
 </section>

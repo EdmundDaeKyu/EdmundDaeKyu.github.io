@@ -8,7 +8,8 @@
 |---|---|
 | `index.html` | 홈 — 소개, 프로젝트 목록 |
 | `edgerunners/index.html` | Edgerunners 게임 — 소개, 플레이 링크, 장면, 한 판의 흐름, 조작 |
-| `edgerunners/plan/index.html` | Edgerunners 기획서 목록 — 개요 하나와 세부 기획서 다섯. `tools/build_decks.pl`이 만든다 |
+| `edgerunners/plan/index.html` | 기획서 탭 첫 화면 = 개요 기획서. 왼쪽에 모든 기획서 · 작업 내역의 장 목차. `tools/build_decks.pl`이 만든다 (`plan/overview.html`은 이 페이지로 보내는 옛 주소) |
+| `edgerunners/summary.html` · `assets/pdf/edgerunners_summary.pdf` | 기획 요약 PDF(14쪽)와 그 인쇄용 페이지. 장 목록은 `build_decks.pl`의 `@SUMMARY` |
 | `edgerunners/plan/<덱>.html` | 기획서 한 벌. `tools/build_decks.pl`이 만든다(손으로 고치지 않는다) |
 | `edgerunners/log/index.html` | Edgerunners 작업 내역 — 개발 과정 덱. 역시 `tools/build_decks.pl`이 만든다 |
 | `analysis/index.html` | 역기획서 목록 — 리그 오브 레전드 1 · 2편, 엘든 링 림그레이브, 원신 몬드, 클래시로얄. `tools/build_decks.pl`이 만든다 |
@@ -38,6 +39,13 @@
    ```bash
    perl tools/build_decks.pl
    ```
+
+## 요약 PDF를 다시 만들 때
+
+```bash
+perl tools/build_decks.pl
+node tools/make_pdf.js     # Playwright 필요. 끝에 tools/shrink_pdf.py(PyMuPDF)로 그림 용량을 줄인다
+```
 
 ## 역기획서를 더하거나 고친 뒤
 

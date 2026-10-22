@@ -1,7 +1,7 @@
 <section id="body" data-transition="fade" style="background:#F6F5F1;color:#17181C;font-family:'Paperlogy', Arial, sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;gap:36px">
 <div style="display:flex;flex-direction:column;gap:10px">
 <p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:24px;letter-spacing:2px;color:#0077A3">01  기본 능력치</p>
-<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">대시 거리는 낮은 엄폐물 한 칸을 넘는 거리로 정했다</h2>
+<h2 style="font-family:'Paperlogy ExtraBold', Arial, sans-serif;font-size:60px;font-weight:400;line-height:1.15;color:#17181C">낮은 엄폐물 한 칸 기준의 대시 거리 설정</h2>
 </div>
 <div style="display:flex;flex-direction:row;gap:40px;align-items:start">
 <div style="display:flex;flex-direction:column;width:1048px;background:#FFFFFF;padding:20px 24px;border-radius:12px;border:1px solid #D9D7CF">
@@ -13,7 +13,7 @@
 <div style="position:absolute;left:200px;top:128px;width:300px;height:60px;background:#F2B705;border-radius:4px"></div>
 <p style="position:absolute;left:200px;top:139px;width:300px;text-align:center;font-size:24px;color:#17181C">2m</p>
 <div style="position:absolute;left:557px;top:140px;width:36px;height:36px;border:3px dashed #0077A3;border-radius:18px"></div>
-<p style="position:absolute;left:820px;top:134px;width:160px;font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:28px;color:#0077A3">넘는다</p>
+<p style="position:absolute;left:820px;top:134px;width:160px;font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:28px;color:#0077A3">통과</p>
 <x-connector x1="80" y1="208" x2="200" y2="208" head="both" style="color:#8A8F99;border-width:2px"></x-connector>
 <x-connector x1="200" y1="208" x2="500" y2="208" head="both" style="color:#8A8F99;border-width:2px"></x-connector>
 <x-connector x1="500" y1="208" x2="575" y2="208" head="both" style="color:#8A8F99;border-width:2px"></x-connector>
@@ -31,7 +31,7 @@
 <p style="position:absolute;left:200px;top:123px;width:300px;text-align:center;font-size:24px;color:#17181C">2m</p>
 <p style="position:absolute;left:500px;top:123px;width:300px;text-align:center;font-size:24px;color:#17181C">2m</p>
 <div style="position:absolute;left:557px;top:124px;width:36px;height:36px;border:3px dashed #C2185B;border-radius:18px"></div>
-<p style="position:absolute;left:820px;top:118px;width:170px;font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:28px;color:#C2185B">넘지 못한다</p>
+<p style="position:absolute;left:820px;top:118px;width:170px;font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:28px;color:#C2185B">통과 불가</p>
 <x-connector x1="200" y1="190" x2="800" y2="190" head="both" style="color:#8A8F99;border-width:2px"></x-connector>
 <p style="position:absolute;left:450px;top:196px;width:100px;text-align:center;font-size:24px;color:#5B606B">4m</p>
 </div>
@@ -39,13 +39,13 @@
 <div style="display:flex;flex-direction:column;width:576px;border-top:1px solid #D9D7CF">
 <div style="display:flex;flex-direction:row;gap:20px;padding:18px 0;border-bottom:1px solid #D9D7CF"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;width:170px;color:#5B606B">체력</p><p style="font-size:27px;width:386px">100</p></div>
 <div style="display:flex;flex-direction:row;gap:20px;padding:18px 0;border-bottom:1px solid #D9D7CF"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;width:170px;color:#5B606B">이동 속도</p><p style="font-size:27px;width:386px">5.25 m/s</p></div>
-<div style="display:flex;flex-direction:row;gap:20px;padding:18px 0;border-bottom:1px solid #D9D7CF"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;width:170px;color:#5B606B">대시 거리</p><p style="font-size:27px;width:386px">3.5m<br>이동 속도와 상관없이 고정</p></div>
+<div style="display:flex;flex-direction:row;gap:20px;padding:18px 0;border-bottom:1px solid #D9D7CF"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;width:170px;color:#5B606B">대시 거리</p><p style="font-size:27px;width:386px">3.5m<br>이동 속도와 무관하게 고정</p></div>
 <div style="display:flex;flex-direction:row;gap:20px;padding:18px 0;border-bottom:1px solid #D9D7CF"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;width:170px;color:#5B606B">대시 속도</p><p style="font-size:27px;width:386px">이동 속도 × 2.1<br>기본 11.0 m/s</p></div>
-<div style="display:flex;flex-direction:row;gap:20px;padding:18px 0;border-bottom:1px solid #D9D7CF"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;width:170px;color:#5B606B">대시 지속</p><p style="font-size:27px;width:386px">0.32초<br>무적 시간과 같다</p></div>
+<div style="display:flex;flex-direction:row;gap:20px;padding:18px 0;border-bottom:1px solid #D9D7CF"><p style="font-family:'Paperlogy SemiBold', Arial, sans-serif;font-size:26px;width:170px;color:#5B606B">대시 지속</p><p style="font-size:27px;width:386px">0.32초<br>무적 시간과 동일</p></div>
 </div>
 </div>
-<p style="font-size:26px;line-height:1.55;color:#3E434D">대시 거리는 이동 속도와 상관없이 3.5m로 고정하고, 대시 속도만 이동 속도에 비례하게 했다.<br>그래서 맵을 설계할 때 대시 거리를 하나의 기준으로 쓸 수 있다.</p>
+<p style="font-size:26px;line-height:1.55;color:#3E434D">대시 거리는 이동 속도와 무관하게 3.5m로 고정하고, 대시 속도만 이동 속도에 비례시킴.<br>따라서 맵 설계 시 대시 거리를 단일 기준으로 사용 가능함.</p>
 <p style="position:absolute;left:128px;bottom:64px;width:800px;font-size:24px;color:#8A8F99">EDGERUNNERS 전투 규칙 기획서</p>
 <p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#8A8F99">02</p>
-<aside>대시 거리는 낮은 엄폐물 한 칸(2m)을 바로 앞에서 넘을 수 있는 거리입니다. 엄폐물 앞 0.8m, 칸 2m, 착지 0.5m를 더하면 3.3m라서 3.5m면 한 칸을 넘을 수 있습니다. 두 칸은 넘을 수 없고, 더 멀리 가려면 다리 사이버웨어가 필요합니다. 젠킨스의 힘줄 Lv3(×1.6)과 뉴럴 링크 Lv2(×1.5)처럼 대시 거리를 늘리는 사이버웨어는 거리에 배율을 곱합니다. 대시 속도는 이동 속도의 2.1배라서, 이동 속도가 빠른 빌드는 같은 거리를 더 짧은 시간에 이동합니다. 대시 지속 시간은 무적 시간과 같으므로 기본 상태에서 0.30초 아래로 내려가지 않게 했습니다. 두 값이 같아야 대시하는 동안에는 맞지 않는다는 규칙이 성립합니다. 이동 속도 5.25 m/s는 기본 전투방(32m)을 가로지르는 데 약 6초가 걸리는 값입니다. 체력 100은 피해 수치를 두 자리 수로 다루기 위한 기준이고, 시설 작업대에서 단계마다 +20씩 최대 5단계까지 올립니다.</aside>
+<aside>대시 거리는 낮은 엄폐물 한 칸(2m)을 바로 앞에서 넘을 수 있는 거리임. 엄폐물 앞 0.8m, 칸 2m, 착지 0.5m의 합은 3.3m이므로 3.5m로 한 칸 통과 가능함. 두 칸은 통과 불가하며, 더 먼 거리는 다리 사이버웨어로 확보함. 젠킨스의 힘줄 Lv3(×1.6), 뉴럴 링크 Lv2(×1.5) 등 대시 거리 증가 사이버웨어는 거리에 배율을 곱함. 대시 속도는 이동 속도의 2.1배임. 이동 속도가 빠른 빌드는 같은 거리를 더 짧은 시간에 이동함. 대시 지속 시간은 무적 시간과 같으며, 기본 상태에서 0.30초 미만으로 내려가지 않게 함. 두 값이 같아야 대시 중 피격 없음 규칙이 성립함. 이동 속도 5.25 m/s는 기본 전투방(32m)을 약 6초에 가로지르는 값임. 체력 100은 피해 수치를 두 자리 수로 다루기 위한 기준임. 시설 작업대에서 단계마다 +20, 최대 5단계까지 강화함.</aside>
 </section>
