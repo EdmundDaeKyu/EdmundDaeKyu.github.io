@@ -23,8 +23,10 @@
     "y11-attack",
     "y12-defense",
     "y13-breach",
+    "y13b-limit",
     "y14-proposal",
     "y15-shift",
+    "y15b-eval",
     "y16-conclusion"
   ],
   "sections": {
@@ -50,7 +52,7 @@
     },
     "s6": {
       "description": "D 전장 변경 제안",
-      "start": "y14-proposal"
+      "start": "y13b-limit"
     }
   },
   "faces": {
