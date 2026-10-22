@@ -21,11 +21,11 @@ binmode STDERR, ':encoding(UTF-8)';
 # [id, 묶음, 제목, 목록 카드 이름, 소개, 목록 카드 그림]
 my @DECKS = (
   ['overview', 'plan', '개요 기획서', '개요 기획서', '게임 정의, 핵심 재미, 한 판의 구조, 빌드 조합, 2077 무기 · 사이버웨어 재설계를 요약했습니다.', 'portfolio_hero'],
-  ['combat',   'plan', '전투 규칙 기획서', '전투 규칙', '대시 거리와 충전 시간, 공격 예고 규칙, 피해 기준표, 피해 하한, 대시로 피할 수 없는 위협을 다룹니다.', 'portfolio_crowd'],
   ['system',   'plan', '시스템 기획서', '시스템', '무기, 사이버웨어 8부위와 레벨, 프로토타입, 해킹, 성장, 경제, 회차를 다룹니다.', 'portfolio_netrunner'],
+  ['combat',   'plan', '전투 규칙 기획서', '전투 규칙', '대시 거리와 충전 시간, 공격 예고 규칙, 피해 기준표, 피해 하한, 대시로 피할 수 없는 위협을 다룹니다.', 'portfolio_crowd'],
   ['level',    'plan', '레벨 기획서', '레벨', '맵 제작 순서, 격자 규칙, 맵 목록, 첫 판의 요소 등장 순서, 웨이브, 방 종류, 보스를 다룹니다.', 'combat_pinwheel_top'],
-  ['tutorial', 'plan', '튜토리얼 기획서', '튜토리얼', '첫 판에만 나오는 숲속 맵 3개와 시간을 멈추는 코칭 컷, 수행 조건에 따른 단계 진행을 다룹니다.', 'trail_overview_1'],
   ['growth',   'plan', '성장 기획서', '성장', '경험치, 명상, 숙련도, 코인, 회차, 사망 후에도 남는 항목을 다룹니다.', 'growth_meditation'],
+  ['tutorial', 'plan', '튜토리얼 기획서', '튜토리얼', '첫 판에만 나오는 숲속 맵 3개와 시간을 멈추는 코칭 컷, 수행 조건에 따른 단계 진행을 다룹니다.', 'trail_overview_1'],
   ['process',  'log',  '작업 내역', '작업 내역', '62일 동안의 개발 과정과 기각 · 개편한 결정, 플레이 검증으로 바꾼 항목을 정리했습니다.', 'portfolio_boss'],
   # 역기획서 — 다른 게임의 레벨 · 시스템을 기획자 입장에서 다시 읽은 덱. 목록과 홈 카드에 이 순서로 나간다
   ['lol1',     'study', '소환사의 협곡 레벨디자인 역기획 (1편)', '소환사의 협곡 레벨디자인', '라인 3개와 정글, 오브젝트, 시야 배치가 공정성과 역할 분담, 국면 전환을 만드는 구조를 정리했습니다.', 'lol1_01', '리그 오브 레전드'],
@@ -401,7 +401,7 @@ HTML
 
 # ── 요약 PDF용 페이지(edgerunners/summary.html). PDF는 tools/make_pdf.js가 이 페이지를 인쇄해 만든다 ──
 my @SUMMARY = qw(overview/cover overview/overview overview/fun overview/loop overview/build overview/combat
-  combat/timing system/parts level/flow level/curriculum growth/keep growth/loop process/timeline process/playtest);
+  system/parts combat/timing level/flow level/curriculum growth/keep growth/loop process/timeline process/playtest);
 my $pages = '';
 for my $k (@SUMMARY) {
   my $h = $raw{$k} // die "요약: $k 없음\n";
