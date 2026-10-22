@@ -44,6 +44,45 @@
   @media (max-width: 1000px) { .pipe { grid-template-columns: repeat(2, minmax(0, 1fr)); } .pipe > div:nth-child(3)::before { display: none; } }
   @media (max-width: 900px) { .stats { grid-template-columns: repeat(3, minmax(0, 1fr)); } .two-col, .tools { grid-template-columns: minmax(0, 1fr); } }
   @media (max-width: 640px) { .pipe { grid-template-columns: minmax(0, 1fr); gap: 22px; } .pipe > div + div::before { content: "↓"; left: 20px; top: -22px; } .pipe > div:nth-child(3)::before { display: block; } .ai-head h1 { font-size: 40px; } .tbl td:first-child { white-space: normal; } }
+  .keys { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-top: 28px; }
+  .keys a { display: flex; flex-direction: column; gap: 4px; padding: 20px 24px; border-radius: var(--radius); background: var(--dark); color: #FFFFFF; }
+  .keys a:hover { text-decoration: none; background: #2A2C33; }
+  .keys span { font-family: var(--semi); font-size: 13px; color: #5CC8F0; }
+  .keys a + a span { color: #F48FB1; }
+  .keys b { font-family: var(--bold); font-weight: 400; font-size: 24px; }
+  .keys em { font-style: normal; font-size: 15px; color: #C9CDD4; }
+  .legend { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+  .legend span { font-family: var(--semi); font-size: 13px; padding: 4px 12px; border-radius: 999px; color: #FFFFFF; }
+  .legend .me, .wf .me .who { background: var(--dark); }
+  .legend .dev, .wf .dev .who { background: var(--accent); }
+  .legend .chk, .wf .chk .who { background: var(--pink); }
+  .wf { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px 30px; }
+  .wf li { position: relative; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px 18px 18px; display: flex; flex-direction: column; gap: 6px; }
+  .wf li.chk { border: 2px solid var(--pink); }
+  .wf li:not(:nth-child(4n+1))::before { content: "→"; position: absolute; left: -24px; top: 50%; transform: translateY(-50%); color: var(--ink-4); font-size: 18px; }
+  .wf li:nth-child(4n+1):not(:first-child)::before { content: "↳"; position: absolute; left: -22px; top: 50%; transform: translateY(-50%); color: var(--ink-4); font-size: 18px; }
+  .wf .no { font-family: var(--bold); font-size: 22px; color: var(--ink-4); line-height: 1; }
+  .wf .who { align-self: flex-start; font-family: var(--semi); font-size: 12px; color: #FFFFFF; border-radius: 999px; padding: 2px 10px; }
+  .wf b { font-family: var(--semi); font-weight: 400; font-size: 17px; }
+  .wf em { font-style: normal; font-size: 14px; line-height: 1.55; color: var(--ink-3); }
+  section.block.hl { background: var(--card); border: 1px solid var(--line); border-left: 6px solid var(--accent); border-radius: var(--radius); padding: 40px 40px 44px; margin: 28px 0; }
+  section.block.hl.pink { border-left-color: var(--pink); }
+  section.block.hl + section.block { border-top: none; }
+  .kicker { font-family: var(--semi); font-size: 14px; letter-spacing: 1px; color: var(--accent); margin: 0 0 4px; }
+  .hl.pink .kicker { color: var(--pink); }
+  .lead2 { font-size: 18px; line-height: 1.75; color: var(--ink-2); max-width: 900px; margin: 0 0 18px; }
+  .lead2 b { font-family: var(--semi); font-weight: 400; color: var(--ink); }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 22px; }
+  .chips span { font-family: var(--semi); font-size: 14px; padding: 6px 14px; border-radius: 999px; background: var(--bg-alt); color: var(--ink-2); }
+  .checks { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+  .checks div { background: var(--bg); border: 1px solid var(--line); border-top: 3px solid var(--pink); border-radius: 10px; padding: 16px 18px; }
+  .checks b { font-family: var(--semi); font-weight: 400; font-size: 16px; }
+  .checks p { margin: 6px 0 0; font-size: 14.5px; color: var(--ink-2); }
+  .h3s { font-size: 19px; margin: 26px 0 6px; }
+  .body2 { font-size: 16px; line-height: 1.75; color: var(--ink-2); margin: 0; max-width: 980px; }
+  .takeaway b, .ai-head .lead b { font-family: var(--semi); font-weight: 400; color: var(--ink); }
+  @media (max-width: 1000px) { .wf { grid-template-columns: repeat(2, minmax(0, 1fr)); } .wf li::before { display: none; } .checks { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 640px) { .keys, .wf, .checks { grid-template-columns: minmax(0, 1fr); } section.block.hl { padding: 26px 16px; } .tbl { font-size: 13px; table-layout: fixed; } .tbl th, .tbl td { padding: 8px 8px; overflow-wrap: anywhere; } .tbl td:first-child { width: 64px; } }
 </style>
 </head>
 <body>
@@ -56,8 +95,8 @@
 <main class="wrap">
 <section class="ai-head">
 <p class="eyebrow">04 · AI 활용</p>
-<h1>AI에게 일을 맡기는 방식</h1>
-<p class="lead">Edgerunners는 62일 동안 혼자 만들었습니다. 코드와 에셋, 문서는 AI와 함께 만들었고, <b>무엇을 만들지</b>와 <b>다 됐는지</b>의 판단은 제가 맡았습니다. 이 페이지는 AI에게 지침을 준 방식과 결과를 검증한 방식을 정리합니다.</p>
+<h1>AI와 함께 일하는 방식</h1>
+<p class="lead">Edgerunners는 62일 동안 혼자 만들었습니다. 코드와 에셋, 문서는 AI와 함께 만들었고, 무엇을 만들지와 다 됐는지의 판단은 제가 맡았습니다. 가장 공들인 것은 <b>세션이 바뀌어도 작업이 끊기지 않는 인수인계 시스템</b>과 <b>구현과 검증을 다른 에이전트로 나눈 교차 검증</b>입니다.</p>
 <div class="stats">
 <div><b>62일</b><span>개발 기간 (08.21 – 10.21)</span></div>
 <div><b>355</b><span>작업 기록</span></div>
@@ -65,10 +104,65 @@
 <div><b>2</b><span>AI · Claude Code, Codex</span></div>
 <div><b>2</b><span>작업 컴퓨터 · Windows, macOS</span></div>
 </div>
+<div class="keys">
+<a href="#handoff"><span>핵심 1</span><b>인수인계 시스템</b><em>코드로 남지 않는 계획 · 기획 · 제안까지 문서로 넘겨, 어느 세션에서든 오해 없이 이어 작업</em></a>
+<a href="#verify"><span>핵심 2</span><b>검증 에이전트 분리</b><em>구현과 별개인 세션이 코드와 게임플레이를 교차 검증</em></a>
+</div>
+</section>
+
+<section class="block" id="flow">
+<h2>새 기능 하나가 완료되기까지</h2>
+<p class="sub">구현 에이전트, 검증 에이전트, 제가 차례로 확인합니다. 혼자서는 부족한 테스트와 피드백 시간을 이 흐름으로 나눠 써서, 목표한 범위까지 프로젝트를 완성했습니다.</p>
+<div class="legend"><span class="me">나</span><span class="dev">구현 에이전트</span><span class="chk">검증 에이전트 (별도 세션)</span></div>
+<ol class="wf">
+<li class="me"><span class="no">1</span><span class="who">나</span><b>기능 기획 · 작업 지시</b><em>만들 기능과 완료 조건을 정해 구현 에이전트에게 지시</em></li>
+<li class="dev"><span class="no">2</span><span class="who">구현 에이전트</span><b>기능 구현</b><em>지시와 인수인계 문서를 읽고 구현</em></li>
+<li class="dev"><span class="no">3</span><span class="who">구현 에이전트</span><b>해당 기능 테스트</b><em>새 기능만 따로 검사</em></li>
+<li class="dev"><span class="no">4</span><span class="who">구현 에이전트</span><b>전체 검사</b><em>기존 기능이 깨지지 않았는지 전체 검사 실행</em></li>
+<li class="chk"><span class="no">5</span><span class="who">검증 에이전트</span><b>교차 검증 · 피드백</b><em>별도 세션에서 코드와 게임플레이 점검</em></li>
+<li class="dev"><span class="no">6</span><span class="who">구현 에이전트</span><b>개선</b><em>검증 피드백 반영</em></li>
+<li class="me"><span class="no">7</span><span class="who">나</span><b>플레이테스트 · 피드백</b><em>직접 플레이하며 체감과 기획 의도 확인</em></li>
+<li class="dev"><span class="no">8</span><span class="who">구현 에이전트</span><b>최종 개선 · 완료</b><em>수정 후 인수인계 문서까지 갱신해야 완료</em></li>
+</ol>
+</section>
+
+<section class="block hl" id="handoff">
+<p class="kicker">핵심 1</p>
+<h2>인수인계 시스템</h2>
+<p class="lead2">다른 세션에서 작업할 때도 오해나 혼선 없이 이어 갈 수 있도록 만든 장치입니다. 코드의 변경 이력은 깃허브가 어느 정도 남기지만, <b>코드로 남지 않는 계획, 기획, 제안 단계의 내용</b>은 남지 않습니다. 이런 내용을 인수인계 문서에 기록해, 세션이 바뀌어도 바로 이어서 작업할 수 있었습니다.</p>
+<div class="chips"><span>지금 상태</span><span>남은 일</span><span>계획 · 기획 · 제안</span><span>무엇을 왜 바꿨는지</span><span>일부러 하지 않은 것과 이유</span><span>확인 방법</span></div>
+<div class="two-col">
+<table class="tbl">
+<tr><th></th><th>CONTEXT_README</th><th>UPDATES</th></tr>
+<tr><td>무엇을</td><td>지금 어떻게 되어 있는가</td><td>이전 버전에서 무엇이 바뀌었는가</td></tr>
+<tr><td>어떻게</td><td>누적해서 고쳐 씀</td><td>최신 항목을 위에 쌓기만 함</td></tr>
+<tr><td>낡은 내용</td><td>새 상태로 교체</td><td>그대로 둠</td></tr>
+<tr><td>끝난 일</td><td>남은 일 목록에서 지움</td><td>변경 이력으로 남김</td></tr>
+</table>
+<ul class="rules">
+<li><b>같은 규칙을 두 AI에 자동 적용</b>Claude용 CLAUDE.md와 Codex용 AGENTS.md에 같은 규칙을 넣어, 세션이 시작될 때마다 자동으로 읽게 했습니다.</li>
+<li><b>코드만 커밋하고 끝내지 않음</b>같은 커밋에 두 문서를 갱신하는 것까지를 작업의 완료 조건으로 정했습니다.</li>
+<li><b>일부러 하지 않은 것도 기록</b>무엇을 왜 바꿨는지와 함께, 하지 않은 것과 그 이유, 확인 방법을 적게 했습니다. 다음 작업자가 같은 조사를 반복하지 않게 하기 위해서입니다.</li>
+</ul>
+</div>
+</section>
+
+<section class="block hl pink" id="verify">
+<p class="kicker">핵심 2</p>
+<h2>검증 에이전트 분리 — 교차 검증</h2>
+<p class="lead2">검증용 AI 에이전트를 구현과 별개의 세션으로 두었습니다. 구현한 쪽이 스스로 확인하는 것으로 끝내지 않고, 다른 세션이 중간중간 코드와 게임플레이를 점검했습니다.</p>
+<div class="checks">
+<div><b>기획과 충돌하지 않는가</b><p>구현이 기획 내용과 어긋나는 부분이 없는지 확인합니다.</p></div>
+<div><b>개선하거나 고칠 부분은 없는가</b><p>코드와 게임플레이에서 고칠 점을 찾아 피드백합니다.</p></div>
+<div><b>제대로 고쳐졌는가</b><p>개선 사항을 반영했다면 의도대로 고쳐졌는지 다시 확인합니다.</p></div>
+<div><b>잘 작동하는가</b><p>고친 뒤에도 기존 기능과 함께 정상 동작하는지 점검합니다.</p></div>
+</div>
+<h3 class="h3s">검사도 게임과 함께 갱신</h3>
+<p class="body2">게임 개발이 진행됨에 따라 새로운 메커니즘이나 바뀐 수치가 검사에 반영되지 않은 경우가 많았습니다. 이런 부분은 제가 직접 플레이테스트를 돌려 보며 디버깅했습니다. 무엇보다 개발이 진행될 때마다 낡거나 결함이 있는 검사를 폐기하고 새로운 검사로 테스트하도록 해, 버그 발생률을 크게 낮췄습니다.</p>
 </section>
 
 <section class="block">
-<h2>단계별 역할 분담</h2>
+<h2>단계별 역할 분담 — 기획서 · 에셋 · 코딩 · QA</h2>
 <p class="sub">단계마다 제가 정한 것과 AI에게 맡긴 것을 나눴습니다.</p>
 <div class="pipe">
 <div>
@@ -108,30 +202,6 @@
 </section>
 
 <section class="block">
-<h2>지침 설계 — 인수인계 문서 두 개</h2>
-<p class="sub">세션의 기억은 다른 컴퓨터로 넘어가지 않습니다. 두 컴퓨터와 두 AI가 같은 상태에서 이어 일하도록 문서 두 개를 기준으로 삼았습니다.</p>
-<div class="two-col">
-<table class="tbl">
-<tr><th></th><th>CONTEXT_README</th><th>UPDATES</th></tr>
-<tr><td>무엇을</td><td>지금 어떻게 되어 있는가</td><td>이전 버전에서 무엇이 바뀌었는가</td></tr>
-<tr><td>어떻게</td><td>누적해서 고쳐 씀</td><td>최신 항목을 위에 쌓기만 함</td></tr>
-<tr><td>낡은 내용</td><td>새 상태로 교체</td><td>그대로 둠</td></tr>
-<tr><td>끝난 일</td><td>남은 일 목록에서 지움</td><td>변경 이력으로 남김</td></tr>
-</table>
-<ul class="rules">
-<li><b>같은 규칙을 두 AI에 자동 적용</b>Claude용 CLAUDE.md와 Codex용 AGENTS.md에 같은 규칙을 넣어, 세션이 시작될 때마다 자동으로 읽게 했습니다.</li>
-<li><b>코드만 커밋하고 끝내지 않음</b>같은 커밋에 두 문서를 갱신하는 것까지를 작업의 완료 조건으로 정했습니다.</li>
-<li><b>일부러 하지 않은 것도 기록</b>무엇을 왜 바꿨는지와 함께, 하지 않은 것과 그 이유, 확인 방법을 적게 했습니다. 다음 작업자가 같은 조사를 반복하지 않게 하기 위해서입니다.</li>
-</ul>
-</div>
-</section>
-
-<section class="block">
-<h2>검증 — 검사도 게임과 함께 갱신하기</h2>
-<p class="takeaway">게임 개발이 진행됨에 따라 새로운 메커니즘이나 바뀐 수치가 검사에 반영되지 않은 경우가 많았습니다. 이런 부분은 제가 직접 플레이테스트를 돌려 보며 디버깅했습니다.<br>무엇보다 개발이 진행될 때마다 낡거나 결함이 있는 검사를 폐기하고 새로운 검사로 테스트하도록 해, 버그 발생률을 크게 낮췄습니다.</p>
-</section>
-
-<section class="block">
 <h2>기획자가 쓰는 도구부터 만들기</h2>
 <p class="sub">수치와 레벨을 직접 반복해서 고칠 수 있도록, 게임 기능보다 먼저 기획용 도구를 AI로 만들었습니다.</p>
 <div class="tools">
@@ -142,7 +212,7 @@
 
 <section class="block">
 <h2>정리</h2>
-<p class="takeaway">AI가 빠르게 만들수록 <b>완료의 기준</b>을 먼저 정해야 했습니다. 기준 없이 받은 "통과"는 크게 틀린 적이 있었고, 그 뒤로는 요청할 때 완료 조건과 확인 방법을 함께 적었습니다. 기획서의 수치와 규칙도 같은 방식으로, 의도를 먼저 정하고 플레이와 측정으로 확인했습니다.</p>
+<p class="takeaway">혼자 만드는 프로젝트에서 테스트와 피드백 시간은 늘 부족했습니다. <b>인수인계 문서</b>로 세션 사이의 맥락을 지키고, <b>구현과 검증을 다른 에이전트로 나눠</b> 교차 검증하면서, 제 플레이테스트는 체감과 기획 의도를 확인하는 데 집중할 수 있었습니다. 그 결과 목표한 범위까지 프로젝트를 완성했습니다.</p>
 </section>
 </main>
 
