@@ -12,7 +12,6 @@
     "g03-part1",
     "g04-game",
     "g05-hud",
-    "g05b-shot",
     "g06-map",
     "g07-metrics",
     "g08-part2",
@@ -25,6 +24,7 @@
     "g14-loop",
     "g14b-warps",
     "g15-rings",
+    "g15b-problem",
     "g16-proposal",
     "g17-experiment",
     "g18-conclusion"
@@ -55,8 +55,8 @@
       "start": "g15-rings"
     },
     "s7": {
-      "description": "E 개선 제안·검증",
-      "start": "g16-proposal"
+      "description": "E 한계·개선 제안·검증",
+      "start": "g15b-problem"
     }
   },
   "faces": {
