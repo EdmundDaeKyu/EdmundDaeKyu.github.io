@@ -35,13 +35,37 @@
   @media (max-width: 900px) { .studies { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   @media (max-width: 640px) { .studies { grid-template-columns: minmax(0, 1fr); } }
   @media (max-width: 640px) { .hero { padding: 56px 0 44px; } .hero h1 { font-size: 42px; } }
+  .guide { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin-top: 40px; }
+  .guide a { display: flex; flex-direction: column; gap: 2px; padding: 16px 18px; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); color: var(--ink); }
+  .guide a:hover { text-decoration: none; border-color: var(--ink-3); }
+  .guide span { font-family: var(--semi); font-size: 13px; color: var(--accent); }
+  .guide b { font-family: var(--semi); font-weight: 400; font-size: 18px; }
+  .guide em { font-style: normal; font-size: 14px; color: var(--ink-3); }
+  .sec-no { font-family: var(--semi); font-size: 14px; letter-spacing: 1px; color: var(--accent); margin: 0 0 6px; }
+  .cases { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+  .case { display: flex; flex-direction: column; }
+  .case img { width: 100%; aspect-ratio: 16 / 7; object-fit: cover; background: var(--dark); }
+  .case .body { display: flex; flex-direction: column; gap: 8px; padding: 20px 22px 22px; }
+  .case .game { font-family: var(--semi); font-size: 13px; color: var(--accent); }
+  .case h3 { font-size: 21px; margin: 0; }
+  .case dl { margin: 4px 0 0; display: flex; flex-direction: column; gap: 8px; }
+  .case dl div { display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 10px; }
+  .case dt { font-family: var(--semi); font-size: 13px; color: var(--ink-4); padding-top: 2px; }
+  .case dd { margin: 0; font-size: 15px; line-height: 1.65; color: var(--ink-2); }
+  .case .res dt { color: var(--accent); } .case .res dd { color: var(--ink); }
+  .more-link { font-family: var(--semi); font-size: 14px; margin-top: 4px; }
+  .ai-points { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+  .ai-points div { background: var(--card); border: 1px solid var(--line); border-top: 3px solid var(--dark); border-radius: var(--radius); padding: 20px 22px; }
+  .ai-points b { font-family: var(--semi); font-weight: 400; font-size: 18px; }
+  .ai-points p { margin: 6px 0 0; font-size: 15px; color: var(--ink-2); }
+  @media (max-width: 900px) { .guide { grid-template-columns: repeat(2, minmax(0, 1fr)); } .cases, .ai-points { grid-template-columns: minmax(0, 1fr); } }
 </style>
 </head>
 <body>
 <div class="scroll-root">
 <header class="site-head"><div class="wrap">
 <a class="brand" href="./">장대규</a>
-<nav><a class="on" href="./">홈</a><a href="edgerunners/">Edgerunners</a><a href="analysis/">역기획서</a></nav>
+<nav><a class="on" href="./">홈</a><a href="edgerunners/">Edgerunners</a><a href="analysis/">역기획서</a><a href="ai/">AI 활용</a></nav>
 </div></header>
 
 <main class="wrap">
@@ -50,26 +74,79 @@
 <h1>장대규</h1>
 <p class="lead">레벨디자인을 지망하는 게임 기획자입니다.<br>지형과 배치, 수치로 플레이어의 다음 행동을 유도하는 레벨 설계에 관심이 있습니다.<br>출시작 역기획으로 설계 근거를 정리하고, 직접 만든 게임에서 그 원리를 적용하고 검증하며 성장하고 있습니다.</p>
 <div class="contact"><a href="tel:010-8854-7342">010-8854-7342</a><a href="mailto:jdk47888@naver.com">jdk47888@naver.com</a></div>
+<nav class="guide" aria-label="포트폴리오 구성">
+<a href="#game"><span>01</span><b>게임</b><em>직접 만든 게임의 재미</em></a>
+<a href="#design"><span>02</span><b>기획 역량</b><em>의도 → 과정 → 결과</em></a>
+<a href="#analysis"><span>03</span><b>역기획서</b><em>출시작 분석과 보완 기획</em></a>
+<a href="#ai"><span>04</span><b>AI 활용</b><em>지침과 검증 방식</em></a>
+</nav>
 </section>
 
-<section class="block" id="projects">
-<h2>프로젝트</h2>
-<p class="sub">게임마다 플레이 빌드와 기획서, 작업 내역을 함께 정리했습니다.</p>
+<section class="block" id="game">
+<p class="sec-no">01 · 게임</p>
+<h2>Edgerunners</h2>
+<p class="sub">62일 동안 혼자 기획하고 만든 탑다운 액션 로그라이트입니다. 브라우저에서 바로 플레이할 수 있습니다.</p>
 <article class="card project">
 <a class="shot" href="edgerunners/"><img src="assets/img/portfolio_hero.webp" alt="산데비스탄을 켠 플레이어가 금빛 잔상을 끌며 적 무리 사이를 지나가는 장면"></a>
 <div class="body">
 <p class="eyebrow">2026.08 – 10 · 1인 개발</p>
 <h3>Edgerunners</h3>
-<p class="muted">사이버펑크 2077을 탑다운 로그라이트로 재구성한 게임입니다.<br>빌드를 구성하고, 시험하고, 적 웨이브를 처치하는 과정을 반복합니다.</p>
+<p class="muted">사이버펑크 2077을 탑다운 로그라이트로 재구성한 게임입니다.<br>몸에 심는 사이버웨어로 빌드를 짜고, 그 빌드로 몰려오는 적 무리를 한 번에 쓸어버립니다.</p>
 <div class="tags"><span>탑다운 액션 로그라이트</span><span>Godot 4.7.2</span><span>PC · 웹</span><span>기획 · 레벨 디자인 · 수치</span></div>
-<div class="btn-row"><a class="btn" href="edgerunners/">게임 보기</a><a class="btn ghost" href="edgerunners/plan/">기획서 보기</a><a class="btn ghost" href="assets/pdf/edgerunners_summary.pdf">요약 PDF</a><a class="btn ghost" href="edgerunners/log/">작업 내역 보기</a></div>
+<div class="btn-row"><a class="btn" href="edgerunners/">게임 보기 · 플레이</a><a class="btn ghost" href="edgerunners/plan/">기획서 보기</a></div>
 </div>
 </article>
 </section>
 
+<section class="block" id="design">
+<p class="sec-no">02 · 기획 역량</p>
+<h2>의도 → 과정 → 결과</h2>
+<p class="sub">Edgerunners를 만들며 내린 결정 중 네 가지입니다. 무엇을 의도했고, 플레이와 측정에서 무엇이 어긋났고, 어떻게 고쳤는지 정리했습니다.</p>
+<div class="cases">
+<article class="card case">
+<img src="assets/img/portfolio_crowd.webp" alt="" loading="lazy">
+<div class="body">
+<span class="game">전투</span>
+<h3>공격 예고를 실제 판정과 같은 크기로</h3>
+<dl><div><dt>의도</dt><dd>표시가 실제 판정보다 넓으면 플레이어가 잘못 배웁니다. 보이는 대로 피할 수 있어야 합니다.</dd></div><div><dt>과정</dt><dd>근접병의 둘레 링 예고가 등 뒤도 맞는 것처럼 보였습니다. 실제 도달 거리인 전방 2.3m · 70° 부채꼴로 바꿨고, 다섯 개가 겹치면 화면이 덮여 투명도를 0.34에서 0.16으로 낮췄습니다.</dd></div><div class="res"><dt>결과</dt><dd>모양은 피하는 방법, 색은 남은 시간을 뜻하도록 모든 적의 예고 규칙을 하나로 정했습니다.</dd></div></dl>
+<a class="more-link" href="edgerunners/log/#s7">작업 내역에서 자세히 →</a>
+</div>
+</article>
+<article class="card case">
+<img src="assets/img/combat_1.webp" alt="" loading="lazy">
+<div class="body">
+<span class="game">레벨</span>
+<h3>손그림을 도면으로 옮길 때 빠진 중심 구조</h3>
+<dl><div><dt>의도</dt><dd>손그림 전투방의 중심 구조(바람개비 십자, I자)를 격자 도면에 그대로 옮기려 했습니다.</dd></div><div><dt>과정</dt><dd>보상 좌대가 항상 방 한가운데에 놓여 중심 구조가 빠져 있었습니다. 완성된 방을 손그림과 나란히 놓고 비교해 찾았습니다.</dd></div><div class="res"><dt>결과</dt><dd>설계는 유지하고 편집기를 고쳤습니다. 격자에 보상 위치 칸을 추가했고, 손그림 비율(4:3)에 맞춰 방을 40×30m로 넓혔습니다.</dd></div></dl>
+<a class="more-link" href="edgerunners/log/#s5">작업 내역에서 자세히 →</a>
+</div>
+</article>
+<article class="card case">
+<img src="assets/img/hazard_shock.webp" alt="" loading="lazy">
+<div class="body">
+<span class="game">레벨 장치</span>
+<h3>되돌린 결정 — 바닥 함정 삭제</h3>
+<dl><div><dt>의도</dt><dd>폭탄은 위치, 전기 발판은 타이밍, 바닥 함정은 경로 판단을 맡도록 장치의 역할을 셋으로 나눴습니다.</dd></div><div><dt>과정</dt><dd>함정 피해를 5에서 18로 올려도 "이 길로 갈 것인가"와 "여기 머무를 것인가"가 같은 판단이 되었습니다. 켜짐 · 꺼짐 주기가 있는 전기 발판은 기다리기만 하게 만들었습니다.</dd></div><div class="res"><dt>결과</dt><dd>바닥 함정을 삭제하고 전기 발판을 항상 켜 두었습니다. 대시 통과는 피해 없이 두고, 머무르면 2.5초 동안 대시를 막습니다.</dd></div></dl>
+<a class="more-link" href="edgerunners/log/#s6">작업 내역에서 자세히 →</a>
+</div>
+</article>
+<article class="card case">
+<img src="assets/img/growth_meditation.webp" alt="" loading="lazy">
+<div class="body">
+<span class="game">시스템</span>
+<h3>사이버웨어 성장 구조를 두 번 바꾼 이유</h3>
+<dl><div><dt>의도</dt><dd>보상이 랜덤인 로그라이트에서도 빌드가 막히지 않는 성장 구조를 목표로 했습니다.</dd></div><div><dt>과정</dt><dd>트리 구조는 잘못 고른 가지를 되돌릴 수 없었습니다. 레벨 구조로 바꾸자 종류가 15줄로 줄었고, 숫자만 오르는 레벨은 플레이에 변화를 주지 못했습니다.</dd></div><div class="res"><dt>결과</dt><dd>독립된 줄을 복원하고, 레벨업은 새 기능 · 숙련도는 수치 상승으로 역할을 나눴습니다.</dd></div></dl>
+<a class="more-link" href="edgerunners/log/#s8">작업 내역에서 자세히 →</a>
+</div>
+</article>
+</div>
+<div class="btn-row more"><a class="btn" href="edgerunners/plan/">기획서 전체 보기</a><a class="btn ghost" href="assets/pdf/edgerunners_summary.pdf">기획 요약 PDF · 14쪽</a><a class="btn ghost" href="edgerunners/log/">작업 내역 보기</a></div>
+</section>
+
 <section class="block" id="analysis">
-<h2>역기획서</h2>
-<p class="sub">출시된 게임의 레벨과 시스템을 기획자 관점에서 다시 설계한 문서입니다. 구조마다 설계 목표와 수치 · 배치 근거를 정리했습니다.</p>
+<p class="sec-no">03 · 역기획서</p>
+<h2>출시작을 기획자 입장에서 다시 설계</h2>
+<p class="sub">레벨과 시스템이 왜 그 배치와 그 수치인지, 설계 목표에서부터 다시 짚었습니다. 문제가 보이는 구간에는 보완 기획을 붙였습니다.</p>
 <div class="studies">
 <a class="card study" href="analysis/lol1.html"><img src="assets/img/lol1_01.webp" alt=""><div class="body"><span class="game">리그 오브 레전드</span><h3>소환사의 협곡 레벨디자인</h3><p>라인 · 정글 · 오브젝트 · 시야 배치가 공정성과 국면 전환을 만드는 구조.</p></div></a>
 <a class="card study" href="analysis/lol2.html"><img src="assets/img/lol2_02.webp" alt=""><div class="body"><span class="game">리그 오브 레전드</span><h3>미니언 · 포탑 시스템 기획</h3><p>설계 목표 기준의 미니언 골드 · 경험치 · 포탑 수치와 라인전 경제.</p></div></a>
@@ -78,6 +155,18 @@
 <a class="card study" href="analysis/clash.html"><img src="assets/img/clash_01.webp" alt=""><div class="body"><span class="game">클래시 로얄</span><h3>아레나 레벨디자인</h3><p>고정 전장의 대칭, 다리 · 강, 엘릭서 비용에 따른 공격 · 방어 분화 구조.</p></div></a>
 </div>
 <div class="btn-row more"><a class="btn ghost" href="analysis/">역기획서 전체 보기</a></div>
+</section>
+
+<section class="block" id="ai">
+<p class="sec-no">04 · AI 활용</p>
+<h2>AI에게 일을 맡기는 방식</h2>
+<p class="sub">코드 · 에셋 · 문서는 AI와 함께 만들었고, 무엇을 만들지와 다 됐는지의 판단은 제가 맡았습니다.</p>
+<div class="ai-points">
+<div><b>지침</b><p>두 컴퓨터와 두 AI(Claude Code · Codex)가 같은 규칙으로 이어 일하도록 인수인계 문서 두 개와 작업 규칙을 설계했습니다.</p></div>
+<div><b>검증</b><p>"수치만 보고 완료로 판단하지 않는다." AI의 보고 대신 렌더 화면과 일부러 실패시키는 검사로 결과를 확인했습니다.</p></div>
+<div><b>도구</b><p>맵 편집기와 밸런스 튜닝 패널처럼 기획자가 직접 반복 작업할 도구를 AI로 먼저 만들었습니다.</p></div>
+</div>
+<div class="btn-row more"><a class="btn" href="ai/">AI 활용 자세히 보기</a></div>
 </section>
 </main>
 

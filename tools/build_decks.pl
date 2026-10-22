@@ -187,7 +187,7 @@ sub tabs {
 # 머리 메뉴. $on은 'edgerunners' 또는 'analysis'
 sub site_nav {
   my ($up, $on) = @_;
-  my @m = (['home', '', '홈'], ['edgerunners', 'edgerunners/', 'Edgerunners'], ['analysis', 'analysis/', '역기획서']);
+  my @m = (['home', '', '홈'], ['edgerunners', 'edgerunners/', 'Edgerunners'], ['analysis', 'analysis/', '역기획서'], ['ai', 'ai/', 'AI 활용']);
   return '<nav>' . join('', map { '<a' . ($_->[0] eq $on ? ' class="on"' : '') . qq( href="$up$_->[1]">$_->[2]</a>) } @m) . '</nav>';
 }
 
@@ -286,10 +286,15 @@ for my $d (@DECKS) {
     my $md_path = "$dir/notes/$sid.md";
     if (-e $md_path) {
       my ($head, $grid) = render_note(slurp($md_path), "$id/notes/$sid.md");
-      $note_html = qq(<div class="slide-note"><div class="n-head"><span class="num">$num</span><div class="n-lead">\n$head</div></div>\n$grid</div>);
+      # 핵심 한 줄은 늘 보이고, 칸으로 나눈 세부 설명은 펼쳐 볼 때만 보인다
+      my $more = $grid eq '' ? '' : qq(<details class="n-more"><summary>자세히 보기</summary>\n$grid</details>);
+      $note_html = qq(<div class="slide-note"><div class="n-head"><span class="num">$num</span><div class="n-lead">\n$head</div></div>\n$more</div>);
       $notes++;
     } elsif ($aside ne '') {
-      $note_html = qq(<div class="slide-note"><div class="n-head"><span class="num">$num</span><div class="n-lead"><p>) . esc($aside) . '</p></div></div></div>';
+      # 발표자 노트: 첫 문장만 보이고 나머지는 펼쳐 볼 때만 보인다
+      my ($first, $rest) = $aside =~ /^(.+?[.?!])\s+(.+)$/s ? ($1, $2) : ($aside, '');
+      my $more = $rest eq '' ? '' : qq(<details class="n-more"><summary>자세히 보기</summary><div class="n-aside"><p>) . esc($rest) . '</p></div></details>';
+      $note_html = qq(<div class="slide-note"><div class="n-head"><span class="num">$num</span><div class="n-lead"><p>) . esc($first) . qq(</p></div></div>$more</div>);
     }
     push @items, qq(<div class="slide-item" id="s$n">\n<div class="slide-frame">\n$html\n</div>\n$note_html\n</div>);
   }

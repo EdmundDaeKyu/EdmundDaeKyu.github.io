@@ -20,13 +20,57 @@
   .play-box .btn.dl { background: transparent; border-color: #5CC8F0; color: #5CC8F0; }
   .play-box .btn.dl:hover { background: rgba(92, 200, 240, 0.12); }
   .play-box .btn:hover { background: #8AD8F5; }
-  .fun .card img { aspect-ratio: 16 / 10; object-fit: cover; width: 100%; }
-  .fun .card .body p { color: var(--ink-2); }
   .remake .card .body { display: flex; flex-direction: column; gap: 6px; }
   .remake .part { font-family: var(--semi); font-size: 13px; color: var(--accent); }
   .remake .card h3 { margin-bottom: 2px; }
   .remake .was { font-size: 14px; color: var(--ink-3); padding-bottom: 8px; border-bottom: 1px solid var(--line); margin-bottom: 2px; }
   .remake .card .body p:not(.was) { color: var(--ink-2); }
+  .fun .sub b { font-family: var(--semi); font-weight: 400; color: var(--ink); }
+  .axes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+  .axis img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block; }
+  .axis .body { display: flex; flex-direction: column; gap: 10px; padding: 24px 26px 26px; }
+  .axis h3 { font-size: 24px; margin: 0; }
+  .axis p { color: var(--ink-2); margin: 0; }
+  .tag { align-self: flex-start; font-family: var(--semi); font-size: 13px; color: #FFFFFF; background: var(--accent); border-radius: 999px; padding: 3px 12px; }
+  .tag.pink { background: var(--pink); }
+  .facts-row { list-style: none; display: flex; flex-wrap: wrap; gap: 8px 22px; margin: 6px 0 0; padding: 12px 0 0; border-top: 1px solid var(--line); }
+  .facts-row li { display: flex; align-items: baseline; gap: 6px; font-size: 14px; color: var(--ink-3); }
+  .facts-row b { font-family: var(--bold); font-weight: 400; font-size: 22px; color: var(--ink); }
+  .loop { display: flex; align-items: stretch; gap: 10px; margin-top: 18px; }
+  .loop div { flex: 1; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px; display: flex; flex-direction: column; gap: 2px; }
+  .loop div.hot { background: var(--dark); border-color: var(--dark); }
+  .loop div.hot b { color: #FFFFFF; } .loop div.hot span { color: #C9CDD4; }
+  .loop b { font-family: var(--semi); font-weight: 400; } .loop span { font-size: 14px; color: var(--ink-3); }
+  .loop i { font-style: normal; align-self: center; color: var(--ink-4); font-size: 20px; }
+  .loop i.back { font-size: 24px; color: var(--accent); }
+  .rm-carousel { display: flex; flex-direction: column; gap: 14px; }
+  .rm-track { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; gap: 20px; scrollbar-width: none; outline: none; }
+  .rm-track::-webkit-scrollbar { display: none; }
+  .rm-slide { flex: 0 0 100%; scroll-snap-align: start; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: 24px; }
+  .rm-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+  .rm-pair figure { margin: 0; display: flex; flex-direction: column; gap: 10px; }
+  .rm-pair img, .ref-slot { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; border-radius: 10px; display: block; }
+  .ref-slot { border: 2px dashed var(--line); background: var(--bg-alt); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; color: var(--ink-4); font-family: var(--semi); font-size: 15px; }
+  .ref-slot small { font-family: var(--body); font-size: 13px; }
+  .rm-pair figcaption { font-size: 14.5px; line-height: 1.6; color: var(--ink-2); }
+  .rm-pair figcaption b, .rm-why p b { display: block; font-family: var(--semi); font-weight: 400; font-size: 13px; color: var(--ink-4); margin-bottom: 2px; }
+  .rm-game figcaption b { color: var(--accent); }
+  .rm-why { display: flex; flex-direction: column; gap: 8px; justify-content: center; padding-left: 24px; border-left: 1px solid var(--line); }
+  .rm-why .part { font-family: var(--semi); font-size: 13px; color: var(--accent); }
+  .rm-why h3 { font-size: 28px; margin: 0; }
+  .rm-why p { color: var(--ink-2); margin: 0; }
+  .rm-nav { display: flex; align-items: center; justify-content: center; gap: 14px; }
+  .rm-nav > button { width: 42px; height: 42px; border-radius: 50%; border: 1px solid var(--line); background: var(--card); font-size: 18px; cursor: pointer; color: var(--ink); }
+  .rm-dots { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; }
+  .rm-dots button { font-family: var(--semi); font-size: 14px; padding: 7px 14px; border-radius: 999px; border: 1px solid var(--line); background: var(--card); color: var(--ink-3); cursor: pointer; }
+  .rm-dots button.on { background: var(--dark); border-color: var(--dark); color: #FFFFFF; }
+  @media (max-width: 900px) {
+    .axes { grid-template-columns: minmax(0, 1fr); }
+    .loop { flex-direction: column; } .loop i { transform: rotate(90deg); }
+    .rm-slide { grid-template-columns: minmax(0, 1fr); padding: 18px; }
+    .rm-why { padding-left: 0; border-left: none; padding-top: 14px; border-top: 1px solid var(--line); }
+  }
+  @media (max-width: 640px) { .rm-pair { grid-template-columns: minmax(0, 1fr); } }
   .gallery button { padding: 0; border: none; background: none; cursor: zoom-in; text-align: left; }
   .gallery figure { margin: 0; }
   .gallery figcaption { font-size: 14px; color: var(--ink-3); margin-top: 8px; line-height: 1.5; }
@@ -50,7 +94,7 @@
 <div class="scroll-root">
 <header class="site-head"><div class="wrap">
 <a class="brand" href="../">장대규</a>
-<nav><a href="../">홈</a><a class="on" href="./">Edgerunners</a><a href="../analysis/">역기획서</a></nav>
+<nav><a href="../">홈</a><a class="on" href="./">Edgerunners</a><a href="../analysis/">역기획서</a><a href="../ai/">AI 활용</a></nav>
 </div></header>
 
 <main class="wrap">
@@ -60,7 +104,7 @@
 <div>
 <p class="eyebrow">2026.08.21 – 10.21 · 1인 개발</p>
 <h1>Edgerunners</h1>
-<p class="lead">사이버펑크 2077을 탑다운 로그라이트로 재구성한 게임입니다.<br>빌드를 구성하고, 시험하고, 적 웨이브를 처치하는 과정을 반복합니다.</p>
+<p class="lead">사이버펑크 2077을 탑다운 로그라이트로 재구성한 게임입니다.<br>몸에 심는 사이버웨어로 빌드를 짜고, 그 빌드로 몰려오는 적 무리를 한 번에 쓸어버립니다.</p>
 </div>
 <div class="shot"><img src="../assets/img/portfolio_hero.webp" alt="산데비스탄을 켠 플레이어가 금빛 잔상을 끌며 칼잡이 무리 사이를 휘감아 지나가는 장면"></div>
 <dl class="facts">
@@ -84,22 +128,74 @@
 
 <section class="block fun">
 <h2>핵심 재미</h2>
-<p class="sub">빌드를 구성하고, 시험하고, 그 빌드로 적 웨이브를 처치합니다.</p>
-<div class="grid three">
-<article class="card"><img src="../assets/img/portfolio_sande.webp" alt="산데비스탄을 켜고 허공에 느리게 걸린 총알 사이를 잔상을 끌며 지나가는 장면"><div class="body"><h3>빌드 구성</h3><p>사이버웨어 8부위 32종, 프로토타입 9종, 무기 8종을 조합합니다.<br>같은 사이버웨어를 다시 얻으면 최대 Lv3까지 오르고, 레벨마다 새 기능이 추가됩니다.</p></div></article>
-<article class="card"><img src="../assets/img/portfolio_elements.webp" alt="불, 전기, 독 드론과 속성 적, 전기 발판이 있는 방에서 싸우는 장면"><div class="body"><h3>빌드 시험</h3><p>문에 표시된 보상을 보고 다음 방을 고릅니다.<br>방마다 적 조합과 장치가 달라 같은 빌드도 매번 다른 상황에서 시험됩니다.</p></div></article>
-<article class="card"><img src="../assets/img/portfolio_explosion.webp" alt="로켓이 드럼통 사이 무리에 떨어져 연쇄 폭발하는 장면"><div class="body"><h3>적 웨이브 처치</h3><p>웨이브마다 적 7~9명이 나옵니다.<br>모든 적 공격에 예고가 표시되어 보고 피할 수 있습니다. 빌드 조합이 맞으면 여러 적을 한 번에 처치합니다.</p></div></article>
+<p class="sub">로그라이트의 <b>빌드를 짜는 재미</b>와 핵앤슬래시의 <b>무리를 쓸어버리는 재미</b>를 한 판 안에 묶었습니다.</p>
+<div class="axes">
+<article class="card axis">
+<img src="../assets/img/portfolio_netrunner_alt.webp" alt="해킹 모드에서 적 여러 명과 드럼통에 해킹 표시가 걸린 장면">
+<div class="body">
+<span class="tag">로그라이트</span>
+<h3>판마다 다른 빌드를 짠다</h3>
+<p>방을 지날 때마다 사이버웨어 · 무기 · 프로토타입 중 하나를 골라 몸을 바꿉니다. 문에 적힌 보상을 보고 다음 방을 고르는 순간이 곧 빌드 결정입니다.</p>
+<ul class="facts-row"><li><b>32</b>사이버웨어</li><li><b>8</b>부위</li><li><b>9</b>프로토타입</li><li><b>8</b>무기</li></ul>
+</div>
+</article>
+<article class="card axis">
+<img src="../assets/img/portfolio_hero_alt.webp" alt="산데비스탄을 켠 플레이어가 잔상을 끌며 칼잡이 무리를 한 번에 베고 지나가는 장면">
+<div class="body">
+<span class="tag pink">핵앤슬래시</span>
+<h3>그 빌드로 무리를 쓸어버린다</h3>
+<p>웨이브마다 적 7~9명이 사방에서 몰려옵니다. 모든 공격에 예고가 있어 피하고, 몰고, 한 번에 처치하는 리듬이 생깁니다. 빌드가 맞물릴수록 처치가 크고 시원해집니다.</p>
+<ul class="facts-row"><li><b>7~9</b>웨이브당 적</li><li><b>12</b>방 + 보스</li></ul>
+</div>
+</article>
+</div>
+<div class="loop" aria-label="한 판의 반복 구조">
+<div><b>빌드 선택</b><span>문의 보상을 보고 방 선택</span></div>
+<i aria-hidden="true">→</i>
+<div class="hot"><b>무리 처치</b><span>예고를 보고 피하고 몰아서 처치</span></div>
+<i aria-hidden="true">→</i>
+<div><b>보상 누적</b><span>경험치 · 숙련도 · 코인</span></div>
+<i aria-hidden="true">→</i>
+<div><b>빌드 강화</b><span>레벨마다 새 기능 추가</span></div>
+<i class="back" aria-hidden="true">↺</i>
 </div>
 </section>
 
 <section class="block remake">
-<h2>2077과 다르게 쓴 무기와 사이버웨어</h2>
-<p class="sub">이름은 사이버펑크 2077 원작을 따르고, 사용 방식은 탑다운 전투에 맞게 바꿨습니다.</p>
-<div class="grid two">
-<article class="card"><div class="body"><span class="part">OS · E키</span><h3>산데비스탄</h3><p class="was">2077: 일정 시간 주변 시간을 늦추고, 사용자만 정상 속도로 움직입니다.</p><p>켜고 끌 수 있는 감속과 공격력 +25%.<br>적을 처치할 때마다 지속 시간이 0.4초 늘어납니다(Lv2).</p></div></article>
-<article class="card"><div class="body"><span class="part">OS · E키</span><h3>사이버덱</h3><p class="was">2077: 적을 스캔하고 퀵핵으로 방해하거나 피해를 줍니다.</p><p>해킹 모드에서는 적과 플레이어 모두 0.35배로 느려집니다.<br>좌 · 우클릭으로 적, 드럼통, 전기 발판을 해킹합니다.</p></div></article>
-<article class="card"><div class="body"><span class="part">팔 · 3번 키</span><h3>고릴라 암즈</h3><p class="was">2077: 주먹으로 싸우는 근접 무기입니다.</p><p>무기 슬롯과 별도인 능력으로, 적을 잡아 던지거나 내려찍습니다.<br>던진 적과 부딪힌 적도 넘어집니다(Lv2).</p></div></article>
-<article class="card"><div class="body"><span class="part">카타나 · 해머 · 나이프</span><h3>근접 무기</h3><p class="was">2077: 베거나 내려치는 무기입니다.</p><p>무기마다 우클릭 고유 능력이 하나씩 있습니다.<br>카타나는 적을 관통하며 베고, 해머는 던진 뒤 회수하고, 나이프는 꽂힌 적 뒤로 순간이동해 찌릅니다.</p></div></article>
+<h2>원작에서 가져온 것, 탑다운에 맞게 바꾼 것</h2>
+<p class="sub">이름과 콘셉트는 사이버펑크 2077에서 가져오고, 사용 방식은 탑다운 핵앤슬래시 전투에 맞게 다시 설계했습니다.</p>
+<div class="rm-carousel">
+<div class="rm-track" tabindex="0">
+<article class="rm-slide" id="remake-1" aria-label="1 / 4 산데비스탄">
+<div class="rm-pair">
+<figure class="rm-ref"><div class="ref-slot"><span>원작 이미지 자리</span><small>사이버펑크 2077 · 산데비스탄</small></div><figcaption><b>원작</b>일정 시간 주변 시간을 늦추고, 사용자만 정상 속도로 움직입니다.</figcaption></figure>
+<figure class="rm-game"><img src="../assets/img/portfolio_sande.webp" alt="느려진 총알 사이를 잔상을 끌며 지나가는 장면" loading="lazy"><figcaption><b>Edgerunners</b>켜고 끌 수 있는 감속과 공격력 +25%. 적을 처치할 때마다 지속 시간이 0.4초 늘어납니다(Lv2).</figcaption></figure>
+</div>
+<div class="rm-why"><span class="part">OS · E키</span><h3>산데비스탄</h3><p><b>바꾼 이유</b>처치를 이어 가는 동안 효과가 길어지도록 바꿔, 무리 사이를 지나며 연달아 베는 플레이를 보상합니다.</p></div>
+</article>
+<article class="rm-slide" id="remake-2" aria-label="2 / 4 사이버덱">
+<div class="rm-pair">
+<figure class="rm-ref"><div class="ref-slot"><span>원작 이미지 자리</span><small>사이버펑크 2077 · 사이버덱</small></div><figcaption><b>원작</b>적을 스캔하고 퀵핵으로 방해하거나 피해를 줍니다.</figcaption></figure>
+<figure class="rm-game"><img src="../assets/img/portfolio_netrunner.webp" alt="해킹 모드에서 적, 드럼통, 전기 발판을 해킹하는 장면" loading="lazy"><figcaption><b>Edgerunners</b>해킹 모드에서는 적과 플레이어 모두 0.35배로 느려지고, 좌 · 우클릭으로 적, 드럼통, 전기 발판을 해킹합니다.</figcaption></figure>
+</div>
+<div class="rm-why"><span class="part">OS · E키</span><h3>사이버덱</h3><p><b>바꾼 이유</b>실시간 탑다운 난전에서 대상을 고를 시간을 확보하고, 방에 놓인 장치까지 공격 수단으로 쓰게 합니다.</p></div>
+</article>
+<article class="rm-slide" id="remake-3" aria-label="3 / 4 고릴라 암즈">
+<div class="rm-pair">
+<figure class="rm-ref"><div class="ref-slot"><span>원작 이미지 자리</span><small>사이버펑크 2077 · 고릴라 암즈</small></div><figcaption><b>원작</b>주먹으로 싸우는 근접 무기입니다.</figcaption></figure>
+<figure class="rm-game"><img src="../assets/img/portfolio_gorilla.webp" alt="내려찍은 자리에서 바닥이 갈라지며 주변 적이 쓰러진 장면" loading="lazy"><figcaption><b>Edgerunners</b>무기 슬롯과 별도인 능력으로, 적을 잡아 던지거나 내려찍습니다. 던진 적과 부딪힌 적도 넘어집니다(Lv2).</figcaption></figure>
+</div>
+<div class="rm-why"><span class="part">팔 · 3번 키</span><h3>고릴라 암즈</h3><p><b>바꾼 이유</b>손에 든 무기를 바꾸지 않고 꺼내 쓰는 군중 제어 수단으로 만들어, 어떤 빌드와도 함께 쓸 수 있게 했습니다.</p></div>
+</article>
+<article class="rm-slide" id="remake-4" aria-label="4 / 4 근접 무기">
+<div class="rm-pair">
+<figure class="rm-ref"><div class="ref-slot"><span>원작 이미지 자리</span><small>사이버펑크 2077 · 근접 무기</small></div><figcaption><b>원작</b>베거나 내려치는 무기입니다.</figcaption></figure>
+<figure class="rm-game"><img src="../assets/img/lesson_s2_lunge.webp" alt="카타나 발도로 앞으로 길게 돌진하며 베는 장면" loading="lazy"><figcaption><b>Edgerunners</b>무기마다 우클릭 고유 능력이 하나씩 있습니다. 카타나는 적을 관통하며 베고, 해머는 던진 뒤 회수하고, 나이프는 꽂힌 적 뒤로 순간이동해 찌릅니다.</figcaption></figure>
+</div>
+<div class="rm-why"><span class="part">카타나 · 해머 · 나이프</span><h3>근접 무기</h3><p><b>바꾼 이유</b>같은 근접 무기라도 적에게 다가가는 방법을 다르게 해, 무기 선택이 빌드 선택이 되도록 했습니다.</p></div>
+</article>
+</div>
+<div class="rm-nav"><button type="button" class="rm-prev" aria-label="이전">←</button><div class="rm-dots"><button type="button" data-go="1" aria-label="1번째 항목">산데비스탄</button><button type="button" data-go="2" aria-label="2번째 항목">사이버덱</button><button type="button" data-go="3" aria-label="3번째 항목">고릴라 암즈</button><button type="button" data-go="4" aria-label="4번째 항목">근접 무기</button></div><button type="button" class="rm-next" aria-label="다음">→</button></div>
 </div>
 </section>
 
@@ -177,6 +273,23 @@
       });
     });
     box.addEventListener("click", function () { box.close(); });
+  })();
+</script>
+<script>
+  (function () {
+    const track = document.querySelector(".rm-track");
+    if (!track) return;
+    const slides = Array.from(track.children);
+    const dots = Array.from(document.querySelectorAll(".rm-dots button"));
+    let cur = 0;
+    function go(i) { cur = (i + slides.length) % slides.length; track.scrollTo({ left: slides[cur].offsetLeft - track.offsetLeft, behavior: "smooth" }); mark(); }
+    function mark() { dots.forEach(function (d, k) { d.classList.toggle("on", k === cur); }); }
+    document.querySelector(".rm-prev").addEventListener("click", function () { go(cur - 1); });
+    document.querySelector(".rm-next").addEventListener("click", function () { go(cur + 1); });
+    dots.forEach(function (d, k) { d.addEventListener("click", function () { go(k); }); });
+    track.addEventListener("keydown", function (e) { if (e.key === "ArrowRight") { go(cur + 1); e.preventDefault(); } if (e.key === "ArrowLeft") { go(cur - 1); e.preventDefault(); } });
+    let t; track.addEventListener("scroll", function () { clearTimeout(t); t = setTimeout(function () { cur = Math.round(track.scrollLeft / (track.clientWidth + 20)); mark(); }, 80); });
+    mark();
   })();
 </script>
 </body>
